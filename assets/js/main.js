@@ -1,0 +1,10 @@
+
+/*
+ * author: Timur Valiyev
+ * email: v.timur8484@gmail.com
+ */
+
+(function() {
+
+
+}).call(this);
