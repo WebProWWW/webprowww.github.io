@@ -228,11 +228,8 @@ body {
   text-decoration: none;
   outline: none;
   -webkit-appearance: none;
-     -moz-appearance: none;
           appearance: none;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   transition: 0.16s all ease-in-out;
 }
@@ -281,19 +278,16 @@ body {
   height: 50px;
   background: transparent;
   border: none;
+  border-radius: 0;
   border-bottom: 2px solid #fff;
   font-family: 'MuseoSansRegular';
   font-size: 16px;
   outline: none;
   -webkit-appearance: none;
-     -moz-appearance: none;
           appearance: none;
   transition: 0.16s all ease-in-out;
 }
 .form-input::-webkit-input-placeholder {
-  color: #fff;
-}
-.form-input:-ms-input-placeholder {
   color: #fff;
 }
 .form-input::placeholder {
@@ -303,9 +297,6 @@ body {
   border-bottom: 2px solid #f00;
 }
 .form-input.error::-webkit-input-placeholder {
-  color: #f00;
-}
-.form-input.error:-ms-input-placeholder {
   color: #f00;
 }
 .form-input.error::placeholder {
@@ -371,7 +362,8 @@ body {
   top: 0px;
   left: 0px;
   background: url("../img/toup.png") no-repeat;
-  animation: toup 1s infinite;
+  -webkit-animation: toup 1s infinite;
+          animation: toup 1s infinite;
 }
 .gold {
   color: #f4d179;
@@ -398,35 +390,54 @@ body {
   height: 12px;
   border-radius: 50%;
   background: #fff;
-  animation: lds-bars 0.8s infinite;
+  -webkit-animation: lds-bars 0.8s infinite;
+          animation: lds-bars 0.8s infinite;
 }
 .lds-bars div:nth-child(1) {
   left: 0px;
-  animation-delay: 50ms;
+  -webkit-animation-delay: 50ms;
+          animation-delay: 50ms;
 }
 .lds-bars div:nth-child(2) {
   left: 20px;
-  animation-delay: 100ms;
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
 }
 .lds-bars div:nth-child(3) {
   left: 40px;
-  animation-delay: 150ms;
+  -webkit-animation-delay: 150ms;
+          animation-delay: 150ms;
 }
 .lds-bars div:nth-child(4) {
   left: 60px;
-  animation-delay: 200ms;
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
 }
 .lds-bars div:nth-child(5) {
   left: 80px;
-  animation-delay: 250ms;
+  -webkit-animation-delay: 250ms;
+          animation-delay: 250ms;
 }
 .lds-bars div:nth-child(6) {
   left: 100px;
-  animation-delay: 300ms;
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
 }
 .lds-bars div:nth-child(7) {
   left: 120px;
-  animation-delay: 350ms;
+  -webkit-animation-delay: 350ms;
+          animation-delay: 350ms;
+}
+@-webkit-keyframes toup {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: -10px;
+  }
+  100% {
+    top: 0px;
+  }
 }
 @keyframes toup {
   0% {
@@ -437,6 +448,17 @@ body {
   }
   100% {
     top: 0px;
+  }
+}
+@-webkit-keyframes lds-bars {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 @keyframes lds-bars {
