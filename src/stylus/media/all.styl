@@ -1,0 +1,101 @@
+
+colorLBlack = #343A40
+colorGray = #6C757C
+colorLGray = #F8F9FA
+colorBlue = #217BFF
+colorLBlue = #31A2B8
+colorGreen = #34A745
+colorRed = #DC3545
+colorYellow = #FBC10B
+
+
+
+html
+  height 100%
+
+body
+  font-family 'Roboto', sans-serif
+  font-weight 400
+  height 100%
+  line-height 1.2
+
+
+
+.block
+  mpd(0, 15px 0)
+
+
+
+.title
+  mpd(8px 0)
+  font-weight 300
+  font-size 34px
+  text-align center
+
+  &-desc
+    mpd(8px 0)
+    font-weight 300
+    font-size 23px
+    text-align center
+
+
+
+.logo
+  mpd(8px 0, 0, flex)
+  align-items center
+  resetLn(white, white)
+
+  &-img
+    mpd()
+    border-radius 50%
+    // box-shadow 0 0 1px 2px white
+
+  &-desc
+    mpd(0 0 0 8px)
+
+  &-text
+    mpd()
+    font-size 26px
+    font-weight 300
+
+    &-sm
+      mpd()
+      font-size 10px
+
+
+.header
+  mpd(0, 8px 0)
+  background colorLBlack
+  color white
+
+
+
+.footer
+  mpd(0, 8px 0)
+  background colorLBlack
+  color white
+
+
+
+.soc
+  mpd(8px 0, 0, flex)
+  justify-content space-between
+
+  &-ln
+    mpd()
+    resetLn(white, colorLBlue)
+
+  &-icon
+    mpd()
+    font-size 23px
+
+
+
+.copy
+  mpd(8px 0)
+  font-size 13px
+  font-weight 300
+  text-align center
+
+
+
