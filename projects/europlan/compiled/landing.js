@@ -21020,7 +21020,7 @@ var Components;
     }();
     e.CalcCadillacController = t
 }(Components || (Components = {})), angular.module("dealer.web.app").component("calcLul", {
-    templateUrl: "/components/calc-lul/calc-lul.html",
+    templateUrl: "components/calc-lul/calc-lul.html",
     controller: ["$element", "$scope", "apiDataService", function(e, t, n) {
         return new Components.CalcLulController(e, t, n)
     }]
