@@ -127,7 +127,7 @@ main h2 {
 }
 
 .header {
-    background: url(/landing/img/bg-top-def.jpg) 70% top/cover no-repeat rgba(55, 57, 68, .9);
+    background: url(../landing/img/bg-top-def.jpg) 70% top/cover no-repeat rgba(55, 57, 68, .9);
     padding: 70px 0 40px
 }
 
@@ -149,7 +149,7 @@ main h2 {
 }
 
 .header_flex .logo {
-    background: url(/img/logo-m.png) left top no-repeat;
+    background: url(../img/logo-m.png) left top no-repeat;
     height: 24px;
     width: 87px;
     display: block
@@ -361,7 +361,7 @@ main h2 {
 }
 
 .-pattern:after {
-    background: url(/landing/img/pattern.png);
+    background: url(../landing/img/pattern.png);
     position: absolute;
     right: 0;
     left: 0;
@@ -402,7 +402,7 @@ main h2 {
         font-size: 18px
     }
     .header {
-        background: url(/landing/img/bg-top-def.jpg) center/cover no-repeat rgba(55, 57, 68, .9);
+        background: url(../landing/img/bg-top-def.jpg) center/cover no-repeat rgba(55, 57, 68, .9);
         padding: 0 0 120px
     }
     .header_top {
@@ -424,7 +424,7 @@ main h2 {
         padding: 19px 64px!important
     }
     .header_flex .logo {
-        background: url(/img/logo.png) left top no-repeat;
+        background: url(../img/logo.png) left top no-repeat;
         height: 55px;
         width: 203px;
         display: block
@@ -2706,32 +2706,32 @@ optgroup {
 
 @font-face {
     font-family: pf_beausans_proregular;
-    src: url(/css/PF/font/pfbeausanspro-reg-webfont.eot);
-    src: url(/css/PF/font/pfbeausanspro-reg-webfont.eot?#iefix) format('embedded-opentype'), url(/css/PF/font/pfbeausanspro-reg-webfont.woff) format('woff'), url(/css/PF/font/pfbeausanspro-reg-webfont.ttf) format('truetype');
+    src: url(../css/PF/font/pfbeausanspro-reg-webfont.eot);
+    src: url(../css/PF/font/pfbeausanspro-reg-webfont.eot?#iefix) format('embedded-opentype'), url(../css/PF/font/pfbeausanspro-reg-webfont.woff) format('woff'), url(../css/PF/font/pfbeausanspro-reg-webfont.ttf) format('truetype');
     font-weight: 400;
     font-style: normal
 }
 
 @font-face {
     font-family: pf_beausans_prosemibold;
-    src: url(/css/PF/font/pfbeausanspro-sebold-webfont.eot);
-    src: url(/css/PF/font/pfbeausanspro-sebold-webfont.eot?#iefix) format('embedded-opentype'), url(/css/PF/font/pfbeausanspro-sebold-webfont.woff2) format('woff2'), url(/css/PF/font/pfbeausanspro-sebold-webfont.woff) format('woff'), url(/css/PF/font/pfbeausanspro-sebold-webfont.ttf) format('truetype');
+    src: url(../css/PF/font/pfbeausanspro-sebold-webfont.eot);
+    src: url(../css/PF/font/pfbeausanspro-sebold-webfont.eot?#iefix) format('embedded-opentype'), url(../css/PF/font/pfbeausanspro-sebold-webfont.woff2) format('woff2'), url(../css/PF/font/pfbeausanspro-sebold-webfont.woff) format('woff'), url(../css/PF/font/pfbeausanspro-sebold-webfont.ttf) format('truetype');
     font-weight: 400;
     font-style: normal
 }
 
 @font-face {
     font-family: pf_beausans_prolight;
-    src: url(/css/PF/font/pfbeausanspro-light-webfont.eot);
-    src: url(/css/PF/font/pfbeausanspro-light-webfont.eot?#iefix) format('embedded-opentype'), url(/css/PF/font/pfbeausanspro-light-webfont.woff2) format('woff2'), url(/css/PF/font/pfbeausanspro-light-webfont.woff) format('woff'), url(/css/PF/font/pfbeausanspro-light-webfont.ttf) format('truetype');
+    src: url(../css/PF/font/pfbeausanspro-light-webfont.eot);
+    src: url(../css/PF/font/pfbeausanspro-light-webfont.eot?#iefix) format('embedded-opentype'), url(../css/PF/font/pfbeausanspro-light-webfont.woff2) format('woff2'), url(../css/PF/font/pfbeausanspro-light-webfont.woff) format('woff'), url(../css/PF/font/pfbeausanspro-light-webfont.ttf) format('truetype');
     font-weight: 400;
     font-style: normal
 }
 
 @font-face {
     font-family: als_rublregular;
-    src: url(/css/PR/font/rouble-webfont.eot);
-    src: url(/css/PR/font/rouble-webfont.woff) format('woff'), url(/css/PR/font/rouble-webfont.ttf) format('truetype'), url(/css/PR/font/rouble-webfont.svg#als_rublregular) format('svg');
+    src: url(../css/PR/font/rouble-webfont.eot);
+    src: url(../css/PR/font/rouble-webfont.woff) format('woff'), url(../css/PR/font/rouble-webfont.ttf) format('truetype'), url(../css/PR/font/rouble-webfont.svg#als_rublregular) format('svg');
     font-weight: 400;
     font-style: normal
 }
@@ -2799,7 +2799,7 @@ optgroup {
     position: absolute;
     top: 10px;
     right: 10px;
-    background: url(/landing/img/pp-close.jpg);
+    background: url(../landing/img/pp-close.jpg);
     width: 30px;
     height: 30px;
     text-indent: -9999em;
@@ -2871,7 +2871,7 @@ optgroup {
     border-radius: 3px;
     max-width: 580px;
     font-size: inherit;
-    background-image: url(/landing/img/promo/pp-bg.jpg);
+    background-image: url(../landing/img/promo/pp-bg.jpg);
     background-repeat: no-repeat;
     background-position: right top
 }
@@ -2879,7 +2879,7 @@ optgroup {
 .pp-n .close-n {
     width: 40px;
     height: 40px;
-    background-image: url(/landing/img/promo/pp-close-new.png)
+    background-image: url(../landing/img/promo/pp-close-new.png)
 }
 
 .pp-promoblock__title {
@@ -3018,7 +3018,7 @@ optgroup {
     }
     .promo__pic {
         background-color: #f56920;
-        background-image: url(/landing/img/promo/promo-icon.png);
+        background-image: url(../landing/img/promo/promo-icon.png);
         border-radius: 3px 0 0 3px;
         width: 126px;
         height: 116px;
@@ -3055,7 +3055,7 @@ optgroup {
         position: absolute;
         top: 10px;
         right: 10px;
-        background-image: url(/landing/img/pp-close.jpg);
+        background-image: url(../landing/img/pp-close.jpg);
         width: 14px;
         height: 14px;
         text-indent: -9999em
@@ -4536,7 +4536,7 @@ th {
 
 .spr_icon {
     background-repeat: no-repeat;
-    background-image: url(/landing/img/sprites-icon-min.png);
+    background-image: url(../landing/img/sprites-icon-min.png);
     position: relative;
     display: inline-block;
     vertical-align: middle;
@@ -5307,7 +5307,7 @@ h2 {
 }
 
 .list_second>li:before {
-    content: url(/landing/img/bullit-m.png)
+    content: url(../landing/img/bullit-m.png)
 }
 
 .list_first>li {
@@ -5517,19 +5517,19 @@ main h2 {
 }
 
 .header {
-    background: url(/landing/img/bg-top.jpg) 70% top/cover no-repeat
+    background: url(../landing/img/bg-top.jpg) 70% top/cover no-repeat
 }
 
 .header-mits {
-    background: url(/landing/img/bg-top-mits.jpg) 70% top/cover no-repeat
+    background: url(../landing/img/bg-top-mits.jpg) 70% top/cover no-repeat
 }
 
 .header-def {
-    background: url(/landing/img/bg-top-def.jpg) 70% top/cover no-repeat
+    background: url(../landing/img/bg-top-def.jpg) 70% top/cover no-repeat
 }
 
 .header-cadil {
-    background: url(/landing/img/bg-top-cadil.jpg) 70% top/cover no-repeat
+    background: url(../landing/img/bg-top-cadil.jpg) 70% top/cover no-repeat
 }
 
 .header_top {
@@ -5550,7 +5550,7 @@ main h2 {
 }
 
 .header_flex .logo {
-    background: url(/img/logo-m.png) left top no-repeat;
+    background: url(../img/logo-m.png) left top no-repeat;
     height: 24px;
     width: 87px;
     display: block
@@ -5640,7 +5640,7 @@ main h2 {
 }
 
 .footer {
-    background: url(/landing/img/bg-footer-new.jpg) center/cover no-repeat rgba(55, 57, 68, 1);
+    background: url(../landing/img/bg-footer-new.jpg) center/cover no-repeat rgba(55, 57, 68, 1);
     padding: 40px 0
 }
 
@@ -5969,14 +5969,14 @@ main h2 {
 }
 
 .exp-list li:nth-child(1):after {
-    background: url(/landing/img/sprites-icon-min.png) -20px -85px no-repeat;
+    background: url(../landing/img/sprites-icon-min.png) -20px -85px no-repeat;
     left: -16px;
     width: 61px;
     transform: scale(.44)
 }
 
 .exp-list li:nth-child(2):after {
-    background: url(/landing/img/sprites-icon-min.png) -370px -5px no-repeat;
+    background: url(../landing/img/sprites-icon-min.png) -370px -5px no-repeat;
     width: 45px;
     left: -9px;
     transform: scale(.54)
@@ -6305,7 +6305,7 @@ main h2 {
 }
 
 .contact-block .opener:after {
-    content: url(/landing/img/opener.png);
+    content: url(../landing/img/opener.png);
     line-height: 1;
     vertical-align: middle;
     position: relative;
@@ -6537,7 +6537,7 @@ main h2 {
 
 .-pattern:after {
     content: "";
-    background: url(/landing/img/pattern.png);
+    background: url(../landing/img/pattern.png);
     position: absolute;
     right: 0;
     left: 0;
@@ -6596,13 +6596,13 @@ main h2 {
         font-size: 18px
     }
     .header {
-        background: url(/landing/img/bg-top.jpg) center/cover no-repeat
+        background: url(../landing/img/bg-top.jpg) center/cover no-repeat
     }
     .header-mits {
-        background: url(/landing/img/bg-top-mits.jpg) center/cover no-repeat
+        background: url(../landing/img/bg-top-mits.jpg) center/cover no-repeat
     }
     .header-def {
-        background: url(/landing/img/bg-top-def.jpg) center/cover no-repeat
+        background: url(../landing/img/bg-top-def.jpg) center/cover no-repeat
     }
     .header_menu.sticky {
         position: fixed;
@@ -6652,7 +6652,7 @@ main h2 {
         padding: 19px 64px!important
     }
     .header_flex .logo {
-        background: url(/img/logo.png) left top no-repeat;
+        background: url(../img/logo.png) left top no-repeat;
         height: 55px;
         width: 203px;
         display: block
@@ -6861,7 +6861,7 @@ main h2 {
         transform: translate(-50%, -50%) scale(1.3157)
     }
     .work-timelaps-list>li.c_out:before {
-        content: url(/landing/img/bullit-m.png);
+        content: url(../landing/img/bullit-m.png);
         background-color: #fff
     }
     .work-timelaps-list>li.c_out:hover {
@@ -6884,7 +6884,7 @@ main h2 {
         transition: transform .5s ease
     }
     .work-timelaps-list>li.active:after {
-        content: url(/landing/img/auto.png);
+        content: url(../landing/img/auto.png);
         position: absolute;
         bottom: 125px;
         right: 50%;
@@ -6900,7 +6900,7 @@ main h2 {
         width: 100%
     }
     .work-timelaps-list>li.active span:after {
-        content: url(/landing/img/corn.png);
+        content: url(../landing/img/corn.png);
         position: absolute;
         left: 50%;
         bottom: -27px;
@@ -7105,7 +7105,7 @@ main h2 {
     .tender-block {
         margin-bottom: 40px;
         padding-left: 50%;
-        background: url(/landing/img/kasko.png) 10% center no-repeat;
+        background: url(../landing/img/kasko.png) 10% center no-repeat;
         background-size: contain
     }
     .tender-block .list {
@@ -7202,7 +7202,7 @@ main h2 {
 }
 
 .leasing_question-list>li:after {
-    content: url(/landing/img/sv.png);
+    content: url(../landing/img/sv.png);
     position: absolute;
     top: 3px;
     right: 18px;
@@ -7406,7 +7406,7 @@ main h2 {
 .map-item-data .data-3:before,
 .map-item-data .data-4:before {
     content: "";
-    background: url(/landing/img/sprites-icon-min.png) no-repeat;
+    background: url(../landing/img/sprites-icon-min.png) no-repeat;
     position: absolute;
     left: -35px;
     top: 0;
@@ -7519,14 +7519,14 @@ main h2 {
     }
     .container_action-many .owl-prev,
     .videoslider .owl-prev {
-        background: url(/img/arr-left-xl-g.png)!important;
+        background: url(../img/arr-left-xl-g.png)!important;
         width: 26px!important;
         height: 64px!important;
         left: -50px!important
     }
     .container_action-many .owl-next,
     .videoslider .owl-next {
-        background: url(/img/arr-right-xl-g.png)!important;
+        background: url(../img/arr-right-xl-g.png)!important;
         width: 26px!important;
         height: 64px!important;
         right: -50px!important
@@ -7759,15 +7759,15 @@ main h2 {
 }
 
 .message-client .message-item-1 {
-    background-image: url(/landing/img/mess-1.png)
+    background-image: url(../landing/img/mess-1.png)
 }
 
 .message-client .message-item-2 {
-    background-image: url(/landing/img/mess-2.png)
+    background-image: url(../landing/img/mess-2.png)
 }
 
 .message-client .message-item-3 {
-    background-image: url(/landing/img/mess-3.png)
+    background-image: url(../landing/img/mess-3.png)
 }
 
 .message-client .message-item-1 h3,
@@ -7817,15 +7817,15 @@ main h2 {
         margin-bottom: 20px
     }
     .message-client .message-item-1 {
-        background-image: url(/landing/img/mess-1i.png);
+        background-image: url(../landing/img/mess-1i.png);
         background-color: #2ca4e1
     }
     .message-client .message-item-2 {
-        background-image: url(/landing/img/mess-2i.png);
+        background-image: url(../landing/img/mess-2i.png);
         background-color: #25d366
     }
     .message-client .message-item-3 {
-        background-image: url(/landing/img/mess-3i.png);
+        background-image: url(../landing/img/mess-3i.png);
         background-color: #7d51a0
     }
     .message-client li p {
@@ -7856,7 +7856,7 @@ main h2 {
 }
 
 .list_first>li:before {
-    content: url(/landing/img/bullit_w.png)!important
+    content: url(../landing/img/bullit_w.png)!important
 }
 
 .fura p,
@@ -7870,7 +7870,7 @@ main h2 {
         font-size: 18px
     }
     .list_first>li:before {
-        content: url(/landing/img/bullit-m-w.png)!important
+        content: url(../landing/img/bullit-m-w.png)!important
     }
 }
 
@@ -8814,7 +8814,7 @@ calc-lul .ds_none {
 
 .list-step li:before {
     content: "";
-    background: url(/landing/img/c9.png) 100% 0 no-repeat;
+    background: url(../landing/img/c9.png) 100% 0 no-repeat;
     background-size: contain;
     background-origin: content-box;
     position: absolute;
@@ -8855,7 +8855,7 @@ calc-lul .ds_none {
 }
 
 .title-tire {
-    background: url(/landing/img/tires.png) 182px 0 no-repeat;
+    background: url(../landing/img/tires.png) 182px 0 no-repeat;
     padding-top: 101px;
     margin-bottom: 30px
 }
@@ -8907,7 +8907,7 @@ calc-lul .ds_none {
     }
     .tire .list-step li:before {
         background: 0 0;
-        content: url(/landing/img/bullit-m.png);
+        content: url(../landing/img/bullit-m.png);
         left: 0;
         top: 1px;
         right: 0;

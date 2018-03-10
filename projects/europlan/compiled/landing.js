@@ -3967,7 +3967,7 @@ function(t, e, i) {
             };
         return e.wrap('<div class="owl-video-wrapper"' + r + "></div>"), this._core.settings.lazyLoad && (h = "data-src", l = "owl-lazy"), a.length ? (d(a.attr(h)), a.remove(), !1) : void("youtube" === i.type ? (o = "http://img.youtube.com/vi/" + i.id + "/hqdefault.jpg", d(o)) : "vimeo" === i.type && t.ajax({
             type: "GET",
-            url: "http://vimeo.com/api/v2/video/" + i.id + ".json",
+            url: "http://vimeo.comapi/v2/video/" + i.id + ".json",
             jsonp: "callback",
             dataType: "jsonp",
             success: function(t) {
@@ -5409,7 +5409,7 @@ Function.prototype.bind || (Function.prototype.bind = function(t) {
         if (e instanceof Me) return e;
         var t;
         if (w(e) && (e = Kr(e), t = !0), !(this instanceof Me)) {
-            if (t && "<" != e.charAt(0)) throw yi("nosel", "Looking up elements via selectors is not supported by jqLite! See: http://docs.angularjs.org/api/angular.element");
+            if (t && "<" != e.charAt(0)) throw yi("nosel", "Looking up elements via selectors is not supported by jqLite! See: http://docs.angularjs.orgapi/angular.element");
             return new Me(e)
         }
         t ? Fe(this, ke(e)) : Fe(this, e)
@@ -8503,7 +8503,7 @@ Function.prototype.bind || (Function.prototype.bind = function(t) {
         this.enabled = function(t) {
             return arguments.length && (e = !!t), e
         }, this.$get = ["$parse", "$sceDelegate", function(t, n) {
-            if (e && _r < 8) throw xo("iequirks", "Strict Contextual Escaping does not support Internet Explorer version < 11 in quirks mode.  You can fix this by adding the text <!doctype html> to the top of your HTML document.  See http://docs.angularjs.org/api/ng.$sce for more information.");
+            if (e && _r < 8) throw xo("iequirks", "Strict Contextual Escaping does not support Internet Explorer version < 11 in quirks mode.  You can fix this by adding the text <!doctype html> to the top of your HTML document.  See http://docs.angularjs.orgapi/ng.$sce for more information.");
             var i = ve(Co);
             i.isEnabled = function() {
                 return e
@@ -10139,7 +10139,7 @@ Function.prototype.bind || (Function.prototype.bind = function(t) {
         },
         oo = Gr.$interpolateMinErr = t("$interpolate");
     oo.throwNoconcat = function(e) {
-        throw oo("noconcat", "Error while interpolating: {0}\nStrict Contextual Escaping disallows interpolations that concatenate multiple expressions when a trusted value is required.  See http://docs.angularjs.org/api/ng.$sce", e)
+        throw oo("noconcat", "Error while interpolating: {0}\nStrict Contextual Escaping disallows interpolations that concatenate multiple expressions when a trusted value is required.  See http://docs.angularjs.orgapi/ng.$sce", e)
     }, oo.interr = function(e, t) {
         return oo("interr", "Can't interpolate: {0}\n{1}", e, t.toString())
     };
@@ -17390,125 +17390,125 @@ var Consts;
     var t = function() {
         function e() {}
         return e.apps = {
-            faq: "/api/application/faq",
-            leasingShort: "/api/application/leasingshort",
-            catalogApp: "/api/application/catalogApp",
-            lfl: "/api/application/lfl",
-            fuelCard: "/api/application/fuelCard",
-            feedbackInvestor: "/api/application/feedbackInvestor",
-            rba: "/api/application/rba"
+            faq: "api/application/faq",
+            leasingShort: "api/application/leasingshort",
+            catalogApp: "api/application/catalogApp",
+            lfl: "api/application/lfl",
+            fuelCard: "api/application/fuelCard",
+            feedbackInvestor: "api/application/feedbackInvestor",
+            rba: "api/application/rba"
         }, e.api = {
             data: {
-                allBrands: "/api/data/allbrands",
-                allModels: "/api/data/allmodels",
+                allBrands: "api/data/allbrands",
+                allModels: "api/data/allmodels",
                 brands: function(e) {
-                    return "/api/data/brands/" + e
+                    return "api/data/brands/" + e
                 },
                 models: function(e, t) {
-                    return "/api/data/models/" + e + "/" + t
+                    return "api/data/models/" + e + "/" + t
                 },
-                lulbrands: "/api/data/brands",
-                lulmodels: "/api/data/models",
-                lflbrands: "/api/data/lflbrands",
-                lflmodels: "/api/data/lflmodels",
-                regions: "/api/data/regions",
-                cities: "/api/data/cities",
-                regionofcity: "/api/data/regionofcity",
-                lflregioncodes: "/api/data/lflregioncodes"
+                lulbrands: "api/data/brands",
+                lulmodels: "api/data/models",
+                lflbrands: "api/data/lflbrands",
+                lflmodels: "api/data/lflmodels",
+                regions: "api/data/regions",
+                cities: "api/data/cities",
+                regionofcity: "api/data/regionofcity",
+                lflregioncodes: "api/data/lflregioncodes"
             },
             sms: {
-                send: "/api/sms/send",
-                check: "/api/sms/check"
+                send: "api/sms/send",
+                check: "api/sms/check"
             },
             validation: {
-                phoneNumber: "/api/validation/phone"
+                phoneNumber: "api/validation/phone"
             },
             vehicleTaxonomy: {
                 brands: function(e) {
-                    return "/api/vehicle-taxonomy/brands?vehicleTypeId=" + e
+                    return "api/vehicle-taxonomy/brands?vehicleTypeId=" + e
                 },
                 brandsBySuperTypeId: function(e) {
-                    return "/api/vehicle-taxonomy/supertypebrands/" + e + "?includeNoImages=true"
+                    return "api/vehicle-taxonomy/supertypebrands/" + e + "?includeNoImages=true"
                 },
                 models: function(e, t) {
-                    return "/api/vehicle-taxonomy/brand/" + e + "/models?vehicleTypeId=" + t
+                    return "api/vehicle-taxonomy/brand/" + e + "/models?vehicleTypeId=" + t
                 },
                 modelsBySuperTypeId: function(e, t) {
-                    return "/api/vehicle-taxonomy/supertypebrands/" + e + "/models?superTypeId=" + t + "&includeNoImages=true"
+                    return "api/vehicle-taxonomy/supertypebrands/" + e + "/models?superTypeId=" + t + "&includeNoImages=true"
                 },
                 modifications: function(e, t) {
-                    return "/api/vehicle-taxonomy/model/" + e + "/modifications?vehicleTypeId=" + t
+                    return "api/vehicle-taxonomy/model/" + e + "/modifications?vehicleTypeId=" + t
                 },
                 modificationsBySuperTypeId: function(e, t) {
-                    return "/api/vehicle-taxonomy/model/" + e + "/modifications-by-super-type?vehicleSuperTypeId=" + t
+                    return "api/vehicle-taxonomy/model/" + e + "/modifications-by-super-type?vehicleSuperTypeId=" + t
                 },
                 modification: function(e) {
-                    return "/api/vehicle-taxonomy/modification/" + e
+                    return "api/vehicle-taxonomy/modification/" + e
                 },
                 optionsByModificationId: function(e) {
-                    return "/api/vehicle-taxonomy/options/" + e
+                    return "api/vehicle-taxonomy/options/" + e
                 },
-                generations: "/api/vehicle-taxonomy/generations",
-                restyling: "/api/vehicle-taxonomy/restyling",
-                superTypes: "/api/vehicle-taxonomy/supertypes"
+                generations: "api/vehicle-taxonomy/generations",
+                restyling: "api/vehicle-taxonomy/restyling",
+                superTypes: "api/vehicle-taxonomy/supertypes"
             },
             auction: {
                 bids: function(e) {
-                    return "/api/auction/bids/" + e
+                    return "api/auction/bids/" + e
                 },
-                bid: "/api/auction/bid",
+                bid: "api/auction/bid",
                 lotStatus: function(e, t) {
-                    return "/api/auction/lot-status/" + e + "?status=" + t
+                    return "api/auction/lot-status/" + e + "?status=" + t
                 },
                 lotDuration: function(e, t) {
-                    return "/api/auction/lot-duration/" + e + "?duration=" + t
+                    return "api/auction/lot-duration/" + e + "?duration=" + t
                 },
                 lotListAdmin: function(e) {
-                    return "/api/auction/lot-list-admin?page=" + e.page + "&pageSize=" + e.pageSize + "&city=" + e.city + "&status=" + e.status + "&suzId=" + e.suzId + "&manager=" + e.manager + "&brand=" + e.brand + "&model=" + e.model + "&year=" + e.year + "&lotId=" + e.lotId + "&sortBy=" + e.sortBy
+                    return "api/auction/lot-list-admin?page=" + e.page + "&pageSize=" + e.pageSize + "&city=" + e.city + "&status=" + e.status + "&suzId=" + e.suzId + "&manager=" + e.manager + "&brand=" + e.brand + "&model=" + e.model + "&year=" + e.year + "&lotId=" + e.lotId + "&sortBy=" + e.sortBy
                 },
                 lotList: function(e) {
-                    return "/api/auction/lot-list?page=" + e.page + "&pageSize=" + e.pageSize + "&city=" + e.city + "&status=" + e.status + "&suzId=" + e.suzId + "&manager=" + e.manager + "&brand=" + e.brand + "&model=" + e.model + "&year=" + e.year + "&lotId=" + e.lotId + "&sortBy=" + e.sortBy
+                    return "api/auction/lot-list?page=" + e.page + "&pageSize=" + e.pageSize + "&city=" + e.city + "&status=" + e.status + "&suzId=" + e.suzId + "&manager=" + e.manager + "&brand=" + e.brand + "&model=" + e.model + "&year=" + e.year + "&lotId=" + e.lotId + "&sortBy=" + e.sortBy
                 },
                 lot: function(e) {
-                    return "/api/auction/lot/" + e
+                    return "api/auction/lot/" + e
                 },
                 modification: function(e) {
-                    return "/api/auction/modification/" + e
+                    return "api/auction/modification/" + e
                 },
-                colors: "/api/auction/colors",
-                save: "/api/auction/",
-                managers: "/api/auction/managers",
-                subscribe: "/api/auction/subscribe",
+                colors: "api/auction/colors",
+                save: "api/auction/",
+                managers: "api/auction/managers",
+                subscribe: "api/auction/subscribe",
                 getLotStatus: function(e) {
-                    return "/api/auction/lot-status/" + e
+                    return "api/auction/lot-status/" + e
                 },
                 getPhotos: function(e) {
-                    return "/api/auction/photos/" + e
+                    return "api/auction/photos/" + e
                 },
                 modelsByBrandId: function(e, t) {
-                    return "/api/auction/models/" + e + (t ? "?forAdmin=true" : "")
+                    return "api/auction/models/" + e + (t ? "?forAdmin=true" : "")
                 }
             },
             advert: {
                 advert: function(e) {
-                    return "/api/auto/advert/" + e
+                    return "api/auto/advert/" + e
                 },
                 advertListAdmin: function(e) {
-                    return "/api/auto/advert-list-admin?page=" + e.page + "&pageSize=" + e.pageSize + "&cityId=" + e.cityId + "&year=" + e.year + "&moderationState=" + e.moderationState + "&brandId=" + e.brandId + "&modelId=" + e.modelId + "&sortBy=" + e.sortBy
+                    return "api/auto/advert-list-admin?page=" + e.page + "&pageSize=" + e.pageSize + "&cityId=" + e.cityId + "&year=" + e.year + "&moderationState=" + e.moderationState + "&brandId=" + e.brandId + "&modelId=" + e.modelId + "&sortBy=" + e.sortBy
                 },
                 changeAdvertActiveStatus: function(e, t) {
-                    return "/api/auto/change-active-status?advertId=" + e + "&isActive=" + t
+                    return "api/auto/change-active-status?advertId=" + e + "&isActive=" + t
                 },
                 advertInfo: function(e) {
-                    return "/api/auto/advert-info/" + e
+                    return "api/auto/advert-info/" + e
                 },
-                save: "/api/auto/save/"
+                save: "api/auto/save/"
             },
             account: {
-                inviteAuctionPerson: "/api/account/invite-auction-person",
-                inviteAuctionOrg: "/api/account/invite-auction-org",
-                registerAuctionPerson: "/api/account/register-auction-person",
-                registerAuctionOrg: "/api/account/register-auction-org"
+                inviteAuctionPerson: "api/account/invite-auction-person",
+                inviteAuctionOrg: "api/account/invite-auction-org",
+                registerAuctionPerson: "api/account/register-auction-person",
+                registerAuctionOrg: "api/account/register-auction-org"
             }
         }, e.storagedFile = {
             upload: function(e) {
@@ -17516,7 +17516,7 @@ var Consts;
             }
         }, e.advertImage = {
             upload: function() {
-                return "/api/auto/upload-advert-image"
+                return "api/auto/upload-advert-image"
             }
         }, e.lfl = {
             calc: "/personal-leasing/calc"
@@ -17534,7 +17534,7 @@ var Consts;
             survey: "/survey"
         }, e.auto = {
             minPirce: "/auto/models/minprice",
-            contactsRequest: "/api/application/contactsrequest",
+            contactsRequest: "api/application/contactsrequest",
             similar: "/auto/similar",
             search: function(e, t, n) {
                 void 0 === t && (t = 1), void 0 === n && (n = !1);
@@ -17546,14 +17546,14 @@ var Consts;
             }
         }, e.search = {
             filterRefs: function(e) {
-                return "/api/search/filterrefs/" + e
+                return "api/search/filterrefs/" + e
             },
             models: function(e, t) {
-                return "/api/search/models/" + e + "/" + t
+                return "api/search/models/" + e + "/" + t
             },
-            post: "/api/search/post",
+            post: "api/search/post",
             results: function(e, t) {
-                return void 0 === t && (t = 1), "/api/search/results/" + e + "/" + t
+                return void 0 === t && (t = 1), "api/search/results/" + e + "/" + t
             }
         }, e
     }();
@@ -18582,15 +18582,15 @@ var Services;
             this.$http = e, this.$q = t
         }
         return e.$inject = ["$http", "$q"], e.prototype.insurance = function(e) {
-            return this.$http.post("/api/application/insurance", e).success(function(e) {
+            return this.$http.post("api/application/insurance", e).success(function(e) {
                 analytics.track("/insure-form-sent")
             })
         }, e.prototype.leasingShort = function(e) {
-            return this.$http.post("/api/application/leasingShort", e).success(function(t) {
+            return this.$http.post("api/application/leasingShort", e).success(function(t) {
                 analytics.trackLeasing(e.phone, e.res.appNumber, e.res.sourceTrackString, e.res.lastSource)
             })
         }, e.prototype.lfl = function(e) {
-            return this.$http.post("/api/application/lfl", e).success(function(e) {
+            return this.$http.post("api/application/lfl", e).success(function(e) {
                 analytics.track("/lfl-form-send")
             })
         }, e
@@ -18776,7 +18776,7 @@ var Services;
         }, e.prototype.checkPromocode = function(e, t) {
             var n = this,
                 i = this.$q.defer();
-            return this.$http.post("/api/service/validatepromocode", {
+            return this.$http.post("api/service/validatepromocode", {
                 code: t
             }).success(function(t) {
                 if ("error" == t.result) i.reject({
@@ -23074,7 +23074,7 @@ var Controllers;
             this.updateModels(e)
         }, e.prototype.updateModels = function(e) {
             var t = this;
-            e && this.$http.get("/api/data/models/0/" + e).success(function(e) {
+            e && this.$http.get("api/data/models/0/" + e).success(function(e) {
                 return t.vm.models = e
             })
         }, e.prototype.load = function() {
@@ -24828,7 +24828,7 @@ var __extends = this && this.__extends || function(e, t) {
                             return "https://www.googleapis.com/youtube/v3/videos?id=" + e.id + "&key=" + e.apikey + "&fields=items(snippet(title,thumbnails))&part=snippet"
                         },
                         vimeo: function(e) {
-                            return "https://vimeo.com/api/oembed.json?url=https%3A//vimeo.com/" + e.id
+                            return "https://vimeo.comapi/oembed.json?url=https%3A//vimeo.com/" + e.id
                         },
                         vine: function(e) {
                             return "https://vine.co/oembed.json?url=https%3A%2F%2Fvine.co%2Fv%2F" + e.id
