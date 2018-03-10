@@ -18027,7 +18027,7 @@ var Services;
                                 position: n,
                                 map: s,
                                 title: e.name,
-                                icon: "/img/metka.png"
+                                icon: "img/metka.png"
                             });
                         (e.name || e.city) && e.mapPopup && google.maps.event.addListener(i, "click", function() {
                             l.setContent("<h3>" + (e.name || e.city) + '</h3><div class="infoWindowContent">' + e.mapPopup + "</div>"), l.open(s, i), t.selectedOffice = e, t.$apply()
@@ -18583,15 +18583,15 @@ var Services;
         }
         return e.$inject = ["$http", "$q"], e.prototype.insurance = function(e) {
             return this.$http.post("api/application/insurance", e).success(function(e) {
-                analytics.track("/insure-form-sent")
+                // analytics.track("/insure-form-sent")
             })
         }, e.prototype.leasingShort = function(e) {
             return this.$http.post("api/application/leasingShort", e).success(function(t) {
-                analytics.trackLeasing(e.phone, e.res.appNumber, e.res.sourceTrackString, e.res.lastSource)
+                // analytics.trackLeasing(e.phone, e.res.appNumber, e.res.sourceTrackString, e.res.lastSource)
             })
         }, e.prototype.lfl = function(e) {
             return this.$http.post("api/application/lfl", e).success(function(e) {
-                analytics.track("/lfl-form-send")
+                // analytics.track("/lfl-form-send")
             })
         }, e
     }();
@@ -19913,7 +19913,7 @@ var __extends = this && this.__extends || function(e, t) {
         function t(t, n, i, r, o, a) {
             var s = this;
             e.call(this, t, new Services.AppBaseSubmitter(t, Consts.Urls.apps.leasingShort, function(e) {
-                return analytics.trackLeasing(e.model.phone, e.serverResult.appNumber)
+                // return analytics.trackLeasing(e.model.phone, e.serverResult.appNumber)
             }, Consts.AnalyticTracks.cpa.decline), Models.Applications.CpaRegionModelAppModel), this.$element = t, this.smsService = r, this.apiDataService = o, this.scrollService = a, this.data = {
                 activeTab: 1,
                 disclaimerText: Consts.DisclaimerText.text,
@@ -20174,9 +20174,9 @@ var Services;
             this.$element = e, this.submitUrl = t, this.onSuccessTrack = n, this.onDeclineTrack = i, this._onSuccess = new Models.LiteEvent, this._onDecline = new Models.LiteEvent, this._onError = new Models.LiteEvent;
             var r = e.injector();
             this.$http = r.get("$http"), this.$q = r.get("$q"), this.$rootScope = r.get("$rootScope"), null != n && ("string" == typeof n ? this._onSuccess.on(function(e) {
-                e.serverResult && e.serverResult.pushRequired === !1 || (analytics.track(n), analytics.dataLayer(n))
+                // e.serverResult && e.serverResult.pushRequired === !1 || (analytics.track(n), analytics.dataLayer(n))
             }) : "function" == typeof n && this._onSuccess.on(n)), null != i && ("string" == typeof i ? this._onDecline.on(function(e) {
-                e.serverResult && e.serverResult.pushRequired === !1 || (analytics.track(i), analytics.dataLayer(i))
+                // e.serverResult && e.serverResult.pushRequired === !1 || (analytics.track(i), analytics.dataLayer(i))
             }) : "function" == typeof n && this._onDecline.on(i))
         }
         return e.prototype.onSuccess = function() {
@@ -24409,7 +24409,7 @@ var __extends = this && this.__extends || function(e, t) {
     var t = function(e) {
         function t(t) {
             e.call(this, t, Consts.Urls.apps.leasingShort, function(e) {
-                e.serverResult && e.serverResult.pushRequired === !1 || analytics.trackLeasing(e.model.phone, e.serverResult.appNumber, e.serverResult.sourceTrackString, e.serverResult.lastSource)
+                // e.serverResult && e.serverResult.pushRequired === !1 || analytics.trackLeasing(e.model.phone, e.serverResult.appNumber, e.serverResult.sourceTrackString, e.serverResult.lastSource)
             }, Consts.AnalyticTracks.leasingForm.decline)
         }
         return __extends(t, e), t.$inject = ["$element"], t
@@ -24454,9 +24454,9 @@ var __extends = this && this.__extends || function(e, t) {
         return __extends(t, e), t.$inject = ["$element"], t.prototype.submit = function(t) {
             return this._isLegal = t.isLegal, this._isLeasing = t.isLeasing, e.prototype.submit.call(this, t)
         }, t.prototype.trackSubmit = function(e) {
-            this._isLeasing && (e.serverResult && e.serverResult.pushRequired === !1 || (this._isLegal ? analytics.trackLeasing(e.model.phone, e.serverResult.appNumber, e.serverResult.sourceTrackString, e.serverResult.lastSource) : analytics.dataLayer(Consts.AnalyticTracks.lflLongForm.send)))
+            // this._isLeasing && (e.serverResult && e.serverResult.pushRequired === !1 || (this._isLegal ? analytics.trackLeasing(e.model.phone, e.serverResult.appNumber, e.serverResult.sourceTrackString, e.serverResult.lastSource) : analytics.dataLayer(Consts.AnalyticTracks.lflLongForm.send)))
         }, t.prototype.trackDecline = function() {
-            this._isLeasing && (this._isLegal ? analytics.dataLayer(Consts.AnalyticTracks.leasingLongForm.decline) : analytics.dataLayer(Consts.AnalyticTracks.lflLongForm.decline))
+            // this._isLeasing && (this._isLegal ? analytics.dataLayer(Consts.AnalyticTracks.leasingLongForm.decline) : analytics.dataLayer(Consts.AnalyticTracks.lflLongForm.decline))
         }, t
     }(e.AppBaseSubmitter);
     e.LongAppSubmitter = t
@@ -24473,7 +24473,7 @@ var __extends = this && this.__extends || function(e, t) {
     var t = function(e) {
         function t(t) {
             e.call(this, t, Consts.Urls.apps.rba, function(e) {
-                e.serverResult && e.serverResult.pushRequired === !1 || analytics.trackLeasing(e.model.phone, e.serverResult.appNumber, e.serverResult.sourceTrackString, e.serverResult.lastSource)
+                // e.serverResult && e.serverResult.pushRequired === !1 || analytics.trackLeasing(e.model.phone, e.serverResult.appNumber, e.serverResult.sourceTrackString, e.serverResult.lastSource)
             }, Consts.AnalyticTracks.leasingForm.decline)
         }
         return __extends(t, e), t.$inject = ["$element"], t
