@@ -126,10 +126,10 @@ main h2 {
     z-index: 1
 }
 
-/*.header {
-    background: url(../landing/img/bg-top-def.jpg) 70% top/cover no-repeat rgba(55, 57, 68, .9);
+.header {
+    /*background: url(../landing/img/bg-top-def.jpg) 70% top/cover no-repeat rgba(55, 57, 68, .9);*/
     padding: 70px 0 40px
-}*/
+}
 
 .header_top {
     background-color: rgba(59, 58, 66, 1);
@@ -401,10 +401,10 @@ main h2 {
         width: auto;
         font-size: 18px
     }
-    /*.header {
-        background: url(../landing/img/bg-top-def.jpg) center/cover no-repeat rgba(55, 57, 68, .9);
+    .header {
+        /*background: url(../landing/img/bg-top-def.jpg) center/cover no-repeat rgba(55, 57, 68, .9);*/
         padding: 0 0 120px
-    }*/
+    }
     .header_top {
         background-color: transparent;
         padding: 50px 0;
