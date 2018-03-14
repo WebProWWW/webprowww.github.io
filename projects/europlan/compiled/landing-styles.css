@@ -126,10 +126,10 @@ main h2 {
     z-index: 1
 }
 
-.header {
+/*.header {
     background: url(../landing/img/bg-top-def.jpg) 70% top/cover no-repeat rgba(55, 57, 68, .9);
     padding: 70px 0 40px
-}
+}*/
 
 .header_top {
     background-color: rgba(59, 58, 66, 1);
@@ -360,7 +360,7 @@ main h2 {
     clear: both
 }
 
-.-pattern:after {
+/*.-pattern:after {
     background: url(../landing/img/pattern.png);
     position: absolute;
     right: 0;
@@ -368,7 +368,7 @@ main h2 {
     bottom: 0;
     top: 0;
     z-index: 0
-}
+}*/
 
 #q1,
 #q3 {
@@ -401,10 +401,10 @@ main h2 {
         width: auto;
         font-size: 18px
     }
-    .header {
+    /*.header {
         background: url(../landing/img/bg-top-def.jpg) center/cover no-repeat rgba(55, 57, 68, .9);
         padding: 0 0 120px
-    }
+    }*/
     .header_top {
         background-color: transparent;
         padding: 50px 0;
@@ -5516,9 +5516,9 @@ main h2 {
     color: #fff
 }
 
-.header {
+/*.header {
     background: url(../landing/img/bg-top.jpg) 70% top/cover no-repeat
-}
+}*/
 
 .header-mits {
     background: url(../landing/img/bg-top-mits.jpg) 70% top/cover no-repeat
@@ -6535,7 +6535,7 @@ main h2 {
     display: table
 }
 
-.-pattern:after {
+/*.-pattern:after {
     content: "";
     background: url(../landing/img/pattern.png);
     position: absolute;
@@ -6544,7 +6544,7 @@ main h2 {
     bottom: 0;
     top: 0;
     z-index: 0
-}
+}*/
 
 #q1,
 #q2,
@@ -6595,9 +6595,9 @@ main h2 {
         width: auto;
         font-size: 18px
     }
-    .header {
+    /*.header {
         background: url(../landing/img/bg-top.jpg) center/cover no-repeat
-    }
+    }*/
     .header-mits {
         background: url(../landing/img/bg-top-mits.jpg) center/cover no-repeat
     }
