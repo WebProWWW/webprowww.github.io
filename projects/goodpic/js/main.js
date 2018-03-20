@@ -4,7 +4,14 @@
  */
 
 (function() {
-  var $collapseNav, $headerBlock, initBackgroundSlider;
+  var $collapseNav, $headerBlock, initBackgroundSlider, vegasOnWalk;
+
+  vegasOnWalk = function(index, $block) {
+    var $content;
+    $content = $block.find('.js-slide-content');
+    $content.removeClass('show').addClass('d-none');
+    return $content.eq(index).removeClass('d-none').addClass('show');
+  };
 
   initBackgroundSlider = function($block, slides) {
     return $block.vegas({
@@ -13,10 +20,14 @@
       color: '#000000',
       transition: 'zoomOut',
       delay: 5000,
-      slides: slides
+      slides: slides,
+      walk: function(index, slideSettings) {
+        return vegasOnWalk(index, $block);
+      }
     });
   };
 
+  // console.log "Slide index #{index} image #{slideSettings.src}"
   $('.js-bgslider').each(function(i, block) {
     var $block, image, slides, slidesArr, slidesStr;
     $block = $(block);
