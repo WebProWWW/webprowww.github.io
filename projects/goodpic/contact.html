@@ -6,18 +6,13 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/vegas/vegas.min.css">
-  <link rel="stylesheet" href="css/main.css?v=001">
+  <link rel="stylesheet" type="text/css" href="assets/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/main.css?v=003">
   <title>GOODPIC</title>
 </head>
-<!--
-  класс "page-light" меняет стиль хедера и футера под светлых страниц
-  если убрать класс "page-light" стиль хедера и футера изменится под темную страницу
-  класс надо добавлять к тегу body (под этим коментарием)
--->
-
-<body class="">
-
-<div class="wrapper d-flex flex-column">
+<body>
+<link rel="stylesheet" type="text/css" href="css/inner-dark.css">
+<div class="wrapper">
 
 <header class="header fixed-top js-header">
   <div class="container-fluid">
@@ -103,20 +98,20 @@
           <div class="col-12 col-md-6 col-lg-12">
             <h3 class="title text-white">СВЯЖИТЕСЬ С НАМИ УДОБНЫМ ВАМ СПОСОБОМ</h3>
             <p class="text text-white d-flex align-items-center">
-              <img class="icon m-0 mr-2" src="img/icon-map.svg">
-              <span>Россия&nbsp;&nbsp;|&nbsp;&nbsp;Уфа&nbsp;&nbsp;|&nbsp;&nbsp;пр. Октября 70, офис 17</span>
+              <img class="contact-icon m-0 mr-2" src="img/icon-map.svg">
+              <span class="arrow-tr">Россия&nbsp;&nbsp;|&nbsp;&nbsp;Уфа&nbsp;&nbsp;|&nbsp;&nbsp;пр. Октября 70, офис 17</span>
             </p>
             <p class="text text-white d-flex align-items-center">
-              <img class="icon m-0 mr-2" src="img/icon-phone.svg">
-              <span>+7 (919) 141 1441&nbsp;&nbsp;|&nbsp;&nbsp;8 (3472) 95 95 95</span>
+              <img class="contact-icon m-0 mr-2" src="img/icon-phone.svg">
+              <span class="arrow-tr">+7 (919) 141 1441&nbsp;&nbsp;|&nbsp;&nbsp;8 (3472) 95 95 95</span>
             </p>
             <p class="text text-white d-flex align-items-center">
-              <img class="icon m-0 mr-2" src="img/icon-mail.svg">
-              <span>infa@goodpic.ru&nbsp;&nbsp;|&nbsp;&nbsp;infa@goodpic.org</span>
+              <img class="contact-icon m-0 mr-2" src="img/icon-mail.svg">
+              <span class="arrow-tr">infa@goodpic.ru&nbsp;&nbsp;|&nbsp;&nbsp;infa@goodpic.org</span>
             </p>
             <p class="text text-white d-flex align-items-center">
-              <img class="icon m-0 mr-2" src="img/icon-inst.svg">
-              <span>goodpict</span>
+              <img class="contact-icon m-0 mr-2" src="img/icon-inst.svg">
+              <span class="arrow-tr">goodpict</span>
             </p>
           </div><!--/.col-->
         </div><!--/.row-->
@@ -131,7 +126,7 @@
 
 <!-- CONTENT END -->
 
-<footer class="footer">
+<footer class="footer fixed-bottom">
   <div class="container-fluid">
 
     <div class="row">
@@ -140,25 +135,34 @@
       </div><!--/.col-->
     </div><!--/.row-->
 
-    <div class="row justify-content-between align-items-center">
-      <div class="col-auto">
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="align-self-start">
         <p class="footer-copy">ALL RIGHTS RESERVED  © GOODPIC ® 2017&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;RUSSIA&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;UFA</p>
       </div><!--/.col-->
-      <div class="d-lg-none d-xl-none col-auto">
-        <div class="icon-row">
-          <a class="icon-ln" href="">
-            <img class="icon" src="img/icon-phone.svg">
-            <img class="icon black" src="img/icon-black-phone.svg">
-          </a>
-          <a class="icon-ln" href="">
-            <img class="icon" src="img/icon-inst.svg">
-            <img class="icon black" src="img/icon-black-inst.svg">
-          </a>
-          <a class="icon-ln" href="">
-            <img class="icon" src="img/icon-map.svg">
-            <img class="icon black" src="img/icon-black-map.svg">
-          </a>
-        </div><!--/.icon-row-->
+      <div class="d-lg-none d-xl-none">
+        <div class="d-flex align-items-center">
+          <div>
+            <div class="icon-row">
+              <a class="icon-ln" href="">
+                <img class="icon" src="img/icon-phone.svg">
+                <img class="icon black" src="img/icon-black-phone.svg">
+              </a>
+              <a class="icon-ln" href="">
+                <img class="icon" src="img/icon-inst.svg">
+                <img class="icon black" src="img/icon-black-inst.svg">
+              </a>
+              <a class="icon-ln" href="">
+                <img class="icon" src="img/icon-map.svg">
+                <img class="icon black" src="img/icon-black-map.svg">
+              </a>
+            </div><!--/.icon-row-->
+          </div><!--/.col-->
+          <div class="ml-3">
+            <a class="icon-ln js-prevent" href="">
+              <img class="icon icon-contact" src="img/icon-contact.svg">
+            </a>
+          </div><!--/.col-->
+        </div><!--/.row-->
       </div><!--/.col-->
     </div><!--/.row-->
 
@@ -172,6 +176,9 @@
     </div><!--/.row-->
 
   </div><!--/.container-->
+
+  <img class="scroll-btn ttop js-scroll" data="top" src="img/s-arr-tt.svg">
+  <img class="scroll-btn tbot js-scroll" data="bot" src="img/s-arr-tb.svg">
 </footer>
 
 </div><!--/.wrapper-->
@@ -182,7 +189,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="assets/vegas/vegas.min.js?v=240"></script>
-<script src="js/main.js?v=002"></script>
+<script src="assets/fancybox/jquery.fancybox.min.js"></script>
+<script src="js/main.js?v=003"></script>
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
     </script>
 

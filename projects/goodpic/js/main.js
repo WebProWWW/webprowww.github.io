@@ -4,13 +4,17 @@
  */
 
 (function() {
-  var $collapseNav, $headerBlock, initBackgroundSlider, vegasOnWalk;
+  var $collapseNav, $headerBlock, initBackgroundSlider, vegasOnWalk, windowScrollTo;
+
+  $('.js-prevent').on('click', function(e) {
+    return e.preventDefault();
+  });
 
   vegasOnWalk = function(index, $block) {
     var $content;
     $content = $block.find('.js-slide-content');
-    $content.removeClass('show').addClass('d-none');
-    return $content.eq(index).removeClass('d-none').addClass('show');
+    $content.addClass('d-none');
+    return $content.eq(index).removeClass('d-none');
   };
 
   initBackgroundSlider = function($block, slides) {
@@ -53,7 +57,7 @@
 
   $(window).on('scroll', function(e) {
     var offset, scrollTopNum;
-    offset = 15;
+    offset = 20;
     scrollTopNum = $(this).scrollTop();
     if (scrollTopNum > offset) {
       $headerBlock.addClass('onscroll');
@@ -87,11 +91,42 @@
   $collapseNav = $('#nav-menu');
 
   $collapseNav.on('show.bs.collapse', function(e) {
+    $('body').addClass('modal-open');
     return $(this).parents('.js-header').addClass('onnavshow');
   });
 
   $collapseNav.on('hidden.bs.collapse', function(e) {
+    $('body').removeClass('modal-open');
     return $(this).parents('.js-header').removeClass('onnavshow');
   });
+
+  windowScrollTo = function(offsetTop) {
+    return $('html:not(:animated),body:not(:animated)').animate({
+      scrollTop: offsetTop
+    });
+  };
+
+  $('.js-scroll').on('click', function(e) {
+    var dataStr;
+    e.preventDefault();
+    dataStr = String($(this).attr('data'));
+    if ((dataStr != null) && dataStr === 'top') {
+      windowScrollTo(0);
+    }
+    if ((dataStr != null) && dataStr === 'bot') {
+      windowScrollTo($('body').height());
+    }
+    return false;
+  });
+
+  // $('.js-scroll').bind 'click', (e) ->
+//   e.preventDefault()
+//   id = $(this).attr 'href'
+//   if id is '#'
+//     offsetTop = 0
+//   else
+//     offsetTop = $(id).offset().top
+//   $('html:not(:animated),body:not(:animated)').animate scrollTop: offsetTop
+//   off
 
 }).call(this);

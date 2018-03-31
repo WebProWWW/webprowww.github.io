@@ -1,0 +1,73 @@
+/*
+ * @author Timur Valiyev
+ * @link https://webprowww.github.io
+ */
+
+body {
+  background: #fff;
+  color: #000;
+}
+.wrapper {
+  padding-top: 75px;
+  padding-bottom: 50px;
+  height: auto;
+  color: #000;
+}
+.header {
+  background: #fff;
+}
+.header.onnavshow {
+  background: #fff;
+}
+.header-divider {
+  background: #000;
+}
+.footer {
+  background: #fff;
+  color: #000;
+}
+.footer-divider {
+  background: #000;
+}
+.icon {
+  display: none;
+}
+.icon.black {
+  display: block;
+}
+.icon-contact {
+  display: block;
+}
+.toggler-btn-icon {
+  background: #000;
+}
+.nav-ln {
+  color: #000;
+  text-decoration: none;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  cursor: pointer;
+}
+.nav-ln:active,
+.nav-ln:focus,
+.nav-ln:hover {
+  text-decoration: none;
+  outline: none;
+  color: #ba1121;
+}
+.nav-ln.sub {
+  padding: 0 0 0 15px;
+}
+.nav-ln.sub:hover,
+.nav-ln.sub.active {
+  color: #000;
+}
+@media (min-width: 576px) {
+  .wrapper {
+    padding-top: 105px;
+    padding-bottom: 80px;
+  }
+}

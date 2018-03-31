@@ -6,18 +6,13 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/vegas/vegas.min.css">
-  <link rel="stylesheet" href="css/main.css?v=001">
+  <link rel="stylesheet" type="text/css" href="assets/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/main.css?v=003">
   <title>GOODPIC</title>
 </head>
-<!--
-  класс "page-light" меняет стиль хедера и футера под светлых страниц
-  если убрать класс "page-light" стиль хедера и футера изменится под темную страницу
-  класс надо добавлять к тегу body (под этим коментарием)
--->
-
-<body class="">
-
-<div class="wrapper d-flex flex-column">
+<body>
+<link rel="stylesheet" type="text/css" href="css/inner-dark.css">
+<div class="wrapper">
 
 <header class="header fixed-top js-header">
   <div class="container-fluid">
@@ -92,9 +87,8 @@
 
 <section class="section">
   <div class="container-fluid">
-    <div class="row">
-
-      <div class="col-12 col-sm-6 col-lg-4">
+    <div class="row no-gutters partner-row">
+      <div class="col-12 col-lg-4">
         <div class="item">
           <a class="item-ln" href="#">
             <img class="item-img" width="610" height="300" src="img/gallery/th-9.jpg">
@@ -105,7 +99,7 @@
           </a>
         </div><!--/.item-->
       </div><!--/.col-->
-      <div class="col-12 col-sm-6 col-lg-4">
+      <div class="col-12 col-lg-4">
         <div class="item">
           <a class="item-ln" href="#">
             <img class="item-img" width="610" height="300" src="img/gallery/th-10.jpg">
@@ -116,7 +110,7 @@
           </a>
         </div><!--/.item-->
       </div><!--/.col-->
-      <div class="col-12 col-sm-6 col-lg-4">
+      <div class="col-12 col-lg-4">
         <div class="item">
           <a class="item-ln" href="#">
             <img class="item-img" width="610" height="300" src="img/gallery/th-11.jpg">
@@ -127,7 +121,7 @@
           </a>
         </div><!--/.item-->
       </div><!--/.col-->
-      <div class="col-12 col-sm-6 col-lg-4">
+      <div class="col-12 col-lg-4">
         <div class="item">
           <a class="item-ln" href="#">
             <img class="item-img" width="610" height="300" src="img/gallery/th-12.jpg">
@@ -138,7 +132,7 @@
           </a>
         </div><!--/.item-->
       </div><!--/.col-->
-      <div class="col-12 col-sm-6 col-lg-4">
+      <div class="col-12 col-lg-4">
         <div class="item">
           <a class="item-ln" href="#">
             <img class="item-img" width="610" height="300" src="img/gallery/th-8.jpg">
@@ -149,7 +143,7 @@
           </a>
         </div><!--/.item-->
       </div><!--/.col-->
-      <div class="col-12 col-sm-6 col-lg-4">
+      <div class="col-12 col-lg-4">
         <div class="item">
           <a class="item-ln" href="#">
             <img class="item-img" width="610" height="300" src="img/gallery/th-9.jpg">
@@ -160,7 +154,7 @@
           </a>
         </div><!--/.item-->
       </div><!--/.col-->
-      <div class="col-12 col-sm-6 col-lg-4">
+      <div class="col-12 col-lg-4">
         <div class="item">
           <a class="item-ln" href="#">
             <img class="item-img" width="610" height="300" src="img/gallery/th-10.jpg">
@@ -171,7 +165,7 @@
           </a>
         </div><!--/.item-->
       </div><!--/.col-->
-      <div class="col-12 col-sm-6 col-lg-4">
+      <div class="col-12 col-lg-4">
         <div class="item">
           <a class="item-ln" href="#">
             <img class="item-img" width="610" height="300" src="img/gallery/th-11.jpg">
@@ -182,7 +176,7 @@
           </a>
         </div><!--/.item-->
       </div><!--/.col-->
-      <div class="col-12 col-sm-6 col-lg-4">
+      <div class="col-12 col-lg-4">
         <div class="item">
           <a class="item-ln" href="#">
             <img class="item-img" width="610" height="300" src="img/gallery/th-12.jpg">
@@ -193,7 +187,7 @@
           </a>
         </div><!--/.item-->
       </div><!--/.col-->
-      <div class="col-12 col-sm-6 col-lg-4">
+      <div class="col-12 col-lg-4">
         <div class="item">
           <a class="item-ln" href="#">
             <img class="item-img" width="610" height="300" src="img/gallery/th-8.jpg">
@@ -204,7 +198,7 @@
           </a>
         </div><!--/.item-->
       </div><!--/.col-->
-      <div class="col-12 col-sm-6 col-lg-4">
+      <div class="col-12 col-lg-4">
         <div class="item">
           <a class="item-ln" href="#">
             <img class="item-img" width="610" height="300" src="img/gallery/th-9.jpg">
@@ -215,7 +209,7 @@
           </a>
         </div><!--/.item-->
       </div><!--/.col-->
-      <div class="col-12 col-sm-6 col-lg-4">
+      <div class="col-12 col-lg-4">
         <div class="item">
           <a class="item-ln" href="#">
             <img class="item-img" width="610" height="300" src="img/gallery/th-10.jpg">
@@ -226,14 +220,68 @@
           </a>
         </div><!--/.item-->
       </div><!--/.col-->
-
+      <div class="col-12 col-lg-4">
+        <div class="item">
+          <a class="item-ln" href="#">
+            <img class="item-img" width="610" height="300" src="img/gallery/th-11.jpg">
+            <div class="item-desc arrow">
+              <h3 class="item-title">ВАНТАА</h3>
+              <p class="item-text">Краткое описание Lorem ipsum dolor sit amet</p>
+            </div>
+          </a>
+        </div><!--/.item-->
+      </div><!--/.col-->
+      <div class="col-12 col-lg-4">
+        <div class="item">
+          <a class="item-ln" href="#">
+            <img class="item-img" width="610" height="300" src="img/gallery/th-12.jpg">
+            <div class="item-desc arrow">
+              <h3 class="item-title">ВАНТАА</h3>
+              <p class="item-text">Краткое описание Lorem ipsum dolor sit amet</p>
+            </div>
+          </a>
+        </div><!--/.item-->
+      </div><!--/.col-->
+      <div class="col-12 col-lg-4">
+        <div class="item">
+          <a class="item-ln" href="#">
+            <img class="item-img" width="610" height="300" src="img/gallery/th-8.jpg">
+            <div class="item-desc arrow">
+              <h3 class="item-title">ВАНТАА</h3>
+              <p class="item-text">Краткое описание Lorem ipsum dolor sit amet</p>
+            </div>
+          </a>
+        </div><!--/.item-->
+      </div><!--/.col-->
+      <div class="col-12 col-lg-4">
+        <div class="item">
+          <a class="item-ln" href="#">
+            <img class="item-img" width="610" height="300" src="img/gallery/th-9.jpg">
+            <div class="item-desc arrow">
+              <h3 class="item-title">ВАНТАА</h3>
+              <p class="item-text">Краткое описание Lorem ipsum dolor sit amet</p>
+            </div>
+          </a>
+        </div><!--/.item-->
+      </div><!--/.col-->
+      <div class="col-12 col-lg-4">
+        <div class="item">
+          <a class="item-ln" href="#">
+            <img class="item-img" width="610" height="300" src="img/gallery/th-10.jpg">
+            <div class="item-desc arrow">
+              <h3 class="item-title">ВАНТАА</h3>
+              <p class="item-text">Краткое описание Lorem ipsum dolor sit amet</p>
+            </div>
+          </a>
+        </div><!--/.item-->
+      </div><!--/.col-->
     </div><!--/.row-->
   </div><!--/.container-->
 </section><!--/.section-->
 
 <!-- CONTENT END -->
 
-<footer class="footer">
+<footer class="footer fixed-bottom">
   <div class="container-fluid">
 
     <div class="row">
@@ -242,25 +290,34 @@
       </div><!--/.col-->
     </div><!--/.row-->
 
-    <div class="row justify-content-between align-items-center">
-      <div class="col-auto">
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="align-self-start">
         <p class="footer-copy">ALL RIGHTS RESERVED  © GOODPIC ® 2017&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;RUSSIA&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;UFA</p>
       </div><!--/.col-->
-      <div class="d-lg-none d-xl-none col-auto">
-        <div class="icon-row">
-          <a class="icon-ln" href="">
-            <img class="icon" src="img/icon-phone.svg">
-            <img class="icon black" src="img/icon-black-phone.svg">
-          </a>
-          <a class="icon-ln" href="">
-            <img class="icon" src="img/icon-inst.svg">
-            <img class="icon black" src="img/icon-black-inst.svg">
-          </a>
-          <a class="icon-ln" href="">
-            <img class="icon" src="img/icon-map.svg">
-            <img class="icon black" src="img/icon-black-map.svg">
-          </a>
-        </div><!--/.icon-row-->
+      <div class="d-lg-none d-xl-none">
+        <div class="d-flex align-items-center">
+          <div>
+            <div class="icon-row">
+              <a class="icon-ln" href="">
+                <img class="icon" src="img/icon-phone.svg">
+                <img class="icon black" src="img/icon-black-phone.svg">
+              </a>
+              <a class="icon-ln" href="">
+                <img class="icon" src="img/icon-inst.svg">
+                <img class="icon black" src="img/icon-black-inst.svg">
+              </a>
+              <a class="icon-ln" href="">
+                <img class="icon" src="img/icon-map.svg">
+                <img class="icon black" src="img/icon-black-map.svg">
+              </a>
+            </div><!--/.icon-row-->
+          </div><!--/.col-->
+          <div class="ml-3">
+            <a class="icon-ln js-prevent" href="">
+              <img class="icon icon-contact" src="img/icon-contact.svg">
+            </a>
+          </div><!--/.col-->
+        </div><!--/.row-->
       </div><!--/.col-->
     </div><!--/.row-->
 
@@ -274,17 +331,19 @@
     </div><!--/.row-->
 
   </div><!--/.container-->
+
+  <img class="scroll-btn ttop js-scroll" data="top" src="img/s-arr-tt.svg">
+  <img class="scroll-btn tbot js-scroll" data="bot" src="img/s-arr-tb.svg">
 </footer>
 
 </div><!--/.wrapper-->
 
 </body>
 </html>
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="assets/vegas/vegas.min.js?v=240"></script>
-<script src="js/main.js?v=002"></script>
-
+<script src="assets/fancybox/jquery.fancybox.min.js"></script>
+<script src="js/main.js?v=003"></script>
 </body>
 </html>
