@@ -114,9 +114,19 @@
       windowScrollTo(0);
     }
     if ((dataStr != null) && dataStr === 'bot') {
-      windowScrollTo($('body').height());
+      windowScrollTo($('#js-scroll-bot-point').offset().top);
     }
     return false;
+  });
+
+  $('[data-fancybox]').fancybox({
+    infobar: false,
+    toolbar: false,
+    idleTime: false,
+    btnTpl: {
+      arrowLeft: "<button data-fancybox-prev class=\"fancybox-button fancybox-button--arrow_left\">\n  <img class=\"fancybox-carr-icon\" width=\"26\" height=\"44\" src=\"img/arr-tl.svg\">\n</button>",
+      arrowRight: "<button data-fancybox-next class=\"fancybox-button fancybox-button--arrow_right\">\n  <img class=\"fancybox-carr-icon\" width=\"26\" height=\"44\" src=\"img/arr-tr.svg\">\n</button>"
+    }
   });
 
   // $('.js-scroll').bind 'click', (e) ->

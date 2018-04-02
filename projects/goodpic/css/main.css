@@ -338,6 +338,9 @@ body {
 .bg-dblue {
   background: #060e24;
 }
+.fancybox-navigation button:before {
+  background: transparent;
+}
 @media (min-width: 576px) {
   .logo {
     width: 120px;
@@ -440,10 +443,45 @@ body {
     margin: 15px 0;
     height: 600px;
   }
-  .page-light .header.onnavshow {
-    background: transparent;
-    -webkit-box-shadow: none;
-            box-shadow: none;
+  .side {
+    position: fixed;
+    left: 20px;
+    top: 125px;
+    bottom: 180px;
+    width: 30%;
+    overflow-y: auto;
+  }
+  .project-view-btn {
+    display: inline-block;
+    margin: 0;
+    padding: 5px 10px;
+    position: fixed;
+    left: 20px;
+    bottom: 150px;
+    background: #ba1121;
+    font-weight: 400;
+    font-size: 13px;
+    color: #fff;
+    text-decoration: none;
+    outline: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    border: none;
+    cursor: pointer;
+    -webkit-transition: 0.16s all ease-in-out;
+    -o-transition: 0.16s all ease-in-out;
+    transition: 0.16s all ease-in-out;
+  }
+  .project-view-btn:active,
+  .project-view-btn:focus,
+  .project-view-btn:hover {
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+  }
+  .project-view-btn:hover {
+    background: #a20f1d;
   }
 }
 @media (min-width: 1200px) {
