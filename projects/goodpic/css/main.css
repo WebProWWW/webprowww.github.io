@@ -120,6 +120,7 @@ body {
 .side-nav .nav-ln {
   display: block;
   width: 100%;
+  font-size: 16px;
 }
 .icon {
   display: block;
@@ -403,6 +404,9 @@ body {
   }
 }
 @media (min-width: 992px) {
+  body {
+    font-size: 14px;
+  }
   .nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -416,7 +420,7 @@ body {
     padding: 0;
   }
   .nav-ln {
-    margin-right: 15px;
+    margin-right: 19px;
     width: auto;
   }
   .nav-ln.sub {
@@ -443,24 +447,35 @@ body {
     margin: 15px 0;
     height: 600px;
   }
+  .icon-close {
+    position: fixed;
+    right: 20px;
+    top: 125px;
+  }
   .side {
     position: fixed;
     left: 20px;
-    top: 125px;
+    top: 170px;
     bottom: 180px;
     width: 30%;
     overflow-y: auto;
   }
+  .side-title {
+    position: fixed;
+    width: 30%;
+    top: 110px;
+    left: 20px;
+  }
   .project-view-btn {
     display: inline-block;
     margin: 0;
-    padding: 5px 10px;
+    padding: 5px 13px;
     position: fixed;
     left: 20px;
-    bottom: 150px;
+    bottom: 130px;
     background: #ba1121;
     font-weight: 400;
-    font-size: 13px;
+    font-size: 15px;
     color: #fff;
     text-decoration: none;
     outline: none;
@@ -496,5 +511,8 @@ body {
   }
   .item-text {
     font-size: 12px;
+  }
+  .side-nav .nav-ln {
+    font-size: 23px;
   }
 }

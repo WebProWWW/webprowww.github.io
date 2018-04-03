@@ -121,7 +121,7 @@
 
   $('[data-fancybox]').fancybox({
     infobar: false,
-    toolbar: false,
+    toolbar: true,
     idleTime: false,
     btnTpl: {
       arrowLeft: "<button data-fancybox-prev class=\"fancybox-button fancybox-button--arrow_left\">\n  <img class=\"fancybox-carr-icon\" width=\"26\" height=\"44\" src=\"img/arr-tl.svg\">\n</button>",
