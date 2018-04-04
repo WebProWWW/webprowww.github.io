@@ -81,7 +81,7 @@ body {
   padding: 0;
   width: 100%;
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 15px;
   color: #fff;
   text-decoration: none;
@@ -97,19 +97,18 @@ body {
 .nav-ln:hover {
   text-decoration: none;
   outline: none;
-  color: #ba1121;
+  color: #fff;
 }
 .nav-ln:hover,
 .nav-ln.active {
-  font-weight: 500;
-  color: #ba1121;
+  font-weight: 700;
 }
 .nav-ln.sub {
   padding: 0 0 0 15px;
 }
 .nav-ln.sub:hover,
 .nav-ln.sub.active {
-  color: #fff;
+  color: #ba1121;
 }
 .side-nav {
   display: block;
@@ -247,16 +246,22 @@ body {
   padding: 0;
   width: 100%;
   height: auto;
+  -webkit-transition: 0.16s all ease-in-out;
+  -o-transition: 0.16s all ease-in-out;
+  transition: 0.16s all ease-in-out;
 }
 .item-desc {
   display: block;
   margin: 0;
-  padding: 13px;
+  padding: 10px;
   position: absolute;
   width: 100%;
   left: 0px;
   bottom: 0px;
   background: rgba(0,0,0,0.65);
+  -webkit-transition: 0.16s all ease-in-out;
+  -o-transition: 0.16s all ease-in-out;
+  transition: 0.16s all ease-in-out;
 }
 .item-desc.arrow {
   padding-left: 35px;
@@ -425,6 +430,20 @@ body {
   }
   .nav-ln.sub {
     display: none;
+  }
+  .item-hover .item-desc {
+    background: transparent;
+  }
+  .item-hover .item-img {
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+  }
+  .item-hover:hover .item-img {
+    -webkit-filter: blur(0);
+            filter: blur(0);
+  }
+  .item-hover:hover .item-desc {
+    background: rgba(0,0,0,0.65) !important;
   }
   .scroll-btn {
     left: 20px;

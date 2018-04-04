@@ -56,7 +56,7 @@ body {
 .nav-ln:hover {
   text-decoration: none;
   outline: none;
-  color: #ba1121;
+  color: #000;
 }
 .nav-ln.sub {
   padding: 0 0 0 15px;
