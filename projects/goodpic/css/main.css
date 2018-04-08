@@ -347,6 +347,10 @@ body {
 .fancybox-navigation button:before {
   background: transparent;
 }
+.fancybox-button {
+  background: rgba(186,17,33,0.95);
+  margin-left: 1px;
+}
 @media (min-width: 576px) {
   .logo {
     width: 120px;
