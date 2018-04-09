@@ -24,7 +24,7 @@
   <meta name="msapplication-TileImage" content="https://webprowww.github.io/projects/goodpic/mstile-144x144.png">
 </head>
 <body>
-<link rel="stylesheet" type="text/css" href="css/inner-dark.css">
+<link rel="stylesheet" type="text/css" href="css/inner-light.css">
 <div class="wrapper">
 
 <header class="header fixed-top js-header">
@@ -98,44 +98,26 @@
 
 <!-- CONTENT START -->
 
-<section class="section my-auto">
+<section class="section">
   <div class="container-fluid">
-
     <div class="row">
       <div class="col-12 col-lg-4">
-        <div class="row">
-          <div class="col-12 col-md-6 col-lg-12">
-            <h3 class="title text-white">МЫ ВСЕГДА ГОТОВЫ ВАМ ПОМОЧЬ</h3>
-            <p class="text text-white">GOODPIC - Фирменные стили и айдентика,<br>маркетинг и визуализация объектов недвижимости</p>
-          </div><!--/.col-->
-          <div class="col-12 col-md-6 col-lg-12">
-            <h3 class="title text-white">СВЯЖИТЕСЬ С НАМИ УДОБНЫМ ВАМ СПОСОБОМ</h3>
-            <p class="text text-white d-flex align-items-center">
-              <img class="contact-icon m-0 mr-2" src="img/icon-map.svg">
-              <span class="arrow-tr">Россия&nbsp;&nbsp;|&nbsp;&nbsp;Уфа&nbsp;&nbsp;|&nbsp;&nbsp;пр. Октября 70, офис 17</span>
-            </p>
-            <p class="text text-white d-flex align-items-center">
-              <img class="contact-icon m-0 mr-2" src="img/icon-phone.svg">
-              <span class="arrow-tr">+7 (919) 141 1441&nbsp;&nbsp;|&nbsp;&nbsp;8 (3472) 95 95 95</span>
-            </p>
-            <p class="text text-white d-flex align-items-center">
-              <img class="contact-icon m-0 mr-2" src="img/icon-mail.svg">
-              <span class="arrow-tr">infa@goodpic.ru&nbsp;&nbsp;|&nbsp;&nbsp;infa@goodpic.org</span>
-            </p>
-            <p class="text text-white d-flex align-items-center">
-              <img class="contact-icon m-0 mr-2" src="img/icon-inst.svg">
-              <span class="arrow-tr">goodpict</span>
-            </p>
-          </div><!--/.col-->
-        </div><!--/.row-->
+        <nav class="nav side-nav d-none d-lg-block">
+          <a class="nav-ln active">О НАС</a>
+        </nav>
       </div><!--/.col-->
       <div class="col-12 col-lg-8">
-        <div id="yandex-map"></div>
+        <img class="item-img" width="1240" height="530" src="img/about.jpg">
+        <h3 class="title">ЗАГОЛОВОК</h3>
+        <p>Компания «Friendly Home» - поставщик систем «умного дома» для квартир и частных домов. Владельцы организации поставили себе высокую планку по реализации проекта, при этом четко и организованно следуют к ней, имея за спиной опытных поставщиков комплектующих с громкими именами, с очень громкими.</p>
+        <p>Цель - создание федеральной сети по проектированию и монтажу систем smart home. Разработка логотипа производилась в несколько этапов. Мы предоставили три концепции с небольшими набросками айдентики, после чего последовала череда обсуждений всей большой братией этой компании, было много мнений и вопросов. Концепция логотипа, где фирменный знак вписанный в букву «О» перетекающий в форму крыши понравился не только заказчикам, но и нам, исполнителю, так как мы отошли от замученного представления логотип + знак, а сделали что-то единое и целое.</p>
       </div><!--/.col-->
     </div><!--/.row-->
-
   </div><!--/.container-->
 </section><!--/.section-->
+
+<img class="scroll-btn ttop js-scroll d-none d-xl-block" data="top" src="img/s-arr-tt.svg">
+<img class="scroll-btn tbot js-scroll d-none d-xl-block" data="bot" src="img/s-arr-tb.svg">
 
 <!-- CONTENT END -->
 
@@ -195,36 +177,11 @@
 
 </body>
 </html>
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="assets/vegas/vegas.min.js?v=240"></script>
 <script src="assets/fancybox/jquery.fancybox.min.js"></script>
 <script src="js/main.js?v=127"></script>
-<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
-    </script>
-
-<script type="text/javascript">
-function yandexMapInit() {
-  var map = new ymaps.Map('yandex-map' , {
-    center: [54.76059711, 56.01199695],
-    zoom: 16
-    //controls: []
-  });
-  var placemark = new ymaps.Placemark([54.76059711, 56.01199695], {
-    hintContent: 'GOODPIC офис 17',
-    balloonContent: '<strong>Часы работы:</strong><br>с понедельника по пятницу<br>с 10:00 до 20:00<br>суббота и воскресенье - выходной.'
-  }, {
-    preset: 'islands#redDotIcon'
-  });
-  map.behaviors.disable(['scrollZoom', 'drag']);
-  map.geoObjects.add(placemark);
-}
-if (typeof ymaps !== 'undefined' && ymaps !== null) {
-  ymaps.ready(yandexMapInit);
-}
-</script>
-
 <div id="js-scroll-bot-point"></div>
 </body>
 </html>

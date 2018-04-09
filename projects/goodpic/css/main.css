@@ -177,22 +177,6 @@ body {
   height: 1px;
   background: #fff;
 }
-.scroll-btn {
-  display: block;
-  margin: 0;
-  padding: 0;
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  right: 20px;
-  cursor: pointer;
-}
-.scroll-btn.ttop {
-  top: -65px;
-}
-.scroll-btn.tbot {
-  top: -40px;
-}
 .footer {
   display: block;
   margin: 0;
@@ -383,16 +367,6 @@ body {
   .header {
     padding-bottom: 20px;
   }
-  .scroll-btn {
-    width: 36px;
-    height: 36px;
-  }
-  .scroll-btn.ttop {
-    top: -93px;
-  }
-  .scroll-btn.tbot {
-    top: -50px;
-  }
   .footer {
     padding-top: 20px;
   }
@@ -529,5 +503,21 @@ body {
   }
   .side-nav .nav-ln {
     font-size: 23px;
+  }
+  .scroll-btn {
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    width: 36px;
+    height: 36px;
+    left: 20px;
+    cursor: pointer;
+  }
+  .scroll-btn.ttop {
+    bottom: 115px;
+  }
+  .scroll-btn.tbot {
+    bottom: 70px;
   }
 }
