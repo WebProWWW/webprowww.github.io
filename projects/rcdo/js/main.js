@@ -4,7 +4,7 @@
  */
 
 //=include ./lib/MyClass.coffee
-var $body, $fixedNav, $window, CEvent, SvgMap;
+var $body, $fixedNav, $window, CEvent, SvgMap, hideAllDropDown;
 
 $body = $('body');
 
@@ -115,6 +115,30 @@ $('#jingle').on('show.bs.collapse hide.bs.collapse', function(e) {
   return true;
 });
 
+hideAllDropDown = function() {
+  return $('.js-dropdown-menu').removeClass('show');
+};
+
+$('.js-dropdown-btn').on('click', function(e) {
+  var $menu, $parent, $this;
+  e.preventDefault();
+  e.stopImmediatePropagation();
+  $this = $(this);
+  $parent = $this.parent('.js-dropdown');
+  $menu = $parent.find('.js-dropdown-menu');
+  if (!$menu.hasClass('show')) {
+    hideAllDropDown();
+    $menu.addClass('show');
+  } else {
+    hideAllDropDown();
+  }
+  return false;
+});
+
+$body.on('click', function(e) {
+  return hideAllDropDown();
+});
+
 $window.on('scroll', function(e) {
   var offset, scrollTopNum;
   offset = 15;
@@ -148,9 +172,9 @@ $('.js-slick').slick({
 $('.js-slick-m').slick({
   infinite: true,
   dots: true,
-  centerMode: true,
+  centerMode: false,
   mobileFirst: true,
-  slidesToShow: 1,
+  slidesToShow: 2,
   arrows: false,
   responsive: [
     {
@@ -174,14 +198,14 @@ $('.js-slick-m').slick({
     {
       breakpoint: 1200,
       settings: {
-        slidesToShow: 5
+        slidesToShow: 6
       }
     },
     {
       breakpoint: 1300,
       settings: {
         arrows: true,
-        slidesToShow: 5
+        slidesToShow: 6
       }
     }
   ]

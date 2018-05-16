@@ -6,13 +6,13 @@
   <meta name="description" content="">
   <title>РЦДО</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&amp;subset=cyrillic">
-  <link rel="stylesheet" href="assets/fontawesome/css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900&amp;subset=cyrillic">
   <link rel="stylesheet" href="assets/fancybox/jquery.fancybox.min.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/slick/slick.css">
   <link rel="stylesheet" href="assets/slick/slick-theme.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="assets/icomoon/style.css?v=11">
+  <link rel="stylesheet" href="css/main.css?v=11">
   <!-- favicon
     Надо заменить URL http://rsdo.loc/ на свой
   -->
@@ -68,7 +68,7 @@
 
   <div class="d-none d-lg-block">
     <div class="collapse" id="fixed-nav">
-      <nav class="lgnav">
+      <nav class="lgnav lgnav-fixed">
         <div class="container lgnav-container">
           <div class="row justify-content-between align-items-center">
             <div class="col-auto">
@@ -76,86 +76,103 @@
                 <img width="50" src="img/logo-xs.png">
               </a>
             </div><!--/.col-->
-            <div class="col-auto">
-              <div class="dropdown">
-                <a class="lgnav-link" data-toggle="dropdown">CВЕДЕНИЯ ОБ ОРГАНИЗАЦИИ</a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="">Основные сведения об образовательной организации</a>
-                  <a class="dropdown-item" href="">Структура и органы управления образовательной организацией</a>
-                  <a class="dropdown-item active" href="">Документы</a>
-                  <a class="dropdown-item" href="">Образование</a>
-                  <a class="dropdown-item" href="">Образовательные стандарты</a>
-                  <a class="dropdown-item" href="">Руководство. Педагогический состав</a>
-                  <a class="dropdown-item" href="">Материально-техническое обеспечение</a>
-                  <a class="dropdown-item" href="">Финансово-хозяйственная деятельность</a>
-                  <a class="dropdown-item" href="">Вакантные места для приема и перевода</a>
-                  <a class="dropdown-item" href="">Техническое сопровождение </a>
-                  <a class="dropdown-item" href="">Вакансии</a>
-                  <a class="dropdown-item" href="">Противодействие коррупции</a>
-                  <a class="dropdown-item" href="">Законодательная карта</a>
+            <div class="col-auto lgnav-col">
+              <div class="lgnav-dropdown js-dropdown">
+                <a class="lgnav-link js-dropdown-btn">CВЕДЕНИЯ ОБ ОРГАНИЗАЦИИ</a>
+                <div class="lgnav-dropdown-menu js-dropdown-menu">
+                  <a class="lgnav-dropdown-item" href="">Основные сведения об образовательной организации</a>
+                  <a class="lgnav-dropdown-item" href="">Структура и органы управления образовательной организацией</a>
+                  <a class="lgnav-dropdown-item" href="">Документы</a>
+                  <a class="lgnav-dropdown-item" href="">Образование</a>
+                  <a class="lgnav-dropdown-item" href="">Образовательные стандарты</a>
+                  <a class="lgnav-dropdown-item" href="">Руководство. Педагогический состав</a>
+                  <a class="lgnav-dropdown-item" href="">Материально-техническое обеспечение</a>
+                  <a class="lgnav-dropdown-item" href="">Финансово-хозяйственная деятельность</a>
+                  <a class="lgnav-dropdown-item" href="">Вакантные места для приема и перевода</a>
+                  <a class="lgnav-dropdown-item" href="">Техническое сопровождение </a>
+                  <a class="lgnav-dropdown-item" href="">Вакансии</a>
+                  <a class="lgnav-dropdown-item" href="">Противодействие коррупции</a>
+                  <a class="lgnav-dropdown-item" href="">Законодательная карта</a>
                 </div>
               </div><!--/.dropdown-->
             </div><!--/.col-->
-            <div class="col-auto">
-              <div class="dropdown">
-                <a class="lgnav-link" data-toggle="dropdown">НАША ЖИЗНЬ</a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="">Расписание уроков</a>
-                  <a class="dropdown-item" href="">Новости</a>
-                  <a class="dropdown-item" href="">Объявления</a>
-                  <a class="dropdown-item" href="">Фотогалерея</a>
-                  <a class="dropdown-item" href="">Видео</a>
-                  <a class="dropdown-item" href="">Поздравления и Благодарности</a>
-                  <a class="dropdown-item" href="">Вопрос-ответ</a>
-                  <a class="dropdown-item" href="">Отзывы</a>
+            <div class="col-auto lgnav-col">
+              <div class="lgnav-dropdown js-dropdown">
+                <a class="lgnav-link js-dropdown-btn">НАША ЖИЗНЬ</a>
+                <div class="lgnav-dropdown-menu js-dropdown-menu">
+                  <a class="lgnav-dropdown-item" href="">Расписание уроков</a>
+                  <a class="lgnav-dropdown-item" href="">Новости</a>
+                  <a class="lgnav-dropdown-item" href="">Объявления</a>
+                  <a class="lgnav-dropdown-item" href="">Фотогалерея</a>
+                  <a class="lgnav-dropdown-item" href="">Видео</a>
+                  <a class="lgnav-dropdown-item" href="">Поздравления и Благодарности</a>
+                  <a class="lgnav-dropdown-item" href="">Вопрос-ответ</a>
+                  <a class="lgnav-dropdown-item" href="">Отзывы</a>
                 </div>
               </div><!--/.dropdown-->
             </div><!--/.col-->
-            <div class="col-auto">
-              <div class="dropdown">
-                <a class="lgnav-link" data-toggle="dropdown">РОДИТЕЛЯМ</a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="">Приём в 1 класс</a>
-                  <a class="dropdown-item" href="">Классы</a>
-                  <a class="dropdown-item" href="">Расписание уроков</a>
-                  <a class="dropdown-item" href="">Объявления</a>
-                  <a class="dropdown-item" href="">Новости</a>
-                  <a class="dropdown-item" href="">Статьи</a>
+            <div class="col-auto lgnav-col">
+              <div class="lgnav-dropdown js-dropdown">
+                <a class="lgnav-link js-dropdown-btn">РОДИТЕЛЯМ</a>
+                <div class="lgnav-dropdown-menu js-dropdown-menu">
+                  <a class="lgnav-dropdown-item" href="">Приём в 1 класс</a>
+                  <a class="lgnav-dropdown-item" href="">Классы</a>
+                  <a class="lgnav-dropdown-item" href="">Расписание уроков</a>
+                  <a class="lgnav-dropdown-item" href="">Объявления</a>
+                  <a class="lgnav-dropdown-item" href="">Новости</a>
+                  <a class="lgnav-dropdown-item" href="">Статьи</a>
                 </div>
               </div><!--/.dropdown-->
             </div><!--/.col-->
-            <div class="col-auto">
-              <div class="dropdown">
-                <a class="lgnav-link" data-toggle="dropdown">УЧЕНИКАМ</a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="">Новости</a>
-                  <a class="dropdown-item" href="">Объявления</a>
-                  <a class="dropdown-item" href="">Расписание уроков</a>
-                  <a class="dropdown-item" href="">ЕГЭ и ОГЭ</a>
-                  <a class="dropdown-item" href="">Профориентация</a>
-                  <a class="dropdown-item" href="">Олимпиады и конкурсы</a>
+            <div class="col-auto lgnav-col">
+              <div class="lgnav-dropdown js-dropdown">
+                <a class="lgnav-link js-dropdown-btn">УЧЕНИКАМ</a>
+                <div class="lgnav-dropdown-menu js-dropdown-menu">
+                  <a class="lgnav-dropdown-item" href="">Новости</a>
+                  <a class="lgnav-dropdown-item" href="">Объявления</a>
+                  <a class="lgnav-dropdown-item" href="">Расписание уроков</a>
+                  <a class="lgnav-dropdown-item" href="">ЕГЭ и ОГЭ</a>
+                  <a class="lgnav-dropdown-item" href="">Профориентация</a>
+                  <a class="lgnav-dropdown-item" href="">Олимпиады и конкурсы</a>
                 </div>
               </div><!--/.dropdown-->
             </div><!--/.col-->
-            <div class="col-auto">
-              <div class="dropdown">
-                <a class="lgnav-link" data-toggle="dropdown">УЧИТЕЛЯМ</a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="">Аттестации</a>
-                  <a class="dropdown-item" href="">Расписание уроков</a>
-                  <a class="dropdown-item" href="">Новости</a>
-                  <a class="dropdown-item" href="">Объявления</a>
-                  <a class="dropdown-item" href="">Правила внутреннего распорядка</a>
-                  <a class="dropdown-item" href="">Методические материалы</a>
+            <div class="col-auto lgnav-col">
+              <div class="lgnav-dropdown js-dropdown">
+                <a class="lgnav-link js-dropdown-btn">УЧИТЕЛЯМ</a>
+                <div class="lgnav-dropdown-menu js-dropdown-menu">
+                  <a class="lgnav-dropdown-item" href="">Аттестации</a>
+                  <a class="lgnav-dropdown-item" href="">Расписание уроков</a>
+                  <a class="lgnav-dropdown-item" href="">Новости</a>
+                  <a class="lgnav-dropdown-item" href="">Объявления</a>
+                  <a class="lgnav-dropdown-item" href="">Правила внутреннего распорядка</a>
+                  <a class="lgnav-dropdown-item" href="">Методические материалы</a>
                 </div>
               </div><!--/.dropdown-->
             </div><!--/.col-->
-            <div class="col-auto">
+            <div class="col-auto lgnav-col">
+              <div class="lgnav-dropdown js-dropdown">
+                <a class="lgnav-link js-dropdown-btn">КОНТАКТЫ</a>
+                <div class="lgnav-dropdown-menu js-dropdown-menu">
+                  <a class="lgnav-dropdown-item" href="">Контакты учреждения</a>
+                  <a class="lgnav-dropdown-item" href="">Контакты контролирующих организаций</a>
+                </div>
+              </div><!--/.dropdown-->
+            </div><!--/.col-->
+            <div class="col-auto d-none d-hd-block">
               <div class="dropdown">
-                <a class="lgnav-link" data-toggle="dropdown">КОНТАКТЫ</a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="">Контакты учреждения</a>
-                  <a class="dropdown-item" href="">Контакты контролирующих организаций</a>
+                <a class="lgnav-link vs-arr" data-toggle="dropdown" href="#">
+                  <span class="ltnav-bicon icon-icon-6"></span>
+                  РЦДО Стерлитамак
+                </a>
+                <div class="dropdown-menu dropdown-menu-right">
+                  <a class="dropdown-item" href="">РЦДО Уфа</a>
+                  <a class="dropdown-item" href="">РЦДО Белорецк</a>
+                  <a class="dropdown-item" href="">РЦДО Туймазы</a>
+                  <a class="dropdown-item" href="">РЦДО Нефтекамск</a>
+                  <a class="dropdown-item active" href="">РЦДО Стерлитамак</a>
+                  <a class="dropdown-item" href="">РЦДО Сибай</a>
+                  <a class="dropdown-item" href="">РЦДО Месягутово</a>
                 </div>
               </div><!--/.dropdown-->
             </div><!--/.col-->
@@ -182,38 +199,38 @@
     <div class="row align-items-center justify-content-between">
       <div class="col-auto">
         <a class="ltnav-blink" href="">
-          <i class="ltnav-bicon fas fa-eye"></i>
+          <span class="ltnav-bicon icon-icon-5"></span>
           Версия для слабовидящих
         </a>
       </div><!--/.col-->
       <div class="col-auto">
         <a class="ltnav-link" href="">
-          <i class="ltnav-icon fas fa-info"></i>
+          <span class="ltnav-icon icon-icon-4"></span>
           Помощь
         </a>
       </div><!--/.col-->
       <div class="col-auto">
         <a class="ltnav-link" href="">
-          <i class="ltnav-icon fas fa-users"></i>
+          <span class="ltnav-icon icon-icon-3"></span>
           Эл.очередь
         </a>
       </div><!--/.col-->
       <div class="col-auto">
         <a class="ltnav-link" href="">
-          <i class="ltnav-icon fas fa-clipboard-list"></i>
+          <span class="ltnav-icon icon-icon-1"></span>
           Эл.журнал
         </a>
       </div><!--/.col-->
       <div class="col-auto">
         <a class="ltnav-link" href="">
-          <i class="ltnav-icon fas fa-search"></i>
+          <span class="ltnav-icon icon-icon-2"></span>
           Поиск
         </a>
       </div><!--/.col-->
       <div class="col-auto">
         <div class="dropdown">
           <a class="ltnav-blink vs-arr" data-toggle="dropdown" href="#">
-            <i class="ltnav-bicon fas fa-map-marker-alt"></i>
+            <span class="ltnav-bicon icon-icon-6"></span>
             РЦДО Стерлитамак
           </a>
           <div class="dropdown-menu dropdown-menu-right">
@@ -231,116 +248,122 @@
   </div><!--/.container-->
 </nav>
 
-<header class="section">
+<header class="section b-mb">
   <div class="container">
 
-    <div class="row align-items-center justify-content-between mb-5">
-      <div class="col-12 col-lg-auto">
-        <div class="logo">
-          <a href="">
-            <img class="logo-img d-none d-lg-block" width="220" src="img/logo.png">
-          </a>
-          <p class="logo-text">Государственное бюджетное общеобразовательное учереждение Республиканский центр дистанционного образования детей-инвалидов</p>
-        </div>
-      </div><!--/.col-->
-      <div class="col-12 col-lg-auto">
-        <p class="addr">
-          <span class="addr-bold">РЦДО Уфа</span>
-          <br>
-          г. Уфа, ул.Батырская 8/3
-          <br>
-          <span class="addr-bold">8 (347) 255 52 10</span>
-        </p>
+    <div class="row justify-content-center">
+      <div class="col-12 col-xl-10">
+
+        <div class="row align-items-center justify-content-between mb-5">
+          <div class="col-12 col-lg-auto">
+            <div class="logo">
+              <a href="">
+                <img class="logo-img d-none d-lg-block" width="220" src="img/logo.png">
+              </a>
+              <p class="logo-text">Государственное бюджетное общеобразовательное учереждение Республиканский центр дистанционного образования детей-инвалидов</p>
+            </div>
+          </div><!--/.col-->
+          <div class="col-12 col-lg-auto">
+            <p class="addr">
+              <span class="addr-bold">РЦДО Уфа</span>
+              <br>
+              г. Уфа, ул.Батырская 8/3
+              <br>
+              <span class="addr-bold">8 (347) 255 52 10</span>
+            </p>
+          </div><!--/.col-->
+        </div><!--/.row-->
+
+        <nav class="lgnav bg-white d-none d-lg-block">
+          <div class="row justify-content-between align-items-center">
+            <div class="col-auto lgnav-col">
+              <div class="lgnav-dropdown js-dropdown">
+                <a class="lgnav-link js-dropdown-btn">CВЕДЕНИЯ ОБ ОРГАНИЗАЦИИ</a>
+                <div class="lgnav-dropdown-menu js-dropdown-menu">
+                  <a class="lgnav-dropdown-item" href="">Основные сведения об образовательной организации</a>
+                  <a class="lgnav-dropdown-item" href="">Структура и органы управления образовательной организацией</a>
+                  <a class="lgnav-dropdown-item active" href="">Документы</a>
+                  <a class="lgnav-dropdown-item" href="">Образование</a>
+                  <a class="lgnav-dropdown-item" href="">Образовательные стандарты</a>
+                  <a class="lgnav-dropdown-item" href="">Руководство. Педагогический состав</a>
+                  <a class="lgnav-dropdown-item" href="">Материально-техническое обеспечение</a>
+                  <a class="lgnav-dropdown-item" href="">Финансово-хозяйственная деятельность</a>
+                  <a class="lgnav-dropdown-item" href="">Вакантные места для приема и перевода</a>
+                  <a class="lgnav-dropdown-item" href="">Техническое сопровождение </a>
+                  <a class="lgnav-dropdown-item" href="">Вакансии</a>
+                  <a class="lgnav-dropdown-item" href="">Противодействие коррупции</a>
+                  <a class="lgnav-dropdown-item" href="">Законодательная карта</a>
+                </div>
+              </div><!--/.dropdown-->
+            </div><!--/.col-->
+            <div class="col-auto lgnav-col">
+              <div class="lgnav-dropdown js-dropdown">
+                <a class="lgnav-link js-dropdown-btn">НАША ЖИЗНЬ</a>
+                <div class="lgnav-dropdown-menu js-dropdown-menu">
+                  <a class="lgnav-dropdown-item" href="">Расписание уроков</a>
+                  <a class="lgnav-dropdown-item" href="">Новости</a>
+                  <a class="lgnav-dropdown-item" href="">Объявления</a>
+                  <a class="lgnav-dropdown-item" href="">Фотогалерея</a>
+                  <a class="lgnav-dropdown-item" href="">Видео</a>
+                  <a class="lgnav-dropdown-item" href="">Поздравления и Благодарности</a>
+                  <a class="lgnav-dropdown-item" href="">Вопрос-ответ</a>
+                  <a class="lgnav-dropdown-item" href="">Отзывы</a>
+                </div>
+              </div><!--/.dropdown-->
+            </div><!--/.col-->
+            <div class="col-auto lgnav-col">
+              <div class="lgnav-dropdown js-dropdown">
+                <a class="lgnav-link js-dropdown-btn">РОДИТЕЛЯМ</a>
+                <div class="lgnav-dropdown-menu js-dropdown-menu">
+                  <a class="lgnav-dropdown-item" href="">Приём в 1 класс</a>
+                  <a class="lgnav-dropdown-item" href="">Классы</a>
+                  <a class="lgnav-dropdown-item" href="">Расписание уроков</a>
+                  <a class="lgnav-dropdown-item" href="">Объявления</a>
+                  <a class="lgnav-dropdown-item" href="">Новости</a>
+                  <a class="lgnav-dropdown-item" href="">Статьи</a>
+                </div>
+              </div><!--/.dropdown-->
+            </div><!--/.col-->
+            <div class="col-auto lgnav-col">
+              <div class="lgnav-dropdown js-dropdown">
+                <a class="lgnav-link js-dropdown-btn">УЧЕНИКАМ</a>
+                <div class="lgnav-dropdown-menu js-dropdown-menu">
+                  <a class="lgnav-dropdown-item" href="">Новости</a>
+                  <a class="lgnav-dropdown-item" href="">Объявления</a>
+                  <a class="lgnav-dropdown-item" href="">Расписание уроков</a>
+                  <a class="lgnav-dropdown-item" href="">ЕГЭ и ОГЭ</a>
+                  <a class="lgnav-dropdown-item" href="">Профориентация</a>
+                  <a class="lgnav-dropdown-item" href="">Олимпиады и конкурсы</a>
+                </div>
+              </div><!--/.dropdown-->
+            </div><!--/.col-->
+            <div class="col-auto lgnav-col">
+              <div class="lgnav-dropdown js-dropdown">
+                <a class="lgnav-link js-dropdown-btn">УЧИТЕЛЯМ</a>
+                <div class="lgnav-dropdown-menu js-dropdown-menu">
+                  <a class="lgnav-dropdown-item" href="">Аттестации</a>
+                  <a class="lgnav-dropdown-item" href="">Расписание уроков</a>
+                  <a class="lgnav-dropdown-item" href="">Новости</a>
+                  <a class="lgnav-dropdown-item" href="">Объявления</a>
+                  <a class="lgnav-dropdown-item" href="">Правила внутреннего распорядка</a>
+                  <a class="lgnav-dropdown-item" href="">Методические материалы</a>
+                </div>
+              </div><!--/.dropdown-->
+            </div><!--/.col-->
+            <div class="col-auto lgnav-col">
+              <div class="lgnav-dropdown js-dropdown">
+                <a class="lgnav-link js-dropdown-btn">КОНТАКТЫ</a>
+                <div class="lgnav-dropdown-menu js-dropdown-menu">
+                  <a class="lgnav-dropdown-item" href="">Контакты учреждения</a>
+                  <a class="lgnav-dropdown-item" href="">Контакты контролирующих организаций</a>
+                </div>
+              </div><!--/.dropdown-->
+            </div><!--/.col-->
+          </div><!--/.row-->
+        </nav><!--/.lgnav-->
+
       </div><!--/.col-->
     </div><!--/.row-->
-
-    <nav class="lgnav bg-white d-none d-lg-block">
-      <div class="row justify-content-between align-items-center">
-        <div class="col-auto">
-          <div class="dropdown">
-            <a class="lgnav-link" data-toggle="dropdown">CВЕДЕНИЯ ОБ ОРГАНИЗАЦИИ</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="">Основные сведения об образовательной организации</a>
-              <a class="dropdown-item" href="">Структура и органы управления образовательной организацией</a>
-              <a class="dropdown-item active" href="">Документы</a>
-              <a class="dropdown-item" href="">Образование</a>
-              <a class="dropdown-item" href="">Образовательные стандарты</a>
-              <a class="dropdown-item" href="">Руководство. Педагогический состав</a>
-              <a class="dropdown-item" href="">Материально-техническое обеспечение</a>
-              <a class="dropdown-item" href="">Финансово-хозяйственная деятельность</a>
-              <a class="dropdown-item" href="">Вакантные места для приема и перевода</a>
-              <a class="dropdown-item" href="">Техническое сопровождение </a>
-              <a class="dropdown-item" href="">Вакансии</a>
-              <a class="dropdown-item" href="">Противодействие коррупции</a>
-              <a class="dropdown-item" href="">Законодательная карта</a>
-            </div>
-          </div><!--/.dropdown-->
-        </div><!--/.col-->
-        <div class="col-auto">
-          <div class="dropdown">
-            <a class="lgnav-link" data-toggle="dropdown">НАША ЖИЗНЬ</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="">Расписание уроков</a>
-              <a class="dropdown-item" href="">Новости</a>
-              <a class="dropdown-item" href="">Объявления</a>
-              <a class="dropdown-item" href="">Фотогалерея</a>
-              <a class="dropdown-item" href="">Видео</a>
-              <a class="dropdown-item" href="">Поздравления и Благодарности</a>
-              <a class="dropdown-item" href="">Вопрос-ответ</a>
-              <a class="dropdown-item" href="">Отзывы</a>
-            </div>
-          </div><!--/.dropdown-->
-        </div><!--/.col-->
-        <div class="col-auto">
-          <div class="dropdown">
-            <a class="lgnav-link" data-toggle="dropdown">РОДИТЕЛЯМ</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="">Приём в 1 класс</a>
-              <a class="dropdown-item" href="">Классы</a>
-              <a class="dropdown-item" href="">Расписание уроков</a>
-              <a class="dropdown-item" href="">Объявления</a>
-              <a class="dropdown-item" href="">Новости</a>
-              <a class="dropdown-item" href="">Статьи</a>
-            </div>
-          </div><!--/.dropdown-->
-        </div><!--/.col-->
-        <div class="col-auto">
-          <div class="dropdown">
-            <a class="lgnav-link" data-toggle="dropdown">УЧЕНИКАМ</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="">Новости</a>
-              <a class="dropdown-item" href="">Объявления</a>
-              <a class="dropdown-item" href="">Расписание уроков</a>
-              <a class="dropdown-item" href="">ЕГЭ и ОГЭ</a>
-              <a class="dropdown-item" href="">Профориентация</a>
-              <a class="dropdown-item" href="">Олимпиады и конкурсы</a>
-            </div>
-          </div><!--/.dropdown-->
-        </div><!--/.col-->
-        <div class="col-auto">
-          <div class="dropdown">
-            <a class="lgnav-link" data-toggle="dropdown">УЧИТЕЛЯМ</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="">Аттестации</a>
-              <a class="dropdown-item" href="">Расписание уроков</a>
-              <a class="dropdown-item" href="">Новости</a>
-              <a class="dropdown-item" href="">Объявления</a>
-              <a class="dropdown-item" href="">Правила внутреннего распорядка</a>
-              <a class="dropdown-item" href="">Методические материалы</a>
-            </div>
-          </div><!--/.dropdown-->
-        </div><!--/.col-->
-        <div class="col-auto">
-          <div class="dropdown">
-            <a class="lgnav-link" data-toggle="dropdown">КОНТАКТЫ</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="">Контакты учреждения</a>
-              <a class="dropdown-item" href="">Контакты контролирующих организаций</a>
-            </div>
-          </div><!--/.dropdown-->
-        </div><!--/.col-->
-      </div><!--/.row-->
-    </nav><!--/.lgnav-->
 
     <div class="slider js-slick">
       <div class="slider-item">
@@ -444,9 +467,9 @@
       </div><!--/.col-->
       <div class="col-12 col-md-6">
         <div class="classic-text">
-          <p>В рамках национального проекта  «Образование» с сентября 2010 года в республике открылся республиканский центр дистанционного образования для детей с ограниченными возможностями (РЦДО).</p>
-          <p>Достоинства дистанционного обучения детей с ограниченными возможностями, предполагающего проведение уроков на дому, дистанционно из РЦДО и с посещением РЦДО, неоспоримы.</p>
-          <p>Русский язык, литература и математика преподаются с посещением на дому физика, химия, биология, технология, музыка и т.д. преподаются с применением дистанционных технологий через компьютер.</p>
+          <p style="font-size: 16px;">В рамках национального проекта  «Образование» с сентября 2010 года в республике открылся республиканский центр дистанционного образования для детей с ограниченными возможностями (РЦДО).</p>
+          <p style="font-size: 16px;">Достоинства дистанционного обучения детей с ограниченными возможностями, предполагающего проведение уроков на дому, дистанционно из РЦДО и с посещением РЦДО, неоспоримы.</p>
+          <p style="font-size: 16px;">Русский язык, литература и математика преподаются с посещением на дому физика, химия, биология, технология, музыка и т.д. преподаются с применением дистанционных технологий через компьютер.</p>
         </div><!--/.classic-text-->
       </div><!--/.col-->
     </div><!--/.row-->
@@ -560,7 +583,7 @@
         </div>
       </div><!--/.col-->
       <div class="col-12 col-md-7 order-1 order-md-2 col-lg-6">
-        <svg class="my-2" id="js-svg-map-1" version="1.1" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"></svg>
+        <svg class="my-3 mb-md-5" id="js-svg-map-1" version="1.1" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"></svg>
       </div><!--/.col-->
     </div><!--/.row-->
   </div><!--/.container-->
@@ -684,6 +707,12 @@
           <p class="islider-text">Управление образования Администрации городского округа город Уфа</p>
         </a>
       </div><!--/.islider-item-->
+      <div class="islider-item">
+        <a class="ln-black" href="">
+          <img class="islider-img" width="70" height="70" src="img/ilogo-1.jpg">
+          <p class="islider-text">Министерство образования и науки Российской Федерации</p>
+        </a>
+      </div><!--/.islider-item-->
     </div><!--/.islider-->
   </div><!--/.container-->
 </section><!--/.section-->
@@ -701,13 +730,13 @@
       <div class="col-12 col-sm-auto">
         <div class="social">
           <a class="social-ln" href="">
-            <i class="social-icon fab fa-vk"></i>
+            <span class="social-icon icon-icon-15"></span>
           </a>
           <a class="social-ln" href="">
-            <i class="social-icon fab fa-facebook-f"></i>
+            <span class="social-icon icon-icon-16"></span>
           </a>
           <a class="social-ln" href="">
-            <i class="social-icon fab fa-youtube"></i>
+            <span class="social-icon icon-icon-17"></span>
           </a>
         </div><!--/.social-->
       </div><!--/.col-->
@@ -817,10 +846,12 @@
 
   <div class="modal-full" id="mobile-menu">
     <div class="container">
-      <a data-fancybox-close class="modal-full-close" href="#"><i class="fas fa-times"></i></a>
+      <a data-fancybox-close class="modal-full-close" href="#">
+        <span class="icon-icon-14"></span>
+      </a>
 
       <div class="location">
-        <a class="location-link vs-arr" data-toggle="collapse" href="#location-list">
+        <a class="location-link vs-arr collapsed" data-toggle="collapse" href="#location-list">
           <i class="location-icon fas fa-map-marker-alt"></i>
           РЦДО Стерлитамак
         </a>
@@ -836,8 +867,8 @@
       </div><!--/.dropdown-->
 
       <nav class="mnav" id="accordion-1">
-        <a class="mnav-link" data-toggle="collapse" href="#collapse-0">CВЕДЕНИЯ ОБ ОРГАНИЗАЦИИ</a>
-        <div class="collapse" data-parent="#accordion-1" id="collapse-0">
+        <a class="mnav-link" data-toggle="collapse" href="#nav-collapse-0">CВЕДЕНИЯ ОБ ОРГАНИЗАЦИИ</a>
+        <div class="collapse" data-parent="#accordion-1" id="nav-collapse-0">
           <a class="mnav-sublink" href="">Основные сведения об образовательной организации</a>
           <a class="mnav-sublink" href="">Структура и органы управления образовательной организацией</a>
           <a class="mnav-sublink active" href="">Документы</a>
@@ -852,8 +883,8 @@
           <a class="mnav-sublink" href="">Противодействие коррупции</a>
           <a class="mnav-sublink" href="">Законодательная карта</a>
         </div>
-        <a class="mnav-link" data-toggle="collapse" href="#collapse-1">НАША ЖИЗНЬ</a>
-        <div class="collapse" data-parent="#accordion-1" id="collapse-1">
+        <a class="mnav-link" data-toggle="collapse" href="#nav-collapse-1">НАША ЖИЗНЬ</a>
+        <div class="collapse" data-parent="#accordion-1" id="nav-collapse-1">
           <a class="mnav-sublink" href="">Расписание уроков</a>
           <a class="mnav-sublink" href="">Новости</a>
           <a class="mnav-sublink" href="">Объявления</a>
@@ -863,8 +894,8 @@
           <a class="mnav-sublink" href="">Вопрос-ответ</a>
           <a class="mnav-sublink" href="">Отзывы</a>
         </div>
-        <a class="mnav-link" data-toggle="collapse" href="#collapse-2">РОДИТЕЛЯМ</a>
-        <div class="collapse" data-parent="#accordion-1" id="collapse-2">
+        <a class="mnav-link" data-toggle="collapse" href="#nav-collapse-2">РОДИТЕЛЯМ</a>
+        <div class="collapse" data-parent="#accordion-1" id="nav-collapse-2">
           <a class="mnav-sublink" href="">Приём в 1 класс</a>
           <a class="mnav-sublink" href="">Классы</a>
           <a class="mnav-sublink" href="">Расписание уроков</a>
@@ -872,8 +903,8 @@
           <a class="mnav-sublink" href="">Новости</a>
           <a class="mnav-sublink" href="">Статьи</a>
         </div>
-        <a class="mnav-link" data-toggle="collapse" href="#collapse-3">УЧЕНИКАМ</a>
-        <div class="collapse" data-parent="#accordion-1" id="collapse-3">
+        <a class="mnav-link" data-toggle="collapse" href="#nav-collapse-3">УЧЕНИКАМ</a>
+        <div class="collapse" data-parent="#accordion-1" id="nav-collapse-3">
           <a class="mnav-sublink" href="">Новости</a>
           <a class="mnav-sublink" href="">Объявления</a>
           <a class="mnav-sublink" href="">Расписание уроков</a>
@@ -881,8 +912,8 @@
           <a class="mnav-sublink" href="">Профориентация</a>
           <a class="mnav-sublink" href="">Олимпиады и конкурсы</a>
         </div>
-        <a class="mnav-link" data-toggle="collapse" href="#collapse-4">УЧИТЕЛЯМ</a>
-        <div class="collapse" data-parent="#accordion-1" id="collapse-4">
+        <a class="mnav-link" data-toggle="collapse" href="#nav-collapse-4">УЧИТЕЛЯМ</a>
+        <div class="collapse" data-parent="#accordion-1" id="nav-collapse-4">
           <a class="mnav-sublink" href="">Аттестации</a>
           <a class="mnav-sublink" href="">Расписание уроков</a>
           <a class="mnav-sublink" href="">Новости</a>
@@ -890,8 +921,8 @@
           <a class="mnav-sublink" href="">Правила внутреннего распорядка</a>
           <a class="mnav-sublink" href="">Методические материалы</a>
         </div>
-        <a class="mnav-link" data-toggle="collapse" href="#collapse-5">КОНТАКТЫ</a>
-        <div class="collapse" data-parent="#accordion-1" id="collapse-5">
+        <a class="mnav-link" data-toggle="collapse" href="#nav-collapse-5">КОНТАКТЫ</a>
+        <div class="collapse" data-parent="#accordion-1" id="nav-collapse-5">
           <a class="mnav-sublink" href="">Контакты учреждения</a>
           <a class="mnav-sublink" href="">Контакты контролирующих организаций</a>
         </div>
@@ -901,25 +932,25 @@
         <div class="row justify-content-between">
           <div class="col-6 col-sm-auto">
             <a class="tnav-link" href="">
-              <i class="tnav-icon fas fa-info"></i>
+              <span class="tnav-icon icon-icon-4"></span>
               Помощь
             </a>
           </div><!--/.col-->
           <div class="col-6 col-sm-auto">
             <a class="tnav-link" href="">
-              <i class="tnav-icon fas fa-users"></i>
+              <span class="tnav-icon icon-icon-3"></span>
               Эл.очередь
             </a>
           </div><!--/.col-->
           <div class="col-6 col-sm-auto">
             <a class="tnav-link" href="">
-              <i class="tnav-icon fas fa-search"></i>
+              <span class="tnav-icon icon-icon-2"></span>
               Поиск
             </a>
           </div><!--/.col-->
           <div class="col-6 col-sm-auto">
             <a class="tnav-link" href="">
-              <i class="tnav-icon fas fa-clipboard-list"></i>
+              <span class="tnav-icon icon-icon-1"></span>
               Эл.журнал
             </a>
           </div><!--/.col-->
@@ -936,6 +967,6 @@
 <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="assets/slick/slick.min.js"></script>
 <script src="assets/snap/snap.svg.min.js"></script>
-<script src="js/main.js"></script>
+<script src="js/main.js?v=11"></script>
 </body>
 </html>
