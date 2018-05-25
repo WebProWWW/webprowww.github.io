@@ -145,9 +145,6 @@
     <h2 class="title">Бронируйте заранее online!</h2>
     <form class="form make">
       <div class="row">
-        <div class="col-12 order-lg-1">
-          <p class="make-title">Введите данные для бронирования</p>
-        </div><!--/.col-->
         <div class="col-12 col-lg-6 col-xl-5 order-lg-3">
           <div class="make-cart">
             <img class="make-img" width="750" height="500" src="img/cart.jpg">
@@ -160,10 +157,9 @@
                   </label>
                 </div><!--/.col-->
                 <div class="col-12 col-sm-7">
-                  <div class="form-igroup-lr">
+                  <div class="form-igroup-l">
                     <span class="icon-icon-8 form-licon"></span>
-                    <input class="form-input js-date" id="form-input-21" type="text" name="date-out">
-                    <span class="icon-icon-3 form-ricon"></span>
+                    <input class="form-input" type="text" readonly value="25.05.2018">
                   </div>
                 </div><!--/.col-->
               </div><!--/.row-->
@@ -176,10 +172,9 @@
                   </label>
                 </div><!--/.col-->
                 <div class="col-12 col-sm-7">
-                  <div class="form-igroup-lr">
+                  <div class="form-igroup-l">
                     <span class="icon-icon-8 form-licon"></span>
-                    <input class="form-input js-date" id="form-input-22" type="text" name="date-out">
-                    <span class="icon-icon-3 form-ricon"></span>
+                    <input class="form-input" type="text" readonly value="25.06.2018">
                   </div>
                 </div><!--/.col-->
               </div><!--/.row-->
@@ -190,18 +185,7 @@
                   <label class="form-label" for="form-input-23">
                     <span class="icon-icon-2 form-label-icon"></span>
                   </label>
-                  <div class="form-igroup-r">
-                    <select class="form-input" id="form-input-23" name="qty">
-                      <option value="0" selected></option>
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
-                      <option value="6">6</option>
-                    </select>
-                    <span class="icon-icon-3 form-ricon"></span>
-                  </div>
+                  <input class="form-input" type="text" readonly value="5">
                 </div><!--/.form-group-->
               </div><!--/.col-->
               <div class="col-6">
@@ -209,18 +193,7 @@
                   <label class="form-label" for="form-input-24">
                     <span class="icon-icon-1 form-label-icon"></span>
                   </label>
-                  <div class="form-igroup-r">
-                    <select class="form-input" id="form-input-24" name="qty-chld">
-                      <option value="0" selected></option>
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
-                      <option value="6">6</option>
-                    </select>
-                    <span class="icon-icon-3 form-ricon"></span>
-                  </div>
+                  <input class="form-input" type="text" readonly value="1">
                 </div><!--/.form-group-->
               </div><!--/.col-->
             </div><!--/.row-->
@@ -228,6 +201,7 @@
           </div><!--/.make-cart-->
         </div><!--/.col-->
         <div class="col-12 col-lg-6 col-xl-7 order-lg-2">
+          <p class="make-title">Введите данные для бронирования</p>
           <div class="form-group has-error">
             <input class="form-input" type="text" name="" placeholder="Имя">
           </div>

@@ -211,19 +211,24 @@
               </p>
             </div><!--/.col-->
             <div class="col-12">
-              <p class="make-text">
-                <span class="bold">Отправить потверждение</span>
-                <br>
-                <label>
-                  <input type="checkbox" name="send-to">
-                  на почту
-                </label>
-                &nbsp;&nbsp;&nbsp;
-                <label>
-                  <input type="checkbox" name="send-to">
-                  по смс
-                </label>
-              </p>
+              <form class="form">
+                <p class="make-text bold">Отправить потверждение</p>
+                <div class="row">
+                  <div class="col-6">
+                    <label class="form-label">
+                      <input type="checkbox" name="mail">
+                      на почту
+                    </label>
+                  </div><!--/.col-->
+                  <div class="col-6">
+                    <label class="form-label">
+                      <input type="checkbox" name="sms">
+                      по смс
+                    </label>
+                  </div><!--/.col-->
+                </div><!--/.row-->
+                <button class="btn form-btn js-form-btn" type="submit">Отправить</button>
+              </form>
             </div><!--/.col-->
           </div><!--/.row-->
         </div><!--/.col-->
