@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&amp;subset=cyrillic">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/icomoon/style.css">
+  <link rel="stylesheet" href="assets/datepicker/css/datepicker.min.css">
+  <link rel="stylesheet" href="assets/bxslider/jquery.bxslider.css">
+  <link rel="stylesheet" href="assets/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <title></title>
+</head>
+<body>
+
+<header class="header">
+  <div class="container">
+    <div class="row justify-content-between align-items-center">
+      <div class="col-xl-2 d-none d-xl-block">
+        <a href="">
+          <img class="logo" src="img/logo.svg">
+        </a>
+      </div><!--/.col-->
+      <div class="col-auto order-1 d-lg-none">
+        <a class="nav-toggler js-collapse" href="#collapse-1">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </div><!--/.col-->
+      <div class="col-12 col-lg-7 col-xl-6 order-3 order-lg-2">
+        <div class="nav-collapse" id="collapse-1">
+          <nav class="nav">
+            <a class="nav-ln" href="">Номера</a>
+            <a class="nav-ln" href="">Услуги</a>
+            <a class="nav-ln" href="">Фотогалерея</a>
+            <a class="nav-ln" href="">Контакты</a>
+          </nav>
+        </div><!--/.nav-collapse-->
+      </div><!--/.col-->
+      <div class="col-auto order-2 order-lg-3">
+        <div class="phone">
+          <a class="phone-num" href="tel:+79216565228">
+            <span class="icon-icon-7"></span>
+            8 (921) 656-52-28
+          </a>
+        </div><!--/.phone-->
+        <a class="btn d-none d-lg-block" href="">Забронировать</a>
+      </div><!--/.col-->
+    </div><!--/.row-->
+  </div><!--/.container-->
+</header>
+
+<section class="section d-lg-none">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-8 col-sm-6">
+        <img class="logo" src="img/logo.svg">
+        <a class="btn" href="">Забронировать</a>
+      </div><!--/.col-->
+    </div><!--/.row-->
+  </div><!--/.container-->
+</section><!--/.section-->
+
+<!-- CONTENT START -->
+
+<section class="section home">
+  <div class="container">
+    <h1 class="home-desc">Отель в центре Санкт-Петербурга</h1>
+    <h2 class="home-title">Отель <span class="nowrap">«Невский 140»</span></h2>
+    <form class="form home-form js-form">
+      <p class="form-title">Проверить наличие свободных мест</p>
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="form-group has-error">
+            <label class="form-label" for="form-input-1">
+              Дата заезда
+            </label>
+            <div class="form-igroup-lr">
+              <span class="icon-icon-8 form-licon"></span>
+              <input class="form-input js-date" id="form-input-1" type="text" name="date-in">
+              <span class="icon-icon-3 form-ricon"></span>
+            </div>
+          </div>
+        </div><!--/.col-->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="form-group">
+            <label class="form-label" for="form-input-2">
+              Дата выезда
+            </label>
+            <div class="form-igroup-lr">
+              <span class="icon-icon-8 form-licon"></span>
+              <input class="form-input js-date" id="form-input-2" type="text" name="date-out">
+              <span class="icon-icon-3 form-ricon"></span>
+            </div>
+          </div>
+        </div><!--/.col-->
+        <div class="col-12 col-md-6 col-lg-2">
+          <div class="form-group">
+            <label class="form-label" for="form-input-3">
+              <span class="icon-icon-2"></span>
+            </label>
+            <div class="form-igroup-r">
+              <select class="form-input" id="form-input-3" name="qty">
+                <option value="0" selected></option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+              </select>
+              <span class="icon-icon-3 form-ricon"></span>
+            </div>
+          </div>
+        </div><!--/.col-->
+        <div class="col-12 col-md-6 col-lg-2">
+          <div class="form-group">
+            <label class="form-label" for="form-input-4">
+              <span class="icon-icon-1"></span>
+            </label>
+            <div class="form-igroup-r">
+              <select class="form-input" id="form-input-4" name="qty-chld">
+                <option value="0" selected></option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+              </select>
+              <span class="icon-icon-3 form-ricon"></span>
+            </div>
+          </div>
+        </div><!--/.col-->
+      </div><!--/.row-->
+      <button class="btn form-btn js-form-btn" type="submit">Найти</button>
+    </form>
+  </div><!--/.container-->
+</section><!--/.section-->
+
+<section class="section">
+  <div class="container">
+    <h2 class="title">Все для Вашего комфорта</h2>
+    <div class="row justify-content-between">
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="iitem">
+          <img class="iitem-img" width="158" height="120" src="img/icon-1.png">
+          <h3 class="iitem-text">Бронирование<br>в любое время</h3>
+        </div>
+      </div><!--/.col-->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="iitem">
+          <img class="iitem-img" width="158" height="120" src="img/icon-2.png">
+          <h3 class="iitem-text">Круглосуточный<br>центр поддержки</h3>
+        </div>
+      </div><!--/.col-->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="iitem">
+          <img class="iitem-img" width="158" height="120" src="img/icon-3.png">
+          <h3 class="iitem-text">Доступные цены<br>и выгодные тарифы</h3>
+        </div>
+      </div><!--/.col-->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="iitem">
+          <img class="iitem-img" width="158" height="120" src="img/icon-4.png">
+          <h3 class="iitem-text">Доступные цены<br>и выгодные тарифы</h3>
+        </div>
+      </div><!--/.col-->
+    </div><!--/.row-->
+    <p class="text">Отель «Невский, 140» с бесплатным Wi-Fi находится в Санкт-Петербурге, <span class="bold">в 2,5 км от храма Спаса-на-Крови.</span></p>
+    <p class="text">Все номера оснащены телевизором, в большинстве из них установлен кондиционер. В числе удобств собственная ванная комната с ванной, тапочками и бесплатными туалетно-косметическими принадлежностями. К услугам гостей бюджетных двухместных номеров с 1 кроватью — общая ванная комната и туалет.</p>
+    <p class="text">Стойка регистрации работает круглосуточно. Гости могут воспользоваться услугами консьержа. По запросу на стойке регистрации предоставляются фен и гладильные принадлежности. Кроме того, организуется трансфер.</p>
+    <div class="row">
+      <div class="col-12 col-lg-6">
+        <div class="slider js-slider">
+          <div class="js-slider-wrap">
+            <div class="slider-item">
+              <img class="slider-img" width="750" height="700" src="img/slide-1.jpg">
+            </div><!--/.slider-item-->
+            <div class="slider-item">
+              <img class="slider-img" width="750" height="700" src="img/slide-2.jpg">
+            </div><!--/.slider-item-->
+            <div class="slider-item">
+              <img class="slider-img" width="750" height="700" src="img/slide-1.jpg">
+            </div><!--/.slider-item-->
+          </div><!--/.js-slider-->
+          <div class="slider-pager js-slider-pager"></div>
+        </div><!--/.slider-->
+      </div><!--/.col-->
+      <div class="col-12 col-lg-6">
+        <p class="text">Отель «Невский, 140» расположен <span class="bold">в 3,1 км от Дворцовой площади</span> и <span class="bold">в 3,2 км от музея «Эрмитаж»</span>. Расстояние от отеля «Невский, 140» <span class="bold">до аэропорта Пулково составляет 16 км</span>.</p>
+        <p class="text">Это любимая часть города Санкт-Петербург среди наших гостей согласно независимым отзывам.</p>
+        <p class="text">Парам особенно нравится расположение — они <span class="bold">оценили</span> проживание в этом районе для поездки вдвоем на <span class="bold">8,7</span>.</p>
+        <p class="text bold center">Мы говорим на вашем языке!</p>
+      </div><!--/.col-->
+    </div><!--/.row-->
+  </div><!--/.container-->
+</section><!--/.section-->
+
+<section class="section">
+  <div class="container">
+    <h2 class="title">Номера</h2>
+      <div class="room">
+        <div class="row">
+        <div class="col-12 col-lg-5">
+          <a class="reset-ln" data-fancybox="gallery" data-caption="" href="img/room-1.jpg">
+            <img class="room-img" width="750" height="500" src="img/room-1.jpg">
+          </a>
+        </div><!--/.col-->
+        <div class="col-12 col-lg-7">
+          <h3 class="room-title underline">Бюджетный номер с двуспальной кроватью</h3>
+          <p class="text">Уютный номер с большой двуспальной кроватью. Туалетная комната и душ расположены рядом, на этаже. В номере установлен кондиционер и телевидение.</p>
+          <div class="room-igroup">
+            <span class="room-icon icon-icon-17"></span>
+            <span class="room-icon icon-icon-16"></span>
+            <span class="room-icon icon-icon-11"></span>
+          </div>
+          <a class="btn room-btn" href="">Забронировать</a>
+        </div><!--/.col-->
+      </div><!--/.row-->
+    </div><!--/.room-->
+    <div class="room">
+      <div class="row">
+        <div class="col-12 col-lg-5">
+          <a class="reset-ln" data-fancybox="gallery" data-caption="" href="img/room-2.jpg">
+            <img class="room-img" width="750" height="500" src="img/room-2.jpg">
+          </a>
+        </div><!--/.col-->
+        <div class="col-12 col-lg-7">
+          <h3 class="room-title underline">Стандартный одноместный номер</h3>
+          <p class="text">Номер с одноместной кроватью. Все удобства находятся в номере. Установлен кондиционер и письменный столик. В постоянном доступе интернет и телевидение.</p>
+          <div class="room-igroup">
+            <span class="room-icon icon-icon-10"></span>
+            <span class="room-icon icon-icon-16"></span>
+            <span class="room-icon icon-icon-11"></span>
+            <span class="room-icon icon-icon-9"></span>
+            <span class="room-icon icon-icon-12"></span>
+          </div>
+          <a class="btn room-btn" href="">Забронировать</a>
+        </div><!--/.col-->
+      </div><!--/.row-->
+    </div><!--/.room-->
+    <div class="room">
+      <div class="row">
+        <div class="col-12 col-lg-5">
+          <a class="reset-ln" data-fancybox="gallery" data-caption="" href="img/room-3.jpg">
+            <img class="room-img" width="750" height="500" src="img/room-3.jpg">
+          </a>
+        </div><!--/.col-->
+        <div class="col-12 col-lg-7">
+          <h3 class="room-title underline">Стандартный двухместный номер с двуспальной кроватью</h3>
+          <p class="text">Все удобства находятся в номере. Установлен кондиционер и письменный столик. В постоянном доступе интернет и телевидение.</p>
+          <div class="room-igroup">
+            <span class="room-icon icon-icon-17"></span>
+            <span class="room-icon icon-icon-16"></span>
+            <span class="room-icon icon-icon-11"></span>
+            <span class="room-icon icon-icon-9"></span>
+            <span class="room-icon icon-icon-12"></span>
+          </div>
+          <a class="btn room-btn" href="">Забронировать</a>
+        </div><!--/.col-->
+      </div><!--/.row-->
+    </div><!--/.room-->
+    <div class="room">
+      <div class="row">
+        <div class="col-12 col-lg-5">
+          <a class="reset-ln" data-fancybox="gallery" data-caption="" href="img/room-4.jpg">
+            <img class="room-img" width="750" height="500" src="img/room-4.jpg">
+          </a>
+        </div><!--/.col-->
+        <div class="col-12 col-lg-7">
+          <h3 class="room-title underline">Стандартный двухместный номер с раздельными кроватями</h3>
+          <p class="text">Все удобства находятся в номере. Установлен кондиционер и письменный столик. В постоянном доступе интернет и телевидение.</p>
+          <div class="room-igroup">
+            <span class="room-icon icon-icon-13"></span>
+            <span class="room-icon icon-icon-16"></span>
+            <span class="room-icon icon-icon-11"></span>
+            <span class="room-icon icon-icon-14"></span>
+            <span class="room-icon icon-icon-12"></span>
+          </div>
+          <a class="btn room-btn" href="">Забронировать</a>
+        </div><!--/.col-->
+      </div><!--/.row-->
+    </div><!--/.room-->
+    <div class="room">
+      <div class="row">
+        <div class="col-12 col-lg-5">
+          <a class="reset-ln" data-fancybox="gallery" data-caption="" href="img/room-5.jpg">
+            <img class="room-img" width="750" height="500" src="img/room-5.jpg">
+          </a>
+        </div><!--/.col-->
+        <div class="col-12 col-lg-7">
+          <h3 class="room-title underline">Трёхместный номер</h3>
+          <p class="text">Номер с тремя отдельными кроватями. Все удобства находятся в номере. Установлен кондиционер и письменный столик. В постоянном доступе интернет и телевидение.</p>
+          <div class="room-igroup">
+            <span class="room-icon icon-icon-16"></span>
+            <span class="room-icon icon-icon-11"></span>
+            <span class="room-icon icon-icon-14"></span>
+            <span class="room-icon icon-icon-12"></span>
+          </div>
+          <a class="btn room-btn" href="">Забронировать</a>
+        </div><!--/.col-->
+      </div><!--/.row-->
+    </div><!--/.room-->
+    <div class="room">
+      <div class="row">
+        <div class="col-12 col-lg-5">
+          <a class="reset-ln" data-fancybox="gallery" data-caption="" href="img/room-6.jpg">
+            <img class="room-img" width="750" height="500" src="img/room-6.jpg">
+          </a>
+        </div><!--/.col-->
+        <div class="col-12 col-lg-7">
+          <h3 class="room-title underline">Улучшенный двухместный номер</h3>
+          <p class="text">Номер с двуспальной кроватью. Все удобства находятся в номере. Собственная ванная комната и туалет. В постоянном доступе интернет и телевидение.</p>
+          <div class="room-igroup">
+            <span class="room-icon icon-icon-17"></span>
+            <span class="room-icon icon-icon-16"></span>
+            <span class="room-icon icon-icon-11"></span>
+            <span class="room-icon icon-icon-9"></span>
+            <span class="room-icon icon-icon-12"></span>
+            <span class="room-icon icon-icon-14"></span>
+          </div>
+          <a class="btn room-btn" href="">Забронировать</a>
+        </div><!--/.col-->
+      </div><!--/.row-->
+    </div><!--/.room-->
+    <div class="room">
+      <div class="row">
+        <div class="col-12 col-lg-5">
+          <a class="reset-ln" data-fancybox="gallery" data-caption="" href="img/room-7.jpg">
+            <img class="room-img" width="750" height="500" src="img/room-7.jpg">
+          </a>
+        </div><!--/.col-->
+        <div class="col-12 col-lg-7">
+          <h3 class="room-title underline">Люкс</h3>
+          <p class="text">Номер с двуспальной кроватью и большим комфортным диваном. Все удобства находятся в номере. В постоянном доступе интернет и телевидение.</p>
+          <div class="room-igroup">
+            <span class="room-icon icon-icon-17"></span>
+            <span class="room-icon icon-icon-16"></span>
+            <span class="room-icon icon-icon-11"></span>
+            <span class="room-icon icon-icon-9"></span>
+            <span class="room-icon icon-icon-12"></span>
+            <span class="room-icon icon-icon-14"></span>
+            <span class="room-icon icon-icon-15"></span>
+          </div>
+          <a class="btn room-btn" href="">Забронировать</a>
+        </div><!--/.col-->
+      </div><!--/.row-->
+    </div><!--/.room-->
+  </div><!--/.container-->
+</section><!--/.section-->
+
+<!-- CONTENT END -->
+
+<section class="section wel">
+  <div class="container">
+    <h2 class="title">Мы всегда рады Вас видеть!</h2>
+    <div class="row justify-content-center justify-content-lg-between">
+      <div class="col-12 col-md-6 col-lg-auto">
+        <div class="wel-item">
+          <span class="wel-icon icon-icon-6"></span>
+          <p class="wel-text">8 (921) 656-52-28</p>
+        </div>
+      </div><!--/.col-->
+      <div class="col-12 col-md-6 col-lg-auto">
+        <div class="wel-item">
+          <span class="wel-icon icon-icon-4"></span>
+          <p class="wel-text">Невский Проспект 140</p>
+        </div>
+      </div><!--/.col-->
+      <div class="col-12 col-md-6 col-lg-auto">
+        <div class="wel-item">
+          <span class="wel-icon icon-icon-5"></span>
+          <p class="wel-text">nevsky140@gmail.com</p>
+        </div>
+      </div><!--/.col-->
+    </div><!--/.row-->
+  </div><!--/.container-->
+</section><!--/.section-->
+
+<section class="section map">
+  <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A09cb1b970a1fd1e0d75b8e5d27490909853c056d55b7b871890ca113c7f30041&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=false"></script>
+</section><!--/.section-->
+
+<footer class="footer">
+  <div class="container">
+    <div class="row justify-content-center justify-content-lg-between align-items-center">
+      <div class="col-12 col-lg-auto">
+        <p>2018 Отель «Невский 140»<br>город Санкт-Петербург.</p>
+      </div><!--/.col-->
+      <div class="col-8 col-sm-6 col-lg-2">
+        <img class="logo" src="img/logo-w.svg">
+      </div><!--/.col-->
+      <div class="col-12 col-lg-auto">
+        <p>Бронирование номеров<br>по телефону или онлайн</p>
+      </div><!--/.col-->
+    </div><!--/.row-->
+    <div class="row justify-content-between align-items-center">
+      <div class="col-12 col-lg-auto">
+        <p>Официальный сайт</p>
+      </div><!--/.col-->
+      <div class="col-12 col-lg-auto">
+        <p>Копирование информации без согласования запрещено</p>
+      </div><!--/.col-->
+      <div class="col-12 col-lg-auto">
+        <p>
+          Разработано студией<br>
+          <a target="_blank" href="http://webgangstudio.ru/">
+            <img width="150" height="26" src="img/w-logo.png">
+          </a>
+        </p>
+      </div><!--/.col-->
+    </div><!--/.row-->
+  </div><!--/.container-->
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="assets/datepicker/js/datepicker.min.js"></script>
+<script src="assets/bxslider/jquery.bxslider.min.js"></script>
+<script src="assets/fancybox/jquery.fancybox.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
