@@ -761,6 +761,27 @@ textarea.form-input {
   font-weight: 700;
   font-size: 30px;
 }
+.ser-icon {
+  color: #9b2235;
+  font-size: 30px;
+  vertical-align: middle;
+}
+.ser-title {
+  display: block;
+  margin: 15px 0;
+  padding: 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+.ser-list {
+  font-size: 18px;
+}
+.ser-text {
+  display: block;
+  margin: 15px 0;
+  padding: 0;
+  font-size: 18px;
+}
 .bold {
   font-weight: 700;
 }
@@ -778,6 +799,9 @@ textarea.form-input {
 }
 .underline {
   text-decoration: underline;
+}
+.red {
+  color: #9b2235;
 }
 /*
  * Small screen / phone                                          ≥ 576px
@@ -937,5 +961,12 @@ textarea.form-input {
   }
   .contact-iicon {
     margin-right: 15px;
+  }
+  .ser-title {
+    font-size: 26px;
+  }
+  .ser-list,
+  .ser-text {
+    font-size: 21px;
   }
 }
