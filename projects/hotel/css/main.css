@@ -462,6 +462,17 @@ textarea.form-input {
   font-size: 16px;
   font-weight: 400;
 }
+.form-message {
+  display: block;
+  margin: 25px 0;
+  padding: 0;
+  color: #f00;
+  text-align: center;
+  font-size: 18px;
+}
+.form-message-icon {
+  font-size: 23px;
+}
 .home {
   background: url("../img/bg-home.jpg") 50% 50% no-repeat;
   background-size: cover;
