@@ -214,7 +214,7 @@ popupHide = function(e) {
 $('.js-popbtn').hover(popupShow, popupHide);
 
 new jQueryMailer('.js-form', {
-  action: '/send.json',
+  action: '../send.json',
   sendingStr: $('#js-ajax-img').html(),
   success: function($form, data) {
     $.fancybox.open({
