@@ -3,7 +3,7 @@
  * @link https://webprowww.github.io
  */
 
-var $, $headerBlock, $scrollToTop, headerOnScroll, jQueryMailer, popupHide, popupShow, scrollToTopBtnOnScroll;
+var $, $headerBlock, $scrollToTop, $window, headerOnScroll, jQueryMailer, popupHide, popupShow, scrollToTopBtnOnScroll;
 
 $ = jQuery;
 
@@ -134,6 +134,8 @@ jQueryMailer = (function() {
 
 }).call(this);
 
+$window = $(window);
+
 $('.js-collapse').on('click', function(e) {
   var $collapse;
   e.preventDefault();
@@ -168,7 +170,7 @@ scrollToTopBtnOnScroll = function(scrollTopNum) {
   }
 };
 
-$(window).on('scroll', function(e) {
+$window.on('scroll', function(e) {
   var scrollTopNum;
   scrollTopNum = $(this).scrollTop();
   headerOnScroll(scrollTopNum);
@@ -195,14 +197,29 @@ $('.js-scrollto').on('click', function(e) {
 });
 
 popupShow = function(e) {
-  var $popup, $this, css, position;
+  var $popup, $this, css, left, offsetLeft, position, wW;
   $this = $(this);
   $popup = $this.next('.popup-content');
   position = $this.position();
-  css = $.extend(false, position, {
-    'margin-top': $popup.height() * -1 - 50
-  });
-  console.log(css);
+  offsetLeft = $this.offset().left;
+  wW = $window.width();
+  left = position.left + ($this.width() * 0.5);
+  css = {
+    'margin-top': $popup.height() * -1 - 50,
+    'left': left,
+    'top': position.top
+  };
+  if (wW <= 320) {
+    css.left = wW * 0.5;
+  }
+  if (wW > 320) {
+    if (offsetLeft < 160) {
+      css.left = 160;
+    }
+    if ((left + 160) > wW) {
+      css.left = wW - 160;
+    }
+  }
   $popup.css(css);
   return $popup.addClass('show');
 };
