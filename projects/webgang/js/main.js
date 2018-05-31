@@ -33,21 +33,19 @@ jQueryMailer = (function() {
 
     send($form) {
       this.progress($form);
-      this.delay(3, () => {
-        this.process = true;
-        return $.ajax({
-          method: this.settings.method,
-          url: this.settings.action,
-          data: $form.serialize(),
-          dataType: this.settings.dataType
-        }).done((data) => {
-          return this.success($form, data);
-        }).fail(() => {
-          return this.error($form);
-        }).always(() => {
-          this.process = false;
-          return this.always($form);
-        });
+      this.process = true;
+      $.ajax({
+        method: this.settings.method,
+        url: this.settings.action,
+        data: $form.serialize(),
+        dataType: this.settings.dataType
+      }).done((data) => {
+        return this.success($form, data);
+      }).fail(() => {
+        return this.error($form);
+      }).always(() => {
+        this.process = false;
+        return this.always($form);
       });
       return true;
     }
@@ -231,7 +229,7 @@ popupHide = function(e) {
 $('.js-popbtn').hover(popupShow, popupHide);
 
 new jQueryMailer('.js-form', {
-  action: '../send.json',
+  action: '/api/send.php',
   sendingStr: $('#js-ajax-img').html(),
   success: function($form, data) {
     $.fancybox.open({

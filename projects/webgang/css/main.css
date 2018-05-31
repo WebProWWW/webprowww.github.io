@@ -522,29 +522,14 @@ body {
   outline: none;
   color: #fff;
 }
-.portfolio-twrap {
-  opacity: 0;
-  -webkit-transition: 0.8s all ease-in-out;
-  transition: 0.8s all ease-in-out;
-}
 .portfolio-hover {
   position: absolute;
-  padding: 30px;
-  top: 0px;
+  padding: 15px;
   left: 0px;
   right: 0px;
   bottom: 0px;
-  background: rgba(36,83,197,0.93) url("../img/pattern.png");
+  background: #2453c5 url("../img/pattern.png");
   overflow: hidden;
-  opacity: 0;
-  -webkit-transition: 0.3s all ease-in-out;
-  transition: 0.3s all ease-in-out;
-}
-.portfolio-hover:hover {
-  opacity: 1;
-}
-.portfolio-hover:hover .portfolio-twrap {
-  opacity: 1;
 }
 .portfolio-title {
   display: block;
@@ -552,7 +537,7 @@ body {
   padding: 0;
   font-family: 'MuseoSansLight';
   font-weight: normal;
-  font-size: 28px;
+  font-size: 18px;
 }
 .portfolio-title:after {
   content: '';
@@ -569,7 +554,7 @@ body {
   padding: 0;
   font-family: 'MuseoSansLight';
   font-weight: normal;
-  font-size: 18px;
+  font-size: 16px;
 }
 .portfolio-img {
   display: block;
@@ -650,6 +635,12 @@ body {
   text-align: center;
   border-radius: 11px;
   height: 100%;
+  -webkit-transition: 0.26s all ease-in-out;
+  transition: 0.26s all ease-in-out;
+}
+.advant-content:hover {
+  -webkit-box-shadow: 0 3px 20px 0 rgba(0,0,0,0.25);
+          box-shadow: 0 3px 20px 0 rgba(0,0,0,0.25);
 }
 .advant-img {
   display: block;
@@ -673,8 +664,8 @@ body {
   font-size: 20px;
 }
 .bonus {
-  -webkit-box-shadow: 3px 0 25px 0 rgba(0,0,0,0.19);
-          box-shadow: 3px 0 25px 0 rgba(0,0,0,0.19);
+  -webkit-box-shadow: 0 0 25px 0 rgba(0,0,0,0.19);
+          box-shadow: 0 0 25px 0 rgba(0,0,0,0.19);
 }
 .bonus-title {
   display: block;
@@ -1401,6 +1392,31 @@ body {
   .portfolio-item {
     margin-left: -15px;
     margin-right: -15px;
+  }
+  .portfolio-twrap {
+    opacity: 0;
+    -webkit-transition: 0.8s all ease-in-out;
+    transition: 0.8s all ease-in-out;
+  }
+  .portfolio-hover {
+    padding: 30px;
+    top: 0px;
+    background-color: rgba(36,83,197,0.93);
+    opacity: 0;
+    -webkit-transition: 0.3s all ease-in-out;
+    transition: 0.3s all ease-in-out;
+  }
+  .portfolio-hover:hover {
+    opacity: 1;
+  }
+  .portfolio-hover:hover .portfolio-twrap {
+    opacity: 1;
+  }
+  .portfolio-title {
+    font-size: 28px;
+  }
+  .portfolio-desc {
+    font-size: 18px;
   }
   .bonus-title {
     font-size: 53px;
