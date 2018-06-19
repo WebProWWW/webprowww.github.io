@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&amp;subset=cyrillic">
+  <link rel="stylesheet" href="assets/icomoon/style.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.css">
+  <link rel="stylesheet" href="assets/datepicker/css/datepicker.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Бронь</title>
+</head>
+<body>
+
+<header class="header">
+  <div class="container">
+    <div class="row align-items-center justify-content-between">
+      <div class="col-auto d-none d-sm-block">
+        <a class="logo" href="">
+          <span class="color-green">Лого</span>
+          <span class="color-blue">Бронь</span>
+        </a>
+      </div><!--/.col-->
+      <div class="col-auto ml-sm-auto">
+        <a class="phone" href="tel:+79999999999">8-800-000-88-88</a>
+      </div><!--/.col-->
+      <div class="col-auto">
+        <a class="btn btn-yellow py-8" href="#">Авторизация</a>
+      </div><!--/.col-->
+    </div><!--/.row-->
+  </div><!--/.container-->
+</header>
+
+<div class="d-flex flex-column h-100">
+
+<!-- CONTENT START -->
+
+<section class="section pt-90">
+  <div class="container">
+    <form class="form">
+      <div class="row justify-content-end">
+        <div class="col-12 col-sm-12 col-md-12 col-xl-6">
+          <label class="input-label">Город</label>
+          <div class="input-igroup">
+            <span class="input-ileft color-green icon-icon-15"></span>
+            <select class="input group-lr">
+              <option disabled selected hidden>Выберите город</option>
+              <option>Lorem ipsum dolor sit amet - 1</option>
+              <option>Lorem ipsum dolor sit amet - 2</option>
+              <option>Lorem ipsum dolor sit amet - 3</option>
+              <option>Lorem ipsum dolor sit amet - 4</option>
+              <option>Lorem ipsum dolor sit amet - 5</option>
+            </select>
+            <span class="input-iright icon-icon-38"></span>
+          </div><!--/.input-igroup-->
+        </div><!--/.col-->
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+          <label class="input-label">Количество взрослых</label>
+          <div class="input-igroup">
+            <span class="input-ileft color-green icon-icon-16"></span>
+            <select class="input group-lr">
+              <option selected>1-взрослый</option>
+              <option>2-взрослых</option>
+              <option>3-взрослых</option>
+              <option>4-взрослых</option>
+              <option>5-взрослых</option>
+            </select>
+            <span class="input-iright icon-icon-38"></span>
+          </div><!--/.input-igroup-->
+        </div><!--/.col-->
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+          <label class="input-label">Количество детей</label>
+          <div class="input-igroup">
+            <span class="input-ileft color-green icon-icon-36"></span>
+            <select class="input group-lr">
+              <option selected>Без детей</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+            <span class="input-iright icon-icon-38"></span>
+          </div><!--/.input-igroup-->
+        </div><!--/.col-->
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+          <label class="input-label">Количество звезд</label>
+          <div class="input-igroup">
+            <select class="input group-r">
+              <option disabled selected hidden></option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+            <span class="input-iright icon-icon-38"></span>
+          </div><!--/.input-igroup-->
+        </div><!--/.col-->
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+          <label class="input-label">Дата заезда</label>
+          <div class="input-igroup">
+            <span class="input-ileft color-green icon-icon-14"></span>
+            <input class="input group-lr js-date" type="text" readonly placeholder="Выберите дату">
+            <span class="input-iright icon-icon-38"></span>
+          </div><!--/.input-igroup-->
+        </div><!--/.col-->
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+          <label class="input-label">Дата выезда</label>
+          <div class="input-igroup">
+            <span class="input-ileft color-green icon-icon-14"></span>
+            <input class="input group-lr js-date" type="text" readonly placeholder="Выберите дату">
+            <span class="input-iright icon-icon-38"></span>
+          </div><!--/.input-igroup-->
+        </div><!--/.col-->
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+          <label class="input-label">&nbsp;</label>
+          <button class="btn btn-yellow form-btn" type="submit">НАЙТИ</button>
+        </div><!--/.col-->
+      </div><!--/.row-->
+    </form>
+  </div><!--/.container-->
+</section><!--/.section-->
+
+<section class="section flex-grow-1 bg-llgray">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-5 col-lg-4 col-xl-3">
+        <form class="form">
+          <div class="row">
+            <div class="col-12">
+              <div class="input-igroup">
+                <span class="input-ileft color-blue icon-icon-9"></span>
+                <select class="input group-lr">
+                  <option selected>Посмотреть на карте</option>
+                  <option>Lorem ipsum dolor sit amet - 1</option>
+                  <option>Lorem ipsum dolor sit amet - 2</option>
+                  <option>Lorem ipsum dolor sit amet - 3</option>
+                  <option>Lorem ipsum dolor sit amet - 4</option>
+                  <option>Lorem ipsum dolor sit amet - 5</option>
+                </select>
+                <span class="input-iright icon-icon-38"></span>
+              </div><!--/.input-igroup-->
+            </div><!--/.col-->
+            <div class="col-12">
+              <p class="text-lg">Фильтр</p>
+              <div class="bg-lgray mb-15 hpx-3"></div>
+            </div><!--/.col-->
+            <div class="col-12">
+              <label class="input-label">Количество звезд</label>
+              <div class="radio-group">
+                <label class="radio-label">
+                  <input class="radio" type="radio" name="radio">
+                  <span class="radio-txt">1</span>
+                </label>
+                <label class="radio-label">
+                  <input class="radio" type="radio" name="radio">
+                  <span class="radio-txt">2</span>
+                </label>
+                <label class="radio-label">
+                  <input class="radio" type="radio" name="radio">
+                  <span class="radio-txt">3</span>
+                </label>
+                <label class="radio-label">
+                  <input class="radio" type="radio" name="radio">
+                  <span class="radio-txt">4</span>
+                </label>
+                <label class="radio-label">
+                  <input class="radio" type="radio" name="radio">
+                  <span class="radio-txt">5</span>
+                </label>
+              </div><!--/.input-igroup-->
+              <div class="bg-lgray mb-15 hpx-3"></div>
+            </div><!--/.col-->
+            <div class="col-12">
+              <label class="input-label">Цена</label>
+              <div class="js-range">
+                <input class="js-range-min-val" type="hidden" readonly value="0" name="">
+                <input class="js-range-max-val" type="hidden" readonly value="20000" name="">
+                <div
+                  class="range-slider"
+                  min="0"
+                  max="20000"
+                ></div>
+                <div class="row justify-content-between">
+                  <div class="col-auto">
+                    <p class="text js-range-min">0</p>
+                  </div><!--/.col-->
+                  <div class="col-auto">
+                    <p class="text js-range-max">20000</p>
+                  </div><!--/.col-->
+                </div><!--/.row-->
+              </div>
+              <div class="bg-lgray mb-15 hpx-3"></div>
+            </div><!--/.col-->
+            <div class="col-12">
+              <label class="input-label">Расположение</label>
+              <div class="input-igroup">
+                <span class="input-ileft color-blue icon-icon-8"></span>
+                <select class="input group-lr">
+                  <option selected>Метро</option>
+                  <option>Lorem ipsum dolor sit amet - 1</option>
+                  <option>Lorem ipsum dolor sit amet - 2</option>
+                  <option>Lorem ipsum dolor sit amet - 3</option>
+                  <option>Lorem ipsum dolor sit amet - 4</option>
+                  <option>Lorem ipsum dolor sit amet - 5</option>
+                </select>
+                <span class="input-iright icon-icon-38"></span>
+              </div><!--/.input-igroup-->
+              <div class="input-igroup">
+                <span class="input-ileft color-blue icon-icon-9"></span>
+                <select class="input group-lr">
+                  <option selected>Район</option>
+                  <option>Lorem ipsum dolor sit amet - 1</option>
+                  <option>Lorem ipsum dolor sit amet - 2</option>
+                  <option>Lorem ipsum dolor sit amet - 3</option>
+                  <option>Lorem ipsum dolor sit amet - 4</option>
+                  <option>Lorem ipsum dolor sit amet - 5</option>
+                </select>
+                <span class="input-iright icon-icon-38"></span>
+              </div><!--/.input-igroup-->
+              <div class="bg-lgray mb-15 hpx-3"></div>
+            </div><!--/.col-->
+            <div class="col-12">
+              <label class="input-label">Услуги отеля</label>
+              <div class="size-13 mb-15">
+                &nbsp;&nbsp;<input type="checkbox" name="">&nbsp;&nbsp;Wi-Fi
+                <br>
+                &nbsp;&nbsp;<input type="checkbox" name="">&nbsp;&nbsp;Ресторан
+                <br>
+                &nbsp;&nbsp;<input type="checkbox" name="">&nbsp;&nbsp;Парковка
+                <br>
+                &nbsp;&nbsp;<input type="checkbox" name="">&nbsp;&nbsp;Бассейн
+                <br>
+                &nbsp;&nbsp;<input type="checkbox" name="">&nbsp;&nbsp;Трансфер из аэропорта
+                <br>
+                &nbsp;&nbsp;<input type="checkbox" name="">&nbsp;&nbsp;Спортзал
+                <br>
+                &nbsp;&nbsp;<input type="checkbox" name="">&nbsp;&nbsp;Бар
+                <br>
+                &nbsp;&nbsp;<input type="checkbox" name="">&nbsp;&nbsp;Спа
+              </div>
+              <div class="bg-lgray mb-15 hpx-3"></div>
+            </div><!--/.col-->
+            <div class="col-12">
+              <label class="input-label">Питание</label>
+              <div class="size-13 mb-15">
+                &nbsp;&nbsp;<input type="checkbox" name="">&nbsp;&nbsp;Завтрак включен
+              </div>
+              <div class="bg-lgray mb-15 hpx-3"></div>
+            </div><!--/.col-->
+            <div class="col-12">
+              <label class="input-label">Тип кровати</label>
+              <div class="size-13 mb-15">
+                &nbsp;&nbsp;<input type="checkbox" name="">&nbsp;&nbsp;1 двуспальная кровать
+                <br>
+                &nbsp;&nbsp;<input type="checkbox" name="">&nbsp;&nbsp;2 односпальные кровати
+              </div>
+            </div><!--/.col-->
+          </div><!--/.row-->
+        </form>
+      </div><!--/.col-->
+      <div class="col-12 col-md-7 col-lg-8 col-xl-9">
+        <div class="wall">
+          <div class="row">
+            <div class="col-12 col-lg-3 col-xl-4">
+              <img class="card-img mb-15" width="640" height="640" src="img/hotel-th.jpg">
+            </div><!--/.col-->
+            <div class="col-12 col-lg-9 col-xl-8">
+              <h3 class="card-ftitle mb-5 bold">Radisson Sonya Hotel Санкт-Петербург</h3>
+              <p class="trend-txt mb-5">Центральный район | 1.5км. от центра города</p>
+              <p class="text"><span class="badge-blue">4,4/5</span> Незабываемо <span class="trend-txt d-inline">(14 отзывов)</span></p>
+              <div class="row align-items-stretch no-gutters mb-15">
+                <div class="col col-lg-auto">
+                  <p class="opt bg-green color-white">Доступные опции</p>
+                </div><!--/.col-->
+                <div class="col col-lg-auto">
+                  <p class="opt">Мгновенное подтверждение</p>
+                </div><!--/.col-->
+                <div class="col col-lg-auto">
+                  <p class="opt">Бесплатная отмена</p>
+                </div><!--/.col-->
+              </div><!--/.row-->
+              <div class="row justify-content-between">
+                <div class="col-auto">
+                  <div class="mb-15">
+                    <span class="icon-icon-7 size-18"></span>
+                    &nbsp;&nbsp;
+                    <span class="icon-icon-6 size-18"></span>
+                    &nbsp;&nbsp;
+                    <span class="icon-icon-5 size-18"></span>
+                    &nbsp;&nbsp;
+                    <span class="icon-icon-4 size-18"></span>
+                    &nbsp;&nbsp;
+                    <span class="icon-icon-3 size-18"></span>
+                  </div>
+                </div><!--/.col-->
+                <div class="col-auto">
+                  <p class="text text-right">
+                    от <span class="color-blue size-23">17352</span> руб.
+                  </p>
+                  <div class="text-right">
+                    <a class="btn btn-blue" href="">Выбрать номер</a>
+                  </div>
+                </div><!--/.col-->
+              </div><!--/.row-->
+            </div><!--/.col-->
+          </div><!--/.row-->
+        </div><!--/.wall-->
+        <div class="wall">
+          <div class="row">
+            <div class="col-12 col-lg-3 col-xl-4">
+              <img class="card-img mb-15" width="640" height="640" src="img/hotel-th.jpg">
+            </div><!--/.col-->
+            <div class="col-12 col-lg-9 col-xl-8">
+              <h3 class="card-ftitle mb-5 bold">Radisson Sonya Hotel Санкт-Петербург</h3>
+              <p class="trend-txt mb-5">Центральный район | 1.5км. от центра города</p>
+              <p class="text"><span class="badge-blue">4,4/5</span> Незабываемо <span class="trend-txt d-inline">(14 отзывов)</span></p>
+              <div class="row align-items-stretch no-gutters mb-15">
+                <div class="col col-lg-auto">
+                  <p class="opt bg-green color-white">Доступные опции</p>
+                </div><!--/.col-->
+                <div class="col col-lg-auto">
+                  <p class="opt">Мгновенное подтверждение</p>
+                </div><!--/.col-->
+                <div class="col col-lg-auto">
+                  <p class="opt">Бесплатная отмена</p>
+                </div><!--/.col-->
+              </div><!--/.row-->
+              <div class="row justify-content-between">
+                <div class="col-auto">
+                  <div class="mb-15">
+                    <span class="icon-icon-7 size-18"></span>
+                    &nbsp;&nbsp;
+                    <span class="icon-icon-6 size-18"></span>
+                    &nbsp;&nbsp;
+                    <span class="icon-icon-5 size-18"></span>
+                    &nbsp;&nbsp;
+                    <span class="icon-icon-4 size-18"></span>
+                    &nbsp;&nbsp;
+                    <span class="icon-icon-3 size-18"></span>
+                  </div>
+                </div><!--/.col-->
+                <div class="col-auto">
+                  <p class="text text-right">
+                    от <span class="color-blue size-23">17352</span> руб.
+                  </p>
+                  <div class="text-right">
+                    <a class="btn btn-blue" href="">Выбрать номер</a>
+                  </div>
+                </div><!--/.col-->
+              </div><!--/.row-->
+            </div><!--/.col-->
+          </div><!--/.row-->
+        </div><!--/.wall-->
+        <div class="wall">
+          <div class="row">
+            <div class="col-12 col-lg-3 col-xl-4">
+              <img class="card-img mb-15" width="640" height="640" src="img/hotel-th.jpg">
+            </div><!--/.col-->
+            <div class="col-12 col-lg-9 col-xl-8">
+              <h3 class="card-ftitle mb-5 bold">Radisson Sonya Hotel Санкт-Петербург</h3>
+              <p class="trend-txt mb-5">Центральный район | 1.5км. от центра города</p>
+              <p class="text"><span class="badge-blue">4,4/5</span> Незабываемо <span class="trend-txt d-inline">(14 отзывов)</span></p>
+              <div class="row align-items-stretch no-gutters mb-15">
+                <div class="col col-lg-auto">
+                  <p class="opt bg-green color-white">Доступные опции</p>
+                </div><!--/.col-->
+                <div class="col col-lg-auto">
+                  <p class="opt">Мгновенное подтверждение</p>
+                </div><!--/.col-->
+                <div class="col col-lg-auto">
+                  <p class="opt">Бесплатная отмена</p>
+                </div><!--/.col-->
+              </div><!--/.row-->
+              <div class="row justify-content-between">
+                <div class="col-auto">
+                  <div class="mb-15">
+                    <span class="icon-icon-7 size-18"></span>
+                    &nbsp;&nbsp;
+                    <span class="icon-icon-6 size-18"></span>
+                    &nbsp;&nbsp;
+                    <span class="icon-icon-5 size-18"></span>
+                    &nbsp;&nbsp;
+                    <span class="icon-icon-4 size-18"></span>
+                    &nbsp;&nbsp;
+                    <span class="icon-icon-3 size-18"></span>
+                  </div>
+                </div><!--/.col-->
+                <div class="col-auto">
+                  <p class="text text-right">
+                    от <span class="color-blue size-23">17352</span> руб.
+                  </p>
+                  <div class="text-right">
+                    <a class="btn btn-blue" href="">Выбрать номер</a>
+                  </div>
+                </div><!--/.col-->
+              </div><!--/.row-->
+            </div><!--/.col-->
+          </div><!--/.row-->
+        </div><!--/.wall-->
+        <div class="wall">
+          <div class="row">
+            <div class="col-12 col-lg-3 col-xl-4">
+              <img class="card-img mb-15" width="640" height="640" src="img/hotel-th.jpg">
+            </div><!--/.col-->
+            <div class="col-12 col-lg-9 col-xl-8">
+              <h3 class="card-ftitle mb-5 bold">Radisson Sonya Hotel Санкт-Петербург</h3>
+              <p class="trend-txt mb-5">Центральный район | 1.5км. от центра города</p>
+              <p class="text"><span class="badge-blue">4,4/5</span> Незабываемо <span class="trend-txt d-inline">(14 отзывов)</span></p>
+              <div class="row align-items-stretch no-gutters mb-15">
+                <div class="col col-lg-auto">
+                  <p class="opt bg-green color-white">Доступные опции</p>
+                </div><!--/.col-->
+                <div class="col col-lg-auto">
+                  <p class="opt">Мгновенное подтверждение</p>
+                </div><!--/.col-->
+                <div class="col col-lg-auto">
+                  <p class="opt">Бесплатная отмена</p>
+                </div><!--/.col-->
+              </div><!--/.row-->
+              <div class="row justify-content-between">
+                <div class="col-auto">
+                  <div class="mb-15">
+                    <span class="icon-icon-7 size-18"></span>
+                    &nbsp;&nbsp;
+                    <span class="icon-icon-6 size-18"></span>
+                    &nbsp;&nbsp;
+                    <span class="icon-icon-5 size-18"></span>
+                    &nbsp;&nbsp;
+                    <span class="icon-icon-4 size-18"></span>
+                    &nbsp;&nbsp;
+                    <span class="icon-icon-3 size-18"></span>
+                  </div>
+                </div><!--/.col-->
+                <div class="col-auto">
+                  <p class="text text-right">
+                    от <span class="color-blue size-23">17352</span> руб.
+                  </p>
+                  <div class="text-right">
+                    <a class="btn btn-blue" href="">Выбрать номер</a>
+                  </div>
+                </div><!--/.col-->
+              </div><!--/.row-->
+            </div><!--/.col-->
+          </div><!--/.row-->
+        </div><!--/.wall-->
+        <div class="wall">
+          <div class="row">
+            <div class="col-12 col-lg-3 col-xl-4">
+              <img class="card-img mb-15" width="640" height="640" src="img/hotel-th.jpg">
+            </div><!--/.col-->
+            <div class="col-12 col-lg-9 col-xl-8">
+              <h3 class="card-ftitle mb-5 bold">Radisson Sonya Hotel Санкт-Петербург</h3>
+              <p class="trend-txt mb-5">Центральный район | 1.5км. от центра города</p>
+              <p class="text"><span class="badge-blue">4,4/5</span> Незабываемо <span class="trend-txt d-inline">(14 отзывов)</span></p>
+              <div class="row align-items-stretch no-gutters mb-15">
+                <div class="col col-lg-auto">
+                  <p class="opt bg-green color-white">Доступные опции</p>
+                </div><!--/.col-->
+                <div class="col col-lg-auto">
+                  <p class="opt">Мгновенное подтверждение</p>
+                </div><!--/.col-->
+                <div class="col col-lg-auto">
+                  <p class="opt">Бесплатная отмена</p>
+                </div><!--/.col-->
+              </div><!--/.row-->
+              <div class="row justify-content-between">
+                <div class="col-auto">
+                  <div class="mb-15">
+                    <span class="icon-icon-7 size-18"></span>
+                    &nbsp;&nbsp;
+                    <span class="icon-icon-6 size-18"></span>
+                    &nbsp;&nbsp;
+                    <span class="icon-icon-5 size-18"></span>
+                    &nbsp;&nbsp;
+                    <span class="icon-icon-4 size-18"></span>
+                    &nbsp;&nbsp;
+                    <span class="icon-icon-3 size-18"></span>
+                  </div>
+                </div><!--/.col-->
+                <div class="col-auto">
+                  <p class="text text-right">
+                    от <span class="color-blue size-23">17352</span> руб.
+                  </p>
+                  <div class="text-right">
+                    <a class="btn btn-blue" href="">Выбрать номер</a>
+                  </div>
+                </div><!--/.col-->
+              </div><!--/.row-->
+            </div><!--/.col-->
+          </div><!--/.row-->
+        </div><!--/.wall-->
+      </div><!--/.col-->
+    </div><!--/.row-->
+  </div><!--/.container-->
+</section><!--/.section-->
+
+<!-- CONTENT END -->
+
+<footer class="footer mt-auto">
+  <div class="container">
+    <div class="row justify-content-between">
+      <div class="col-12 col-md-6 col-lg-auto">
+        <a class="logo" href="">
+          <span class="color-green">Лого</span>
+          <span class="color-blue">Бронь</span>
+        </a>
+      </div><!--/.col-->
+      <div class="col-12 col-md-6 col-lg-6">
+        <nav class="nav">
+          <a class="nav-ln" href="">О компании</a>
+          <a class="nav-ln" href="">Контакты</a>
+          <a class="nav-ln" href="">Сотрудничество</a>
+        </nav>
+      </div><!--/.col-->
+      <div class="col-12 col-md-auto">
+        <a class="phone text-center" href="tel:+79999999999">8-800-000-88-88</a>
+      </div><!--/.col-->
+    </div><!--/.row-->
+    <p class="m-0 p-0 mb-15 size-13 color-gray text-center">&copy; 2018 Все права защищены</p>
+  </div><!--/.container-->
+</footer>
+
+</div><!--/.d-flex flex-column h-100-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="assets/jquery.ui.touch-punch.min.js"></script>
+<script src="assets/datepicker/js/datepicker.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
