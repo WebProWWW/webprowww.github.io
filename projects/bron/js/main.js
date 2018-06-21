@@ -3,7 +3,7 @@
  * @link https://webprowww.github.io
  */
 
-var $, jQueryMailer;
+var $, $window, jQueryMailer;
 
 $ = jQuery;
 
@@ -132,7 +132,8 @@ jQueryMailer = (function() {
 
 }).call(this);
 
-// $window = $ window
+$window = $(window);
+
 $('.js-date').datepicker({
   toggleSelected: false,
   autoClose: true
@@ -164,4 +165,19 @@ $('.js-range').each(function(i, rangeContainer) {
       return $maxInput.val(maxVal);
     }
   });
+});
+
+$('.js-scrollto').on('click', function(e) {
+  var id, offsetTop;
+  e.preventDefault();
+  id = $(this).attr('href');
+  if (id === '#') {
+    offsetTop = 0;
+  } else {
+    offsetTop = $(id).offset().top - 70;
+  }
+  $('html:not(:animated),body:not(:animated)').animate({
+    scrollTop: offsetTop
+  });
+  return false;
 });

@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&amp;subset=cyrillic">
+  <link rel="stylesheet" href="assets/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="assets/icomoon/style.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.css">
+  <link rel="stylesheet" href="assets/datepicker/css/datepicker.min.css">
+  <link rel="stylesheet" href="css/main.css?v=002">
+  <title>Бронь</title>
+</head>
+<body>
+
+<header class="header">
+  <div class="container">
+    <div class="row align-items-center justify-content-between">
+      <div class="col-auto d-none d-sm-block">
+        <a class="logo" href="">
+          <span class="color-green">Лого</span>
+          <span class="color-blue">Бронь</span>
+        </a>
+      </div><!--/.col-->
+      <div class="col-auto ml-sm-auto">
+        <a class="phone" href="tel:+79999999999">8-800-000-88-88</a>
+      </div><!--/.col-->
+      <div class="col-auto">
+        <a class="btn btn-yellow py-8" href="#">Авторизация</a>
+      </div><!--/.col-->
+    </div><!--/.row-->
+  </div><!--/.container-->
+</header>
+
+<div class="d-flex flex-column h-100">
+
+<!-- CONTENT START -->
+
+<section class="section pt-90">
+  <div class="container">
+    <form class="form">
+      <div class="row justify-content-end">
+        <div class="col-12 col-sm-12 col-md-12 col-xl-6">
+          <label class="input-label">Город</label>
+          <div class="input-igroup">
+            <span class="input-ileft color-green icon-icon-15"></span>
+            <select class="input group-lr">
+              <option disabled selected hidden>Выберите город</option>
+              <option>Lorem ipsum dolor sit amet - 1</option>
+              <option>Lorem ipsum dolor sit amet - 2</option>
+              <option>Lorem ipsum dolor sit amet - 3</option>
+              <option>Lorem ipsum dolor sit amet - 4</option>
+              <option>Lorem ipsum dolor sit amet - 5</option>
+            </select>
+            <span class="input-iright icon-icon-38"></span>
+          </div><!--/.input-igroup-->
+        </div><!--/.col-->
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+          <label class="input-label">Количество взрослых</label>
+          <div class="input-igroup">
+            <span class="input-ileft color-green icon-icon-16"></span>
+            <select class="input group-lr">
+              <option selected>1-взрослый</option>
+              <option>2-взрослых</option>
+              <option>3-взрослых</option>
+              <option>4-взрослых</option>
+              <option>5-взрослых</option>
+            </select>
+            <span class="input-iright icon-icon-38"></span>
+          </div><!--/.input-igroup-->
+        </div><!--/.col-->
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+          <label class="input-label">Количество детей</label>
+          <div class="input-igroup">
+            <span class="input-ileft color-green icon-icon-36"></span>
+            <select class="input group-lr">
+              <option selected>Без детей</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+            <span class="input-iright icon-icon-38"></span>
+          </div><!--/.input-igroup-->
+        </div><!--/.col-->
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+          <label class="input-label">Количество звезд</label>
+          <div class="input-igroup">
+            <select class="input group-r">
+              <option disabled selected hidden></option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+            <span class="input-iright icon-icon-38"></span>
+          </div><!--/.input-igroup-->
+        </div><!--/.col-->
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+          <label class="input-label">Дата заезда</label>
+          <div class="input-igroup">
+            <span class="input-ileft color-green icon-icon-14"></span>
+            <input class="input group-lr js-date" type="text" readonly placeholder="Выберите дату">
+            <span class="input-iright icon-icon-38"></span>
+          </div><!--/.input-igroup-->
+        </div><!--/.col-->
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+          <label class="input-label">Дата выезда</label>
+          <div class="input-igroup">
+            <span class="input-ileft color-green icon-icon-14"></span>
+            <input class="input group-lr js-date" type="text" readonly placeholder="Выберите дату">
+            <span class="input-iright icon-icon-38"></span>
+          </div><!--/.input-igroup-->
+        </div><!--/.col-->
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+          <label class="input-label">&nbsp;</label>
+          <button class="btn btn-yellow form-btn" type="submit">НАЙТИ</button>
+        </div><!--/.col-->
+      </div><!--/.row-->
+    </form>
+  </div><!--/.container-->
+</section><!--/.section-->
+
+<section class="section flex-grow-1 bg-llgray">
+  <div class="container">
+
+    <nav class="breadcrumb">
+      <a class="breadcrumb-item" href="">Главная</a>
+      <a class="breadcrumb-item" href="">Отели</a>
+      <a class="breadcrumb-item" href="">Европа</a>
+      <a class="breadcrumb-item" href="">Россия</a>
+      <a class="breadcrumb-item active" href="">Санкт-Петербург</a>
+    </nav>
+
+    <h1 class="title text-left size-23">Radisson Sonya Hotel Санкт-Петербург (Radisson Sonya Hotel)</h1>
+    <p class="text color-gray">191187 Россия Санкт-Петербург Центральный район Литейный пр. 5/19 | 0.79км от Станция метро:Chernyshevskaya <a href="">Посмотреть на карте</a></p>
+
+    <nav class="snav">
+      <div class="row justify-content-between">
+        <div class="col-auto">
+          <a class="snav-item js-scrollto" href="#sblock-1">Описание</a>
+        </div><!--/.col-->
+        <div class="col-auto">
+          <a class="snav-item js-scrollto" href="#sblock-2">Номера</a>
+        </div><!--/.col-->
+        <div class="col-auto">
+          <a class="snav-item js-scrollto" href="#sblock-3">Описание отеля</a>
+        </div><!--/.col-->
+        <div class="col-auto">
+          <a class="snav-item js-scrollto" href="#sblock-4">Услуги</a>
+        </div><!--/.col-->
+        <div class="col-auto">
+          <a class="snav-item js-scrollto" href="#sblock-5">Правила</a>
+        </div><!--/.col-->
+        <div class="col-auto">
+          <a class="snav-item js-scrollto" href="#">Отзывы</a>
+        </div><!--/.col-->
+      </div><!--/.row-->
+    </nav>
+
+    <div class="row" id="sblock-1">
+      <div class="col-12 col-sm-6 col-lg-8 mb-15">
+        <div class="row">
+          <div class="col-12 col-lg-8 mb-2">
+            <a data-fancybox="gallery" href="img/hotel.jpg">
+              <img class="thumb-big" src="img/hotel.jpg">
+            </a>
+          </div><!--/.col-->
+          <div class="col-12 col-lg-4">
+            <div class="row thumb-row">
+              <div class="thumb-col col-4 col-lg-6">
+                <a data-fancybox="gallery" href="img/hotel.jpg">
+                  <img class="thumb" width="150" height="150" src="img/hotel-th.jpg">
+                </a>
+              </div><!--/.col-->
+              <div class="thumb-col col-4 col-lg-6">
+                <a data-fancybox="gallery" href="img/hotel.jpg">
+                  <img class="thumb" width="150" height="150" src="img/hotel-th.jpg">
+                </a>
+              </div><!--/.col-->
+              <div class="thumb-col col-4 col-lg-6">
+                <a data-fancybox="gallery" href="img/hotel.jpg">
+                  <img class="thumb" width="150" height="150" src="img/hotel-th.jpg">
+                </a>
+              </div><!--/.col-->
+              <div class="thumb-col col-4 col-lg-6">
+                <a data-fancybox="gallery" href="img/hotel.jpg">
+                  <img class="thumb" width="150" height="150" src="img/hotel-th.jpg">
+                </a>
+              </div><!--/.col-->
+              <div class="thumb-col col-4 col-lg-6">
+                <a data-fancybox="gallery" href="img/hotel.jpg">
+                  <img class="thumb" width="150" height="150" src="img/hotel-th.jpg">
+                </a>
+              </div><!--/.col-->
+              <div class="thumb-col col-4 col-lg-6">
+                <a data-fancybox="gallery" href="img/hotel.jpg">
+                  <img class="thumb" width="150" height="150" src="img/hotel-th.jpg">
+                </a>
+              </div><!--/.col-->
+            </div><!--/.row-->
+          </div><!--/.col-->
+        </div><!--/.row-->
+      </div><!--/.col-->
+      <div class="col-12 col-sm-6 col-lg-4">
+        <p class="text-lg color-blue">
+          <span class="size-26">5,0</span>/5
+          Незабываемо
+          <a class="d-block size-13" href="">Показать все 14 отзывов</a>
+        </p>
+        <p class="ilist">
+          <span class="ilist-item">
+            <span class="ilist-icon">
+              <span class="icon-icon-7"></span>
+            </span>
+            <span class="ilist-txt">Wi-Fi в зонах</span>
+          </span><!--/.ilist-item-->
+          <span class="ilist-item">
+            <span class="ilist-icon">
+              <span class="icon-icon-6"></span>
+            </span>
+            <span class="ilist-txt">Трансфер из/до аэропорта</span>
+          </span><!--/.ilist-item-->
+          <span class="ilist-item">
+            <span class="ilist-icon">
+              <span class="icon-icon-5"></span>
+            </span>
+            <span class="ilist-txt">Парковка</span>
+          </span><!--/.ilist-item-->
+          <span class="ilist-item">
+            <span class="ilist-icon">
+              <span class="icon-icon-2"></span>
+            </span>
+            <span class="ilist-txt">Ресторан</span>
+          </span><!--/.ilist-item-->
+          <span class="ilist-item">
+            <span class="ilist-icon">
+              <span class="icon-icon-3"></span>
+            </span>
+            <span class="ilist-txt">Бассейн</span>
+          </span><!--/.ilist-item-->
+          <span class="ilist-item">
+            <span class="ilist-icon">
+              <span class="icon-icon-1"></span>
+            </span>
+            <span class="ilist-txt">Кондиционер</span>
+          </span><!--/.ilist-item-->
+          <span class="ilist-item">
+            <span class="ilist-icon">
+              <span class="icon-icon-4"></span>
+            </span>
+            <span class="ilist-txt">Тренажерный зал</span>
+          </span><!--/.ilist-item-->
+          <span class="ilist-item">
+            <span class="ilist-icon">
+              <span class="icon-icon-18"></span>
+            </span>
+            <span class="ilist-txt">Домашние животные</span>
+          </span><!--/.ilist-item-->
+        </p>
+      </div><!--/.col-->
+    </div><!--/.row-->
+
+    <div class="wall wall-blue px-5" id="sblock-2">
+      <div class="d-none d-lg-flex align-items-center color-gray">
+        <div class="col-3">
+          <p class="m-0 p-0 size-13 mb-15">Тип номера</p>
+        </div><!--/.col-->
+        <div class="col-9">
+          <div class="row align-items-center">
+            <div class="col-2">
+              <p class="m-0 p-0 size-13 mb-15">Максимум гостей и кроватей</p>
+            </div><!--/.col-->
+            <div class="col-3">
+              <p class="m-0 p-0 size-13 mb-15">Удобства отеля</p>
+            </div><!--/.col-->
+            <div class="col-4">
+              <p class="m-0 p-0 size-13 mb-15">Правила</p>
+            </div><!--/.col-->
+            <div class="col-3">
+              <p class="m-0 p-0 size-13 mb-15">Сред. цена за номер/ночь</p>
+            </div><!--/.col-->
+          </div><!--/.row-->
+        </div><!--/.col-->
+      </div><!--/.row-->
+      <div class="row no-gutters">
+        <div class="col-12 col-md-4 col-lg-3">
+          <div class="wall p-10 mx-5">
+            <div class="row">
+              <div class="col-12 col-sm-6 col-md-12">
+                <img class="d-block m-0 p-0 mb-15 w-100 h-auto" width="150" height="150" src="img/hotel-th.jpg">
+              </div><!--/.col-->
+              <div class="col-12 col-sm-6 col-md-12">
+                <h3 class="card-title"><a href="">Standart Room</a></h3>
+                <p class="card-txt">17 m<sup>2</sup></p>
+                <p class="card-txt">Письменный стол<br>Гладильная доска<br>Сейф в номере<br>Кондиционер<br>Отопление</p>
+                <p class="card-txt"><a href="">Посмотреть этот номер</a></p>
+              </div><!--/.col-->
+            </div><!--/.row-->
+          </div><!--/.wall-->
+        </div><!--/.col-->
+        <div class="col-12 col-md-8 col-lg-9">
+          <div class="wall px-10 mx-5">
+            <div class="row justify-content-between align-items-lg-center">
+              <div class="col-12 col-sm-6 col-lg-2">
+                <p class="m-0 p-0 mb-5 size-13 color-gray bold d-lg-none">Максимум гостей и кроватей</p>
+                <p class="m-0 p-0 mb-15 size-13"><span class="icon-icon-13"></span></p>
+              </div><!--/.col-->
+              <div class="col-12 col-sm-6 col-lg-3">
+                <p class="m-0 p-0 mb-5 size-13 color-gray bold d-lg-none">Удобства отеля</p>
+                <p class="m-0 p-0 mb-15 size-13"><span class="icon-icon-19"></span> Без завтрака</p>
+              </div><!--/.col-->
+              <div class="col-12 col-lg-4">
+                <p class="m-0 p-0 mb-5 size-13 color-gray bold d-lg-none">Правила</p>
+                <p class="m-0 p-0 mb-15 size-13">
+                  <span class="icon-icon-20"></span> Отмена невозможна
+                  <br>
+                  <span class="color-green">
+                    <span class="icon-icon-21"></span> Мгновенное подтверждение
+                  </span>
+                </p>
+              </div><!--/.col-->
+              <div class="col-12 col-lg-3 text-right">
+                <p class="m-0 p-0 pb-5 color-blue size-23">17352 руб.</p>
+                <a class="btn btn-blue" href="">Выбрать номер</a>
+              </div><!--/.col-->
+            </div><!--/.row-->
+          </div><!--/.wall-->
+          <div class="wall px-10 mx-5">
+            <div class="row justify-content-between align-items-lg-center">
+              <div class="col-12 col-sm-6 col-lg-2">
+                <p class="m-0 p-0 mb-5 size-13 color-gray bold d-lg-none">Максимум гостей и кроватей</p>
+                <p class="m-0 p-0 mb-15 size-13">
+                  <span class="icon-icon-13"></span>
+                  <span class="icon-icon-13"></span>
+                  <span class="icon-icon-13"></span>
+                </p>
+              </div><!--/.col-->
+              <div class="col-12 col-sm-6 col-lg-3">
+                <p class="m-0 p-0 mb-5 size-13 color-gray bold d-lg-none">Удобства отеля</p>
+                <p class="m-0 p-0 mb-15 size-13"><span class="icon-icon-19"></span> Без завтрака</p>
+              </div><!--/.col-->
+              <div class="col-12 col-lg-4">
+                <p class="m-0 p-0 mb-5 size-13 color-gray bold d-lg-none">Правила</p>
+                <p class="m-0 p-0 mb-15 size-13">
+                  <span class="icon-icon-20"></span> Отмена невозможна
+                  <br>
+                  <span class="color-green">
+                    <span class="icon-icon-21"></span> Мгновенное подтверждение
+                  </span>
+                </p>
+              </div><!--/.col-->
+              <div class="col-12 col-lg-3 text-right">
+                <p class="m-0 p-0 pb-5 color-blue size-23">17352 руб.</p>
+                <a class="btn btn-blue" href="">Выбрать номер</a>
+              </div><!--/.col-->
+            </div><!--/.row-->
+          </div><!--/.wall-->
+          <div class="wall px-10 mx-5">
+            <div class="row justify-content-between align-items-lg-center">
+              <div class="col-12 col-sm-6 col-lg-2">
+                <p class="m-0 p-0 mb-5 size-13 color-gray bold d-lg-none">Максимум гостей и кроватей</p>
+                <p class="m-0 p-0 mb-15 size-13">
+                  <span class="icon-icon-13"></span>
+                  <span class="icon-icon-13"></span>
+                </p>
+              </div><!--/.col-->
+              <div class="col-12 col-sm-6 col-lg-3">
+                <p class="m-0 p-0 mb-5 size-13 color-gray bold d-lg-none">Удобства отеля</p>
+                <p class="m-0 p-0 mb-15 size-13"><span class="icon-icon-19"></span> Без завтрака</p>
+              </div><!--/.col-->
+              <div class="col-12 col-lg-4">
+                <p class="m-0 p-0 mb-5 size-13 color-gray bold d-lg-none">Правила</p>
+                <p class="m-0 p-0 mb-15 size-13">
+                  <span class="icon-icon-20"></span> Отмена невозможна
+                  <br>
+                  <span class="color-green">
+                    <span class="icon-icon-21"></span> Мгновенное подтверждение
+                  </span>
+                </p>
+              </div><!--/.col-->
+              <div class="col-12 col-lg-3 text-right">
+                <p class="m-0 p-0 pb-5 color-blue size-23">17352 руб.</p>
+                <a class="btn btn-blue" href="">Выбрать номер</a>
+              </div><!--/.col-->
+            </div><!--/.row-->
+          </div><!--/.wall-->
+          <div class="wall px-10 mx-5">
+            <div class="row justify-content-between align-items-lg-center">
+              <div class="col-12 col-sm-6 col-lg-2">
+                <p class="m-0 p-0 mb-5 size-13 color-gray bold d-lg-none">Максимум гостей и кроватей</p>
+                <p class="m-0 p-0 mb-15 size-13">
+                  <span class="icon-icon-13"></span>
+                  <span class="icon-icon-13"></span>
+                </p>
+              </div><!--/.col-->
+              <div class="col-12 col-sm-6 col-lg-3">
+                <p class="m-0 p-0 mb-5 size-13 color-gray bold d-lg-none">Удобства отеля</p>
+                <p class="m-0 p-0 mb-15 size-13"><span class="icon-icon-19"></span> Без завтрака</p>
+              </div><!--/.col-->
+              <div class="col-12 col-lg-4">
+                <p class="m-0 p-0 mb-5 size-13 color-gray bold d-lg-none">Правила</p>
+                <p class="m-0 p-0 mb-15 size-13">
+                  <span class="icon-icon-20"></span> Отмена невозможна
+                  <br>
+                  <span class="color-green">
+                    <span class="icon-icon-21"></span> Мгновенное подтверждение
+                  </span>
+                </p>
+              </div><!--/.col-->
+              <div class="col-12 col-lg-3 text-right">
+                <p class="m-0 p-0 pb-5 color-blue size-23">17352 руб.</p>
+                <a class="btn btn-blue" href="">Выбрать номер</a>
+              </div><!--/.col-->
+            </div><!--/.row-->
+          </div><!--/.wall-->
+        </div><!--/.col-->
+      </div><!--/.row-->
+    </div><!--/.wall-->
+
+    <div class="wall wall-blue" id="sblock-3">
+      <h3 class="m-0 p-0 mb-15">Описание отеля</h3>
+      <p class="text bold">Открыт в: 1875 &nbsp; Количество номеров: 266 &nbsp; Почтовый индекс: 191186 &nbsp; Обновлен в: 2014</p>
+      <p class="text">Бельмонд Гранд Отель Европа является идеальным выбором для путешественников, желающих осмотреть достопримечательности Санкт-Петербург. В этом отеле можно приобрести бесплатный Wi-Fi в зонах общественного пользования.</p>
+      <p class="text">Обладая удобным расположением, отель находится всего в 3km от Moskovsky Railway Station и в 24km от Аэропорт Пулково. Кроме того, станция метро Gostiny Dvor находится в нескольких минутах ходьбы от отеля. Гости смогут легко посетить достопримечательности в этом районе, так как Nevsky Prospekt и Зимний дворец находятся неподалеку.</p>
+      <p class="text">Диапазон рекреационных объектов отеля гарантирует, что гости смогут отлично провести свободное время. В свободное время не забудьте посетить сувенирный магазин и выбрать подарок. Для гостей за рулем этот отель предоставляет возможность воспользоваться бесплатной парковкой.</p>
+      <p class="text">Если для вас важно удобное расположение, этот отель станет отличным выбором, так как наши постоянные гости очень ценят расположение отеля. Этот отель является одним из самых популярных, для гостей, путешествующих с друзьями.</p>
+    </div><!--/.wall-->
+
+    <div class="wall wall-blue" id="sblock-4">
+      <h3 class="m-0 p-0 mb-15">Удобства</h3>
+      <div class="wall">
+        <h3 class="m-0 p-0 mb-15">Самые популярные</h3>
+        <p class="text">
+          <span class="icon-icon-7"></span>&nbsp;&nbsp;<span class="color-blue">Wi-Fi&nbsp;в&nbsp;зонах&nbsp;общественного&nbsp;пользования</span>&nbsp;&nbsp;
+          <span class="icon-icon-22"></span>&nbsp;&nbsp;<span class="color-blue">Стойка&nbsp;регистрации&nbsp;(24часа)</span>&nbsp;&nbsp;
+          <span class="icon-icon-2"></span>&nbsp;&nbsp;<span class="color-blue">Ресторан&nbsp;европейской&nbsp;кухни</span>&nbsp;&nbsp;
+          <span class="icon-icon-23"></span>&nbsp;&nbsp;<span class="color-blue">Бар</span>&nbsp;&nbsp;
+          <span class="icon-icon-24"></span>&nbsp;&nbsp;<span class="color-blue">Этаж&nbsp;для&nbsp;некурящих</span>&nbsp;&nbsp;
+          <span class="icon-icon-25"></span>&nbsp;&nbsp;<span class="color-blue">Камера&nbsp;хранения&nbsp;багажа</span>&nbsp;&nbsp;
+        </p>
+        <div class="divider bg-llgray"></div><!--/.divider-->
+
+        <div class="row mb-15">
+          <div class="col-2 col-sm-1 border-r">
+            <span class="icon-icon-26 d-block size-20 text-center"></span>
+          </div><!--/.col-->
+          <div class="col-10 col-sm-11">
+            <h3 class="m-0 p-0 pb-15 color-blue">Общие</h3>
+            <div class="row">
+              <div class="col-12 col-sm-6 col-lg-4">
+                <p class="m-0 p-0 mb-15 size-13">
+                  <span class="icon-icon-21"></span> Wi-Fi в зонах общественного пользования
+                </p>
+              </div><!--/.col-->
+              <div class="col-12 col-sm-6 col-lg-4">
+                <p class="m-0 p-0 mb-15 size-13">
+                  <span class="icon-icon-21"></span> Отопление
+                </p>
+              </div><!--/.col-->
+              <div class="col-12 col-sm-6 col-lg-4">
+                <p class="m-0 p-0 mb-15 size-13">
+                  <span class="icon-icon-21"></span> Лифт
+                </p>
+              </div><!--/.col-->
+              <div class="col-12 col-sm-6 col-lg-4">
+                <p class="m-0 p-0 mb-15 size-13">
+                  <span class="icon-icon-21"></span> Номера для некурящих
+                </p>
+              </div><!--/.col-->
+              <div class="col-12 col-sm-6 col-lg-4">
+                <p class="m-0 p-0 mb-15 size-13">
+                  <span class="icon-icon-21"></span> Этаж для некурящих
+                </p>
+              </div><!--/.col-->
+            </div><!--/.row-->
+          </div><!--/.col-->
+        </div><!--/.row-->
+
+        <div class="row mb-15">
+          <div class="col-2 col-sm-1 border-r">
+            <span class="icon-icon-2 d-block size-20 text-center"></span>
+          </div><!--/.col-->
+          <div class="col-10 col-sm-11">
+            <h3 class="m-0 p-0 pb-15 color-blue">Еда и напитки</h3>
+            <div class="row">
+              <div class="col-12 col-sm-6 col-lg-4">
+                <p class="m-0 p-0 mb-15 size-13">
+                  <span class="icon-icon-21"></span> Ресторан европейской кухни
+                </p>
+              </div><!--/.col-->
+              <div class="col-12 col-sm-6 col-lg-4">
+                <p class="m-0 p-0 mb-15 size-13">
+                  <span class="icon-icon-21"></span> Бар
+                </p>
+              </div><!--/.col-->
+              <div class="col-12 col-sm-6 col-lg-4">
+                <p class="m-0 p-0 mb-15 size-13">
+                  <span class="icon-icon-21"></span> Обслуживание номеров
+                </p>
+              </div><!--/.col-->
+            </div><!--/.row-->
+          </div><!--/.col-->
+        </div><!--/.row-->
+
+        <div class="row mb-15">
+          <div class="col-2 col-sm-1 border-r">
+            <span class="icon-icon-27 d-block size-20 text-center"></span>
+          </div><!--/.col-->
+          <div class="col-10 col-sm-11">
+            <h3 class="m-0 p-0 pb-15 color-blue">Услуги стойки регистрации</h3>
+            <div class="row">
+              <div class="col-12 col-sm-6 col-lg-4">
+                <p class="m-0 p-0 mb-15 size-13">
+                  <span class="icon-icon-21"></span> Камера хранения багажа
+                </p>
+              </div><!--/.col-->
+              <div class="col-12 col-sm-6 col-lg-4">
+                <p class="m-0 p-0 mb-15 size-13">
+                  <span class="icon-icon-21"></span> Стойка регистрации (24 часа)
+                </p>
+              </div><!--/.col-->
+              <div class="col-12 col-sm-6 col-lg-4">
+                <p class="m-0 p-0 mb-15 size-13">
+                  <span class="icon-icon-21"></span> Индивидуальная регистрация заезда/выезда
+                </p>
+              </div><!--/.col-->
+            </div><!--/.row-->
+          </div><!--/.col-->
+        </div><!--/.row-->
+
+        <div class="row mb-15">
+          <div class="col-2 col-sm-1 border-r">
+            <span class="icon-icon-28 d-block size-20 text-center"></span>
+          </div><!--/.col-->
+          <div class="col-10 col-sm-11">
+            <h3 class="m-0 p-0 pb-15 color-blue">Бизнесменам</h3>
+            <div class="row">
+              <div class="col-12 col-sm-6 col-lg-4">
+                <p class="m-0 p-0 mb-15 size-13">
+                  <span class="icon-icon-21"></span> Факс/копирование
+                </p>
+              </div><!--/.col-->
+            </div><!--/.row-->
+          </div><!--/.col-->
+        </div><!--/.row-->
+
+        <div class="row">
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="row mb-15">
+              <div class="col-2 col-lg-3 border-r">
+                <span class="icon-icon-29 d-block size-20 text-center"></span>
+              </div><!--/.col-->
+              <div class="col-10 col-lg-9">
+                <h3 class="m-0 p-0 pb-15 color-blue">Медиа и технологии</h3>
+                <div class="row">
+                  <div class="col-12">
+                    <p class="m-0 p-0 mb-15 size-13">
+                      <span class="icon-icon-21"></span> Текст
+                    </p>
+                  </div><!--/.col-->
+                </div><!--/.row-->
+              </div><!--/.col-->
+            </div><!--/.row-->
+          </div><!--/.col-->
+
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="row mb-15">
+              <div class="col-2 col-lg-3 border-r">
+                <span class="icon-icon-33 d-block size-20 text-center"></span>
+              </div><!--/.col-->
+              <div class="col-10 col-lg-9">
+                <h3 class="m-0 p-0 pb-15 color-blue">Детям</h3>
+                <div class="row">
+                  <div class="col-12">
+                    <p class="m-0 p-0 mb-15 size-13">
+                      <span class="icon-icon-21"></span> Текст
+                    </p>
+                  </div><!--/.col-->
+                </div><!--/.row-->
+              </div><!--/.col-->
+            </div><!--/.row-->
+          </div><!--/.col-->
+
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="row mb-15">
+              <div class="col-2 col-lg-3 border-r">
+                <span class="icon-icon-35 d-block size-20 text-center"></span>
+              </div><!--/.col-->
+              <div class="col-10 col-lg-9">
+                <h3 class="m-0 p-0 pb-15 color-blue">Кухня</h3>
+                <div class="row">
+                  <div class="col-12">
+                    <p class="m-0 p-0 mb-15 size-13">
+                      <span class="icon-icon-21"></span> Текст
+                    </p>
+                  </div><!--/.col-->
+                </div><!--/.row-->
+              </div><!--/.col-->
+            </div><!--/.row-->
+          </div><!--/.col-->
+
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="row mb-15">
+              <div class="col-2 col-lg-3 border-r">
+                <span class="icon-icon-5 d-block size-20 text-center"></span>
+              </div><!--/.col-->
+              <div class="col-10 col-lg-9">
+                <h3 class="m-0 p-0 pb-15 color-blue">Парковка</h3>
+                <div class="row">
+                  <div class="col-12">
+                    <p class="m-0 p-0 mb-15 size-13">
+                      <span class="icon-icon-21"></span> Текст
+                    </p>
+                  </div><!--/.col-->
+                </div><!--/.row-->
+              </div><!--/.col-->
+            </div><!--/.row-->
+          </div><!--/.col-->
+
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="row mb-15">
+              <div class="col-2 col-lg-3 border-r">
+                <span class="icon-icon-18 d-block size-20 text-center"></span>
+              </div><!--/.col-->
+              <div class="col-10 col-lg-9">
+                <h3 class="m-0 p-0 pb-15 color-blue">Домашние животные</h3>
+                <div class="row">
+                  <div class="col-12">
+                    <p class="m-0 p-0 mb-15 size-13">
+                      <span class="icon-icon-21"></span> Текст
+                    </p>
+                  </div><!--/.col-->
+                </div><!--/.row-->
+              </div><!--/.col-->
+            </div><!--/.row-->
+          </div><!--/.col-->
+
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="row mb-15">
+              <div class="col-2 col-lg-3 border-r">
+                <span class="icon-icon-23 d-block size-20 text-center"></span>
+              </div><!--/.col-->
+              <div class="col-10 col-lg-9">
+                <h3 class="m-0 p-0 pb-15 color-blue">Питание и Напитки</h3>
+                <div class="row">
+                  <div class="col-12">
+                    <p class="m-0 p-0 mb-15 size-13">
+                      <span class="icon-icon-21"></span> Текст
+                    </p>
+                  </div><!--/.col-->
+                </div><!--/.row-->
+              </div><!--/.col-->
+            </div><!--/.row-->
+          </div><!--/.col-->
+
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="row mb-15">
+              <div class="col-2 col-lg-3 border-r">
+                <span class="icon-icon-30 d-block size-20 text-center"></span>
+              </div><!--/.col-->
+              <div class="col-10 col-lg-9">
+                <h3 class="m-0 p-0 pb-15 color-blue">Сервисы</h3>
+                <div class="row">
+                  <div class="col-12">
+                    <p class="m-0 p-0 mb-15 size-13">
+                      <span class="icon-icon-21"></span> Текст
+                    </p>
+                  </div><!--/.col-->
+                </div><!--/.row-->
+              </div><!--/.col-->
+            </div><!--/.row-->
+          </div><!--/.col-->
+
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="row mb-15">
+              <div class="col-2 col-lg-3 border-r">
+                <span class="icon-icon-34 d-block size-20 text-center"></span>
+              </div><!--/.col-->
+              <div class="col-10 col-lg-9">
+                <h3 class="m-0 p-0 pb-15 color-blue">Прокат</h3>
+                <div class="row">
+                  <div class="col-12">
+                    <p class="m-0 p-0 mb-15 size-13">
+                      <span class="icon-icon-21"></span> Текст
+                    </p>
+                  </div><!--/.col-->
+                </div><!--/.row-->
+              </div><!--/.col-->
+            </div><!--/.row-->
+          </div><!--/.col-->
+
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="row mb-15">
+              <div class="col-2 col-lg-3 border-r">
+                <span class="icon-icon-17 d-block size-16 text-center"></span>
+              </div><!--/.col-->
+              <div class="col-10 col-lg-9">
+                <h3 class="m-0 p-0 pb-15 color-blue">Спорт и Отдых</h3>
+                <div class="row">
+                  <div class="col-12">
+                    <p class="m-0 p-0 mb-15 size-13">
+                      <span class="icon-icon-21"></span> Текст
+                    </p>
+                  </div><!--/.col-->
+                </div><!--/.row-->
+              </div><!--/.col-->
+            </div><!--/.row-->
+          </div><!--/.col-->
+
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="row mb-15">
+              <div class="col-2 col-lg-3 border-r">
+                <span class="icon-icon-31 d-block size-20 text-center"></span>
+              </div><!--/.col-->
+              <div class="col-10 col-lg-9">
+                <h3 class="m-0 p-0 pb-15 color-blue">Другое</h3>
+                <div class="row">
+                  <div class="col-12">
+                    <p class="m-0 p-0 mb-15 size-13">
+                      <span class="icon-icon-21"></span> Текст
+                    </p>
+                  </div><!--/.col-->
+                </div><!--/.row-->
+              </div><!--/.col-->
+            </div><!--/.row-->
+          </div><!--/.col-->
+
+        </div><!--/.row-->
+
+
+      </div><!--/.wall-->
+    </div><!--/.wall-->
+
+    <div class="wall wall-blue" id="sblock-5">
+      <h3 class="m-0 p-0 mb-15">Правила проживания в отеле</h3>
+      <div class="wall">
+
+        <div class="row mb-15">
+          <div class="col-2 col-sm-1 border-r">
+            <span class="icon-icon-32 d-block size-20 text-center"></span>
+          </div><!--/.col-->
+          <div class="col-10 col-sm-5 col-lg-3">
+            <p class="text bold color-blue">Заезд & Выезд</p>
+          </div><!--/.col-->
+          <div class="col-12 col-sm-6 col-lg-8">
+            <p class="text">
+              Заезд с 14:00 &nbsp; Выезд до 12:00
+            </p>
+          </div><!--/.col-->
+        </div><!--/.row-->
+
+        <div class="row mb-15">
+          <div class="col-2 col-sm-1 border-r">
+            <span class="icon-icon-33 d-block size-20 text-center"></span>
+          </div><!--/.col-->
+          <div class="col-10 col-sm-5 col-lg-3">
+            <p class="text bold color-blue">Размещение детей и предоставление дополнительных кроватей</p>
+          </div><!--/.col-->
+          <div class="col-12 col-sm-6 col-lg-8">
+            <p class="text">
+              В отеле разрешается проживание детей
+              <br>
+              Максимум 1 дополнительная кровать в номере.
+            </p>
+            <div class="wall wall-blue">
+              <p class="text">
+                <span class="icon-icon-33"></span> Дети от 0 до 1 лет
+                <br>
+                <span class="bold">Добавить детскую кроватку: Бесплатно</span>
+              </p>
+              <span class="divider"></span>
+              <p class="text">
+                <span class="icon-icon-13"></span> Взрослый
+                <br>
+                <span class="bold">Добавить кровать: RUB 900 с человека за ночь</span>
+              </p>
+            </div>
+          </div><!--/.col-->
+        </div><!--/.row-->
+
+        <div class="row mb-15">
+          <div class="col-2 col-sm-1 border-r">
+            <span class="icon-icon-18 d-block size-20 text-center"></span>
+          </div><!--/.col-->
+          <div class="col-10 col-sm-5 col-lg-3">
+            <p class="text bold color-blue">Домашние животные</p>
+          </div><!--/.col-->
+          <div class="col-12 col-sm-6 col-lg-8">
+            <p class="text">
+              Домашние животные не допускаются.
+            </p>
+          </div><!--/.col-->
+        </div><!--/.row-->
+
+      </div><!--/.wall-->
+    </div><!--/.wall-->
+
+  </div><!--/.container-->
+</section><!--/.section-->
+
+<!-- CONTENT END -->
+
+<footer class="footer mt-auto">
+  <div class="container">
+    <div class="row justify-content-between">
+      <div class="col-12 col-md-6 col-lg-auto">
+        <a class="logo" href="">
+          <span class="color-green">Лого</span>
+          <span class="color-blue">Бронь</span>
+        </a>
+      </div><!--/.col-->
+      <div class="col-12 col-md-6 col-lg-6">
+        <nav class="nav">
+          <a class="nav-ln" href="">О компании</a>
+          <a class="nav-ln" href="">Контакты</a>
+          <a class="nav-ln" href="">Сотрудничество</a>
+        </nav>
+      </div><!--/.col-->
+      <div class="col-12 col-md-auto">
+        <a class="phone text-center" href="tel:+79999999999">8-800-000-88-88</a>
+      </div><!--/.col-->
+    </div><!--/.row-->
+    <p class="m-0 p-0 mb-15 size-13 color-gray text-center">&copy; 2018 Все права защищены</p>
+  </div><!--/.container-->
+</footer>
+
+</div><!--/.d-flex flex-column h-100-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="assets/fancybox/jquery.fancybox.min.js"></script>
+<script src="assets/jquery.ui.touch-punch.min.js"></script>
+<script src="assets/datepicker/js/datepicker.min.js"></script>
+<script src="js/main.js?v=001"></script>
+</body>
+</html>
