@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="assets/icomoon/style.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.css">
   <link rel="stylesheet" href="assets/datepicker/css/datepicker.min.css">
-  <link rel="stylesheet" href="css/main.css?v=002">
+  <link rel="stylesheet" href="css/main.css?v=003">
   <title>Бронь</title>
 </head>
 <body>
@@ -136,7 +136,12 @@
     </nav>
 
     <h1 class="title text-left size-23">Radisson Sonya Hotel Санкт-Петербург (Radisson Sonya Hotel)</h1>
-    <p class="text color-gray">191187 Россия Санкт-Петербург Центральный район Литейный пр. 5/19 | 0.79км от Станция метро:Chernyshevskaya <a href="">Посмотреть на карте</a></p>
+    <p class="text color-gray">
+      191187 Россия Санкт-Петербург Центральный район Литейный пр. 5/19 | 0.79км от Станция метро:Chernyshevskaya
+      <a data-fancybox data-type="iframe" href="https://yandex.ru/map-widget/v1/-/CBu4EFVvDA">
+        Посмотреть на карте
+      </a>
+    </p>
 
     <nav class="snav">
       <div class="row justify-content-between">
@@ -261,8 +266,67 @@
             <span class="ilist-txt">Домашние животные</span>
           </span><!--/.ilist-item-->
         </p>
+        <div class="mb-15">
+          <iframe src="https://yandex.ru/map-widget/v1/-/CBu4EFVvDA" width="100%" height="185" frameborder="0" allowfullscreen="true"></iframe>
+        </div>
       </div><!--/.col-->
     </div><!--/.row-->
+
+    <div class="wall wall-blue">
+      <form class="form">
+        <div class="row justify-content-end">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-2">
+            <label class="input-label">Количество взрослых</label>
+            <div class="input-igroup">
+              <span class="input-ileft color-green icon-icon-16"></span>
+              <select class="input group-lr">
+                <option selected>1-взрослый</option>
+                <option>2-взрослых</option>
+                <option>3-взрослых</option>
+                <option>4-взрослых</option>
+                <option>5-взрослых</option>
+              </select>
+              <span class="input-iright icon-icon-38"></span>
+            </div><!--/.input-igroup-->
+          </div><!--/.col-->
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-2">
+            <label class="input-label">Количество детей</label>
+            <div class="input-igroup">
+              <span class="input-ileft color-green icon-icon-36"></span>
+              <select class="input group-lr">
+                <option selected>Без детей</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+              <span class="input-iright icon-icon-38"></span>
+            </div><!--/.input-igroup-->
+          </div><!--/.col-->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+            <label class="input-label">Дата заезда</label>
+            <div class="input-igroup">
+              <span class="input-ileft color-green icon-icon-14"></span>
+              <input class="input group-lr js-date" type="text" readonly placeholder="Выберите дату">
+              <span class="input-iright icon-icon-38"></span>
+            </div><!--/.input-igroup-->
+          </div><!--/.col-->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+            <label class="input-label">Дата выезда</label>
+            <div class="input-igroup">
+              <span class="input-ileft color-green icon-icon-14"></span>
+              <input class="input group-lr js-date" type="text" readonly placeholder="Выберите дату">
+              <span class="input-iright icon-icon-38"></span>
+            </div><!--/.input-igroup-->
+          </div><!--/.col-->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <label class="input-label">&nbsp;</label>
+            <button class="btn btn-yellow form-btn" type="submit">ОБНОВИТЬ</button>
+          </div><!--/.col-->
+        </div><!--/.row-->
+      </form>
+    </div><!--/.wall-->
 
     <div class="wall wall-blue px-5" id="sblock-2">
       <div class="d-none d-lg-flex align-items-center color-gray">
@@ -341,7 +405,7 @@
               </div><!--/.col-->
               <div class="col-12 col-sm-6 col-lg-3">
                 <p class="m-0 p-0 mb-5 size-13 color-gray bold d-lg-none">Удобства отеля</p>
-                <p class="m-0 p-0 mb-15 size-13"><span class="icon-icon-19"></span> Без завтрака</p>
+                <p class="m-0 p-0 mb-15 size-13 color-green"><span class="icon-icon-19"></span> Завтрак</p>
               </div><!--/.col-->
               <div class="col-12 col-lg-4">
                 <p class="m-0 p-0 mb-5 size-13 color-gray bold d-lg-none">Правила</p>
@@ -366,6 +430,8 @@
                 <p class="m-0 p-0 mb-15 size-13">
                   <span class="icon-icon-13"></span>
                   <span class="icon-icon-13"></span>
+                  <span class="icon-icon-13"></span>
+                  <span class="icon-icon-13"></span>
                 </p>
               </div><!--/.col-->
               <div class="col-12 col-sm-6 col-lg-3">
@@ -375,7 +441,9 @@
               <div class="col-12 col-lg-4">
                 <p class="m-0 p-0 mb-5 size-13 color-gray bold d-lg-none">Правила</p>
                 <p class="m-0 p-0 mb-15 size-13">
-                  <span class="icon-icon-20"></span> Отмена невозможна
+                  <span class="color-green">
+                    <span class="icon-icon-21"></span> Отмена невозможна
+                  </span>
                   <br>
                   <span class="color-green">
                     <span class="icon-icon-21"></span> Мгновенное подтверждение
@@ -835,6 +903,6 @@
 <script src="assets/fancybox/jquery.fancybox.min.js"></script>
 <script src="assets/jquery.ui.touch-punch.min.js"></script>
 <script src="assets/datepicker/js/datepicker.min.js"></script>
-<script src="js/main.js?v=001"></script>
+<script src="js/main.js?v=002"></script>
 </body>
 </html>

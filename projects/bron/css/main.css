@@ -178,6 +178,36 @@ a:hover {
 .btn-twhite:active {
   background: transparent;
 }
+.btn-group {
+  margin-bottom: 15px;
+}
+.btn-group-item {
+  display: block;
+  margin: 1px;
+  padding: 6px 8px;
+  border-radius: 0;
+  color: #666;
+  text-decoration: none;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  cursor: pointer;
+  background-color: #fff;
+}
+.btn-group-item:active,
+.btn-group-item:focus,
+.btn-group-item:hover {
+  text-decoration: none;
+  outline: none;
+  color: #666;
+}
+.btn-group-item:hover,
+.btn-group-item.active {
+  background-color: #2f85fb;
+  color: #fff;
+}
 .form {
   display: block;
   margin: 0;
@@ -199,6 +229,7 @@ a:hover {
       -ms-user-select: none;
           user-select: none;
   font-weight: 400;
+  cursor: pointer;
 }
 .input {
   display: block;
@@ -279,6 +310,11 @@ textarea.input {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
 }
 .radio-label {
   display: block;
@@ -302,6 +338,11 @@ textarea.input {
   text-align: center;
   font-weight: 400;
   background-color: #ddd;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
 }
 .radio-group {
   display: -webkit-box;
@@ -316,6 +357,53 @@ textarea.input {
 .radio:checked + .radio-txt {
   background-color: #2f85fb;
   color: #fff;
+}
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0 15px;
+  padding: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 18px;
+}
+.pagination-link {
+  display: block;
+  margin: 0 -1px 0 0;
+  padding: 5px 10px;
+  color: #2f85fb;
+  text-decoration: none;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  font-weight: 300;
+}
+.pagination-link:active,
+.pagination-link:focus,
+.pagination-link:hover {
+  text-decoration: none;
+  outline: none;
+  color: #2f85fb;
+}
+.pagination-link:first-child {
+  border-radius: 4px 0 0 4px;
+}
+.pagination-link:last-child {
+  border-radius: 0 4px 4px 0;
+}
+.pagination-link:hover,
+.pagination-link.active {
+  background-color: #2f85fb;
+  color: #fff;
+  border: 1px solid #2f85fb;
+  z-index: 10;
 }
 .phone {
   display: block;
