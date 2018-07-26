@@ -200,7 +200,7 @@ a:focus {
   text-shadow: 1px 1px 0 #fff;
 }
 .bg-a {
-  background-color: #dad8da;
+  background-color: #e4e4e5;
 }
 .bg-b {
   background-color: #e4e4e5;
@@ -241,13 +241,7 @@ a:focus {
 .ln-black:hover {
   text-decoration: none;
   outline: none;
-  color: #4d4d4d;
-}
-.ln-black i {
-  color: #404040;
-}
-.bb {
-  border-bottom: 1px solid #c3c0c2;
+  color: #000;
 }
 .bt {
   border-top: 1px solid #c3c0c2;
@@ -339,6 +333,12 @@ a:focus {
     margin-top: -200px;
     position: relative;
     z-index: 10;
+  }
+  .bg-a {
+    background-color: #dad8da;
+  }
+  .bb {
+    border-bottom: 1px solid #c3c0c2;
   }
 }
 /*
