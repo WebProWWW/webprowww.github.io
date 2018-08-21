@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1200">
+  <title>Бронь</title>
+  <!-- fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700&amp;subset=cyrillic">
+  <!-- plugins -->
+  <link rel="stylesheet" href="assets/datepicker/dist/datepicker.min.css">
+  <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="assets/fancybox/dist/jquery.fancybox.min.css">
+  <!-- theme -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/fw-bootstrap.css">
+</head>
+<body>
+
+<header class="header inheader">
+  <div class="container">
+    <div class="row align-items-center pt-15">
+      <div class="col-auto">
+        <a class="logo-ln" href="">AmigoHostels.com</a>
+      </div><!--/.col-->
+      <div class="col-auto ml-auto">
+        <a class="btn btn-twhite js-fancybox" href="#signup-login" data-tab="#tab-signup">Зарегистрироваться</a>
+      </div><!--/.col-->
+      <div class="col-auto">
+        <a class="btn btn-blue js-fancybox" href="#signup-login" data-tab="#tab-login">Войти</a>
+      </div><!--/.col-->
+      <div class="col-auto">
+        <div class="dropdown mb-15">
+          <p class="color-white size-16 mp-0">RUR</p>
+          <div class="dropdown-content">
+            <a class="dropdown-item" href=""><span class="bold">EUR</span> Евро</a>
+            <a class="dropdown-item" href=""><span class="bold">RUR</span> Российский рубль</a>
+            <a class="dropdown-item" href=""><span class="bold">USD</span> Доллар США</a>
+          </div>
+        </div><!--/.dropdown-->
+      </div><!--/.col-->
+      <div class="col-auto">
+        <div class="dropdown mb-15">
+          <p class="color-white size-16 mp-0">
+            <span class="flag flag-1"></span>
+          </p>
+          <div class="dropdown-content">
+            <a class="dropdown-item" href="">
+              <span class="flag flag-1"></span> Русский
+            </a>
+            <a class="dropdown-item" href="">
+              <span class="flag flag-2"></span> English
+            </a>
+          </div>
+        </div><!--/.dropdown-->
+      </div><!--/.col-->
+      <div class="col-auto">
+        <div class="dropdown no-arr mb-15">
+          <p class="color-white size-16 mp-0">
+            <img class="d-block mb-15" width="15" height="" src="img/icon-3.svg">
+          </p>
+          <div class="dropdown-content">
+            <a class="dropdown-item" href="">О сайте</a>
+            <a class="dropdown-item" href="">Страны</a>
+            <a class="dropdown-item" href="">Города</a>
+            <a class="dropdown-item" href="">Каталог</a>
+            <a class="dropdown-item" href="">Добавить хостел</a>
+          </div>
+        </div><!--/.dropdown-->
+      </div><!--/.col-->
+    </div><!--/.row-->
+  </div><!--/.container-->
+</header>
+
+<div class="container">
+  <nav class="breadcrumb">
+    <a class="breadcrumb-ln" href="">Главная</a>
+    <a class="breadcrumb-ln" href="">Россия</a>
+    <a class="breadcrumb-ln" href="">Казань</a>
+    <a class="breadcrumb-ln" href="">Вахитовский район</a>
+  </nav>
+</div><!--/.container-->
+
+<div class="divider"></div><!--/.divider-->
+
+<section class="section">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-3">
+        <div class="side side-gray">
+          <h3 class="side-title">Поиск</h3>
+          <form class="form-md">
+            <label class="form-label">МЕСТО / НАЗВАНИЕ ХОСТЕЛА</label>
+            <input class="form-input" type="text" placeholder="" name="">
+            <div class="row">
+              <div class="col">
+                <label class="form-label">ДАТА ЗАЕЗДА</label>
+                <input class="form-input js-datepicker" type="text" placeholder="дд.мм.гггг">
+              </div><!--/.col-->
+              <div class="col">
+                <label class="form-label">ДАТА ОТЪЕЗДА</label>
+                <input class="form-input js-datepicker" type="text" placeholder="дд.мм.гггг">
+              </div><!--/.col-->
+            </div><!--/.row-->
+            <div class="divider-vstxt"><span class="divider-txt">1 сутки</span></div>
+            <div class="row">
+              <div class="col">
+                <label class="form-label">ВЗРОСЛЫХ</label>
+                <div class="form-counter js-counter">
+                  <span class="form-counter-btn left" data="-1">-</span>
+                  <input class="form-input js-counter-input" type="text" readonly value="1" max="100" min="0">
+                  <span class="form-counter-btn right" data="1">+</span>
+                </div>
+              </div><!--/.col-->
+              <div class="col">
+                <label class="form-label">ДЕТЕЙ</label>
+                <div class="form-counter js-counter">
+                  <span class="form-counter-btn left" data="-1">-</span>
+                  <input class="form-input js-counter-input" type="text" readonly value="0" max="100" min="0">
+                  <span class="form-counter-btn right" data="1">+</span>
+                </div>
+              </div><!--/.col-->
+            </div><!--/.row-->
+            <label class="form-label">ВОЗРАСТ ДЕТЕЙ</label>
+            <div class="row">
+              <div class="col">
+                <div class="form-counter js-counter">
+                  <span class="form-counter-btn left" data="-1">-</span>
+                  <input class="form-input js-counter-input" type="text" readonly value="15" max="100" min="0">
+                  <span class="form-counter-btn right" data="1">+</span>
+                </div>
+              </div><!--/.col-->
+              <div class="col">
+                <div class="form-counter js-counter">
+                  <span class="form-counter-btn left" data="-1">-</span>
+                  <input class="form-input js-counter-input" type="text" readonly value="13" max="100" min="0">
+                  <span class="form-counter-btn right" data="1">+</span>
+                </div>
+              </div><!--/.col-->
+            </div><!--/.row-->
+            <div class="row">
+              <div class="col">
+                <div class="form-counter js-counter">
+                  <span class="form-counter-btn left" data="-1">-</span>
+                  <input class="form-input js-counter-input" type="text" readonly value="9" max="100" min="0">
+                  <span class="form-counter-btn right" data="1">+</span>
+                </div>
+              </div><!--/.col-->
+              <div class="col">
+                <div class="form-counter js-counter">
+                  <span class="form-counter-btn left" data="-1">-</span>
+                  <input class="form-input js-counter-input" type="text" readonly value="6" max="100" min="0">
+                  <span class="form-counter-btn right" data="1">+</span>
+                </div>
+              </div><!--/.col-->
+            </div><!--/.row-->
+            <button class="form-eh btn btn-orange w-50 mx-auto" type="submit">ПОИСК</button>
+          </form>
+        </div><!--/.side-->
+        <div class="side side-white">
+          <h3 class="side-title">Выбор по категориям</h3>
+          <form class="form-md form-white">
+            <label class="form-label">РАЙОН</label>
+            <select class="form-input">
+              <option selected>Все районы</option>
+              <option>Опция - 1</option>
+              <option>Опция - 2</option>
+              <option>Опция - 3</option>
+              <option>Опция - 4</option>
+              <option>Опция - 5</option>
+            </select>
+            <label class="form-label">МИКРОРАЙОН</label>
+            <select class="form-input">
+              <option selected>Все микрорайоны</option>
+              <option>Опция - 1</option>
+              <option>Опция - 2</option>
+              <option>Опция - 3</option>
+              <option>Опция - 4</option>
+              <option>Опция - 5</option>
+            </select>
+            <label class="form-label">СТАРЦИЯ МЕТРО</label>
+            <select class="form-input">
+              <option selected>Все станции метро</option>
+              <option>Опция - 1</option>
+              <option>Опция - 2</option>
+              <option>Опция - 3</option>
+              <option>Опция - 4</option>
+              <option>Опция - 5</option>
+            </select>
+            <div class="divider"></div>
+            <label class="form-checkbox">
+              <input class="form-checkbox-native" type="checkbox" name="">
+              <span class="form-checkbox-custom"></span>
+              <span class="form-checkbox-text">Онлайн-бронирование</span>
+            </label>
+            <label class="form-checkbox">
+              <input class="form-checkbox-native" type="checkbox" checked name="">
+              <span class="form-checkbox-custom"></span>
+              <span class="form-checkbox-text">Моментальное подтверждение</span>
+            </label>
+            <div class="divider"></div>
+            <label class="form-label">ЦЕНА</label>
+            <label class="form-checkbox">
+              <input class="form-checkbox-native" type="checkbox" checked name="">
+              <span class="form-checkbox-custom"></span>
+              <span class="form-checkbox-text">до 600 руб.</span>
+            </label>
+            <label class="form-checkbox">
+              <input class="form-checkbox-native" type="checkbox" name="">
+              <span class="form-checkbox-custom"></span>
+              <span class="form-checkbox-text">от 600 до 1200 руб.</span>
+            </label>
+            <label class="form-checkbox">
+              <input class="form-checkbox-native" type="checkbox" name="">
+              <span class="form-checkbox-custom"></span>
+              <span class="form-checkbox-text">от 1200 до 1800 руб.</span>
+            </label>
+            <label class="form-checkbox">
+              <input class="form-checkbox-native" type="checkbox" name="">
+              <span class="form-checkbox-custom"></span>
+              <span class="form-checkbox-text">от 800 руб.</span>
+            </label>
+            <label class="form-label">УДАЛЕННОСТЬ ОТ</label>
+            <select class="form-input">
+              <option selected>Выберите</option>
+              <option>Опция - 1</option>
+              <option>Опция - 2</option>
+              <option>Опция - 3</option>
+              <option>Опция - 4</option>
+              <option>Опция - 5</option>
+            </select>
+            <label class="form-label">МИКРОРАЙОН</label>
+            <select class="form-input">
+              <option selected>Выберите расстояние</option>
+              <option>Опция - 1</option>
+              <option>Опция - 2</option>
+              <option>Опция - 3</option>
+              <option>Опция - 4</option>
+              <option>Опция - 5</option>
+            </select>
+            <label class="form-label">ПИТАНИЕ</label>
+            <label class="form-checkbox">
+              <input class="form-checkbox-native" type="checkbox" checked name="">
+              <span class="form-checkbox-custom"></span>
+              <span class="form-checkbox-text">Завтрак</span>
+            </label>
+            <label class="form-checkbox">
+              <input class="form-checkbox-native" type="checkbox" checked name="">
+              <span class="form-checkbox-custom"></span>
+              <span class="form-checkbox-text">Общая кухня</span>
+            </label>
+            <label class="form-label">УСЛУГИ</label>
+            <label class="form-checkbox">
+              <input class="form-checkbox-native" type="checkbox" checked name="">
+              <span class="form-checkbox-custom"></span>
+              <span class="form-checkbox-text">Бесплатный Wi-Fi</span>
+            </label>
+            <label class="form-checkbox">
+              <input class="form-checkbox-native" type="checkbox" checked name="">
+              <span class="form-checkbox-custom"></span>
+              <span class="form-checkbox-text">Парковка</span>
+            </label>
+            <label class="form-checkbox">
+              <input class="form-checkbox-native" type="checkbox" name="">
+              <span class="form-checkbox-custom"></span>
+              <span class="form-checkbox-text">Бассейн</span>
+            </label>
+            <label class="form-checkbox">
+              <input class="form-checkbox-native" type="checkbox" name="">
+              <span class="form-checkbox-custom"></span>
+              <span class="form-checkbox-text">Круглосуточная стойка регистрации</span>
+            </label>
+            <label class="form-checkbox">
+              <input class="form-checkbox-native" type="checkbox" name="">
+              <span class="form-checkbox-custom"></span>
+              <span class="form-checkbox-text">Ресторан / Бар</span>
+            </label>
+            <label class="form-checkbox">
+              <input class="form-checkbox-native" type="checkbox" name="">
+              <span class="form-checkbox-custom"></span>
+              <span class="form-checkbox-text">Кондиционер</span>
+            </label>
+            <label class="form-checkbox">
+              <input class="form-checkbox-native" type="checkbox" name="">
+              <span class="form-checkbox-custom"></span>
+              <span class="form-checkbox-text">Холодильник</span>
+            </label>
+            <label class="form-checkbox">
+              <input class="form-checkbox-native" type="checkbox" name="">
+              <span class="form-checkbox-custom"></span>
+              <span class="form-checkbox-text">Допускаются домашние животные</span>
+            </label>
+            <label class="form-checkbox">
+              <input class="form-checkbox-native" type="checkbox" name="">
+              <span class="form-checkbox-custom"></span>
+              <span class="form-checkbox-text">Стиральная машина</span>
+            </label>
+            <label class="form-checkbox">
+              <input class="form-checkbox-native" type="checkbox" name="">
+              <span class="form-checkbox-custom"></span>
+              <span class="form-checkbox-text">Сейф</span>
+            </label>
+            <label class="form-checkbox">
+              <input class="form-checkbox-native" type="checkbox" name="">
+              <span class="form-checkbox-custom"></span>
+              <span class="form-checkbox-text">Телевизор</span>
+            </label>
+            <label class="form-checkbox">
+              <input class="form-checkbox-native" type="checkbox" name="">
+              <span class="form-checkbox-custom"></span>
+              <span class="form-checkbox-text">Спортивный зал</span>
+            </label>
+            <label class="form-label">ТИП РАЗМЕЩЕНИЯ</label>
+            <label class="form-checkbox">
+              <input class="form-checkbox-native" type="checkbox" checked name="">
+              <span class="form-checkbox-custom"></span>
+              <span class="form-checkbox-text">Одельная команата</span>
+            </label>
+            <label class="form-checkbox">
+              <input class="form-checkbox-native" type="checkbox" name="">
+              <span class="form-checkbox-custom"></span>
+              <span class="form-checkbox-text">Общая комната</span>
+            </label>
+            <label class="form-label">ОЦЕНКА ПО ОТЗЫВАМ</label>
+            <div class="slider">
+              <div class="slider-ui js-slider">
+                <div class="js-slider-ui" value="6" min="6" max="9"></div>
+                <input class="js-slider-value" type="hidden" value="6" name="">
+              </div>
+              <div class="slider-vallist">
+                <span class="slider-val">Все</span>
+                <span class="slider-val">7+</span>
+                <span class="slider-val">8+</span>
+                <span class="slider-val">9+</span>
+              </div>
+            </div><!--/.slider-->
+          </form>
+        </div><!--/.side-->
+      </div><!--/.col-->
+
+      <div class="col-9">
+        <h1 class="title mb-15 size-30">Хостелы Казани в Витихновском районе</h1>
+        <p class="mp-0 mb-15 color-blue">Найдено 103 хостела. В 15 из них доступно онлайн-бронирование.</p>
+        <div class="divider"></div>
+
+        <a class="cart cart-list" href="">
+          <div class="row">
+            <div class="col-4">
+              <img class="cart-img" width="270" height="173" src="img/cart-1.jpg">
+              <p class="cart-desc color-blue"><i class="far fa-check-circle"></i> Онлайн бронирование</p>
+              <p class="cart-desc color-blue"><i class="far fa-check-circle"></i> Бронирование без карты</p>
+            </div><!--/.col-->
+            <div class="col-8">
+              <div class="row">
+                <div class="col">
+                  <h3 class="cart-title">Хостел Порт</h3>
+                  <p class="cart-desc color-blue">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span class="bb-dash-blue">Россия, г. Казань ул. Баумана</span> (до центра 0,2 км)
+                  </p>
+                  <p class="cart-desc color-blue size-12">
+                    <span class="cart-idesc">До станции проспект победы: 0,5 км</span>
+                    <br>
+                    <span class="cart-idesc">До вокзала: 5 км</span>
+                    <span class="cart-idesc">До аэропорта: 20 км</span>
+                  </p>
+                </div><!--/.col-->
+                <div class="col-auto">
+                  <p class="cart-desc text-right">
+                    <span class="cart-desc-rat color-green">8,7</span> Очень хорошо
+                    <br>
+                    <span class="cart-desc-sm">48 отзывов</span>
+                  </p>
+                </div><!--/.col-->
+              </div><!--/.row-->
+              <p class="cart-desc size-13">
+                <span class="cart-idesc"><i class="fas fa-wifi color-gray"></i> Wi-Fi бесплатно</span>
+                <span class="cart-idesc"><i class="fas fa-utensils color-gray"></i> Завтрак бесплатно</span>
+                <span class="cart-idesc"><i class="fas fa-swimming-pool color-gray"></i> Бассейн</span>
+              </p>
+              <div class="cart-divider mx-0"></div>
+              <div class="row justify-content-between">
+                <div class="col-auto">
+                  <p class="cart-desc">Место в общественном номере:</p>
+                </div><!--/.col-->
+                <div class="col-auto">
+                  <p class="cart-price">от 1200 руб/ночь</p>
+                </div><!--/.col-->
+              </div><!--/.row-->
+              <div class="cart-divider mx-0"></div>
+              <div class="row justify-content-between">
+                <div class="col-auto">
+                  <p class="cart-desc"><i class="fas fa-user-friends size-18 color-green"></i> Отдельный номер:</p>
+                </div><!--/.col-->
+                <div class="col-auto">
+                  <p class="cart-desc mbold">от 1200 руб/ночь</p>
+                </div><!--/.col-->
+              </div><!--/.row-->
+            </div><!--/.col-->
+          </div><!--/.row-->
+        </a><!--/.cart-->
+
+        <a class="cart cart-list" href="">
+          <div class="row">
+            <div class="col-4">
+              <img class="cart-img" width="270" height="173" src="img/cart-2.jpg">
+              <p class="cart-desc color-blue"><i class="far fa-check-circle"></i> Онлайн бронирование</p>
+              <p class="cart-desc color-blue"><i class="far fa-check-circle"></i> Бронирование без карты</p>
+            </div><!--/.col-->
+            <div class="col-8">
+              <div class="row">
+                <div class="col">
+                  <h3 class="cart-title">Хостел Вежливый лось на Савеловской</h3>
+                  <p class="cart-desc color-blue">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span class="bb-dash-blue">Россия, г. Казань ул. Ленина</span> (до центра 0,5 км)
+                  </p>
+                  <p class="cart-desc color-blue size-12">
+                    <span class="cart-idesc">До станции проспект победы: 0,5 км</span>
+                    <br>
+                    <span class="cart-idesc">До вокзала: 5 км</span>
+                    <span class="cart-idesc">До аэропорта: 20 км</span>
+                  </p>
+                </div><!--/.col-->
+                <div class="col-auto">
+                  <p class="cart-desc text-right">
+                    <span class="cart-desc-rat color-lblue">8,7</span> Нормально
+                    <br>
+                    <span class="cart-desc-sm">31 отзывов</span>
+                  </p>
+                </div><!--/.col-->
+              </div><!--/.row-->
+              <p class="cart-desc size-13">
+                <span class="cart-idesc"><i class="fas fa-wifi color-gray"></i> Wi-Fi бесплатно</span>
+                <span class="cart-idesc"><i class="fas fa-utensils color-gray"></i> Завтрак бесплатно</span>
+              </p>
+              <div class="cart-divider mx-0"></div>
+              <p class="cart-desc mbold text-right">Мест нет</p>
+            </div><!--/.col-->
+          </div><!--/.row-->
+        </a><!--/.cart-->
+
+        <a class="cart cart-list like" href="">
+          <div class="row">
+            <div class="col-4">
+              <img class="cart-img" width="270" height="173" src="img/cart-3.jpg">
+              <p class="cart-desc color-blue"><i class="far fa-check-circle"></i> Онлайн бронирование</p>
+              <p class="cart-desc color-blue"><i class="far fa-check-circle"></i> Бронирование без карты</p>
+            </div><!--/.col-->
+            <div class="col-8">
+              <div class="row">
+                <div class="col">
+                  <h3 class="cart-title">Central Hostel</h3>
+                  <p class="cart-desc color-blue">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span class="bb-dash-blue">Россия, г. Казань ул. Петербургская</span> (до центра 0,2 км)
+                  </p>
+                  <p class="cart-desc color-blue size-12">
+                    <span class="cart-idesc">До станции проспект победы: 0,5 км</span>
+                    <br>
+                    <span class="cart-idesc">До вокзала: 5 км</span>
+                    <span class="cart-idesc">До аэропорта: 20 км</span>
+                  </p>
+                </div><!--/.col-->
+                <div class="col-auto">
+                  <p class="cart-desc text-right">
+                    <span class="cart-desc-rat color-red">2,5</span> Плохо
+                    <br>
+                    <span class="cart-desc-sm">14 отзывов</span>
+                  </p>
+                </div><!--/.col-->
+              </div><!--/.row-->
+              <p class="cart-desc size-13">
+                <span class="cart-idesc"><i class="fas fa-wifi color-gray"></i> Wi-Fi бесплатно</span>
+                <span class="cart-idesc"><i class="fas fa-utensils color-gray"></i> Завтрак бесплатно</span>
+              </p>
+              <div class="cart-divider mx-0"></div>
+              <div class="row justify-content-between">
+                <div class="col-auto">
+                  <p class="cart-desc">Место в общественном номере:</p>
+                </div><!--/.col-->
+                <div class="col-auto">
+                  <p class="cart-price">
+                    <span class="td-through size-14">от 1200 руб/ночь</span>
+                    <span class="color-lblue">от 1200 руб/ночь</span>
+                  </p>
+                </div><!--/.col-->
+              </div><!--/.row-->
+              <div class="cart-divider mx-0"></div>
+              <div class="row justify-content-between">
+                <div class="col-auto">
+                  <p class="cart-desc"><i class="fas fa-user size-18 color-green"></i> Отдельный номер:</p>
+                </div><!--/.col-->
+                <div class="col-auto">
+                  <p class="cart-desc mbold">
+                    <span class="size-12 td-through">от 1200 руб/ночь</span>
+                    <span class="color-lblue">от 1200 руб/ночь</span>
+                  </p>
+                </div><!--/.col-->
+              </div><!--/.row-->
+            </div><!--/.col-->
+          </div><!--/.row-->
+        </a><!--/.cart-->
+
+        <h3 class="cart-title mt-40">Хостелы без онлайн бронирования</h3>
+
+        <a class="cart cart-list" href="">
+          <div class="row">
+            <div class="col-4">
+              <img class="cart-img" width="270" height="173" src="img/cart-4.jpg">
+              <p class="cart-desc color-blue"><i class="far fa-times-circle color-red"></i> Онлайн бронирование</p>
+              <p class="cart-desc color-blue"><i class="far fa-check-circle"></i> Бронирование без карты</p>
+            </div><!--/.col-->
+            <div class="col-8">
+              <div class="row">
+                <div class="col">
+                  <h3 class="cart-title">Dragonfly Hostels</h3>
+                  <p class="cart-desc color-blue">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span class="bb-dash-blue">Россия, г. Казань ул. Баумана</span> (до центра 0,2 км)
+                  </p>
+                  <p class="cart-desc color-blue size-12">
+                    <span class="cart-idesc">До станции проспект победы: 0,5 км</span>
+                    <br>
+                    <span class="cart-idesc">До вокзала: 5 км</span>
+                    <span class="cart-idesc">До аэропорта: 20 км</span>
+                  </p>
+                </div><!--/.col-->
+                <div class="col-auto">
+                  <p class="cart-desc text-right">
+                    <span class="cart-desc-rat color-green">8,7</span> Очень хорошо
+                    <br>
+                    <span class="cart-desc-sm">48 отзывов</span>
+                  </p>
+                </div><!--/.col-->
+              </div><!--/.row-->
+              <p class="cart-desc size-13">
+                <span class="cart-idesc"><i class="fas fa-wifi color-gray"></i> Wi-Fi бесплатно</span>
+                <span class="cart-idesc"><i class="fas fa-utensils color-gray"></i> Завтрак бесплатно</span>
+                <span class="cart-idesc"><i class="fas fa-swimming-pool color-gray"></i> Бассейн</span>
+              </p>
+              <div class="cart-divider mx-0"></div>
+              <div class="row justify-content-between">
+                <div class="col-auto">
+                  <p class="cart-desc">Место в общественном номере:</p>
+                </div><!--/.col-->
+                <div class="col-auto">
+                  <p class="cart-price">от 1200 руб/ночь</p>
+                </div><!--/.col-->
+              </div><!--/.row-->
+              <div class="cart-divider mx-0"></div>
+              <div class="row justify-content-between">
+                <div class="col-auto">
+                  <p class="cart-desc"><i class="fas fa-users size-18 color-green"></i> Отдельный номер:</p>
+                </div><!--/.col-->
+                <div class="col-auto">
+                  <p class="cart-desc mbold">от 1200 руб/ночь</p>
+                </div><!--/.col-->
+              </div><!--/.row-->
+            </div><!--/.col-->
+          </div><!--/.row-->
+        </a><!--/.cart-->
+
+        <h3 class="cart-title mt-40">Хостелы не подходящие по параметрам</h3>
+
+        <a class="cart cart-list" href="">
+          <span class="cart-sale">Цена упала на 60%</span>
+          <div class="row">
+            <div class="col-4">
+              <img class="cart-img" width="270" height="173" src="img/cart-1.jpg">
+              <p class="cart-desc color-blue"><i class="far fa-times-circle color-red"></i> Онлайн бронирование</p>
+              <p class="cart-desc color-blue"><i class="far fa-check-circle"></i> Бронирование без карты</p>
+            </div><!--/.col-->
+            <div class="col-8">
+              <div class="row">
+                <div class="col">
+                  <h3 class="cart-title">Dragonfly Hostels</h3>
+                  <p class="cart-desc color-blue">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span class="bb-dash-blue">Россия, г. Казань ул. Баумана</span> (до центра 0,2 км)
+                  </p>
+                  <p class="cart-desc color-blue size-12">
+                    <span class="cart-idesc">До станции проспект победы: 0,5 км</span>
+                    <br>
+                    <span class="cart-idesc">До вокзала: 5 км</span>
+                    <span class="cart-idesc">До аэропорта: 20 км</span>
+                  </p>
+                </div><!--/.col-->
+                <div class="col-auto">
+                  <p class="cart-desc text-right">
+                    <span class="cart-desc-rat color-green">8,7</span> Очень хорошо
+                    <br>
+                    <span class="cart-desc-sm">48 отзывов</span>
+                  </p>
+                </div><!--/.col-->
+              </div><!--/.row-->
+              <p class="cart-desc size-13">
+                <span class="cart-idesc"><i class="fas fa-wifi color-gray"></i> Wi-Fi бесплатно</span>
+                <span class="cart-idesc"><i class="fas fa-utensils color-gray"></i> Завтрак бесплатно</span>
+                <span class="cart-idesc"><i class="fas fa-swimming-pool color-gray"></i> Бассейн</span>
+              </p>
+              <div class="cart-divider mx-0"></div>
+              <div class="row justify-content-between">
+                <div class="col-auto">
+                  <p class="cart-desc">Место в общественном номере:</p>
+                </div><!--/.col-->
+                <div class="col-auto">
+                  <p class="cart-price">от 1200 руб/ночь</p>
+                </div><!--/.col-->
+              </div><!--/.row-->
+              <div class="cart-divider mx-0"></div>
+              <div class="row justify-content-between">
+                <div class="col-auto">
+                  <p class="cart-desc"><i class="fas fa-user size-18 color-green"></i> Отдельный номер:</p>
+                </div><!--/.col-->
+                <div class="col-auto">
+                  <p class="cart-desc mbold">от 1200 руб/ночь</p>
+                </div><!--/.col-->
+              </div><!--/.row-->
+            </div><!--/.col-->
+          </div><!--/.row-->
+        </a><!--/.cart-->
+
+      </div><!--/.col-->
+
+    </div><!--/.row-->
+  </div><!--/.container-->
+</section><!--/.section-->
+
+<footer class="footer">
+  <div class="footer-cont">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-auto">
+          <a class="ln-blue d-flex align-items-center" href="">
+            <img src="img/icon-4.svg">
+            &nbsp;Мобильная версия
+          </a>
+        </div><!--/.col-->
+        <div class="col">
+          <div class="row justify-content-center">
+            <div class="col-auto">
+              <a class="ln-blue" href="">О сайте</a>
+            </div><!--/.col-->
+            <div class="col-auto">
+              <a class="ln-blue" href="">Страны</a>
+            </div><!--/.col-->
+            <div class="col-auto">
+              <a class="ln-blue" href="">Города</a>
+            </div><!--/.col-->
+            <div class="col-auto">
+              <a class="ln-blue" href="">Каталог</a>
+            </div><!--/.col-->
+            <div class="col-auto">
+              <a class="ln-blue" href="">Добавить хостел</a>
+            </div><!--/.col-->
+          </div><!--/.row-->
+        </div><!--/.col-->
+      </div><!--/.row-->
+    </div><!--/.container-->
+  </div><!--/.footer-cont-->
+  <p class="text-center color-blue">&copy; AmigoHostels.com 2018 Все права защищены</p>
+</footer>
+
+<a class="scrolltotop js-scrollto" href="#"></a>
+
+<!-- МОДАЛЬНЫЕ ОКНА -->
+<div class="d-none">
+
+<!-- РЕГИСТРАЦИЯ | ВХОД -->
+<div class="modal" id="signup-login">
+  <div class="tab modal-tab js-tab">
+    <div class="tab-btn-wrap">
+      <a class="tab-btn active" href="#tab-login">Войти</a>
+      <a class="tab-btn" href="#tab-signup">Зарегистрироваться</a>
+    </div>
+    <div class="tab-content active" id="tab-login">
+      <form class="form-md">
+        <label class="form-label">АДРЕС ЭЛЕКТРОННОЙ ПОЧТЫ</label>
+        <input class="form-input" type="text" placeholder="" name="">
+        <label class="form-label">ПАРОЛЬ</label>
+        <input class="form-input" type="text" placeholder="" name="">
+        <button class="form-eh btn btn-blue bold w-50 mx-auto" type="submit">НАЧАТЬ</button>
+      </form>
+    </div><!--/.tab-content-->
+    <div class="tab-content" id="tab-signup">
+      <form class="form-md">
+        <label class="form-label">АДРЕС ЭЛЕКТРОННОЙ ПОЧТЫ</label>
+        <input class="form-input" type="text" placeholder="" name="">
+        <label class="form-label">СОЗДАЙТЕ ПАРОЛЬ</label>
+        <input class="form-input" type="text" placeholder="" name="">
+        <button class="form-eh btn btn-blue bold w-50 mx-auto" type="submit">НАЧАТЬ</button>
+      </form>
+    </div><!--/.tab-content-->
+  </div><!--/.tab-->
+  <div class="divider-vstxt"><span class="divider-txt">Или</span></div>
+  <div class="soc">
+    <a class="soc-btn" href="">
+      <i class="fab fa-vk soc-icon"></i>
+      <span class="soc-btn-txt">
+        <span class="soc-btn-txta">Войти через</span>
+        <span class="soc-btn-txtb">vk.com</span>
+      </span>
+    </a>
+    <a class="soc-btn" href="">
+      <i class="fab fa-facebook soc-icon"></i>
+      <span class="soc-btn-txt">
+        <span class="soc-btn-txta">Войти через</span>
+        <span class="soc-btn-txtb">Facebook</span>
+      </span>
+    </a>
+    <a class="soc-btn" href="">
+      <i class="fab fa-google soc-icon"></i>
+      <span class="soc-btn-txt">
+        <span class="soc-btn-txta">Войти через</span>
+        <span class="soc-btn-txtb">Google</span>
+      </span>
+    </a>
+  </div>
+  <div class="divider"></div>
+  <p class="modal-ftxt">
+    Создавая аккаунт, вы соглашаетесь с нашими
+    <br>
+    <a class="ln-blue bold" href="">Правилами и условиями</a> и <a class="ln-blue bold" href="">Положением о конфиденциальности</a>
+  </p>
+</div><!--/.modal-->
+
+</div><!--/.d-none (modals wrapper)-->
+
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<!-- plugins -->
+<script src="assets/datepicker/dist/datepicker.min.js"></script>
+<script src="assets/fancybox/dist/jquery.fancybox.min.js"></script>
+<!--  scripts -->
+<script src="js/main.js"></script>
+
+</body>
+</html>
