@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1200">
+  <title>Бронь</title>
+  <!-- fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700&amp;subset=cyrillic">
+  <!-- plugins -->
+  <link rel="stylesheet" href="assets/datepicker/dist/datepicker.min.css">
+  <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="assets/fancybox/dist/jquery.fancybox.min.css">
+  <!-- theme -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/fw-bootstrap.css">
+</head>
+<body>
+
+<header class="header home">
+  <div class="container">
+    <div class="row align-items-center pt-15">
+      <div class="col-auto">
+        <a class="logo-ln" href="">AmigoHostels.com</a>
+      </div><!--/.col-->
+      <div class="col-auto ml-auto">
+        <a class="btn btn-twhite js-fancybox" href="#signup-login" data-tab="#tab-signup">Зарегистрироваться</a>
+      </div><!--/.col-->
+      <div class="col-auto">
+        <a class="btn btn-blue js-fancybox" href="#signup-login" data-tab="#tab-login">Войти</a>
+      </div><!--/.col-->
+      <div class="col-auto">
+        <div class="dropdown mb-15">
+          <p class="color-white size-16 mp-0">RUR</p>
+          <div class="dropdown-content">
+            <a class="dropdown-item" href=""><span class="bold">EUR</span> Евро</a>
+            <a class="dropdown-item" href=""><span class="bold">RUR</span> Российский рубль</a>
+            <a class="dropdown-item" href=""><span class="bold">USD</span> Доллар США</a>
+          </div>
+        </div><!--/.dropdown-->
+      </div><!--/.col-->
+      <div class="col-auto">
+        <div class="dropdown mb-15">
+          <p class="color-white size-16 mp-0">
+            <span class="flag flag-1"></span>
+          </p>
+          <div class="dropdown-content">
+            <a class="dropdown-item" href="">
+              <span class="flag flag-1"></span> Русский
+            </a>
+            <a class="dropdown-item" href="">
+              <span class="flag flag-2"></span> English
+            </a>
+          </div>
+        </div><!--/.dropdown-->
+      </div><!--/.col-->
+      <div class="col-auto">
+        <div class="dropdown no-arr mb-15">
+          <p class="color-white size-16 mp-0">
+            <img class="d-block mb-15" width="15" height="" src="img/icon-3.svg">
+          </p>
+          <div class="dropdown-content">
+            <a class="dropdown-item" href="">О сайте</a>
+            <a class="dropdown-item" href="">Страны</a>
+            <a class="dropdown-item" href="">Города</a>
+            <a class="dropdown-item" href="">Каталог</a>
+            <a class="dropdown-item" href="">Добавить хостел</a>
+          </div>
+        </div><!--/.dropdown-->
+      </div><!--/.col-->
+    </div><!--/.row-->
+    <span class="home-divider"></span>
+    <h1 class="home-title my-30">Более 40 000 хостелов в 115 странах мира</h1>
+    <h2 class="home-desc mb-30">
+      Вы можете найти удобный вам хостел всего лишь в пару кликов<br>
+      указав несколько параметров для поиска
+    </h2>
+    <div class="row justify-content-center">
+      <div class="col-7">
+        <div class="wall-tblack home-wall">
+          <form>
+            <label class="form-label color-white">КУДА ВЫ ХОТИТЕ ПОЕХАТЬ?</label>
+            <div class="form-icon-left">
+              <img class="form-icon" width="24" height="24" src="img/icon-1.svg">
+              <input class="form-input" type="text" placeholder="Страна, город, достопримечательность или хостел" name="">
+            </div>
+            <div class="row">
+              <div class="col">
+                <label class="form-label color-white">ДАТА ЗАЕЗДА</label>
+                <div class="form-icon-right">
+                  <input class="form-input js-datepicker" type="text" placeholder="дд.мм.гггг" name="">
+                  <img class="form-icon" width="24" height="24" src="img/icon-2.svg">
+                </div>
+              </div><!--/.col-->
+              <div class="col">
+                <label class="form-label color-white">ДАТА ВЫЕЗДА</label>
+                <div class="form-icon-right">
+                <!-- Добавить класс error к input для показа ошибки -->
+                  <input class="form-input js-datepicker" type="text" placeholder="дд.мм.гггг" name="">
+                  <img class="form-icon" width="24" height="24" src="img/icon-2.svg">
+                </div>
+              </div><!--/.col-->
+            </div><!--/.row-->
+            <label class="form-label color-white">КОЛИЧЕСТВО ГОСТЕЙ</label>
+            <div class="form-radio-group">
+              <label class="form-radio-label">
+                <input class="form-radio" type="radio" name="count" checked>
+                <span class="form-radio-text">1</span>
+              </label>
+              <label class="form-radio-label">
+                <input class="form-radio" type="radio" name="count">
+                <span class="form-radio-text">2</span>
+              </label>
+              <label class="form-radio-label">
+                <input class="form-radio" type="radio" name="count">
+                <span class="form-radio-text">3</span>
+              </label>
+              <label class="form-radio-label">
+                <input class="form-radio" type="radio" name="count">
+                <span class="form-radio-text">4</span>
+              </label>
+              <label class="form-radio-label">
+                <input class="form-radio" type="radio" name="count">
+                <span class="form-radio-text">5</span>
+              </label>
+              <label class="form-radio-label">
+                <input class="form-radio" type="radio" name="count">
+                <span class="form-radio-text">6</span>
+              </label>
+              <label class="form-radio-label">
+                <input class="form-radio" type="radio" name="count">
+                <span class="form-radio-text">7</span>
+              </label>
+              <label class="form-radio-label">
+                <input class="form-radio" type="radio" name="count">
+                <span class="form-radio-text">8</span>
+              </label>
+              <label class="form-radio-label">
+                <input class="form-radio" type="radio" name="count">
+                <span class="form-radio-text">9</span>
+              </label>
+              <label class="form-radio-label">
+                <input class="form-radio" type="radio" name="count">
+                <span class="form-radio-text">10</span>
+              </label>
+              <label class="form-radio-label w-auto">
+                <input class="form-radio" type="radio" name="count">
+                <span class="form-radio-text">более 10</span>
+              </label>
+            </div><!--/.form-radio-group-->
+            <div class="row justify-content-center">
+              <div class="col-7">
+                <button class="btn form-btn layer-20" type="submit">ПРОВЕРИТЬ НАЛИЧИЕ МЕСТ</button>
+              </div><!--/.col-->
+            </div><!--/.row-->
+          </form>
+        </div>
+      </div><!--/.col-->
+    </div><!--/.row-->
+  </div><!--/.container-->
+  <div class="arc-bottom layer-10"></div>
+</header>
+
+<section class="section bg-white layer-20">
+  <div class="container">
+    <p class="title size-18 text-center color-blue">Вы уже искали</p>
+    <a class="ln-black ln-dash-black mb-15 float-right" href="">Очистить историю</a>
+    <div class="clear"></div>
+    <div class="row justify-content-center">
+      <div class="col-4">
+        <a class="history-ln" href="">Екатеринбург, 3 гостя,<br>11 июля — 18 июля</a>
+      </div><!--/.col-->
+      <div class="col-4">
+        <a class="history-ln" href="">Екатеринбург, 3 гостя,<br>11 июля — 18 июля</a>
+      </div><!--/.col-->
+      <div class="col-4">
+        <a class="history-ln" href="">Екатеринбург, 3 гостя,<br>11 июля — 18 июля</a>
+      </div><!--/.col-->
+    </div><!--/.row-->
+  </div><!--/.container-->
+</section><!--/.section-->
+
+<section class="section">
+  <div class="container">
+    <h3 class="title size-24 text-center color-blue">Последние просмотренные хостели</h3>
+    <div class="row">
+      <div class="col-3">
+        <a class="cart" href="">
+          <img class="cart-img" width="250" height="160" src="img/cart-1.jpg">
+          <div class="px-10">
+            <h3 class="cart-title">Хостел Порт</h3>
+            <p class="cart-desc">
+              <span class="cart-desc-rat color-green">8,7</span> Очень хорошо
+              <br>
+              <span class="cart-desc-sm">48 отзывов</span>
+            </p>
+            <p class="cart-desc">г. Казань ул. Баумана</p>
+          </div>
+          <div class="cart-divider"></div>
+          <p class="cart-price px-10">от 1200 руб.</p>
+        </a><!--/.cart-->
+      </div><!--/.col-->
+      <div class="col-3">
+        <a class="cart" href="">
+          <img class="cart-img" width="250" height="160" src="img/cart-2.jpg">
+          <div class="px-10">
+            <h3 class="cart-title">Хостел Вежливый лось на Савеловской</h3>
+            <p class="cart-desc">
+              <span class="cart-desc-rat color-lblue">8,7</span> Нормально
+              <br>
+              <span class="cart-desc-sm">31 отзывов</span>
+            </p>
+            <p class="cart-desc">г. Санкт-Петербург, ул. Ленина</p>
+          </div>
+          <div class="cart-divider"></div>
+          <p class="cart-price px-10">от 1100 руб.</p>
+        </a><!--/.cart-->
+      </div><!--/.col-->
+      <div class="col-3">
+        <a class="cart like" href="">
+          <img class="cart-img" width="250" height="160" src="img/cart-3.jpg">
+          <div class="px-10">
+            <h3 class="cart-title">Central Hostel</h3>
+            <p class="cart-desc">
+              <span class="cart-desc-rat color-red">2,5</span> Плохо
+              <br>
+              <span class="cart-desc-sm">14 отзывов</span>
+            </p>
+            <p class="cart-desc">г. Екатеринбург, ул. Машиностроителей</p>
+          </div>
+          <div class="cart-divider"></div>
+          <p class="cart-price px-10">от 800 руб.</p>
+        </a><!--/.cart-->
+      </div><!--/.col-->
+      <div class="col-3">
+        <a class="cart" href="">
+          <img class="cart-img" width="250" height="160" src="img/cart-4.jpg">
+          <div class="px-10">
+            <h3 class="cart-title">Dragonfly Hostels</h3>
+            <p class="cart-desc">
+              <span class="cart-desc-rat color-green">9,7</span> Превосходно
+              <br>
+              <span class="cart-desc-sm">54 отзывов</span>
+            </p>
+            <p class="cart-desc">г. Одесса ул. Гайдара</p>
+          </div>
+          <div class="cart-divider"></div>
+          <p class="cart-price px-10">от 1000 руб.</p>
+        </a><!--/.cart-->
+      </div><!--/.col-->
+    </div><!--/.row-->
+  </div><!--/.container-->
+</section><!--/.section-->
+
+<section class="section">
+  <div class="container">
+    <h3 class="title size-24 text-center color-blue">Популярные города</h3>
+    <div class="row">
+      <div class="col-6">
+        <a class="imgcont mb-30" href="">
+          <img class="imgcont-img-blur" width="600" height="300" src="img/pop-c-1.jpg">
+          <img class="imgcont-img" width="600" height="300" src="img/pop-c-1.jpg">
+          <div class="imgcont-cont">
+            <h3 class="imgcont-title">Москва</h3>
+            <p class="imgcont-stick">500 хостелов</p>
+          </div>
+        </a><!--/.imgcont-->
+      </div><!--/.col-->
+      <div class="col-6">
+        <a class="imgcont mb-30" href="">
+          <img class="imgcont-img-blur" width="600" height="300" src="img/pop-c-2.jpg">
+          <img class="imgcont-img" width="600" height="300" src="img/pop-c-2.jpg">
+          <div class="imgcont-cont">
+            <h3 class="imgcont-title">Санкт-Петербург</h3>
+            <p class="imgcont-stick">600 хостелов</p>
+          </div>
+        </a><!--/.imgcont-->
+      </div><!--/.col-->
+      <div class="col-3">
+        <a class="imgcont" href="">
+          <img class="imgcont-img-blur" width="300" height="150" src="img/pop-c-3.jpg">
+          <img class="imgcont-img" width="300" height="150" src="img/pop-c-3.jpg">
+          <div class="imgcont-cont">
+            <h3 class="imgcont-title">Екатеринбург</h3>
+            <p class="imgcont-stick">240 хостелов</p>
+          </div>
+        </a><!--/.imgcont-->
+      </div><!--/.col-->
+      <div class="col-3">
+        <a class="imgcont" href="">
+          <img class="imgcont-img-blur" width="300" height="150" src="img/pop-c-4.jpg">
+          <img class="imgcont-img" width="300" height="150" src="img/pop-c-4.jpg">
+          <div class="imgcont-cont">
+            <h3 class="imgcont-title">Сочи</h3>
+            <p class="imgcont-stick">150 хостелов</p>
+          </div>
+        </a><!--/.imgcont-->
+      </div><!--/.col-->
+      <div class="col-3">
+        <a class="imgcont" href="">
+          <img class="imgcont-img-blur" width="300" height="150" src="img/pop-c-5.jpg">
+          <img class="imgcont-img" width="300" height="150" src="img/pop-c-5.jpg">
+          <div class="imgcont-cont">
+            <h3 class="imgcont-title">Одесса</h3>
+            <p class="imgcont-stick">250 хостелов</p>
+          </div>
+        </a><!--/.imgcont-->
+      </div><!--/.col-->
+      <div class="col-3">
+        <a class="imgcont" href="">
+          <img class="imgcont-img-blur" width="300" height="150" src="img/pop-c-6.jpg">
+          <img class="imgcont-img" width="300" height="150" src="img/pop-c-6.jpg">
+          <div class="imgcont-cont">
+            <h3 class="imgcont-title">Прага</h3>
+            <p class="imgcont-stick">50 хостелов</p>
+          </div>
+        </a><!--/.imgcont-->
+      </div><!--/.col-->
+    </div><!--/.row-->
+  </div><!--/.container-->
+</section><!--/.section-->
+
+<section class="section bg-gray">
+  <div class="container">
+    <h3 class="title size-24 text-center color-blue">Хостелы по всему миру</h3>
+    <div class="row">
+      <div class="col-4">
+        <a class="imgcont mb-30" href="">
+          <img class="imgcont-img-blur" width="370" height="260" src="img/pop-h-1.jpg">
+          <img class="imgcont-img" width="370" height="260" src="img/pop-h-1.jpg">
+          <div class="imgcont-cont">
+            <h3 class="imgcont-title">Россия</h3>
+            <p class="imgcont-stick">1500 хостелов</p>
+          </div>
+        </a><!--/.imgcont-->
+      </div><!--/.col-->
+      <div class="col-4">
+        <a class="imgcont mb-30" href="">
+          <img class="imgcont-img-blur" width="370" height="260" src="img/pop-h-2.jpg">
+          <img class="imgcont-img" width="370" height="260" src="img/pop-h-2.jpg">
+          <div class="imgcont-cont">
+            <h3 class="imgcont-title">Украина</h3>
+            <p class="imgcont-stick">800 хостелов</p>
+          </div>
+        </a><!--/.imgcont-->
+      </div><!--/.col-->
+      <div class="col-4">
+        <a class="imgcont mb-30" href="">
+          <img class="imgcont-img-blur" width="370" height="260" src="img/pop-h-3.jpg">
+          <img class="imgcont-img" width="370" height="260" src="img/pop-h-3.jpg">
+          <div class="imgcont-cont">
+            <h3 class="imgcont-title">Беларусь</h3>
+            <p class="imgcont-stick">300 хостелов</p>
+          </div>
+        </a><!--/.imgcont-->
+      </div><!--/.col-->
+      <div class="col-4">
+        <a class="imgcont mb-30" href="">
+          <img class="imgcont-img-blur" width="370" height="260" src="img/pop-h-4.jpg">
+          <img class="imgcont-img" width="370" height="260" src="img/pop-h-4.jpg">
+          <div class="imgcont-cont">
+            <h3 class="imgcont-title">Грузия</h3>
+            <p class="imgcont-stick">450 хостелов</p>
+          </div>
+        </a><!--/.imgcont-->
+      </div><!--/.col-->
+      <div class="col-4">
+        <a class="imgcont mb-30" href="">
+          <img class="imgcont-img-blur" width="370" height="260" src="img/pop-h-5.jpg">
+          <img class="imgcont-img" width="370" height="260" src="img/pop-h-5.jpg">
+          <div class="imgcont-cont">
+            <h3 class="imgcont-title">Финляндия</h3>
+            <p class="imgcont-stick">770 хостелов</p>
+          </div>
+        </a><!--/.imgcont-->
+      </div><!--/.col-->
+      <div class="col-4">
+        <a class="imgcont mb-30" href="">
+          <img class="imgcont-img-blur" width="370" height="260" src="img/pop-h-6.jpg">
+          <img class="imgcont-img" width="370" height="260" src="img/pop-h-6.jpg">
+          <div class="imgcont-cont">
+            <h3 class="imgcont-title">Каталог стран</h3>
+            <p class="imgcont-stick">500 хостелов</p>
+          </div>
+        </a><!--/.imgcont-->
+      </div><!--/.col-->
+    </div><!--/.row-->
+  </div><!--/.container-->
+</section><!--/.section-->
+
+<section class="section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-7">
+        <div class="imgcont">
+          <img class="imgcont-img" width="728" height="294" src="img/img-2.jpg">
+          <div class="imgcont-cont d-flex flex-column justify-content-center">
+            <h3 class="imgcont-title text-center size-24">Вы - владелец хостела?</h3>
+            <p class="text size-16 text-center">
+              Зарегистрируйте ваш хостел на нашем сайте,
+              <br>
+              чтобы о нем узнали тысячи людей
+            </p>
+            <a class="btn btn-torange size-16 w-40 mx-auto" href="">Добавьте свой хостел</a>
+          </div>
+        </div><!--/.imgcont-->
+      </div><!--/.col-->
+    </div><!--/.row-->
+  </div><!--/.container-->
+</section><!--/.section-->
+
+<section class="section">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-5">
+        <img class="d-block mx-auto mb-15" width="367" height="266" src="img/img-1.jpg">
+      </div><!--/.col-->
+      <div class="col-7">
+        <h3 class="title size-24 color-blue">Бронирование хостелов AmigoHostels.com</h3>
+        <p class="text">
+          Для гостей, которые хотят сэкономить и познакомиться с другими путешественниками.
+          <br>
+          Хостелы — бюджетный вариант размещения с общими и (реже) отдельными номерами.
+        </p>
+        <p class="text">
+          В некоторых хостелах также есть бар, где можно пообщаться с другими гостями.
+          <br>
+          Среди удобств — общая кухня.
+        </p>
+      </div><!--/.col-->
+    </div><!--/.row-->
+  </div><!--/.container-->
+</section><!--/.section-->
+
+<footer class="footer">
+  <div class="footer-cont">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-auto">
+          <a class="ln-blue d-flex align-items-center" href="">
+            <img src="img/icon-4.svg">
+            &nbsp;Мобильная версия
+          </a>
+        </div><!--/.col-->
+        <div class="col">
+          <div class="row justify-content-center">
+            <div class="col-auto">
+              <a class="ln-blue" href="">О сайте</a>
+            </div><!--/.col-->
+            <div class="col-auto">
+              <a class="ln-blue" href="">Страны</a>
+            </div><!--/.col-->
+            <div class="col-auto">
+              <a class="ln-blue" href="">Города</a>
+            </div><!--/.col-->
+            <div class="col-auto">
+              <a class="ln-blue" href="">Каталог</a>
+            </div><!--/.col-->
+            <div class="col-auto">
+              <a class="ln-blue" href="">Добавить хостел</a>
+            </div><!--/.col-->
+          </div><!--/.row-->
+        </div><!--/.col-->
+      </div><!--/.row-->
+    </div><!--/.container-->
+  </div><!--/.footer-cont-->
+  <p class="text-center color-blue">&copy; AmigoHostels.com 2018 Все права защищены</p>
+</footer>
+
+<a class="scrolltotop js-scrollto" href="#"></a>
+
+<!-- МОДАЛЬНЫЕ ОКНА -->
+<div class="d-none">
+
+<!-- РЕГИСТРАЦИЯ | ВХОД -->
+<div class="modal" id="signup-login">
+  <div class="tab modal-tab js-tab">
+    <div class="tab-btn-wrap">
+      <a class="tab-btn active" href="#tab-login">Войти</a>
+      <a class="tab-btn" href="#tab-signup">Зарегистрироваться</a>
+    </div>
+    <div class="tab-content active" id="tab-login">
+      <form class="form-md">
+        <label class="form-label">АДРЕС ЭЛЕКТРОННОЙ ПОЧТЫ</label>
+        <input class="form-input" type="text" placeholder="" name="">
+        <label class="form-label">ПАРОЛЬ</label>
+        <input class="form-input" type="text" placeholder="" name="">
+        <button class="form-eh btn btn-blue bold w-50 mx-auto" type="submit">НАЧАТЬ</button>
+      </form>
+    </div><!--/.tab-content-->
+    <div class="tab-content" id="tab-signup">
+      <form class="form-md">
+        <label class="form-label">АДРЕС ЭЛЕКТРОННОЙ ПОЧТЫ</label>
+        <input class="form-input" type="text" placeholder="" name="">
+        <label class="form-label">СОЗДАЙТЕ ПАРОЛЬ</label>
+        <input class="form-input" type="text" placeholder="" name="">
+        <button class="form-eh btn btn-blue bold w-50 mx-auto" type="submit">НАЧАТЬ</button>
+      </form>
+    </div><!--/.tab-content-->
+  </div><!--/.tab-->
+  <div class="divider-vstxt"><span class="divider-txt">Или</span></div>
+  <div class="soc">
+    <a class="soc-btn" href="">
+      <i class="fab fa-vk soc-icon"></i>
+      <span class="soc-btn-txt">
+        <span class="soc-btn-txta">Войти через</span>
+        <span class="soc-btn-txtb">vk.com</span>
+      </span>
+    </a>
+    <a class="soc-btn" href="">
+      <i class="fab fa-facebook soc-icon"></i>
+      <span class="soc-btn-txt">
+        <span class="soc-btn-txta">Войти через</span>
+        <span class="soc-btn-txtb">Facebook</span>
+      </span>
+    </a>
+    <a class="soc-btn" href="">
+      <i class="fab fa-google soc-icon"></i>
+      <span class="soc-btn-txt">
+        <span class="soc-btn-txta">Войти через</span>
+        <span class="soc-btn-txtb">Google</span>
+      </span>
+    </a>
+  </div>
+  <div class="divider"></div>
+  <p class="modal-ftxt">
+    Создавая аккаунт, вы соглашаетесь с нашими
+    <br>
+    <a class="ln-blue bold" href="">Правилами и условиями</a> и <a class="ln-blue bold" href="">Положением о конфиденциальности</a>
+  </p>
+</div><!--/.modal-->
+
+</div><!--/.d-none (modals wrapper)-->
+
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<!-- plugins -->
+<script src="assets/datepicker/dist/datepicker.min.js"></script>
+<script src="assets/fancybox/dist/jquery.fancybox.min.js"></script>
+<!--  scripts -->
+<script src="js/main.js"></script>
+
+</body>
+</html>
