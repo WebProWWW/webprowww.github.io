@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=1200">
   <title>Бронь</title>
   <!-- fonts -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700&amp;subset=cyrillic">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,400i&amp;subset=cyrillic">
   <!-- plugins -->
   <link rel="stylesheet" href="assets/datepicker/dist/datepicker.min.css">
-  <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="assets/fontawesome/css/all.min.css?v=5.2.0">
   <link rel="stylesheet" href="assets/fancybox/dist/jquery.fancybox.min.css">
   <!-- theme -->
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/main.css?v=001">
   <link rel="stylesheet" href="css/fw-bootstrap.css">
 </head>
 <body>
@@ -621,8 +621,90 @@
           </div><!--/.row-->
         </a><!--/.cart-->
 
+        <div class="wallist notfound">
+          <p class="text color-blue mbold size-18">К сожалению, под ваши даты не подошел ни один хостел</p>
+          <p class="text size-16 mb-30">Измените даты поиска или уберите фильтры</p>
+          <p class="text color-blue">Выбранные фильтры:</p>
+          <div class="tag-row">
+            <p class="tag">ЗАВТРАК <a class="tag-remove" href=""><i class="fas fa-times"></i></a></p>
+            <p class="tag">ДО 600 РУБ <a class="tag-remove" href=""><i class="fas fa-times"></i></a></p>
+            <p class="tag">ТЕЛЕВИЗОР <a class="tag-remove" href=""><i class="fas fa-times"></i></a></p>
+          </div>
+        </div>
+
+        <nav class="pager">
+          <a class="pager-btn" href="">Пред.</a>
+          <a class="pager-ln" href="">1</a>
+          <a class="pager-ln active" href="">2</a>
+          <a class="pager-ln" href="">3</a>
+          <span class="pager-dot">...</span>
+          <a class="pager-ln" href="">8</a>
+          <a class="pager-btn" href="">След.</a>
+        </nav>
+
+        <p class="text">Хостел Boxtel расположен в Москве, на Старом Арбате, в 1,7 км от Кремля и Красной площади и в 3 минутах ходьбы от станции метро «Арбатская».</p>
+        <p class="text">В хостеле Boxtel предлагается размещение в капсулах с индивидуальным освещением и вентиляцией, 2 розетками, запирающимися шкафчиками и специальной занавеской с замком. Стойка регистрации работает круглосуточно.</p>
+
+        <div class="wallist">
+          <p class="text bold size-18">Районы города</p>
+          <div class="row">
+            <div class="col-6">
+              <a class="ln-blue size-16 d-block mb-15" href="">
+                Вахитовский район <span class="color-pblue size-14">(25 хостелов)</span>
+              </a>
+            </div><!--/.col-->
+            <div class="col-6">
+              <a class="ln-blue size-16 d-block mb-15" href="">
+                Кировский район <span class="color-pblue size-14">(15 хостелов)</span>
+              </a>
+            </div><!--/.col-->
+            <div class="col-6">
+              <a class="ln-blue size-16 d-block mb-15" href="">
+                Советский район <span class="color-pblue size-14">(23 хостелов)</span>
+              </a>
+            </div><!--/.col-->
+            <div class="col-6">
+              <a class="ln-blue size-16 d-block mb-15" href="">
+                Авиастроительный район <span class="color-pblue size-14">(5 хостелов)</span>
+              </a>
+            </div><!--/.col-->
+          </div><!--/.row-->
+          <div class="mb-15">
+            <a class="ln-blue bb-dash-blue" href="">Показать все</a>
+          </div>
+        </div>
+
       </div><!--/.col-->
 
+    </div><!--/.row-->
+
+
+  </div><!--/.container-->
+</section><!--/.section-->
+
+
+<section class="section">
+  <div class="container">
+    <p class="text bold size-18">Ищите что-то конкретное?</p>
+    <div class="divider-vsltxt"><span class="divider-txt size-14 mbold">По расположению</span></div>
+    <div class="row mb-15">
+      <div class="col-auto mb-15"><a class="ln-blue" href="">В центре</a></div>
+      <div class="col-auto mb-15"><a class="ln-blue" href="">У метро</a></div>
+      <div class="col-auto mb-15"><a class="ln-blue" href="">По районам</a></div>
+      <div class="col-auto mb-15"><a class="ln-blue" href="">На карте</a></div>
+    </div><!--/.row-->
+
+    <div class="divider-vsltxt"><span class="divider-txt size-14 mbold">С удобствами и услугами</span></div>
+    <div class="row mb-15">
+      <div class="col-auto mb-15"><a class="ln-blue" href="">С парковкой</a></div>
+      <div class="col-auto mb-15"><a class="ln-blue" href="">С детьми</a></div>
+    </div><!--/.row-->
+
+    <div class="divider-vsltxt"><span class="divider-txt size-14 mbold">По рейтингу</span></div>
+    <div class="row mb-15">
+      <div class="col-auto mb-15"><a class="ln-blue" href="">По отзывам</a></div>
+      <div class="col-auto mb-15"><a class="ln-blue" href="">Лучшие</a></div>
+      <div class="col-auto mb-15"><a class="ln-blue" href="">Популярные</a></div>
     </div><!--/.row-->
   </div><!--/.container-->
 </section><!--/.section-->
@@ -735,7 +817,7 @@
 <script src="assets/datepicker/dist/datepicker.min.js"></script>
 <script src="assets/fancybox/dist/jquery.fancybox.min.js"></script>
 <!--  scripts -->
-<script src="js/main.js"></script>
+<script src="js/main.js?v=001"></script>
 
 </body>
 </html>

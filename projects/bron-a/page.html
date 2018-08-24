@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1200">
+  <title>Бронь</title>
+  <!-- fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,400i&amp;subset=cyrillic">
+  <!-- plugins -->
+  <link rel="stylesheet" href="assets/datepicker/dist/datepicker.min.css">
+  <link rel="stylesheet" href="assets/fontawesome/css/all.min.css?v=5.2.0">
+  <link rel="stylesheet" href="assets/fancybox/dist/jquery.fancybox.min.css">
+  <!-- theme -->
+  <link rel="stylesheet" href="css/main.css?v=001">
+  <link rel="stylesheet" href="css/fw-bootstrap.css">
+</head>
+<body>
+
+<header class="header inner">
+  <div class="container">
+    <div class="row align-items-center pt-15">
+      <div class="col-auto">
+        <a class="logo-ln" href="">AmigoHostels.com</a>
+      </div><!--/.col-->
+      <div class="col-auto ml-auto">
+        <a class="btn btn-twhite js-fancybox" href="#signup-login" data-tab="#tab-signup">Зарегистрироваться</a>
+      </div><!--/.col-->
+      <div class="col-auto">
+        <a class="btn btn-blue js-fancybox" href="#signup-login" data-tab="#tab-login">Войти</a>
+      </div><!--/.col-->
+      <div class="col-auto">
+        <div class="dropdown mb-15">
+          <p class="color-white size-16 mp-0">RUR</p>
+          <div class="dropdown-content">
+            <a class="dropdown-item" href=""><span class="bold">EUR</span> Евро</a>
+            <a class="dropdown-item" href=""><span class="bold">RUR</span> Российский рубль</a>
+            <a class="dropdown-item" href=""><span class="bold">USD</span> Доллар США</a>
+          </div>
+        </div><!--/.dropdown-->
+      </div><!--/.col-->
+      <div class="col-auto">
+        <div class="dropdown mb-15">
+          <p class="color-white size-16 mp-0">
+            <span class="flag flag-1"></span>
+          </p>
+          <div class="dropdown-content">
+            <a class="dropdown-item" href="">
+              <span class="flag flag-1"></span> Русский
+            </a>
+            <a class="dropdown-item" href="">
+              <span class="flag flag-2"></span> English
+            </a>
+          </div>
+        </div><!--/.dropdown-->
+      </div><!--/.col-->
+      <div class="col-auto">
+        <div class="dropdown no-arr mb-15">
+          <p class="color-white size-16 mp-0">
+            <img class="d-block mb-15" width="15" height="" src="img/icon-3.svg">
+          </p>
+          <div class="dropdown-content">
+            <a class="dropdown-item" href="">О сайте</a>
+            <a class="dropdown-item" href="">Страны</a>
+            <a class="dropdown-item" href="">Города</a>
+            <a class="dropdown-item" href="">Каталог</a>
+            <a class="dropdown-item" href="">Добавить хостел</a>
+          </div>
+        </div><!--/.dropdown-->
+      </div><!--/.col-->
+    </div><!--/.row-->
+    <span class="home-divider"></span>
+    <div class="wall-tblack inner-wall">
+      <form>
+        <div class="row">
+          <div class="col-5">
+            <label class="form-label color-white">КУДА ВЫ ХОТИТЕ ПОЕХАТЬ?</label>
+            <div class="form-icon-left">
+              <img class="form-icon" width="24" height="24" src="img/icon-1.svg">
+              <input class="form-input" type="text" placeholder="Страна, город, достопримечательность или хостел" name="">
+            </div>
+          </div><!--/.col-->
+          <div class="col-7">
+            <div class="row">
+              <div class="col">
+                <label class="form-label color-white">ДАТА ЗАЕЗДА</label>
+                <div class="form-icon-right">
+                  <input class="form-input js-datepicker" type="text" placeholder="дд.мм.гггг" name="">
+                  <img class="form-icon" width="24" height="24" src="img/icon-2.svg">
+                </div>
+              </div><!--/.col-->
+              <div class="col">
+                <label class="form-label color-white">ДАТА ВЫЕЗДА</label>
+                <div class="form-icon-right">
+                <!-- Добавить класс error к input для показа ошибки -->
+                  <input class="form-input js-datepicker" type="text" placeholder="дд.мм.гггг" name="">
+                  <img class="form-icon" width="24" height="24" src="img/icon-2.svg">
+                </div>
+              </div><!--/.col-->
+              <div class="col">
+                <label class="form-label color-white">КОЛИЧЕСТВО ГОСТЕЙ</label>
+                <div class="form-counter js-counter">
+                  <span class="form-counter-btn left" data="-1">-</span>
+                  <input class="form-input js-counter-input" type="text" readonly value="1" max="100" min="1">
+                  <span class="form-counter-btn right" data="1">+</span>
+                </div>
+              </div><!--/.col-->
+            </div><!--/.row-->
+          </div><!--/.col-->
+        </div><!--/.row-->
+        <div class="row justify-content-center">
+          <div class="col-4">
+            <button class="btn form-btn" type="submit">ПРОВЕРИТЬ НАЛИЧИЕ МЕСТ</button>
+          </div><!--/.col-->
+        </div><!--/.row-->
+      </form>
+      <div class="inner-wall-bottom"></div>
+    </div>
+
+  </div><!--/.container-->
+</header>
+
+<div class="container">
+  <nav class="breadcrumb">
+    <a class="breadcrumb-ln" href="">Главная</a>
+    <a class="breadcrumb-ln" href="">Россия</a>
+    <a class="breadcrumb-ln" href="">Казань</a>
+    <a class="breadcrumb-ln" href="">Вахитовский район</a>
+  </nav>
+</div><!--/.container-->
+<div class="divider"></div><!--/.divider-->
+
+<section class="section">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-3">
+        <nav class="side side-nav">
+          <a class="side-nav-ln" href="">Юридическая информация</a>
+          <a class="side-nav-ln" href="">Руководство для правоохранительных органов</a>
+          <a class="side-nav-ln active" href="">Офисы</a>
+          <a class="side-nav-ln" href="">Свяжитесь с нами</a>
+          <a class="side-nav-ln" href="">Пресс-центр</a>
+          <a class="side-nav-ln" href="">Вакансии</a>
+        </nav>
+      </div><!--/.col-->
+
+      <div class="col-9">
+        <h1 class="text bold size-30 color-blue">H1 Руководство для правоохранительных органов</h1>
+
+        <p class="text">P Мы уделяем большое внимание конфиденциальности ваших данных. Воспользовавшись услугами Booking.com вы оказали нам доверие, и мы это ценим. Мы прилагаем все усилия, чтобы сохранить ваши личные данные в безопасности. Мы действуем в интересах наших клиентов и не скрываем информации об обработке ваших персональных данных.</p>
+
+        <h2 class="text bold size-24 color-blue">H2 Бронирование хостелов</h2>
+
+        <div class="row">
+          <div class="col">
+            <ul>
+              <li class="mb-5">Пример</li>
+              <li class="mb-5">Неупорядоченного</li>
+              <li class="mb-5">Списка</li>
+              <li class="mb-5">То есть, ul</li>
+              <li class="mb-5">Unordered list</li>
+            </ul>
+          </div><!--/.col-->
+          <div class="col">
+            <ol>
+              <li class="mb-5">Еще пример</li>
+              <li class="mb-5">
+                Упорядоченного
+                <ol type="a">
+                  <li class="mb-5">ordered</li>
+                  <li class="mb-5">list</li>
+                </ol>
+              </li>
+              <li class="mb-5">Списка</li>
+              <li class="mb-5">То есть, ol</li>
+            </ol>
+          </div><!--/.col-->
+        </div><!--/.row-->
+
+        <p class="text">Вы также можете прочитать отдельное Положение о cookie-файлах, в котором объясняется, как Booking.com использует cookie-файлы и другие подобные технологии. Более подробное описание терминов «Поездка», «Поставщик Поездки», «Сервис» и «Бронирование» вы можете найти в Правилах и условиях Booking.com.</p>
+
+        <h3 class="text bold size-18 color-blue">H3 Если вы уже пользовались нашими услугами раньше</h3>
+
+        <p class="text tin">То знаете, что компания Booking.com предлагает онлайн-услуги в сфере путешествий на своем сайте, в мобильных приложениях и на других онлайн-платформах, таких как партнерские сайты и социальные сети. Это важно знать, так как Положение о конфиденциальности относится ко всем этим платформам.</p>
+
+        <p class="text">Это Положение о конфиденциальности распространяется на все виды информации, которую мы собираем через эти платформы или по другим каналам, связанным с этими платформами (например, с помощью электронных сообщений, поступающих в нашу службу поддержки клиентов). Поставщикам Поездок следует также прочитать отдельное Положение о конфиденциальности для Поставщиков Поездок.</p>
+
+        <p class="text mbold">Мы можем время от времени изменять Положение о конфиденциальности. Рекомендуем вам регулярно проверять эту страницу, чтобы быть в курсе последних изменений. Если мы внесем такие изменения в Положение о конфиденциальности, которые затронут непосредственно вас (например, если мы намереваемся обрабатывать ваши персональные данные в целях, отличных от тех, что были ранее указаны в настоящем Положении о конфиденциальности), мы сообщим вам о таких изменениях до начала новой деятельности.</p>
+
+        <p class="text bold">Если вы не согласны с этим Положением о конфиденциальности, мы просим вас воздержаться от пользования нашими услугами. Если вы согласны с нашим Положением о конфиденциальности, тогда вы готовы организовать следующую свою Поездку с нашей помощью.</p>
+      </div><!--/.col-->
+
+    </div><!--/.row-->
+  </div><!--/.container-->
+</section><!--/.section-->
+
+<footer class="footer">
+  <div class="footer-cont">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-auto">
+          <a class="ln-blue d-flex align-items-center" href="">
+            <img src="img/icon-4.svg">
+            &nbsp;Мобильная версия
+          </a>
+        </div><!--/.col-->
+        <div class="col">
+          <div class="row justify-content-center">
+            <div class="col-auto">
+              <a class="ln-blue" href="">О сайте</a>
+            </div><!--/.col-->
+            <div class="col-auto">
+              <a class="ln-blue" href="">Страны</a>
+            </div><!--/.col-->
+            <div class="col-auto">
+              <a class="ln-blue" href="">Города</a>
+            </div><!--/.col-->
+            <div class="col-auto">
+              <a class="ln-blue" href="">Каталог</a>
+            </div><!--/.col-->
+            <div class="col-auto">
+              <a class="ln-blue" href="">Добавить хостел</a>
+            </div><!--/.col-->
+          </div><!--/.row-->
+        </div><!--/.col-->
+      </div><!--/.row-->
+    </div><!--/.container-->
+  </div><!--/.footer-cont-->
+  <p class="text-center color-blue">&copy; AmigoHostels.com 2018 Все права защищены</p>
+</footer>
+
+<a class="scrolltotop js-scrollto" href="#"></a>
+
+<!-- МОДАЛЬНЫЕ ОКНА -->
+<div class="d-none">
+
+<!-- РЕГИСТРАЦИЯ | ВХОД -->
+<div class="modal" id="signup-login">
+  <div class="tab modal-tab js-tab">
+    <div class="tab-btn-wrap">
+      <a class="tab-btn active" href="#tab-login">Войти</a>
+      <a class="tab-btn" href="#tab-signup">Зарегистрироваться</a>
+    </div>
+    <div class="tab-content active" id="tab-login">
+      <form class="form-md">
+        <label class="form-label">АДРЕС ЭЛЕКТРОННОЙ ПОЧТЫ</label>
+        <input class="form-input" type="text" placeholder="" name="">
+        <label class="form-label">ПАРОЛЬ</label>
+        <input class="form-input" type="text" placeholder="" name="">
+        <button class="form-eh btn btn-blue bold w-50 mx-auto" type="submit">НАЧАТЬ</button>
+      </form>
+    </div><!--/.tab-content-->
+    <div class="tab-content" id="tab-signup">
+      <form class="form-md">
+        <label class="form-label">АДРЕС ЭЛЕКТРОННОЙ ПОЧТЫ</label>
+        <input class="form-input" type="text" placeholder="" name="">
+        <label class="form-label">СОЗДАЙТЕ ПАРОЛЬ</label>
+        <input class="form-input" type="text" placeholder="" name="">
+        <button class="form-eh btn btn-blue bold w-50 mx-auto" type="submit">НАЧАТЬ</button>
+      </form>
+    </div><!--/.tab-content-->
+  </div><!--/.tab-->
+  <div class="divider-vstxt"><span class="divider-txt">Или</span></div>
+  <div class="soc">
+    <a class="soc-btn" href="">
+      <i class="fab fa-vk soc-icon"></i>
+      <span class="soc-btn-txt">
+        <span class="soc-btn-txta">Войти через</span>
+        <span class="soc-btn-txtb">vk.com</span>
+      </span>
+    </a>
+    <a class="soc-btn" href="">
+      <i class="fab fa-facebook soc-icon"></i>
+      <span class="soc-btn-txt">
+        <span class="soc-btn-txta">Войти через</span>
+        <span class="soc-btn-txtb">Facebook</span>
+      </span>
+    </a>
+    <a class="soc-btn" href="">
+      <i class="fab fa-google soc-icon"></i>
+      <span class="soc-btn-txt">
+        <span class="soc-btn-txta">Войти через</span>
+        <span class="soc-btn-txtb">Google</span>
+      </span>
+    </a>
+  </div>
+  <div class="divider"></div>
+  <p class="modal-ftxt">
+    Создавая аккаунт, вы соглашаетесь с нашими
+    <br>
+    <a class="ln-blue bold" href="">Правилами и условиями</a> и <a class="ln-blue bold" href="">Положением о конфиденциальности</a>
+  </p>
+</div><!--/.modal-->
+
+</div><!--/.d-none (modals wrapper)-->
+
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<!-- plugins -->
+<script src="assets/datepicker/dist/datepicker.min.js"></script>
+<script src="assets/fancybox/dist/jquery.fancybox.min.js"></script>
+<!--  scripts -->
+<script src="js/main.js?v=001"></script>
+
+</body>
+</html>

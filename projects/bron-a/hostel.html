@@ -1,0 +1,1188 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1200">
+  <title>Бронь</title>
+  <!-- fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,400i&amp;subset=cyrillic">
+  <!-- plugins -->
+  <link rel="stylesheet" href="assets/datepicker/dist/datepicker.min.css">
+  <link rel="stylesheet" href="assets/fontawesome/css/all.min.css?v=5.2.0">
+  <link rel="stylesheet" href="assets/fancybox/dist/jquery.fancybox.min.css">
+  <!-- theme -->
+  <link rel="stylesheet" href="css/main.css?v=001">
+  <link rel="stylesheet" href="css/fw-bootstrap.css">
+</head>
+<body>
+
+<header class="header inheader">
+  <div class="container">
+    <div class="row align-items-center pt-15">
+      <div class="col-auto">
+        <a class="logo-ln" href="">AmigoHostels.com</a>
+      </div><!--/.col-->
+      <div class="col-auto ml-auto">
+        <a class="btn btn-twhite js-fancybox" href="#signup-login" data-tab="#tab-signup">Зарегистрироваться</a>
+      </div><!--/.col-->
+      <div class="col-auto">
+        <a class="btn btn-blue js-fancybox" href="#signup-login" data-tab="#tab-login">Войти</a>
+      </div><!--/.col-->
+      <div class="col-auto">
+        <div class="dropdown mb-15">
+          <p class="color-white size-16 mp-0">RUR</p>
+          <div class="dropdown-content">
+            <a class="dropdown-item" href=""><span class="bold">EUR</span> Евро</a>
+            <a class="dropdown-item" href=""><span class="bold">RUR</span> Российский рубль</a>
+            <a class="dropdown-item" href=""><span class="bold">USD</span> Доллар США</a>
+          </div>
+        </div><!--/.dropdown-->
+      </div><!--/.col-->
+      <div class="col-auto">
+        <div class="dropdown mb-15">
+          <p class="color-white size-16 mp-0">
+            <span class="flag flag-1"></span>
+          </p>
+          <div class="dropdown-content">
+            <a class="dropdown-item" href="">
+              <span class="flag flag-1"></span> Русский
+            </a>
+            <a class="dropdown-item" href="">
+              <span class="flag flag-2"></span> English
+            </a>
+          </div>
+        </div><!--/.dropdown-->
+      </div><!--/.col-->
+      <div class="col-auto">
+        <div class="dropdown no-arr mb-15">
+          <p class="color-white size-16 mp-0">
+            <img class="d-block mb-15" width="15" height="" src="img/icon-3.svg">
+          </p>
+          <div class="dropdown-content">
+            <a class="dropdown-item" href="">О сайте</a>
+            <a class="dropdown-item" href="">Страны</a>
+            <a class="dropdown-item" href="">Города</a>
+            <a class="dropdown-item" href="">Каталог</a>
+            <a class="dropdown-item" href="">Добавить хостел</a>
+          </div>
+        </div><!--/.dropdown-->
+      </div><!--/.col-->
+    </div><!--/.row-->
+  </div><!--/.container-->
+</header>
+
+<div class="container">
+  <nav class="breadcrumb">
+    <a class="breadcrumb-ln" href="">Главная</a>
+    <a class="breadcrumb-ln" href="">Россия</a>
+    <a class="breadcrumb-ln" href="">Казань</a>
+    <a class="breadcrumb-ln" href="">Вахитовский район</a>
+  </nav>
+</div><!--/.container-->
+
+<div class="divider"></div><!--/.divider-->
+
+<section class="section">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-3">
+        <div class="side side-gray">
+          <h3 class="side-title">Поиск</h3>
+          <form class="form-md">
+            <label class="form-label">МЕСТО / НАЗВАНИЕ ХОСТЕЛА</label>
+            <input class="form-input" type="text" placeholder="" name="">
+            <div class="row">
+              <div class="col">
+                <label class="form-label">ДАТА ЗАЕЗДА</label>
+                <input class="form-input js-datepicker" type="text" placeholder="дд.мм.гггг">
+              </div><!--/.col-->
+              <div class="col">
+                <label class="form-label">ДАТА ОТЪЕЗДА</label>
+                <input class="form-input js-datepicker" type="text" placeholder="дд.мм.гггг">
+              </div><!--/.col-->
+            </div><!--/.row-->
+            <div class="divider-vstxt"><span class="divider-txt">1 сутки</span></div>
+            <div class="row">
+              <div class="col">
+                <label class="form-label">ВЗРОСЛЫХ</label>
+                <div class="form-counter js-counter">
+                  <span class="form-counter-btn left" data="-1">-</span>
+                  <input class="form-input js-counter-input" type="text" readonly value="1" max="100" min="0">
+                  <span class="form-counter-btn right" data="1">+</span>
+                </div>
+              </div><!--/.col-->
+              <div class="col">
+                <label class="form-label">ДЕТЕЙ</label>
+                <div class="form-counter js-counter">
+                  <span class="form-counter-btn left" data="-1">-</span>
+                  <input class="form-input js-counter-input" type="text" readonly value="0" max="100" min="0">
+                  <span class="form-counter-btn right" data="1">+</span>
+                </div>
+              </div><!--/.col-->
+            </div><!--/.row-->
+            <label class="form-label">ВОЗРАСТ ДЕТЕЙ</label>
+            <div class="row">
+              <div class="col">
+                <div class="form-counter js-counter">
+                  <span class="form-counter-btn left" data="-1">-</span>
+                  <input class="form-input js-counter-input" type="text" readonly value="15" max="100" min="0">
+                  <span class="form-counter-btn right" data="1">+</span>
+                </div>
+              </div><!--/.col-->
+              <div class="col">
+                <div class="form-counter js-counter">
+                  <span class="form-counter-btn left" data="-1">-</span>
+                  <input class="form-input js-counter-input" type="text" readonly value="13" max="100" min="0">
+                  <span class="form-counter-btn right" data="1">+</span>
+                </div>
+              </div><!--/.col-->
+            </div><!--/.row-->
+            <div class="row">
+              <div class="col">
+                <div class="form-counter js-counter">
+                  <span class="form-counter-btn left" data="-1">-</span>
+                  <input class="form-input js-counter-input" type="text" readonly value="9" max="100" min="0">
+                  <span class="form-counter-btn right" data="1">+</span>
+                </div>
+              </div><!--/.col-->
+              <div class="col">
+                <div class="form-counter js-counter">
+                  <span class="form-counter-btn left" data="-1">-</span>
+                  <input class="form-input js-counter-input" type="text" readonly value="6" max="100" min="0">
+                  <span class="form-counter-btn right" data="1">+</span>
+                </div>
+              </div><!--/.col-->
+            </div><!--/.row-->
+            <button class="form-eh btn btn-orange w-50 mx-auto" type="submit">ПОИСК</button>
+          </form>
+        </div><!--/.side-->
+      </div><!--/.col-->
+
+      <div class="col-9">
+        <div class="row">
+          <div class="col-8">
+            <h1 class="title mb-15 size-30">
+              Хостел Атмосфера
+              <span class="space-nowrap color-yellow size-16">
+                &nbsp;&nbsp;
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <i class="far fa-star"></i>
+                &nbsp;&nbsp;
+                <i class="fas fa-thumbs-up size-18 color-green"></i>
+              </span>
+            </h1>
+            <p class="text mb-15 color-blue">
+              <i class="fas fa-map-marker-alt"></i>
+              Россия, Казань, ул. Япеева, д. 10 <a class="ln-blue bb-dash-blue" href="">Показать на карте</a>
+            </p>
+          </div><!--/.col-->
+          <div class="col-4">
+            <p class="text">
+              <span class="d-flex align-items-center justify-content-end">
+                <span class="d-block text-right">
+                  <span class="bold d-block">Очень хорошо</span>
+                  <span class="cart-desc-sm">48 отзывов</span>
+                </span>
+                <span class="d-block ml-10">
+                  <span class="color-green bold size-28">8,7</span>
+                </span>
+              </span>
+            </p>
+            <a class="btn btn-orange py-15 bold size-12" href="">ЗАБРОНИРОВАТЬ ОНЛАЙН</a>
+          </div><!--/.col-->
+        </div><!--/.row-->
+
+        <div class="divider"></div>
+
+        <div class="gal">
+          <div class="gal-md">
+            <a class="gal-md-ln" data-fancybox="gallery" data-caption="Описание изображения 1" href="img/gal/big-5.jpg">
+              <img class="gal-md-img" width="645" height="400" src="img/gal/md-5.jpg">
+            </a>
+          </div><!--/.gal-md-->
+
+          <div class="gal-th">
+            <a class="gal-th-ln" data-fancybox="gallery" data-caption="Описание изображения 2" href="img/gal/big-1.jpg">
+              <img class="gal-th-img" width="100" height="100" src="img/gal/th-1.jpg">
+            </a>
+            <a class="gal-th-ln" data-fancybox="gallery" data-caption="Описание изображения 3" href="img/gal/big-2.jpg">
+              <img class="gal-th-img" width="100" height="100" src="img/gal/th-2.jpg">
+            </a>
+            <a class="gal-th-ln" data-fancybox="gallery" data-caption="Описание изображения 4" href="img/gal/big-3.jpg">
+              <img class="gal-th-img" width="100" height="100" src="img/gal/th-3.jpg">
+            </a>
+            <a class="gal-th-ln" data-fancybox="gallery" data-caption="Описание изображения 5" href="img/gal/big-4.jpg">
+              <img class="gal-th-img" width="100" height="100" src="img/gal/th-4.jpg">
+            </a>
+            <a class="gal-th-ln" data-fancybox="gallery" data-caption="Описание изображения 6" href="img/gal/big-5.jpg">
+              <img class="gal-th-img" width="100" height="100" src="img/gal/th-5.jpg">
+            </a>
+            <a class="gal-th-ln" data-fancybox="gallery" data-caption="Описание изображения 7" href="img/gal/big-6.jpg">
+              <img class="gal-th-img" width="100" height="100" src="img/gal/th-6.jpg">
+            </a>
+            <a class="gal-th-ln" data-fancybox="gallery" data-caption="Описание изображения 8" href="img/gal/big-1.jpg">
+              <img class="gal-th-img" width="100" height="100" src="img/gal/th-1.jpg">
+            </a>
+            <a class="gal-th-ln" data-fancybox="gallery" data-caption="Описание изображения 9" href="img/gal/big-2.jpg">
+              <img class="gal-th-img" width="100" height="100" src="img/gal/th-2.jpg">
+            </a>
+            <!-- если больше 8 выводить только ссылку на изображение, fancybox их зацепит -->
+            <a data-fancybox="gallery" data-caption="Описание изображения 10" href="img/gal/big-3.jpg"></a>
+            <a data-fancybox="gallery" data-caption="Описание изображения 11" href="img/gal/big-4.jpg"></a>
+            <a data-fancybox="gallery" data-caption="Описание изображения 12" href="img/gal/big-5.jpg"></a>
+            <a data-fancybox="gallery" data-caption="Описание изображения 13" href="img/gal/big-6.jpg"></a>
+            <a data-fancybox="gallery" data-caption="Описание изображения 14" href="img/gal/big-1.jpg"></a>
+            <a data-fancybox="gallery" data-caption="Описание изображения 15" href="img/gal/big-2.jpg"></a>
+            <a data-fancybox="gallery" data-caption="Описание изображения 16" href="img/gal/big-3.jpg"></a>
+            <a data-fancybox="gallery" data-caption="Описание изображения 17" href="img/gal/big-4.jpg"></a>
+            <a data-fancybox="gallery" data-caption="Описание изображения 18" href="img/gal/big-5.jpg"></a>
+            <a data-fancybox="gallery" data-caption="Описание изображения 19" href="img/gal/big-6.jpg"></a>
+          </div><!--/.gal-th-->
+        </div><!--/.gal-->
+
+
+        <div class="row">
+          <div class="col-9">
+            <div class="row">
+              <div class="col-6">
+                <p class="text">Открыт в <span class="bold size-16">1990</span> году</p>
+              </div><!--/.col-->
+              <div class="col-6">
+                <p class="text">Кап. ремонт был в <span class="bold size-16">2017</span> году</p>
+              </div><!--/.col-->
+              <div class="col-6">
+                <p class="text">Номерной фонд: <span class="bold size-16">50</span> номеров</p>
+              </div><!--/.col-->
+              <div class="col-6">
+                <p class="text">Вметимость — <span class="bold size-16">50</span> человек</p>
+              </div><!--/.col-->
+            </div><!--/.row-->
+            <p class="text">Хостел Boxtel расположен в Москве, на Старом Арбате, в 1,7 км от Кремля и Красной площади и в 3 минутах ходьбы от станции метро «Арбатская».</p>
+            <p class="text">В хостеле Boxtel предлагается размещение в капсулах с индивидуальным освещением и вентиляцией, 2 розетками, запирающимися шкафчиками и специальной занавеской с замком. Стойка регистрации работает круглосуточно.</p>
+            <p class="text">Хостел Boxtel находится в 700 метрах от Музея изобразительных искусств имени А. С. Пушкина и в 900 метрах от храма Христа Спасителя. Расстояние от хостела Boxtel до ближайшего международного аэропорта Внуково составляет 25 км.</p>
+            <p class="text">Арбат — отличный выбор, если вам интересны архитектура, культура и музеи.</p>
+            <p class="text">Это любимая часть города Москва среди наших гостей согласно независимым отзывам.</p>
+            <p class="text">Расположение этого варианта — одно из лучших в Москве! Гости довольны им больше, чем расположением других вариантов в этом районе.</p>
+            <p class="text">Парам особенно нравится расположение — они оценили проживание в этом районе для поездки вдвоем на 9,5.</p>
+            <p class="text">Здесь лучшее соотношение цены и качества в Москве! По сравнению с другими вариантами в этом городе, гости получают больше за те же деньги.</p>
+            <p class="text">Мы говорим на вашем языке!</p>
+          </div><!--/.col-->
+
+          <div class="col-3">
+            <div class="side side-white">
+              <p class="text">
+                <span class="d-block mb-5 size-12">Официальный сайт</span>
+                <a class="ln-blue mbold" href="http://822.ru/">www.822.ru</a>
+              </p>
+              <p class="text">
+                <span class="d-block mb-5 size-12">Отдел бронирования</span>
+                <span class="d-block mb-5 mbold">+7 (843) 777 77 77</span>
+                <span class="d-block mb-5 mbold">+7 (843) 777 77 78</span>
+              </p>
+            </div><!--/.side-->
+
+            <div class="side side-gray">
+              <p class="text size-13 fas fa-crosshairs bicon bicon-pblue">До центра: 13 км</p>
+              <p class="text size-13 fas fa-map-marker-alt bicon bicon-pblue">М Козья слобода: 0,9 км</p>
+              <p class="text size-13 fas fa-wifi bicon bicon-pblue">Бесплатный Wi-Fi</p>
+              <p class="text size-13 fab fa-expeditedssl bicon bicon-pblue">Сейф</p>
+              <p class="text size-13 fas fa-parking bicon bicon-pblue">Бесплатная парковка</p>
+              <p class="text size-13 fas fa-concierge-bell bicon bicon-pblue">Круглосуточная стойка регисрации</p>
+              <p class="text size-13 fas fa-utensils bicon bicon-pblue">Общая кухня</p>
+              <p class="text size-13 far fa-snowflake bicon bicon-pblue">Холодильник</p>
+              <p class="text size-13 fas fa-bicycle bicon bicon-pblue">Велопарковка</p>
+              <p class="text size-13 fas fa-dumbbell bicon bicon-pblue">Спортивный зал</p>
+            </div><!--/.side-->
+          </div><!--/.col-->
+        </div><!--/.row-->
+
+        <div class="wall-blue">
+          <p class="text color-white bold size-18">Номера</p>
+          <div class="divider"></div>
+          <form class="form-md">
+            <div class="d-flex px-5">
+              <div class="w-25 px-10">
+                <label class="form-label color-white">ДАТА ЗАЕЗДА</label>
+                <div class="form-icon-right">
+                  <input class="form-input js-datepicker" type="text" placeholder="дд.мм.гггг" name="">
+                  <img class="form-icon" width="24" height="24" src="img/icon-2.svg">
+                </div>
+              </div><!--/.col-->
+              <div class="w-25 px-10">
+                <label class="form-label color-white">ДАТА ВЫЕЗДА</label>
+                <div class="form-icon-right">
+                <!-- Добавить класс error к input для показа ошибки -->
+                  <input class="form-input js-datepicker" type="text" placeholder="дд.мм.гггг" name="">
+                  <img class="form-icon" width="24" height="24" src="img/icon-2.svg">
+                </div>
+              </div><!--/.col-->
+              <div class="w-20 px-10">
+                <label class="form-label color-white">КОЛИЧЕСТВО ГОСТЕЙ</label>
+                <div class="form-counter js-counter">
+                  <span class="form-counter-btn left" data="-1">-</span>
+                  <input class="form-input js-counter-input" type="text" readonly value="1" max="100" min="1">
+                  <span class="form-counter-btn right" data="1">+</span>
+                </div>
+              </div><!--/.col-->
+              <div class="w-30 px-10">
+                <label class="form-label">&nbsp;</label>
+                <button class="btn btn-orange form-eh bold size-12 px-0" type="submit">ПРОВЕРИТЬ НАЛИЧИЕ МЕСТ</button>
+              </div><!--/.col-->
+            </div><!--/.row-->
+          </form>
+        </div><!--/.wall-blue-->
+
+        <table class="table">
+          <tr>
+            <th class="w-30">
+              <p class="text">
+                <span class="d-block bold">ОТДЕЛЬНЫЕ НОМЕРА</span>
+                <span class="d-block size-11 color-gray">Размещение</span>
+              </p>
+            </th>
+            <th class="w-10">
+              <p class="text size-11 mbold">ГОСТЕЙ</p>
+            </th>
+            <th class="w-20"><p class="text size-11 mbold">УСЛОВИЯ</p></th>
+            <th class="w-10">
+              <p class="text size-11">
+                <span class="d-block mbold">ЗА 14 СУТОК</span>
+                <span class="d-block color-gray">За номер</span>
+              </p>
+            </th>
+            <th class="w-15"><p class="text size-11 color-blue mbold">НОМЕРОВ</p></th>
+            <th></th>
+          </tr>
+
+          <tr>
+            <td rowspan="2">
+              <div class="d-flex mb-10">
+                <div class="mr-10">
+                  <span class="square mb-5"></span>
+                  <p>15 м <sup>2</sup></p>
+                </div>
+                <div>
+                  <p class="mbold"><a class="ln-blue" href="">Двухместный стандарт</a></p>
+                  <p>Две диван-кровати</p>
+                  <p class="color-red">Остался один номер!</p>
+                  <p><a class="ln-blue bb-dash-blue" href="">Посмотреть этот вариант</a></p>
+                </div>
+              </div>
+              <p>Бесплатный Wi-Fi</p>
+              <p>Собственная ванная комната</p>
+              <p>Удобства для гостей с ограниченными способностями</p>
+              <p>Холодильник</p>
+              <p>Звукоизоляция</p>
+            </td>
+            <td>
+              <p class="text-center"><i class="fas fa-users color-green size-20"></i></p>
+            </td>
+            <td>
+              <p>Завтрак включен</p>
+              <p>Бесплатная отмена</p>
+              <p>Предоплата не требуется</p>
+            </td>
+            <td><p class="space-nowrap">16 000 руб.</p></td>
+            <td>
+              <div class="form-md form-white">
+                <div class="form-counter js-counter">
+                  <span class="form-counter-btn left" data="-1">-</span>
+                  <input class="form-input js-counter-input" type="text" readonly value="6" max="100" min="0">
+                  <span class="form-counter-btn right" data="1">+</span>
+                </div>
+              </div>
+            </td>
+            <td rowspan="2">
+              <a class="btn btn-orange bold size-11" href="">ЗАБРОНИРОВАТЬ</a>
+              <p class="size-11">Кредитная карта не требуется</p>
+            </td>
+          </tr>
+
+          <tr>
+            <!--<td/> rowspan-->
+            <td><p class="text-center"><i class="fas fa-user-friends color-green size-20"></i></p></td>
+            <td>
+              <p>Завтрак не включен</p>
+              <p>Стоимость не возвращается</p>
+            </td>
+            <td><p class="space-nowrap">15 000 руб.</p></td>
+            <td>
+              <div class="form-md form-white">
+                <div class="form-counter js-counter">
+                  <span class="form-counter-btn left" data="-1">-</span>
+                  <input class="form-input js-counter-input" type="text" readonly value="6" max="100" min="0">
+                  <span class="form-counter-btn right" data="1">+</span>
+                </div>
+              </div>
+            </td>
+            <!--<td/> rowspan-->
+          </tr>
+
+          <tr>
+            <td>
+              <div class="d-flex mb-10">
+                <div class="mr-10">
+                  <span class="square mb-5"></span>
+                  <p>15 м <sup>2</sup></p>
+                </div>
+                <div>
+                  <p class="mbold"><a class="ln-blue" href="">Двухместный люкс</a></p>
+                  <p>Две диван-кровати</p>
+                  <p class="color-red">Остался один номер!</p>
+                  <p><a class="ln-blue bb-dash-blue" href="">Посмотреть этот вариант</a></p>
+                </div>
+              </div>
+            </td>
+            <td><p class="text-center"><i class="fas fa-user color-green size-20"></i></p></td>
+            <td>
+              <p>Завтрак включен</p>
+              <p>Бесплатная отмена</p>
+              <p>Предоплата не требуется</p>
+            </td>
+            <td><p class="space-nowrap">19 000 руб.</p></td>
+            <td>
+              <div class="form-md form-white">
+                <div class="form-counter js-counter">
+                  <span class="form-counter-btn left" data="-1">-</span>
+                  <input class="form-input js-counter-input" type="text" readonly value="6" max="100" min="0">
+                  <span class="form-counter-btn right" data="1">+</span>
+                </div>
+              </div>
+            </td>
+            <td>
+              <a class="btn btn-orange bold size-11" href="">ЗАБРОНИРОВАТЬ</a>
+              <p class="size-11">Кредитная карта не требуется</p>
+            </td>
+          </tr>
+        </table>
+
+        <table class="table">
+          <tr>
+            <th class="w-30">
+              <p class="text">
+                <span class="d-block bold">ОТДЕЛЬНЫЕ НОМЕРА</span>
+                <span class="d-block size-11 color-gray">Размещение</span>
+              </p>
+            </th>
+            <th class="w-10">
+              <p class="text size-11 mbold">ГОСТЕЙ</p>
+            </th>
+            <th class="w-20"><p class="text size-11 mbold">УСЛОВИЯ</p></th>
+            <th class="w-10">
+              <p class="text size-11">
+                <span class="d-block mbold">ЗА 14 СУТОК</span>
+                <span class="d-block color-gray">За номер</span>
+              </p>
+            </th>
+            <th class="w-15"><p class="text size-11 color-blue mbold">НОМЕРОВ</p></th>
+            <th></th>
+          </tr>
+
+          <tr>
+            <td>
+              <div class="d-flex mb-10">
+                <div class="mr-10">
+                  <span class="square mb-5"></span>
+                  <p>15 м <sup>2</sup></p>
+                </div>
+                <div>
+                  <p class="mbold"><a class="ln-blue" href="">Двухместный стандарт</a></p>
+                  <p>Две диван-кровати</p>
+                  <p class="color-red">Остался один номер!</p>
+                  <p><a class="ln-blue bb-dash-blue" href="">Посмотреть этот вариант</a></p>
+                </div>
+              </div>
+              <p>Бесплатный Wi-Fi</p>
+              <p>Общий холодильник</p>
+            </td>
+            <td><p class="text-center space-nowrap"><i class="fas fa-user color-green size-20"></i> x 11</p></td>
+            <td>
+              <p>Завтрак включен</p>
+              <p>Бесплатная отмена</p>
+              <p>Предоплата не требуется</p>
+            </td>
+            <td><p class="space-nowrap">16 000 руб.</p></td>
+            <td>
+              <div class="form-md form-white">
+                <div class="form-counter js-counter">
+                  <span class="form-counter-btn left" data="-1">-</span>
+                  <input class="form-input js-counter-input" type="text" readonly value="6" max="100" min="0">
+                  <span class="form-counter-btn right" data="1">+</span>
+                </div>
+              </div>
+            </td>
+            <td>
+              <a class="btn btn-orange bold size-11" href="">ЗАБРОНИРОВАТЬ</a>
+              <p class="size-11">Кредитная карта не требуется</p>
+            </td>
+          </tr>
+        </table>
+
+        <div class="wallist">
+          <p class="text bold size-18">Полезно знать</p>
+          <p class="text">Хостел «Бокстел» принимает особые пожелания! Добавьте их на следующем шаге!</p>
+          <div class="row">
+            <div class="col-3">
+              <p class="text">Заезд</p>
+            </div><!--/.col-->
+            <div class="col-9">
+              <p class="text">с 14:00</p>
+            </div><!--/.col-->
+
+            <div class="col-3">
+              <p class="text">Отъезд</p>
+            </div><!--/.col-->
+            <div class="col-9">
+              <p class="text">до 12:00</p>
+            </div><!--/.col-->
+
+            <div class="col-3">
+              <p class="text">Отмена/Предоплата</p>
+            </div><!--/.col-->
+            <div class="col-9">
+              <p class="text">Правила отмены бронирования и предоплаты зависят от категории номера. Пожалуйста, <a class="ln-blue" href="">введите даты проживания</a> и ознакомьтесь с условиями бронирования для требуемого номера.</p>
+            </div><!--/.col-->
+
+            <div class="col-3">
+              <p class="text">Размещение детей и предоставление дополнительных кроватей</p>
+            </div><!--/.col-->
+            <div class="col-9">
+              <p class="text">Размещение детей в отеле невозможно. Дополнительные кровати в номере не предоставляются.</p>
+            </div><!--/.col-->
+
+            <div class="col-3">
+              <p class="text">Домашние животные</p>
+            </div><!--/.col-->
+            <div class="col-9">
+              <p class="text">Размещение домашних животных не допускается.</p>
+            </div><!--/.col-->
+
+            <div class="col-3">
+              <p class="text">Карты, которые принимает объект размещения</p>
+            </div><!--/.col-->
+            <div class="col-9">
+              <p class="text"><img class="" width="210" height="27" src="img/payment.png"></p>
+            </div><!--/.col-->
+          </div><!--/.row-->
+        </div><!--/.wallist-->
+
+        <p class="text bold size-18">Расположение хостела</p>
+        <p class="text">Как найти вход:</p>
+        <p class="text">Налево, направо, налево налео, прямо, направо, налево, направо, налево налео, прямо, направо, налево налео, прямо  направо, налево налео, направо, налево налео, прямо направо, налево налео, прямо направо, налево налео, прямона право, налево налео, прямо  аправо, налево налео, прямо</p>
+        <div class="row">
+          <div class="col-7">
+            Поставить карту
+          </div><!--/.col-->
+          <div class="col-5">
+            <div class="row-striped">
+              <div class="row align-items-center">
+                <div class="col-9"><p class="text mbold">Центр города</p></div>
+                <div class="col-3"><p class="text">3 км</p></div>
+              </div>
+              <div class="row align-items-center">
+                <div class="col-9"><p class="text mbold">Метро Козья Слобода</p></div>
+                <div class="col-3"><p class="text">2 км</p></div>
+              </div>
+              <div class="row align-items-center">
+                <div class="col-9"><p class="text mbold">Международный аеропорт</p></div>
+                <div class="col-3"><p class="text">1,5 км</p></div>
+              </div>
+              <div class="row align-items-center">
+                <div class="col-9"><p class="text mbold">ЖД вокзал</p></div>
+                <div class="col-3"><p class="text">3 км</p></div>
+              </div>
+              <div class="row align-items-center">
+                <div class="col-9"><p class="text mbold">Кафе</p></div>
+                <div class="col-3"><p class="text">2 км</p></div>
+              </div>
+              <div class="row align-items-center">
+                <div class="col-9"><p class="text mbold">Ресторан</p></div>
+                <div class="col-3"><p class="text">9500 км</p></div>
+              </div>
+              <div class="row align-items-center">
+                <div class="col-9"><p class="text mbold">Ночной клуб</p></div>
+                <div class="col-3"><p class="text">3 км</p></div>
+              </div>
+            </div><!--/.row-striped-->
+          </div><!--/.col-->
+        </div><!--/.row-->
+
+        <p class="text bold size-18">Удобства</p>
+        <div class="fas fa-hotel bicon">
+          <div class="divider-vsltxt"><span class="divider-txt size-14 mbold">Общие</span></div>
+        </div>
+        <div class="row mb-15">
+          <div class="col">
+            <p class="text far fa-check-circle bicon bicon-pblue">Wi-Fi в зонах общественного пользования</p>
+            <p class="text far fa-check-circle bicon bicon-pblue">Лифт</p>
+            <p class="text far fa-check-circle bicon bicon-pblue">Номера для госте с ограниченными возможностями здоровья</p>
+          </div>
+          <div class="col">
+            <p class="text far fa-check-circle bicon bicon-pblue">Банкомат</p>
+            <p class="text far fa-check-circle bicon bicon-pblue">Номера для некурящих</p>
+          </div>
+          <div class="col">
+            <p class="text far fa-check-circle bicon bicon-pblue">Отопление</p>
+            <p class="text far fa-check-circle bicon bicon-pblue">Этаж для некурящих</p>
+          </div>
+        </div><!--/.row-->
+
+        <div class="fas fa-utensils bicon">
+          <div class="divider-vsltxt"><span class="divider-txt size-14 mbold">Еда и напитки</span></div>
+        </div>
+        <div class="row mb-15">
+          <div class="col">
+            <p class="text far fa-check-circle bicon bicon-pblue">Ресторан</p>
+          </div>
+          <div class="col">
+            <p class="text far fa-check-circle bicon bicon-pblue">Бар</p>
+          </div>
+          <div class="col">
+            <p class="text far fa-check-circle bicon bicon-pblue">Обслуживание номеров</p>
+          </div>
+        </div><!--/.row-->
+
+        <div class="fas fa-concierge-bell bicon">
+          <div class="divider-vsltxt"><span class="divider-txt size-14 mbold">Услуги стойки регистрации</span></div>
+        </div>
+        <div class="row mb-15">
+          <div class="col">
+            <p class="text far fa-check-circle bicon bicon-pblue">Камера хранения багажа</p>
+            <p class="text far fa-check-circle bicon bicon-pblue">Услуги консьержа</p>
+            <p class="text far fa-check-circle bicon bicon-pblue">Сейф на стойке регистрации</p>
+          </div>
+          <div class="col">
+            <p class="text far fa-check-circle bicon bicon-pblue">Многоязычный персонал</p>
+            <p class="text far fa-check-circle bicon bicon-pblue">Билетная касса</p>
+          </div>
+          <div class="col">
+            <p class="text far fa-check-circle bicon bicon-pblue">Стойка регистрации (24 часа)</p>
+            <p class="text far fa-check-circle bicon bicon-pblue">Ускоренная регистрация заезда/выезда</p>
+          </div>
+        </div><!--/.row-->
+
+
+        <div class="fas fa-user-tie bicon">
+          <div class="divider-vsltxt"><span class="divider-txt size-14 mbold">Бизнесменам</span></div>
+        </div>
+        <div class="row mb-15">
+          <div class="col">
+            <p class="text far fa-check-circle bicon bicon-pblue">Бизнес-центр</p>
+          </div>
+          <div class="col">
+            <p class="text far fa-check-circle bicon bicon-pblue">Факс/копирование</p>
+          </div>
+          <div class="col">
+            <p class="text far fa-check-circle bicon bicon-pblue">Конференц-залы</p>
+          </div>
+        </div><!--/.row-->
+
+        <div class="fas fa-wifi bicon">
+          <div class="divider-vsltxt"><span class="divider-txt size-14 mbold">Медиа и технологии</span></div>
+        </div>
+        <div class="row mb-15">
+          <div class="col">
+            <p class="text far fa-check-circle bicon bicon-pblue">Wi-Fi</p>
+          </div>
+          <div class="col">
+            <p class="text far fa-check-circle bicon bicon-pblue">Lorem ipsum dolor sit amet</p>
+          </div>
+          <div class="col">
+            <p class="text far fa-check-circle bicon bicon-pblue">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+          </div>
+        </div><!--/.row-->
+
+        <div class="fas fa-child bicon">
+          <div class="divider-vsltxt"><span class="divider-txt size-14 mbold">Детям</span></div>
+        </div>
+        <div class="row mb-15">
+          <div class="col">
+            <p class="text far fa-check-circle bicon bicon-pblue">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+          </div>
+          <div class="col">
+            <p class="text far fa-check-circle bicon bicon-pblue">Lorem ipsum dolor sit amet</p>
+          </div>
+          <div class="col">
+            <p class="text far fa-check-circle bicon bicon-pblue">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+          </div>
+        </div><!--/.row-->
+
+        <div class="fas fa-paw bicon">
+          <div class="divider-vsltxt"><span class="divider-txt size-14 mbold">Домашние животные</span></div>
+        </div>
+        <div class="row mb-15">
+          <div class="col">
+            <p class="text far fa-check-circle bicon bicon-pblue">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+          </div>
+          <div class="col">
+            <p class="text far fa-check-circle bicon bicon-pblue">Lorem ipsum dolor sit amet</p>
+          </div>
+          <div class="col">
+            <p class="text far fa-check-circle bicon bicon-pblue">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+          </div>
+        </div><!--/.row-->
+
+        <div class="fas fa-utensils bicon">
+          <div class="divider-vsltxt"><span class="divider-txt size-14 mbold">Кухня</span></div>
+        </div>
+        <div class="row mb-15">
+          <div class="col">
+            <p class="text far fa-check-circle bicon bicon-pblue">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+          </div>
+          <div class="col">
+            <p class="text far fa-check-circle bicon bicon-pblue">Lorem ipsum dolor sit amet</p>
+          </div>
+          <div class="col">
+            <p class="text far fa-check-circle bicon bicon-pblue">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+          </div>
+        </div><!--/.row-->
+
+        <div class="fas fa-dumbbell bicon">
+          <div class="divider-vsltxt"><span class="divider-txt size-14 mbold">Спорт и отдых</span></div>
+        </div>
+        <div class="row mb-15">
+          <div class="col">
+            <p class="text far fa-check-circle bicon bicon-pblue">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+          </div>
+          <div class="col">
+            <p class="text far fa-check-circle bicon bicon-pblue">Lorem ipsum dolor sit amet</p>
+          </div>
+          <div class="col">
+            <p class="text far fa-check-circle bicon bicon-pblue">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+          </div>
+        </div><!--/.row-->
+
+        <div class="fas fa-store bicon">
+          <div class="divider-vsltxt"><span class="divider-txt size-14 mbold">Прокат</span></div>
+        </div>
+        <div class="row mb-15">
+          <div class="col">
+            <p class="text far fa-check-circle bicon bicon-pblue">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+          </div>
+          <div class="col">
+            <p class="text far fa-check-circle bicon bicon-pblue">Lorem ipsum dolor sit amet</p>
+          </div>
+          <div class="col">
+            <p class="text far fa-check-circle bicon bicon-pblue">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+          </div>
+        </div><!--/.row-->
+
+        <div class="fas fa-diagnoses bicon">
+          <div class="divider-vsltxt"><span class="divider-txt size-14 mbold">Сервисы</span></div>
+        </div>
+        <div class="row mb-15">
+          <div class="col">
+            <p class="text far fa-check-circle bicon bicon-pblue">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+          </div>
+          <div class="col">
+            <p class="text far fa-check-circle bicon bicon-pblue">Lorem ipsum dolor sit amet</p>
+          </div>
+          <div class="col">
+            <p class="text far fa-check-circle bicon bicon-pblue">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+          </div>
+        </div><!--/.row-->
+
+        <div class="fas fa-spa bicon">
+          <div class="divider-vsltxt"><span class="divider-txt size-14 mbold">Другое</span></div>
+        </div>
+        <div class="row mb-15">
+          <div class="col">
+            <p class="text far fa-check-circle bicon bicon-pblue">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+          </div>
+          <div class="col">
+            <p class="text far fa-check-circle bicon bicon-pblue">Lorem ipsum dolor sit amet</p>
+          </div>
+          <div class="col">
+            <p class="text far fa-check-circle bicon bicon-pblue">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+          </div>
+        </div><!--/.row-->
+
+        <div class="row align-items-center justify-content-between">
+          <div class="col-auto">
+            <p class="text bold size-18">Отзывы</p>
+          </div><!--/.col-->
+          <div class="col-auto">
+            <p class="text"><a class="ln-blue bb-dash-blue" href="">Добавить отзыв</a></p>
+          </div><!--/.col-->
+        </div><!--/.row-->
+        <div class="row">
+          <div class="col-4">
+            <p class="text">
+              <span class="color-green bold size-18">8,7</span>
+              <span class="size-18">Очень хорошо</span>
+              <span class="d-block color-gray">48 отзывов</span>
+            </p>
+          </div><!--/.col-->
+
+          <div class="col">
+            <p class="text mb-5">
+              <span class="row justify-content-between">
+                <span class="col">Расположение</span>
+                <span class="col-auto">1.1</span>
+              </span>
+            </p>
+            <div class="diagram mb-25 js-diagram" max="10" data="1.1">
+              <span class="diagram-line"></span>
+            </div>
+
+            <p class="text mb-5">
+              <span class="row justify-content-between">
+                <span class="col">Комфорт</span>
+                <span class="col-auto">2.0</span>
+              </span>
+            </p>
+            <div class="diagram mb-25 js-diagram" max="10" data="2.0">
+              <span class="diagram-line"></span>
+            </div>
+
+            <p class="text mb-5">
+              <span class="row justify-content-between">
+                <span class="col">Соотношениецена/качество</span>
+                <span class="col-auto">3.5</span>
+              </span>
+            </p>
+            <div class="diagram mb-25 js-diagram" max="10" data="3.5">
+              <span class="diagram-line"></span>
+            </div>
+
+            <p class="text mb-5">
+              <span class="row justify-content-between">
+                <span class="col">Бесплатный Wi-Fi</span>
+                <span class="col-auto">4.2</span>
+              </span>
+            </p>
+            <div class="diagram mb-25 js-diagram" max="10" data="4.2">
+              <span class="diagram-line"></span>
+            </div>
+
+            <p class="text mb-5">
+              <span class="row justify-content-between">
+                <span class="col">Расположение</span>
+                <span class="col-auto">5.3</span>
+              </span>
+            </p>
+            <div class="diagram mb-25 js-diagram" max="10" data="5.3">
+              <span class="diagram-line"></span>
+            </div>
+          </div><!--/.col-->
+
+          <div class="col">
+            <p class="text mb-5">
+              <span class="row justify-content-between">
+                <span class="col">Чистота</span>
+                <span class="col-auto">6.2</span>
+              </span>
+            </p>
+            <div class="diagram mb-25 js-diagram" max="10" data="6.2">
+              <span class="diagram-line"></span>
+            </div>
+
+            <p class="text mb-5">
+              <span class="row justify-content-between">
+                <span class="col">Персонал</span>
+                <span class="col-auto">7.3</span>
+              </span>
+            </p>
+            <div class="diagram mb-25 js-diagram" max="10" data="7.3">
+              <span class="diagram-line"></span>
+            </div>
+
+            <p class="text mb-5">
+              <span class="row justify-content-between">
+                <span class="col">Оснащение</span>
+                <span class="col-auto">8.1</span>
+              </span>
+            </p>
+            <div class="diagram mb-25 js-diagram" max="10" data="8.1">
+              <span class="diagram-line"></span>
+            </div>
+
+            <p class="text mb-5">
+              <span class="row justify-content-between">
+                <span class="col">Чистота</span>
+                <span class="col-auto">9.2</span>
+              </span>
+            </p>
+            <div class="diagram mb-25 js-diagram" max="10" data="9.2">
+              <span class="diagram-line"></span>
+            </div>
+
+            <p class="text mb-5">
+              <span class="row justify-content-between">
+                <span class="col">Персонал</span>
+                <span class="col-auto">10</span>
+              </span>
+            </p>
+            <div class="diagram mb-25 js-diagram" max="10" data="10">
+              <span class="diagram-line"></span>
+            </div>
+          </div><!--/.col-->
+        </div><!--/.row-->
+
+        <p class="text bold size-18">Последние отзывы</p>
+
+        <div class="row">
+          <div class="col-4">
+            <div class="row no-gutters">
+              <div class="col-auto mr-15">
+                <img class="img-bcircle" width="60" height="60" src="img/review.jpg">
+              </div>
+              <div class="col">
+                <p class="text mbold">Александр</p>
+                <p class="text"><span class="flag flag-1"></span> Россия</p>
+                <p class="text size-12 color-gray">
+                  <span class="d-block mb-10"><i class="far fa-user"></i> Друзья</span>
+                  <span class="d-block mb-10"><i class="far fa-calendar-alt"></i> Проживала(а) в Апр 2016</span>
+                  <span class="d-block mb-10"><i class="far fa-edit"></i> 22 отзыва</span>
+                </p>
+              </div>
+            </div>
+          </div><!--/.col-->
+          <div class="col">
+            <div class="cart cart-review">
+              <div class="row">
+                <div class="col">
+                  <p class="cart-desc">
+                    <span class="cart-desc-rat color-green">8,7</span> Очень хорошо
+                    <br>
+                    <span class="cart-desc-sm">48 отзывов</span>
+                  </p>
+                </div><!--/.col-->
+                <div class="col text-right">
+                  <a class="ln-gray" href="">
+                    <i class="far fa-thumbs-up"></i> Полезный отзыв
+                  </a>
+                </div><!--/.col-->
+              </div><!--/.row-->
+              <p class="text mbold size-14">Классный хостел</p>
+              <p class="text fas fa-plus-circle bicon bicon-green">
+                В номере нет открывающейся форточки. Нет доступа свежего воздуха в помещение.только кондиционер. Но это не выход. Осталось некомфортное ощущенип посещения отеля.
+              </p>
+              <p class="text fas fa-minus-circle bicon bicon-gray">
+                В номере нет открывающейся форточки. Нет доступа свежего воздуха в помещение.только кондиционер. Но это не выход. Осталось некомфортное ощущенип посещения отеля.
+              </p>
+            </div><!--/.cart-->
+          </div><!--/.col-->
+        </div><!--/.row-->
+
+        <div class="row">
+          <div class="col-4">
+            <div class="row no-gutters">
+              <div class="col-auto mr-15">
+                <img class="img-bcircle" width="60" height="60" src="img/review-1.jpg">
+              </div>
+              <div class="col">
+                <p class="text mbold">Ахмед</p>
+                <p class="text"><span class="flag flag-2"></span> США</p>
+                <p class="text size-12 color-gray">
+                  <span class="d-block mb-10"><i class="far fa-user"></i> Друзья</span>
+                  <span class="d-block mb-10"><i class="far fa-calendar-alt"></i> Проживала(а) в Апр 2016</span>
+                  <span class="d-block mb-10"><i class="far fa-edit"></i> 22 отзыва</span>
+                </p>
+              </div>
+            </div>
+          </div><!--/.col-->
+          <div class="col">
+            <div class="cart cart-review">
+              <div class="row">
+                <div class="col">
+                  <p class="cart-desc">
+                    <span class="cart-desc-rat color-green">8,7</span> Очень хорошо
+                    <br>
+                    <span class="cart-desc-sm">48 отзывов</span>
+                  </p>
+                </div><!--/.col-->
+                <div class="col text-right">
+                  <a class="ln-gray" href="">
+                    <i class="far fa-thumbs-up"></i> Полезный отзыв
+                  </a>
+                </div><!--/.col-->
+              </div><!--/.row-->
+              <p class="text mbold size-14">Классный хостел</p>
+              <p class="text fas fa-plus-circle bicon bicon-green">
+                В номере нет открывающейся форточки. Нет доступа свежего воздуха в помещение.только кондиционер. Но это не выход. Осталось некомфортное ощущенип посещения отеля.
+              </p>
+              <p class="text fas fa-minus-circle bicon bicon-gray">
+                В номере нет открывающейся форточки. Нет доступа свежего воздуха в помещение.только кондиционер. Но это не выход. Осталось некомфортное ощущенип посещения отеля.
+              </p>
+            </div><!--/.cart-->
+          </div><!--/.col-->
+        </div><!--/.row-->
+
+        <p class="text bold size-18">Отели рядом</p>
+
+        <div class="row mb-15">
+          <div class="col-4">
+            <a class="cart" href="">
+              <img class="cart-img" width="250" height="160" src="img/cart-1.jpg">
+              <div class="px-10">
+                <h3 class="cart-title">Хостел Порт</h3>
+                <p class="cart-desc">
+                  <span class="cart-desc-rat color-green">8,7</span> Очень хорошо
+                  <br>
+                  <span class="cart-desc-sm">48 отзывов</span>
+                </p>
+                <p class="cart-desc">г. Казань ул. Баумана</p>
+              </div>
+              <div class="cart-divider"></div>
+              <p class="cart-price px-10">от 1200 руб.</p>
+            </a><!--/.cart-->
+          </div><!--/.col-->
+          <div class="col-4">
+            <a class="cart" href="">
+              <img class="cart-img" width="250" height="160" src="img/cart-2.jpg">
+              <div class="px-10">
+                <h3 class="cart-title">Хостел Вежливый лось на Савеловской</h3>
+                <p class="cart-desc">
+                  <span class="cart-desc-rat color-lblue">8,7</span> Нормально
+                  <br>
+                  <span class="cart-desc-sm">31 отзывов</span>
+                </p>
+                <p class="cart-desc">г. Санкт-Петербург, ул. Ленина</p>
+              </div>
+              <div class="cart-divider"></div>
+              <p class="cart-price px-10">от 1100 руб.</p>
+            </a><!--/.cart-->
+          </div><!--/.col-->
+          <div class="col-4">
+            <a class="cart like" href="">
+              <img class="cart-img" width="250" height="160" src="img/cart-3.jpg">
+              <div class="px-10">
+                <h3 class="cart-title">Central Hostel</h3>
+                <p class="cart-desc">
+                  <span class="cart-desc-rat color-red">2,5</span> Плохо
+                  <br>
+                  <span class="cart-desc-sm">14 отзывов</span>
+                </p>
+                <p class="cart-desc">г. Екатеринбург, ул. Машиностроителей</p>
+              </div>
+              <div class="cart-divider"></div>
+              <p class="cart-price px-10">от 800 руб.</p>
+            </a><!--/.cart-->
+          </div><!--/.col-->
+        </div><!--/.row-->
+
+      </div><!--/.col-->
+
+    </div><!--/.row-->
+
+
+  </div><!--/.container-->
+</section><!--/.section-->
+
+<footer class="footer">
+  <div class="footer-cont">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-auto">
+          <a class="ln-blue d-flex align-items-center" href="">
+            <img src="img/icon-4.svg">
+            &nbsp;Мобильная версия
+          </a>
+        </div><!--/.col-->
+        <div class="col">
+          <div class="row justify-content-center">
+            <div class="col-auto">
+              <a class="ln-blue" href="">О сайте</a>
+            </div><!--/.col-->
+            <div class="col-auto">
+              <a class="ln-blue" href="">Страны</a>
+            </div><!--/.col-->
+            <div class="col-auto">
+              <a class="ln-blue" href="">Города</a>
+            </div><!--/.col-->
+            <div class="col-auto">
+              <a class="ln-blue" href="">Каталог</a>
+            </div><!--/.col-->
+            <div class="col-auto">
+              <a class="ln-blue" href="">Добавить хостел</a>
+            </div><!--/.col-->
+          </div><!--/.row-->
+        </div><!--/.col-->
+      </div><!--/.row-->
+    </div><!--/.container-->
+  </div><!--/.footer-cont-->
+  <p class="text-center color-blue">&copy; AmigoHostels.com 2018 Все права защищены</p>
+</footer>
+
+<a class="scrolltotop js-scrollto" href="#"></a>
+
+<!-- МОДАЛЬНЫЕ ОКНА -->
+<div class="d-none">
+
+<!-- РЕГИСТРАЦИЯ | ВХОД -->
+<div class="modal" id="signup-login">
+  <div class="tab modal-tab js-tab">
+    <div class="tab-btn-wrap">
+      <a class="tab-btn active" href="#tab-login">Войти</a>
+      <a class="tab-btn" href="#tab-signup">Зарегистрироваться</a>
+    </div>
+    <div class="tab-content active" id="tab-login">
+      <form class="form-md">
+        <label class="form-label">АДРЕС ЭЛЕКТРОННОЙ ПОЧТЫ</label>
+        <input class="form-input" type="text" placeholder="" name="">
+        <label class="form-label">ПАРОЛЬ</label>
+        <input class="form-input" type="text" placeholder="" name="">
+        <button class="form-eh btn btn-blue bold w-50 mx-auto" type="submit">НАЧАТЬ</button>
+      </form>
+    </div><!--/.tab-content-->
+    <div class="tab-content" id="tab-signup">
+      <form class="form-md">
+        <label class="form-label">АДРЕС ЭЛЕКТРОННОЙ ПОЧТЫ</label>
+        <input class="form-input" type="text" placeholder="" name="">
+        <label class="form-label">СОЗДАЙТЕ ПАРОЛЬ</label>
+        <input class="form-input" type="text" placeholder="" name="">
+        <button class="form-eh btn btn-blue bold w-50 mx-auto" type="submit">НАЧАТЬ</button>
+      </form>
+    </div><!--/.tab-content-->
+  </div><!--/.tab-->
+  <div class="divider-vstxt"><span class="divider-txt">Или</span></div>
+  <div class="soc">
+    <a class="soc-btn" href="">
+      <i class="fab fa-vk soc-icon"></i>
+      <span class="soc-btn-txt">
+        <span class="soc-btn-txta">Войти через</span>
+        <span class="soc-btn-txtb">vk.com</span>
+      </span>
+    </a>
+    <a class="soc-btn" href="">
+      <i class="fab fa-facebook soc-icon"></i>
+      <span class="soc-btn-txt">
+        <span class="soc-btn-txta">Войти через</span>
+        <span class="soc-btn-txtb">Facebook</span>
+      </span>
+    </a>
+    <a class="soc-btn" href="">
+      <i class="fab fa-google soc-icon"></i>
+      <span class="soc-btn-txt">
+        <span class="soc-btn-txta">Войти через</span>
+        <span class="soc-btn-txtb">Google</span>
+      </span>
+    </a>
+  </div>
+  <div class="divider"></div>
+  <p class="modal-ftxt">
+    Создавая аккаунт, вы соглашаетесь с нашими
+    <br>
+    <a class="ln-blue bold" href="">Правилами и условиями</a> и <a class="ln-blue bold" href="">Положением о конфиденциальности</a>
+  </p>
+</div><!--/.modal-->
+
+</div><!--/.d-none (modals wrapper)-->
+
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<!-- plugins -->
+<script src="assets/datepicker/dist/datepicker.min.js"></script>
+<script src="assets/fancybox/dist/jquery.fancybox.min.js"></script>
+<!--  scripts -->
+<script src="js/main.js?v=001"></script>
+
+</body>
+</html>

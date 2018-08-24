@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1200">
+  <title>Бронь</title>
+  <!-- fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,400i&amp;subset=cyrillic">
+  <!-- plugins -->
+  <link rel="stylesheet" href="assets/datepicker/dist/datepicker.min.css">
+  <link rel="stylesheet" href="assets/fontawesome/css/all.min.css?v=5.2.0">
+  <link rel="stylesheet" href="assets/fancybox/dist/jquery.fancybox.min.css">
+  <!-- theme -->
+  <link rel="stylesheet" href="css/main.css?v=001">
+  <link rel="stylesheet" href="css/fw-bootstrap.css">
+</head>
+<body>
+
+<header class="header inheader">
+  <div class="container">
+    <div class="row align-items-center pt-15">
+      <div class="col-auto">
+        <a class="logo-ln" href="">AmigoHostels.com</a>
+      </div><!--/.col-->
+      <div class="col-auto ml-auto">
+        <a class="btn btn-twhite js-fancybox" href="#signup-login" data-tab="#tab-signup">Зарегистрироваться</a>
+      </div><!--/.col-->
+      <div class="col-auto">
+        <a class="btn btn-blue js-fancybox" href="#signup-login" data-tab="#tab-login">Войти</a>
+      </div><!--/.col-->
+      <div class="col-auto">
+        <div class="dropdown mb-15">
+          <p class="color-white size-16 mp-0">RUR</p>
+          <div class="dropdown-content">
+            <a class="dropdown-item" href=""><span class="bold">EUR</span> Евро</a>
+            <a class="dropdown-item" href=""><span class="bold">RUR</span> Российский рубль</a>
+            <a class="dropdown-item" href=""><span class="bold">USD</span> Доллар США</a>
+          </div>
+        </div><!--/.dropdown-->
+      </div><!--/.col-->
+      <div class="col-auto">
+        <div class="dropdown mb-15">
+          <p class="color-white size-16 mp-0">
+            <span class="flag flag-1"></span>
+          </p>
+          <div class="dropdown-content">
+            <a class="dropdown-item" href="">
+              <span class="flag flag-1"></span> Русский
+            </a>
+            <a class="dropdown-item" href="">
+              <span class="flag flag-2"></span> English
+            </a>
+          </div>
+        </div><!--/.dropdown-->
+      </div><!--/.col-->
+      <div class="col-auto">
+        <div class="dropdown no-arr mb-15">
+          <p class="color-white size-16 mp-0">
+            <img class="d-block mb-15" width="15" height="" src="img/icon-3.svg">
+          </p>
+          <div class="dropdown-content">
+            <a class="dropdown-item" href="">О сайте</a>
+            <a class="dropdown-item" href="">Страны</a>
+            <a class="dropdown-item" href="">Города</a>
+            <a class="dropdown-item" href="">Каталог</a>
+            <a class="dropdown-item" href="">Добавить хостел</a>
+          </div>
+        </div><!--/.dropdown-->
+      </div><!--/.col-->
+    </div><!--/.row-->
+  </div><!--/.container-->
+</header>
+
+<div class="container">
+  <nav class="breadcrumb">
+    <a class="breadcrumb-ln" href="">Главная</a>
+    <a class="breadcrumb-ln" href="">Россия</a>
+    <a class="breadcrumb-ln" href="">Казань</a>
+    <a class="breadcrumb-ln" href="">Вахитовский район</a>
+  </nav>
+</div><!--/.container-->
+
+<div class="divider"></div><!--/.divider-->
+
+<section class="section">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-9">
+
+        <h1 class="title mb-15 size-30">Бронирование</h1>
+        <p class="text color-blue"><i class="far fa-calendar-check color-green size-16"></i> Бронирование займет всего 2 минуты</p>
+        <div class="cinfo cinfo-blue cinfo-vsicon">
+          <div class="cinfo-icon"><i class="fas fa-user"></i></div>
+          <p class="cinfo-text">
+            <a class="ln-blue mbold" href="">Войдите</a>, чтобы получить баллы, насладиться экскюзивными услугами, и другими акциями
+          </p>
+        </div><!--/.cinfo-->
+
+        <div class="cart cart-info">
+          <p class="text bold size-18">Введите свои данные</p>
+          <div class="divider"></div>
+          <p class="text color-blue fas fa-user bicon">
+            <a class="ln-blue mbold" href="">Войдите</a>, чтобы использовать сохраненные данные, или <a class="ln-blue mbold" href="">зарегистрируйтесь</a>, чтобы управлять бронированиями, где бы вы ни были.
+          </p>
+
+          <div class="row">
+            <div class="col">
+              <p class="text color-gray fas fa-info-circle bicon">
+                Введите информацию о себе на русском или на английском языке
+              </p>
+            </div><!--/.col-->
+            <div class="col">
+              <div class="cinfo cinfo-green">
+                <p class="cinfo-text">Почти готово! Просто заполните <span class="color-red">*</span> обязательные поля.</p>
+              </div><!--/.cinfo-->
+            </div><!--/.col-->
+          </div><!--/.row-->
+
+          <div class="divider"></div>
+
+          <form class="form-white form-md">
+            <label class="form-label">ПУТЕШЕСТВУЕТЕ ПО РАБОТЕ?</label>
+            <!-- <p class="text mbold size-12 mb-5"></p> -->
+            <div class="row">
+              <div class="col-auto">
+                <label class="form-radio-label mb-15">
+                  <input class="form-radio" type="radio" name="radio">
+                  <span class="form-radio-circle"></span>
+                  <span>Да</span>
+                </label>
+              </div><!--/.col-->
+              <div class="col-auto">
+                <label class="form-radio-label mb-15">
+                  <input class="form-radio" type="radio" checked name="radio">
+                  <span class="form-radio-circle"></span>
+                  <span>Нет</span>
+                </label>
+              </div><!--/.col-->
+            </div><!--/.row-->
+            <div class="row">
+              <div class="col">
+                <label class="form-label required">ОБРАЩЕНИЕ</label>
+                <select class="form-input">
+                  <option selected>Нет</option>
+                  <option>Мисс</option>
+                  <option>Миссис</option>
+                  <option>Мадам</option>
+                  <option>Мистер</option>
+                  <option>Сэр</option>
+                  <option>Царь</option>
+                </select>
+              </div><!--/.col-->
+              <div class="col">
+                <label class="form-label">ИМЯ (ЛАТИНИЦЕЙ)</label>
+                <input class="form-input success" type="text" placeholder="">
+              </div><!--/.col-->
+              <div class="col">
+                <label class="form-label required">ФАМИЛИЯ (ЛАТИНИЦЕЙ)</label>
+                <input class="form-input error" type="text" placeholder="">
+              </div><!--/.col-->
+            </div><!--/.row-->
+            <label class="form-label required">АДРЕС ЭЛЕКТРОННОЙ ПОЧТЫ</label>
+            <div class="row align-items-center">
+              <div class="col-4">
+                <input class="form-input" type="text" placeholder="">
+              </div><!--/.col-->
+              <div class="col">
+                <p class="text color-gray italic">На этот адрес будет отправлено подтверждение бронирования</p>
+              </div><!--/.col-->
+            </div><!--/.row-->
+            <label class="form-label required">НОМЕР ТЕЛЕФОНА</label>
+            <div class="row align-items-center">
+              <div class="col-4">
+                <input class="form-input" type="text" placeholder="">
+              </div><!--/.col-->
+              <div class="col">
+                <p class="text color-gray italic">На этот номер будет отправлено смс подтверждение</p>
+              </div><!--/.col-->
+            </div><!--/.row-->
+          </form>
+
+          <div class="wallist">
+            <div class="row">
+              <div class="col">
+                <p class="text bold color-blue size-18">Стандартный двухместный номер с 1 кроватью или 2 отдельными кроватями</p>
+              </div><!--/.col-->
+              <div class="col-3">
+                <div class="text-right"><a class="ln-red" href=""><i class="fas fa-trash-alt"></i> Удалить</a></div>
+              </div><!--/.col-->
+            </div><!--/.row-->
+            <div class="row align-items-center">
+              <div class="col-auto">
+                <p class="text">
+                  <a class="ln-blue" href="">
+                    <span class="bb-dash-blue">Оплата не возвращается</span>
+                    <i class="far fa-question-circle"></i>
+                  </a>
+                </p>
+              </div><!--/.col-->
+              <div class="col-auto">
+                <p class="text size-10 mbold tbg-green">ЗАВТРАК ВКЛЮЧЕН</p>
+              </div><!--/.col-->
+            </div><!--/.row-->
+            <p class="text">Число гостей: 1 <i class="fas fa-smoking-ban color-blue"></i></p>
+            <div class="divider"></div>
+            <form class="form-white form-md">
+              <div class="row">
+                <div class="col">
+                  <label class="form-label">ИМЯ И ФАМИЛИЯ ГОСТЯ</label>
+                  <input class="form-input" type="text" placeholder="Имя (латиницей), Фамилия (Латиницей)">
+                </div><!--/.col-->
+                <div class="col">
+                  <label class="form-label">EMAIL АДРЕС ГОСТЯ <span class="color-gray">Необязательно</span></label>
+                  <input class="form-input" type="text" placeholder="Адрес электроной почты">
+                  <p class="text color-gray italic">На этот адрес будет отправлено подтверждение бронирования</p>
+                </div><!--/.col-->
+              </div><!--/.row-->
+            </form>
+          </div><!--/.wallist-->
+
+          <div class="wallist">
+            <div class="row">
+              <div class="col">
+                <p class="text bold color-blue size-18">Стандартный двухместный номер с 1 кроватью или 2 отдельными кроватями</p>
+              </div><!--/.col-->
+              <div class="col-3">
+                <div class="text-right"><a class="ln-red" href=""><i class="fas fa-trash-alt"></i> Удалить</a></div>
+              </div><!--/.col-->
+            </div><!--/.row-->
+            <div class="row align-items-center">
+              <div class="col-auto">
+                <p class="text">
+                  <a class="ln-blue" href="">
+                    <span class="bb-dash-blue">Оплата не возвращается</span>
+                    <i class="far fa-question-circle"></i>
+                  </a>
+                </p>
+              </div><!--/.col-->
+              <div class="col-auto">
+                <p class="text size-10 mbold tbg-green">ЗАВТРАК ВКЛЮЧЕН</p>
+              </div><!--/.col-->
+            </div><!--/.row-->
+            <p class="text">Число гостей: 1 <i class="fas fa-smoking-ban color-blue"></i></p>
+            <div class="divider"></div>
+            <form class="form-white form-md">
+              <div class="row">
+                <div class="col">
+                  <label class="form-label">ИМЯ И ФАМИЛИЯ ГОСТЯ</label>
+                  <input class="form-input" type="text" placeholder="Имя (латиницей), Фамилия (Латиницей)">
+                </div><!--/.col-->
+                <div class="col">
+                  <label class="form-label">EMAIL АДРЕС ГОСТЯ <span class="color-gray">Необязательно</span></label>
+                  <input class="form-input" type="text" placeholder="Адрес электроной почты">
+                  <p class="text color-gray italic">На этот адрес будет отправлено подтверждение бронирования</p>
+                </div><!--/.col-->
+              </div><!--/.row-->
+            </form>
+          </div><!--/.wallist-->
+        </div><!--/.cart-info-->
+
+        <div class="row">
+          <div class="col-7">
+            <p class="text bold size-18">Задайте вопрос</p>
+
+            <p class="text color-dgray size-12">Хостел Boxtel расположен в Москве, на Старом Арбате, в 1,7 км от Кремля и Красной площади и в 3 минутах ходьбы от станции метро «Арбатская». В хостеле Boxtel предлагается размещение в капсулах с индивидуальным освещением и вентиляцией, 2 розетками, запирающимися шкафчиками и специальной занавеской с замком. Стойка регистрации работает круглосуточно.</p>
+
+            <form class="form-white form-md">
+              <textarea class="form-input" rows="8"></textarea>
+              <p class="text mbold">ПРЕДПОЛАГАЕМОЕ ВРЕМЯ ПРИБЫТИЯ:</p>
+              <div class="row align-items-center">
+                <div class="col-8">
+                  <p class="text color-blue">Время прибытия: четверг, 30 августа 2018 г</p>
+                </div><!--/.col-->
+                <div class="col-4">
+                  <input class="form-input js-datepicker" type="text" placeholder="дд.мм.гггг" name="">
+                </div><!--/.col-->
+              </div><!--/.row-->
+              <p class="text color-dgray size-12">Хостел Boxtel расположен в Москве, на Старом Арбате, в 1,7 км от Кремля и Красной площади и в 3 минутах ходьбы от станции метро «Арбатская». В хостеле Boxtel предлагается размещение в капсулах с индивидуальным освещением и вентиляцией, 2 розетками, запирающимися шкафчиками и специальной занавеской с замком. Стойка регистрации работает круглосуточно.</p>
+              <p class="text mbold">ПРЕДПОЛАГАЕМОЕ ВРЕМЯ ПРИБЫТИЯ:</p>
+              <label class="form-checkbox">
+                <input class="form-checkbox-native" type="checkbox" checked name="">
+                <span class="form-checkbox-custom"></span>
+                <span class="form-checkbox-text">Мы бы хотели спальные места</span>
+              </label>
+            </form>
+          </div><!--/.col-->
+        </div><!--/.row-->
+
+        <div class="row">
+          <div class="col-9">
+            <div class="cart cart-info">
+              <label class="form-checkbox">
+                <input class="form-checkbox-native" type="checkbox" name="">
+                <span class="form-checkbox-custom"></span>
+                <span class="form-checkbox-text">Нажимая на кнопку "Забронировать", вы принимаете условия бронирования и даете согласие на обработку персональных данных</span>
+              </label>
+              <div class="text-right">
+                <button class="btn btn-orange d-inline-block w-auto" type="submit">ЗАБРОНИРОВАТЬ ОНЛАЙН</button>
+              </div>
+            </div><!--/.cart-info-->
+          </div><!--/.col-->
+        </div><!--/.row-->
+
+      </div><!--/.col-->
+
+      <div class="col-3">
+        <div class="side side-white">
+          <div class="side-imgwrap">
+            <img class="side-img" width="270" height="173" src="img/cart-1.jpg">
+          </div>
+          <h3 class="side-title">Хостел Кукуруза</h3>
+          <p class="text">
+            <span class="d-block mbold">Заезд:</span>
+            1 сентября 2018 с 14:00 (воскресенье)
+          </p>
+          <p class="text">
+            <span class="d-block mbold">Отъзд:</span>
+            5 сентября 2018 до 14:00 (четверг)
+          </p>
+          <p class="text">
+            <span class="d-block mbold">Длительность проживания:</span>
+            1 сутки
+          </p>
+          <div class="divider"></div>
+          <p class="text">
+            <span class="d-block mbold">Вы выбрали:</span>
+            Стандартный двухместный номер с 1 кроватью или 2 отдельными кроватями
+          </p>
+          <div class="divider"></div>
+            <p class="text color-green fas fa-check bicon">Гарантия лучшей цены</p>
+          <div class="divider"></div>
+          <p class="text">
+            <span class="d-block">3 спальных места</span>
+            <span class="color-green">Завтрак включен</span>
+          </p>
+          <p class="text d-flex justify-content-between">
+            <span class="w-auto">Цена:</span>
+            <span class="w-auto bold size-16">1200 руб</span>
+          </p>
+          <p class="text tbg-green">Никаких сюрпризов!<br>Цена окончательная</p>
+          <p class="text text-center color-red">Сейчас еще 4 пользователя просматривают этот хостел</p>
+        </div><!--/.side-->
+      </div><!--/.col-->
+
+    </div><!--/.row-->
+
+
+  </div><!--/.container-->
+</section><!--/.section-->
+
+
+<section class="section">
+  <div class="container">
+  </div><!--/.container-->
+</section><!--/.section-->
+
+<footer class="footer">
+  <div class="footer-cont">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-auto">
+          <a class="ln-blue d-flex align-items-center" href="">
+            <img src="img/icon-4.svg">
+            &nbsp;Мобильная версия
+          </a>
+        </div><!--/.col-->
+        <div class="col">
+          <div class="row justify-content-center">
+            <div class="col-auto">
+              <a class="ln-blue" href="">О сайте</a>
+            </div><!--/.col-->
+            <div class="col-auto">
+              <a class="ln-blue" href="">Страны</a>
+            </div><!--/.col-->
+            <div class="col-auto">
+              <a class="ln-blue" href="">Города</a>
+            </div><!--/.col-->
+            <div class="col-auto">
+              <a class="ln-blue" href="">Каталог</a>
+            </div><!--/.col-->
+            <div class="col-auto">
+              <a class="ln-blue" href="">Добавить хостел</a>
+            </div><!--/.col-->
+          </div><!--/.row-->
+        </div><!--/.col-->
+      </div><!--/.row-->
+    </div><!--/.container-->
+  </div><!--/.footer-cont-->
+  <p class="text-center color-blue">&copy; AmigoHostels.com 2018 Все права защищены</p>
+</footer>
+
+<a class="scrolltotop js-scrollto" href="#"></a>
+
+<!-- МОДАЛЬНЫЕ ОКНА -->
+<div class="d-none">
+
+<!-- РЕГИСТРАЦИЯ | ВХОД -->
+<div class="modal" id="signup-login">
+  <div class="tab modal-tab js-tab">
+    <div class="tab-btn-wrap">
+      <a class="tab-btn active" href="#tab-login">Войти</a>
+      <a class="tab-btn" href="#tab-signup">Зарегистрироваться</a>
+    </div>
+    <div class="tab-content active" id="tab-login">
+      <form class="form-md">
+        <label class="form-label">АДРЕС ЭЛЕКТРОННОЙ ПОЧТЫ</label>
+        <input class="form-input" type="text" placeholder="" name="">
+        <label class="form-label">ПАРОЛЬ</label>
+        <input class="form-input" type="text" placeholder="" name="">
+        <button class="form-eh btn btn-blue bold w-50 mx-auto" type="submit">НАЧАТЬ</button>
+      </form>
+    </div><!--/.tab-content-->
+    <div class="tab-content" id="tab-signup">
+      <form class="form-md">
+        <label class="form-label">АДРЕС ЭЛЕКТРОННОЙ ПОЧТЫ</label>
+        <input class="form-input" type="text" placeholder="" name="">
+        <label class="form-label">СОЗДАЙТЕ ПАРОЛЬ</label>
+        <input class="form-input" type="text" placeholder="" name="">
+        <button class="form-eh btn btn-blue bold w-50 mx-auto" type="submit">НАЧАТЬ</button>
+      </form>
+    </div><!--/.tab-content-->
+  </div><!--/.tab-->
+  <div class="divider-vstxt"><span class="divider-txt">Или</span></div>
+  <div class="soc">
+    <a class="soc-btn" href="">
+      <i class="fab fa-vk soc-icon"></i>
+      <span class="soc-btn-txt">
+        <span class="soc-btn-txta">Войти через</span>
+        <span class="soc-btn-txtb">vk.com</span>
+      </span>
+    </a>
+    <a class="soc-btn" href="">
+      <i class="fab fa-facebook soc-icon"></i>
+      <span class="soc-btn-txt">
+        <span class="soc-btn-txta">Войти через</span>
+        <span class="soc-btn-txtb">Facebook</span>
+      </span>
+    </a>
+    <a class="soc-btn" href="">
+      <i class="fab fa-google soc-icon"></i>
+      <span class="soc-btn-txt">
+        <span class="soc-btn-txta">Войти через</span>
+        <span class="soc-btn-txtb">Google</span>
+      </span>
+    </a>
+  </div>
+  <div class="divider"></div>
+  <p class="modal-ftxt">
+    Создавая аккаунт, вы соглашаетесь с нашими
+    <br>
+    <a class="ln-blue bold" href="">Правилами и условиями</a> и <a class="ln-blue bold" href="">Положением о конфиденциальности</a>
+  </p>
+</div><!--/.modal-->
+
+</div><!--/.d-none (modals wrapper)-->
+
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<!-- plugins -->
+<script src="assets/datepicker/dist/datepicker.min.js"></script>
+<script src="assets/fancybox/dist/jquery.fancybox.min.js"></script>
+<!--  scripts -->
+<script src="js/main.js?v=001"></script>
+
+</body>
+</html>

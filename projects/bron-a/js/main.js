@@ -3,7 +3,7 @@
  * @link https://webprowww.github.io
  */
 
-var $body, $scrollToTop, $window, jQueryTab, tabs;
+var $body, $scrollToTop, $window, getDiagramLineCss, jQueryTab, tabs;
 
 jQueryTab = class jQueryTab {
   constructor(selector) {
@@ -77,6 +77,8 @@ $('.js-fancybox').fancybox({
 });
 
 // $.fancybox.open {src: '#signup-login'}, {smallBtn: off}
+
+// $('.js-fancygal').fancybox()
 $window.on('scroll', function(e) {
   var offset, scrollTopNum;
   offset = 300;
@@ -91,12 +93,14 @@ $window.on('scroll', function(e) {
 });
 
 $body.on('click', '.js-counter .form-counter-btn', function(e) {
-  var $input, $this, currentNum, dataNum, maxNum, minNum, newVal;
+  var $input, $this, currentNum, dataNum, max, maxNum, min, minNum, newVal;
   e.preventDefault();
   $this = $(this);
   $input = $this.closest('.js-counter').find('.js-counter-input');
-  maxNum = Number($input.attr('max'));
-  minNum = Number($input.attr('min'));
+  max = $input.attr('max');
+  min = $input.attr('min');
+  maxNum = max != null ? Number(max) : null;
+  minNum = min != null ? Number(min) : null;
   dataNum = Number($this.attr('data'));
   currentNum = Number($input.val());
   newVal = currentNum + dataNum;
@@ -116,9 +120,9 @@ $body.on('click', '.js-counter .form-counter-btn', function(e) {
 $('.js-slider-ui').each(function(i, slider) {
   var $slider, max, min, val;
   $slider = $(slider);
-  val = Number($slider.attr('value'));
-  min = Number($slider.attr('min'));
-  max = Number($slider.attr('max'));
+  val = $slider.attr('value');
+  min = $slider.attr('min');
+  max = $slider.attr('max');
   if (val == null) {
     val = 0;
   }
@@ -129,11 +133,16 @@ $('.js-slider-ui').each(function(i, slider) {
     max = 9;
   }
   return $slider.slider({
-    value: val,
-    min: min,
-    max: max,
+    value: Number(val),
+    min: Number(min),
+    max: Number(max),
     step: 1,
-    slide: function(e, ui) {}
+    slide: function(e, ui) {
+      var $input, $parent;
+      $parent = $(this).closest('.js-slider');
+      $input = $parent.find('.js-slider-value');
+      return $input.val(ui.value);
+    }
   });
 });
 
@@ -160,4 +169,33 @@ $body.on('click', '.js-scrollto', function(e) {
     scrollTop: offsetTop
   });
   return false;
+});
+
+getDiagramLineCss = function(val, max) {
+  var green, precent, red;
+  precent = Math.round(val * 100 / max);
+  green = Math.round(precent * 255 / 100);
+  red = 255 - green;
+  if (green > 230) {
+    green = 230;
+  }
+  if (red < 0) {
+    red = 0;
+  }
+  return {
+    width: `${precent}%`,
+    background: `rgb(${red}, ${green}, 200)`
+  };
+};
+
+$('.js-diagram').each(function(i, diagram) {
+  var $diagram, $line, lineCss, maxNum, valNum;
+  $diagram = $(diagram);
+  $line = $diagram.find('.diagram-line');
+  valNum = Number($diagram.attr('data'));
+  maxNum = Number($diagram.attr('max'));
+  lineCss = getDiagramLineCss(valNum, maxNum);
+  $line.css(lineCss);
+  console.log(lineCss);
+  return true;
 });
