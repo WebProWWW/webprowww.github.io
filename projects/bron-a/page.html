@@ -6,12 +6,13 @@
   <title>Бронь</title>
   <!-- fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,400i&amp;subset=cyrillic">
+  <link rel="stylesheet" href="assets/fontawesome/css/all.min.css?v=5.2.0">
   <!-- plugins -->
   <link rel="stylesheet" href="assets/datepicker/dist/datepicker.min.css">
-  <link rel="stylesheet" href="assets/fontawesome/css/all.min.css?v=5.2.0">
   <link rel="stylesheet" href="assets/fancybox/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="assets/bxslider/dist/jquery.bxslider.min.css">
   <!-- theme -->
-  <link rel="stylesheet" href="css/main.css?v=001">
+  <link rel="stylesheet" href="css/main.css?v=003">
   <link rel="stylesheet" href="css/fw-bootstrap.css">
 </head>
 <body>
@@ -200,7 +201,7 @@
       <div class="row align-items-center">
         <div class="col-auto">
           <a class="ln-blue d-flex align-items-center" href="">
-            <img src="img/icon-4.svg">
+            <i class="fas fa-mobile-alt size-26"></i>
             &nbsp;Мобильная версия
           </a>
         </div><!--/.col-->
@@ -288,21 +289,520 @@
   <p class="modal-ftxt">
     Создавая аккаунт, вы соглашаетесь с нашими
     <br>
-    <a class="ln-blue bold" href="">Правилами и условиями</a> и <a class="ln-blue bold" href="">Положением о конфиденциальности</a>
+    <a class="ln-blue bold space-nowrap" href="">Правилами и условиями</a> и <a class="ln-blue bold space-nowrap" href="">Положением о конфиденциальности</a>
   </p>
+</div><!--/.modal-->
+
+
+<!-- ФИЛЬТР (Мобильная) -->
+<div class="modal-full" id="modal-filter">
+  <div class="side side-white">
+    <h3 class="side-title">Выбор по категориям</h3>
+    <form class="form-md form-white">
+      <label class="form-label">РАЙОН</label>
+      <select class="form-input">
+        <option selected>Все районы</option>
+        <option>Опция - 1</option>
+        <option>Опция - 2</option>
+        <option>Опция - 3</option>
+        <option>Опция - 4</option>
+        <option>Опция - 5</option>
+      </select>
+      <label class="form-label">МИКРОРАЙОН</label>
+      <select class="form-input">
+        <option selected>Все микрорайоны</option>
+        <option>Опция - 1</option>
+        <option>Опция - 2</option>
+        <option>Опция - 3</option>
+        <option>Опция - 4</option>
+        <option>Опция - 5</option>
+      </select>
+      <label class="form-label">СТАРЦИЯ МЕТРО</label>
+      <select class="form-input">
+        <option selected>Все станции метро</option>
+        <option>Опция - 1</option>
+        <option>Опция - 2</option>
+        <option>Опция - 3</option>
+        <option>Опция - 4</option>
+        <option>Опция - 5</option>
+      </select>
+      <div class="divider"></div>
+      <label class="form-checkbox">
+        <input class="form-checkbox-native" type="checkbox" name="">
+        <span class="form-checkbox-custom"></span>
+        <span class="form-checkbox-text">Онлайн-бронирование</span>
+      </label>
+      <label class="form-checkbox">
+        <input class="form-checkbox-native" type="checkbox" checked name="">
+        <span class="form-checkbox-custom"></span>
+        <span class="form-checkbox-text">Моментальное подтверждение</span>
+      </label>
+      <div class="divider"></div>
+      <label class="form-label">ЦЕНА</label>
+      <label class="form-checkbox">
+        <input class="form-checkbox-native" type="checkbox" checked name="">
+        <span class="form-checkbox-custom"></span>
+        <span class="form-checkbox-text">до 600 руб.</span>
+      </label>
+      <label class="form-checkbox">
+        <input class="form-checkbox-native" type="checkbox" name="">
+        <span class="form-checkbox-custom"></span>
+        <span class="form-checkbox-text">от 600 до 1200 руб.</span>
+      </label>
+      <label class="form-checkbox">
+        <input class="form-checkbox-native" type="checkbox" name="">
+        <span class="form-checkbox-custom"></span>
+        <span class="form-checkbox-text">от 1200 до 1800 руб.</span>
+      </label>
+      <label class="form-checkbox">
+        <input class="form-checkbox-native" type="checkbox" name="">
+        <span class="form-checkbox-custom"></span>
+        <span class="form-checkbox-text">от 800 руб.</span>
+      </label>
+      <label class="form-label">УДАЛЕННОСТЬ ОТ</label>
+      <select class="form-input">
+        <option selected>Выберите</option>
+        <option>Опция - 1</option>
+        <option>Опция - 2</option>
+        <option>Опция - 3</option>
+        <option>Опция - 4</option>
+        <option>Опция - 5</option>
+      </select>
+      <label class="form-label">МИКРОРАЙОН</label>
+      <select class="form-input">
+        <option selected>Выберите расстояние</option>
+        <option>Опция - 1</option>
+        <option>Опция - 2</option>
+        <option>Опция - 3</option>
+        <option>Опция - 4</option>
+        <option>Опция - 5</option>
+      </select>
+      <label class="form-label">ПИТАНИЕ</label>
+      <label class="form-checkbox">
+        <input class="form-checkbox-native" type="checkbox" checked name="">
+        <span class="form-checkbox-custom"></span>
+        <span class="form-checkbox-text">Завтрак</span>
+      </label>
+      <label class="form-checkbox">
+        <input class="form-checkbox-native" type="checkbox" checked name="">
+        <span class="form-checkbox-custom"></span>
+        <span class="form-checkbox-text">Общая кухня</span>
+      </label>
+      <label class="form-label">УСЛУГИ</label>
+      <label class="form-checkbox">
+        <input class="form-checkbox-native" type="checkbox" checked name="">
+        <span class="form-checkbox-custom"></span>
+        <span class="form-checkbox-text">Бесплатный Wi-Fi</span>
+      </label>
+      <label class="form-checkbox">
+        <input class="form-checkbox-native" type="checkbox" checked name="">
+        <span class="form-checkbox-custom"></span>
+        <span class="form-checkbox-text">Парковка</span>
+      </label>
+      <label class="form-checkbox">
+        <input class="form-checkbox-native" type="checkbox" name="">
+        <span class="form-checkbox-custom"></span>
+        <span class="form-checkbox-text">Бассейн</span>
+      </label>
+      <label class="form-checkbox">
+        <input class="form-checkbox-native" type="checkbox" name="">
+        <span class="form-checkbox-custom"></span>
+        <span class="form-checkbox-text">Круглосуточная стойка регистрации</span>
+      </label>
+      <label class="form-checkbox">
+        <input class="form-checkbox-native" type="checkbox" name="">
+        <span class="form-checkbox-custom"></span>
+        <span class="form-checkbox-text">Ресторан / Бар</span>
+      </label>
+      <label class="form-checkbox">
+        <input class="form-checkbox-native" type="checkbox" name="">
+        <span class="form-checkbox-custom"></span>
+        <span class="form-checkbox-text">Кондиционер</span>
+      </label>
+      <label class="form-checkbox">
+        <input class="form-checkbox-native" type="checkbox" name="">
+        <span class="form-checkbox-custom"></span>
+        <span class="form-checkbox-text">Холодильник</span>
+      </label>
+      <label class="form-checkbox">
+        <input class="form-checkbox-native" type="checkbox" name="">
+        <span class="form-checkbox-custom"></span>
+        <span class="form-checkbox-text">Допускаются домашние животные</span>
+      </label>
+      <label class="form-checkbox">
+        <input class="form-checkbox-native" type="checkbox" name="">
+        <span class="form-checkbox-custom"></span>
+        <span class="form-checkbox-text">Стиральная машина</span>
+      </label>
+      <label class="form-checkbox">
+        <input class="form-checkbox-native" type="checkbox" name="">
+        <span class="form-checkbox-custom"></span>
+        <span class="form-checkbox-text">Сейф</span>
+      </label>
+      <label class="form-checkbox">
+        <input class="form-checkbox-native" type="checkbox" name="">
+        <span class="form-checkbox-custom"></span>
+        <span class="form-checkbox-text">Телевизор</span>
+      </label>
+      <label class="form-checkbox">
+        <input class="form-checkbox-native" type="checkbox" name="">
+        <span class="form-checkbox-custom"></span>
+        <span class="form-checkbox-text">Спортивный зал</span>
+      </label>
+      <label class="form-label">ТИП РАЗМЕЩЕНИЯ</label>
+      <label class="form-checkbox">
+        <input class="form-checkbox-native" type="checkbox" checked name="">
+        <span class="form-checkbox-custom"></span>
+        <span class="form-checkbox-text">Одельная команата</span>
+      </label>
+      <label class="form-checkbox">
+        <input class="form-checkbox-native" type="checkbox" name="">
+        <span class="form-checkbox-custom"></span>
+        <span class="form-checkbox-text">Общая комната</span>
+      </label>
+      <label class="form-label">ОЦЕНКА ПО ОТЗЫВАМ</label>
+      <div class="slider">
+        <div class="slider-ui js-slider">
+          <div class="js-slider-ui" value="6" min="6" max="9"></div>
+          <input class="js-slider-value" type="hidden" value="6" name="">
+        </div>
+        <div class="slider-vallist">
+          <span class="slider-val">Все</span>
+          <span class="slider-val">7+</span>
+          <span class="slider-val">8+</span>
+          <span class="slider-val">9+</span>
+        </div>
+      </div><!--/.slider-->
+      <button class="btn btn-blue bold" type="submit">ПРИМЕНИТЬ</button>
+    </form>
+  </div><!--/.side-->
+</div><!--/.modal-->
+
+<!-- МЕНЬЮ (Мобильная) -->
+<div class="modal-menu" id="menu">
+  <a class="modal-menu-ln js-collapse" href="#menu-collapse-1">
+    <span class="d-block">
+      <span class="bold d-block">Хостел Порт</span>
+      <span class="size-12">Бонусы и скидки внутри</span>
+    </span>
+    <span class="d-block">
+      <i class="fas fa-angle-down fa-fw js-collapse-arr"></i>
+      <i class="fas fa-user fa-fw"></i>
+    </span>
+  </a>
+  <div class="collapse" id="menu-collapse-1">
+    <div class="modal-menu-divider"></div>
+    <a class="modal-menu-ln size-12 pl-15" href="">Пункт меню 1</a>
+    <a class="modal-menu-ln size-12 pl-15" href="">Пункт меню 1</a>
+    <a class="modal-menu-ln size-12 pl-15" href="">Пункт меню 1</a>
+  </div>
+
+  <div class="modal-menu-divider"></div>
+
+  <a class="modal-menu-ln js-collapse" href="#menu-collapse-2">
+    <span class="bold d-block">Валюта - RUB</span>
+    <span class="d-block">
+      <i class="fas fa-angle-down fa-fw js-collapse-arr"></i>
+      <i class="fas fa-ruble-sign fa-fw"></i>
+      <!-- <i class="fas fa-dollar-sign"></i> -->
+      <!-- <i class="fas fa-euro-sign"></i> -->
+    </span>
+  </a>
+  <div class="collapse" id="menu-collapse-2">
+    <div class="modal-menu-divider"></div>
+    <a class="modal-menu-ln" href="">
+      <span class="bold d-block size-12 pl-15"><i class="fas fa-ruble-sign fa-fw"></i> RUB</span>
+    </a>
+    <a class="modal-menu-ln" href="">
+      <span class="bold d-block size-12 pl-15"><i class="fas fa-dollar-sign fa-fw"></i> USD</span>
+    </a>
+    <a class="modal-menu-ln" href="">
+      <span class="bold d-block size-12 pl-15"><i class="fas fa-euro-sign fa-fw"></i> EUR</span>
+    </a>
+  </div>
+
+  <div class="modal-menu-divider"></div>
+
+  <a class="modal-menu-ln js-collapse" href="#menu-collapse-3">
+    <span class="bold d-block">Заказать обратный звонок</span>
+    <span class="d-block">
+      <i class="fas fa-angle-down fa-fw js-collapse-arr"></i>
+      <i class="fas fa-phone fa-fw"></i>
+    </span>
+  </a>
+  <div class="collapse" id="menu-collapse-3">
+    <div class="modal-menu-divider"></div>
+    <form class="form-mobile">
+      <label class="form-label color-white">ИМЯ</label>
+      <input class="form-input" type="text" placeholder="Имя">
+      <label class="form-label color-white">ТЕЛЕФОН</label>
+      <input class="form-input" type="text" placeholder="Ваш номер телефона">
+      <button class="btn btn-blue form-eh w-80 mx-auto" type="submit">ЗАКАЗАТЬ</button>
+    </form>
+  </div>
+
+  <div class="modal-menu-ldivider"></div>
+
+  <p class="text bold size-18">Хостелы в Казани</p>
+
+  <div class="modal-menu-divider"></div>
+
+  <a class="modal-menu-ln" href="">
+    <span class="bold d-block">В центре</span>
+    <span class="d-block"><i class="fas fa-crosshairs fa-fw"></i></span>
+  </a>
+
+  <div class="modal-menu-divider"></div>
+
+  <a class="modal-menu-ln" href="">
+    <span class="bold d-block">По районам</span>
+    <span class="d-block"><i class="fas fa-map-marker-alt fa-fw"></i></span>
+  </a>
+
+  <div class="modal-menu-divider"></div>
+
+  <a class="modal-menu-ln" href="">
+    <span class="bold d-block">Другие подборки хостелов</span>
+    <span class="d-block"><i class="fas fa-list-alt fa-fw"></i></span>
+  </a>
+
+  <div class="modal-menu-ldivider"></div>
+
+  <p class="text bold size-18">Amigo Hostels</p>
+
+  <div class="modal-menu-divider"></div>
+
+  <a class="modal-menu-ln" href="">
+    <span class="bold d-block">О компании</span>
+    <span class="d-block"><i class="fas fa-info-circle fa-fw"></i></span>
+  </a>
+
+  <div class="modal-menu-divider"></div>
+
+  <a class="modal-menu-ln" href="">
+    <span class="bold d-block">Версия для настольных компьютеров</span>
+    <span class="d-block"><i class="fas fa-desktop fa-fw"></i></span>
+  </a>
+</div><!--/.modal-->
+
+<!-- ОТЗЫВЫ (Мобильная) -->
+<div class="modal-full" id="reviews">
+  <p class="text d-flex">
+    <span class="color-green bold size-30 mr-5">8,7</span>
+    <span class="d-block">
+      <span class="d-block">Очень хорошо</span>
+      <span class="d-block color-gray">48 отзывов</span>
+    </span>
+  </p>
+
+  <div class="row align-items-end">
+    <div class="col">
+      <p class="text mb-5 size-12">
+        <span class="d-flex justify-content-between align-items-end">
+          <span class="w-100">Расположение</span>
+          <span class="w-auto ml-5">1.1</span>
+        </span>
+      </p>
+      <div class="diagram mb-25 js-diagram" max="10" data="1.1">
+        <span class="diagram-line"></span>
+      </div>
+    </div><!--/.col-->
+    <div class="col">
+      <p class="text mb-5 size-12">
+        <span class="d-flex justify-content-between align-items-end">
+          <span class="w-100">Комфорт</span>
+          <span class="w-auto ml-5">2.0</span>
+        </span>
+      </p>
+      <div class="diagram mb-25 js-diagram" max="10" data="2.0">
+        <span class="diagram-line"></span>
+      </div>
+    </div><!--/.col-->
+  </div><!--/.row-->
+
+  <div class="row align-items-end">
+    <div class="col">
+      <p class="text mb-5 size-12">
+        <span class="d-flex justify-content-between align-items-end">
+          <span class="w-100">Соотношение цена/качество</span>
+          <span class="w-auto ml-5">3.5</span>
+        </span>
+      </p>
+      <div class="diagram mb-25 js-diagram" max="10" data="3.5">
+        <span class="diagram-line"></span>
+      </div>
+    </div><!--/.col-->
+    <div class="col">
+      <p class="text mb-5 size-12">
+        <span class="d-flex justify-content-between align-items-end">
+          <span class="w-100">Бесплатный <span class="space-nowrap">Wi-Fi</span></span>
+          <span class="w-auto ml-5">4.2</span>
+        </span>
+      </p>
+      <div class="diagram mb-25 js-diagram" max="10" data="4.2">
+        <span class="diagram-line"></span>
+      </div>
+    </div><!--/.col-->
+  </div><!--/.row-->
+
+  <div class="row align-items-end">
+    <div class="col">
+      <p class="text mb-5 size-12">
+        <span class="d-flex justify-content-between align-items-end">
+          <span class="w-100">Расположение</span>
+          <span class="w-auto ml-5">5.3</span>
+        </span>
+      </p>
+      <div class="diagram mb-25 js-diagram" max="10" data="5.3">
+        <span class="diagram-line"></span>
+      </div>
+    </div><!--/.col-->
+    <div class="col">
+      <p class="text mb-5 size-12">
+        <span class="d-flex justify-content-between align-items-end">
+          <span class="w-100">Чистота</span>
+          <span class="w-auto ml-5">6.2</span>
+        </span>
+      </p>
+      <div class="diagram mb-25 js-diagram" max="10" data="6.2">
+        <span class="diagram-line"></span>
+      </div>
+    </div><!--/.col-->
+  </div><!--/.row-->
+
+  <div class="row align-items-end">
+    <div class="col">
+      <p class="text mb-5 size-12">
+        <span class="d-flex justify-content-between align-items-end">
+          <span class="w-100">Персонал</span>
+          <span class="w-auto ml-5">7.3</span>
+        </span>
+      </p>
+      <div class="diagram mb-25 js-diagram" max="10" data="7.3">
+        <span class="diagram-line"></span>
+      </div>
+    </div><!--/.col-->
+    <div class="col">
+      <p class="text mb-5 size-12">
+        <span class="d-flex justify-content-between align-items-end">
+          <span class="w-100">Оснащение</span>
+          <span class="w-auto ml-5">8.1</span>
+        </span>
+      </p>
+      <div class="diagram mb-25 js-diagram" max="10" data="8.1">
+        <span class="diagram-line"></span>
+      </div>
+    </div><!--/.col-->
+  </div><!--/.row-->
+
+  <div class="row align-items-end">
+    <div class="col">
+      <p class="text mb-5 size-12">
+        <span class="d-flex justify-content-between align-items-end">
+          <span class="w-100">Чистота</span>
+          <span class="w-auto ml-5">9.2</span>
+        </span>
+      </p>
+      <div class="diagram mb-25 js-diagram" max="10" data="9.2">
+        <span class="diagram-line"></span>
+      </div>
+    </div><!--/.col-->
+    <div class="col">
+      <p class="text mb-5 size-12">
+        <span class="d-flex justify-content-between align-items-end">
+          <span class="w-100">Персонал</span>
+          <span class="w-auto ml-5">10</span>
+        </span>
+      </p>
+      <div class="diagram mb-25 js-diagram" max="10" data="10">
+        <span class="diagram-line"></span>
+      </div>
+    </div><!--/.col-->
+  </div><!--/.row-->
+
+  <div class="divider"></div>
+
+  <div class="row no-gutters">
+    <div class="col-auto mr-10">
+      <img class="img-bcircle" width="60" height="60" src="img/review.jpg">
+    </div>
+    <div class="col">
+      <p class="text mbold">Александр</p>
+      <p class="text"><span class="flag flag-1"></span> Россия</p>
+      <p class="text size-12 color-gray">
+        <span class="d-block mb-10"><i class="far fa-user"></i> Друзья</span>
+        <span class="d-block mb-10"><i class="far fa-calendar-alt"></i> Проживала(а) в Апр 2016</span>
+        <span class="d-block mb-10"><i class="far fa-edit"></i> 22 отзыва</span>
+      </p>
+    </div>
+  </div><!--/.row-->
+
+  <div class="wall-shadow">
+    <p class="cart-desc">
+      <span class="cart-desc-rat color-green">8,7</span> Очень хорошо <span class="cart-desc-sm">48 отзывов</span>
+    </p>
+    <p class="text mbold">Классный хостел</p>
+    <p class="text size-13 fas fa-plus-circle bicon bicon-green">
+      В номере нет открывающейся форточки. Нет доступа свежего воздуха в помещение.только кондиционер. Но это не выход. Осталось некомфортное ощущенип посещения отеля.
+    </p>
+    <p class="text size-13 fas fa-minus-circle bicon bicon-gray">
+      В номере нет открывающейся форточки. Нет доступа свежего воздуха в помещение.только кондиционер. Но это не выход. Осталось некомфортное ощущенип посещения отеля.
+    </p>
+  </div><!--/.wall-shadow-->
+
+  <div class="row no-gutters">
+    <div class="col-auto mr-10">
+      <img class="img-bcircle" width="60" height="60" src="img/review.jpg">
+    </div>
+    <div class="col">
+      <p class="text mbold">Ахмед</p>
+      <p class="text"><span class="flag flag-2"></span> США</p>
+      <p class="text size-12 color-gray">
+        <span class="d-block mb-10"><i class="far fa-user"></i> Друзья</span>
+        <span class="d-block mb-10"><i class="far fa-calendar-alt"></i> Проживала(а) в Апр 2016</span>
+        <span class="d-block mb-10"><i class="far fa-edit"></i> 22 отзыва</span>
+      </p>
+    </div>
+  </div><!--/.row-->
+
+  <div class="wall-shadow">
+    <p class="cart-desc">
+      <span class="cart-desc-rat color-green">8,7</span> Очень хорошо <span class="cart-desc-sm">48 отзывов</span>
+    </p>
+    <p class="text mbold">Классный хостел</p>
+    <p class="text size-13 fas fa-plus-circle bicon bicon-green">
+      В номере нет открывающейся форточки. Нет доступа свежего воздуха в помещение.только кондиционер. Но это не выход. Осталось некомфортное ощущенип посещения отеля.
+    </p>
+    <p class="text size-13 fas fa-minus-circle bicon bicon-gray">
+      В номере нет открывающейся форточки. Нет доступа свежего воздуха в помещение.только кондиционер. Но это не выход. Осталось некомфортное ощущенип посещения отеля.
+    </p>
+  </div><!--/.wall-shadow-->
+
+  <nav class="pager">
+    <a class="pager-ln" href="">1</a>
+    <a class="pager-ln active" href="">2</a>
+    <a class="pager-ln" href="">3</a>
+    <span class="pager-dot">...</span>
+    <a class="pager-ln" href="">8</a>
+    <div class="d-flex w-100 justify-content-center">
+      <div class="w-auto"><a class="pager-btn" href="">Пред.</a></div>
+      <div class="w-auto"><a class="pager-btn" href="">След.</a></div>
+    </div><!--/.w-100-->
+  </nav>
 </div><!--/.modal-->
 
 </div><!--/.d-none (modals wrapper)-->
 
-
 <!-- jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="js/jquery.ui.touch-punch.min.js"></script>
 <!-- plugins -->
 <script src="assets/datepicker/dist/datepicker.min.js"></script>
 <script src="assets/fancybox/dist/jquery.fancybox.min.js"></script>
+<script src="assets/bxslider/dist/jquery.bxslider.min.js"></script>
 <!--  scripts -->
-<script src="js/main.js?v=001"></script>
+<script src="js/main.js?v=003"></script>
 
 </body>
 </html>

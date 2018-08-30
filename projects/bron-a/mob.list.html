@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=1200">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Бронь</title>
   <!-- fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,400i&amp;subset=cyrillic">
@@ -17,232 +17,330 @@
 </head>
 <body>
 
-<header class="header inheader">
-  <div class="container">
-    <div class="row align-items-center pt-15">
+<header class="header fixed-top inheader pt-15">
+  <div class="container-fluid">
+    <div class="row">
       <div class="col-auto">
-        <a class="logo-ln" href="">AmigoHostels.com</a>
+        <a class="logo-ln size-16" href="">AmigoHostels.com</a>
       </div><!--/.col-->
       <div class="col-auto ml-auto">
-        <a class="btn btn-twhite js-fancybox" href="#signup-login" data-tab="#tab-signup">Зарегистрироваться</a>
+        <a class="ln-white js-fancybox" href="#signup-login" data-tab="#tab-login"><i class="fas fa-user"></i></a>
       </div><!--/.col-->
       <div class="col-auto">
-        <a class="btn btn-blue js-fancybox" href="#signup-login" data-tab="#tab-login">Войти</a>
-      </div><!--/.col-->
-      <div class="col-auto">
-        <div class="dropdown mb-15">
-          <p class="color-white size-16 mp-0">RUR</p>
-          <div class="dropdown-content">
-            <a class="dropdown-item" href=""><span class="bold">EUR</span> Евро</a>
-            <a class="dropdown-item" href=""><span class="bold">RUR</span> Российский рубль</a>
-            <a class="dropdown-item" href=""><span class="bold">USD</span> Доллар США</a>
-          </div>
-        </div><!--/.dropdown-->
-      </div><!--/.col-->
-      <div class="col-auto">
-        <div class="dropdown mb-15">
-          <p class="color-white size-16 mp-0">
-            <span class="flag flag-1"></span>
-          </p>
-          <div class="dropdown-content">
-            <a class="dropdown-item" href="">
-              <span class="flag flag-1"></span> Русский
-            </a>
-            <a class="dropdown-item" href="">
-              <span class="flag flag-2"></span> English
-            </a>
-          </div>
-        </div><!--/.dropdown-->
-      </div><!--/.col-->
-      <div class="col-auto">
-        <div class="dropdown no-arr mb-15">
-          <p class="color-white size-16 mp-0">
-            <img class="d-block mb-15" width="15" height="" src="img/icon-3.svg">
-          </p>
-          <div class="dropdown-content">
-            <a class="dropdown-item" href="">О сайте</a>
-            <a class="dropdown-item" href="">Страны</a>
-            <a class="dropdown-item" href="">Города</a>
-            <a class="dropdown-item" href="">Каталог</a>
-            <a class="dropdown-item" href="">Добавить хостел</a>
-          </div>
-        </div><!--/.dropdown-->
+        <a class="ln-white" data-fancybox href="#menu"><i class="fas fa-bars"></i></a>
       </div><!--/.col-->
     </div><!--/.row-->
-  </div><!--/.container-->
+  </div><!--/.container-fluid-->
 </header>
 
-<div class="container">
+<section class="section bg-blue pb-5 pt-60">
+  <div class="container-fluid">
+    <div class="d-flex justify-content-between align-items-center mb-5">
+      <div class="">
+        <p class="text color-white size-11 m-0">1 августа - 3 августа</p>
+      </div><!--/.col-->
+      <div class="align-self-stretch mx-5">
+        <div class="divider-v"></div>
+      </div><!--/.col-->
+      <div class="">
+        <p class="text color-white size-11 m-0">1 августа - 3 августа</p>
+      </div><!--/.col-->
+      <div class="ml-5">
+        <a class="ln-white size-13 js-collapse" href="#collapse-1"><i class="fas fa-search color-white"></i></a>
+      </div><!--/.col-->
+    </div>
+
+    <div class="collapse" id="collapse-1">
+      <div class="divider"></div>
+      <form class="form-mobile">
+        <label class="form-label color-white">ВВЕДИТЕ НАЗВАНИЕ МЕСТА ИЛИ ХОСТЕЛА</label>
+        <input class="form-input" type="text" placeholder="Страна, город, достопримечательность или хостел" name="">
+        <div class="row">
+          <div class="col">
+            <label class="form-label color-white">ДАТА ЗАЕЗДА</label>
+            <input class="form-input js-datepicker" type="text" placeholder="дд.мм.гггг" name="">
+          </div><!--/.col-->
+          <div class="col">
+            <label class="form-label color-white">ДАТА ВЫЕЗДА</label>
+            <!-- Добавить класс error к input для показа ошибки -->
+            <input class="form-input js-datepicker" type="text" placeholder="дд.мм.гггг" name="">
+          </div><!--/.col-->
+        </div><!--/.row-->
+        <div class="divider-vstxt"><span class="divider-txt color-white">1 сутки</span></div>
+        <label class="form-label color-white">КОЛИЧЕСТВО ГОСТЕЙ</label>
+        <div class="form-radio-group">
+          <label class="form-radio-label">
+            <input class="form-radio" type="radio" name="count" checked>
+            <span class="form-radio-text">1</span>
+          </label>
+          <label class="form-radio-label">
+            <input class="form-radio" type="radio" name="count">
+            <span class="form-radio-text">2</span>
+          </label>
+          <label class="form-radio-label">
+            <input class="form-radio" type="radio" name="count">
+            <span class="form-radio-text">3</span>
+          </label>
+          <label class="form-radio-label">
+            <input class="form-radio" type="radio" name="count">
+            <span class="form-radio-text">4</span>
+          </label>
+          <label class="form-radio-label">
+            <input class="form-radio" type="radio" name="count">
+            <span class="form-radio-text">5</span>
+          </label>
+          <label class="form-radio-label">
+            <input class="form-radio" type="radio" name="count">
+            <span class="form-radio-text">6</span>
+          </label>
+          <label class="form-radio-label">
+            <input class="form-radio" type="radio" name="count">
+            <span class="form-radio-text">7</span>
+          </label>
+          <label class="form-radio-label">
+            <input class="form-radio" type="radio" name="count">
+            <span class="form-radio-text">8</span>
+          </label>
+          <label class="form-radio-label">
+            <input class="form-radio" type="radio" name="count">
+            <span class="form-radio-text">9</span>
+          </label>
+          <label class="form-radio-label">
+            <input class="form-radio" type="radio" name="count">
+            <span class="form-radio-text">10</span>
+          </label>
+          <label class="form-radio-label w-auto">
+            <input class="form-radio" type="radio" name="count">
+            <span class="form-radio-text">более 10</span>
+          </label>
+        </div><!--/.form-radio-group-->
+        <button class="btn form-btn form-eh w-80 mx-auto" type="submit">НАЙТИ</button>
+      </form>
+    </div><!--/.collapse-->
+  </div><!--/.container-fluid-->
+</section><!--/.section-->
+
+<div class="container-fluid">
   <nav class="breadcrumb">
     <a class="breadcrumb-ln" href="">Главная</a>
+    <a class="breadcrumb-ln" href="">Россия</a>
+    <a class="breadcrumb-ln" href="">Казань</a>
     <a class="breadcrumb-ln" href="">Россия</a>
     <a class="breadcrumb-ln" href="">Казань</a>
     <a class="breadcrumb-ln" href="">Вахитовский район</a>
   </nav>
 </div><!--/.container-->
+<div class="divider"></div>
+<div class="container-fluid">
 
-<div class="divider"></div><!--/.divider-->
+  <h1 class="title size-16">Хостелы Казани в Витихновском районе</h1>
+  <p class="text color-blue size-12">
+    <span class="d-block">Найдено 103 хостела.</span>
+    В 15 из них доступно онлайн-бронирование. <i class="fas fa-thumbs-up color-green"></i>
+  </p>
+  <div class="divider"></div>
+  <div class="row justify-content-between no-gutters mb-15">
+    <div class="col-auto">
+      <a class="ln-black mbold size-10" href="">
+        <i class="fas fa-map-marked-alt size-13"></i>
+        КАРТА
+      </a>
+    </div><!--/.col-->
+    <div class="col-auto">
+      <a class="ln-black mbold size-10" href="">
+        <!-- <i class="fas fa-sort-amount-up size-13"></i> -->
+        <i class="fas fa-sort-amount-down size-13"></i>
+        СОРТИРОВАТЬ
+      </a>
+    </div><!--/.col-->
+    <div class="col-auto">
+      <a data-fancybox class="ln-black mbold size-10" href="#modal-filter">
+        <i class="fas fa-filter size-13"></i>
+        ФИЛЬТРОВАТЬ
+      </a>
+    </div><!--/.col-->
+  </div><!--/.row-->
 
-<section class="section">
-  <div class="container">
-    <div class="row">
-
-      <div class="col-9">
-        <p class="text color-blue mbold size-16">Cпасибо, Маrianna</p>
-        <p class="text bold size-30">Ваше бронирование в Казани подтверждено</p>
-        <p class="text fas fa-check bicon bicon-green">Мы отправили Ваше подтверждение бронирования на <span class="mbold">email@email.com</span></p>
-        <p class="text fas fa-check bicon bicon-green">Вы можете <a class="ln-blue mbold" href="">изменить бронирование онлайн</a> в любое время</p>
-        <p class="text fas fa-check bicon bicon-green">По этому бронированию необходимо ввести предоплату. Все платежи обрабатывает объект размещения <span class="mbold">(Hostel Dostoyevskii)</span>. Подробности в разделе <a class="ln-blue mbold" href="">"Информация об оплате"</a></p>
-
-
-        <div class="wall-shadow">
-          <p class="text bold size-18">Проверьте ваши данные</p>
-          <div class="divider"></div>
-          <p class="text bold size-16">Хостел Порт <i class="fas fa-thumbs-up color-green"></i></p>
-          <p class="cart-desc">
-            <span class="cart-desc-rat color-green">8,7</span> Очень хорошо
-            <br>
-            <span class="cart-desc-sm">48 отзывов</span>
-          </p>
-          <div class="row-striped">
-            <div class="row align-items-center">
-              <div class="col-4"><p class="text mbold">Номер бронирования</p></div>
-              <div class="col-8"><p class="text">1120,289,400</p></div>
-            </div>
-            <div class="row align-items-center">
-              <div class="col-4"><p class="text mbold">Пин-код</p></div>
-              <div class="col-8"><p class="text">9019 <i class="fas fa-lock color-green"></i></p></div>
-            </div>
-            <div class="row align-items-center">
-              <div class="col-4"><p class="text mbold">Сведения о бронировании</p></div>
-              <div class="col-8"><p class="text">1 ночь, 3 кровати в общем номере</p></div>
-            </div>
-            <div class="row align-items-center">
-              <div class="col-4"><p class="text mbold">Заезд</p></div>
-              <div class="col-8"><p class="text">Среда, 1 августа 2018 г. (с 14:00)</p></div>
-            </div>
-            <div class="row align-items-center">
-              <div class="col-4"><p class="text mbold">Отъезд</p></div>
-              <div class="col-8"><p class="text">Четверг, 2 августа 2018 г. (до 12:00)</p></div>
-            </div>
-          </div><!--/.row-striped-->
-          <div class="wall-bwhite">
-            <div class="row justify-content-between">
-              <div class="col-auto">
-                <p class="text mbold color-blue">3 кровати в общем номере</p>
-              </div><!--/.col-->
-              <div class="col-auto">
-                <p class="text mbold color-blue size-16">1336 руб.</p>
-              </div><!--/.col-->
-            </div><!--/.row-->
-          </div>
-        </div><!--/.cart-info-->
-
-        <div class="wall-shadow">
-          <p class="text bold size-18">Информация о варианте проживания</p>
-          <div class="divider"></div>
-          <p class="text bold size-16">Хостел Порт <i class="fas fa-thumbs-up color-green"></i></p>
-          <p class="cart-desc">
-            <span class="cart-desc-rat color-green">8,7</span> Очень хорошо
-            <br>
-            <span class="cart-desc-sm">48 отзывов</span>
-          </p>
-          <div class="row-striped">
-            <div class="row align-items-center">
-              <div class="col-4"><p class="text mbold">Адрес</p></div>
-              <div class="col-8"><p class="text">Ulitsa Dostoyevskogo Kazan, 420012 Российская Федерация</p></div>
-            </div>
-            <div class="row align-items-center">
-              <div class="col-4"><p class="text mbold">Телефон</p></div>
-              <div class="col-8"><p class="text">+7 952 040 83 73</p></div>
-            </div>
-            <div class="row align-items-center">
-              <div class="col-4"><p class="text mbold">Координаты GPS</p></div>
-              <div class="col-8"><p class="text">N 055º 47.283 E 49º 8.459 <a class="ln-blue" href=""><i class="fas fa-map-marker-alt"></i> <span class="bb-dash-blue">Показать на карте</span></a></p></div>
-            </div>
-          </div><!--/.row-striped-->
-          <div class="divider"></div>
-          <p class="text bold size-18">Спальное место на двухъярусной кровати в обзщем номере для мужчин и женщин</p>
-          <div class="row-striped">
-            <div class="row align-items-center">
-              <div class="col-4"><p class="text mbold">Имя гостя</p></div>
-              <div class="col-8"><p class="text">Maryana Shtrudel за максимум 1 человека (номер для некурящих)</p></div>
-            </div>
-            <div class="row align-items-center">
-              <div class="col-4"><p class="text mbold">План питания</p></div>
-              <div class="col-8"><p class="text">Питание не входит в стоимость этой кровати в общем номере</p></div>
-            </div>
-            <div class="row align-items-center">
-              <div class="col-4"><p class="text mbold">Предоплата</p></div>
-              <div class="col-8"><p class="text">Предоплата в размере полной стоимости бронирования будет списана с вас в любое время</p></div>
-            </div>
-            <div class="row align-items-center">
-              <div class="col-4"><p class="text mbold">Правила отмены</p></div>
-              <div class="col-8"><p class="text mbold">Оплата не возвращается</p></div>
-            </div>
-            <div class="row align-items-center">
-              <div class="col-4"><p class="text mbold">Стоимость отмены бронирования</p></div>
-              <div class="col-8"><p class="text">466 руб.<br><span class="mbold">По этому тарифу оплата не возвращается. Если вы отмените бронирование, его стоимость вам не вернут. Изменить даты проживания невозможно</span></p></div>
-            </div>
-          </div><!--/.row-striped-->
-        </div><!--/.cart-info-->
-
-        <p class="text bold size-24 text-center color-green mt-30">Желаем вам приятной поездки!</p>
+  <div class="cart cart-list mobile js-loading loading">
+    <a class="cart-like" href=""></a>
+    <div class="row no-gutters">
+      <div class="col-4">
+        <a href=""><img class="cart-img" width="270" height="173" src="img/cart-1.jpg"></a>
       </div><!--/.col-->
-
-      <div class="col-3">
-        <div class="text-right">
-          <a class="btn btn-blue mbold d-inline-block w-auto" href="">
-            <span class="d-flex align-items-center justify-content-center">
-              <span class="size-23 mr-10"><i class="fas fa-print"></i></span>
-              <span class="text-left">Распечатать<br>подтверждение</span>
-            </span>
-          </a>
-        </div>
+      <div class="col-8">
+        <h3 class="cart-title">Хостел Порт</h3>
+        <p class="cart-desc">
+          <span class="cart-desc-rat color-green">8,7</span>
+          Очень хорошо
+          <span class="cart-desc-sm">48 отзывов</span>
+        </p>
+        <p class="cart-desc color-blue">
+          <i class="fas fa-map-marker-alt"></i>
+          <a class="ln-blue bb-dash-blue">Россия, г. Казань ул. Баумана</a> (до центра 0,2 км)
+        </p>
+        <p class="cart-desc color-blue">
+          <span class="cart-idesc">До станции проспект победы: 0,5 км</span>
+          <span class="cart-idesc">До вокзала: 5 км</span>
+          <span class="cart-idesc">До аэропорта: 20 км</span>
+        </p>
+        <span class="cart-idesc color-green"><i class="fas fa-utensils"></i> Завтрак бесплатно</span>
+        <span class="cart-idesc"><i class="fas fa-wifi color-gray"></i> Wi-Fi бесплатно</span>
       </div><!--/.col-->
-
     </div><!--/.row-->
+    <div class="cart-divider mx-0"></div>
+    <div class="row align-items-center">
+      <div class="col">
+        <p class="cart-idesc">Место в общественном номере:</p>
+      </div><!--/.col-->
+      <div class="col text-right">
+        <p class="cart-price">от 1200 руб/ночь</p>
+      </div><!--/.col-->
+    </div><!--/.row-->
+    <div class="cart-divider"></div>
+    <div class="row">
+      <div class="col">
+        <p class="cart-idesc"><i class="fas fa-user-friends color-green"></i> Отдельный номер:</p>
+      </div><!--/.col-->
+      <div class="col text-right">
+        <p class="cart-desc mbold">от 1200 руб/ночь</p>
+      </div><!--/.col-->
+    </div><!--/.row-->
+  </div><!--/.cart-->
 
+  <div class="cart cart-list mobile js-loading loading">
+    <a class="cart-like" href=""></a>
+    <div class="row no-gutters">
+      <div class="col-4">
+        <a href=""><img class="cart-img" width="270" height="173" src="img/cart-2.jpg"></a>
+      </div><!--/.col-->
+      <div class="col-8">
+        <h3 class="cart-title">Хостел Вояж</h3>
+        <p class="cart-desc">
+          <span class="cart-desc-rat color-green">8,7</span>
+          Очень хорошо
+          <span class="cart-desc-sm">48 отзывов</span>
+        </p>
+        <p class="cart-desc color-blue">
+          <i class="fas fa-map-marker-alt"></i>
+          <a class="ln-blue bb-dash-blue">Россия, г. Казань ул. Баумана</a> (до центра 0,2 км)
+        </p>
+        <span class="cart-idesc color-green"><i class="fas fa-utensils"></i> Завтрак бесплатно</span>
+        <span class="cart-idesc"><i class="fas fa-wifi color-gray"></i> Wi-Fi бесплатно</span>
+      </div><!--/.col-->
+    </div><!--/.row-->
+    <div class="cart-divider mx-0"></div>
+    <div class="row align-items-center">
+      <div class="col">
+        <p class="cart-idesc">Место в общественном номере:</p>
+      </div><!--/.col-->
+      <div class="col text-right">
+        <p class="cart-desc">
+          <span class="cart-price mb-5">от 1200 руб/ночь</span>
+          <span class="cart-desc td-through">от 1200 руб/ночь</span>
+        </p>
+      </div><!--/.col-->
+    </div><!--/.row-->
+  </div><!--/.cart-->
 
-  </div><!--/.container-->
-</section><!--/.section-->
+  <div class="cart cart-list mobile js-loading loading">
+    <a class="cart-like" href=""></a>
+    <div class="row no-gutters">
+      <div class="col-4">
+        <a href=""><img class="cart-img" width="270" height="173" src="img/cart-3.jpg"></a>
+      </div><!--/.col-->
+      <div class="col-8">
+        <h3 class="cart-title">Хостел Вояж</h3>
+        <p class="cart-desc">
+          <span class="cart-desc-rat color-green">8,7</span>
+          Очень хорошо
+          <span class="cart-desc-sm">48 отзывов</span>
+        </p>
+        <p class="cart-desc color-blue">
+          <i class="fas fa-map-marker-alt"></i>
+          <a class="ln-blue bb-dash-blue">Россия, г. Казань ул. Баумана</a> (до центра 0,2 км)
+        </p>
+        <span class="cart-idesc color-green"><i class="fas fa-utensils"></i> Завтрак бесплатно</span>
+        <span class="cart-idesc"><i class="fas fa-wifi color-gray"></i> Wi-Fi бесплатно</span>
+      </div><!--/.col-->
+    </div><!--/.row-->
+    <div class="cart-divider mx-0"></div>
+    <div class="row align-items-center">
+      <div class="col">
+        <p class="cart-idesc">Место в общественном номере:</p>
+      </div><!--/.col-->
+      <div class="col text-right">
+        <p class="cart-desc">
+          <span class="cart-price mb-5">от 1200 руб/ночь</span>
+          <span class="cart-desc td-through">от 1200 руб/ночь</span>
+        </p>
+      </div><!--/.col-->
+    </div><!--/.row-->
+  </div><!--/.cart-->
+
+  <div class="cart cart-list mobile js-loading loading">
+    <a class="cart-like" href=""></a>
+    <div class="row no-gutters">
+      <div class="col-4">
+        <a href=""><img class="cart-img" width="270" height="173" src="img/cart-4.jpg"></a>
+      </div><!--/.col-->
+      <div class="col-8">
+        <h3 class="cart-title">Хостел Вояж</h3>
+        <p class="cart-desc">
+          <span class="cart-desc-rat color-green">8,7</span>
+          Очень хорошо
+          <span class="cart-desc-sm">48 отзывов</span>
+        </p>
+        <p class="cart-desc color-blue">
+          <i class="fas fa-map-marker-alt"></i>
+          <a class="ln-blue bb-dash-blue">Россия, г. Казань ул. Баумана</a> (до центра 0,2 км)
+        </p>
+        <span class="cart-idesc color-green"><i class="fas fa-utensils"></i> Завтрак бесплатно</span>
+        <span class="cart-idesc"><i class="fas fa-wifi color-gray"></i> Wi-Fi бесплатно</span>
+      </div><!--/.col-->
+    </div><!--/.row-->
+    <div class="cart-divider mx-0"></div>
+    <div class="row align-items-center">
+      <div class="col">
+        <p class="cart-idesc">Место в общественном номере:</p>
+      </div><!--/.col-->
+      <div class="col text-right">
+        <p class="cart-desc">
+          <span class="cart-price mb-5">от 1200 руб/ночь</span>
+          <span class="cart-desc td-through">от 1200 руб/ночь</span>
+        </p>
+      </div><!--/.col-->
+    </div><!--/.row-->
+  </div><!--/.cart-->
+
+  <nav class="pager">
+    <a class="pager-ln" href="">1</a>
+    <a class="pager-ln active" href="">2</a>
+    <a class="pager-ln" href="">3</a>
+    <span class="pager-dot">...</span>
+    <a class="pager-ln" href="">8</a>
+    <div class="d-flex w-100 justify-content-center">
+      <div class="w-auto"><a class="pager-btn" href="">Пред.</a></div>
+      <div class="w-auto"><a class="pager-btn" href="">След.</a></div>
+    </div><!--/.w-100-->
+  </nav>
+
+  <p class="text size-12 color-gray">Хостел Boxtel расположен в Москве, на Старом Арбате, в 1,7 км от Кремля и Красной площади и в 3 минутах ходьбы от станции метро «Арбатская».</p>
+  <p class="text size-12 color-gray">В хостеле Boxtel предлагается размещение в капсулах с индивидуальным освещением и вентиляцией, 2 розетками, запирающимися шкафчиками и специальной занавеской с замком. Стойка регистрации работает круглосуточно.</p>
+
+</div><!--/.container-->
 
 <footer class="footer">
-  <div class="footer-cont">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-auto">
-          <a class="ln-blue d-flex align-items-center" href="">
-            <i class="fas fa-mobile-alt size-26"></i>
-            &nbsp;Мобильная версия
-          </a>
-        </div><!--/.col-->
-        <div class="col">
-          <div class="row justify-content-center">
-            <div class="col-auto">
-              <a class="ln-blue" href="">О сайте</a>
-            </div><!--/.col-->
-            <div class="col-auto">
-              <a class="ln-blue" href="">Страны</a>
-            </div><!--/.col-->
-            <div class="col-auto">
-              <a class="ln-blue" href="">Города</a>
-            </div><!--/.col-->
-            <div class="col-auto">
-              <a class="ln-blue" href="">Каталог</a>
-            </div><!--/.col-->
-            <div class="col-auto">
-              <a class="ln-blue" href="">Добавить хостел</a>
-            </div><!--/.col-->
-          </div><!--/.row-->
-        </div><!--/.col-->
-      </div><!--/.row-->
-    </div><!--/.container-->
+  <div class="footer-cont py-15">
+    <div class="container-fluid text-center">
+      <a class="ln-blue" href="">
+        <i class="fas fa-desktop"></i>&nbsp;&nbsp;Версия для компьютера
+      </a>
+    </div><!--/.container-fluid-->
   </div><!--/.footer-cont-->
-  <p class="text-center color-blue">&copy; AmigoHostels.com 2018 Все права защищены</p>
+  <div class="container-fluid">
+    <p class="text-center color-blue">&copy; AmigoHostels.com 2018<br>Все права защищены</p>
+  </div><!--/.container-fluid-->
 </footer>
-
-<a class="scrolltotop js-scrollto" href="#"></a>
 
 <!-- МОДАЛЬНЫЕ ОКНА -->
 <div class="d-none">

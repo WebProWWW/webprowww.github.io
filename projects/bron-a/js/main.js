@@ -3,7 +3,7 @@
  * @link https://webprowww.github.io
  */
 
-var $body, $scrollToTop, $window, getDiagramLineCss, jQueryTab, tabs;
+var $body, $scrollToTop, $window, delay, getDiagramLineCss, jQueryTab, removeCartLoading, tabs;
 
 jQueryTab = class jQueryTab {
   constructor(selector) {
@@ -76,9 +76,15 @@ $('.js-fancybox').fancybox({
   }
 });
 
-// $.fancybox.open {src: '#signup-login'}, {smallBtn: off}
-
+// $.fancybox.open {src: '#reviews'}, {smallBtn: on}
 // $('.js-fancygal').fancybox()
+$('.js-bxslider').bxSlider({
+  wrapperClass: 'bx-wrapper bxslider',
+  pager: false,
+  nextText: 'Туда',
+  prevText: 'Сюда'
+});
+
 $window.on('scroll', function(e) {
   var offset, scrollTopNum;
   offset = 300;
@@ -156,6 +162,34 @@ $('.js-slider-ui').each(function(i, slider) {
 //       }
 //     });
 //     $( "#amount" ).val( "$" + $( "#slider" ).slider( "value" ) );
+$body.on('click', '.js-collapse', function(e) {
+  var $block, $iconArr, $this, addClass, removClass;
+  e.preventDefault();
+  $this = $(this);
+  $block = $($this.attr('href'));
+  $iconArr = $this.find('.js-collapse-arr');
+  $block.stop();
+  removClass = 'fa-angle-up';
+  addClass = 'fa-angle-down';
+  $block.slideToggle(function() {
+    switch (String($(this).css('display'))) {
+      case 'none':
+        removClass = 'fa-angle-up';
+        addClass = 'fa-angle-down';
+        break;
+      case 'block':
+        removClass = 'fa-angle-down';
+        addClass = 'fa-angle-up';
+    }
+    $iconArr.removeClass(removClass);
+    $iconArr.addClass(addClass);
+    return true;
+  });
+  return false;
+});
+
+// removClass = 'fas fa-angle-down fa-fw js-collapse-arr'
+//       when 'block' then 'fas fa-angle-up fa-fw js-collapse-arr'
 $body.on('click', '.js-scrollto', function(e) {
   var id, offsetTop;
   e.preventDefault();
@@ -196,6 +230,23 @@ $('.js-diagram').each(function(i, diagram) {
   maxNum = Number($diagram.attr('max'));
   lineCss = getDiagramLineCss(valNum, maxNum);
   $line.css(lineCss);
-  console.log(lineCss);
   return true;
+});
+
+delay = function(ms, callBacl) {
+  return setTimeout(callBacl, ms);
+};
+
+removeCartLoading = function() {
+  return $('.js-loading').each(function(i, cart) {
+    var $cart;
+    $cart = $(cart);
+    return delay(600 * i, function() {
+      return $cart.removeClass('loading');
+    });
+  });
+};
+
+$(window).on('load', function(e) {
+  return removeCartLoading();
 });
