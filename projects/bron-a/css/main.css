@@ -316,7 +316,7 @@ a:active {
 }
 .form-label {
   display: block;
-  margin: 0 0 5px;
+  margin: 0 0 10px;
   padding: 0;
   font-size: 12px;
   font-weight: 500;
@@ -408,6 +408,10 @@ a:active {
   -webkit-transition: 0.16s all ease-in-out;
   transition: 0.16s all ease-in-out;
   opacity: 0;
+}
+.form-checkbox-text {
+  font-size: 14px;
+  font-weight: 400;
 }
 .form-radio {
   display: none;
@@ -549,7 +553,7 @@ a:active {
   right: 5px;
 }
 .form-md .form-label {
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 700;
 }
 .form-md .form-input {
@@ -1171,7 +1175,7 @@ a:active {
 }
 .cart-img {
   display: block;
-  margin: 0 auto 10px;
+  margin: 0 auto 15px;
   padding: 0;
   max-width: 100%;
   height: auto;

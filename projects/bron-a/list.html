@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="assets/fancybox/dist/jquery.fancybox.min.css">
   <link rel="stylesheet" href="assets/bxslider/dist/jquery.bxslider.min.css">
   <!-- theme -->
-  <link rel="stylesheet" href="css/main.css?v=003">
+  <link rel="stylesheet" href="css/main.css?v=005">
   <link rel="stylesheet" href="css/fw-bootstrap.css">
 </head>
 <body>
@@ -95,11 +95,11 @@
             <input class="form-input" type="text" placeholder="" name="">
             <div class="row">
               <div class="col">
-                <label class="form-label">ДАТА ЗАЕЗДА</label>
+                <label class="form-label">ЗАЕЗД</label>
                 <input class="form-input js-datepicker" type="text" placeholder="дд.мм.гггг">
               </div><!--/.col-->
               <div class="col">
-                <label class="form-label">ДАТА ОТЪЕЗДА</label>
+                <label class="form-label">ВЫЕЗД</label>
                 <input class="form-input js-datepicker" type="text" placeholder="дд.мм.гггг">
               </div><!--/.col-->
             </div><!--/.row-->
@@ -221,6 +221,7 @@
               <span class="form-checkbox-custom"></span>
               <span class="form-checkbox-text">от 800 руб.</span>
             </label>
+            <div class="divider"></div>
             <label class="form-label">УДАЛЕННОСТЬ ОТ</label>
             <select class="form-input">
               <option selected>Выберите</option>
@@ -230,6 +231,7 @@
               <option>Опция - 4</option>
               <option>Опция - 5</option>
             </select>
+            <div class="divider"></div>
             <label class="form-label">МИКРОРАЙОН</label>
             <select class="form-input">
               <option selected>Выберите расстояние</option>
@@ -239,6 +241,7 @@
               <option>Опция - 4</option>
               <option>Опция - 5</option>
             </select>
+            <div class="divider"></div>
             <label class="form-label">ПИТАНИЕ</label>
             <label class="form-checkbox">
               <input class="form-checkbox-native" type="checkbox" checked name="">
@@ -250,6 +253,7 @@
               <span class="form-checkbox-custom"></span>
               <span class="form-checkbox-text">Общая кухня</span>
             </label>
+            <div class="divider"></div>
             <label class="form-label">УСЛУГИ</label>
             <label class="form-checkbox">
               <input class="form-checkbox-native" type="checkbox" checked name="">
@@ -311,6 +315,7 @@
               <span class="form-checkbox-custom"></span>
               <span class="form-checkbox-text">Спортивный зал</span>
             </label>
+            <div class="divider"></div>
             <label class="form-label">ТИП РАЗМЕЩЕНИЯ</label>
             <label class="form-checkbox">
               <input class="form-checkbox-native" type="checkbox" checked name="">
@@ -322,6 +327,7 @@
               <span class="form-checkbox-custom"></span>
               <span class="form-checkbox-text">Общая комната</span>
             </label>
+            <div class="divider"></div>
             <label class="form-label">ОЦЕНКА ПО ОТЗЫВАМ</label>
             <div class="slider">
               <div class="slider-ui js-slider">
@@ -349,22 +355,21 @@
           <div class="row">
             <div class="col-4">
               <img class="cart-img" width="270" height="173" src="img/cart-1.jpg">
-              <p class="cart-desc color-blue"><i class="far fa-check-circle"></i> Онлайн бронирование</p>
-              <p class="cart-desc color-blue"><i class="far fa-check-circle"></i> Бронирование без карты</p>
+              <p class="text color-blue"><i class="far fa-check-circle fa-fw"></i> Онлайн бронирование</p>
+              <p class="text color-blue"><i class="far fa-check-circle fa-fw"></i> Бронирование без карты</p>
             </div><!--/.col-->
             <div class="col-8">
               <div class="row">
                 <div class="col">
                   <h3 class="cart-title">Хостел Порт</h3>
-                  <p class="cart-desc color-blue">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span class="bb-dash-blue">Россия, г. Казань ул. Баумана</span> (до центра 0,2 км)
+                  <p class="text color-blue">
+                    <i class="fas fa-map-marker-alt fa-fw"></i>
+                    <a class="ln-blue bb-dash-blue" href="">Россия, г. Казань ул. Баумана</a> (до центра 0,2 км)
                   </p>
-                  <p class="cart-desc color-blue size-12">
-                    <span class="cart-idesc">До станции проспект победы: 0,5 км</span>
-                    <br>
-                    <span class="cart-idesc">До вокзала: 5 км</span>
-                    <span class="cart-idesc">До аэропорта: 20 км</span>
+                  <p class="text color-blue size-12 pl-20">
+                    <span class="mr-5 mb-5 d-inline-block space-nowrap">До станции проспект победы: 0,5 км</span>
+                    <span class="mr-5 mb-5 d-inline-block space-nowrap">До вокзала: 5 км</span>
+                    <span class="mr-5 mb-5 d-inline-block space-nowrap">До аэропорта: 20 км</span>
                   </p>
                 </div><!--/.col-->
                 <div class="col-auto">
@@ -375,15 +380,15 @@
                   </p>
                 </div><!--/.col-->
               </div><!--/.row-->
-              <p class="cart-desc size-13">
-                <span class="cart-idesc"><i class="fas fa-wifi color-gray"></i> Wi-Fi бесплатно</span>
-                <span class="cart-idesc"><i class="fas fa-utensils color-gray"></i> Завтрак бесплатно</span>
-                <span class="cart-idesc"><i class="fas fa-swimming-pool color-gray"></i> Бассейн</span>
+              <p class="text size-13">
+                <span class="mr-5 mb-5 d-inline-block space-nowrap"><i class="fas fa-wifi color-gray fa-fw"></i> Wi-Fi бесплатно</span>
+                <span class="mr-5 mb-5 d-inline-block space-nowrap"><i class="fas fa-utensils color-gray fa-fw"></i> Завтрак бесплатно</span>
+                <span class="mr-5 mb-5 d-inline-block space-nowrap"><i class="fas fa-swimming-pool color-gray fa-fw"></i> Бассейн</span>
               </p>
               <div class="cart-divider mx-0"></div>
               <div class="row justify-content-between">
                 <div class="col-auto">
-                  <p class="cart-desc">Место в общественном номере:</p>
+                  <p class="cart-desc pl-20">Место в общественном номере:</p>
                 </div><!--/.col-->
                 <div class="col-auto">
                   <p class="cart-price">от 1200 руб/ночь</p>
@@ -392,7 +397,7 @@
               <div class="cart-divider mx-0"></div>
               <div class="row justify-content-between">
                 <div class="col-auto">
-                  <p class="cart-desc"><i class="fas fa-user-friends size-18 color-green"></i> Отдельный номер:</p>
+                  <p class="cart-desc"><i class="fas fa-user-friends size-14 color-green fa-fw"></i> Отдельный номер:</p>
                 </div><!--/.col-->
                 <div class="col-auto">
                   <p class="cart-desc mbold">от 1200 руб/ночь</p>
@@ -407,22 +412,21 @@
           <div class="row">
             <div class="col-4">
               <img class="cart-img" width="270" height="173" src="img/cart-2.jpg">
-              <p class="cart-desc color-blue"><i class="far fa-check-circle"></i> Онлайн бронирование</p>
-              <p class="cart-desc color-blue"><i class="far fa-check-circle"></i> Бронирование без карты</p>
+              <p class="text color-blue"><i class="far fa-check-circle fa-fw"></i> Онлайн бронирование</p>
+              <p class="text color-blue"><i class="far fa-check-circle fa-fw"></i> Бронирование без карты</p>
             </div><!--/.col-->
             <div class="col-8">
               <div class="row">
                 <div class="col">
                   <h3 class="cart-title">Хостел Вежливый лось на Савеловской</h3>
                   <p class="cart-desc color-blue">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span class="bb-dash-blue">Россия, г. Казань ул. Ленина</span> (до центра 0,5 км)
+                    <i class="fas fa-map-marker-alt fa-fw"></i>
+                    <a class="ln-blue bb-dash-blue" href="">Россия, г. Казань ул. Ленина</a> (до центра 0,5 км)
                   </p>
-                  <p class="cart-desc color-blue size-12">
-                    <span class="cart-idesc">До станции проспект победы: 0,5 км</span>
-                    <br>
-                    <span class="cart-idesc">До вокзала: 5 км</span>
-                    <span class="cart-idesc">До аэропорта: 20 км</span>
+                  <p class="text color-blue size-12 pl-20">
+                    <span class="mr-5 mb-5 d-inline-block space-nowrap">До станции проспект победы: 0,5 км</span>
+                    <span class="mr-5 mb-5 d-inline-block space-nowrap">До вокзала: 5 км</span>
+                    <span class="mr-5 mb-5 d-inline-block space-nowrap">До аэропорта: 20 км</span>
                   </p>
                 </div><!--/.col-->
                 <div class="col-auto">
@@ -433,9 +437,9 @@
                   </p>
                 </div><!--/.col-->
               </div><!--/.row-->
-              <p class="cart-desc size-13">
-                <span class="cart-idesc"><i class="fas fa-wifi color-gray"></i> Wi-Fi бесплатно</span>
-                <span class="cart-idesc"><i class="fas fa-utensils color-gray"></i> Завтрак бесплатно</span>
+              <p class="text size-13">
+                <span class="mr-5 mb-5 d-inline-block space-nowrap"><i class="fas fa-wifi color-gray fa-fw"></i> Wi-Fi бесплатно</span>
+                <span class="mr-5 mb-5 d-inline-block space-nowrap"><i class="fas fa-utensils color-gray fa-fw"></i> Завтрак бесплатно</span>
               </p>
               <div class="cart-divider mx-0"></div>
               <p class="cart-desc mbold text-right">Мест нет</p>
@@ -448,22 +452,21 @@
           <div class="row">
             <div class="col-4">
               <img class="cart-img" width="270" height="173" src="img/cart-3.jpg">
-              <p class="cart-desc color-blue"><i class="far fa-check-circle"></i> Онлайн бронирование</p>
-              <p class="cart-desc color-blue"><i class="far fa-check-circle"></i> Бронирование без карты</p>
+              <p class="text color-blue"><i class="far fa-check-circle"></i> Онлайн бронирование</p>
+              <p class="text color-blue"><i class="far fa-check-circle"></i> Бронирование без карты</p>
             </div><!--/.col-->
             <div class="col-8">
               <div class="row">
                 <div class="col">
                   <h3 class="cart-title">Central Hostel</h3>
-                  <p class="cart-desc color-blue">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span class="bb-dash-blue">Россия, г. Казань ул. Петербургская</span> (до центра 0,2 км)
+                  <p class="text color-blue">
+                    <i class="fas fa-map-marker-alt fa-fw"></i>
+                    <a class="ln-blue bb-dash-blue" href="">Россия, г. Казань ул. Петербургская</a> (до центра 0,2 км)
                   </p>
-                  <p class="cart-desc color-blue size-12">
-                    <span class="cart-idesc">До станции проспект победы: 0,5 км</span>
-                    <br>
-                    <span class="cart-idesc">До вокзала: 5 км</span>
-                    <span class="cart-idesc">До аэропорта: 20 км</span>
+                  <p class="text color-blue size-12 pl-20">
+                    <span class="mr-5 mb-5 d-inline-block space-nowrap">До станции проспект победы: 0,5 км</span>
+                    <span class="mr-5 mb-5 d-inline-block space-nowrap">До вокзала: 5 км</span>
+                    <span class="mr-5 mb-5 d-inline-block space-nowrap">До аэропорта: 20 км</span>
                   </p>
                 </div><!--/.col-->
                 <div class="col-auto">
@@ -474,14 +477,14 @@
                   </p>
                 </div><!--/.col-->
               </div><!--/.row-->
-              <p class="cart-desc size-13">
-                <span class="cart-idesc"><i class="fas fa-wifi color-gray"></i> Wi-Fi бесплатно</span>
-                <span class="cart-idesc"><i class="fas fa-utensils color-gray"></i> Завтрак бесплатно</span>
+              <p class="text size-13">
+                <span class="mr-5 mb-5 d-inline-block space-nowrap"><i class="fas fa-wifi color-gray fa-fw"></i> Wi-Fi бесплатно</span>
+                <span class="mr-5 mb-5 d-inline-block space-nowrap"><i class="fas fa-utensils color-gray fa-fw"></i> Завтрак бесплатно</span>
               </p>
               <div class="cart-divider mx-0"></div>
               <div class="row justify-content-between">
                 <div class="col-auto">
-                  <p class="cart-desc">Место в общественном номере:</p>
+                  <p class="cart-desc pl-20">Место в общественном номере:</p>
                 </div><!--/.col-->
                 <div class="col-auto">
                   <p class="cart-price">
@@ -493,7 +496,7 @@
               <div class="cart-divider mx-0"></div>
               <div class="row justify-content-between">
                 <div class="col-auto">
-                  <p class="cart-desc"><i class="fas fa-user size-18 color-green"></i> Отдельный номер:</p>
+                  <p class="cart-desc"><i class="fas fa-user fa-fw color-green"></i> Отдельный номер:</p>
                 </div><!--/.col-->
                 <div class="col-auto">
                   <p class="cart-desc mbold">
@@ -513,22 +516,21 @@
           <div class="row">
             <div class="col-4">
               <img class="cart-img" width="270" height="173" src="img/cart-4.jpg">
-              <p class="cart-desc color-blue"><i class="far fa-times-circle color-red"></i> Онлайн бронирование</p>
-              <p class="cart-desc color-blue"><i class="far fa-check-circle"></i> Бронирование без карты</p>
+              <p class="text color-blue"><i class="far fa-times-circle fa-fw color-red"></i> Онлайн бронирование</p>
+              <p class="text color-blue"><i class="far fa-check-circle fa-fw"></i> Бронирование без карты</p>
             </div><!--/.col-->
             <div class="col-8">
               <div class="row">
                 <div class="col">
                   <h3 class="cart-title">Dragonfly Hostels</h3>
-                  <p class="cart-desc color-blue">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span class="bb-dash-blue">Россия, г. Казань ул. Баумана</span> (до центра 0,2 км)
+                  <p class="text color-blue">
+                    <i class="fas fa-map-marker-alt fa-fw"></i>
+                    <a class="ln-blue bb-dash-blue" href="">Россия, г. Казань ул. Баумана</a> (до центра 0,2 км)
                   </p>
-                  <p class="cart-desc color-blue size-12">
-                    <span class="cart-idesc">До станции проспект победы: 0,5 км</span>
-                    <br>
-                    <span class="cart-idesc">До вокзала: 5 км</span>
-                    <span class="cart-idesc">До аэропорта: 20 км</span>
+                  <p class="text color-blue size-12 pl-20">
+                    <span class="mr-5 mb-5 d-inline-block space-nowrap">До станции проспект победы: 0,5 км</span>
+                    <span class="mr-5 mb-5 d-inline-block space-nowrap">До вокзала: 5 км</span>
+                    <span class="mr-5 mb-5 d-inline-block space-nowrap">До аэропорта: 20 км</span>
                   </p>
                 </div><!--/.col-->
                 <div class="col-auto">
@@ -539,15 +541,15 @@
                   </p>
                 </div><!--/.col-->
               </div><!--/.row-->
-              <p class="cart-desc size-13">
-                <span class="cart-idesc"><i class="fas fa-wifi color-gray"></i> Wi-Fi бесплатно</span>
-                <span class="cart-idesc"><i class="fas fa-utensils color-gray"></i> Завтрак бесплатно</span>
-                <span class="cart-idesc"><i class="fas fa-swimming-pool color-gray"></i> Бассейн</span>
+              <p class="text size-13">
+                <span class="mr-5 mb-5 d-inline-block space-nowrap"><i class="fas fa-wifi fa-fw color-gray"></i> Wi-Fi бесплатно</span>
+                <span class="mr-5 mb-5 d-inline-block space-nowrap"><i class="fas fa-utensils fa-fw color-gray"></i> Завтрак бесплатно</span>
+                <span class="mr-5 mb-5 d-inline-block space-nowrap"><i class="fas fa-swimming-pool fa-fw color-gray"></i> Бассейн</span>
               </p>
               <div class="cart-divider mx-0"></div>
               <div class="row justify-content-between">
                 <div class="col-auto">
-                  <p class="cart-desc">Место в общественном номере:</p>
+                  <p class="text pl-20">Место в общественном номере:</p>
                 </div><!--/.col-->
                 <div class="col-auto">
                   <p class="cart-price">от 1200 руб/ночь</p>
@@ -556,7 +558,7 @@
               <div class="cart-divider mx-0"></div>
               <div class="row justify-content-between">
                 <div class="col-auto">
-                  <p class="cart-desc"><i class="fas fa-users size-18 color-green"></i> Отдельный номер:</p>
+                  <p class="text"><i class="fas fa-users fa-fw color-green"></i> Отдельный номер:</p>
                 </div><!--/.col-->
                 <div class="col-auto">
                   <p class="cart-desc mbold">от 1200 руб/ночь</p>
@@ -574,22 +576,21 @@
           <div class="row">
             <div class="col-4">
               <img class="cart-img" width="270" height="173" src="img/cart-1.jpg">
-              <p class="cart-desc color-blue"><i class="far fa-times-circle color-red"></i> Онлайн бронирование</p>
-              <p class="cart-desc color-blue"><i class="far fa-check-circle"></i> Бронирование без карты</p>
+              <p class="text color-blue"><i class="far fa-times-circle fa-fw color-red"></i> Онлайн бронирование</p>
+              <p class="text color-blue"><i class="far fa-check-circle fa-fw"></i> Бронирование без карты</p>
             </div><!--/.col-->
             <div class="col-8">
               <div class="row">
                 <div class="col">
                   <h3 class="cart-title">Dragonfly Hostels</h3>
-                  <p class="cart-desc color-blue">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span class="bb-dash-blue">Россия, г. Казань ул. Баумана</span> (до центра 0,2 км)
+                  <p class="text color-blue">
+                    <i class="fas fa-map-marker-alt fa-fw"></i>
+                    <a class="ln-blue bb-dash-blue">Россия, г. Казань ул. Баумана</a> (до центра 0,2 км)
                   </p>
-                  <p class="cart-desc color-blue size-12">
-                    <span class="cart-idesc">До станции проспект победы: 0,5 км</span>
-                    <br>
-                    <span class="cart-idesc">До вокзала: 5 км</span>
-                    <span class="cart-idesc">До аэропорта: 20 км</span>
+                  <p class="text color-blue size-12 pl-20">
+                    <span class="mr-5 mb-5 d-inline-block space-nowrap">До станции проспект победы: 0,5 км</span>
+                    <span class="mr-5 mb-5 d-inline-block space-nowrap">До вокзала: 5 км</span>
+                    <span class="mr-5 mb-5 d-inline-block space-nowrap">До аэропорта: 20 км</span>
                   </p>
                 </div><!--/.col-->
                 <div class="col-auto">
@@ -600,15 +601,15 @@
                   </p>
                 </div><!--/.col-->
               </div><!--/.row-->
-              <p class="cart-desc size-13">
-                <span class="cart-idesc"><i class="fas fa-wifi color-gray"></i> Wi-Fi бесплатно</span>
-                <span class="cart-idesc"><i class="fas fa-utensils color-gray"></i> Завтрак бесплатно</span>
-                <span class="cart-idesc"><i class="fas fa-swimming-pool color-gray"></i> Бассейн</span>
+              <p class="text size-13">
+                <span class="mr-5 mb-5 d-inline-block space-nowrap"><i class="fas fa-wifi color-gray"></i> Wi-Fi бесплатно</span>
+                <span class="mr-5 mb-5 d-inline-block space-nowrap"><i class="fas fa-utensils color-gray"></i> Завтрак бесплатно</span>
+                <span class="mr-5 mb-5 d-inline-block space-nowrap"><i class="fas fa-swimming-pool color-gray"></i> Бассейн</span>
               </p>
               <div class="cart-divider mx-0"></div>
               <div class="row justify-content-between">
                 <div class="col-auto">
-                  <p class="cart-desc">Место в общественном номере:</p>
+                  <p class="text pl-20">Место в общественном номере:</p>
                 </div><!--/.col-->
                 <div class="col-auto">
                   <p class="cart-price">от 1200 руб/ночь</p>
@@ -617,7 +618,7 @@
               <div class="cart-divider mx-0"></div>
               <div class="row justify-content-between">
                 <div class="col-auto">
-                  <p class="cart-desc"><i class="fas fa-user size-18 color-green"></i> Отдельный номер:</p>
+                  <p class="cart-desc"><i class="fas fa-user fa-fw color-green"></i> Отдельный номер:</p>
                 </div><!--/.col-->
                 <div class="col-auto">
                   <p class="cart-desc mbold">от 1200 руб/ночь</p>
@@ -1322,7 +1323,7 @@
 <script src="assets/fancybox/dist/jquery.fancybox.min.js"></script>
 <script src="assets/bxslider/dist/jquery.bxslider.min.js"></script>
 <!--  scripts -->
-<script src="js/main.js?v=003"></script>
+<script src="js/main.js?v=005"></script>
 
 </body>
 </html>
