@@ -35,7 +35,7 @@
         {}
       ],
       "properties": {
-        "order": 51,
+        "order": 90,
         "id": 23,
         "name": "i-1",
         "prevSize": 20,
@@ -64,7 +64,7 @@
         {}
       ],
       "properties": {
-        "order": 52,
+        "order": 91,
         "id": 22,
         "name": "i-2",
         "prevSize": 20,
@@ -126,7 +126,7 @@
         {}
       ],
       "properties": {
-        "order": 53,
+        "order": 92,
         "id": 21,
         "name": "i-3",
         "prevSize": 20,
@@ -167,7 +167,7 @@
         {}
       ],
       "properties": {
-        "order": 54,
+        "order": 93,
         "id": 20,
         "name": "i-4",
         "prevSize": 20,
@@ -220,7 +220,7 @@
         {}
       ],
       "properties": {
-        "order": 55,
+        "order": 94,
         "id": 19,
         "name": "i-5",
         "prevSize": 20,
@@ -258,7 +258,7 @@
         {}
       ],
       "properties": {
-        "order": 56,
+        "order": 95,
         "id": 18,
         "name": "i-6",
         "prevSize": 20,
@@ -293,7 +293,7 @@
         {}
       ],
       "properties": {
-        "order": 57,
+        "order": 96,
         "id": 17,
         "name": "i-7",
         "prevSize": 20,
@@ -352,7 +352,7 @@
         {}
       ],
       "properties": {
-        "order": 58,
+        "order": 97,
         "id": 16,
         "name": "i-8",
         "prevSize": 20,
@@ -390,7 +390,7 @@
         {}
       ],
       "properties": {
-        "order": 59,
+        "order": 98,
         "id": 15,
         "name": "i-9",
         "prevSize": 20,
@@ -428,7 +428,7 @@
         {}
       ],
       "properties": {
-        "order": 60,
+        "order": 99,
         "id": 14,
         "name": "i-10",
         "prevSize": 20,
@@ -466,7 +466,7 @@
         {}
       ],
       "properties": {
-        "order": 61,
+        "order": 100,
         "id": 13,
         "name": "i-11",
         "prevSize": 20,
@@ -501,7 +501,7 @@
         {}
       ],
       "properties": {
-        "order": 62,
+        "order": 101,
         "id": 12,
         "name": "i-12",
         "prevSize": 20,
@@ -551,7 +551,7 @@
         {}
       ],
       "properties": {
-        "order": 63,
+        "order": 102,
         "id": 11,
         "name": "i-13",
         "prevSize": 20,
@@ -607,7 +607,7 @@
         {}
       ],
       "properties": {
-        "order": 64,
+        "order": 103,
         "id": 10,
         "name": "i-14",
         "prevSize": 20,
@@ -639,7 +639,7 @@
         {}
       ],
       "properties": {
-        "order": 65,
+        "order": 104,
         "id": 9,
         "name": "i-15",
         "prevSize": 20,
@@ -683,7 +683,7 @@
         {}
       ],
       "properties": {
-        "order": 66,
+        "order": 105,
         "id": 8,
         "name": "i-16",
         "prevSize": 20,
@@ -730,7 +730,7 @@
         {}
       ],
       "properties": {
-        "order": 67,
+        "order": 106,
         "id": 7,
         "name": "i-17",
         "prevSize": 20,
@@ -759,7 +759,7 @@
         {}
       ],
       "properties": {
-        "order": 68,
+        "order": 107,
         "id": 6,
         "name": "i-18",
         "prevSize": 20,
@@ -797,7 +797,7 @@
         {}
       ],
       "properties": {
-        "order": 69,
+        "order": 108,
         "id": 5,
         "name": "i-19",
         "prevSize": 20,
@@ -826,7 +826,7 @@
         {}
       ],
       "properties": {
-        "order": 70,
+        "order": 109,
         "id": 4,
         "name": "i-20",
         "prevSize": 20,
@@ -855,7 +855,7 @@
         {}
       ],
       "properties": {
-        "order": 71,
+        "order": 110,
         "id": 3,
         "name": "i-21",
         "prevSize": 20,
@@ -941,7 +941,7 @@
         {}
       ],
       "properties": {
-        "order": 72,
+        "order": 111,
         "id": 2,
         "name": "i-22",
         "prevSize": 20,
@@ -979,7 +979,7 @@
         {}
       ],
       "properties": {
-        "order": 73,
+        "order": 112,
         "id": 1,
         "name": "i-23",
         "prevSize": 20,
@@ -1014,7 +1014,7 @@
         {}
       ],
       "properties": {
-        "order": 74,
+        "order": 113,
         "id": 0,
         "name": "i-24",
         "prevSize": 20,
@@ -1043,7 +1043,7 @@
         {}
       ],
       "properties": {
-        "order": 76,
+        "order": 114,
         "id": 24,
         "name": "i-25",
         "prevSize": 20,
@@ -1075,7 +1075,7 @@
         {}
       ],
       "properties": {
-        "order": 77,
+        "order": 115,
         "id": 26,
         "name": "i-26",
         "prevSize": 20,
@@ -1088,7 +1088,7 @@
     {
       "icon": {
         "paths": [
-          "M803 512c0 159.058-128.942 288-288 288s-288-128.942-288-288c0-159.058 128.942-288 288-288s288 128.942 288 288z"
+          "M806 512c0 159.058-128.942 288-288 288s-288-128.942-288-288c0-159.058 128.942-288 288-288s288 128.942 288 288z"
         ],
         "attrs": [
           {}
@@ -1104,7 +1104,7 @@
         {}
       ],
       "properties": {
-        "order": 78,
+        "order": 116,
         "id": 25,
         "name": "i-27",
         "prevSize": 20,
@@ -1133,7 +1133,7 @@
         {}
       ],
       "properties": {
-        "order": 79,
+        "order": 117,
         "id": 27,
         "name": "i-28",
         "prevSize": 20,
@@ -1162,7 +1162,7 @@
         {}
       ],
       "properties": {
-        "order": 80,
+        "order": 118,
         "id": 28,
         "name": "i-29",
         "prevSize": 20,
@@ -1171,6 +1171,93 @@
       "setIdx": 0,
       "setId": 0,
       "iconIdx": 28
+    },
+    {
+      "icon": {
+        "paths": [
+          "M512 32c-194.4 0-352 161.2-352 360 0 145.2 49.4 185.6 315.8 580.6 7.939 11.708 21.183 19.299 36.2 19.299s28.261-7.592 36.102-19.147l0.098-0.153c266.4-395 315.8-435.4 315.8-580.6 0-198.8-157.6-360-352-360zM512 542c-81 0-146.6-67.2-146.6-150s65.6-150 146.6-150 146.6 67.2 146.6 150-65.6 150-146.6 150z"
+        ],
+        "attrs": [
+          {}
+        ],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "grid": 0,
+        "tags": [
+          "i-30"
+        ]
+      },
+      "attrs": [
+        {}
+      ],
+      "properties": {
+        "order": 88,
+        "id": 30,
+        "name": "i-30",
+        "prevSize": 20,
+        "code": 59677
+      },
+      "setIdx": 0,
+      "setId": 0,
+      "iconIdx": 29
+    },
+    {
+      "icon": {
+        "paths": [
+          "M926 761.8l-224.6-605.8-189.4 354-189.2-354-224.8 605.8h-66v91.4h339.4v-91.4h-50.8l49.4-151 142 249.2 142-249.2 49.4 151h-50.8v91.4h339.4v-91.4zM512 776.8z"
+        ],
+        "attrs": [
+          {}
+        ],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "grid": 0,
+        "tags": [
+          "i-31"
+        ]
+      },
+      "attrs": [
+        {}
+      ],
+      "properties": {
+        "order": 89,
+        "id": 29,
+        "name": "i-31",
+        "prevSize": 20,
+        "code": 59678
+      },
+      "setIdx": 0,
+      "setId": 0,
+      "iconIdx": 30
+    },
+    {
+      "icon": {
+        "paths": [
+          "M992 264.2l-96-104.2-480 502.8-288-301.6-96 103 382.4 399.8z"
+        ],
+        "attrs": [
+          {}
+        ],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "grid": 0,
+        "tags": [
+          "i-32"
+        ]
+      },
+      "attrs": [
+        {}
+      ],
+      "properties": {
+        "order": 119,
+        "id": 31,
+        "name": "i-32",
+        "prevSize": 20,
+        "code": 59679
+      },
+      "setIdx": 0,
+      "setId": 0,
+      "iconIdx": 31
     }
   ],
   "height": 1024,

@@ -161,7 +161,6 @@ template {
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 body {
   font-size: 14px;
-  padding-top: 50px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
@@ -195,6 +194,7 @@ a:hover {
   display: block;
   margin: 0;
   padding: 15px 0 1px;
+  position: relative;
   overflow: hidden;
 }
 .section {
@@ -209,6 +209,9 @@ a:hover {
   background: #fff;
   -webkit-box-shadow: 0 3px 10px 0 rgba(0,0,0,0.4);
           box-shadow: 0 3px 10px 0 rgba(0,0,0,0.4);
+}
+.header-offset {
+  padding-top: 50px;
 }
 .footer {
   background-color: #2f6ef6;
@@ -285,7 +288,7 @@ a:hover {
   display: block;
   margin: 0 0 15px;
   padding: 0;
-  background: #c8c8c8;
+  background: #dedede;
   height: 1px;
 }
 .logo-ln {
@@ -494,7 +497,7 @@ a:hover {
   display: block;
   margin: 0 0 15px;
   padding: 0 15px;
-  border: 1px solid #c8c8c8;
+  border: 1px solid #dedede;
   border-radius: 5px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -528,7 +531,7 @@ a:hover {
   border: 1px solid #2f6ef6;
 }
 select.input:focus {
-  border: 1px solid #c8c8c8;
+  border: 1px solid #dedede;
 }
 textarea.input {
   padding: 15px;
@@ -544,6 +547,11 @@ button.input-h {
   display: flex;
   margin: 0 0 15px;
   padding: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
 }
 .checkbox-box {
   display: block;
@@ -553,13 +561,40 @@ button.input-h {
           box-sizing: border-box;
   width: 15px;
   height: 15px;
-  border: 1px solid #c8c8c8;
+  border: 1px solid #dedede;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 15px;
           flex: 0 0 15px;
 }
+.checkbox-box:before {
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  content: '\e91f';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: block;
+  margin: -2px 0 0 1px;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  opacity: 0;
+  -webkit-transition: 0.16s all ease-in-out;
+  transition: 0.16s all ease-in-out;
+}
 .checkbox-input {
   display: none !important;
+}
+.checkbox-input:checked + .checkbox-box:before {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 .checkbox-label {
   display: block;
@@ -576,10 +611,12 @@ button.input-h {
   display: -ms-flexbox;
   display: flex;
   margin: 0;
-  padding: 10px 10px 1px;
+  padding: 8px 8px 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   color: #000;
   text-decoration: none;
   outline: none;
@@ -592,6 +629,7 @@ button.input-h {
   height: 100%;
   -webkit-box-shadow: 0 3px 10px 0 rgba(0,0,0,0.2);
           box-shadow: 0 3px 10px 0 rgba(0,0,0,0.2);
+  border: 1px solid #fff;
   border-radius: 5px;
   overflow: hidden;
 }
@@ -609,12 +647,20 @@ button.input-h {
 .calc-btn:hover .calc-btn-i {
   color: #2f6ef6;
 }
+.calc-btn.active {
+  border: 1px solid #2f6ef6;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.calc-btn.active .calc-btn-i {
+  color: #2f6ef6;
+}
 .calc-btn-i {
   display: block;
   margin: 0 10px 10px 0;
   padding: 0;
   color: #919191;
-  font-size: 1.8em;
+  font-size: 2.3em;
   -webkit-transition: 0.16s all ease-in-out;
   transition: 0.16s all ease-in-out;
 }
@@ -623,36 +669,33 @@ button.input-h {
   margin: 0 0 10px;
   padding: 0;
   color: #000;
-  font-size: 0.8em;
+  font-size: 1em;
   font-weight: 400;
 }
-.calc-lbtn {
+.calc-itotal {
   display: block;
   margin: 0 0 15px;
   padding: 15px 15px 1px;
-  -webkit-box-shadow: 0 3px 10px 0 rgba(0,0,0,0.2);
-          box-shadow: 0 3px 10px 0 rgba(0,0,0,0.2);
+  background: #fff;
+  border: 1px solid #dedede;
   border-radius: 5px;
   overflow: hidden;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  cursor: pointer;
-  -webkit-transition: 0.16s all ease-in-out;
-  transition: 0.16s all ease-in-out;
 }
-.calc-lbtn:hover {
-  -webkit-box-shadow: 0 3px 10px 0 rgba(0,0,0,0.4);
-          box-shadow: 0 3px 10px 0 rgba(0,0,0,0.4);
+.calc-form-col {
+  background: url("../img/shark.png") 50% 100% no-repeat;
+  background-size: auto;
 }
 .img-a {
   display: block;
-  margin: 0 0 15px;
+  margin: 0 auto 15px;
   padding: 0;
   max-width: 100%;
   height: auto;
-  border-radius: 15px 0 0 15px;
+  border-radius: 15px;
 }
 .order {
   margin: 0;
@@ -704,7 +747,7 @@ button.input-h {
   overflow: hidden;
 }
 .wall-white {
-  border: 1px solid #c8c8c8;
+  border: 1px solid #dedede;
   background-color: #fff;
 }
 .wall-shadow {
@@ -739,11 +782,33 @@ button.input-h {
   text-transform: none;
   line-height: 1;
   content: '\e918';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   display: block;
   margin: 0.1em 0 0 -1.3em;
   padding: 0;
   float: left;
   font-size: 1em;
+}
+.ln-white {
+  color: #fff;
+  text-decoration: none;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  cursor: pointer;
+}
+.ln-white:active,
+.ln-white:focus,
+.ln-white:hover {
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+}
+.ln-white:hover {
+  text-decoration: underline;
 }
 .fwgt-300 {
   font-weight: 300;
@@ -766,6 +831,9 @@ button.input-h {
 .gray {
   color: #919191;
 }
+.red {
+  color: #f00;
+}
 /*
  * Small devices (phones, 576px and up)                          ≥ 576px
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
@@ -781,6 +849,10 @@ button.input-h {
  * Medium devices (tablets, 768px and up)                        ≥ 768px
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 @media (min-width: 768px) {
+  body,
+  html {
+    height: 100%;
+  }
   .title {
     font-size: 2em;
   }
@@ -803,12 +875,26 @@ button.input-h {
   .calc-btn-i {
     font-size: 3em;
   }
+  .h-md-full {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    min-height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: between;
+        -ms-flex-pack: between;
+            justify-content: between;
+  }
 }
 /*
  * Large devices (desktops, 992px and up)                        ≥ 992px
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 @media (min-width: 992px) {
-  body {
+  .header-offset {
     padding-top: 85px;
   }
   .logo-header {
@@ -825,16 +911,8 @@ button.input-h {
   .slide {
     height: 500px;
   }
-  .img-a {
-    position: absolute;
-    top: 0px;
-    left: 15px;
-    max-width: none;
-    height: 100%;
-    width: auto;
-  }
   .br-lg-lgray {
-    border-right: 1px solid #c8c8c8;
+    border-right: 1px solid #dedede;
   }
 }
 /*
