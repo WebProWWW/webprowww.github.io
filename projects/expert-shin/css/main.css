@@ -767,11 +767,24 @@ button.input-h {
   border-right: 50px solid #2f6ef6;
   border-bottom: 50px solid transparent;
 }
+.modal-sm {
+  padding: 35px 25px 10px;
+  width: 100%;
+  max-width: 400px;
+}
 .spnwr {
   white-space: nowrap;
 }
 .bi {
   padding-left: 1.3em;
+}
+.bi-list:before,
+.bi-check:before {
+  display: block;
+  margin: 0.1em 0 0 -1.3em;
+  padding: 0;
+  float: left;
+  font-size: 1em;
 }
 .bi-list:before {
   font-family: 'icomoon' !important;
@@ -784,11 +797,18 @@ button.input-h {
   content: '\e918';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display: block;
-  margin: 0.1em 0 0 -1.3em;
-  padding: 0;
-  float: left;
-  font-size: 1em;
+}
+.bi-check:before {
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  content: '\e91f';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .ln-white {
   color: #fff;

@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="format-detection" content="telephone=no">
   <!-- fonts -->
+  <!--
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic">
+  -->
   <link rel="stylesheet" href="assets/icomoon/style.css">
   <!-- bootstrap -->
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
@@ -13,7 +15,7 @@
   <link rel="stylesheet" href="assets/bxslider/dist/jquery.bxslider.min.css">
   <link rel="stylesheet" href="assets/fancybox/dist/jquery.fancybox.min.css">
   <!-- style -->
-  <link rel="stylesheet" href="css/main.css?v=001">
+  <link rel="stylesheet" href="css/main.css?v=002">
   <!-- favicon -->
   <link rel="apple-touch-icon-precomposed" sizes="57x57" href="http://www.expert-shin.ru/apple-touch-icon-57x57.png">
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://www.expert-shin.ru/apple-touch-icon-114x114.png">
@@ -192,39 +194,40 @@
 
 <div class="order collapse" id="order-fix">
   <div class="container">
-    <div class="text-right">
-      <a class="order-close js-collapse" href="#order-fix"><i class="i-29"></i></a>
-    </div>
     <div class="row align-items-center justify-content-around">
-      <div class="col-12 col-lg-4">
-        <p class="text d-flex align-items-center">
-          <span class="d-block fwgt-600 em-11">Общая стоимость выбранных услуг:</span>
-          <span class="d-block spnwr text-right ml-30">
-            <span class="fwgt-700 em-12">от 8 888 888</span> <i class="i-20"></i>
+      <div class="col-12 col-sm-auto">
+        <p class="text d-flex align-items-end">
+          <span class="d-block fwgt-600 em-11">К оплате:</span>
+          <span class="d-block spnwr text-right ml-15">
+            <span class="fwgt-700 em-13"><span class="js-total-all"></span></span> <i class="i-20"></i>
           </span>
         </p>
-        <p class="text">Точная стоимость ремонта и время проведения определяется мастером на месте.</p>
-        <p class="text fwgt-600">Постоянным клиентам скидка 10%</p>
       </div><!--/.col-->
-      <div class="col-12 col-lg-4">
-        <p class="text text-center em-12 fwgt-600">Оформить заказ</p>
-        <form>
-          <div class="form-sm row">
-            <div class="col-12 col-sm col-lg-12">
-              <input class="input" type="text" name="" placeholder="Имя">
-            </div><!--/.col-->
-            <div class="col-12 col-sm col-lg-12">
-              <input class="input js-mask" mask="+7-999-999-99-99" type="text" name="" placeholder="Телефон">
-            </div><!--/.col-->
-            <div class="col-12 col-sm col-lg-12">
-              <button class="btn btn-blue input-h">Отправить</button>
-            </div><!--/.col-->
-          </div>
-        </form>
+      <div class="col-12 col-sm-auto">
+        <a class="btn btn-blue p-10" data-fancybox href="#order-modal">Оформить заказ</a>
       </div><!--/.col-->
     </div><!--/.row-->
   </div><!--/.container-->
 </div>
+
+<div class="d-none">
+
+<!-- ОФОРМИТЬ ЗАКАЗ -->
+<div class="modal-sm" id="order-modal">
+  <p class="text text-center em-12 fwgt-600">Оформить заказ</p>
+  <form>
+    <input class="input" type="text" name="" placeholder="Имя">
+    <input class="input js-mask" mask="+7-999-999-99-99" type="text" name="" placeholder="Телефон">
+    <button class="btn btn-blue input-h">Отправить</button>
+  </form>
+  <div class="divider"></div>
+  <p class="text fwgt-700 em-12">
+    Итого: <span class="js-total-all ml-15"></span> <i class="i-20 em-8"></i>
+  </p>
+  <div id="js-orderm-ilist"></div>
+</div><!--/.modal-->
+
+</div><!--/.d-none-->
 
 <!-- jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -234,7 +237,7 @@
 <script src="assets/fancybox/dist/jquery.fancybox.min.js"></script>
 <script src="assets/modernizr/modernizr-mq.js"></script>
 <!-- script -->
-<script src="js/main.js?v=001"></script>
+<script src="js/main.js?v=002"></script>
 
 </body>
 </html>

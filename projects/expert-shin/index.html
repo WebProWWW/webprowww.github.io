@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="format-detection" content="telephone=no">
   <!-- fonts -->
+  <!--
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic">
+  -->
   <link rel="stylesheet" href="assets/icomoon/style.css">
   <!-- bootstrap -->
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
@@ -13,7 +15,7 @@
   <link rel="stylesheet" href="assets/bxslider/dist/jquery.bxslider.min.css">
   <link rel="stylesheet" href="assets/fancybox/dist/jquery.fancybox.min.css">
   <!-- style -->
-  <link rel="stylesheet" href="css/main.css?v=001">
+  <link rel="stylesheet" href="css/main.css?v=002">
   <!-- favicon -->
   <link rel="apple-touch-icon-precomposed" sizes="57x57" href="http://www.expert-shin.ru/apple-touch-icon-57x57.png">
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://www.expert-shin.ru/apple-touch-icon-114x114.png">
@@ -148,61 +150,61 @@
       <div class="col-12 col-lg-6 br-lg-lgray">
         <div class="row align-items-stretch">
           <div class="col-12 col-sm-6 mb-15">
-            <a class="calc-btn js-calc-btn" href="#calc-form-1">
+            <a class="calc-btn js-calc-btn" href="#js-calc-item-1">
               <i class="i-1 calc-btn-i"></i>
               <h3 class="calc-btn-txt">Авто<br>шиномонтаж</h3>
             </a>
           </div><!--/.col-->
           <div class="col-12 col-sm-6 mb-15">
-            <a class="calc-btn js-calc-btn" href="#calc-form-2">
+            <a class="calc-btn js-calc-btn" href="#js-calc-item-2">
               <i class="i-8 calc-btn-i"></i>
               <h3 class="calc-btn-txt">Ремонт<br>литых дисков</h3>
             </a>
           </div><!--/.col-->
           <div class="col-12 col-sm-6 mb-15">
-            <a class="calc-btn js-calc-btn" href="#calc-form-3">
+            <a class="calc-btn js-calc-btn" href="#js-calc-item-3">
               <i class="i-11 calc-btn-i"></i>
               <h3 class="calc-btn-txt">Ремонт<br>проколов</h3>
             </a>
           </div><!--/.col-->
           <div class="col-12 col-sm-6 mb-15">
-            <a class="calc-btn js-calc-btn" href="#calc-form-4">
+            <a class="calc-btn js-calc-btn" href="#js-calc-item-4">
               <i class="i-13 calc-btn-i"></i>
               <h3 class="calc-btn-txt">Аргонная<br>сварка</h3>
             </a>
           </div><!--/.col-->
           <div class="col-12 col-sm-6 mb-15">
-            <a class="calc-btn js-calc-btn" href="#calc-form-5">
+            <a class="calc-btn js-calc-btn" href="#js-calc-item-5">
               <i class="i-14 calc-btn-i"></i>
               <h3 class="calc-btn-txt">Порошковая<br>покраска дисков</h3>
             </a>
           </div><!--/.col-->
           <div class="col-12 col-sm-6 mb-15">
-            <a class="calc-btn js-calc-btn" href="#calc-form-6">
+            <a class="calc-btn js-calc-btn" href="#js-calc-item-6">
               <i class="i-15 calc-btn-i"></i>
               <h3 class="calc-btn-txt">Мото<br>шиномонтаж</h3>
             </a>
           </div><!--/.col-->
           <div class="col-12 col-sm-6 mb-15">
-            <a class="calc-btn js-calc-btn" href="#calc-form-7">
+            <a class="calc-btn js-calc-btn" href="#js-calc-item-7">
               <i class="i-16 calc-btn-i"></i>
               <h3 class="calc-btn-txt">Ремонт<br>автостекол</h3>
             </a>
           </div><!--/.col-->
           <div class="col-12 col-sm-6 mb-15">
-            <a class="calc-btn js-calc-btn" href="#calc-form-8">
+            <a class="calc-btn js-calc-btn" href="#js-calc-item-8">
               <i class="i-17 calc-btn-i"></i>
               <h3 class="calc-btn-txt">Заправка<br>кондиционера</h3>
             </a>
           </div><!--/.col-->
           <div class="col-12 col-sm-6 mb-15">
-            <a class="calc-btn js-calc-btn" href="#calc-form-9">
+            <a class="calc-btn js-calc-btn" href="#js-calc-item-9">
               <i class="i-12 calc-btn-i"></i>
               <h3 class="calc-btn-txt">Хранение<br>шин и дисков</h3>
             </a>
           </div><!--/.col-->
           <div class="col-12 col-sm-6 mb-15">
-            <a class="calc-btn js-calc-btn" href="#calc-form-10">
+            <a class="calc-btn js-calc-btn" href="#js-calc-item-10">
               <i class="i-10 calc-btn-i"></i>
               <h3 class="calc-btn-txt">Доп<br> услуги</h3>
             </a>
@@ -226,94 +228,111 @@
       </div><!--/.col-->
       <div class="col-12 col-lg-6 calc-form-col">
         <div class="divider d-lg-none"></div>
-        <div class="js-calc-form">
-          <div class="collapse js-calc-group" id="calc-form-1">
+        <div class="js-calc-parent">
+          <div class="collapse" id="js-calc-item-1">
             <div class="row">
               <div class="col-12 col-md-6">
                 <label class="label">Автомобиль</label>
-                <select
-                  data-label="Легковой а/м"
-                  data-val="0"
-                  data-operand="+"
-                  class="input js-calc-input">
-                  <option value="0" selected>Легковой а/м</option>
-                  <option value="1">Джип</option>
-                  <option value="2">Микроавтобус</option>
-                  <option value="3">Минивен</option>
-                  <option value="4">Кроссовер</option>
+                <select class="input js-calc-input" id="js-calc-input-1">
+                  <option selected disabled>Выберите</option>
+                  <option value="{'pi':'0','l':'Легковой'}">Легковой</option>
+                  <option value="{'pi':'1','l':'Джип'}">Джип</option>
+                  <option value="{'pi':'1','l':'Микроавтобус'}">Микроавтобус</option>
+                  <option value="{'pi':'1','l':'Минивен'}">Минивен</option>
+                  <option value="{'pi':'1','l':'Кроссовер'}">Кроссовер</option>
+                </select>
+                <label class="label">Диаметр диска</label>
+                <select class="input js-calc-input" id="js-calc-input-2">
+                  <option selected disabled>Выберите</option>
+                  <option value="{'i':'0','r':'13'}">13</option>
+                  <option value="{'i':'1','r':'14'}">14</option>
+                  <option value="{'i':'2','r':'15'}">15</option>
+                  <option value="{'i':'3','r':'16'}">16</option>
+                  <option value="{'i':'4','r':'17'}">17</option>
+                  <option value="{'i':'5','r':'18'}">18</option>
+                  <option value="{'i':'6','r':'19'}">19</option>
+                  <option value="{'i':'7','r':'20'}">20</option>
+                  <option value="{'i':'8','r':'21'}">21</option>
+                  <option value="{'i':'9','r':'22'}">22</option>
+                  <option value="{'i':'10','r':'23'}">23</option>
+                  <option value="{'i':'11','r':'24'}">24</option>
+                </select>
+                <label class="label">Количество колес</label>
+                <select class="input js-calc-input" id="js-calc-input-3">
+                  <option selected disabled>Выберите</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
                 </select>
               </div><!--/.col-->
               <div class="col-12 col-md-6">
                 <label class="label">Нужен съем/установка?</label>
-                <select class="input">
-                  <option selected>Нет</option>
-                  <option>Да</option>
+                <select class="input js-calc-input" id="js-calc-input-4">
+                  <option selected disabled>Выберите</option>
+                  <option value="[
+                    {'p':['80','0'],'l':'съем/установка'},
+                    {'p':['100','140'],'l':'съем/установка'},
+                    {'p':['120','160'],'l':'съем/установка'},
+                    {'p':['140','180'],'l':'съем/установка'},
+                    {'p':['160','200'],'l':'съем/установка'},
+                    {'p':['180','240'],'l':'съем/установка'},
+                    {'p':['200','220'],'l':'съем/установка'},
+                    {'p':['240','290'],'l':'съем/установка'},
+                    {'p':['280','340'],'l':'съем/установка'},
+                    {'p':['320','390'],'l':'съем/установка'},
+                    {'p':['360','440'],'l':'съем/установка'},
+                    {'p':['400','490'],'l':'съем/установка'}
+                  ]">Да</option>
+                  <option value="null">Нет</option>
                 </select>
-              </div><!--/.col-->
-              <div class="col-12 col-md-6">
-                <label class="label">Диаметр диска</label>
-                <select
-                  data-label="Диаметр диска"
-                  data-val="0"
-                  data-price="0"
-                  class="input">
-                  <option value="0" selected disabled>Выберите</option>
-                  <option value="350">13</option>
-                  <option value="580">14</option>
-                  <option value="660">15</option>
-                  <option value="740">16</option>
-                  <option value="820">17</option>
-                  <option value="900">18</option>
-                  <option value="980">19</option>
-                  <option value="1170">20</option>
-                  <option value="1360">21</option>
-                  <option value="1610">22</option>
-                  <option value="1860">23</option>
-                  <option value="2110">24</option>
-                </select>
-              </div><!--/.col-->
-              <div class="col-12 col-md-6">
                 <label class="label">Нужен монтаж/демонтаж?</label>
-                <select
-                  data-label="монтаж/демонтаж"
-                  data-val="0"
-                  class="input">
-                  <option value="0" selected>Нет</option>
-                  <option value="1">Да</option>
+                <select class="input js-calc-input" id="js-calc-input-5">
+                  <option selected disabled>Выберите</option>
+                  <option value="[
+                    {'p':['120','0'],'l':'монтаж/демонтаж'},
+                    {'p':['150','200'],'l':'монтаж/демонтаж'},
+                    {'p':['180','230'],'l':'монтаж/демонтаж'},
+                    {'p':['210','260'],'l':'монтаж/демонтаж'},
+                    {'p':['240','290'],'l':'монтаж/демонтаж'},
+                    {'p':['270','320'],'l':'монтаж/демонтаж'},
+                    {'p':['300','350'],'l':'монтаж/демонтаж'},
+                    {'p':['360','420'],'l':'монтаж/демонтаж'},
+                    {'p':['420','490'],'l':'монтаж/демонтаж'},
+                    {'p':['510','590'],'l':'монтаж/демонтаж'},
+                    {'p':['600','690'],'l':'монтаж/демонтаж'},
+                    {'p':['690','790'],'l':'монтаж/демонтаж'}
+                  ]">Да</option>
+                  <option value="null">Нет</option>
                 </select>
-              </div><!--/.col-->
-              <div class="col-12 col-md-6">
-                <label class="label">Кол-во колес</label>
-                <select class="input">
-                  <option selected>Выберите</option>
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                </select>
-              </div><!--/.col-->
-              <div class="col-12 col-md-6">
                 <label class="label">Нужна балансировка?</label>
-                <select class="input">
-                  <option selected>Нет</option>
-                  <option>Да</option>
+                <select class="input js-calc-input" id="js-calc-input-6">
+                  <option selected disabled>Выберите</option>
+                  <option value="[
+                    {'p':['150','0'],'l':'балансировка'},
+                    {'p':['180','240'],'l':'балансировка'},
+                    {'p':['210','270'],'l':'балансировка'},
+                    {'p':['240','300'],'l':'балансировка'},
+                    {'p':['270','330'],'l':'балансировка'},
+                    {'p':['300','360'],'l':'балансировка'},
+                    {'p':['330','390'],'l':'балансировка'},
+                    {'p':['390','460'],'l':'балансировка'},
+                    {'p':['450','530'],'l':'балансировка'},
+                    {'p':['540','630'],'l':'балансировка'},
+                    {'p':['630','730'],'l':'балансировка'},
+                    {'p':['720','830'],'l':'балансировка'}
+                  ]">Да</option>
+                  <option value="0">Нет</option>
                 </select>
               </div><!--/.col-->
             </div><!--/.row-->
             <label class="checkbox">
-              <input
-                class="checkbox-input js-calc-input"
-                type="checkbox"
-                name="">
+              <input type="checkbox" class="checkbox-input js-calc-input" id="js-calc-input-7">
               <span class="checkbox-box"></span>
               <span class="checkbox-label">Усиленные шины RUNFLAT</span>
             </label>
             <label class="checkbox">
-              <input
-                class="checkbox-input js-calc-input"
-                type="checkbox"
-                name="">
+              <input type="checkbox" class="checkbox-input js-calc-input" id="js-calc-input-8">
               <span class="checkbox-box"></span>
               <span class="checkbox-label">Колеса OFF ROAD</span>
             </label>
@@ -328,54 +347,58 @@
                 по истечению 14 суток - утилизация
               </span>
             </p>
-            <div class="js-calc-group-total"></div>
+            <div class="js-calc-item-total"></div>
             <!--
             <div class="calc-itotal">
-              <p class="text em-12 fwgt-700 d-flex justify-content-between">
-                <span>4 колеса, R15</span>
-                <span>2 040<i class="i-20 em-8"></i></span>
+              <p class="text d-flex justify-content-between">
+                <span class="d-block">
+                  4 колеса, R15, 123
+                </span>
+                <span class="d-block fwgt-700">
+                  2 040<i class="i-20 em-8"></i>
+                  <a class="js-rm-item ml-5" href="javascript:;"><i class="i-29"></i></a>
+                </span>
               </p>
-              <div class="row align-items-end">
-                <div class="col">
-                  <p class="text">
-                    <span class="spnwr">Легковой а/м,</span>
-                    <span class="spnwr">съем/установка,</span>
-                    <span class="spnwr">монтаж/демонтаж,</span>
-                    <span class="spnwr">балансировка</span>
-                  </p>
-                </div>
-                <div class="col-auto">
-                  <i class="i-4 em-18 blue d-block mb-15"></i>
-                </div>
-              </div>
+              <p class="text">
+                <span class="d-block mb-5 bi bi-check">съем/установка</span>
+                <span class="d-block mb-5 bi bi-check">съем/установка</span>
+                <span class="d-block mb-5 bi bi-check">съем/установка</span>
+                <span class="d-block mb-5 bi bi-check">съем/установка</span>
+                <span class="d-block mb-5 bi bi-check">съем/установка</span>
+                <span class="d-block mb-5 bi bi-check">съем/установка</span>
+              </p>
+              <p class="text mb-5 bi bi-check">съем/установка</p>
+              <p class="text mb-5 bi bi-check">съем/установка</p>
+              <p class="text mb-5 bi bi-check">съем/установка</p>
             </div>
-            --><!--/.calc-itotal-->
+            -->
+            <!--/.calc-itotal-->
           </div><!--/.collapse-->
-          <div class="collapse js-calc-group" id="calc-form-2">
+          <div class="collapse" id="js-calc-item-2">
             <div class="row">
               <div class="col-12 col-md-6">
                 <label class="label">Вид диска</label>
-                <select class="input">
+                <select class="input js-calc-input" id="js-calc-input-9">
                   <option selected disabled>Выберите</option>
-                  <option>Стальные</option>
-                  <option>Литые</option>
-                  <option>Косметика</option>
+                  <option value="{'pi':'0','label':'Стальные'}">Стальные</option>
+                  <option value="{'pi':'1','label':'Литые'}">Литые</option>
+                  <option value="{'pi':'2','label':'Косметика'}">Косметика</option>
                 </select>
               </div><!--/.col-->
               <div class="col-12 col-md-6">
                 <label class="label">Радиус</label>
-                <select class="input">
+                <select class="input js-calc-input" id="js-calc-input-10">
                   <option selected disabled>Выберите</option>
-                  <option>R 13</option>
-                  <option>R 14</option>
-                  <option>R 15</option>
-                  <option>R 16</option>
-                  <option>R 17</option>
-                  <option>R 18</option>
-                  <option>R 19</option>
-                  <option>R 20</option>
-                  <option>R 21</option>
-                  <option>R 22</option>
+                  <option value="{'r':'13','p':['500','600','400']}">13</option>
+                  <option value="{'r':'14','p':['600','750','600']}">14</option>
+                  <option value="{'r':'15','p':['650','1000','850']}">15</option>
+                  <option value="{'r':'16','p':['700','1350','1200']}">16</option>
+                  <option value="{'r':'17','p':['0','1700','1550']}">17</option>
+                  <option value="{'r':'18','p':['0','2050','1900']}">18</option>
+                  <option value="{'r':'19','p':['0','2400','2250']}">19</option>
+                  <option value="{'r':'20','p':['0','2750','2600']}">20</option>
+                  <option value="{'r':'21','p':['0','3150','3000']}">21</option>
+                  <option value="{'r':'22','p':['0','3550','3400']}">22</option>
                 </select>
               </div><!--/.col-->
             </div><!--/.row-->
@@ -390,13 +413,15 @@
                 по истечению 14 суток - утилизация
               </span>
             </p>
+            <div class="js-calc-item-total"></div>
           </div><!--/.collapse-->
-          <div class="collapse js-calc-group" id="calc-form-3">
+          <div class="collapse" id="js-calc-item-3">
             <label class="checkbox">
               <input
-                class="checkbox-input js-calc-input"
                 type="checkbox"
-                name="">
+                class="checkbox-input js-calc-input"
+                id="js-calc-input-11"
+                value="{'p':'750','label':'Ремонт шины жгутом'}">
               <span class="checkbox-box"></span>
               <span class="checkbox-label w-100 d-flex justify-content-between align-items-end">
                 <span>Ремонт шины жгутом</span>
@@ -406,9 +431,10 @@
             <div class="divider"></div>
             <label class="checkbox">
               <input
-                class="checkbox-input js-calc-input"
                 type="checkbox"
-                name="">
+                class="checkbox-input js-calc-input"
+                id="js-calc-input-12"
+                value="{'p':'350','label':'Ремонт шины пластырем'}">
               <span class="checkbox-box"></span>
               <span class="checkbox-label w-100 d-flex justify-content-between align-items-end">
                 <span>Ремонт шины пластырем</span>
@@ -418,9 +444,10 @@
             <div class="divider"></div>
             <label class="checkbox">
               <input
-                class="checkbox-input js-calc-input"
                 type="checkbox"
-                name="">
+                class="checkbox-input js-calc-input"
+                id="js-calc-input-13"
+                value="{'p':'250','label':'Шлифовка борта'}">
               <span class="checkbox-box"></span>
               <span class="checkbox-label w-100 d-flex justify-content-between align-items-end">
                 <span>Шлифовка борта</span>
@@ -430,9 +457,10 @@
             <div class="divider"></div>
             <label class="checkbox">
               <input
-                class="checkbox-input js-calc-input"
                 type="checkbox"
-                name="">
+                class="checkbox-input js-calc-input"
+                id="js-calc-input-14"
+                value="{'p':'100','label':'Ремонт камеры'}">
               <span class="checkbox-box"></span>
               <span class="checkbox-label w-100 d-flex justify-content-between align-items-end">
                 <span>Ремонт камеры</span>
@@ -442,9 +470,10 @@
             <div class="divider"></div>
             <label class="checkbox">
               <input
-                class="checkbox-input js-calc-input"
                 type="checkbox"
-                name="">
+                class="checkbox-input js-calc-input"
+                id="js-calc-input-15"
+                value="{'p':'500','label':'Варка (вулканизация)'}">
               <span class="checkbox-box"></span>
               <span class="checkbox-label w-100 d-flex justify-content-between align-items-end">
                 <span>Варка (вулканизация)</span>
@@ -462,13 +491,15 @@
                 по истечению 14 суток - утилизация
               </span>
             </p>
+            <div class="js-calc-item-total"></div>
           </div><!--/.collapse-->
-          <div class="collapse js-calc-group" id="calc-form-4">
+          <div class="collapse" id="js-calc-item-4">
             <label class="checkbox">
               <input
-                class="checkbox-input js-calc-input"
                 type="checkbox"
-                name="">
+                class="checkbox-input js-calc-input"
+                id="js-calc-input-16"
+                value="{'p':'150','label':'Варка аргоном'}">
               <span class="checkbox-box"></span>
               <span class="checkbox-label w-100 d-flex justify-content-between align-items-end">
                 <span>Варка аргоном</span>
@@ -478,9 +509,10 @@
             <div class="divider"></div>
             <label class="checkbox">
               <input
-                class="checkbox-input js-calc-input"
                 type="checkbox"
-                name="">
+                class="checkbox-input js-calc-input"
+                id="js-calc-input-17"
+                value="{'p':'200','label':'Наварка диска'}">
               <span class="checkbox-box"></span>
               <span class="checkbox-label w-100 d-flex justify-content-between align-items-end">
                 <span>Наварка диска</span>
@@ -498,51 +530,55 @@
                 по истечению 14 суток - утилизация
               </span>
             </p>
+            <div class="js-calc-item-total"></div>
           </div><!--/.collapse-->
-          <div class="collapse js-calc-group" id="calc-form-5">
+          <div class="collapse" id="js-calc-item-5">
             <div class="row">
               <div class="col-12 col-md-6">
                 <label class="label">Радиус</label>
-                <select class="input">
+                <select class="input js-calc-input" id="js-calc-input-18">
                   <option selected disabled>Выберите</option>
-                  <option>R 13</option>
-                  <option>R 14</option>
-                  <option>R 15</option>
-                  <option>R 16</option>
-                  <option>R 17</option>
-                  <option>R 18</option>
-                  <option>R 19</option>
-                  <option>R 20</option>
-                  <option>R 21</option>
-                  <option>R 22</option>
+                  <option value="{'p':'1700','label':'13'}">13</option>
+                  <option value="{'p':'1800','label':'14'}">14</option>
+                  <option value="{'p':'1900','label':'15'}">15</option>
+                  <option value="{'p':'2100','label':'16'}">16</option>
+                  <option value="{'p':'2400','label':'17'}">17</option>
+                  <option value="{'p':'2800','label':'18'}">18</option>
+                  <option value="{'p':'3300','label':'19'}">19</option>
+                  <option value="{'p':'3800','label':'20'}">20</option>
+                  <option value="{'p':'4300','label':'21'}">21</option>
+                  <option value="{'p':'4800','label':'22'}">22</option>
+                  <option value="{'p':'5300','label':'23'}">23</option>
+                  <option value="{'p':'5800','label':'24'}">24</option>
                 </select>
               </div><!--/.col-->
               <div class="w-100"></div>
               <div class="col-12 col-md-6">
-                <label class="label">Кол-во колес</label>
-                <select class="input">
+                <label class="label">Количество дисков</label>
+                <select class="input js-calc-input" id="js-calc-input-19">
                   <option selected>Выберите</option>
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
                 </select>
               </div><!--/.col-->
             </div><!--/.row-->
             <label class="checkbox">
               <input
-                class="checkbox-input js-calc-input"
                 type="checkbox"
-                name="">
+                class="checkbox-input js-calc-input"
+                id="js-calc-input-20"
+                value="Разборные">
               <span class="checkbox-box"></span>
               <span class="checkbox-label">Разборные</span>
             </label>
             <label class="checkbox">
               <input
-                class="checkbox-input js-calc-input"
                 type="checkbox"
-                name="">
+                class="checkbox-input js-calc-input"
+                id="js-calc-input-21"
+                value="Комбинированные">
               <span class="checkbox-box"></span>
               <span class="checkbox-label">Комбинированные</span>
             </label>
@@ -557,25 +593,30 @@
                 по истечению 14 суток - утилизация
               </span>
             </p>
+            <div class="js-calc-item-total"></div>
           </div><!--/.collapse-->
-          <div class="collapse js-calc-group" id="calc-form-6">
+          <div class="collapse" id="js-calc-item-6">
             <div class="row">
               <div class="col-12 col-md-6">
                 <label class="label">Радиус</label>
-                <select class="input">
-                  <option selected disabled>Выберите радиус</option>
-                  <option>Нет</option>
-                  <option>13</option>
-                  <option>14</option>
-                  <option>15</option>
+                <select class="input js-calc-input" id="js-calc-input-22">
+                  <option selected disabled>Выберите</option>
+                  <option value="{'r':'13'}">13</option>
+                  <option value="{'r':'14'}">14</option>
+                  <option value="{'r':'15'}">15</option>
+                  <option value="{'r':'16'}">16</option>
+                  <option value="{'r':'17'}">17</option>
+                  <option value="{'r':'18'}">18</option>
+                  <option value="{'r':'19'}">19</option>
                 </select>
               </div><!--/.col-->
             </div><!--/.row-->
             <label class="checkbox">
               <input
-                class="checkbox-input js-calc-input"
                 type="checkbox"
-                name="">
+                class="checkbox-input js-calc-input"
+                id="js-calc-input-23"
+                value="{'p':'750','label':'Снять/поставить'}">
               <span class="checkbox-box"></span>
               <span class="checkbox-label w-100 d-flex justify-content-between align-items-end">
                 <span>Снять/поставить</span>
@@ -585,9 +626,10 @@
             <div class="divider"></div>
             <label class="checkbox">
               <input
-                class="checkbox-input js-calc-input"
                 type="checkbox"
-                name="">
+                class="checkbox-input js-calc-input"
+                id="js-calc-input-24"
+                value="{'p':'1700','label':'Ремонт диска'}">
               <span class="checkbox-box"></span>
               <span class="checkbox-label w-100 d-flex justify-content-between align-items-end">
                 <span>Ремонт диска</span>
@@ -597,9 +639,10 @@
             <div class="divider"></div>
             <label class="checkbox">
               <input
-                class="checkbox-input js-calc-input"
                 type="checkbox"
-                name="">
+                class="checkbox-input js-calc-input"
+                id="js-calc-input-25"
+                value="{'p':'2200','label':'Шиномонтаж'}">
               <span class="checkbox-box"></span>
               <span class="checkbox-label w-100 d-flex justify-content-between align-items-end">
                 <span>Шиномонтаж</span>
@@ -609,9 +652,10 @@
             <div class="divider"></div>
             <label class="checkbox">
               <input
-                class="checkbox-input js-calc-input"
                 type="checkbox"
-                name="">
+                class="checkbox-input js-calc-input"
+                id="js-calc-input-26"
+                value="{'p':'2700','label':'Балансировка'}">
               <span class="checkbox-box"></span>
               <span class="checkbox-label w-100 d-flex justify-content-between align-items-end">
                 <span>Балансировка</span>
@@ -629,13 +673,16 @@
                 по истечению 14 суток - утилизация
               </span>
             </p>
+            <div class="js-calc-item-total"></div>
           </div><!--/.collapse-->
-          <div class="collapse js-calc-group" id="calc-form-7">
+          <div class="collapse" id="js-calc-item-7">
             <label class="checkbox">
               <input
+                type="radio"
+                value="{'p':'750','l':'Скол до 1см'}"
                 class="checkbox-input js-calc-input"
-                type="checkbox"
-                name="">
+                id="js-calc-input-27"
+                name="ri7">
               <span class="checkbox-box"></span>
               <span class="checkbox-label w-100 d-flex justify-content-between align-items-end">
                 <span>Скол до 1см</span>
@@ -645,9 +692,11 @@
             <div class="divider"></div>
             <label class="checkbox">
               <input
+                type="radio"
+                value="{'p':'1400','l':'Скол до 2см'}"
                 class="checkbox-input js-calc-input"
-                type="checkbox"
-                name="">
+                id="js-calc-input-28"
+                name="ri7">
               <span class="checkbox-box"></span>
               <span class="checkbox-label w-100 d-flex justify-content-between align-items-end">
                 <span>Скол до 2см</span>
@@ -657,9 +706,11 @@
             <div class="divider"></div>
             <label class="checkbox">
               <input
+                type="radio"
+                value="{'p':'1800','l':'Скол до 3см'}"
                 class="checkbox-input js-calc-input"
-                type="checkbox"
-                name="">
+                id="js-calc-input-29"
+                name="ri7">
               <span class="checkbox-box"></span>
               <span class="checkbox-label w-100 d-flex justify-content-between align-items-end">
                 <span>Скол до 3см</span>
@@ -669,9 +720,10 @@
             <div class="divider"></div>
             <label class="checkbox">
               <input
-                class="checkbox-input js-calc-input"
                 type="checkbox"
-                name="">
+                value="{'p':'700','l':'Остановка трещины'}"
+                class="checkbox-input js-calc-input"
+                id="js-calc-input-30">
               <span class="checkbox-box"></span>
               <span class="checkbox-label w-100 d-flex justify-content-between align-items-end">
                 <span>Остановка трещины</span>
@@ -681,35 +733,41 @@
             <div class="divider"></div>
             <label class="checkbox">
               <input
-                class="checkbox-input js-calc-input"
                 type="checkbox"
-                name="">
+                value="{'p':'50','l':'Ремонт трещины 50 руб/см'}"
+                class="checkbox-input js-calc-input"
+                id="js-calc-input-31">
               <span class="checkbox-box"></span>
               <span class="checkbox-label w-100 d-flex justify-content-between align-items-end">
                 <span>Ремонт трещины</span>
                 <span class="fwgt-600 spnwr ml-10">50<i class="i-20 em-8"></i>/см</span>
               </span>
             </label>
+            <div class="js-calc-item-total"></div>
           </div><!--/.collapse-->
-          <div class="collapse js-calc-group" id="calc-form-8">
+          <div class="collapse" id="js-calc-item-8">
             <label class="checkbox">
               <input
-                class="checkbox-input js-calc-input"
+                value="{'p':'2000','l':'Заправка кондиционера'}"
                 type="checkbox"
-                name="">
+                class="checkbox-input js-calc-input"
+                id="js-calc-input-32">
               <span class="checkbox-box"></span>
               <span class="checkbox-label w-100 d-flex justify-content-between align-items-end">
                 <span>Заправка кондиционера</span>
                 <span class="fwgt-600 spnwr ml-10">2000<i class="i-20 em-8"></i></span>
               </span>
             </label>
+            <div class="js-calc-item-total"></div>
           </div><!--/.collapse-->
-          <div class="collapse js-calc-group" id="calc-form-9">
+          <div class="collapse" id="js-calc-item-9">
             <label class="checkbox">
               <input
-                class="checkbox-input js-calc-input"
                 type="checkbox"
-                name="">
+                class="checkbox-input js-calc-input"
+                id="js-calc-input-33"
+                name="ri9"
+                value="{'p':'4000','l':'Шины с дисками'}">
               <span class="checkbox-box"></span>
               <span class="checkbox-label w-100 d-flex justify-content-between align-items-end">
                 <span>Шины с дисками</span>
@@ -719,15 +777,18 @@
             <div class="divider"></div>
             <label class="checkbox">
               <input
-                class="checkbox-input js-calc-input"
                 type="checkbox"
-                name="">
+                class="checkbox-input js-calc-input"
+                id="js-calc-input-34"
+                name="ri9"
+                value="{'p':'3000','l':'Шины без дисков'}">
               <span class="checkbox-box"></span>
               <span class="checkbox-label w-100 d-flex justify-content-between align-items-end">
                 <span>Шины без дисков</span>
                 <span class="fwgt-600 spnwr ml-10">3000<i class="i-20 em-8"></i></span>
               </span>
             </label>
+            <div class="js-calc-item-total"></div>
             <div class="divider"></div>
             <p class="label">Экономьте свои силы, время и место. Сезонное хранение шин и дисков у нас – оптимальное решение ответственного автовладельца!</p>
             <p class="text em-11">
@@ -742,12 +803,13 @@
               <span class="d-block bi bi-list">проверить и поправить геометрию дисков.</span>
             </p>
           </div><!--/.collapse-->
-          <div class="collapse js-calc-group" id="calc-form-10">
+          <div class="collapse" id="js-calc-item-10">
             <label class="checkbox">
               <input
-                class="checkbox-input js-calc-input"
                 type="checkbox"
-                name="">
+                class="checkbox-input js-calc-input"
+                id="js-calc-input-35"
+                value="{'p':'60','l':'Очистка 1 посадочного места'}">
               <span class="checkbox-box"></span>
               <span class="checkbox-label w-100 d-flex justify-content-between align-items-end">
                 <span>Очистка 1 посадочного места</span>
@@ -757,9 +819,10 @@
             <div class="divider"></div>
             <label class="checkbox">
               <input
-                class="checkbox-input js-calc-input"
                 type="checkbox"
-                name="">
+                class="checkbox-input js-calc-input"
+                id="js-calc-input-36"
+                value="{'p':'240','l':'Установка вентиля (4шт. черные)'}">
               <span class="checkbox-box"></span>
               <span class="checkbox-label w-100 d-flex justify-content-between align-items-end">
                 <span>Установка вентиля (4шт. черные)</span>
@@ -769,9 +832,10 @@
             <div class="divider"></div>
             <label class="checkbox">
               <input
-                class="checkbox-input js-calc-input"
                 type="checkbox"
-                name="">
+                class="checkbox-input js-calc-input"
+                id="js-calc-input-37"
+                value="{'p':'400','l':'Установка вентиля (4шт. хром)'}">
               <span class="checkbox-box"></span>
               <span class="checkbox-label w-100 d-flex justify-content-between align-items-end">
                 <span>Установка вентиля (4шт. хром)</span>
@@ -781,9 +845,10 @@
             <div class="divider"></div>
             <label class="checkbox">
               <input
-                class="checkbox-input js-calc-input"
                 type="checkbox"
-                name="">
+                class="checkbox-input js-calc-input"
+                id="js-calc-input-38"
+                value="{'p':'70','l':'Уплотнение бортов герметиком'}">
               <span class="checkbox-box"></span>
               <span class="checkbox-label w-100 d-flex justify-content-between align-items-end">
                 <span>Уплотнение бортов герметиком</span>
@@ -793,9 +858,10 @@
             <div class="divider"></div>
             <label class="checkbox">
               <input
-                class="checkbox-input js-calc-input"
                 type="checkbox"
-                name="">
+                class="checkbox-input js-calc-input"
+                id="js-calc-input-39"
+                value="{'p':'25','l':'Подкачка 1 колеса'}">
               <span class="checkbox-box"></span>
               <span class="checkbox-label w-100 d-flex justify-content-between align-items-end">
                 <span>Подкачка 1 колеса</span>
@@ -805,9 +871,10 @@
             <div class="divider"></div>
             <label class="checkbox">
               <input
-                class="checkbox-input js-calc-input"
                 type="checkbox"
-                name="">
+                class="checkbox-input js-calc-input"
+                id="js-calc-input-40"
+                value="{'p':'250','l':'Шлифовка борта'}">
               <span class="checkbox-box"></span>
               <span class="checkbox-label w-100 d-flex justify-content-between align-items-end">
                 <span>Шлифовка борта</span>
@@ -817,9 +884,10 @@
             <div class="divider"></div>
             <label class="checkbox">
               <input
-                class="checkbox-input js-calc-input"
                 type="checkbox"
-                name="">
+                class="checkbox-input js-calc-input"
+                id="js-calc-input-41"
+                value="{'p':'100','l':'Ремонт камеры'}">
               <span class="checkbox-box"></span>
               <span class="checkbox-label w-100 d-flex justify-content-between align-items-end">
                 <span>Ремонт камеры</span>
@@ -829,17 +897,19 @@
             <div class="divider"></div>
             <label class="checkbox">
               <input
-                class="checkbox-input js-calc-input"
                 type="checkbox"
-                name="">
+                class="checkbox-input js-calc-input"
+                id="js-calc-input-42"
+                value="{'p':'50','l':'Хранение колеса (диска) после 14 сут.-утилизация'}">
               <span class="checkbox-box"></span>
               <span class="checkbox-label w-100 d-flex justify-content-between align-items-end">
                 <span>Хранение колеса (диска) <span class="spnwr">после 14 сут. - утилизация</span></span>
                 <span class="fwgt-600 spnwr ml-10">50<i class="i-20 em-8"></i>/сут</span>
               </span>
             </label>
+            <div class="js-calc-item-total"></div>
           </div><!--/.collapse-->
-        </div><!--/.js-calc-fparent-->
+        </div><!--/.js-calc-parent-->
       </div><!--/.col-->
     </div><!--/.row-->
   </div><!--/.container-->
@@ -956,7 +1026,9 @@
       </div><!--/.col-->
       <div class="col-12 col-md-7 col-lg-8">
         <div class="map-wrapper">
+          <!--
           <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae283cad474c44494dbf2c9814291bbf60d2113a6556d6bf9852775820c0288b5&amp;source=constructor&amp;scroll=false" width="100%" height="430" frameborder="0"></iframe>
+          -->
         </div>
       </div><!--/.col-->
     </div><!--/.row-->
@@ -1001,39 +1073,40 @@
 
 <div class="order collapse" id="order-fix">
   <div class="container">
-    <div class="text-right">
-      <a class="order-close js-collapse" href="#order-fix"><i class="i-29"></i></a>
-    </div>
     <div class="row align-items-center justify-content-around">
-      <div class="col-12 col-lg-4">
-        <p class="text d-flex align-items-center">
-          <span class="d-block fwgt-600 em-11">Общая стоимость выбранных услуг:</span>
-          <span class="d-block spnwr text-right ml-30">
-            <span class="fwgt-700 em-12">от 8 888 888</span> <i class="i-20"></i>
+      <div class="col-12 col-sm-auto">
+        <p class="text d-flex align-items-end">
+          <span class="d-block fwgt-600 em-11">К оплате:</span>
+          <span class="d-block spnwr text-right ml-15">
+            <span class="fwgt-700 em-13"><span class="js-total-all"></span></span> <i class="i-20"></i>
           </span>
         </p>
-        <p class="text">Точная стоимость ремонта и время проведения определяется мастером на месте.</p>
-        <p class="text fwgt-600">Постоянным клиентам скидка 10%</p>
       </div><!--/.col-->
-      <div class="col-12 col-lg-4">
-        <p class="text text-center em-12 fwgt-600">Оформить заказ</p>
-        <form>
-          <div class="form-sm row">
-            <div class="col-12 col-sm col-lg-12">
-              <input class="input" type="text" name="" placeholder="Имя">
-            </div><!--/.col-->
-            <div class="col-12 col-sm col-lg-12">
-              <input class="input js-mask" mask="+7-999-999-99-99" type="text" name="" placeholder="Телефон">
-            </div><!--/.col-->
-            <div class="col-12 col-sm col-lg-12">
-              <button class="btn btn-blue input-h">Отправить</button>
-            </div><!--/.col-->
-          </div>
-        </form>
+      <div class="col-12 col-sm-auto">
+        <a class="btn btn-blue p-10" data-fancybox href="#order-modal">Оформить заказ</a>
       </div><!--/.col-->
     </div><!--/.row-->
   </div><!--/.container-->
 </div>
+
+<div class="d-none">
+
+<!-- ОФОРМИТЬ ЗАКАЗ -->
+<div class="modal-sm" id="order-modal">
+  <p class="text text-center em-12 fwgt-600">Оформить заказ</p>
+  <form>
+    <input class="input" type="text" name="" placeholder="Имя">
+    <input class="input js-mask" mask="+7-999-999-99-99" type="text" name="" placeholder="Телефон">
+    <button class="btn btn-blue input-h">Отправить</button>
+  </form>
+  <div class="divider"></div>
+  <p class="text fwgt-700 em-12">
+    Итого: <span class="js-total-all ml-15"></span> <i class="i-20 em-8"></i>
+  </p>
+  <div id="js-orderm-ilist"></div>
+</div><!--/.modal-->
+
+</div><!--/.d-none-->
 
 <!-- jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -1043,7 +1116,7 @@
 <script src="assets/fancybox/dist/jquery.fancybox.min.js"></script>
 <script src="assets/modernizr/modernizr-mq.js"></script>
 <!-- script -->
-<script src="js/main.js?v=001"></script>
+<script src="js/main.js?v=002"></script>
 
 </body>
 </html>
