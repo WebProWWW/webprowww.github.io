@@ -239,7 +239,7 @@
                   <option value="{'pi':'1','l':'Минивен'}">Минивен</option>
                   <option value="{'pi':'1','l':'Кроссовер'}">Кроссовер</option>
                 </select>
-                <label class="label">Диаметр диска</label>
+                <label class="label">Радиус диска</label>
                 <select class="input js-calc-input" id="js-calc-input-2">
                   <option selected disabled>Выберите</option>
                   <option value="{'i':'0','r':'13'}">13</option>
@@ -475,7 +475,7 @@
               <span class="checkbox-box"></span>
               <span class="checkbox-label w-100 d-flex justify-content-between align-items-end">
                 <span>Варка (вулканизация)</span>
-                <span class="fwgt-600 spnwr ml-10">от 500<i class="i-20 em-8"></i></span>
+                <span class="fwgt-600 spnwr ml-10">от 500<i class="i-20 em-8"></i> до 2000<i class="i-20 em-8"></i></span>
               </span>
             </label>
             <div class="divider"></div>
@@ -569,7 +569,7 @@
                 id="js-calc-input-20"
                 value="Разборные">
               <span class="checkbox-box"></span>
-              <span class="checkbox-label">Разборные</span>
+              <span class="checkbox-label">Разборные +20%</span>
             </label>
             <label class="checkbox">
               <input
@@ -578,7 +578,7 @@
                 id="js-calc-input-21"
                 value="Комбинированные">
               <span class="checkbox-box"></span>
-              <span class="checkbox-label">Комбинированные</span>
+              <span class="checkbox-label">Комбинированные +100%</span>
             </label>
             <div class="divider"></div>
             <p class="label">Хранение колёс/дисков:</p>
@@ -893,18 +893,16 @@
               </span>
             </label>
             <div class="divider"></div>
-            <label class="checkbox">
-              <input
-                type="checkbox"
-                class="checkbox-input js-calc-input"
-                id="js-calc-input-42"
-                value="{'p':'50','l':'Хранение колеса (диска) после 14 сут.-утилизация'}">
-              <span class="checkbox-box"></span>
-              <span class="checkbox-label w-100 d-flex justify-content-between align-items-end">
-                <span>Хранение колеса (диска) <span class="spnwr">после 14 сут. - утилизация</span></span>
-                <span class="fwgt-600 spnwr ml-10">50<i class="i-20 em-8"></i>/сут</span>
+            <p class="label">Хранение колёс/дисков:</p>
+            <p class="text em-11">
+              <span class="d-block mb-5 bi bi-list">
+                <span class="spnwr">после оповещения клиента о</span>
+                <span class="spnwr">выполненных работах - 50 р/сут</span>
               </span>
-            </label>
+              <span class="d-block bi bi-list">
+                по истечению 14 суток - утилизация
+              </span>
+            </p>
             <div class="js-calc-item-total"></div>
           </div><!--/.collapse-->
         </div><!--/.js-calc-parent-->
@@ -1099,6 +1097,8 @@
   <p class="text fwgt-700 em-12">
     Итого: <span class="js-total-all ml-15"></span> <i class="i-20 em-8"></i>
   </p>
+  <div class="divider"></div>
+  <p class="text text-center em-9">Точная стоимость ремонта и время проведения определяется мастером на месте.</p>
   <div id="js-orderm-ilist"></div>
 </div><!--/.modal-->
 
@@ -1112,7 +1112,7 @@
 <script src="assets/fancybox/dist/jquery.fancybox.min.js"></script>
 <script src="assets/modernizr/modernizr-mq.js"></script>
 <!-- script -->
-<script src="js/main.js?v=002"></script>
+<script src="js/main.js?v=003"></script>
 
 </body>
 </html>

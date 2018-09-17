@@ -4,7 +4,7 @@
  */
 
 //#=include ./lib/MyClass.coffee
-var $body, $calcParent, $htmlBody, $input1, $input10, $input11, $input12, $input13, $input14, $input15, $input16, $input17, $input18, $input19, $input2, $input20, $input21, $input22, $input23, $input24, $input25, $input26, $input27, $input28, $input29, $input3, $input30, $input31, $input32, $input33, $input34, $input35, $input36, $input37, $input38, $input39, $input4, $input40, $input41, $input42, $input5, $input6, $input7, $input8, $input9, $onscrl, $orderFix, $ordermIlist, $totalAll, $viewItem1, $viewItem10, $viewItem2, $viewItem3, $viewItem4, $viewItem5, $viewItem6, $viewItem7, $viewItem8, $viewItem9, $win, GalSlider, MediaQuery, animatePriceTo, calcFormAnimating, calculate, calculateItem1, calculateItem10, calculateItem2, calculateItem3, calculateItem4, calculateItem5, calculateItem6, calculateItem7, calculateItem8, calculateItem9, delay, getOverStr, mq, numToPrice, renderItemGetTotal, scrollTo, strToNum, toggleCollapse;
+var $body, $calcParent, $htmlBody, $input1, $input10, $input11, $input12, $input13, $input14, $input15, $input16, $input17, $input18, $input19, $input2, $input20, $input21, $input22, $input23, $input24, $input25, $input26, $input27, $input28, $input29, $input3, $input30, $input31, $input32, $input33, $input34, $input35, $input36, $input37, $input38, $input39, $input4, $input40, $input41, $input5, $input6, $input7, $input8, $input9, $onscrl, $orderFix, $ordermIlist, $totalAll, $viewItem1, $viewItem10, $viewItem2, $viewItem3, $viewItem4, $viewItem5, $viewItem6, $viewItem7, $viewItem8, $viewItem9, $win, GalSlider, MediaQuery, animatePriceTo, calcFormAnimating, calculate, calculateItem1, calculateItem10, calculateItem2, calculateItem3, calculateItem4, calculateItem5, calculateItem6, calculateItem7, calculateItem8, calculateItem9, delay, getOverStr, mq, numToPrice, renderItemGetTotal, scrollTo, strToNum, toggleCollapse;
 
 MediaQuery = (function() {
   class MediaQuery {
@@ -436,8 +436,7 @@ $input40 = $('#js-calc-input-40');
 
 $input41 = $('#js-calc-input-41');
 
-$input42 = $('#js-calc-input-42');
-
+// $input42 = $ '#js-calc-input-42'
 $viewItem10 = $('#js-calc-item-10 .js-calc-item-total');
 
 $orderFix = $('#order-fix');
@@ -547,14 +546,14 @@ calculateItem2 = function() {
   }
   pindex = Number(diskType.pi);
   if (pindex === 0) {
-    $input10.find('option:eq(5)').attr('disabled', 'disabled');
-    $input10.find('option:eq(6)').attr('disabled', 'disabled');
-    $input10.find('option:eq(7)').attr('disabled', 'disabled');
-    $input10.find('option:eq(8)').attr('disabled', 'disabled');
-    $input10.find('option:eq(9)').attr('disabled', 'disabled');
-    $input10.find('option:eq(10)').attr('disabled', 'disabled');
+    $input10.find('option:eq(5)').css('display', 'none').attr('disabled', 'disabled');
+    $input10.find('option:eq(6)').css('display', 'none').attr('disabled', 'disabled');
+    $input10.find('option:eq(7)').css('display', 'none').attr('disabled', 'disabled');
+    $input10.find('option:eq(8)').css('display', 'none').attr('disabled', 'disabled');
+    $input10.find('option:eq(9)').css('display', 'none').attr('disabled', 'disabled');
+    $input10.find('option:eq(10)').css('display', 'none').attr('disabled', 'disabled');
   } else {
-    $input10.find('option:not(:eq(0))').attr('disabled', false);
+    $input10.find('option:not(:eq(0))').css('display', 'block').attr('disabled', false);
   }
   price = 0;
   if (disk) {
@@ -825,12 +824,11 @@ calculateItem10 = function() {
     itemsArr.push(String(val.l));
     total = total + Number(val.p);
   }
-  if ($input42.isChecked()) {
-    val = $input42.getValJSON();
-    itemsArr.push(String(val.l));
-    total = total + Number(val.p);
-  }
   if (total === 0) {
+    // if do $input42.isChecked
+    //   val = do $input42.getValJSON
+    //   itemsArr.push String val.l
+    //   total = total + Number val.p
     return false;
   }
   return {
