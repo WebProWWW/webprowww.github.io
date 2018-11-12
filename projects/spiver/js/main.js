@@ -19,6 +19,9 @@
 
   $('.js-bxslider').bxSlider({
     wrapperClass: 'bx-wrapper slider',
+    auto: true,
+    pause: 5000,
+    autoHover: true,
     controls: false
   });
 

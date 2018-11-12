@@ -3,15 +3,16 @@
  * @link https://webprowww.github.io
  */
 
-/*
- * normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css
- */
+/* normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 html {
   line-height: 1.15 /* 1 */;
   -webkit-text-size-adjust: 100% /* 2 */;
 }
 body {
   margin: 0;
+}
+main {
+  display: block;
 }
 h1 {
   font-size: 2em;
@@ -634,6 +635,12 @@ textarea.input {
 .gray {
   color: #999;
 }
+.r-5 {
+  border-radius: 5px;
+}
+.r-10 {
+  border-radius: 10px;
+}
 /*
  * Small devices (phones, 576px and up)                          ≥ 576px
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
@@ -675,6 +682,9 @@ textarea.input {
 }
 .wsp-normal {
   white-space: normal;
+}
+.wsp-preline {
+  white-space: pre-line;
 }
 .text-right {
   text-align: right;
@@ -2047,6 +2057,9 @@ textarea.input {
   }
   .wsp-sm-normal {
     white-space: normal;
+  }
+  .wsp-sm-preline {
+    white-space: pre-line;
   }
   .text-sm-right {
     text-align: right;
@@ -3421,6 +3434,9 @@ textarea.input {
   .wsp-md-normal {
     white-space: normal;
   }
+  .wsp-md-preline {
+    white-space: pre-line;
+  }
   .text-md-right {
     text-align: right;
   }
@@ -4794,6 +4810,9 @@ textarea.input {
   .wsp-lg-normal {
     white-space: normal;
   }
+  .wsp-lg-preline {
+    white-space: pre-line;
+  }
   .text-lg-right {
     text-align: right;
   }
@@ -6166,6 +6185,9 @@ textarea.input {
   }
   .wsp-xl-normal {
     white-space: normal;
+  }
+  .wsp-xl-preline {
+    white-space: pre-line;
   }
   .text-xl-right {
     text-align: right;
