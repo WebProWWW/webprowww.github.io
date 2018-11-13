@@ -55,6 +55,7 @@
         iconImageOffset: iconOffset
       });
       this.map.geoObjects.add(placemark);
+      placemark.balloon.open();
       return true;
     }
 
