@@ -170,8 +170,8 @@ body {
 }
 a {
   border: none;
-  -webkit-transition: 0.16s all ease-in-out;
-  transition: 0.16s all ease-in-out;
+  -webkit-transition: 0.18s all ease-in-out;
+  transition: 0.18s all ease-in-out;
 }
 a,
 a:active,
@@ -188,6 +188,12 @@ a:hover {
   text-decoration: none;
   outline: none;
   color: #000;
+}
+i {
+  vertical-align: middle;
+  line-height: 1;
+  -webkit-transition: 0.18s all ease-in-out;
+  transition: 0.18s all ease-in-out;
 }
 .content {
   display: -webkit-box;
@@ -343,8 +349,8 @@ a:hover {
   margin: 10px 5px 0;
   padding: 0;
   border: none;
-  -webkit-transition: 0.16s all ease-in-out;
-  transition: 0.16s all ease-in-out;
+  -webkit-transition: 0.18s all ease-in-out;
+  transition: 0.18s all ease-in-out;
   font-size: 22px;
 }
 .soc-ln,
@@ -370,8 +376,8 @@ a:hover {
   display: block;
   margin: 15px 0 0;
   padding: 15px;
-  -webkit-transition: 0.16s all ease-in-out;
-  transition: 0.16s all ease-in-out;
+  -webkit-transition: 0.18s all ease-in-out;
+  transition: 0.18s all ease-in-out;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 100%;
@@ -383,6 +389,7 @@ a:hover {
   background: transparent;
   border: none;
   border-radius: 0;
+  line-height: 1;
 }
 .btn-torange {
   border: none;
@@ -434,6 +441,33 @@ a:hover {
 .btn-orange:hover {
   background: #d15300;
 }
+.btn-white {
+  border: none;
+  border: 1px solid #e9e9e9;
+  background: #fff;
+}
+.btn-white,
+.btn-white:active,
+.btn-white:focus {
+  color: #000;
+  text-decoration: none;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
+}
+.btn-white:hover {
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+}
+.btn-white:hover {
+  background: #ff6500;
+}
+.btn-white:hover i {
+  color: #fff;
+}
 .page-title {
   display: block;
   margin: 15px 0 0;
@@ -450,6 +484,9 @@ a:hover {
   font-size: 1em;
   font-weight: 400;
 }
+.v-middle {
+  vertical-align: middle;
+}
 .htitle {
   display: block;
   margin: 15px 0 0;
@@ -464,6 +501,13 @@ a:hover {
 .f-roboto {
   font-family: 'Roboto', sans-serif;
 }
+.bb-dashed {
+  border-bottom: 0.1em dotted;
+}
+.quote {
+  background: url("../img/quote.svg") no-repeat;
+  background-size: 5.8em auto;
+}
 .tshadow {
   text-shadow: 0 0 23px #000;
 }
@@ -472,6 +516,11 @@ a:hover {
 }
 .white {
   color: #fff;
+}
+.tbg-orange {
+  background-color: #ff6500;
+  color: #fff;
+  padding: 0.1em 0.3em;
 }
 .bg-a {
   background: #272629 url("../img/bg-1.jpg") 50% 0% no-repeat;

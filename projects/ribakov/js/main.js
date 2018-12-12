@@ -20,4 +20,9 @@
 
   $('.js-collapse').on('click', collapse);
 
+  $('.js-popup').on('click', function(e) {
+    e.preventDefault();
+    return false;
+  });
+
 }).call(this);

@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'icomoon';
   src:
-    url('fonts/icomoon.ttf?5eohe') format('truetype'),
-    url('fonts/icomoon.woff?5eohe') format('woff'),
-    url('fonts/icomoon.svg?5eohe#icomoon') format('svg');
+    url('fonts/icomoon.ttf?1x438u') format('truetype'),
+    url('fonts/icomoon.woff?1x438u') format('woff'),
+    url('fonts/icomoon.svg?1x438u#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -23,6 +23,36 @@ i {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.i-ruble-sign:before {
+  content: "\e910";
+}
+.i-book-open:before {
+  content: "\e90f";
+}
+.i-bookmate:before {
+  content: "\e90c";
+}
+.i-google-play:before {
+  content: "\e90d";
+}
+.i-book:before {
+  content: "\e90e";
+}
+.i-cart:before {
+  content: "\e90a";
+}
+.i-cart-a:before {
+  content: "\e90b";
+}
+.i-justify:before {
+  content: "\e908";
+}
+.i-speech-bubble:before {
+  content: "\e909";
+}
+.i-align-left:before {
+  content: "\e907";
+}
 .i-bars:before {
   content: "\e906";
 }
