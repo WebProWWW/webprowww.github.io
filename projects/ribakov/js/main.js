@@ -20,6 +20,17 @@
 
   $('.js-collapse').on('click', collapse);
 
+  $('.js-bxslider').bxSlider({
+    pager: false,
+    // controls: off
+    slideMargin: 100,
+    nextText: '',
+    prevText: '',
+    nextSelector: '.js-bxslider-btn',
+    prevSelector: '.js-bxslider-btn'
+  });
+
+  // TO DO
   $('.js-popup').on('click', function(e) {
     e.preventDefault();
     return false;
