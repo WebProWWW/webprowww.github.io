@@ -22,7 +22,7 @@
 
   $('.js-bxslider').bxSlider({
     pager: false,
-    // controls: off
+    touchEnabled: false,
     slideMargin: 100,
     nextText: '',
     prevText: '',
