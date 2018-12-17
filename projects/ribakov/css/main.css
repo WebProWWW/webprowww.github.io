@@ -807,7 +807,7 @@ i {
   display: -ms-flexbox;
   display: flex;
   margin: 0;
-  padding: 15px 30px 20px;
+  padding: 25px 30px 20px;
   -webkit-transition: 0.18s all ease-in-out;
   transition: 0.18s all ease-in-out;
   -webkit-box-orient: vertical;
