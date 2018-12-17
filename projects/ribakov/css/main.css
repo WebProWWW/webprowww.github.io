@@ -785,6 +785,33 @@ i {
           appearance: none;
   outline: none;
 }
+.overlay {
+  position: relative;
+  overflow: hidden;
+}
+.overlay-img {
+  display: block;
+  margin: 0;
+  padding: auto;
+  height: 100%;
+}
+.overlay-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 30px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background: rgba(0,0,0,0.65);
+}
 .f-oswald {
   font-family: 'Oswald', sans-serif;
 }
@@ -953,6 +980,11 @@ i {
 /*
  * HELPERS
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.clip {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .wsp-nowrap {
   white-space: nowrap;
 }
@@ -2804,6 +2836,11 @@ i {
   line-height: 10;
 }
 @media (min-width: 576px) {
+  .sm-clip {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
   .wsp-sm-nowrap {
     white-space: nowrap;
   }
@@ -4656,6 +4693,11 @@ i {
   }
 }
 @media (min-width: 768px) {
+  .md-clip {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
   .wsp-md-nowrap {
     white-space: nowrap;
   }
@@ -6508,6 +6550,11 @@ i {
   }
 }
 @media (min-width: 992px) {
+  .lg-clip {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
   .wsp-lg-nowrap {
     white-space: nowrap;
   }
@@ -8360,6 +8407,11 @@ i {
   }
 }
 @media (min-width: 1200px) {
+  .xl-clip {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
   .wsp-xl-nowrap {
     white-space: nowrap;
   }
