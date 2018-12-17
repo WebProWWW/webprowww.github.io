@@ -787,30 +787,49 @@ i {
 }
 .overlay {
   position: relative;
-  overflow: hidden;
-}
-.overlay-img {
-  display: block;
-  margin: 0;
-  padding: auto;
   height: 100%;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.overlay-hidden {
+  margin-left: -15px;
+  margin-right: 15px;
+  -webkit-transition: 0.4s all ease-in-out;
+  transition: 0.4s all ease-in-out;
+  opacity: 0;
 }
 .overlay-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 0;
-  padding: 30px;
+  padding: 15px 30px 20px;
+  -webkit-transition: 0.18s all ease-in-out;
+  transition: 0.18s all ease-in-out;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  background: rgba(0,0,0,0.65);
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+}
+.overlay-content:hover {
+  background: rgba(255,101,0,0.96);
+}
+.overlay-content:hover .overlay-hidden {
+  margin-left: 0px;
+  margin-right: 0px;
+  opacity: 1;
+}
+.bg-pro {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 300px;
 }
 .f-oswald {
   font-family: 'Oswald', sans-serif;
