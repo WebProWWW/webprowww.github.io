@@ -21,22 +21,32 @@
   $('.js-collapse').on('click', collapse);
 
   $('.js-owl').owlCarousel({
+    // slideBy: 'page'
+    // loop: on
     dots: false,
+    nav: false,
+    navElement: 'div',
+    rewind: false,
+    navText: ['<i class="i-arr-l"></i>', '<i class="i-arr-r"></i>'],
     responsive: {
       0: {
         items: 1
       },
       576: {
-        items: 1
+        items: 1,
+        nav: true
       },
       768: {
-        items: 2
+        items: 2,
+        nav: true
       },
       992: {
-        items: 3
+        items: 3,
+        nav: true
       },
       1450: {
-        items: 4
+        items: 4,
+        nav: true
       }
     }
   });

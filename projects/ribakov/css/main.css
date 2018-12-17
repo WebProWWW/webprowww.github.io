@@ -615,6 +615,48 @@ i {
 .fslider .owl-item {
   height: 100%;
 }
+.fslider .owl-prev,
+.fslider .owl-next {
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  margin-top: -80px;
+  top: 50%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.9);
+  color: #fff;
+  font-size: 28px;
+}
+.fslider .owl-prev.disabled,
+.fslider .owl-next.disabled {
+  opacity: 0;
+}
+.fslider .owl-prev:hover,
+.fslider .owl-next:hover {
+  color: #ff6500;
+}
+.fslider .owl-prev {
+  left: -65px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 15px;
+}
+.fslider .owl-next {
+  right: -65px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-left: 15px;
+}
 .fslider-img {
   -webkit-transition: 0.4s all ease-in-out;
   transition: 0.4s all ease-in-out;
@@ -630,7 +672,7 @@ i {
   display: -ms-flexbox;
   display: flex;
   margin: 0;
-  padding: 40px;
+  padding: 40px 50px;
   -webkit-transition: 0.4s all ease-in-out;
   transition: 0.4s all ease-in-out;
   border: 1px solid rgba(255,101,0,0.1);
