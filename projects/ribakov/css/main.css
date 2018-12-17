@@ -617,8 +617,8 @@ i {
 }
 .fslider .owl-prev,
 .fslider .owl-next {
-  -webkit-transition: 0.3s all ease-in-out;
-  transition: 0.3s all ease-in-out;
+  -webkit-transition: 0.18s all ease-in-out;
+  transition: 0.18s all ease-in-out;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -650,12 +650,18 @@ i {
           justify-content: flex-end;
   padding-right: 15px;
 }
+.fslider .owl-prev:hover {
+  left: -58px;
+}
 .fslider .owl-next {
   right: -65px;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
   padding-left: 15px;
+}
+.fslider .owl-next:hover {
+  right: -58px;
 }
 .fslider-img {
   -webkit-transition: 0.4s all ease-in-out;
