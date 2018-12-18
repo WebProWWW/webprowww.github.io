@@ -168,6 +168,9 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
 }
+body.fancybox-active {
+  height: 100%;
+}
 a {
   border: none;
   -webkit-transition: 0.18s all ease-in-out;
@@ -204,6 +207,7 @@ i {
       -ms-flex-direction: column;
           flex-direction: column;
   min-height: 100%;
+  position: relative;
 }
 .block {
   display: block;
@@ -861,6 +865,12 @@ i {
 .border-24 {
   border: 15px solid #ff6500;
 }
+.modal {
+  max-width: 1000px;
+}
+.flow-hidden {
+  overflow: hidden;
+}
 .bg-logo {
   background: #fff url("../img/bg-logo.jpg") 50% 50% no-repeat;
   background-size: contain;
@@ -882,8 +892,13 @@ i {
   padding: 0;
   max-width: 100%;
 }
-.flow-hidden {
-  overflow: hidden;
+.re-img {
+  display: block;
+  margin: 15px 0 0;
+  padding: 0;
+  max-width: 100%;
+  border: 1px solid #e6e6e6;
+  border-radius: 50%;
 }
 /*
  * Small devices (phones, 576px and up)                          ≥ 576px

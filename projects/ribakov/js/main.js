@@ -62,8 +62,13 @@
     prevSelector: '.js-bxslider-btn'
   });
 
-  // TO DO
-  $('.js-popup').on('click', function(e) {
+  $('.js-fbox').fancybox();
+
+  $.fancybox.open({
+    src: '#review'
+  });
+
+  $('.js-prevent').on('click', function(e) {
     e.preventDefault();
     return false;
   });
