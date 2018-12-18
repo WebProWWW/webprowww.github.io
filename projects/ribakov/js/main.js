@@ -62,12 +62,7 @@
     prevSelector: '.js-bxslider-btn'
   });
 
-  $('.js-fbox').fancybox();
-
-  $.fancybox.open({
-    src: '#review'
-  });
-
+  // $.fancybox.open src:'#review'
   $('.js-prevent').on('click', function(e) {
     e.preventDefault();
     return false;
