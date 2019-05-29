@@ -7,8 +7,7 @@
     <meta name="format-detection" content="date=no">
     <meta name="format-detection" content="address=no">
     <meta name="format-detection" content="email=no">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
     <meta name="keywords" content="">
     <meta name="description" content="">
@@ -17,8 +16,8 @@
     <link rel="stylesheet" href="css/icons-fonts.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <!-- Magnific popup  in style.css   Owl Carousel Assets in style.css -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css?v=001">
+    <link rel="stylesheet" href="css/main.css?v=001">
     <!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="css/ie-warning.css" ><![endif]-->
     <!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="css/ie8-fix.css" ><![endif]-->
     <!--[if lt IE 9]>
@@ -117,7 +116,8 @@
 							<!-- MAIN MENU LIST -->
 							<nav class="collapse collapsing navbar-collapse nav-center">
 								<ul class="nav navbar-nav">
-									<li class="current">
+									<!-- <li class="current"> -->
+									<li>
 										<a class="js-scrollto" href="#block-home">
 											<div class="main-menu-title">HOME</div>
 										</a>
@@ -127,6 +127,7 @@
 											<div class="main-menu-title">SERVICES</div>
 										</a>
 									</li>
+									<!--
 									<li>
 										<a class="js-scrollto" href="#block-portfolio">
 											<div class="main-menu-title">PORTFOLIO</div>
@@ -137,6 +138,7 @@
 											<div class="main-menu-title">CLIENTS</div>
 										</a>
 									</li>
+									-->
 									<li>
 										<a class="js-scrollto" href="#block-team">
 											<div class="main-menu-title">TEAM</div>
@@ -171,12 +173,13 @@
 					</div>
 					<!-- LAYER NR. 2 -->
 					<div class="font-white norm-16-wide hide-0-736 sm-mb-50">
-						BRANDING<span class="slash-divider-10">/</span>DESIGN<span class="slash-divider-10">/</span>DEVELOPMENT<span class="slash-divider-10">/</span>WEBSITE
+						DEVELOPMENT OF ERP SYSTEMS<span class="slash-divider-10">/</span>DEVELOPMENT OF PROJECT AND TASK MANAGEMENT SYSTEM<span class="slash-divider-10">/</span>WEBSITE DEVELOPMENT<span class="slash-divider-10">/</span>MOBILE APPLICATION DEVELOPMENT<span class="slash-divider-10">/</span>INTEGRATION OF VARIOUS SYSTEMS
 					</div>
 					<!-- LAYER NR. 3 -->
 					<div class="center-0-478">
-						<a class="button medium thin hover-dark tp-button white" href="#">SEE MORE</a>
-						<a class="button medium thin hover-dark tp-button white ml-20" href="#">BUY NOW</a>
+						<a class="button medium thin hover-dark tp-button white js-inline-popup-link" href="#popup-callback">
+							CALLBACK
+						</a>
 					</div>
 				</div>
 			</div>
@@ -191,65 +194,23 @@
 </div>
 <!-- /.header-transporent-bg-black -->
 
-<!-- FEATURES 1 -->
 <div id="about" class="page-section">
 	<div class="container fes1-cont">
 		<div class="row">
-			<div class="col-md-4 fes1-img-cont wow fadeInUp mb-20" style="visibility: visible; animation-name: fadeInUp;">
-				<img width="200" src="images/advant.svg" alt="img">
-			</div>
 			<div class="col-md-8">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="fes1-main-title-cont wow fadeInDown" style="visibility: visible; animation-name: fadeInDown;">
-							<div class="title-fs-60">
-								ADVANTAGES<br>
-								<span class="bold">OF WORK WITH US</span>
-							</div>
-							<div class="line-3-100"></div>
-						</div>
+				<div class="fes1-main-title-cont wow fadeInDown" style="visibility: visible; animation-name: fadeInDown;">
+					<div class="title-fs-60">
+						ABOUT<br>
+						<span class="bold">THE OWNER</span>
 					</div>
+					<div class="line-3-100"></div>
 				</div>
-				<div class="row">
-					<div class="col-md-6 col-sm-6">
-						<div class="fes1-box wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
-							<div class="fes1-box-icon">
-								<div class="icon icon-basic-star"></div>
-							</div>
-							<h3>QUALITY</h3>
-							<p>Get access to a team of talented developers with extensive experience in developing software for software vendors (ISVs)</p>
-						</div>
-					</div>
-					<div class="col-md-6 col-sm-6">
-						<div class="fes1-box wow fadeIn" data-wow-delay="200ms" style="visibility: visible; animation-delay: 200ms; animation-name: fadeIn;">
-							<div class="fes1-box-icon">
-								<div class="icon icon-basic-clockwise"></div>
-							</div>
-							<h3>ACCELERATE</h3>
-							<p>Reduce software development time and accelerate bringing the product to market</p>
-						</div>
-					</div>
+				<div class="wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+					<p><span class="bold">Storozhenko Sergey</span> — a software en- gineer by education, graduated from the Don State Technical University. He start- ed his career as a programmer. Later he worked in large IT companies in such positions as: service manager, head of programming, system analyst, project manager. Took part in major projects of the Moscow Department of Education, the Federal Migration Service, the pub- lic services portal project (gosuslugi.ru). In the future, through work at the bank, he found a new direction of activity, cri- sis management. He founded the law firm «Storozhenko and Partners», which helps to recover companies in crisis sit- uations. However, participation in this business did not prevent to be aware of the latest changes and innovations in the field of software development.</p>
 				</div>
-				<div class="row">
-					<div class="col-md-6 col-sm-6">
-						<div class="fes1-box wow fadeIn" data-wow-delay="400ms" style="visibility: visible; animation-delay: 400ms; animation-name: fadeIn;">
-							<div class="fes1-box-icon">
-								<div class="icon icon-ecommerce-dollar"></div>
-							</div>
-							<h3>SPENDING</h3>
-							<p>Reduce software development costs and con- trol development and support costs through- out the product life cycle</p>
-						</div>
-					</div><!-- /.col -->
-					<div class="col-md-6 col-sm-6">
-						<div class="fes1-box wow fadeIn" data-wow-delay="600ms" style="visibility: visible; animation-delay: 600ms; animation-name: fadeIn;">
-							<div class="fes1-box-icon">
-								<div class="icon icon-basic-paperplane"></div>
-							</div>
-							<h3>STARTING</h3>
-							<p>Reduce risks when launching a new product</p>
-						</div>
-					</div><!-- /.col -->
-				</div><!-- /.row -->
+			</div>
+			<div class="col-md-4 fes1-img-cont wow fadeInUp mb-20" style="visibility: visible; animation-name: fadeInUp;">
+				<img class="img-circle-border mt-40" width="360" height="360" src="images/dev.jpg" alt="img">
 			</div>
 		</div>
 	</div>
@@ -258,7 +219,7 @@
 <!-- DIVIDER -->
 <hr class="mt-0 mb-0">
 
-<!-- FEATURES 2 -->
+<!-- ADVANTAGES -->
 <div class="page-section">
 	<div class="container-fluid">
 		<div class="row">
@@ -272,6 +233,7 @@
 					<div class="fes2-text-cont">
 						Due to the lack of analytical informa- tion, management makes the wrong manage- ment decisions, which further leads to a crisis in the company. We sought to find a comprehensive anti-crisis solution and often it was associated with the use of software for the company.
 					</div>
+					<a class="js-inline-popup-link" href="#popup-content-1">READ MORE</a>
 				</div>
 			</div>
 			<div class="col-md-6">
@@ -299,6 +261,7 @@
 						<br>
 						Today, it’s impossible to imagine the work of any enterprise without IT systems and appli- cations that allow you to effectively manage all aspects of your business, from manufac- turing to logistics.
 					</div>
+					<a class="js-inline-popup-link" href="#popup-content-2">READ MORE</a>
 				</div>
 			</div>
 			<div class="col-md-6 right-50">
@@ -324,6 +287,7 @@
 					<div class="fes2-text-cont">
 						The company’s quality policy is aimed at build- ing long-term and mutually beneficial relation- ships with customers and partners in order to increase the satisfaction of all stakeholders: customers, employees, owners and society.
 					</div>
+					<a class="js-inline-popup-link" href="#popup-content-3">READ MORE</a>
 				</div>
 			</div>
 			<div class="col-md-6">
@@ -344,7 +308,7 @@
 		<div class="row">
 			<div class="col-xs-12 col-sm-4 col-md-4">
 				<div class="fes4-box wow fadeIn" style="visibility: hidden; animation-name: none;">
-					<h2 class="section-title">OUR <span class="bold">SERVICES</span></h2>
+					<h2 class="section-title">WE <span class="bold">OFFER</span></h2>
 				</div>
 			</div>
 			<div class="col-xs-12 col-sm-4 col-md-4">
@@ -452,7 +416,78 @@
 	</div>
 </div>
 
+<!-- DIVIDER -->
+<hr class="mt-0 mb-0">
+
+<!-- FEATURES 1 -->
+<div id="about--" class="page-section">
+	<div class="container fes1-cont">
+		<div class="row">
+			<div class="col-md-4 fes1-img-cont wow fadeInUp mb-20" style="visibility: visible; animation-name: fadeInUp;">
+				<img width="200" src="images/advant.svg" alt="img">
+			</div>
+			<div class="col-md-8">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="fes1-main-title-cont wow fadeInDown" style="visibility: visible; animation-name: fadeInDown;">
+							<div class="title-fs-60">
+								ADVANTAGES<br>
+								<span class="bold">OF WORK WITH US</span>
+							</div>
+							<div class="line-3-100"></div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 col-sm-6">
+						<div class="fes1-box wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+							<div class="fes1-box-icon">
+								<div class="icon icon-basic-star"></div>
+							</div>
+							<h3>QUALITY</h3>
+							<p>Get access to a team of talented developers with extensive experience in developing software for software vendors (ISVs)</p>
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-6">
+						<div class="fes1-box wow fadeIn" data-wow-delay="200ms" style="visibility: visible; animation-delay: 200ms; animation-name: fadeIn;">
+							<div class="fes1-box-icon">
+								<div class="icon icon-basic-clockwise"></div>
+							</div>
+							<h3>ACCELERATE</h3>
+							<p>Reduce software development time and accelerate bringing the product to market</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 col-sm-6">
+						<div class="fes1-box wow fadeIn" data-wow-delay="400ms" style="visibility: visible; animation-delay: 400ms; animation-name: fadeIn;">
+							<div class="fes1-box-icon">
+								<div class="icon icon-ecommerce-dollar"></div>
+							</div>
+							<h3>SPENDING</h3>
+							<p>Reduce software development costs and con- trol development and support costs through- out the product life cycle</p>
+						</div>
+					</div><!-- /.col -->
+					<div class="col-md-6 col-sm-6">
+						<div class="fes1-box wow fadeIn" data-wow-delay="600ms" style="visibility: visible; animation-delay: 600ms; animation-name: fadeIn;">
+							<div class="fes1-box-icon">
+								<div class="icon icon-basic-paperplane"></div>
+							</div>
+							<h3>STARTING</h3>
+							<p>Reduce risks when launching a new product</p>
+						</div>
+					</div><!-- /.col -->
+				</div><!-- /.row -->
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- DIVIDER -->
+<!-- <hr class="mt-0 mb-0"> -->
+
 <!-- PORTFOLIO SECTION 2 -->
+<!--
 <div class="page-section pt-110-cont" id="block-portfolio">
 	<div class="container">
 		<div class="row">
@@ -464,10 +499,7 @@
 		</div>
 	</div>
 	<div class="relative">
-		<!-- ITEMS GRID -->
 		<ul class="port-grid port-grid-3 port-grid-gut clearfix" id="items-grid" style="position: relative; height: 834px;">
-
-			<!-- Item 1 -->
 			<li class="port-item mix" style="position: absolute; left: 0px; top: 0px;">
 				<a href="portfolio-single1.html">
 					<div class="port-img-overlay"><img class="port-main-img" src="images/portfolio/projects-5.jpg" alt="img"></div>
@@ -483,8 +515,6 @@
 					</div>
 				</div>
 			</li>
-
-			<!-- Item 2 -->
 			<li class="port-item mix" style="position: absolute; left: 644px; top: 0px;">
 				<a href="portfolio-single1.html">
 					<div class="port-img-overlay">
@@ -502,8 +532,6 @@
 					</div>
 				</div>
 			</li>
-			
-			<!-- Item 3 -->
 			<li class="port-item mix" style="position: absolute; left: 1289px; top: 0px;">
 				<a href="portfolio-single1.html">
 					<div class="port-img-overlay">
@@ -521,8 +549,6 @@
 					</div>
 				</div>
 			</li>
-
-			<!-- Item 4 -->
 			<li class="port-item mix" style="position: absolute; left: 0px; top: 417px;">
 				<a href="portfolio-single1.html">
 					<div class="port-img-overlay">
@@ -540,8 +566,6 @@
 					</div>
 				</div>
 			</li>
-
-			<!-- Item 5 -->
 			<li class="port-item mix" style="position: absolute; left: 644px; top: 417px;">
 				<a href="portfolio-single1.html">
 					<div class="port-img-overlay">
@@ -559,8 +583,6 @@
 					</div>
 				</div>
 			</li>
-
-			<!-- Item 6 -->
 			<li class="port-item mix" style="position: absolute; left: 1289px; top: 417px;">
 				<a href="portfolio-single1.html">
 					<div class="port-img-overlay">
@@ -581,6 +603,7 @@
 		</ul>
 	</div>
 </div>
+-->
 
 <!-- VIEW MORE PROJECTS  -->
 <!--
@@ -591,6 +614,7 @@
 <!-- END PORTFOLIO SECTION 1 -->
 
 <!-- CLIENTS 1 & TESTIMONIALS 1 -->
+<!--
 <div class="page-section p-110-cont" id="block-clients">
 	<div class="container">
 		<div class="row">
@@ -601,7 +625,6 @@
 			</div>
 		</div>
 		<div class="row">
-			<!-- CLIENTS 1 -->
 			<div class="col-md-7">
 				<div class="row client-row border-bot">
 					<div class="col-xs-6 col-sm-3 text-center">
@@ -632,7 +655,6 @@
 					</div>
 				</div>
 			</div>
-			<!-- TESTIMONIALS 1 -->
 			<div class="col-md-5">
 				<blockquote class="quote mb-0 pl-50-min-1169">
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, maiores esse temporibus accusantium quas soluta quis sed rerum.</p>
@@ -642,8 +664,10 @@
 		</div>
 	</div>
 </div>
+-->
 
 <!-- WORK PROCESS 1 -->
+<!--
 <div class="page-section ">
 	<div class="work-proc-1-bg">
 		<div class="container fes4-cont">
@@ -708,6 +732,7 @@
 		</div>
 	</div>
 </div>
+-->
 
 <!-- ABOUT US 2 -->
 <div class="page-section about-us-2-cont pt-100-cont" id="block-team">
@@ -736,31 +761,28 @@
 </div>
 
 <!-- COUNTERS 1 -->
+<!--
 <div id="counter-1" class="page-section p-80-cont">
 	<div class="container">
 		<div class="row text-center">
-			<!-- Item -->
 			<div class="col-xs-6 col-sm-3">
 				<div class="count-number">75</div>
 				<div class="count-descr">
 					<span class="count-title">AWARDS WINNING</span>
 				</div>
 			</div>
-			<!-- Item -->
 			<div class="col-xs-6 col-sm-3">
 				<div class="count-number">450</div>
 				<div class="count-descr">
 					<span class="count-title">HAPPY CLIENTS</span>
 				</div>
 			</div>
-			<!-- Item -->
 			<div class="col-xs-6 col-sm-3">
 				<div class="count-number">151</div>
 				<div class="count-descr">
 					<span class="count-title">PROJECTS DONE</span>
 				</div>
 			</div>
-			<!-- Item -->
 			<div class="col-xs-6 col-sm-3">
 				<div class="count-number">768</div>
 				<div class="count-descr">
@@ -770,11 +792,13 @@
 		</div>
 	</div>
 </div>
+-->
 
 <!-- DIVIDER -->
-<hr class="mt-0 mb-0">
+<!-- <hr class="mt-0 mb-0"> -->
 
 <!-- ADS 1 -->
+<!--
 <div class="page-section">
 	<div class="container">
 		<div class="row">
@@ -800,11 +824,13 @@
 		</div>
 	</div>
 </div>
+-->
 
 <!-- DIVIDER -->
-<hr class="mt-0 mb-0">
+<!-- <hr class="mt-0 mb-0"> -->
 
 <!-- ADS 2 -->
+<!--
 <div class="page-section">
 	<div class="container">
 		<div class="row">
@@ -830,8 +856,10 @@
 		</div>
 	</div>
 </div>
+-->
 
 <!-- VIDEO ADS 1 -->
+<!--
 <div class="page-section video-ads-bg">
 	<div class="container">
 		<div class="video-ads-text-cont clearfix">
@@ -845,142 +873,136 @@
 		</div>
 	</div>
 </div>
+-->
 
-				<!-- BLOG 1 -->
-				<div class="page-section pt-110-b-30-cont">
-					<div class="container">
-								
-						<div class="mb-50">
-							<h2 class="section-title pr-0">LATEST <span class="bold">NEWS</span><a href="blog-right-sidebar.html" class="section-more right">OUR BLOG</a>
-									</h2>
-						</div>
-						
-						<div class="row">
-							
-							<!-- Post Item 1 -->
-							<div class="col-sm-6 col-md-4 col-lg-4 wow fadeIn pb-70" style="visibility: hidden; animation-name: none;">
-									
-								<div class="post-prev-img">
-									<a href="blog-single-sidebar-right.html"><img src="images/blog/post-prev-1.jpg" alt="img"></a>
-								</div>
-									
-								<div class="post-prev-title">
-									<h3><a href="blog-single-sidebar-right.html">TIME FOR MINIMALISM</a></h3>
-								</div>
-									
-								<div class="post-prev-info">
-									JULE 10<span class="slash-divider">/</span><a href="https://1.envato.market/a1gQR">JOHN DOE</a>
-								</div>
-									
-								<div class="post-prev-text">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, nostrum, cumque culpa provident aliquam commodi assumenda laudantium magnam illo nostrum. 
-								</div>
-									
-								<div class="post-prev-more-cont clearfix">
-									<div class="post-prev-more left">
-										<a href="blog-single-sidebar-right.html" class="blog-more">READ MORE</a>
-									</div>
-									<div class="right">
-										<a href="blog-single-sidebar-right.html#comments" class="post-prev-count"><span aria-hidden="true" class="icon_comment_alt"></span><span class="icon-count">21</span></a>
-										<a href="https://1.envato.market/a1gQR" class="post-prev-count"><span aria-hidden="true" class="icon_heart_alt"></span><span class="icon-count">53</span></a>
-										<a href="#" class="post-prev-count dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-											<span aria-hidden="true" class="social_share"></span>
-										</a>
-										<ul class="social-menu dropdown-menu dropdown-menu-right" role="menu">
-											<li><a href="#"><span aria-hidden="true" class="social_facebook"></span></a>
-											</li>
-											<li><a href="#"><span aria-hidden="true" class="social_twitter"></span></a></li>
-											<li><a href="#"><span aria-hidden="true" class="social_dribbble"></span></a></li>
-										</ul>
-									</div>
-								</div>
-							
-							</div>
-							
-							<!-- Post Item 2 -->
-							<div class="col-sm-6 col-md-4 col-lg-4 wow fadeIn pb-70" data-wow-delay="200ms" style="visibility: hidden; animation-delay: 200ms; animation-name: none;">
-									
-								<div class="post-prev-img">
-									<a href="blog-single-sidebar-right.html"><img src="images/blog/post-prev-2.jpg" alt="img"></a>
-								</div>
-									
-								<div class="post-prev-title">
-									<h3><a href="blog-single-sidebar-right.html">NEW TRENDS IN WEB DESIGN</a></h3>
-								</div>
-									
-								<div class="post-prev-info">
-									MAY 11<span class="slash-divider">/</span><a href="https://1.envato.market/a1gQR">JOHN DOE</a>
-								</div>
-									
-								<div class="post-prev-text">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, nostrum, cumque culpa provident aliquam commodi assumenda laudantium magnam illo nostrum. 
-								</div>
-									
-								<div class="post-prev-more-cont clearfix">
-									<div class="post-prev-more left">
-										<a href="blog-single-sidebar-right.html" class="blog-more">READ MORE</a>
-									</div>
-									<div class="right">
-										<a href="blog-single-sidebar-right.html#comments" class="post-prev-count"><span aria-hidden="true" class="icon_comment_alt"></span><span class="icon-count">21</span></a>
-										<a href="https://1.envato.market/a1gQR" class="post-prev-count"><span aria-hidden="true" class="icon_heart_alt"></span><span class="icon-count">53</span></a>
-										<a href="#" class="post-prev-count dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-											<span aria-hidden="true" class="social_share"></span>
-										</a>
-										<ul class="social-menu dropdown-menu dropdown-menu-right" role="menu">
-											<li><a href="#"><span aria-hidden="true" class="social_facebook"></span></a>
-											</li>
-											<li><a href="#"><span aria-hidden="true" class="social_twitter"></span></a></li>
-											<li><a href="#"><span aria-hidden="true" class="social_dribbble"></span></a></li>
-										</ul>
-									</div>
-								</div>
-							
-							</div>
-							
-							<!-- Post Item 3 -->
-							<div class="col-sm-6 col-md-4 col-lg-4 wow fadeIn pb-70" data-wow-delay="400ms" style="visibility: hidden; animation-delay: 400ms; animation-name: none;">
-									
-								<div class="post-prev-img">
-									<a href="blog-single-sidebar-right.html"><img src="images/blog/post-prev-3.jpg" alt="img"></a>
-								</div>
-									
-								<div class="post-prev-title">
-									<h3><a href="blog-single-sidebar-right.html">THE SOUND OF LIFE</a></h3>
-								</div>
-									
-								<div class="post-prev-info">
-									DECEMBER 21<span class="slash-divider">/</span><a href="https://1.envato.market/a1gQR">JOHN DOE</a>
-								</div>
-									
-								<div class="post-prev-text">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, nostrum, cumque culpa provident aliquam commodi assumenda laudantium magnam illo nostrum. 
-								</div>
-									
-								<div class="post-prev-more-cont clearfix">
-									<div class="post-prev-more left">
-										<a href="blog-single-sidebar-right.html" class="blog-more">READ MORE</a>
-									</div>
-									<div class="right">
-										<a href="blog-single-sidebar-right.html#comments" class="post-prev-count"><span aria-hidden="true" class="icon_comment_alt"></span><span class="icon-count">21</span></a>
-										<a href="https://1.envato.market/a1gQR" class="post-prev-count"><span aria-hidden="true" class="icon_heart_alt"></span><span class="icon-count">53</span></a>
-										<a href="#" class="post-prev-count dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-											<span aria-hidden="true" class="social_share"></span>
-										</a>
-										<ul class="social-menu dropdown-menu dropdown-menu-right" role="menu">
-											<li><a href="#"><span aria-hidden="true" class="social_facebook"></span></a>
-											</li>
-											<li><a href="#"><span aria-hidden="true" class="social_twitter"></span></a></li>
-											<li><a href="#"><span aria-hidden="true" class="social_dribbble"></span></a></li>
-										</ul>
-									</div>
-								</div>
-							
-							</div>
-							
-						</div>
-						
+<!-- BLOG 1 -->
+<!--
+<div class="page-section pt-110-b-30-cont">
+	<div class="container">
+		<div class="mb-50">
+			<h2 class="section-title pr-0">LATEST <span class="bold">NEWS</span><a href="blog-right-sidebar.html" class="section-more right">OUR BLOG</a></h2>
+		</div>
+		<div class="row">
+			<div class="col-sm-6 col-md-4 col-lg-4 wow fadeIn pb-70" style="visibility: hidden; animation-name: none;">
+					
+				<div class="post-prev-img">
+					<a href="blog-single-sidebar-right.html"><img src="images/blog/post-prev-1.jpg" alt="img"></a>
+				</div>
+					
+				<div class="post-prev-title">
+					<h3><a href="blog-single-sidebar-right.html">TIME FOR MINIMALISM</a></h3>
+				</div>
+					
+				<div class="post-prev-info">
+					JULE 10<span class="slash-divider">/</span><a href="https://1.envato.market/a1gQR">JOHN DOE</a>
+				</div>
+					
+				<div class="post-prev-text">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, nostrum, cumque culpa provident aliquam commodi assumenda laudantium magnam illo nostrum. 
+				</div>
+					
+				<div class="post-prev-more-cont clearfix">
+					<div class="post-prev-more left">
+						<a href="blog-single-sidebar-right.html" class="blog-more">READ MORE</a>
+					</div>
+					<div class="right">
+						<a href="blog-single-sidebar-right.html#comments" class="post-prev-count"><span aria-hidden="true" class="icon_comment_alt"></span><span class="icon-count">21</span></a>
+						<a href="https://1.envato.market/a1gQR" class="post-prev-count"><span aria-hidden="true" class="icon_heart_alt"></span><span class="icon-count">53</span></a>
+						<a href="#" class="post-prev-count dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+							<span aria-hidden="true" class="social_share"></span>
+						</a>
+						<ul class="social-menu dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#"><span aria-hidden="true" class="social_facebook"></span></a>
+							</li>
+							<li><a href="#"><span aria-hidden="true" class="social_twitter"></span></a></li>
+							<li><a href="#"><span aria-hidden="true" class="social_dribbble"></span></a></li>
+						</ul>
 					</div>
 				</div>
+			
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-4 wow fadeIn pb-70" data-wow-delay="200ms" style="visibility: hidden; animation-delay: 200ms; animation-name: none;">
+					
+				<div class="post-prev-img">
+					<a href="blog-single-sidebar-right.html"><img src="images/blog/post-prev-2.jpg" alt="img"></a>
+				</div>
+					
+				<div class="post-prev-title">
+					<h3><a href="blog-single-sidebar-right.html">NEW TRENDS IN WEB DESIGN</a></h3>
+				</div>
+					
+				<div class="post-prev-info">
+					MAY 11<span class="slash-divider">/</span><a href="https://1.envato.market/a1gQR">JOHN DOE</a>
+				</div>
+					
+				<div class="post-prev-text">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, nostrum, cumque culpa provident aliquam commodi assumenda laudantium magnam illo nostrum. 
+				</div>
+					
+				<div class="post-prev-more-cont clearfix">
+					<div class="post-prev-more left">
+						<a href="blog-single-sidebar-right.html" class="blog-more">READ MORE</a>
+					</div>
+					<div class="right">
+						<a href="blog-single-sidebar-right.html#comments" class="post-prev-count"><span aria-hidden="true" class="icon_comment_alt"></span><span class="icon-count">21</span></a>
+						<a href="https://1.envato.market/a1gQR" class="post-prev-count"><span aria-hidden="true" class="icon_heart_alt"></span><span class="icon-count">53</span></a>
+						<a href="#" class="post-prev-count dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+							<span aria-hidden="true" class="social_share"></span>
+						</a>
+						<ul class="social-menu dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#"><span aria-hidden="true" class="social_facebook"></span></a>
+							</li>
+							<li><a href="#"><span aria-hidden="true" class="social_twitter"></span></a></li>
+							<li><a href="#"><span aria-hidden="true" class="social_dribbble"></span></a></li>
+						</ul>
+					</div>
+				</div>
+			
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-4 wow fadeIn pb-70" data-wow-delay="400ms" style="visibility: hidden; animation-delay: 400ms; animation-name: none;">
+					
+				<div class="post-prev-img">
+					<a href="blog-single-sidebar-right.html"><img src="images/blog/post-prev-3.jpg" alt="img"></a>
+				</div>
+					
+				<div class="post-prev-title">
+					<h3><a href="blog-single-sidebar-right.html">THE SOUND OF LIFE</a></h3>
+				</div>
+					
+				<div class="post-prev-info">
+					DECEMBER 21<span class="slash-divider">/</span><a href="https://1.envato.market/a1gQR">JOHN DOE</a>
+				</div>
+					
+				<div class="post-prev-text">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, nostrum, cumque culpa provident aliquam commodi assumenda laudantium magnam illo nostrum. 
+				</div>
+					
+				<div class="post-prev-more-cont clearfix">
+					<div class="post-prev-more left">
+						<a href="blog-single-sidebar-right.html" class="blog-more">READ MORE</a>
+					</div>
+					<div class="right">
+						<a href="blog-single-sidebar-right.html#comments" class="post-prev-count"><span aria-hidden="true" class="icon_comment_alt"></span><span class="icon-count">21</span></a>
+						<a href="https://1.envato.market/a1gQR" class="post-prev-count"><span aria-hidden="true" class="icon_heart_alt"></span><span class="icon-count">53</span></a>
+						<a href="#" class="post-prev-count dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+							<span aria-hidden="true" class="social_share"></span>
+						</a>
+						<ul class="social-menu dropdown-menu dropdown-menu-right" role="menu">
+							<li><a href="#"><span aria-hidden="true" class="social_facebook"></span></a>
+							</li>
+							<li><a href="#"><span aria-hidden="true" class="social_twitter"></span></a></li>
+							<li><a href="#"><span aria-hidden="true" class="social_dribbble"></span></a></li>
+						</ul>
+					</div>
+				</div>
+			
+			</div>
+			
+		</div>
+		
+	</div>
+</div>
+-->
 
 <!-- CONTACT FORM -->
 <div class="page-section nl-cont" id="block-contact">
@@ -991,11 +1013,10 @@
 				<a href="#" class="section-more right">PRIVACY POLICY</a>
 			</h2>
 		</div>
-		
 		<div class="row">
 			<div class="col-md-12">
 				<div class="">
-					<form id="contact-form" action="http://abcgomel.ru/haswell/php/contact-form.php" method="POST">
+					<form id="contact-form" action="" method="POST">
 						<div class="row">
 							<div class="col-md-6">
 								<div class="row">
@@ -1061,8 +1082,6 @@
 				<ul class="links-list bold a-text-cont">
 					<li><a class="js-scrollto" href="#block-home">HOME</a></li>
 					<li><a class="js-scrollto" href="#block-services">SERVICES</a></li>
-					<li><a class="js-scrollto" href="#block-portfolio">PORTFOLIO</a></li>
-					<li><a class="js-scrollto" href="#block-clients">CLIENTS</a></li>
 					<li><a class="js-scrollto" href="#block-team">TEAM</a></li>
 					<li><a class="js-scrollto" href="#block-contact">CONTACT</a></li>
 				</ul>
@@ -1123,6 +1142,63 @@
 </div><!-- End BG -->   
 </div><!-- End wrap --> 
 
+<!-- POPUP -->
+<div class="hidden">
+	<div class="popup-modal" id="popup-callback">
+		<form action="" method="POST">
+			<div class="row">
+				<div class="col-md-12 mb-23">
+					<input type="text" value="" data-msg-required="Please enter your name" maxlength="100" class="controled " name="name" id="name" placeholder="NAME" required>
+				</div>
+				<div class="col-md-12 mb-23">
+					<input type="text" value="" data-msg-required="Please enter your phone" class="controled " name="phone" placeholder="PHONE" required>
+				</div>
+				<div class="text-right text-center-xxs">
+					<input type="submit" value="SEND" class="button medium gray mt-40" data-loading-text="Loading...">
+				</div>
+			</div>
+		</form>
+	</div><!-- /.popup -->
+
+	<div class="popup-content" id="popup-content-1">
+		<h3>PREREQUISITES</h3>
+		<hr>
+		<p><span class="bold">Helping clients rebuild their business after a crisis, we always pay attention to the insuffi- cient level of automation of the enterprise’s activities.</span> Due to the lack of analytical informa- tion, management makes the wrong manage- ment decisions, which further leads to a crisis in the company.</p>
+		<p>We sought to find a comprehensive anti-crisis solution and often it was associated with the use of software for the company. However, studying the software market, we were faced with the fact that with an abundance of various ready- made solutions, it is extremely difficult to choose one thing to suit our customers and solve all their task. For example, the client needs to keep records of tasks and projects, but also need a program for accounting for finances and budget planning, and still need accounting for salaries and bonuses of employees. There are programs that solve their part of the task one by one, but complex solutions (such as SA, Oracle) are very expensive for our cli- ents.</p>
+		<p>Recalling our experience in software develop- ment, it was decided to create a company to devel- op software for our clients, which will allow them to solve their task in a comprehensive manner and will serve as invaluable assistants in crisis manage- ment. The United Arab Emirates was chosen as the place of incorporation of the company because this country is one of the economic centers of the planet, and its banking system is very reliable. In addition, among our clients there are foreign com- panies that would like our company to be not from Russia, since now banking operations with Russian companies cause a negative reaction from foreign financial institutions. Creating a company in the UAE will allow our company to offer its products not only in Russia, but throughout the world.</p>
+	</div><!-- /.popup -->
+
+	<div class="popup-content" id="popup-content-2">
+		<h3>OUR CAPABILITIES</h3>
+		<hr>
+		<p>Today, it’s impossible to imagine the work of any enterprise without IT systems and appli- cations that allow you to effectively manage all aspects of your business, from manufac- turing to logistics.
+		«Maintask Development» offers application support and integration services for various industries.</p>
+		<p>At all stages of project implementation, from requirements analysis and system design, solution development to user implementa- tion and training, «Maintask Development» focuses on achieving concrete results in meeting customer needs, rather than simply delivering a set of software and hardware.</p>
+		<ul>
+			<li><p>Development of ERP systems</p></li>
+			<li><p>Development of project and task management system</p></li>
+			<li><p>Website development</p></li>
+			<li><p>Mobile Application Development</p></li>
+			<li><p>Integration of various systems</p></li>
+		</ul>
+	</div><!-- /.popup -->
+
+	<div class="popup-content" id="popup-content-3">
+		<h3>QUALITY POLICY</h3>
+		<hr>
+		<p>The company’s quality policy is aimed at build- ing long-term and mutually beneficial relation- ships with customers and partners in order to increase the satisfaction of all stakeholders: customers, employees, owners and society.</p>
+		<p class="bold">The main ways of achieving the goals are:</p>
+		<ul>
+			<li><p>application of the process and system ap- proach in the management of the company to achieve high quality products and services;</p></li>
+			<li><p>regular analysis and continuous improve- ment of key business processes;</p></li>
+			<li><p>the most accurate identification of the needs and expectations of customers and their implementation with the required quality and minimal cost;</p></li>
+			<li><p>improvement of work with clients based on an analysis of their satisfaction with the company’s products and services;</p></li>
+			<li><p>creation of favorable conditions for the ac- cumulation and exchange of knowledge and experience within the company, as well as to increase the professional level of employees.</p></li>
+		</ul>
+		<p>At all stages of project implementation, from requirements analysis and system design, solution development to user implementa- tion and training, «MainTask Development» focuses on achieving concrete results in meet- ing customer needs, rather than simply deliv- ering software and hardware.</p>
+	</div><!-- /.popup -->
+</div><!-- /.d-none -->
+
 
 <!-- jQuery  -->
 <script src="js/jquery-1.11.2.min.js"></script>
@@ -1145,7 +1221,7 @@
 <!-- MAIN SCRIPT -->
 <script src="js/main.src.js"></script>
 
-<script src="js/main.js"></script>
+<script src="js/main.js?v=001"></script>
 
 </body>
 </html>
