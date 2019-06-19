@@ -1,0 +1,2860 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>PSORIX</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<meta name="description" content="">
+
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" sizes="32x32" href= "landing_file/psorix/Landing_3/img/favicon-32x32.png"/>
+	<link rel="icon" type="image/png" sizes="96x96" href= "landing_file/psorix/Landing_3/img/favicon-96x96.png"/>
+	<link rel="icon" type="image/png" sizes="16x16" href= "landing_file/psorix/Landing_3/img/favicon-16x16.png"/>
+
+	<!-- JS -->		
+	<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="js/date_random.js"></script>
+
+
+<style>hr,img,legend{border:0}legend,td,th{padding:0}body,figure{margin:0}.clearfix:after,.container-fluid:after,.container:after,.row:after{clear:both}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent;color:#337ab7;text-decoration:none}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,optgroup,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}.img-thumbnail,body{background-color:#fff}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{vertical-align:middle}svg:not(:root){overflow:hidden}hr{-webkit-box-sizing:content-box;box-sizing:content-box;height:0}pre,textarea{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input[type=checkbox],input[type=radio]{-webkit-box-sizing:border-box;box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}table{border-collapse:collapse;border-spacing:0}*,:after,:before{-webkit-box-sizing:border-box;box-sizing:border-box}html{font-size:10px;-webkit-tap-highlight-color:transparent}body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.42857;color:#333}button,input,select,textarea{font-family:inherit;font-size:inherit;line-height:inherit}a:focus,a:hover{color:#23527c;text-decoration:underline}a:focus{outline:-webkit-focus-ring-color auto 5px;outline-offset:-2px}.img-responsive{display:block;max-width:100%;height:auto}.img-rounded{-webkit-border-radius:6px;border-radius:6px}.img-thumbnail{padding:4px;line-height:1.42857;border:1px solid #ddd;-webkit-border-radius:4px;border-radius:4px;-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out;display:inline-block;max-width:100%;height:auto}.clearfix:after,.clearfix:before,.container-fluid:after,.container-fluid:before,.container:after,.container:before,.row:after,.row:before{content:" ";display:table}.img-circle{-webkit-border-radius:50%;border-radius:50%}hr{margin-top:20px;margin-bottom:20px;border-top:1px solid #eee}.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);border:0}.sr-only-focusable:active,.sr-only-focusable:focus{position:static;width:auto;height:auto;margin:0;overflow:visible;clip:auto}.container,.container-fluid{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}[role=button]{cursor:pointer}@media (min-width:480px){.container{width:470px}}@media (min-width:992px){.container{width:970px}}@media (min-width:1200px){.container{width:1170px}}.row{margin-left:-15px;margin-right:-15px}.col-lg-1,.col-lg-10,.col-lg-11,.col-lg-12,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-md-1,.col-md-10,.col-md-11,.col-md-12,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-sm-1,.col-sm-10,.col-sm-11,.col-sm-12,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-xs-1,.col-xs-10,.col-xs-11,.col-xs-12,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9{position:relative;min-height:1px;padding-left:15px;padding-right:15px}.col-xs-1,.col-xs-10,.col-xs-11,.col-xs-12,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9{float:left}.col-xs-1{width:8.33333%}.col-xs-2{width:16.66667%}.col-xs-3{width:25%}.col-xs-4{width:33.33333%}.col-xs-5{width:41.66667%}.col-xs-6{width:50%}.col-xs-7{width:58.33333%}.col-xs-8{width:66.66667%}.col-xs-9{width:75%}.col-xs-10{width:83.33333%}.col-xs-11{width:91.66667%}.col-xs-12{width:100%}.col-xs-pull-0{right:auto}.col-xs-pull-1{right:8.33333%}.col-xs-pull-2{right:16.66667%}.col-xs-pull-3{right:25%}.col-xs-pull-4{right:33.33333%}.col-xs-pull-5{right:41.66667%}.col-xs-pull-6{right:50%}.col-xs-pull-7{right:58.33333%}.col-xs-pull-8{right:66.66667%}.col-xs-pull-9{right:75%}.col-xs-pull-10{right:83.33333%}.col-xs-pull-11{right:91.66667%}.col-xs-pull-12{right:100%}.col-xs-push-0{left:auto}.col-xs-push-1{left:8.33333%}.col-xs-push-2{left:16.66667%}.col-xs-push-3{left:25%}.col-xs-push-4{left:33.33333%}.col-xs-push-5{left:41.66667%}.col-xs-push-6{left:50%}.col-xs-push-7{left:58.33333%}.col-xs-push-8{left:66.66667%}.col-xs-push-9{left:75%}.col-xs-push-10{left:83.33333%}.col-xs-push-11{left:91.66667%}.col-xs-push-12{left:100%}.col-xs-offset-0{margin-left:0}.col-xs-offset-1{margin-left:8.33333%}.col-xs-offset-2{margin-left:16.66667%}.col-xs-offset-3{margin-left:25%}.col-xs-offset-4{margin-left:33.33333%}.col-xs-offset-5{margin-left:41.66667%}.col-xs-offset-6{margin-left:50%}.col-xs-offset-7{margin-left:58.33333%}.col-xs-offset-8{margin-left:66.66667%}.col-xs-offset-9{margin-left:75%}.col-xs-offset-10{margin-left:83.33333%}.col-xs-offset-11{margin-left:91.66667%}.col-xs-offset-12{margin-left:100%}@media (min-width:480px){.col-sm-1,.col-sm-10,.col-sm-11,.col-sm-12,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9{float:left}.col-sm-1{width:8.33333%}.col-sm-2{width:16.66667%}.col-sm-3{width:25%}.col-sm-4{width:33.33333%}.col-sm-5{width:41.66667%}.col-sm-6{width:50%}.col-sm-7{width:58.33333%}.col-sm-8{width:66.66667%}.col-sm-9{width:75%}.col-sm-10{width:83.33333%}.col-sm-11{width:91.66667%}.col-sm-12{width:100%}.col-sm-pull-0{right:auto}.col-sm-pull-1{right:8.33333%}.col-sm-pull-2{right:16.66667%}.col-sm-pull-3{right:25%}.col-sm-pull-4{right:33.33333%}.col-sm-pull-5{right:41.66667%}.col-sm-pull-6{right:50%}.col-sm-pull-7{right:58.33333%}.col-sm-pull-8{right:66.66667%}.col-sm-pull-9{right:75%}.col-sm-pull-10{right:83.33333%}.col-sm-pull-11{right:91.66667%}.col-sm-pull-12{right:100%}.col-sm-push-0{left:auto}.col-sm-push-1{left:8.33333%}.col-sm-push-2{left:16.66667%}.col-sm-push-3{left:25%}.col-sm-push-4{left:33.33333%}.col-sm-push-5{left:41.66667%}.col-sm-push-6{left:50%}.col-sm-push-7{left:58.33333%}.col-sm-push-8{left:66.66667%}.col-sm-push-9{left:75%}.col-sm-push-10{left:83.33333%}.col-sm-push-11{left:91.66667%}.col-sm-push-12{left:100%}.col-sm-offset-0{margin-left:0}.col-sm-offset-1{margin-left:8.33333%}.col-sm-offset-2{margin-left:16.66667%}.col-sm-offset-3{margin-left:25%}.col-sm-offset-4{margin-left:33.33333%}.col-sm-offset-5{margin-left:41.66667%}.col-sm-offset-6{margin-left:50%}.col-sm-offset-7{margin-left:58.33333%}.col-sm-offset-8{margin-left:66.66667%}.col-sm-offset-9{margin-left:75%}.col-sm-offset-10{margin-left:83.33333%}.col-sm-offset-11{margin-left:91.66667%}.col-sm-offset-12{margin-left:100%}}@media (min-width:992px){.col-md-1,.col-md-10,.col-md-11,.col-md-12,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9{float:left}.col-md-1{width:8.33333%}.col-md-2{width:16.66667%}.col-md-3{width:25%}.col-md-4{width:33.33333%}.col-md-5{width:41.66667%}.col-md-6{width:50%}.col-md-7{width:58.33333%}.col-md-8{width:66.66667%}.col-md-9{width:75%}.col-md-10{width:83.33333%}.col-md-11{width:91.66667%}.col-md-12{width:100%}.col-md-pull-0{right:auto}.col-md-pull-1{right:8.33333%}.col-md-pull-2{right:16.66667%}.col-md-pull-3{right:25%}.col-md-pull-4{right:33.33333%}.col-md-pull-5{right:41.66667%}.col-md-pull-6{right:50%}.col-md-pull-7{right:58.33333%}.col-md-pull-8{right:66.66667%}.col-md-pull-9{right:75%}.col-md-pull-10{right:83.33333%}.col-md-pull-11{right:91.66667%}.col-md-pull-12{right:100%}.col-md-push-0{left:auto}.col-md-push-1{left:8.33333%}.col-md-push-2{left:16.66667%}.col-md-push-3{left:25%}.col-md-push-4{left:33.33333%}.col-md-push-5{left:41.66667%}.col-md-push-6{left:50%}.col-md-push-7{left:58.33333%}.col-md-push-8{left:66.66667%}.col-md-push-9{left:75%}.col-md-push-10{left:83.33333%}.col-md-push-11{left:91.66667%}.col-md-push-12{left:100%}.col-md-offset-0{margin-left:0}.col-md-offset-1{margin-left:8.33333%}.col-md-offset-2{margin-left:16.66667%}.col-md-offset-3{margin-left:25%}.col-md-offset-4{margin-left:33.33333%}.col-md-offset-5{margin-left:41.66667%}.col-md-offset-6{margin-left:50%}.col-md-offset-7{margin-left:58.33333%}.col-md-offset-8{margin-left:66.66667%}.col-md-offset-9{margin-left:75%}.col-md-offset-10{margin-left:83.33333%}.col-md-offset-11{margin-left:91.66667%}.col-md-offset-12{margin-left:100%}}@media (min-width:1200px){.col-lg-1,.col-lg-10,.col-lg-11,.col-lg-12,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9{float:left}.col-lg-1{width:8.33333%}.col-lg-2{width:16.66667%}.col-lg-3{width:25%}.col-lg-4{width:33.33333%}.col-lg-5{width:41.66667%}.col-lg-6{width:50%}.col-lg-7{width:58.33333%}.col-lg-8{width:66.66667%}.col-lg-9{width:75%}.col-lg-10{width:83.33333%}.col-lg-11{width:91.66667%}.col-lg-12{width:100%}.col-lg-pull-0{right:auto}.col-lg-pull-1{right:8.33333%}.col-lg-pull-2{right:16.66667%}.col-lg-pull-3{right:25%}.col-lg-pull-4{right:33.33333%}.col-lg-pull-5{right:41.66667%}.col-lg-pull-6{right:50%}.col-lg-pull-7{right:58.33333%}.col-lg-pull-8{right:66.66667%}.col-lg-pull-9{right:75%}.col-lg-pull-10{right:83.33333%}.col-lg-pull-11{right:91.66667%}.col-lg-pull-12{right:100%}.col-lg-push-0{left:auto}.col-lg-push-1{left:8.33333%}.col-lg-push-2{left:16.66667%}.col-lg-push-3{left:25%}.col-lg-push-4{left:33.33333%}.col-lg-push-5{left:41.66667%}.col-lg-push-6{left:50%}.col-lg-push-7{left:58.33333%}.col-lg-push-8{left:66.66667%}.col-lg-push-9{left:75%}.col-lg-push-10{left:83.33333%}.col-lg-push-11{left:91.66667%}.col-lg-push-12{left:100%}.col-lg-offset-0{margin-left:0}.col-lg-offset-1{margin-left:8.33333%}.col-lg-offset-2{margin-left:16.66667%}.col-lg-offset-3{margin-left:25%}.col-lg-offset-4{margin-left:33.33333%}.col-lg-offset-5{margin-left:41.66667%}.col-lg-offset-6{margin-left:50%}.col-lg-offset-7{margin-left:58.33333%}.col-lg-offset-8{margin-left:66.66667%}.col-lg-offset-9{margin-left:75%}.col-lg-offset-10{margin-left:83.33333%}.col-lg-offset-11{margin-left:91.66667%}.col-lg-offset-12{margin-left:100%}}.center-block{display:block;margin-left:auto;margin-right:auto}.pull-right{float:right!important}.pull-left{float:left!important}.hide{display:none!important}.show{display:block!important}.hidden,.visible-lg,.visible-lg-block,.visible-lg-inline,.visible-lg-inline-block,.visible-md,.visible-md-block,.visible-md-inline,.visible-md-inline-block,.visible-sm,.visible-sm-block,.visible-sm-inline,.visible-sm-inline-block,.visible-xs,.visible-xs-block,.visible-xs-inline,.visible-xs-inline-block{display:none!important}.invisible{visibility:hidden}.text-hide{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0}.affix{position:fixed}@-ms-viewport{width:device-width}@media (max-width:479px){.visible-xs{display:block!important}table.visible-xs{display:table!important}tr.visible-xs{display:table-row!important}td.visible-xs,th.visible-xs{display:table-cell!important}.visible-xs-block{display:block!important}.visible-xs-inline{display:inline!important}.visible-xs-inline-block{display:inline-block!important}}@media (min-width:480px) and (max-width:991px){.visible-sm{display:block!important}table.visible-sm{display:table!important}tr.visible-sm{display:table-row!important}td.visible-sm,th.visible-sm{display:table-cell!important}.visible-sm-block{display:block!important}.visible-sm-inline{display:inline!important}.visible-sm-inline-block{display:inline-block!important}}@media (min-width:992px) and (max-width:1199px){.visible-md{display:block!important}table.visible-md{display:table!important}tr.visible-md{display:table-row!important}td.visible-md,th.visible-md{display:table-cell!important}.visible-md-block{display:block!important}.visible-md-inline{display:inline!important}.visible-md-inline-block{display:inline-block!important}}@media (min-width:1200px){.visible-lg{display:block!important}table.visible-lg{display:table!important}tr.visible-lg{display:table-row!important}td.visible-lg,th.visible-lg{display:table-cell!important}.visible-lg-block{display:block!important}.visible-lg-inline{display:inline!important}.visible-lg-inline-block{display:inline-block!important}.hidden-lg{display:none!important}}@media (max-width:479px){.hidden-xs{display:none!important}}@media (min-width:480px) and (max-width:991px){.hidden-sm{display:none!important}}@media (min-width:992px) and (max-width:1199px){.hidden-md{display:none!important}}.visible-print{display:none!important}@media print{.visible-print{display:block!important}table.visible-print{display:table!important}tr.visible-print{display:table-row!important}td.visible-print,th.visible-print{display:table-cell!important}}.visible-print-block{display:none!important}@media print{.visible-print-block{display:block!important}}.visible-print-inline{display:none!important}@media print{.visible-print-inline{display:inline!important}}.visible-print-inline-block{display:none!important}@media print{.visible-print-inline-block{display:inline-block!important}.hidden-print{display:none!important}}</style>
+
+<style>
+	header,section{overflow:hidden}.img,body{background-repeat:no-repeat}.btn,.send{text-transform:uppercase}.header-block,.line-all-count{text-align:center}*{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none}input{-webkit-user-select:auto;-moz-user-select:auto;-ms-user-select:auto}.hidden{display:none}.row-flex,.top-rekl{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox}body{background-color:#fff;background-image:url(landing_file/psorix/Landing_3/img/bg-top.jpg);background-size:100%;color:#000;font-family:OpenSansRegular,sans-serif;font-size:12px;min-width:320px}.bold,.green{font-family:OpenSansBold,sans-serif}.timer-header,.top-callme-header,.top-rekl{font-size:1.1em}h1,h2,h3,h4,h5,h6{font-weight:400}header{padding-bottom:45px}.green{color:#8dab36}.red{color:red}.pink{color:#b66466}.row-flex{display:-moz-flex;display:-ms-flex;display:-o-flex;display:flex;-webkit-flex-flow:row wrap;-ms-flex-flow:row wrap;flex-flow:row wrap}.top-line{height:99px}.top-rekl{margin-left:45px;display:flex;width:360px;margin-top:17px}.top-callme-body,.top-rekl-item{display:-webkit-flex;display:-webkit-box;display:-ms-flexbox}.top-rekl-item{display:flex}.top-rekl-item:last-child{margin-left:20px}.top-rekl-item .text{margin-left:4px}.img{width:30px;height:35px;background-image:url(landing_file/psorix/Landing_3/img/icons.png)}.img.item1{background-position:-158px 6px}.img.item2{background-position:0 6px}.top-timer{margin-left:30px;margin-top:8px}.top-callme{font-family:OpenSansRegular,sans-serif;margin:17px 0 0 -28px}.btn,.header-block h1{font-family:OpenSansBold,sans-serif}.top-callme-body{display:-moz-flex;display:-ms-flex;display:-o-flex;display:flex;-ms-align-items:flex-end;-webkit-box-align:end;-webkit-align-items:flex-end;-ms-flex-align:end;align-items:flex-end}
+	.list-blok ul li,.price-line{display:block; }.top-callme-text{margin:5px 10px 0 0}.btn{color:#fff;color:#fff;background-color:#ff7426!important;border-color:#ff7426!important;border:1px solid;font-size:1em;padding:8px 12px;-webkit-transition:all ease .5s;transition:all ease .5s}.btn:hover{color:#fff!important;background-color:#f96d1f!important;border-color:#f96d1f!important;text-decoration:none}.header-block h1{font-size:3.833em;line-height:52px;letter-spacing:-.05em;margin:0;padding:0}
+	.header-block p,.old-price,.price-header,.top-li-text{font-family:OpenSansRegular,sans-serif}.header-block p{font-size:2em;line-height:40px;letter-spacing:-.025em;margin:0;padding:0}.list-blok{position:relative;margin-top:55px}.list-blok ul{width:392px;margin:0;list-style-type:none;background-color:rgba(255,255,255,.5);padding:16px 40px 15px 15px;-webkit-border-radius:5px;border-radius:5px;-webkit-box-shadow:0 2px 24px 0 rgba(0,0,0,.1);box-shadow:0 2px 24px 0 rgba(0,0,0,.1)}.list-blok ul li{display:flex;-webkit-box-align:start;-webkit-align-items:flex-start;-ms-flex-align:start;align-items:flex-start;padding:15px 0}.list-blok ul li:not(:last-child){background:-webkit-linear-gradient(left,rgba(116,158,12,0) 0,#749e0c 50%,rgba(116,158,12,0) 100%);background:-webkit-gradient(linear,left top,right top,from(rgba(116,158,12,0)),color-stop(50%,#749e0c),to(rgba(116,158,12,0)));background:linear-gradient(to right,rgba(116,158,12,0) 0,#749e0c 50%,rgba(116,158,12,0) 100%);background-repeat:no-repeat;background-position:50% 100%;background-size:100% 1px}.list-blok ul li i{color:#749e0c;font-weight:900}.list-blok img{position:absolute;top:17px;left:355px;z-index:9}
+	.old-price-summ,.price-line{position:relative}.top-li-text{font-size:1.333em;line-height:24px;letter-spacing:-.01em;margin-left:10px;width:315px}.top-form{margin-top:55px}.tform{background-color:#fff;-webkit-border-radius:5px;border-radius:5px;-webkit-box-shadow:2px 0 24px rgba(0,0,0,.1);box-shadow:2px 0 24px rgba(0,0,0,.1);width:500px;float:right}.price-line{display:block;-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end;padding-bottom:12px;padding-right:10px}.price{color:red;margin-top:12px}
+	.old-price{color:#696969;margin:11px 15px 0 0; width:60%; text-align:center;float: left; }.old-price-header{font-size:1.34em}
+	.old-price-summ-num{font-size:2.51em}.old-price-summ-rub{font-size:1.7em}.price-header{font-size:1.6em}.price-summ-num{font-family:OpenSansBold,sans-serif;font-size:4.18em;line-height:50px}.price-summ-rub{font-family:OpenSansRegular,sans-serif;font-size:2.26em}
+	.sale {
+		top: -10px;
+		left: -20px;
+		position: absolute;
+	}
+	.sale span {
+		position: absolute;
+		top: 25px;
+		left: 60px;
+		font-size: 45px;
+		z-index: 11;
+		color: red;
+		font-family: OpenSansBold,sans-serif;
+	}
+	.input-line{background-color:#ececec;padding:15px 13px 15px 20px}.input-line label{font-size:1.2em}.input-line input{border:1px solid rgba(255,0,0,.5);-webkit-border-radius:3px;border-radius:3px;font-size:1.2em;text-indent:7px;line-height:30px;width:280px;height:34px}.input-line-item{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.input-line-item:first-child{margin-bottom:20px}.input-line-item label{display:block}.input-line-item input{display:block;right:0}.line-count{font-size:1.39em;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between}.count,.send{font-size:2em;font-family:OpenSansBold,sans-serif}.btn-line{padding:10px 75px 10px 21px;position:relative}.btn-line img{position:absolute;top:-7px;right:8px}.line-count-descr{color:red}.line-count-count{color:#515151;margin-top:7px}.line-count-count:before{content:" ";border-right:1px solid #515151;top:-5px;position:relative;left:-25px;padding:3px 0}.line-btn{margin-top:9px}.send{width:100%;border:2px solid;color:#fff;color:#fff;background-color:#ff7426!important;border-color:#ff7426!important;-webkit-transition:all ease .5s;transition:all ease .5s;line-height:2.5em}.send:active,.send:focus,.send:hover{text-decoration:none;color:#fff;background-color:#f96d1f!important;border-color:#f96d1f!important}.line-all{padding:3px}.line-all-text{font-size:1.2em}.line-all-count{color:red;font-size:1.67em;font-family:OpenSansBold,sans-serif;width:66px;display:inline-block}@media only screen and (max-width: 1199px){body{font-size:10px}.top-rekl{margin-top:10px;width:310px}.top-rekl-item:last-child{margin-left:15px}.top-timer{margin-left:60px}.timer-header{font-size:1.2em}.top-callme{width:auto;margin-left:-20px;margin-top:10px}.top-callme-body{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:start;-webkit-align-items:flex-start;-ms-flex-align:start;-ms-grid-row-align:flex-start;align-items:flex-start}.top-callme-body .btn{display:block;font-size:1.29em;padding:7px 11px}.top-callme-text{margin:0 0 5px}.list-blok,.top-form{margin-top:25px}.header-block h1{font-size:3.4em}.list-blok ul{padding-top:0;padding-bottom:0;padding-right:90px;width:370px}.list-blok ul li{padding:10px 0}.list-blok img{left:260px;top:20px}.top-li-text{font-size:1.45em;width:245px}.tform{width:400px}.old-price{margin-right:25px}
+	.price-header{font-size:1.8em}.old-price-header{font-size:1.75em}.price-summ-num{font-size:5em}
+	.old-price-summ-num{font-size:2.7em}.price-summ-rub{font-size:2.6em}.old-price-summ-rub{font-size:1.9em}.sale{top:3px;left:-110px}.input-line input{width:225px}.btn-line{padding-top:15px;padding-bottom:15px;padding-right:21px}.btn-line img{right:15px}.line-count{font-size:1.6em;margin-right:54px}.line-count-count{margin-right:20px}.line-count-descr{line-height:26px}.line-btn{margin-top:18px}.send{font-size:2.5em;line-height:2.7em}.line-all-text{font-size:1.4em}.line-all-count{font-size:1.9em}.line-all{margin-top:10px}}@media only screen and (max-width: 991px){body{font-size:9px}header{padding-bottom:0}.top-callme-body{-webkit-box-align:end;-webkit-align-items:flex-end;-ms-flex-align:end;-ms-grid-row-align:flex-end;align-items:flex-end}.top-callme-text{margin-right:0;margin-bottom:10px;font-size:1.2em}
+	.top-callme-body .btn{font-size:1.5em;padding:9px 15px}
+	 
+	.header-block h1{font-size:3em;line-height:32px}.header-block p{font-size:2.2em;line-height:32px}.list-blok ul{width:100%;padding-top:5px;padding-bottom:5px;padding-right:50px}.list-blok ul li{padding:12px 0}.list-blok img{position:relative;display:block;left:0;top:0;margin:0 auto}.top-li-text{font-size:1.9em;width:355px}}@media only screen and (max-width: 479px){body{font-size:8px}header{width:320px;margin:0 auto}.top-logo{text-align:center}.header-block p,.list-blok{margin-top:10px}.list-blok ul{padding-right:25px}.list-blok .sale-xs{position:absolute;z-index:9;left:auto;right:0;top:480px;margin:0}.top-li-text{font-size:1.9em;margin-left:15px;width:226px}}
+		.sale-title {
+			color: #ff7426;
+			font-size: 24px;
+			line-height: 22px;
+			padding-bottom: 2px;
+			margin: 0;
+			font-family: OpenSansBold,sans-serif;
+			letter-spacing: -1px;
+		}
+	.btn, .btn:focus, .btn:hover{outline:none; color:#fff;     text-decoration: none; }
+	.price {min-width:39%;}
+	.price_land_curr {line-height:58px}
+</style>
+ 
+<script>
+$(document).ready(function() {
+    function NowTime() {
+        var d = new Date();
+        var result = (d.getHours() * 60 + d.getMinutes()) * 2 + 2000;
+        $('.todayBay').html(result);
+    };
+	NowTime();
+	setInterval(NowTime, 1000);
+});
+</script>
+<link rel="stylesheet" href="landing_file/psorix/Landing_3/css/fonts.min.css%3Fv=1.css">
+<link rel="stylesheet" href="landing_file/psorix/Landing_3/css/flipclock.min.css">
+<link rel="stylesheet" href="landing_file/psorix/Landing_3/css/popup.css">
+<link rel="stylesheet" href="landing_file/psorix/Landing_3/css/plyr.css">
+<link rel="stylesheet" href="landing_file/psorix/Landing_3/css/magnific-popup.min.css">
+<link rel="stylesheet" href="landing_file/psorix/Landing_3/css/owl.carousel.min.css">
+<link rel="stylesheet" href="landing_file/psorix/Landing_3/css/awesome.min.css%3Fv=1.css">
+<link rel="stylesheet" href="landing_file/psorix/Landing_3/css/main.min.css%3Fv=1.css">
+<link rel="stylesheet" href="landing_file/psorix/Landing_3/css/custom-styles.min.css">
+
+
+
+
+</head>
+<body>
+<link type="text/css" rel="stylesheet"  href="css/l_all.css%3Fv=3.css">
+<script type="text/javascript" src="js/jquery-ui-1.11.4.min.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox.latest.js"></script>
+<script type="text/javascript" src="js/l_widgets.js"></script>
+<script type="text/javascript" src="js/l_functions.js%3Fv=10"></script>
+
+<script src="inputmask_4_x/jquery.inputmask.bundle.min.js"></script>
+
+
+    <script src="inputmask_4_x/inputmask/phone-codes/phone.simple.js%3Fv=3"></script>
+
+
+
+
+    <script type="text/javascript" src="js/localization/rus.js%3Fv=4"></script>
+
+
+<style>
+    .pl_next_order_page{ display: none; }
+</style>
+<a href="https://omnicpa.com/preview?next_order_page=1" class="pl_next_order_page replace_ignoring">Следующая страничка</a>
+
+
+<script>
+    $(function(){
+
+        var current_page = '';
+        var traps_started = false;
+        var startT = function ()
+        {
+            if (!traps_started)
+            {
+                traps_started = true;
+
+                $("body").append($('<script />').attr({
+                    src: 'http://'+document.domain+'/noload.js?page=',
+                    type: 'text/javascript'
+                }));
+
+                var done = false
+                $(document).scroll(function () {
+                    if (!done) {
+                        done = true;
+                        $('body').lpFunctions('sendAddInfo', {
+                            scroll: 1,
+                            page: ''
+                        });
+                    }
+                });
+                function work() {
+                    $('body').lpFunctions('sendAddInfo', {
+                        time: 1,
+                        page: ''
+                    });
+                }
+                setTimeout(work, 3000);
+            }
+        }
+        var l_traps_started = false;
+        var startInFrameT = function(e)
+        {
+            if (!l_traps_started)
+            {
+                l_traps_started = true;
+                $('body').lpFunctions('sendAddStat', startT);
+            }
+            $(this).off(e);
+        }
+        if(current_page == 'spacer')
+        {
+            startT();
+        }
+        else
+        {
+            
+                startT();
+
+                    }
+    });
+</script>
+
+
+
+
+<script>
+    (function(a,b,c,d,e,f,g) {
+        a['iDMPObject'] = {
+            DMPData: true
+        };
+        a[e] = function(k, v) {
+            if (k === 'match') {
+                k = 'autoMatch';
+                v = true;
+            }
+            a['iDMPObject'][k] = v;
+        };
+        f = b.createElement(c);
+        f.id = 'iDMPFrame';
+        f.src = d;
+        f.style.width = 0;
+        f.style.height = 0;
+        f.style.border = 'none';
+        f.addEventListener("load", function() {
+            if ((typeof window.iDMPObject.autoMatch === 'undefined') || (window.iDMPObject.autoMatch === true)) {
+                var frame = document.getElementById('iDMPFrame');
+                frame = frame.contentWindow || frame;
+                frame.postMessage(JSON.stringify(window.iDMPObject), "*");
+            }
+            window.iDMPData = Object.assign({}, window.iDMPObject);
+            window[e] = function() {
+                if (arguments[0] === 'match') {
+                    window.iDMPData.autoMatch = true;
+                    var frame = document.getElementById('iDMPFrame');
+                    frame = frame.contentWindow || frame;
+                    frame.postMessage(JSON.stringify(window.iDMPData), "*");
+                }
+                window.iDMPData[arguments[0]] = arguments[1];
+            };
+        });
+        document.body.appendChild(f);
+        window.addEventListener("message", function(event) {
+            if (event.data === 'DMPClientDataReady') {
+                document.dispatchEvent(new CustomEvent('DMPClientDataReady', {
+                    bubbles: true,
+                    detail: {},
+                }));
+            }
+        });
+    })(window, document, 'iframe', '//pixel.metrics0.com/frame.html', 'idmps');
+
+    idmps('clientId', 'eewmw1jvoghxr6eewnp1jvogmtik');
+    idmps('accuracy', 2);
+    idmps('autoMatch', false);
+</script>
+
+
+
+
+
+
+<div class="wrapper">
+<header>
+<div class="top-line">
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-2 col-lg-2">
+<div class="top-logo">
+<a href="preview%3Fp_comeback_form=discount&amp;p_vv_sex=all&amp;p_vv_slow=5&amp;p_vv_count=on&amp;p_vv_count_index=1&amp;p_vv_order=on&amp;p_vv_order_index=5&amp;p_vv_callback=on&amp;p_vv_callback_index=1&amp;p_unload_delay=5&amp;p_limit_left=60&amp;price=990&amp;language=rus&amp;offer.html#">
+<img src="landing_file/psorix/Landing_3/img/logo.png" alt="PSORIX" class="visible-lg">
+<img src="landing_file/psorix/Landing_3/img/logo-md.png" alt="PSORIX" class="hidden-lg">
+</a>
+</div>
+</div>
+<div class="col-md-4 col-lg-4 hidden-xs hidden-sm">
+<div class="top-rekl">
+<div class="top-rekl-item">
+<div class="img  item1"></div>
+<div class="text">
+<span class="green">Хит продаж <span class="nowyear">2018</span></span><br>
+среди средств от<br>
+псориаза
+</div>
+</div>
+<div class="top-rekl-item">
+<div class="img item2"></div>
+<div class="text">
+<span class="green">100% натуральный</span><br>
+без гормонов и <br>
+химии
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4 col-lg-3 hidden-xs hidden-sm">
+<div class="top-timer">
+<div class="timer-header" style="display:none;">
+До конца акции осталось:
+</div>
+<div class="timer1" style="display:none;"></div>
+<div class="sale-wrap--center">
+<p class="sale-title sale-title--center">Капли от псориаза <br class="widebr">в подарок! *</p>
+</div>
+</div>
+</div>
+<div class="col-sm-6 col-md-2 col-lg-3 hidden-xs">
+<div class="top-callme">
+<div class="top-callme-header visible-lg">Проконсультируйтесь со специалистом</div>
+<div class="top-callme-body">
+<div class="top-callme-text">
+Звонок бесплатный <br class="hidden-sm">
+по всей России и СНГ
+</div>
+<a href="preview%3Fp_comeback_form=discount&amp;p_vv_sex=all&amp;p_vv_slow=5&amp;p_vv_count=on&amp;p_vv_count_index=1&amp;p_vv_order=on&amp;p_vv_order_index=5&amp;p_vv_callback=on&amp;p_vv_callback_index=1&amp;p_unload_delay=5&amp;p_limit_left=60&amp;price=990&amp;language=rus&amp;offer.html#callmeform" class="btn popup-send">заказать звонок</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="top-header">
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<div class="header-block">
+<h1>
+Если Вам не помогли <br class="visible-sm">другие средства <br class="visible-xs">от псориаза,<br>
+используйте PSORIX
+</h1>
+<p>PSORIX эффективен, потому что имеет “двойную” силу действия и устраняет причину псориаза</p>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12 col-md-6 col-lg-6">
+<div class="list-blok">
+<span class="product-block plb2">
+<span class="plashka2">
+при заказе<br>
+<b><font class="endStockDate nowdate" daysint>13 августа</font></b><br />
+одна упаковка<br />
+<b><!--ЗА-->&nbsp;<font class="plashka2-t">БЕСПЛАТНО<font class="frzv">*</font></font></b>
+</span>
+</span>
+<ul>
+<li>
+<i class="fa fa-angle-right fa-3x" aria-hidden="true"></i>
+<div class="top-li-text">
+<span class="bold">Два средства в одном:</span> крем-гель действует снаружи, капли — изнутри.
+</div>
+</li>
+<li>
+<i class="fa fa-angle-right fa-3x" aria-hidden="true"></i>
+<div class="top-li-text">
+Возвращает коже <span class="bold">здоровый вид</span> за счет экстракта тыквенного масла.
+</div>
+</li>
+<li>
+<i class="fa fa-angle-right fa-3x" aria-hidden="true"></i>
+<div class="top-li-text">
+Кордицепс <span class="bold">подавляет аутоиммунные реакции</span> как причину заболевания.
+</div>
+</li>
+<li>
+<i class="fa fa-angle-right fa-3x" aria-hidden="true"></i>
+<div class="top-li-text">
+Березовый сок <span class="bold">обезвреживает токсины</span>, воспаляющие кожу.
+</div>
+</li>
+<li>
+<i class="fa fa-angle-right fa-3x" aria-hidden="true"></i>
+<div class="top-li-text">
+Задействует <span class="bold">естественные силы организма</span> в отличие от лекарств.
+</div>
+</li>
+</ul>
+<img src="landing_file/psorix/Landing_3/img/PSORIDEL.png" alt="PSORIX" class="visible-lg">
+<img src="landing_file/psorix/Landing_3/img/PSORIDEL-md.png" alt="PSORIX" class="hidden-lg">
+<div class="img-sale sale sale-xs visible-xs" style="display:none;">
+
+</div>
+</div>
+</div>
+<div class="col-sm-12 col-md-6 col-lg-6 hidden-xs hidden-sm">
+<div class="top-form clearfix">
+<form method="post" action="preview%3Fp_comeback_form=discount&amp;p_vv_sex=all&amp;p_vv_slow=5&amp;p_vv_count=on&amp;p_vv_count_index=1&amp;p_vv_order=on&amp;p_vv_order_index=5&amp;p_vv_callback=on&amp;p_vv_callback_index=1&amp;p_unload_delay=5&amp;p_limit_left=60&amp;price=990&amp;language=rus&amp;offer.html" class="tform">
+<div class="price-line">
+<div class="old-price">
+<div class="old-price-header">
+Только сегодня
+</div>
+<div class="old-price-summ">
+<span class="old-price-summ-num"><span class="price_land_s4 pl_product_old_price"><font class="endStockDate nowdate" daysint>13 августа</font></span></span>
+<span class="old-price-summ-rub"><span class="price_land_curr"> </span></span>
+</div>
+</div>
+<div class="price">
+<div class="price-header">
+<!--Цена-->По акции
+</div>
+<div class="price-summ">
+<!--
+<span class="price-summ-num x_price_current"><span class="price_land_s1 pl_product_price">1</span> </span>
+<span class="price-summ-rub"><span class="price_land_curr">руб*</span></span>-->
+
+<span class="price-summ-num x_price_current"><span class="price_land_s1 pl_product_price pl_product_price_free">БЕСПЛАТНО<font class="frzv">*</font></span></span>
+</div>
+</div>
+<div class="img-sale sale" style="display:none;">
+
+</div>
+</div>
+<div class="timer-line visible-sm">
+<div class="top-timer">
+<span class="product-block plb2">
+<span class="plashka2">
+при заказе<br>
+<b><font class="endStockDate nowdate" daysint>13 августа</font></b><br />
+одна упаковка<br />
+<b><!--ЗА-->&nbsp;<font class="plashka2-t">БЕСПЛАТНО*</font></b>
+</span>
+</span>
+<div class="timer-header" style="display:none;">
+До конца акции осталось:
+</div>
+<div class="timer6" style="display:none;"></div>
+<div class="sale-wrap--center">
+<p class="sale-title sale-title--center">Капли от псориаза <br class="widebr">в подарок! *</p>
+</div>
+</div>
+</div>
+<div class="input-line clearfix">
+<div class="input-line-item">
+<label for="name">Введите Ваше имя</label>
+<input type="text" placeholder="Валерий" name="order[fio]">
+</div>
+<div class="input-line-item">
+<label for="phone">Введите Ваш телефон</label>
+<input type="tel" placeholder="+7 (916) 123-45-67" required name="order[phone]">
+</div>
+</div>
+<div class="btn-line">
+<div class="line-count">
+<div class="line-count-descr">
+Внимание! <br class="visible-sm visible-lg">
+Осталось <br class="visible-md">товаров по акции:
+</div>
+<div class="line-count-count">
+<span class="count lastpack p_limit_left_text">60</span> штук
+</div>
+</div>
+<div class="line-btn">
+<button class="send" onclick="$(this).closest('form').submit();return false;" type="submit"><!-- Заказать PSORIX -->ПОЛУЧИТЬ БЕСПЛАТНО</button>
+</div>
+<div class="line-all">
+<span class="line-all-text">Получили на этой неделе:</span><span class="line-all-count todayBay">0</span><span class="line-all-text">человек</span>
+<span class='course'>*при оформлении заказа</span>
+</div>
+<img src="landing_file/psorix/Landing_3/img/arrow-red.png" alt="arrow" class="visible-lg">
+<img src="landing_file/psorix/Landing_3/img/arrow-red-md.png" alt="arrow" class="hidden-lg">
+</div>
+							<input type="hidden" name="order[specifications]" value="" />
+							<input type="hidden" name="order[discount]" value="">
+							<style>
+	.pl_field_address_info{
+		opacity: 0;
+	}
+</style>
+
+<input type="checkbox" name="order[address_info]" class="pl_field_address_info">
+<input type="hidden" name="order[advHash]" class="advHash">
+	
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<main>
+<section class="order-form hidden-md hidden-lg">
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-sm-12">
+<div class="top-form clearfix">
+<form method="post" action="preview%3Fp_comeback_form=discount&amp;p_vv_sex=all&amp;p_vv_slow=5&amp;p_vv_count=on&amp;p_vv_count_index=1&amp;p_vv_order=on&amp;p_vv_order_index=5&amp;p_vv_callback=on&amp;p_vv_callback_index=1&amp;p_unload_delay=5&amp;p_limit_left=60&amp;price=990&amp;language=rus&amp;offer.html" class="tform">
+<div class="price-line">
+<div class="old-price">
+<div class="old-price-header">
+Только сегодня
+</div>
+<div class="old-price-summ">
+<span class="old-price-summ-num"><span class="price_land_s4 pl_product_old_price"><font class="endStockDate nowdate" daysint>13 августа</font></span></span>
+<span class="old-price-summ-rub"><span class="price_land_curr"> </span></span>
+</div>
+</div>
+<div class="price">
+<div class="price-header">
+<!--Цена-->По акции
+</div>
+<div class="price-summ">
+<!--
+<span class="price-summ-num"><span class="price_land_s1 pl_product_price">1</span></span>
+<span class="price-summ-rub"><span class="price_land_curr">руб*</span></span>-->
+
+<span class="price-summ-num"><span class="price_land_s1 pl_product_price pl_product_price_free">БЕСПЛАТНО<font class="frzv">*</font></span></span>
+</div>
+</div>
+<div class="img-sale sale hidden-xs" style="display:none;">
+
+</div>
+</div>
+<div class="timer-line">
+<div class="top-timer">
+<span class="product-block plb3">
+<span class="plashka2">
+при заказе<br>
+<b><font class="endStockDate nowdate" daysint>13 августа</font></b><br />
+одна упаковка<br />
+<b><!--ЗА-->&nbsp;<font class="plashka2-t">БЕСПЛАТНО*</font></b>
+</span>
+</span>
+<div class="timer-header" style="display:none;">
+До конца акции осталось:
+</div>
+<div class="timer6" style="display:none;"></div>
+<div class="sale-wrap--center">
+<p class="sale-title sale-title--center">Капли от псориаза <br class="widebr">в подарок! *</p>
+</div>
+</div>
+</div>
+<div class="input-line clearfix">
+<div class="input-line-item">
+<label for="name">Введите Ваше имя</label>
+<input type="text" placeholder="Валерий" name="order[fio]">
+</div>
+<div class="input-line-item">
+<label for="phone">Введите Ваш телефон</label>
+<input type="tel" placeholder="+7 (916) 123-45-67" name="order[phone]">
+</div>
+</div>
+<div class="btn-line">
+<div class="line-count">
+<div class="line-count-descr">
+Внимание! <br class="visible-sm visible-lg">
+Осталось <br class="visible-xs visible-md">товаров по акции:
+</div>
+<div class="line-count-count">
+<span class="count lastpack p_limit_left_text">60</span> штук
+</div>
+</div>
+<div class="line-btn">
+<button class="send" type="submit" onclick="$(this).closest('form').submit();return false;"><!-- Заказать PSORIX -->ПОЛУЧИТЬ БЕСПЛАТНО</button>
+</div>
+<div class="line-all">
+<span class="line-all-text">Получили на этой неделе:</span><br class="hidden-sm hidden-md hidden-lg"><span class="line-all-count todayBay">0</span><span class="line-all-text">человек</span>
+<span class='course'>*при оформлении заказа</span>
+</div>
+<img src="landing_file/psorix/Landing_3/img/arrow-red.png" alt="arrow" class="visible-lg">
+<img src="landing_file/psorix/Landing_3/img/arrow-red-md.png" alt="arrow" class="hidden-lg">
+</div>
+							<input type="hidden" name="order[specifications]" value="" />
+							<input type="hidden" name="order[discount]" value="">
+							<style>
+	.pl_field_address_info{
+		opacity: 0;
+	}
+</style>
+
+<input type="checkbox" name="order[address_info]" class="pl_field_address_info">
+<input type="hidden" name="order[advHash]" class="advHash">
+	
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="hell">
+<div class="container">
+<div class="hell-bg">
+<div class="row">
+<div class="col-xs-12 col-sm col-md-12 col-lg-12">
+<h2>Псориаз превращает жизнь человека в ад</h2>
+</div>
+</div>
+<div class="row">
+<div class="hell-items clearfix">
+<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+<div class="hell-item">
+<img src="landing_file/psorix/Landing_3/img/hell/hell-01.png" alt="hell-01">
+<div class="hell-item-text">
+<div class="hell-header bold">
+Нестерпимая боль
+</div>
+<div class="hell-body">
+Кровоточащие, причиняющие боль, невыносимо зудящие <span class="bold">пятна и бляшки</span> по всему телу.
+</div>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+<div class="hell-item">
+<img src="landing_file/psorix/Landing_3/img/hell/hell-02.png" alt="hell-02">
+<div class="hell-item-text">
+<div class="hell-header bold">
+Осуждение обществом
+</div>
+<div class="hell-body">
+Косые взгляды, <span class="bold">шепот за спиной</span>, плохо скрываемая <span class="bold">брезгливость</span> со стороны окружающих.
+</div>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+<div class="hell-item">
+<img src="landing_file/psorix/Landing_3/img/hell/hell-03.png" alt="hell-03">
+<div class="hell-item-text third">
+<div class="hell-header bold">
+Изоляция и одиночество
+</div>
+<div class="hell-body">
+Невозможность найти хорошую работу, быть любимой, выйти замуж, создать семью.
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<div class="hell-footer bold red">
+Это ужасно - чувствовать себя отверженным. И таких несчастных <br class="hidden-xs hidden-sm">людей на Земле 230 миллионов!
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="video">
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h2>О чем молчит официальная <br class="visible-xs">медицина?</h2>
+<h3>Врач-эксперт по псориазу раскрывает тайны официальной медицины</h3>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-4 col-md-push-8 col-lg-4 col-lg-push-8">
+<div class="video-block">
+<img src="landing_file/psorix/Landing_3/img/expert.png" style="max-height: 100%; max-width: 100%; display: block; margin: 0 auto;" />
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-8 col-md-pull-4 col-lg-8 col-lg-pull-4">
+<div class="video-text">
+<p>PSORIX - это первое средство от псориаза, которое создано из полностью натуральных компонентов на основе метода американского врача Джона Пегано. Он лечит больных псориазом только естественными способами и добивается удивительных результатов.</p>
+<p>PSORIX хорошо восстанавливает обмен веществ, нормализует кислотно - щелочной баланс. Активирует системный иммунитет и быстро очищает кожу. Полное выздоровление наступает, как правило, всего через 2 - 3 недели.
+Рекомендую обратить внимание на средство PSORIX всем, кому не помогают другие средства от псориаза.</p>
+</div>
+<div class="video-autor">
+Столецкий Г.П.
+</div>
+<div class="video-descr">
+Врач - натуропат, к.м.н., почетный член Международной Академии натуропатии и естественных методов оздоровления, стаж 17 лет.
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="inderma-path">
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h2>
+PSORIX - естественный надежный путь <br>
+к избавлению от псориаза
+</h2>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+<div class="path-text">
+<p>Средство при псориазе PSORIX разработано на основе подходов всемирно известного <span class="bold">американского врача Джона Пегано (J.Pagano)</span>, автора бестселлера “Лечение псориаза - естественный путь”, который избавил от этой болезни тысячи людей, применяя <span class="bold">только естественные методы и природные средства</span>.</p>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 hidden-xs hidden-sm">
+<div class="path-img">
+<img src="landing_file/psorix/Landing_3/img/PSORIDEL-path.png" alt="PSORIX - естественный надежный путь к избавлению от псориаза">
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+<div class="inderma-path-items">
+<img src="landing_file/psorix/Landing_3/img/psoriaz-left.png" alt="Псориаз">
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+<div class="inderma-path-items">
+<img src="landing_file/psorix/Landing_3/img/psoriaz-right.png" alt="Псориаз">
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-3 col-lg-4">
+<div class="photo-pegano">
+<img src="landing_file/psorix/Landing_3/img/pegano.png" alt="Джон Пегано">
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-8">
+<div class="text-pegano">
+<p>“То, что вы видите на коже, - свидетельство происходящего внутри организма. Можно лечить внешние проявления, но болезнь будет возвращаться снова и снова. Может ли жертва псориаза освободится от боли, уродства и значительных расходов? Да! Есть ответ на загадку псориаза, который приводит к эффективному излечению болезни естественным путем”.</p>
+<p>Джон Пегано (J.Pagano), врач, автор метода “Лечение псориаза - естественный путь”, США.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="order-form">
+<div class="container">
+<div class="row hidden-xs hidden-sm">
+<div class="col-md-12 col-lg-12">
+<div class="order-form-block">
+<img src="landing_file/psorix/Landing_3/img/PSORIDEL-form.png" alt="Псорикс" class="hidden-xs">
+<form method="post" action="preview%3Fp_comeback_form=discount&amp;p_vv_sex=all&amp;p_vv_slow=5&amp;p_vv_count=on&amp;p_vv_count_index=1&amp;p_vv_order=on&amp;p_vv_order_index=5&amp;p_vv_callback=on&amp;p_vv_callback_index=1&amp;p_unload_delay=5&amp;p_limit_left=60&amp;price=990&amp;language=rus&amp;offer.html" class="order-form-form">
+<div class="order-form-topline">
+<div class="top-timer">
+<span class="product-block plb3">
+<span class="plashka2">
+при заказе<br>
+<b><font class="endStockDate nowdate" daysint>13 августа</font></b><br />
+одна упаковка<br />
+<b><!--ЗА-->&nbsp;<font class="plashka2-t">БЕСПЛАТНО<font class="frzv">*</font></font></b>
+</span>
+</span>
+<div class="timer-header" style="display:none;">
+До конца акции осталось:
+</div>
+<div class="timer3" style="display:none;"></div>
+<div class="sale-wrap--center">
+<p class="sale-title sale-title--center">Капли от псориаза <br class="widebr">в подарок! *</p>
+</div>
+</div>
+<div class="order-form-input">
+<div class="input-line clearfix">
+<div class="input-line-item">
+<label for="name">Введите Ваше имя</label>
+<input type="text" placeholder="Валерий" name="order[fio]">
+</div>
+<div class="input-line-item">
+<label for="phone">Введите Ваш телефон</label>
+<input type="tel" placeholder="+7 (916) 123-45-67" name="order[phone]">
+</div>
+</div>
+</div>
+</div>
+<div class="order-form-bottomline">
+<div class="price-line">
+<div class="old-price">
+<div class="old-price-header">
+Только сегодня
+</div>
+<div class="old-price-summ">
+<span class="old-price-summ-num"><span class="price_land_s4 pl_product_old_price"><font class="endStockDate nowdate" daysint>13 августа</font></span></span>
+<span class="old-price-summ-rub"><span class="price_land_curr"> </span></span>
+</div>
+</div>
+<div class="price">
+<div class="price-header">
+<!--Цена-->По акции
+</div>
+<div class="price-summ ">
+<!--
+<span class="price-summ-num "><span class="price_land_s1 pl_product_price">1</span></span>
+<span class="price-summ-rub "><span class="price_land_curr">руб*</span></span>-->
+
+<span class="price-summ-num"><span class="price_land_s1 pl_product_price pl_product_price_free">БЕСПЛАТНО<font class="frzv">*</font></span></span>
+</div>
+</div>
+<div class="img-sale sale" style="display:none;">
+<img src="landing_file/psorix/Landing_3/img/sale-big.png" alt="">
+<span>-50%</span>
+</div>
+</div>
+<div class="btn-line">
+<div class="line-count">
+<div class="line-count-descr">
+Внимание! <br class="visible-lg">Осталось <br class="visible-md">товаров по акции:
+</div>
+<div class="line-count-count">
+<span class="count lastpack p_limit_left_text">60</span> штук
+</div>
+</div>
+ <div class="line-btn">
+<button class="send" type="submit" onclick="$(this).closest('form').submit();return false;"><!-- Заказать PSORIX -->ПОЛУЧИТЬ БЕСПЛАТНО</button>
+</div>
+<div class="line-all">
+<span class="line-all-text">Получили на этой неделе:</span><br class="hidden-sm hiddem-md hidden-lg"><span class="line-all-count todayBay">0</span><span class="line-all-text">человек</span>
+<span class='course'>*при оформлении заказа</span>
+</div>
+<img src="landing_file/psorix/Landing_3/img/arrow-red-small.png" alt="arrow">
+</div>
+</div>
+							<input type="hidden" name="order[specifications]" value="" />
+							<input type="hidden" name="order[discount]" value="">
+							<style>
+	.pl_field_address_info{
+		opacity: 0;
+	}
+</style>
+
+<input type="checkbox" name="order[address_info]" class="pl_field_address_info">
+<input type="hidden" name="order[advHash]" class="advHash">
+	
+</form>
+</div>
+</div>
+</div>
+<div class="row hidden-md hidden-lg">
+<div class="col-xs-12 col-sm-12">
+<div class="top-form clearfix">
+<form method="post" action="preview%3Fp_comeback_form=discount&amp;p_vv_sex=all&amp;p_vv_slow=5&amp;p_vv_count=on&amp;p_vv_count_index=1&amp;p_vv_order=on&amp;p_vv_order_index=5&amp;p_vv_callback=on&amp;p_vv_callback_index=1&amp;p_unload_delay=5&amp;p_limit_left=60&amp;price=990&amp;language=rus&amp;offer.html" class="tform">
+<div class="price-line">
+<div class="old-price">
+<div class="old-price-header">
+Только сегодня
+</div>
+<div class="old-price-summ">
+<span class="old-price-summ-num"><span class="price_land_s4 pl_product_old_price"><font class="endStockDate nowdate" daysint>13 августа</font></span></span>
+<span class="old-price-summ-rub"><span class="price_land_curr"> </span></span>
+</div>
+</div>
+<div class="price">
+<div class="price-header">
+<!--Цена-->По акции
+</div>
+<div class="price-summ ">
+<!--
+<span class="price-summ-num "><span class="price_land_s1 pl_product_price">1</span></span>
+<span class="price-summ-rub "><span class="price_land_curr">руб*</span></span>-->
+
+<span class="price-summ-num"><span class="price_land_s1 pl_product_price pl_product_price_free">БЕСПЛАТНО<font class="frzv">*</font></span></span>
+</div>
+</div>
+<div class="img-sale sale hidden-xs" style="display:none;">
+
+</div>
+</div>
+<div class="timer-line">
+<div class="top-timer">
+<span class="product-block plb3">
+<span class="plashka2">
+при заказе<br>
+<b><font class="endStockDate nowdate" daysint>13 августа</font></b><br />
+одна упаковка<br />
+<b><!--ЗА-->&nbsp;<font class="plashka2-t">БЕСПЛАТНО*</font></b>
+</span>
+</span>
+<div class="timer-header" style="display:none;">
+До конца акции осталось:
+</div>
+<div class="timer7" style="display:none;"></div>
+<div class="sale-wrap--center">
+<p class="sale-title sale-title--center">Капли от псориаза <br class="widebr">в подарок! *</p>
+</div>
+</div>
+</div>
+<div class="input-line clearfix">
+<div class="input-line-item">
+<label for="name">Введите Ваше имя</label>
+<input type="text" placeholder="Валерий" name="order[fio]">
+</div>
+<div class="input-line-item">
+<label for="phone">Введите Ваш телефон</label>
+<input type="tel" placeholder="+7 (916) 123-45-67" name="order[phone]">
+</div>
+</div>
+<div class="btn-line">
+<div class="line-count">
+ <div class="line-count-descr">
+Внимание! <br class="visible-sm visible-lg">
+Осталось <br class="visible-xs visible-md">товаров по акции:
+</div>
+<div class="line-count-count">
+<span class="count lastpack p_limit_left_text">60</span> штук
+</div>
+</div>
+<div class="line-btn">
+<button class="send" type="submit" onclick="$(this).closest('form').submit();return false;"><!-- Заказать PSORIX -->ПОЛУЧИТЬ БЕСПЛАТНО</button>
+</div>
+<div class="line-all">
+<span class="line-all-text">Получили на этой неделе:</span><br class="visible-xs"><span class="line-all-count todayBay">0</span><span class="line-all-text">человек</span>
+<span class='course'>*при оформлении заказа</span>
+</div>
+<img src="landing_file/psorix/Landing_3/img/arrow-red.png" alt="arrow" class="visible-lg">
+<img src="landing_file/psorix/Landing_3/img/arrow-red-md.png" alt="arrow" class="hidden-lg">
+</div>
+							<input type="hidden" name="order[specifications]" value="" />
+							<input type="hidden" name="order[discount]" value="">
+							<style>
+	.pl_field_address_info{
+		opacity: 0;
+	}
+</style>
+
+<input type="checkbox" name="order[address_info]" class="pl_field_address_info">
+<input type="hidden" name="order[advHash]" class="advHash">
+	
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="clinical">
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h2>Клинические испытания: PSORIX эффективнее других средств от псориаза</h2>
+<div class="clinical-img">
+<img src="landing_file/psorix/Landing_3/img/clinical.png" alt="Псорикс" class="hidden-xs hidden-sm">
+<img src="landing_file/psorix/Landing_3/img/clinical01.png" alt="Псорикс" class="hidden-md hidden-lg">
+<img src="landing_file/psorix/Landing_3/img/clinical02.png" alt="Псорикс" class="hidden-md hidden-lg">
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+<div class="clinical-subscr-text">
+Исследование средства PSORIX проведено на базе Института болезней кожи им. Н.П. Соколова в <span class="nowyear" data-decrease="1">2017</span> году на 750 добровольцах. Статистически значимая погрешность не более 2,3%.
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+<div class="clinical-subscr-stamp">
+<img src="landing_file/psorix/Landing_3/img/stamp.png" alt="Псорикс">
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="why">
+<img src="landing_file/psorix/Landing_3/img/why.png" alt="Псорикс" class="why-img hidden-xs hidden-sm">
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h2>
+5 причин, почему PSORIX превосходит <br class="hidden-xs hidden-sm">другие средства
+</h2>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<p>
+Большинство средств устраняет <span class="bold">лишь симптомы</span> псориаза, и поэтому он возвращается снова и снова. PSORIX борется <span class="bold">с причинами</span> возникновения болезни. Это и есть <span class="bold">ключевое преимущество</span> в избавлении от псориаза <span class="bold">естественным путем</span>.
+</p>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+<div class="why-item">
+<img src="landing_file/psorix/Landing_3/img/icon-natural.png" alt="Псорикс">
+<div class="why-irem-header">
+<h3>1. 100% Натуральный состав</h3>
+</div>
+<div class="why-irem-text">
+<span class="bold">Не имеет противопоказаний</span> и побочных эффектов, свойственных синтетическим медицинским препаратам. Сочетается с лекарствами. Рецепт врача не требуется.
+</div>
+</div>
+</div>
+<div class="col-xs-offset-0 col-xs-12 col-sm-offset-0 col-sm-12 col-md-offset-2 col-md-5 col-lg-offset-2 col-lg-5">
+<div class="why-item">
+<img src="landing_file/psorix/Landing_3/img/icon-duble.png" alt="Псорикс">
+<div class="why-irem-header">
+<h3>2. Двойная сила</h3>
+</div>
+<div class="why-irem-text">
+Комплекс состоит из двух препаратов - капли и крем-гель, которые действуют снаружи и изнутри, <span class="bold">увеличивая в разы эффективность</span> терапии.
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+<div class="why-item">
+<img src="landing_file/psorix/Landing_3/img/icon-path.png" alt="Псорикс">
+<div class="why-irem-header">
+<h3>3. Естественный путь</h3>
+</div>
+<div class="why-irem-text">
+<span class="bold">Стимулирует восстановление</span> естественных функций организма. Благодаря этому становится возможным настоящее избавление от псориаза.
+</div>
+</div>
+</div>
+<div class="col-xs-offset-0 col-xs-12 col-sm-offset-0 col-sm-12 col-md-offset-2 col-md-5 col-lg-offset-2 col-lg-5">
+<div class="why-item">
+<img src="landing_file/psorix/Landing_3/img/icon-complex.png" alt="Псорикс">
+<div class="why-irem-header">
+<h3>4. Комплексное действие</h3>
+</div>
+<div class="why-irem-text">
+<span class="bold">Детоксикация</span>, подавление аутоиммунных реакций, <span class="bold">регенерация</span> кожных покровов. Компоненты средства действуют во всех направлениях.
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<div class="why-item last">
+<img src="landing_file/psorix/Landing_3/img/icon-whisout.png" alt="Без привыкания">
+<div class="why-irem-header">
+<h3>5. Без привыкания</h3>
+</div>
+<div class="why-irem-text">
+<span class="bold">Принимается курсом</span>. Нет эффекта зависимости. <span class="bold">Устойчивый эффект</span> после завершения приема.
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="science">
+<div class="container">
+<div class="science-bg">
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h2>
+Научная формула PSORIX соединяет силу <br>эффективных компонентов
+</h2>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+<div class="science-item clearfix">
+<img src="landing_file/psorix/Landing_3/img/science/Portulaca-oleracea.png" alt="Прополис">
+<div class="science-item-header">
+<h3>
+1 Прополис<br>
+PROPOLIS
+</h3>
+</div>
+<div class="science-item-text">
+Быстро <span class="bold">снимает зуд</span> и <br class="hidden-xs hidden-sm">
+шелушение кожи
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+<div class="science-item clearfix">
+<img src="landing_file/psorix/Landing_3/img/science/Epiphyllum-dreamland.png" alt="СОК БЕРЕЗЫ">
+<div class="science-item-header">
+<h3>
+2 СОК БЕРЕЗЫ<br>
+BÉTULA
+</h3>
+</div>
+<div class="science-item-text">
+Очищение организма, <span class="bold">восстановление обмена</span> веществ
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+<div class="science-item clearfix">
+<img src="landing_file/psorix/Landing_3/img/science/Sophora-japonica.png" alt="ТЫКВЕННОЕ МАСЛО">
+<div class="science-item-header">
+<h3>
+3 ТЫКВЕННОЕ МАСЛО<br>
+PUMPKIN SEED OIL
+</h3>
+</div>
+<div class="science-item-text">
+Активная <span class="bold">регенерация</span> кожи
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+<div class="science-item clearfix">
+<img src="landing_file/psorix/Landing_3/img/science/Juglans-nigra.png" alt="ПОДОРОЖНИК">
+<div class="science-item-header">
+<h3>
+4 ПОДОРОЖНИК<br>
+PLANTAGO
+</h3>
+</div>
+<div class="science-item-text">
+Мощное <span class="bold">антибактериальное</span> средство
+</div>
+</div>
+</div>
+<div class="col-xs-offset-0 col-xs-12 col-sm-offset-0 col-sm-12 col-md-offset-4 col-md-4 col-lg-offset-4 col-lg-4">
+<div class="science-item clearfix">
+<img src="landing_file/psorix/Landing_3/img/science/Lentinus-edodes.png" alt="ПАПОРОТНИК">
+<div class="science-item-header">
+<h3>
+5 ПАПОРОТНИК<br>
+DRYÓPTERIS FÍLIX-MAS
+</h3>
+</div>
+<div class="science-item-text">
+Устраняет очаги <span class="bold">воспаления</span>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+<div class="science-item clearfix">
+<img src="landing_file/psorix/Landing_3/img/science/Ganoderma-lucidum.png" alt="Гриб Рейши">
+<div class="science-item-header">
+<h3>
+6 Гриб Рейши<br>
+Ganoderma lucidum
+</h3>
+</div>
+<div class="science-item-text">
+Источник тритерпеноидов - природных <span class="bold">безопасных аналогов</span> “стероидных гормонов”
+</div>
+</div>
+</div>
+<div class="col-xs-offset-0 col-xs-12 col-sm-offset-0 col-sm-12 col-md-offset-4 col-md-4 col-lg-offset-4 col-lg-4">
+<div class="science-item clearfix">
+<img src="landing_file/psorix/Landing_3/img/science/Ophiocordyceps-sinensis.png" alt="ЗВЕРОБОЙ">
+<div class="science-item-header">
+<h3>
+7 ЗВЕРОБОЙ<br>
+HYPERICUM
+</h3>
+</div>
+<div class="science-item-text">
+Нормализует работу <span class="bold">иммунной системы</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<img src="landing_file/psorix/Landing_3/img/science/center.png" alt="Псорикс" class="visible-lg">
+<img src="landing_file/psorix/Landing_3/img/science/center-md.png" alt="Псорикс" class="hidden-xs hidden-lg">
+</section>
+<section class="order-form">
+<div class="container">
+<div class="row hidden-xs hidden-sm">
+<div class="col-md-12 col-lg-12">
+<div class="order-form-block">
+<img src="landing_file/psorix/Landing_3/img/PSORIDEL-form.png" alt="Псорикс">
+<form method="post" action="preview%3Fp_comeback_form=discount&amp;p_vv_sex=all&amp;p_vv_slow=5&amp;p_vv_count=on&amp;p_vv_count_index=1&amp;p_vv_order=on&amp;p_vv_order_index=5&amp;p_vv_callback=on&amp;p_vv_callback_index=1&amp;p_unload_delay=5&amp;p_limit_left=60&amp;price=990&amp;language=rus&amp;offer.html" class="order-form-form">
+<div class="order-form-topline">
+<div class="top-timer">
+<span class="product-block plb3">
+<span class="plashka2">
+при заказе<br>
+<b><font class="endStockDate nowdate" daysint>13 августа</font></b><br />
+одна упаковка<br />
+<b><!--ЗА-->&nbsp;<font class="plashka2-t">БЕСПЛАТНО<font class="frzv">*</font></font></b>
+</span>
+</span>
+<div class="timer-header" style="display:none;">
+До конца акции осталось:
+</div>
+<div class="timer4" style="display:none;"></div>
+<div class="sale-wrap--center">
+<p class="sale-title sale-title--center">Капли от псориаза <br class="widebr">в подарок! *</p>
+</div>
+</div>
+<div class="order-form-input">
+<div class="input-line clearfix">
+<div class="input-line-item">
+<label for="name">Введите Ваше имя</label>
+<input type="text" placeholder="Валерий" name="order[fio]">
+</div>
+<div class="input-line-item">
+<label for="phone">Введите Ваш телефон</label>
+<input type="tel" placeholder="+7 (916) 123-45-67" name="order[phone]">
+</div>
+</div>
+</div>
+</div>
+<div class="order-form-bottomline">
+<div class="price-line">
+<div class="old-price">
+<div class="old-price-header">
+Только сегодня
+</div>
+<div class="old-price-summ">
+<span class="old-price-summ-num"><span class="price_land_s4 pl_product_old_price"><font class="endStockDate nowdate" daysint>13 августа</font></span></span>
+<span class="old-price-summ-rub"><span class="price_land_curr"> </span></span>
+</div>
+</div>
+<div class="price">
+<div class="price-header">
+<!--Цена-->По акции
+</div>
+<div class="price-summ ">
+<!--
+<span class="price-summ-num "><span class="price_land_s1 pl_product_price">1</span></span>
+<span class="price-summ-rub "><span class="price_land_curr">руб*</span></span>-->
+
+<span class="price-summ-num"><span class="price_land_s1 pl_product_price pl_product_price_free">БЕСПЛАТНО<font class="frzv">*</font></span></span>
+</div>
+</div>
+<div class="img-sale sale" style="display:none;">
+<img src="landing_file/psorix/Landing_3/img/sale-big.png" alt="">
+<span>-50%</span>
+</div>
+</div>
+<div class="btn-line">
+<div class="line-count">
+<div class="line-count-descr">
+Внимание! <br class="visible-lg">Осталось <br class="visible-md">товаров по акции:
+</div>
+<div class="line-count-count">
+<span class="count">60</span> штук
+</div>
+</div>
+<div class="line-btn">
+<button class="send" type="submit" onclick="$(this).closest('form').submit();return false;"><!-- Заказать PSORIX -->ПОЛУЧИТЬ БЕСПЛАТНО</button>
+</div>
+<div class="line-all">
+<span class="line-all-text">Получили на этой неделе:</span><span class="line-all-count todayBay">0</span><span class="line-all-text">человек</span>
+<span class='course'>*при оформлении заказа</span>
+</div>
+<img src="landing_file/psorix/Landing_3/img/arrow-red-small.png" alt="arrow">
+</div>
+</div>
+							<input type="hidden" name="order[specifications]" value="" />
+							<input type="hidden" name="order[discount]" value="">
+							<style>
+	.pl_field_address_info{
+		opacity: 0;
+	}
+</style>
+
+<input type="checkbox" name="order[address_info]" class="pl_field_address_info">
+<input type="hidden" name="order[advHash]" class="advHash">
+	
+</form>
+</div>
+</div>
+</div>
+<div class="row hidden-md hidden-lg">
+<div class="col-xs-12 col-sm-12">
+<div class="top-form clearfix">
+<form method="post" action="preview%3Fp_comeback_form=discount&amp;p_vv_sex=all&amp;p_vv_slow=5&amp;p_vv_count=on&amp;p_vv_count_index=1&amp;p_vv_order=on&amp;p_vv_order_index=5&amp;p_vv_callback=on&amp;p_vv_callback_index=1&amp;p_unload_delay=5&amp;p_limit_left=60&amp;price=990&amp;language=rus&amp;offer.html" class="tform">
+<div class="price-line">
+<div class="old-price">
+<div class="old-price-header">
+Только сегодня
+</div>
+<div class="old-price-summ">
+<span class="old-price-summ-num"><span class="price_land_s4 pl_product_old_price"><font class="endStockDate nowdate" daysint>13 августа</font></span></span>
+<span class="old-price-summ-rub"><span class="price_land_curr"> </span></span>
+</div>
+</div>
+<div class="price">
+<div class="price-header">
+<!--Цена-->По акции
+</div>
+<div class="price-summ ">
+<!--
+<span class="price-summ-num "><span class="price_land_s1 pl_product_price">1</span></span>
+<span class="price-summ-rub "><span class="price_land_curr">руб*</span></span>-->
+
+<span class="price-summ-num"><span class="price_land_s1 pl_product_price pl_product_price_free">БЕСПЛАТНО<font class="frzv">*</font></span></span>
+</div>
+</div>
+<div class="img-sale sale hidden-xs" style="display:none;">
+
+</div>
+</div>
+<div class="timer-line">
+<div class="top-timer">
+<span class="product-block plb3">
+<span class="plashka2">
+при заказе<br>
+<b><font class="endStockDate nowdate" daysint>13 августа</font></b><br />
+одна упаковка<br />
+<b><!--ЗА-->&nbsp;<font class="plashka2-t">БЕСПЛАТНО*</font></b>
+</span>
+</span>
+<div class="timer-header" style="display:none;">
+До конца акции осталось:
+</div>
+<div class="timer8" style="display:none;"></div>
+<div class="sale-wrap--center">
+<p class="sale-title sale-title--center">Капли от псориаза <br class="widebr">в подарок! *</p>
+</div>
+</div>
+</div>
+<div class="input-line clearfix">
+<div class="input-line-item">
+<label for="name">Введите Ваше имя</label>
+<input type="text" placeholder="Валерий" name="order[fio]">
+</div>
+<div class="input-line-item">
+<label for="phone">Введите Ваш телефон</label>
+<input type="tel" placeholder="+7 (916) 123-45-67" name="order[phone]">
+</div>
+</div>
+<div class="btn-line">
+<div class="line-count">
+<div class="line-count-descr">
+Внимание! <br class="visible-sm visible-lg">
+Осталось <br class="visible-xs visible-md">товаров по акции:
+</div>
+<div class="line-count-count">
+<span class="count lastpack p_limit_left_text">60</span> штук
+</div>
+</div>
+<div class="line-btn">
+<button class="send" type="submit" onclick="$(this).closest('form').submit();return false;"><!-- Заказать PSORIX -->ПОЛУЧИТЬ БЕСПЛАТНО</button>
+</div>
+<div class="line-all">
+<span class="line-all-text">Получили на этой неделе:</span><br class="visible-xs"><span class="line-all-count todayBay">0</span><span class="line-all-text">человек</span>
+<span class='course'>*при оформлении заказа</span>
+</div>
+<img src="landing_file/psorix/Landing_3/img/arrow-red.png" alt="arrow" class="visible-lg">
+<img src="landing_file/psorix/Landing_3/img/arrow-red-md.png" alt="arrow" class="hidden-lg">
+</div>
+							<input type="hidden" name="order[specifications]" value="" />
+							<input type="hidden" name="order[discount]" value="">
+							<style>
+	.pl_field_address_info{
+		opacity: 0;
+	}
+</style>
+
+<input type="checkbox" name="order[address_info]" class="pl_field_address_info">
+<input type="hidden" name="order[advHash]" class="advHash">
+	
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="how">
+<div class="container">
+<div class="how-bg">
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h2>Как PSORIX побеждает псориаз?</h2>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<div class="how-item">
+<img src="landing_file/psorix/Landing_3/img/how/how-01.png" alt="step-01">
+<i class="fa fa-angle-right fa-5x" aria-hidden="true"></i>
+<div class="how-body">
+<div class="how-body-header">
+<h3>1</h3>
+</div>
+<div class="how-body-text">
+<span class="bold">Нейтрализует и выводит</span> из организма кишечные токсины.<br>
+<span class="pink bold">Результат:</span> <span class="bold">Прекращаются боль</span>, зуд и чесотка.
+</div>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<div class="how-item">
+<img src="landing_file/psorix/Landing_3/img/how/how-02.png" alt="step-02">
+<i class="fa fa-angle-right fa-5x" aria-hidden="true"></i>
+<div class="how-body">
+ <div class="how-body-header">
+<h3>2</h3>
+</div>
+<div class="how-body-text">
+<span class="bold">Устраняет факторы</span>, провоцирующие аутоиммунные реакции.<br>
+<span class="pink bold">Результат:</span> <span class="bold">Исчезают</span> очаги воспаления.
+</div>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<div class="how-item">
+<img src="landing_file/psorix/Landing_3/img/how/how-03.png" alt="step-03">
+<i class="fa fa-angle-right fa-5x" aria-hidden="true"></i>
+<div class="how-body">
+<div class="how-body-header">
+<h3>3</h3>
+</div>
+<div class="how-body-text">
+<span class="bold">Стимулирует процессы</span> регенерации кожных покровов.<br>
+<span class="pink bold">Результат:</span> Возвращается <span class="bold">здоровый вид</span> кожи.
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<div class="how-footer">
+Мучения остаются в прошлом - Вы возвращаетесь <br>
+к нормальной жизни СОВЕРШЕННО БЕСПЛАТНО!
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="easy">
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h2>Легко и удобно применять</h2>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+<div class="easy-item">
+<div class="easy-img">
+<img src="landing_file/psorix/Landing_3/img/easy02.png" alt="Псорикс">
+</div>
+<div class="easy-body">
+<div class="easy-header bold">Крем</div>
+<div class="easy-text">Наносите на кожу, уделяя внимание поврежденным участкам, 2 раза в день - утром и вечером</div>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+<div class="easy-item">
+<div class="easy-img">
+<img src="landing_file/psorix/Landing_3/img/easy01.png" alt="Псорикс">
+</div>
+<div class="easy-body">
+<div class="easy-header bold">Капли в подарок*</div>
+<div class="easy-text">Принимайте по 10 капель 2 раза в день, растворив в небольшом количестве воды</div>
+<span class='plus-drops'>*при оформлении заказа</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="cost">
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h2>Мы вложили более <br class="visible-xs visible-sm">20 000 000 $ в создание PSORIX</h2>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-offset-0 col-xs-12 col-sm-offset-2 col-sm-8 col-md-offset-0 col-md-4 col-lg-offset-0 col-lg-4">
+<div class="cost-item">
+<div class="cost-item-digit">
+<div class="ci-digit">4</div>
+<div class="ci-text">года</div>
+</div>
+<div class="cost-item-text">
+<span class="cit-header">Формула создавалась на <br>протяжении 4 лет исследований</span><br>
+<span class="cit-body">с привлечением независимых <br>фармацевтических лабораторий в <br>России, Канаде и Германии. Было <br>протестировано более 120 экспериментальных рецептур.</span>
+</div>
+</div>
+</div>
+<div class="col-xs-offset-0 col-xs-12 col-sm-offset-2 col-sm-8 col-md-offset-0 col-md-4 col-lg-offset-0 col-lg-4">
+<div class="cost-item">
+<div class="cost-item-digit">
+<div class="ci-digit">80</div>
+<div class="ci-text">%</div>
+</div>
+<div class="cost-item-text">
+<span class="cit-header">80% ингредиентов для <br>производства PSORIX - <br>импортные</span><br>
+<span class="cit-body">т.к. они не произрастают в России. <br>Все компоненты проходят двойной <br>контроль на степень очистки <br>сырья, экологическую чистоту, <br>концентрацию действующих <br>веществ.</span>
+</div>
+</div>
+</div>
+<div class="col-xs-offset-0 col-xs-12 col-sm-offset-2 col-sm-8 col-md-offset-0 col-md-4 col-lg-offset-0 col-lg-4">
+<div class="cost-item">
+<div class="cost-item-digit">
+<div class="ci-digit">100</div>
+<div class="ci-text">%</div>
+</div>
+<div class="cost-item-text">
+<span class="cit-header">Для производства <br>PSORIX была закуплена <br>современная линия</span>
+<span class="cit-body">и новейшая <br>модель иностранного производства,<br> на 100% отвечающая <br>стандартам ЕС в области <br>менеджмента качества.</span>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<div class="cost-footer">
+специально для жителей России и стран СНГ  <br> 
+  средство PSORIX можно получить    <font style="font-size:135%">БЕСПЛАТНО*</font>
+
+
+<br><font class="datedownbg">только <font class="endStockDate nowdate" daysint>13 августа</font></font>
+ <style>
+ .datedownbg {
+	 display:inline-block;
+	 min-width:288px;
+	 background:#fff;
+	 color:#b66466;
+	 border-radius:3px;
+	 margin:18px auto 0 auto;
+	 line-height:40px;
+	 font-size:22px;
+ }
+ 
+ @media screen and (max-width: 479px){
+ .datedownbg {min-width:auto; padding-left:22px; padding-right:15px;}
+ }
+ </style>
+ 
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="reviews" style="display0:none;">
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h2>
+Отзывы людей, избавившихся от псориаза <br class="hidden-xs">
+с помощью PSORIX
+</h2>
+</div>
+</div>
+</div>
+
+
+<!--
+<div class="video-reviews-block">
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+<div class="video-reviews" style="display: none;">
+<video style="width: 100%; height: 220px; max-height: 100%; min-height: 220px;">
+<source src="http://staticfiles-land.com/inderma/videos/Inderma412.mp4" type='video/mp4'>
+</video>
+</div>
+<div class="video-reviews-author">Марина</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+<div class="video-reviews" style="display: none;">
+<video style="width: 100%; height: auto; max-height: 100%; min-height: 220px;">
+<source src="http://staticfiles-land.com/inderma/videos/Inderma360.mp4" type='video/mp4'>
+</video>
+</div>
+<div class="video-reviews-author">Константин, г. Новосибирск</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+<div class="video-reviews" style="display: none;">
+<video style="width: 100%; height: auto; max-height: 100%; min-height: 220px;">
+<source src="http://staticfiles-land.com/inderma/videos/Inderma288.mp4" type='video/mp4'>
+</video>
+</div>
+<div class="video-reviews-author">Лена, Краснодарский край</div>
+</div>
+</div>
+</div>
+</div>
+-->
+
+
+<div class="text-reviews">
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<div class="owl-carousel">
+<div class="item">
+<img src="landing_file/psorix/Landing_3/img/reviews-01.png" alt="reviews-01.png">
+<div class="owl-item-text">
+<div class="owl-text">
+“Мне поставили диагноз псориаз 7 лет назад. Тогда я еще не знала, как трудно <br class="hidden-xs hidden-sm">
+избавиться от этой болезни. Поначалу использовала гормональную мазь. Улучшения <br class="hidden-xs hidden-sm">
+были, но потом пошло привыкание((( Подруга посоветовала Псорикс... И улучшения <br class="hidden-xs hidden-sm">
+пошли сразу....трудно было поверить, что наконец то я нашла то средство, которое <br class="hidden-xs hidden-sm">
+избавило бы меня от псориаза. Собираюсь применять ещё один курс, но это уже просто для <br class="hidden-xs hidden-sm">
+профилактики.”
+</div>
+<div class="owl-autor">Ольга Ф., 47 лет, Воронеж</div>
+</div>
+</div>
+<div class="item">
+<img src="landing_file/psorix/Landing_3/img/reviews-02.png" alt="reviews-02.png">
+<div class="owl-item-text">
+<div class="owl-text">
+“Я как и все здесь, лечилась гормональными и прочими средствами. но увы большого <br class="hidden-xs hidden-sm">
+результата они не дали. Были ремиссии и обострения, долго и мучительно. Теперь я <br class="hidden-xs hidden-sm">
+попробовала “Псорикс” и наконец нахожусь в длительной ремиссии. Хотелось бы, <br class="hidden-xs hidden-sm">
+чтобы теперь навсегда).”
+</div>
+<div class="owl-autor">Анна К., 26 лет, Екатеринбург</div>
+</div>
+</div>
+<div class="item">
+<img src="landing_file/psorix/Landing_3/img/reviews-03.png" alt="reviews-03.png">
+<div class="owl-item-text">
+<div class="owl-text">
+“Что плохо при лечении псориаза, это то что гормоны имеют свойство накапливаться <br class="hidden-xs hidden-sm">
+в организме, и мужчины из-за них становятся импотентами. Кроме этого, зависимость <br class="hidden-xs hidden-sm">
+и синдром отмены будет. Я через это прошёл, много чем лечился, поэтому говорю: не <br class="hidden-xs hidden-sm">
+экспириментируйте со своим здоровьем. Все адекватные люди пользуются средством <br class="hidden-xs hidden-sm">
+Псорикс, а от гормонов отказались в принципе.”
+</div>
+<div class="owl-autor">Андрей П., 56 лет, <span class="pl_spacer_geo_detect">Москва</span></div>
+ </div>
+</div>
+<div class="item">
+<img src="landing_file/psorix/Landing_3/img/reviews-04.png" alt="reviews-04.png">
+<div class="owl-item-text">
+<div class="owl-text">
+“Я болею псориазом... почти 10 лет. А это вся моя молодость, все мои лучшие годы... <br class="hidden-xs hidden-sm">
+Спасибо за ваш препарат, он действительно помог снять обострение и представляет <br class="hidden-xs hidden-sm">
+очень действенный способ избавления от этого недуга! Уже без содрогания жду осени, <br class="hidden-xs hidden-sm">
+надеюсь, Псорикс поможет.”
+</div>
+<div class="owl-autor">Наталия О., 32 года, Омск</div>
+</div>
+</div>
+<div class="item">
+<img src="landing_file/psorix/Landing_3/img/reviews-05.png" alt="reviews-05.png">
+<div class="owl-item-text">
+<div class="owl-text">
+“Два месяца назад у меня после сильного стресса на работе началось обострение <br class="hidden-xs hidden-sm">
+псора, ходил весь чесался. Кожа начала шелушиться. Сестра жены посоветовала <br class="hidden-xs hidden-sm">
+купить капли и крем-гель PSORIX, мол многие его хвалят. Я купил попробовать, благо он <br class="hidden-xs hidden-sm">
+не дорогой, и через некоторое время реально перестал чесаться и мало-помалу стали <br class="hidden-xs hidden-sm">
+заметно уменьшаться покраснения на коже. Решил, что буду теперь пользоваться им.”
+</div>
+<div class="owl-autor">Михаил Е., 28 лет, Санкт-Петербург</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!--
+<section class="audio-reviews">
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h2>
+Мы опросили тысячи наших клиентов
+</h2>
+<p>Послушайте, как помогло наше средство покупателям</p>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<div class="audio-player">
+<div class="audio-title">
+Наталья Львовна
+</div>
+<audio controls>
+<source src="#" type="audio/mp3">
+</audio>
+<div class="audio-title">
+Сергей Витальевич
+</div>
+<audio controls>
+<source src="#" type="audio/mp3">
+</audio>
+<div class="audio-title">
+Мария
+</div>
+<audio controls>
+<source src="#" type="audio/mp3">
+</audio>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+-->
+
+
+<section class="order">
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h2>
+Как оформить и получить свой заказ?
+</h2>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<div class="order-shema clearfix">
+<img src="landing_file/psorix/Landing_3/img/order/bottom-line.png" alt="Аллигатор" class="line1 hidden-xs hidden-sm">
+<img src="landing_file/psorix/Landing_3/img/order/bottom-line.png" alt="Аллигатор" class="line2 hidden-xs hidden-sm">
+<img src="landing_file/psorix/Landing_3/img/order/top-line.png" alt="Аллигатор" class="line3 hidden-xs">
+<img src="landing_file/psorix/Landing_3/img/order/top-line.png" alt="Аллигатор" class="line4 hidden-xs hidden-sm">
+<img src="landing_file/psorix/Landing_3/img/order/line-middle.png" alt="Аллигатор" class="line5 hidden-xs hidden-md hidden-lg">
+<img src="landing_file/psorix/Landing_3/img/order/line-ang.png" alt="Аллигатор" class="line6 hidden-xs hidden-md hidden-lg">
+<div class="order-shema-item">
+<div class="osi-img">
+<img src="landing_file/psorix/Landing_3/img/order/order-01.png" alt="Заявка">
+</div>
+<div class="osi-header">Заявка</div>
+<div class="osi-text">Отправляете заявку с&nbsp;сайта</div>
+</div>
+<div class="order-shema-item">
+<div class="osi-img">
+<img src="landing_file/psorix/Landing_3/img/order/order-02.png" alt="Консультация">
+</div>
+<div class="osi-header">Консультация</div>
+<div class="osi-text">С Вами связывается специалист PSORIX</div>
+</div>
+<div class="order-shema-item">
+<div class="osi-img">
+<img src="landing_file/psorix/Landing_3/img/order/order-03.png" alt="доставка">
+</div>
+<div class="osi-header">доставка</div>
+<div class="osi-text">Заказ доставляется в&nbsp;анонимной <br>упаковке</div>
+</div>
+<div class="order-shema-item">
+<div class="osi-img">
+<img src="landing_file/psorix/Landing_3/img/order/order-04.png" alt="оплата">
+</div>
+<div class="osi-header">оплата</div>
+<div class="osi-text">
+Происходит при получении, а по акции упаковка бесплатно
+</div>
+</div>
+<div class="order-shema-item">
+<div class="osi-img">
+<img src="landing_file/psorix/Landing_3/img/order/order-05.png" alt="оплата">
+</div>
+<div class="osi-header">результат</div>
+<div class="osi-text">Применяете PSORIX <br>и&nbsp;наслаждаетесь <br>жизнью без&nbsp;псориаза</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="team">
+<div class="container">
+<div class="team-bg">
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h2>Команда PSORIX - работаем для&nbsp;Вас</h2>
+</div>
+</div>
+<div class="row">
+<div class="team-items clearfix">
+<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+<div class="team-item">
+<img src="landing_file/psorix/Landing_3/img/team/nikonov.png" alt="Дмитрий Никонов">
+<div class="team-title">Дмитрий Никонов</div>
+<div class="team-descr">директор по качеству</div>
+<div class="team-text">“Мы не экономим на качестве, поэтому для производства PSORIX используются лучшие ингредиенты и технологии”</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+<div class="team-item">
+<img src="landing_file/psorix/Landing_3/img/team/zacepina.png" alt="Яна Зацепина">
+<div class="team-title">Яна Зацепина</div>
+<div class="team-descr">директор колл-центра</div>
+<div class="team-text">“Оставьте свой номер, и наши специалисты подробно расскажут Вам, как получить заказ и правильно использовать средство”</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+<div class="team-item">
+<img src="landing_file/psorix/Landing_3/img/team/smirnov.png" alt="Евгений Смирнов">
+<div class="team-title">Евгений Смирнов</div>
+<div class="team-descr">руководитель службы доставки</div>
+<div class="team-text">“Ваш заказ будет доставлен в сжатые сроки, чтобы Вы могли как можно скорее начать выздоровление с нашим уникальным продуктом”</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="delivery hidden-xs">
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h2>
+Мы доставим Ваш заказ в любую точку <br>
+России и СНГ
+</h2>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<div class="map-delivery">
+<img src="landing_file/psorix/Landing_3/img/map.png" alt="Псорикс">
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="while">
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h2 class="red">Пока Вы откладываете, шансы на избавление <br class="hidden-xs hidden-sm">от псориаза уменьшаются с каждым днём...</h2>
+<p>Если не начать выздоровление прямо сейчас, то <span class="bold">разрушение суставов, паралич и инвалидность</span> могут стать реальностью уже в недалеком будущем. Перестаньте экономить, <span class="bold">если Вам дорого Ваше здоровье</span>, и попробуйте PSORIX - <span class="bold">это просто и доступно!</span></p>
+</div>
+</div>
+</div>
+</section>
+
+
+
+
+
+<section class="how how_code">
+<div class="container">
+<div class="how-bg">
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<h2>Остерегайтесь подделок!</h2>
+</div>
+</div>
+<div class="row">
+ 
+ 
+ 
+						<div class="code-wrapper"> 
+							<div class="bgblock"> 
+												<p class="fstp" style=" padding-top:5px; padding-bottom:15px; color:#000; font-size: 140%;    line-height: 1.3; ">С ростом популярности <font style="class">Psorix</font> на рынке СНГ, участились случаи подделок. 
+												Наш же продукт продается в оригинальной упаковке с уникальным регистрационным кодом!</p>
+												<p class="sstp" style="border-radius: 10px; padding-bottom:15px; color:#000; font-size: 140%;    line-height: 1.3; ">Найдите код на упаковке и проверьте подлинность&nbsp;<font class="nbrk">Psorix.</font></p>
+												<p class="warning-border">Отправьте DAT-код <strong>по СМС на номер 3888</strong>, в ответ получите информацию о подлинности&nbsp;товара.</p>
+												<p class="warp" style="padding:13px 18px; font-size:110%;   margin-top:10px; line-height:1.5; background-color:#ececec;  font-weight: normal;
+												 color: #000;">
+												<i></i>Проверьте, что услуга отправки смс на короткий номер не отключена. Бесплатные СМС на&nbsp;номер 3888 подключены в РФ, Армении и Беларуси.
+												<br>
+												<br>
+												<strong><u>Только первая проверка</u> подтверждает подлинность.  Только для товаров, защищенных Системой&nbsp;DAT.</strong></p>
+							</div>
+						</div>
+						
+						
+						<style>			
+								.section7_code  {  padding-bottom: 0px !important; background-color: #e3e3e3;}  
+								.nbrk {display:inline-block;}
+										.warning-border {padding:12px 19px; line-height:1.3;  background: #b66466;    color: #fff; font-size: 130%;  }
+										.code-wrapper {clear: both; padding-right:390px; padding-left: 65px; padding-top:0px; padding-bottom:40px; background: url('landing_file/psorix/Landing_3/img/fake.png'); 
+												background-position: bottom right 30px; background-repeat: no-repeat; background-size:320px 320px; } 
+										
+										.bgblock {   /* border-radius: 10px;  background: #f3f3f3; padding-left: 35px;  padding-right: 35px; padding-top: 5px; padding-bottom: 35px;*/ }
+									 
+											.bad_result_code { margin-bottom: -70px !important; }
+											
+										@media screen and (max-width: 1199px){
+											.bad_result_code { margin-bottom: -35px !important; }
+											.warning-border { font-size: 150%; }
+										}
+										
+										@media screen and (max-width: 991px){
+											.code-wrapper {padding-left:35px; padding-right: 35px; padding-top: 3px; padding-bottom:250px; background-position:center bottom 0px ; background-size:auto 231px; text-align:center} 
+											.fstp, .sstp {   margin-top: -10px;     font-size: 175% !important;    line-height: 1.5 !important; }	
+											.warning-border {    font-size: 185%!important; }
+											.warp {    font-size: 140%!important; }
+											.section7_code {padding-bottom:0px !important;}
+											
+											.how_code h2 { top: -10px;    padding-bottom: 15px;    font-size: 2.767em;    line-height: 25px;}
+										}
+																	
+										@media screen and (max-width: 479px){	
+											.bad_result_code h3 {width:100% !important;} 
+											.warning-border {    padding: 12px 15px; font-size: 18px !important; line-height:1.4;}	
+											.fstp, .sstp {   font-size: 165% !important;    line-height: 1.5 !important; }	
+											.warning-border {    font-size: 185%!important; }
+											.warp {    font-size: 140%!important; }	
+											.how_code h2 {    font-size: 2.5em;    line-height: 22px; }		
+											.how_code h2 {    font-size: 3.5em;    line-height: 33px;    top: -16px;     padding-bottom: 1px;}											
+																					
+										}
+										
+										@media screen and (max-width: 479px){ 
+											.code-wrapper { padding-bottom:165px; background-size:auto 155px; padding-left:15px;padding-right:15px;} 
+											.warning-border {    padding: 12px 15px; font-size: 16px !important;}
+											.bgblock {   padding-left: 10px;    padding-right: 10px;    padding-top: 6px;    padding-bottom: 11px;}
+											.section7_code  { padding-left: 17px;    padding-right: 17px;  }
+											 										
+										}	
+
+										@media screen and (max-width: 360px){
+											.code-wrapper {padding-left:15px;padding-right:15px;}
+										}
+						</style>
+ 
+ 
+</div>
+ 
+</div>
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<section class="bottom-form hidden-xs">
+<div class="container">
+<div class="row">
+<div class="col-sm-12 col-md-12 col-lg-12">
+<h2>
+Если Вам не помогли <br class="visible-sm">другие средства от псориаза, <br class="hidden-sm">
+используйте PSORIX
+</h2>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12 col-md-6 col-lg-8">
+<p>
+PSORIX эффективен, потому что имеет <br class="visible-md">“двойную” силу <br class="visible-lg">действия и устраняет <br class="visible-md">причину псориаза
+</p>
+</div>
+<div class="col-md-offset-1 col-md-5 col-lg-offset-0 col-lg-4 hidden-sm">
+<div class="top-timer">
+
+<div class="timer-header" style="display:none;">
+До конца акции осталось:
+</div>
+<div class="timer2" style="display:none;"></div>
+<div class="sale-wrap--center">
+<p class="sale-title sale-title--center">Капли от псориаза <br class="widebr">в подарок! *</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12 col-md-6 col-lg-6">
+<div class="list-blok">
+<span class="product-block plb2">
+<span class="plashka2">
+при заказе<br>
+<b><font class="endStockDate nowdate" daysint>13 августа</font></b><br />
+одна упаковка<br />
+<b><!--ЗА-->&nbsp;<font class="plashka2-t">БЕСПЛАТНО<font class="frzv">*</font></font></b>
+</span>
+</span>
+<ul>
+<li>
+<i class="fa fa-angle-right fa-3x" aria-hidden="true"></i>
+<div class="top-li-text">
+<span class="bold">Два средства в одном:</span> крем-гель действует снаружи, капли — изнутри.
+</div>
+</li>
+<li>
+<i class="fa fa-angle-right fa-3x" aria-hidden="true"></i>
+<div class="top-li-text">
+Возвращает коже <span class="bold">здоровый вид</span> за счет экстракта тыквенного масла.
+</div>
+</li>
+<li>
+<i class="fa fa-angle-right fa-3x" aria-hidden="true"></i>
+<div class="top-li-text">
+Кордицепс <span class="bold">подавляет аутоиммунные реакции</span> как причину заболевания.
+</div>
+</li>
+<li>
+<i class="fa fa-angle-right fa-3x" aria-hidden="true"></i>
+<div class="top-li-text">
+Березовый сок <span class="bold">обезвреживает токсины</span>, воспаляющие кожу.
+</div>
+</li>
+<li>
+<i class="fa fa-angle-right fa-3x" aria-hidden="true"></i>
+<div class="top-li-text">
+Задействует <span class="bold">естественные силы организма</span> в отличие от лекарств.
+</div>
+</li>
+</ul>
+<img src="landing_file/psorix/Landing_3/img/PSORIDEL.png" alt="PSORIX" class="visible-lg">
+<img src="landing_file/psorix/Landing_3/img/PSORIDEL-md.png" alt="PSORIX" class="hidden-lg">
+</div>
+</div>
+<div class="col-md-6 col-lg-6 hidden-sm">
+<div class="top-form clearfix">
+<form method="post" action="preview%3Fp_comeback_form=discount&amp;p_vv_sex=all&amp;p_vv_slow=5&amp;p_vv_count=on&amp;p_vv_count_index=1&amp;p_vv_order=on&amp;p_vv_order_index=5&amp;p_vv_callback=on&amp;p_vv_callback_index=1&amp;p_unload_delay=5&amp;p_limit_left=60&amp;price=990&amp;language=rus&amp;offer.html" class="tform">
+<div class="price-line">
+<div class="old-price">
+<div class="old-price-header">
+Только сегодня
+</div>
+<div class="old-price-summ">
+<span class="old-price-summ-num"><span class="price_land_s4 pl_product_old_price"><font class="endStockDate nowdate" daysint>13 августа</font></span></span>
+<span class="old-price-summ-rub"><span class="price_land_curr"> </span></span>
+</div>
+</div>
+<div class="price">
+<div class="price-header">
+<!--Цена-->По акции
+</div>
+<div class="price-summ ">
+<!--
+<span class="price-summ-num "><span class="price_land_s1 pl_product_price">1</span></span>
+<span class="price-summ-rub "><span class="price_land_curr">руб*</span></span>-->
+
+
+<span class="price-summ-num"><span class="price_land_s1 pl_product_price pl_product_price_free">БЕСПЛАТНО<font class="frzv">*</font></span></span>
+</div>
+</div>
+<div class="img-sale sale" style="display:none;">
+
+</div>
+</div>
+<div class="input-line clearfix">
+<div class="input-line-item">
+<label for="name">Введите Ваше имя</label>
+<input type="text" placeholder="Валерий" name="order[fio]">
+</div>
+<div class="input-line-item">
+<label for="phone">Введите Ваш телефон</label>
+<input type="tel" placeholder="+7 (916) 123-45-67" name="order[phone]">
+</div>
+</div>
+<div class="btn-line">
+<div class="line-count">
+<div class="line-count-descr">
+Внимание! <br class="visible-sm visible-lg">
+Осталось <br class="visible-md">товаров по акции:
+</div>
+<div class="line-count-count">
+<span class="count lastpack p_limit_left_text">60</span> штук
+</div>
+</div>
+<div class="line-btn">
+<button class="send" type="submit" onclick="$(this).closest('form').submit();return false;"><!-- Заказать PSORIX -->ПОЛУЧИТЬ БЕСПЛАТНО</button>
+</div>
+<div class="line-all">
+<span class="line-all-text">Получили на этой неделе:</span><span class="line-all-count todayBay">0</span><span class="line-all-text">человек</span>
+<span class='course'>*при оформлении заказа</span>
+</div>
+<img src="landing_file/psorix/Landing_3/img/arrow-red.png" alt="arrow" class="visible-lg">
+<img src="landing_file/psorix/Landing_3/img/arrow-red-md.png" alt="arrow" class="visible-md">
+</div>
+							<input type="hidden" name="order[specifications]" value="" />
+							<input type="hidden" name="order[discount]" value="">
+							<style>
+	.pl_field_address_info{
+		opacity: 0;
+	}
+</style>
+
+<input type="checkbox" name="order[address_info]" class="pl_field_address_info">
+<input type="hidden" name="order[advHash]" class="advHash">
+	
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="order-form hidden-md hidden-lg">
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+<div class="top-form clearfix">
+<form method="post" action="preview%3Fp_comeback_form=discount&amp;p_vv_sex=all&amp;p_vv_slow=5&amp;p_vv_count=on&amp;p_vv_count_index=1&amp;p_vv_order=on&amp;p_vv_order_index=5&amp;p_vv_callback=on&amp;p_vv_callback_index=1&amp;p_unload_delay=5&amp;p_limit_left=60&amp;price=990&amp;language=rus&amp;offer.html" class="tform">
+<div class="price-line">
+<div class="old-price">
+<div class="old-price-header">
+Только сегодня
+</div>
+<div class="old-price-summ">
+<span class="old-price-summ-num"><span class="price_land_s4 pl_product_old_price"><font class="endStockDate nowdate" daysint>13 августа</font></span></span>
+<span class="old-price-summ-rub"><span class="price_land_curr"> </span></span>
+</div>
+</div>
+<div class="price">
+<div class="price-header">
+<!--Цена-->По акции
+</div>
+<div class="price-summ ">
+<!--
+<span class="price-summ-num "><span class="price_land_s1 pl_product_price">1</span></span>
+<span class="price-summ-rub "><span class="price_land_curr">руб*</span></span>-->
+
+<span class="price-summ-num"><span class="price_land_s1 pl_product_price pl_product_price_free">БЕСПЛАТНО<font class="frzv">*</font></span></span>
+</div>
+</div>
+<div class="img-sale sale hidden-xs" style="display:none;">
+
+</div>
+</div>
+<div class="timer-line">
+<div class="top-timer">
+<span class="product-block plb3">
+<span class="plashka2">
+при заказе<br>
+<b><font class="endStockDate nowdate" daysint>13 августа</font></b><br />
+одна упаковка<br />
+<b><!--ЗА-->&nbsp;<font class="plashka2-t">БЕСПЛАТНО*</font></b>
+</span>
+</span>
+<div class="timer-header" style="display:none;">
+До конца акции осталось:
+</div>
+<div class="timer9" style="display:none;"></div>
+<div class="sale-wrap--center">
+<p class="sale-title sale-title--center">Капли от псориаза <br class="widebr">в подарок! *</p>
+</div>
+</div>
+</div>
+<div class="input-line clearfix">
+<div class="input-line-item">
+<label for="name">Введите Ваше имя</label>
+<input type="text" placeholder="Валерий" name="order[fio]">
+</div>
+<div class="input-line-item">
+<label for="phone">Введите Ваш телефон</label>
+<input type="tel" placeholder="+7 (916) 123-45-67" name="order[phone]">
+</div>
+</div>
+<div class="btn-line">
+<div class="line-count">
+<div class="line-count-descr">
+Внимание! <br class="visible-sm visible-lg">
+Осталось <br class="visible-xs visible-md">товаров по акции:
+</div>
+<div class="line-count-count">
+<span class="count lastpack p_limit_left_text">60</span> штук
+</div>
+</div>
+<div class="line-btn">
+<button class="send" type="submit" onclick="$(this).closest('form').submit();return false;"><!-- Заказать PSORIX -->ПОЛУЧИТЬ БЕСПЛАТНО</button>
+</div>
+<div class="line-all">
+<span class="line-all-text">Получили на этой неделе:</span><br class="visible-xs"><span class="line-all-count todayBay">0</span><span class="line-all-text">человек</span>
+<span class='course'>*при оформлении заказа</span>
+</div>
+<img src="landing_file/psorix/Landing_3/img/arrow-red.png" alt="arrow" class="visible-lg">
+<img src="landing_file/psorix/Landing_3/img/arrow-red-md.png" alt="arrow" class="hidden-lg">
+</div>
+							<input type="hidden" name="order[specifications]" value="" />
+							<input type="hidden" name="order[discount]" value="">
+							<style>
+	.pl_field_address_info{
+		opacity: 0;
+	}
+</style>
+
+<input type="checkbox" name="order[address_info]" class="pl_field_address_info">
+<input type="hidden" name="order[advHash]" class="advHash">
+	
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+</div>
+<footer>
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="text-align: center;">
+<center style="color:#7e7e7e;   line-height: 20px; width: 100%; text-align: center; padding:15px 0">
+
+    ООО "СИРОС-ТОРГ"<br/>
+    ИНН 9729094797 / КПП 772901001 / ОГРН 1177746583167<br/>
+    119618, г. Москва, ул. Богданова д. 6 1, оф. 6<br/>
+
+<br>
+<span class="confidens"><a href="privacyPolicy.html" target="_blank" l-loc="l_pl36">Политика конфиденциальности</a>&nbsp;
+<a href="userAgreement.html" target="_blank" l-loc="l_pl37">Пользовательское соглашение</a></span>
+
+</center>
+
+ 
+ 
+<style> .plashka2{display:none} 
+
+.frzv {display:inline-block; position:absolute;}
+
+
+ @media screen and (min-width: 1200px){ 
+		.top-logo { margin-top: 10px; }
+		.sale-wrap--center { margin-top: 22px; }
+		.sale-wrap--center .sale-title { font-size: 21px; }
+		
+		.why-img { top: 373px; margin-left: -157px; }
+		
+		.order-form-block>img { left: 35px; top: -60px; }
+		
+		.osi-text {    font-size: 1.4em;    line-height: 1.5; /*text-align:center;*/    padding-right: 30px;}
+		.osi-header {    font-size: 1.7em; /*text-align:center; */ }
+		.osi-img {   padding-bottom: 50px;}
+		
+		.science>img {    bottom: 215px;    margin-left: -320px;    max-width: 600px; }
+		
+		.old-price { width:50%; }
+		.price-summ { margin-top:-10px; }
+		.price-header { padding-top:10px; }
+		.pl_product_price_free { font-size:65% !important; }
+		
+		.old-price-summ-num { background: #f5e6e7;    padding: 0px 15px 3px; }
+		.order-form-bottomline .price {	margin: 20px 0 0 42px;}
+		.order-form-bottomline .old-price { margin: 118px 0 0 38px; min-width: 215px; }
+		.order-form-block .top-timer { margin-right: 127px; }
+ }
+
+ 
+ @media screen and (min-width: 992px) and (max-width: 1199px){
+	.why-img {    width: 280px;    margin-left: -140px;    top: 357px;} 
+	.list-blok img {    left: 276px;    top: 31px;    width: 280px;}
+	.order-form-block>img {    width: 280px;    top: 7px;    left: 5px;}
+	
+	.osi-text {    font-size: 1.4em;    padding-right: 30px;    line-height: 1.5;}
+	.osi-header {    font-size: 1.7em;}
+	
+	.science>img {       bottom: 180px;    margin-left: -300px;    max-width: 540px; }
+	
+			
+	.old-price { width:50%; }
+	.price-summ { margin-top:-8px; }
+	.price-header { padding-top:10px; }
+	.pl_product_price_free { font-size:49% !important; }
+	.old-price-summ-num {    font-size: 2.5em;}
+	
+	.old-price-summ-num { background: #f5e6e7;    padding: 0px 15px 3px; }
+	.order-form-bottomline .price {	margin: 25px 0 0 12px;}
+	.order-form-bottomline .old-price { margin: 125px 0 0 -19px; min-width: 215px; }
+	.order-form-block .top-timer { margin-right: 35px; }
+}				
+				
+ 
+ 
+ @media screen and (min-width: 480px) and (max-width: 991px){
+	 .science h2 {    padding-left: 25px;    padding-right: 25px; }	 
+	 			
+	.old-price { width:50%; }
+	.price-summ { margin-top:-15px; }
+	.price-header { padding-top:12px; }
+	.pl_product_price_free { font-size:51% !important; }
+	.old-price-summ-num {    font-size: 2.5em;}
+	
+	.old-price-summ  {    margin-top: 3px; }
+
+	.old-price-summ-num { background: #f5e6e7;    padding: 0px 15px 3px; }
+	.order-form-bottomline .price {	margin: 25px 0 0 12px;}
+	.order-form-bottomline .old-price { margin: 125px 0 0 -13px; min-width: 215px; }
+
+	
+ }					
+
+ 
+ 				
+ 
+ 
+ @media screen and (min-width: 1px) and (max-width: 479px){
+	.mfp-bg0, .mfp-wrap		 {display:none !important;}
+	 			
+	.old-price { width:50%; }
+	.price-summ { margin-top:-15px; }
+	.price-header { padding-top:12px; }
+	.pl_product_price_free { font-size:40% !important; }
+	.old-price-summ-num {    font-size: 2.1em;}
+	
+	.old-price-summ  {    margin-top: 6px; }
+	.old-price-header, .price-header {    font-size: 1.6em;}
+
+	.old-price-summ-num { background: #f5e6e7;    padding: 0px 11px 3px; }
+	.order-form-bottomline .price {	margin: 25px 0 0 12px;}
+	.order-form-bottomline .old-price { margin: 125px 0 0 -13px; min-width: 215px; }
+	
+	.order-form .top-form .old-price, .order-form-block .top-form .old-price { width: 48%; }
+
+	
+
+	.order-form .top-form .send {font-size: 2.2em;}
+	
+ }					
+
+ 
+.nowdate {display:inline-block;}
+ 
+						  .primrub { color: #999 !important; margin: 1px 0 1px; font-size:85%;    display: none;    width: 100%;    text-align: center;} 	 								  
+						  *{outline:none !important}
+						  #created-button-1, #created-button-2 {line-height:36px !important;}	.pl_field_address_info {position:absolute;width:1px;}    .confidens {text-align:center; cursor:default;display:block;clear:both;  }   .confidens a {text-decoration:none; color:#888; cursor:default; }    .confidens a:hover {cursor:default; text-decoration:none;}  
+						  
+						  </style>
+						  
+						  
+						  
+						  
+						  
+						  
+						<style>		
+							.pl_product_price_free   { font-size: 49%; }				  
+				 
+							@media only screen and (min-width: 768px) and (max-width: 1023px) {	 
+							  }
+							  
+							  @media screen and (max-width: 640px){     
+
+
+							  }
+							  *{outline:none !important} #created-button-1, #created-button-2 {line-height:38px !important; font-family:'Arial','Tahoma','Verdana';}	.pl_field_address_info {position:absolute;   width: 1px !important;  z-index: -1;}   footer .container {text-align:center} .confidens {text-align:center; cursor:default; display:block; clear:both;  }   .confidens a {text-decoration:none !important; /*font-family: OpenSansRegular, sans-serif;*/ color:#7e7e7e !important; cursor:default; }    .confidens a:hover {cursor:default;  /*font-family: OpenSansRegular, sans-serif;*/ color:#7e7e7e !important; text-decoration:none !important;}  
+						</style>
+							  
+							  
+</div>
+</div>
+</div>
+</footer>
+<div class="hidden">
+<div class="order-form-block mpform" id="callmeform">
+<img src="landing_file/psorix/Landing_3/img/PSORIDEL-form.png" alt="Псорикс" class="hidden-xs hidden-sm">
+<form method="post" action="preview%3Fp_comeback_form=discount&amp;p_vv_sex=all&amp;p_vv_slow=5&amp;p_vv_count=on&amp;p_vv_count_index=1&amp;p_vv_order=on&amp;p_vv_order_index=5&amp;p_vv_callback=on&amp;p_vv_callback_index=1&amp;p_unload_delay=5&amp;p_limit_left=60&amp;price=990&amp;language=rus&amp;offer.html" class="order-form-form hidden-sm">
+<div class="order-form-topline">
+<div class="top-timer">
+<span class="product-block plb3">
+ <span class="plashka2">
+при заказе<br>
+<b><font class="endStockDate nowdate" daysint>13 августа</font></b><br />
+одна упаковка<br />
+<b><!--ЗА-->&nbsp;<font class="plashka2-t">БЕСПЛАТНО<font class="frzv">*</font></font></b>
+</span>
+</span>
+<div class="timer-header" style="display:none;">
+До конца акции осталось:
+</div>
+<div class="timer5" style="display:none;"></div>
+<div class="sale-wrap--center">
+<p class="sale-title sale-title--center">Капли от псориаза <br class="widebr">в подарок! *</p>
+</div>
+</div>
+<div class="order-form-input">
+<div class="input-line clearfix">
+<div class="input-line-item">
+<label for="name">Введите Ваше имя</label>
+<input type="text" placeholder="Валерий" name="order[fio]">
+</div>
+<div class="input-line-item">
+<label for="phone">Введите Ваш телефон</label>
+<input type="tel" placeholder="+7 (916) 123-45-67" name="order[phone]">
+</div>
+</div>
+</div>
+</div>
+<div class="order-form-bottomline">
+<div class="price-line">
+<div class="old-price">
+<div class="old-price-header">
+Только сегодня
+</div>
+<div class="old-price-summ">
+<span class="old-price-summ-num"><span class="price_land_s4 pl_product_old_price"><font class="endStockDate nowdate" daysint>13 августа</font></span></span>
+<span class="old-price-summ-rub"><span class="price_land_curr"> </span></span>
+</div>
+</div>
+<div class="price">
+<div class="price-header">
+<!--Цена-->По акции
+</div>
+<div class="price-summ ">
+<!--
+<span class="price-summ-num "><span class="price_land_s1 pl_product_price">1</span></span>
+<span class="price-summ-rub "><span class="price_land_curr">руб*</span></span>-->
+
+<span class="price-summ-num"><span class="price_land_s1 pl_product_price pl_product_price_free">БЕСПЛАТНО<font class="frzv">*</font></span></span>
+</div>
+</div>
+<div class="img-sale sale" style="display:none;">
+<img src="landing_file/psorix/Landing_3/img/sale-big.png" alt="">
+<span>-50%</span>
+</div>
+</div>
+<div class="btn-line">
+<div class="line-count">
+<div class="line-count-descr">
+Внимание! <br class="visible-lg">Осталось <br class="visible-md">товаров по акции:
+</div>
+<div class="line-count-count">
+<span class="count lastpack p_limit_left_text">60</span> штук
+</div>
+</div>
+<div class="line-btn">
+<button class="send" type="submit" onclick="$(this).closest('form').submit();return false;"><!-- Заказать PSORIX -->ПОЛУЧИТЬ БЕСПЛАТНО</button>
+</div>
+<div class="line-all">
+<span class="line-all-text">Получили на этой неделе:</span><span class="line-all-count todayBay">0</span><span class="line-all-text">человек</span>
+<span class='course'>*при оформлении заказа</span>
+</div>
+<img src="landing_file/psorix/Landing_3/img/arrow-red-small.png" alt="arrow">
+</div>
+</div>
+							<input type="hidden" name="order[specifications]" value="" />
+							<input type="hidden" name="order[discount]" value="">
+							<style>
+	.pl_field_address_info{
+		opacity: 0;
+	}
+</style>
+
+<input type="checkbox" name="order[address_info]" class="pl_field_address_info">
+<input type="hidden" name="order[advHash]" class="advHash">
+	
+</form>
+<div class="top-form clearfix">
+<form method="post" action="preview%3Fp_comeback_form=discount&amp;p_vv_sex=all&amp;p_vv_slow=5&amp;p_vv_count=on&amp;p_vv_count_index=1&amp;p_vv_order=on&amp;p_vv_order_index=5&amp;p_vv_callback=on&amp;p_vv_callback_index=1&amp;p_unload_delay=5&amp;p_limit_left=60&amp;price=990&amp;language=rus&amp;offer.html" class="tform hidden-md hidden-lg">
+<div class="price-line">
+<div class="old-price">
+<div class="old-price-header">
+Только сегодня
+</div>
+<div class="old-price-summ">
+<span class="old-price-summ-num"><span class="price_land_s4 pl_product_old_price"><font class="endStockDate nowdate" daysint>13 августа</font></span></span>
+<span class="old-price-summ-rub"><span class="price_land_curr"> </span></span>
+</div>
+</div>
+<div class="price">
+<div class="price-header">
+<!--Цена-->По акции
+</div>
+<div class="price-summ ">
+<!--
+<span class="price-summ-num "><span class="price_land_s1 pl_product_price">1</span></span>
+<span class="price-summ-rub "><span class="price_land_curr">руб*</span></span>-->
+
+<span class="price-summ-num"><span class="price_land_s1 pl_product_price pl_product_price_free">БЕСПЛАТНО<font class="frzv">*</font></span></span>
+</div>
+</div>
+<div class="img-sale sale hidden-xs" style="display:none;">
+
+</div>
+</div>
+<div class="timer-line">
+<div class="top-timer">
+<span class="product-block plb3">
+<span class="plashka2">
+при заказе<br>
+<b><font class="endStockDate nowdate" daysint>13 августа</font></b><br />
+одна упаковка<br />
+<b><!--ЗА-->&nbsp;<font class="plashka2-t">БЕСПЛАТНО*</font></b>
+</span>
+</span>
+<div class="timer-header" style="display:none;">
+До конца акции осталось:
+</div>
+<div class="timer10" style="display:none;"></div>
+<div class="sale-wrap--center">
+<p class="sale-title sale-title--center">Капли от псориаза <br class="widebr">в подарок! *</p>
+</div>
+</div>
+</div>
+<div class="input-line clearfix">
+<div class="input-line-item">
+<label for="name">Введите Ваше имя</label>
+<input type="text" placeholder="Валерий" name="order[fio]">
+</div>
+<div class="input-line-item">
+<label for="phone">Введите Ваш телефон</label>
+<input type="tel" placeholder="+7 (916) 123-45-67" name="order[phone]">
+</div>
+</div>
+<div class="btn-line">
+<div class="line-count">
+<div class="line-count-descr">
+Внимание! <br class="visible-sm visible-lg">
+Осталось <br class="visible-md">товаров по акции:
+</div>
+<div class="line-count-count">
+<span class="count lastpack p_limit_left_text">60</span> штук
+</div>
+</div>
+<div class="line-btn">
+<button class="send" type="submit" onclick="$(this).closest('form').submit();return false;"><!-- Заказать PSORIX -->ПОЛУЧИТЬ БЕСПЛАТНО</button>
+</div>
+<div class="line-all">
+<span class="line-all-text">Получили на этой неделе:</span><br class="visible-xs"><span class="line-all-count todayBay">0</span><span class="line-all-text">человек</span>
+<span class='course'>*при оформлении заказа</span>
+</div>
+<img src="landing_file/psorix/Landing_3/img/arrow-red.png" alt="arrow" class="visible-lg">
+<img src="landing_file/psorix/Landing_3/img/arrow-red-md.png" alt="arrow" class="hidden-lg">
+</div>
+							<input type="hidden" name="order[specifications]" value="" />
+							<input type="hidden" name="order[discount]" value="">
+							<style>
+	.pl_field_address_info{
+		opacity: 0;
+	}
+</style>
+
+<input type="checkbox" name="order[address_info]" class="pl_field_address_info">
+<input type="hidden" name="order[advHash]" class="advHash">
+	
+</form>
+</div>
+</div>
+</div>
+
+<!-- <script src="/landing_file/psorix/Landing_3/js/flipclock.min.js"></script>-->
+ <script src="landing_file/psorix/Landing_3/js/popup.min.js"></script>
+<!----><script src="landing_file/psorix/Landing_3/js/plyr.min.js"></script>
+<script src="landing_file/psorix/Landing_3/js/jquery.magnific-popup.min.js"></script>
+<script src="landing_file/psorix/Landing_3/js/custom-functions.min.js"></script>
+<script src="landing_file/psorix/Landing_3/js/owl.carousel.min.js"></script>
+<script src="landing_file/psorix/Landing_3/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+<div id="kmacb" style="display: none;">
+	<a id="fancy-button-callback" class="popup-open" href="preview%3Fp_comeback_form=discount&amp;p_vv_sex=all&amp;p_vv_slow=5&amp;p_vv_count=on&amp;p_vv_count_index=1&amp;p_vv_order=on&amp;p_vv_order_index=5&amp;p_vv_callback=on&amp;p_vv_callback_index=1&amp;p_unload_delay=5&amp;p_limit_left=60&amp;price=990&amp;language=rus&amp;offer.html#ps-popup-call" >
+		<div class="kmacb-circle"></div>
+		<div class="kmacb-circle-fill"></div>
+		<div class="kmacb-img-circle"></div>
+	</a>
+</div>
+
+
+<style>
+
+	
+		#ps-call-pc-form { display: block; }
+		#ps-call-mobile-form { display: none; }
+
+		@media only screen and (min-device-width : 320px) and (max-device-width : 700px) {
+			#ps-call-pc-form { display: none; }
+			#ps-call-mobile-form { display: block; }
+		}
+
+	
+	
+		div.ps-popup-default .ps-phone-form .ps-order-call {
+			width: auto;
+			border: none;
+		}
+
+		div.ps-popup-default .ps-phone-form .ps-order-call .ps-phone-holder {
+			width: auto;
+		}
+
+	
+</style>
+
+
+<div class="popup-container">
+	<div id="ps-popup-call" class="ps-popup-default ps-popup-phone">
+		<div class="ps-popup-inner">
+
+
+			<form id="ps-call-pc-form" action="preview%3Fp_comeback_form=discount&amp;p_vv_sex=all&amp;p_vv_slow=5&amp;p_vv_count=on&amp;p_vv_count_index=1&amp;p_vv_order=on&amp;p_vv_order_index=5&amp;p_vv_callback=on&amp;p_vv_callback_index=1&amp;p_unload_delay=5&amp;p_limit_left=60&amp;price=990&amp;language=rus&amp;offer.html" method="post">
+				<div class="ps-popup-head"><a href="preview%3Fp_comeback_form=discount&amp;p_vv_sex=all&amp;p_vv_slow=5&amp;p_vv_count=on&amp;p_vv_count_index=1&amp;p_vv_order=on&amp;p_vv_order_index=5&amp;p_vv_callback=on&amp;p_vv_callback_index=1&amp;p_unload_delay=5&amp;p_limit_left=60&amp;price=990&amp;language=rus&amp;offer.html#" class="ps-icon-cross popup-close"></a></div>
+				<div class="ps-form ps-phone-form">
+					<div class="ps-left ps-order-call">
+						<h2 l-loc="l_pl32">Закажите обратный звонок</h2>
+						<p l-loc="l_pl33">Мы вам перезвоним в течение 1 минуты!</p>
+						<div class="ps-phone-holder"><strong l-loc="l_pl20">Телефон:</strong>
+							<div class="ps-input-wrapper">
+								<input name="order[phone]" type="tel" value="+7" class="ps-input">
+								<input l-loc-value="l_pl38" type="submit" value="Жду звонка" class="ps-order">
+								<input class="pl_full_discount_price" type="hidden" name="order[discount]" value="">
+								<input type="hidden" name="order[specifications]" value="" />
+								<input type="hidden" name="order[is_one_rub]"  value="">
+								<style>
+	.pl_field_address_info{
+		opacity: 0;
+	}
+</style>
+
+<input type="checkbox" name="order[address_info]" class="pl_field_address_info">
+<input type="hidden" name="order[advHash]" class="advHash">
+							</div>
+							<span class="ps-phone-example" l-loc="l_pl21">Пример: +74550123456</span>
+						</div>
+					</div>
+									</div>
+			</form>
+
+
+			<div id="ps-call-mobile-form" >
+				<h2 l-loc="l_pl32">Закажите обратный звонок</h2>
+				<p l-loc="l_pl33">Мы вам перезвоним в течении 1 минуты!</p>
+				<form method="post" class="phone-form" id="phone-form" novalidate="novalidate" style="border:none;">
+					<span class="ps-label" l-loc="l_pl20">Телефон:</span>
+					<span class="ps-label-right" l-loc="l_pl21">Пример: +74550123456</span>
+					<div class="inputs">
+						<input name="order[phone]" type="tel" value="+7" class="green-text green-border">
+					</div>
+					<div>
+						<button class="ps-submit green-button" type="submit">Жду звонка</button>
+					</div>
+										<input type="hidden" name="order[discount]" value="">
+					<input type="hidden" name="order[specifications]" value="" />
+					<input type="hidden" name="order[is_one_rub]"  value="">
+					<style>
+	.pl_field_address_info{
+		opacity: 0;
+	}
+</style>
+
+<input type="checkbox" name="order[address_info]" class="pl_field_address_info">
+<input type="hidden" name="order[advHash]" class="advHash">
+				</form>
+			</div>
+
+
+		</div>
+	</div>
+</div>
+
+<script>
+
+	$(function(){
+
+		var prefix = '';
+
+		// -- ПЕРЕМЕННЫЕ --
+		var documentOutTimer = false;
+		var documentOut = true;
+		var prefix = '';
+
+
+		
+		window.test_showMeCallBackMobileForm = function(){
+			$('#ps-call-pc-form').hide();
+			$('#ps-call-mobile-form').show();
+			showCallBackForm();
+		}
+
+		window.test_showMeCallBackPcForm = function(){
+			$('#ps-call-pc-form').show();
+			$('#ps-call-mobile-form').hide();
+			showCallBackForm();
+		}
+
+		// -- ФУНКЦИИ --
+		function showCallBackForm(){
+			$('#fancy-button-callback').trigger('click');
+			return false;
+		}
+
+		
+		$('#fancy-button-callback').click(function(){
+			documentOut = false;
+			if(!prefix){
+                $('body').lpFunctions('sendGetP', function(data){
+                    if(data.prefix){
+                        prefix = data.prefix.replace(/-/g, '').split('');
+                        prefix =
+                            prefix[0] + prefix[1] + prefix[2] + '-' +
+                            prefix[3] + prefix[4] + prefix[5] + '-' +
+                            prefix[6] + prefix[7] + prefix[8] + '-' +
+                            prefix[9] + prefix[10] + prefix[11] + '-' +
+                            prefix[12] + prefix[13];
+                        $('.prefix_value').text(prefix);
+                        $('.prefix_container').show();
+                    }
+                });
+			}
+			$('#kmacb').hide();
+		});
+
+	});
+</script>
+
+
+    <script>
+        $(document).ready(function(){
+            var selector = '.pl_landing_geo_detect';
+            if($(selector).length > 0)
+            {
+                $(selector).text('Ташкент');
+            }
+        });
+    </script>
+
+
+<script>
+
+	$(function(){
+
+
+	    $('[name="order[phone]"]').data('inputmask-inited', 1).inputmask("ourphone");
+
+	    var phone = '';
+
+        if(window.errorMessage === undefined)
+        {
+            var errorMessage = function(msg)
+            {
+
+                
+                alert(msg);
+                return false;
+            }
+        }
+
+        $(document).on('focus', '[name="order[phone]"]', function(){
+            if(!$(this).data('inputmask-inited'))
+            {
+                $(this).data('inputmask-inited', true).inputmask("ourphone");
+            }
+        });
+
+        $(document).on('submit', 'form', function(){
+//		$('form').submit(function(){
+
+			
+			
+			
+			if($(this).find('[name="order[fio]"]').length > 0)
+			{
+
+				var name = $(this).find('[name="order[fio]"]').val();
+
+				var rename = /^[a-zA-Zа-яА-ЯёЁ ]*$/i;
+
+				if(name.length == 0)
+				{
+					return errorMessage(window.l_loc.l_pl2);
+				}
+
+				if(!rename.test(name))
+				{
+					return errorMessage(window.l_loc.l_pl3);
+				}
+
+			}
+
+			phone = $(this).find('[name="order[phone]"]').val();
+			var clear_phone = phone.replace(/[^0-9]/g,'');
+
+            if(phone.length == 0)
+            {
+                return errorMessage(window.l_loc.l_pl1);
+            }
+
+            if(clear_phone.length < 9)
+            {
+                return errorMessage(window.l_loc.l_pl4);
+            }
+
+            if(
+                clear_phone.indexOf('7') === 0 ||
+                clear_phone.indexOf('8') === 0
+            ){
+                if(clear_phone.length < 11)
+                {
+                    return errorMessage(window.l_loc.l_pl4);
+                }
+            }
+
+			if(clear_phone.length > 13)
+			{
+				return errorMessage(window.l_loc.l_pl5);
+			}
+
+			if(!$(this).find('[name="order[timezone]"]').length)
+			{
+                var timezone = $('body').lpFunctions('detectTimezone');
+                if(timezone)
+                {
+                    $('<input/>').attr({
+                        'name': 'order[timezone]',
+                        'type': 'hidden'
+                    }).val(timezone).appendTo(this);
+                }
+            }
+			return true;
+		});
+
+	});
+
+</script>		
+<script>
+	$(function(){
+		var country = 'ru',
+            $country = $('select[name="order[country]"]'),
+            $phone = $('input[name="order[phone]"]'),
+            $fio = $('input[name="order[fio]"]'),
+            countriesCodes = {"ru":"+7","kz":"+7","ua":"+380","by":"+375"},
+            previousValue = '';
+
+		            $phone.val('+7');
+            $country.val(country);
+				$('form').submit(function() {
+			window.onbeforeunload = null;
+		});
+					$('body').lpFunctions('sendWStat');
+		
+        $country.on('change',  function(event) {
+            var $closest = $(this).closest('form').find('input[name="order[phone]"]');
+
+            previousValue = $closest.val().replace(/\D/g, '');
+
+            if(countriesCodes.hasOwnProperty(event.target.value) && previousValue.length < 4) {
+                $closest.val(countriesCodes[event.target.value]);
+            }
+        })
+	});
+</script>
+
+<script>
+
+    $(function(){
+
+        var currency = 'RUB';
+
+        function pluralForm(number, one, two, five) {
+            number = number % 100;
+            if (number > 19) {
+                number = number % 10;
+            }
+            switch (number) {
+                case 1: {
+                    return one;
+                }
+                case 2:
+                case 3:
+                case 4: {
+                    return two;
+                }
+                default: {
+                    return five;
+                }
+            }
+        }
+
+        $('.pl_product_currency[type="full"]').each(function(key, element){
+
+            var maybePrice = $(element)
+                .siblings()
+                .filter(function( index ) {
+                    return $.isNumeric( $(this).text() );
+                });
+
+            var price = parseInt(maybePrice.text());
+
+            if(!price){
+                price = 1;
+            }
+
+            if(price){
+
+                switch(currency){
+                    case 'RUB':
+                        $(element).text(pluralForm(price, 'рубль', 'рубля', 'рублей'));
+                        break;
+                    case 'KZT':
+                        // слово "тенге" не слоняется
+                        break;
+                }
+            }
+
+        });
+
+    });
+
+</script>
+
+
+<script>
+    $(function(){
+        function prepareLoc(plc){
+            var text = window.l_loc[plc];
+            text = text.replace('{{discount_price}}', '0');
+            text = text.replace('{{currency}}', 'RUB');
+            text = text.replace('{{unload_price}}', '');
+            if(text === undefined || !text){
+                text = '-- NO TRANSLATION --';
+            }
+            return text;
+        }
+        $('[l-loc]').each(function(key,el){
+            var plc = $(el).attr('l-loc');
+            html = prepareLoc(plc);
+
+            $(el).html(html);
+        });
+        $('[l-loc-value]').each(function(key,el){
+            var plc = $(el).attr('l-loc-value');
+            text = prepareLoc(plc);
+            $(el).attr('value', text);
+        });
+    })
+</script>
+
+
+
+
+
+</body>
+</html>
