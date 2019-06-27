@@ -8,7 +8,7 @@
     <meta name="format-detection" content="email=no">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap&subset=cyrillic-ext">
-    <link rel="stylesheet" href="css/main.css?v=001">
+    <link rel="stylesheet" href="css/main.css?v=002">
     <title>Project Title</title>
 </head>
 <body>
@@ -24,15 +24,39 @@
             </div>
             -->
             <div class="logo-imgw">
-                <img class="logo-img" width="300" src="img/logo.svg">
+                <div class="row">
+                    <div class="col">
+                        <img class="logo-img" width="300" src="img/logo.svg">
+                    </div><!-- /.col -->
+                    <div class="col-auto align-self-center d-sm-none">
+                        <a  class="nav-toggle js-nav-toggle mb-20px" href="#nav-1">
+                            <i class="icon-bars"></i>
+                        </a>
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
             </div>
-            <nav class="nav">
+            <div class="nav-mobw" id="nav-1">
+                <div class="row mb-15px">
+                    <div class="col-auto ml-auto">
+                        <a  class="nav-toggle js-nav-toggle" href="#nav-1">
+                            <i class="icon-times"></i>
+                        </a>
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+                <nav class="nav-mob">
+                    <a class="nav-ln js-scroll" href="#home">НОВЫЙ ЗАКАЗ</a>
+                    <a class="nav-ln js-scroll" href="#block-1">УСЛОВИЯ</a>
+                    <a class="nav-ln js-scroll" href="#block-2">ПРАВОВАЯ ИНФОРМАЦИЯ</a>
+                    <a class="nav-ln" href="http://417417.ru/" target="_blank">417417.RU</a>
+                </nav>
+            </div>
+            <nav class="nav d-none d-sm-flex">
                 <a class="nav-ln js-scroll" href="#home">НОВЫЙ ЗАКАЗ</a>
                 <a class="nav-ln js-scroll" href="#block-1">УСЛОВИЯ</a>
                 <a class="nav-ln js-scroll" href="#block-2">ПРАВОВАЯ ИНФОРМАЦИЯ</a>
                 <a class="nav-ln" href="http://417417.ru/" target="_blank">417417.RU</a>
             </nav>
-            <div class="px-15px my-auto">
+            <div class="px-15px">
                 <p class="header-txt-a">ДОБРОЕ УТРО !</p>
                 <h1 class="header-txt-b">
                     <span class="brown">СДЕЛАЙТЕ&nbsp;ВАШ<br>ЗАКАЗ</span>&nbsp;ОНЛАЙН
@@ -58,7 +82,7 @@
                     </form>
                 </div><!-- /.wall -->
             </div><!-- /.my-auto -->
-            <div class="soc">
+            <div class="soc mt-auto">
                 <a class="soc-ln" target="_blank" href="">
                     <i class="icon-facebook"></i>
                 </a>
@@ -195,9 +219,9 @@
 </footer>
 
 <div class="pt-15px pb-1px">
-    <p class="text text-center"><span class="em-8">© 2023 by Daniel Martinez</span></p>
+    <p class="text text-center"><span class="em-8">&copy; 2023 by Daniel Martinez</span></p>
 </div>
 
-<script src="js/main.js?v=001"></script>
+<script src="js/main.js?v=002"></script>
 </body>
 </html>
