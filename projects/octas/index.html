@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="date=no">
+  <meta name="format-detection" content="address=no">
+  <meta name="format-detection" content="email=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/main.css">
+  <title>New Project</title>
+</head>
+<body>
+
+<div class="container mt-5">
+    <h1 class="title">Salidzini aizdevuma piedavajumus<br>un sanem izdevigako!</h1>
+    <div class="calc">
+        <div class="row justify-content-around">
+            <div class="col-12 col-sm-6 col-lg-auto">
+                <label class="calc-form-radio-label">
+                    <input class="calc-form-radio" type="radio" name="calc-radio" checked>
+                    <span class="calc-form-radio-title">PATERINA KREDITS</span>
+                </label>
+            </div><!-- /.col -->
+            <div class="col-12 col-sm-6 col-lg-auto">
+                <label class="calc-form-radio-label">
+                    <input class="calc-form-radio" type="radio" name="calc-radio">
+                    <span class="calc-form-radio-title">AUTO KREDITS UN LIZINGS</span>
+                </label>
+            </div><!-- /.col -->
+            <div class="col-12 col-sm-6 col-lg-auto">
+                <label class="calc-form-radio-label">
+                    <input class="calc-form-radio" type="radio" name="calc-radio">
+                    <span class="calc-form-radio-title">PARKREDITACIJA</span>
+                </label>
+            </div><!-- /.col -->
+            <div class="col-12 col-sm-6 col-lg-auto">
+                <label class="calc-form-radio-label">
+                    <input class="calc-form-radio" type="radio" name="calc-radio">
+                    <span class="calc-form-radio-title">KREDITU APVIENOSANA</span>
+                </label>
+            </div><!-- /.col -->
+        </div><!-- /.row -->
+        <span class="calc-divider"></span>
+
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8 col-xl-7">
+
+                <div class="row align-items-end no-gutters my-4">
+                    <div class="col-auto mr-2 d-none d-sm-block">
+                        <span class="calc-sbtn js-calc-sbtn"
+                              data-slider="#js-calc-slider-sum"
+                              data-val="-100">-</span>
+                    </div><!-- /.col -->
+                    <div class="col">
+                        <div class="row align-items-end no-gutters">
+                            <div class="col">
+                                <span class="calc-ititle">Kredita summa</span>
+                            </div>
+                            <div class="col-auto">
+                                <div class="calc-view">
+                                    <span id="calc-summ">5000</span>&nbsp;€
+                                </div>
+                            </div>
+                        </div>
+                        <div id="js-calc-slider-sum"
+                             data-min="1000"
+                             data-max="25000"
+                             data-default="5000"
+                             data-step="100"
+                             data-view="#calc-summ"></div>
+                    </div><!-- /.col -->
+                    <div class="col-auto ml-2 d-none d-sm-block">
+                        <span class="calc-sbtn js-calc-sbtn"
+                              data-slider="#js-calc-slider-sum"
+                              data-val="100">+</span>
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+                <div class="row align-items-end no-gutters my-4">
+                    <div class="col-auto mr-2 d-none d-sm-block">
+                        <span class="calc-sbtn js-calc-sbtn"
+                              data-slider="#js-calc-slider-month"
+                              data-val="-1">-</span>
+                    </div><!-- /.col -->
+                    <div class="col">
+                        <div class="row align-items-end no-gutters">
+                            <div class="col">
+                                <span class="calc-ititle">Termins</span>
+                            </div>
+                            <div class="col-auto">
+                                <div class="calc-view">
+                                    <span id="calc-month">36</span>&nbsp;men
+                                </div>
+                            </div>
+                        </div>
+                        <div id="js-calc-slider-month"
+                             data-min="3"
+                             data-max="84"
+                             data-default="36"
+                             data-step="1"
+                             data-view="#calc-month"></div>
+                    </div><!-- /.col -->
+                    <div class="col-auto ml-2 d-none d-sm-block">
+                        <span class="calc-sbtn js-calc-sbtn"
+                              data-slider="#js-calc-slider-month"
+                              data-val="1">+</span>
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+            </div><!-- /.col -->
+            <div class="col-12 col-lg-4">
+                <div class="calc-total">
+                    <p class="calc-ititle">Ikmenesa maksajums:*</p>
+                    <div class="calc-result">
+                        <div class="d-flex justify-content-center">
+                            <span class="calc-result-summ" id="js-calc-tsum">&nbsp;</span>
+                            <div>
+                                <span class="calc-result-month" id="js-calc-bit">&nbsp;</span>
+                                <span class="calc-result-ci">€ / men.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="calc-info">*Noraditajam ikmenesa maksajumam ir informativa nozime. <a href="">Kalkulacijas piemers.</a></p>
+                    <a class="calc-button" id="js-calc-link" href="" target="_blank">Velos sanemt piedavajumus</a>
+                </div>
+            </div><!-- /.col -->
+        </div><!-- /.row -->
+    </div><!-- /.calc -->
+</div><!-- /.container -->
+
+<script src="js/main.js"></script>
+</body>
+</html>
