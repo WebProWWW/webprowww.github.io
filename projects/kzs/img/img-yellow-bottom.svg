@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 159.79028 55.61859">
+  <defs>
+    <style>
+      .a {
+        fill: #b7a609;
+      }
+
+      .b {
+        fill: #fceb07;
+      }
+
+      .c {
+        fill: #998707;
+      }
+
+      .d {
+        fill: #c4b100;
+      }
+    </style>
+  </defs>
+  <title>img-yellow-bottom</title>
+  <g>
+    <polygon class="a" points="104.002 2.891 140.081 2 118.007 14.997 104.002 2.891"/>
+    <polygon class="b" points="104.002 2.891 82.511 18.63 159.79 51.116 104.002 2.891"/>
+    <polygon class="c" points="157.271 55.619 159.79 51.115 46.567 0.262 96.945 55.619 157.271 55.619"/>
+    <polygon class="d" points="122.723 55.619 46.758 0 0 55.619 122.723 55.619"/>
+  </g>
+</svg>

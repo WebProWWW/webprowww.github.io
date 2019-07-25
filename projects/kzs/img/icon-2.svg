@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50">
+  <defs>
+    <style>
+      .a {
+        fill: url(#a);
+      }
+
+      .b {
+        fill: #fff;
+      }
+    </style>
+    <linearGradient id="a" data-name="Безымянный градиент 39" x1="25" y1="50" x2="25" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#201600"/>
+      <stop offset="1" stop-color="#2a2a2a"/>
+    </linearGradient>
+  </defs>
+  <title>icon-2</title>
+  <g>
+    <polygon class="a" points="42 0 8 0 0 8 0 42 8 50 42 50 50 42 50 8 42 0"/>
+    <g>
+      <polygon class="b" points="19.724 39.97 19.724 4.702 17.169 4.702 17.169 39.952 15.942 38.726 14.135 40.533 18.9 45.298 23.086 39.761 21.048 38.22 19.724 39.97"/>
+      <polygon class="b" points="33.826 38.22 32.503 39.97 32.503 4.702 29.947 4.702 29.947 39.952 28.721 38.726 26.914 40.533 31.679 45.298 35.865 39.761 33.826 38.22"/>
+    </g>
+  </g>
+</svg>
