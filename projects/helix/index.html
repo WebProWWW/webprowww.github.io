@@ -7,7 +7,7 @@
   <meta name="format-detection" content="address=no">
   <meta name="format-detection" content="email=no">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/main.css?v=001">
   <title>Helixpro</title>
 </head>
 <body>
@@ -46,10 +46,27 @@
             <div class="col-12 col-md-5 col-xl-4 ml-auto">
                 <div class="wall-dark">
                     <h3 class="title-3 white">Заполните форму, получите рассчет</h3>
-                    <form>
-                        <input class="input-light" type="text" name="name" placeholder="Имя" autocomplete="off">
-                        <input class="input-light" type="text" name="phone" placeholder="Телефон" autocomplete="off">
-                        <button class="btn" type="submit">Отправить заявку</button>
+                    <form class="js-form">
+                        <input type="hidden" name="type" value="Получить рассчет">
+                        <input
+                            class="input-light"
+                            type="text"
+                            name="name"
+                            placeholder="Имя"
+                            autocomplete="off"
+                            data-validate>
+                        <input
+                            class="input-light"
+                            type="text"
+                            name="phone"
+                            placeholder="Телефон"
+                            autocomplete="off"
+                            data-mask="+7-999-999-99-99"
+                            data-validate>
+                        <button
+                            class="btn js-form-loading"
+                            type="submit">Отправить заявку</button>
+                        <div class="js-form-message text-center mt-2"></div>
                     </form>
                 </div><!-- /.wall -->
             </div><!-- /.col -->
@@ -162,12 +179,14 @@
     <div class="container">
         <h2 class="title">Комплексное обслуживание:</h2>
         <div class="service-slider js-slick-service">
-            <div class="service" data-bg="img/service-1.jpg">
-                <h3 class="service-title">Фундамент для дома</h3>
-                <div class="service-content">
-                    <a class="ln-white" href="">С другой стороны рамки и место обучения кадров позволяет оценить</a>
-                </div>
-            </div><!-- /.service -->
+            <div>
+                <div class="service" data-bg="img/service-1.jpg">
+                    <h3 class="service-title">Фундамент для дома</h3>
+                    <div class="service-content">
+                        <a class="ln-white" href="">С другой стороны рамки и место обучения кадров позволяет оценить</a>
+                    </div>
+                </div><!-- /.service -->
+            </div><!-- slide -->
             <div>
                 <div class="service" data-bg="img/service-2.jpg">
                     <h3 class="service-title">Фундамент в зоне перепада</h3>
@@ -181,13 +200,15 @@
                         <a class="ln-white" href="">С другой стороны рамки и место обучения кадров позволяет оценить</a>
                     </div>
                 </div><!-- /.service -->
-            </div>
-            <div class="service" data-bg="img/service-4.jpg">
-                <h3 class="service-title">Объекты на воде</h3>
-                <div class="service-content">
-                    <a class="ln-white" href="">С другой стороны рамки и место обучения кадров позволяет оценить</a>
-                </div>
-            </div><!-- /.service -->
+            </div><!-- slide -->
+            <div>
+                <div class="service" data-bg="img/service-4.jpg">
+                    <h3 class="service-title">Объекты на воде</h3>
+                    <div class="service-content">
+                        <a class="ln-white" href="">С другой стороны рамки и место обучения кадров позволяет оценить</a>
+                    </div>
+                </div><!-- /.service -->
+            </div><!-- slide -->
             <div>
                 <div class="service" data-bg="img/service-2.jpg">
                     <h3 class="service-title">Фундамент в зоне перепада</h3>
@@ -201,7 +222,7 @@
                         <a class="ln-white" href="">С другой стороны рамки и место обучения кадров позволяет оценить</a>
                     </div>
                 </div><!-- /.service -->
-            </div>
+            </div><!-- slide -->
         </div><!-- /.service-slider -->
     </div><!-- /.container -->
 </section><!-- /.section -->
@@ -273,9 +294,19 @@
             <div class="col-12 col-md-6 col-lg-4 align-self-lg-stretch">
                 <div class="wall-blue video-wall">
                     <h3 class="title-3">Подпишитесь на наши новости</h3>
-                    <form>
-                        <input class="input-blue" type="text" name="" placeholder="E-mail">
-                        <button class="btn btn-blue">Подписаться</button>
+                    <form class="js-form">
+                        <input type="hidden" name="type" value="Подписаться на новости">
+                        <input
+                            class="input-blue"
+                            type="text"
+                            name="email"
+                            placeholder="E-mail"
+                            autocomplete="off"
+                            data-validate>
+                        <button 
+                            class="btn btn-blue js-form-loading"
+                            type="submit">Подписаться</button>
+                        <div class="js-form-message text-center mt-2"></div>
                     </form>
                 </div>
             </div><!-- /.col -->
@@ -524,6 +555,22 @@
     </div><!-- /.container -->
 </footer>
 
-<script src="js/main.js"></script>
+<div class="d-none">
+    <div id="js-loading-img">
+        <img height="8" src="img/loader.svg">
+    </div>
+    <div id="js-form-success">
+        <div class="white animated fadeIn">
+            Заявка успешно отправлена.<br>Наш менеджер свяжется с вами в ближайшее время.
+        </div>
+    </div>
+    <div id="js-form-error">
+        <div class="red animated shake">
+            Ошибка. Попробуйте повторить запрос позже.
+        </div>
+    </div>
+</div><!-- /.d-none -->
+
+<script src="js/main.js?v=001"></script>
 </body>
 </html>
