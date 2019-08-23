@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="date=no">
+  <meta name="format-detection" content="address=no">
+  <meta name="format-detection" content="email=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/main.css">
+  <title>New Project</title>
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col">
+                <p class="logo">
+                    <span>Kreda</span>
+                    <span class="logo-sm">Платформа сревнения кредитов</span>
+                </p>
+            </div><!-- /.col -->
+            <div class="col-auto ml-auto">
+                <a class="lang-ln" href="">Latviski</a>
+            </div><!-- /.col -->
+        </div><!-- /.row -->
+        <nav class="nav">
+            <div class="row justify-content-center justify-content-lg-between">
+                <div class="col-12 col-sm-auto">
+                    <a class="nav-ln" href="">Потребительский кредит</a>
+                </div>
+                <div class="col-12 col-sm-auto">
+                    <a class="nav-ln" href="">Лизинг</a>
+                </div>
+                <div class="col-12 col-sm-auto">
+                    <a class="nav-ln" href="">Перекрилитование</a>
+                </div>
+                <div class="col-12 col-sm-auto">
+                    <a class="nav-ln" href="">Объединение кредитов</a>
+                </div>
+                <div class="col-12 col-sm-auto">
+                    <a class="nav-ln" href="">Быстрый кредит</a>
+                </div>
+            </div><!-- /.row -->
+        </nav>
+        <h1 class="header-title">
+            Подбери лучшее<br>
+            предложение по кредиту,<br>
+            заполнив одну заявку
+        </h1>
+        <div class="calc">
+            <img class="calc-logo" height="90" src="img/altero.png">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-8 col-xl-7">
+                    <div class="row align-items-end no-gutters my-4">
+                        <div class="col-auto mr-2 d-none d-sm-block">
+                            <span class="calc-sbtn js-calc-sbtn"
+                                  data-slider="#js-calc-slider-sum"
+                                  data-val="-100">-</span>
+                        </div><!-- /.col -->
+                        <div class="col">
+                            <div class="row align-items-end no-gutters">
+                                <div class="col">
+                                    <span class="calc-ititle">Сумма кредита</span>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="calc-view">
+                                        <span id="calc-summ">5000</span>&nbsp;€
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="js-calc-slider-sum"
+                                 data-min="1000"
+                                 data-max="25000"
+                                 data-default="5000"
+                                 data-step="100"
+                                 data-view="#calc-summ"></div>
+                        </div><!-- /.col -->
+                        <div class="col-auto ml-2 d-none d-sm-block">
+                            <span class="calc-sbtn js-calc-sbtn"
+                                  data-slider="#js-calc-slider-sum"
+                                  data-val="100">+</span>
+                        </div><!-- /.col -->
+                    </div><!-- /.row -->
+                    <div class="row align-items-end no-gutters my-4">
+                        <div class="col-auto mr-2 d-none d-sm-block">
+                            <span class="calc-sbtn js-calc-sbtn"
+                                  data-slider="#js-calc-slider-month"
+                                  data-val="-1">-</span>
+                        </div><!-- /.col -->
+                        <div class="col">
+                            <div class="row align-items-end no-gutters">
+                                <div class="col">
+                                    <span class="calc-ititle">Срок возврата кредита</span>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="calc-view">
+                                        <span id="calc-month">36</span>&nbsp;мес
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="js-calc-slider-month"
+                                 data-min="3"
+                                 data-max="84"
+                                 data-default="36"
+                                 data-step="1"
+                                 data-view="#calc-month"></div>
+                        </div><!-- /.col -->
+                        <div class="col-auto ml-2 d-none d-sm-block">
+                            <span class="calc-sbtn js-calc-sbtn"
+                                  data-slider="#js-calc-slider-month"
+                                  data-val="1">+</span>
+                        </div><!-- /.col -->
+                    </div><!-- /.row -->
+                </div><!-- /.col -->
+                <div class="col-12 col-lg-4">
+                    <div class="calc-total">
+                        <p class="calc-ititle">Ежемесячный платеж*:</p>
+                        <div class="calc-result">
+                            <div class="d-flex justify-content-center">
+                                <span class="calc-result-summ" id="js-calc-tsum">&nbsp;</span>
+                                <div>
+                                    <span class="calc-result-month" id="js-calc-bit">&nbsp;</span>
+                                    <span class="calc-result-ci">€ / мес.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="calc-info">*Указанный ежемесячный платеж имеет информативный характер. <a id="fancybox-modal-ln" class="ln-orange" href="#modal-1">Пример калькуляции.</a></p>
+                        <a class="calc-button" id="js-calc-link" href="" target="_blank">Velos sanemt piedavajumus</a>
+                    </div>
+                </div><!-- /.col -->
+                <div class="col-12">
+                    <form class="form">
+                        <h3 class="form-title">Подай заявку на сравнение кредитов:</h3>
+                        <div class="row">
+                            <div class="col-12 col-lg-4 order-lg-1">
+                                <input class="input" type="text" name="phone" placeholder="Твой номер телефона">
+                            </div><!-- /.col -->
+                            <div class="col-12 col-lg-4 order-lg-2">
+                                <input class="input" type="text" name="email" placeholder="Твоя эл.почта">
+                            </div><!-- /.col -->
+                            <div class="col-12 order-lg-4">
+                                <label class="checkbox-label">
+                                    <input class="checkbox" type="checkbox" name="agree">
+                                    <span class="checkbox-text">Согласен получать <a class="ln-white" href="">рекламные сообщения</a> от site.com</span>
+                                </label>
+                            </div><!-- /.col -->
+                            <div class="col-12 col-lg-4 order-lg-3">
+                                <button class="btn-yellow">Хочу получить предложение</button>
+                            </div><!-- /.col -->
+                        </div><!-- /.row -->
+                        <p class="form-info">Согласен с <a class="ln-white" href="">политикой конфиденциальности</a></p>
+                        <p class="form-info">
+                            <img height="23" src="img/safe.png"> Надежно и бесплатно
+                        </p>
+                    </form>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.calc -->
+    </div><!-- /.container -->
+</header>
+
+<section class="section">
+    <div class="container">
+        <div class="row justify-content-center justify-content-xl-between align-items-center">
+            <div class="col-auto">
+                <img class="part-logo" src="img/logo-1.jpg">
+            </div><!-- /.col -->
+            <div class="col-auto">
+                <img class="part-logo" src="img/logo-2.jpg">
+            </div><!-- /.col -->
+            <div class="col-auto">
+                <img class="part-logo" src="img/logo-3.jpg">
+            </div><!-- /.col -->
+            <div class="col-auto">
+                <img class="part-logo" src="img/logo-4.jpg">
+            </div><!-- /.col -->
+            <div class="col-auto">
+                <img class="part-logo" src="img/logo-5.jpg">
+            </div><!-- /.col -->
+            <div class="col-auto">
+                <img class="part-logo" src="img/logo-6.jpg">
+            </div><!-- /.col -->
+            <div class="col-auto">
+                <img class="part-logo" src="img/logo-7.jpg">
+            </div><!-- /.col -->
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</section><!-- /.section -->
+
+<section class="section bg-grey">
+    <div class="container">
+        <h2 class="title">Как это работает?</h2>
+        <div class="row justify-content-center align-items-stretch">
+            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                <div class="cart">
+                    <img class="cart-icon" src="img/icon-1.jpg">
+                    <h3 class="cart-title">Заполните заявку на кредит</h3>
+                    <p class="cart-desc">Расскажите немного о себе: откуда вы, кем работаете, какой кредит хотите получить</p>
+                </div><!-- /.cart -->
+            </div><!-- /.col -->
+            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                <div class="cart">
+                    <img class="cart-icon" src="img/icon-2.jpg">
+                    <h3 class="cart-title">Выберите лучшее предложение</h3>
+                    <p class="cart-desc">Вы увидите, какие банки с высокой вероятностью одобрят кредит и почему другие на подойдут</p>
+                </div><!-- /.cart -->
+            </div><!-- /.col -->
+            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                <div class="cart">
+                    <img class="cart-icon" src="img/icon-3.jpg">
+                    <h3 class="cart-title">Получите одобрение онлайн</h3>
+                    <p class="cart-desc">Отправьте заявку в понравившийся банк и узнайте ответ в течение нескольких минут</p>
+                </div><!-- /.cart -->
+            </div><!-- /.col -->
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</section><!-- /.section -->
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-6">
+                <p>
+                    SIA Kreda <br>
+                    Brivibas 102-2,  Rīga, LV-1050, Latvija
+                </p>
+            </div><!-- /.col -->
+            <div class="col-12 col-sm-6">
+                <p>
+                    Электронная почта: <a class="ln-orange" href="mailto:info@kreda.lv">info@kreda.lv</a>
+                    <br>
+                    Тел.: <a class="ln-orange" href="tel:+37127232134">+37127232134</a>
+                </p>
+            </div><!-- /.col -->
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</footer>
+
+
+<!-- MODALS -->
+<div class="d-none">
+
+<div class="modal" id="modal-1">
+    <div class="modal-header">
+        <h3 class="modal-title">Пример кредита 1</h3>
+        <img class="modal-close" data-fancybox-close src="img/times.svg">
+    </div>
+    <h3 class="modal-ctitle">Пример кредита:</h3>
+    <p class="modal-text">сумма кредита - 5000 евро, срок кредита - 36 месяцев, ставка кредита - 7.9% от невыплаченной суммы, и общая сумма - 5615.98 евро, что означает ГПЛ - 11.81%.</p>
+    <p class="modal-text">Указанный ежемесячный платеж имеет информативный характер. Точную сумму кредита и ежемесячного платежа Ты узнаешь после рассмотрения Твоей заявки!</p>
+    <p class="modal-text">При выборе потребительского кредита в размере 5000 евро возможная ставка по кредиту составляет 7,9% до 33,0%</p>
+</div><!-- /.modal -->
+
+<div class="modal" id="modal-2">
+    <div class="modal-header">
+        <h3 class="modal-title">Пример кредита 2</h3>
+        <img class="modal-close" data-fancybox-close src="img/times.svg">
+    </div>
+    <h3 class="modal-ctitle">Пример кредита:</h3>
+    <p class="modal-text">сумма кредита - 5000 евро, срок кредита - 36 месяцев, ставка кредита - 7.9% от невыплаченной суммы, и общая сумма - 5615.98 евро, что означает ГПЛ - 11.81%.</p>
+    <p class="modal-text">Указанный ежемесячный платеж имеет информативный характер. Точную сумму кредита и ежемесячного платежа Ты узнаешь после рассмотрения Твоей заявки!</p>
+    <p class="modal-text">При выборе потребительского кредита в размере 5000 евро возможная ставка по кредиту составляет 7,9% до 33,0%</p>
+</div><!-- /.modal -->
+
+<div class="modal" id="modal-3">
+    <div class="modal-header">
+        <h3 class="modal-title">Пример кредита 3</h3>
+        <img class="modal-close" data-fancybox-close src="img/times.svg">
+    </div>
+    <h3 class="modal-ctitle">Пример кредита:</h3>
+    <p class="modal-text">сумма кредита - 5000 евро, срок кредита - 36 месяцев, ставка кредита - 7.9% от невыплаченной суммы, и общая сумма - 5615.98 евро, что означает ГПЛ - 11.81%.</p>
+    <p class="modal-text">Указанный ежемесячный платеж имеет информативный характер. Точную сумму кредита и ежемесячного платежа Ты узнаешь после рассмотрения Твоей заявки!</p>
+    <p class="modal-text">При выборе потребительского кредита в размере 5000 евро возможная ставка по кредиту составляет 7,9% до 33,0%</p>
+</div><!-- /.modal -->
+
+<div class="modal" id="modal-4">
+    <div class="modal-header">
+        <h3 class="modal-title">Пример кредита 4</h3>
+        <img class="modal-close" data-fancybox-close src="img/times.svg">
+    </div>
+    <h3 class="modal-ctitle">Пример кредита:</h3>
+    <p class="modal-text">сумма кредита - 5000 евро, срок кредита - 36 месяцев, ставка кредита - 7.9% от невыплаченной суммы, и общая сумма - 5615.98 евро, что означает ГПЛ - 11.81%.</p>
+    <p class="modal-text">Указанный ежемесячный платеж имеет информативный характер. Точную сумму кредита и ежемесячного платежа Ты узнаешь после рассмотрения Твоей заявки!</p>
+    <p class="modal-text">При выборе потребительского кредита в размере 5000 евро возможная ставка по кредиту составляет 7,9% до 33,0%</p>
+</div><!-- /.modal -->
+
+</div><!-- /.d-none -->
+<!-- /MODALS -->
+
+<script src="js/main.js"></script>
+</body>
+</html>
