@@ -7,4 +7,4 @@
  * @link https://webprowww.github.io
  */
 
-"use strict";function _classCallCheck(n,a){if(!(n instanceof a))throw new TypeError("Cannot call a class as a function")}(function(){}).call(void 0);
+"use strict";(function(){var n;n=$("#mobile-nav"),$(window).on("scroll",function(){var e;if(15<(e=$(this).scrollTop())&&n.addClass("active"),e<15)return n.removeClass("active")}),$(".js-slide-toggle").on("click",function(e){var i;return e.preventDefault(),(i=$("".concat($(this).attr("data")))).stop(),i.is(":hidden")&&n.addClass("open"),i.slideToggle(function(){if(i.is(":hidden"))return n.removeClass("open")}),!1})}).call(void 0);
