@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="date=no">
+    <meta name="format-detection" content="address=no">
+    <meta name="format-detection" content="email=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+    <!--
+        main.css включает в себя
+        Bootstrap Reboot v4.3.1 (https://getbootstrap.com/)
+        Bootstrap Grid v4.3.1 (https://getbootstrap.com/)
+    -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap&subset=cyrillic">
+    <link rel="stylesheet" href="css/main.css">
+    <title>New Project</title>
+</head>
+<body>
+
+<div class="wrapper">
+
+<header class="header">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 col-sm-auto">
+                <a class="logo" href="">
+                    <img class="logo-img" width="200" src="img/logo.svg">
+                </a>
+            </div><!-- /.col -->
+            <div class="col-12 col-sm">
+                <h3 class="stext gray center">Онлайн-сервис проверки задолженности по судебным приставам </h3>
+            </div><!-- /.col -->
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+    <nav class="nav py-3 py-lg-0">
+        <div class="container">
+            <div class="row justify-content-around">
+                <div class="col-12 col-lg-auto">
+                    <a class="nav-ln" href="index.html">Узнать задолженность</a>
+                </div>
+                <div class="col-12 col-lg-auto">
+                    <a class="nav-ln" href="proverit-zapret-na-vyezd-iz-rf.html">Проверить запрет на выезд из РФ</a>
+                </div>
+                <div class="col-12 col-lg-auto">
+                    <a class="nav-ln" href="proverit-zapret-na-vezd-v-rf.html">Проверить запрет на въезд в РФ</a>
+                </div>
+                <div class="col-12 col-lg-auto">
+                    <a class="nav-ln" href="poleznye-stati.html">Полезные статьи</a>
+                </div>
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </nav>
+</header>
+
+
+<section class="section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 col-md">
+                <h1 class="title-1">Проверка запрета на въезд в РФ - онлайн проверка</h1>
+                <h2 class="stext gray">Проверка наличия запрета на въезд в Россию по официальной базе ФМС через онлайн сервис Долги.нет Заполните все полня ниже и сервис произведет автоматическую проверку по актуальной базе данных ФМС.</h2>
+            </div><!-- /.col -->
+            <div class="col-auto mx-auto mx-md-0">
+                <a class="tm" target="_blank" href="https://t.me/dolginetbot">
+                    <i class="icon-telegram tm-icon"></i>
+                    <span class="tm-txt">Проверку можно <br>сделать в нашем боте</span>
+                    <span class="tm-name">@dolginetbot</span>
+                </a>
+            </div><!-- /.col -->
+        </div><!-- /.row -->
+
+
+        <div class="section">
+            <div class="wall">
+
+                <div class="row align-items-center">
+                    <div class="col-12 col-lg-3">
+                        <label class="label">Фамилия (лат):</label>
+                    </div><!-- /.col -->
+                    <div class="col-12 col-lg-6">
+                        <input class="input" type="text" placeholder="Ivanov (пример)">
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+
+                <div class="row align-items-center">
+                    <div class="col-12 col-lg-3">
+                        <label class="label">Имя (лат):</label>
+                    </div><!-- /.col -->
+                    <div class="col-12 col-lg-6">
+                        <input class="input" type="text" placeholder="Andrey (пример)">
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+
+                <div class="row align-items-center">
+                    <div class="col-12 col-lg-3">
+                        <label class="label">Фамилия:</label>
+                    </div><!-- /.col -->
+                    <div class="col-12 col-lg-6">
+                        <input class="input" type="text" placeholder="Иванов  (пример)">
+                    </div><!-- /.col -->
+                    <div class="col-12 col-lg-3">
+                        <span class="input-helper">(обязательное поле)</span>
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+
+                <div class="row align-items-center">
+                    <div class="col-12 col-lg-3">
+                        <label class="label">Имя:</label>
+                    </div><!-- /.col -->
+                    <div class="col-12 col-lg-6">
+                        <input class="input" type="text" placeholder="Андрей (пример)">
+                    </div><!-- /.col -->
+                    <div class="col-12 col-lg-3">
+                        <span class="input-helper">(обязательное поле)</span>
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+
+                <div class="row align-items-center">
+                    <div class="col-12 col-lg-3">
+                        <label class="label">Отчество:</label>
+                    </div><!-- /.col -->
+                    <div class="col-12 col-lg-6">
+                        <input class="input" type="text" placeholder="Генадьевич (пример)">
+                    </div><!-- /.col -->
+                    <div class="col-12 col-lg-3">
+                        <span class="input-helper">(указывать при наличии)</span>
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+
+                <div class="row align-items-center">
+                    <div class="col-12 col-lg-3">
+                        <label class="label">Пол:</label>
+                    </div><!-- /.col -->
+                    <div class="col-12 col-lg-6">
+                        <select class="input">
+                            <option disabled selected>Выбрать</option>
+                            <option value="M">Мужской</option>
+                            <option value="F">Женский</option>
+                        </select>
+                    </div><!-- /.col -->
+                    <div class="col-12 col-lg-3">
+                        <span class="input-helper">(обязательное поле)</span>
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+
+                <div class="row align-items-center">
+                    <div class="col-12 col-lg-3">
+                        <label class="label">Дата рождения:</label>
+                    </div><!-- /.col -->
+                    <div class="col-12 col-lg-6">
+                        <input class="input" type="text" placeholder="дд.мм.гггг">
+                    </div><!-- /.col -->
+                    <div class="col-12 col-lg-3">
+                        <span class="input-helper">(обязательное поле)</span>
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+
+                <div class="row align-items-center">
+                    <div class="col-12 col-lg-3">
+                        <label class="label">Гражданство:</label>
+                    </div><!-- /.col -->
+                    <div class="col-12 col-lg-6">
+                        <select class="input">
+                            <option disabled selected>Выбрать</option>
+                            <option value="ABH">АБХАЗИЯ</option>
+                            <option value="AUS">АВСТРАЛИЯ</option>
+                            <option value="AUT">АВСТРИЯ</option>
+                            <option value="AZE">АЗЕРБАЙДЖАН</option>
+                            <option value="ALB">АЛБАНИЯ</option>
+                            <option value="DZA">АЛЖИР</option>
+                            <option value="ASM">АМЕРИКАНСКОЕ САМОА</option>
+                            <option value="AIA">АНГИЛЬЯ</option>
+                            <option value="AGO">АНГОЛА</option>
+                            <option value="AND">АНДОРРА</option>
+                            <option value="ATA">АНТАРКТИДА</option>
+                            <option value="ATG">АНТИГУА И БАРБУДА</option>
+                            <option value="ARG">АРГЕНТИНА</option>
+                            <option value="ARM">АРМЕНИЯ</option>
+                            <option value="ABW">АРУБА</option>
+                            <option value="AFG">АФГАНИСТАН</option>
+                            <option value="BHS">БАГАМЫ</option>
+                            <option value="BGD">БАНГЛАДЕШ</option>
+                            <option value="BRB">БАРБАДОС</option>
+                            <option value="BHR">БАХРЕЙН</option>
+                            <option value="BLR">БЕЛАРУСЬ</option>
+                            <option value="BLZ">БЕЛИЗ</option>
+                            <option value="BEL">БЕЛЬГИЯ</option>
+                            <option value="BEN">БЕНИН</option>
+                            <option value="BMU">БЕРМУДЫ</option>
+                            <option value="BGR">БОЛГАРИЯ</option>
+                            <option value="BOL">БОЛИВИЯ, МНОГОНАЦИОНАЛЬНОЕ ГОСУДАРСТВО</option>
+                            <option value="BIH">БОСНИЯ И ГЕРЦЕГОВИНА</option>
+                            <option value="BWA">БОТСВАНА</option>
+                            <option value="BRA">БРАЗИЛИЯ</option>
+                            <option value="IOT">БРИТАНСКАЯ ТЕРРИТОРИЯ В ИНДИЙСКОМ ОКЕАНЕ</option>
+                            <option value="BRN">БРУНЕЙ-ДАРУССАЛАМ</option>
+                            <option value="BFA">БУРКИНА-ФАСО</option>
+                            <option value="BDI">БУРУНДИ</option>
+                            <option value="BTN">БУТАН</option>
+                            <option value="VUT">ВАНУАТУ</option>
+                            <option value="HUN">ВЕНГРИЯ</option>
+                            <option value="VEN">ВЕНЕСУЭЛА БОЛИВАРИАНСКАЯ РЕСПУБЛИКА</option>
+                            <option value="VGB">ВИРГИНСКИЕ ОСТРОВА, БРИТАНСКИЕ</option>
+                            <option value="VIR">ВИРГИНСКИЕ ОСТРОВА, США</option>
+                            <option value="VNM">ВЬЕТНАМ</option>
+                            <option value="GAB">ГАБОН</option>
+                            <option value="HTI">ГАИТИ</option>
+                            <option value="GUY">ГАЙАНА</option>
+                            <option value="GMB">ГАМБИЯ</option>
+                            <option value="GHA">ГАНА</option>
+                            <option value="GLP">ГВАДЕЛУПА</option>
+                            <option value="GTM">ГВАТЕМАЛА</option>
+                            <option value="GIN">ГВИНЕЯ</option>
+                            <option value="GNB">ГВИНЕЯ-БИСАУ</option>
+                            <option value="DEU">ГЕРМАНИЯ</option>
+                            <option value="GGY">ГЕРНСИ</option>
+                            <option value="GIB">ГИБРАЛТАР</option>
+                            <option value="HND">ГОНДУРАС</option>
+                            <option value="HKG">ГОНКОНГ</option>
+                            <option value="GRD">ГРЕНАДА</option>
+                            <option value="GRL">ГРЕНЛАНДИЯ</option>
+                            <option value="GRC">ГРЕЦИЯ</option>
+                            <option value="GEO">ГРУЗИЯ</option>
+                            <option value="GUM">ГУАМ</option>
+                            <option value="DNK">ДАНИЯ</option>
+                            <option value="JEY">ДЖЕРСИ</option>
+                            <option value="DJI">ДЖИБУТИ</option>
+                            <option value="DMA">ДОМИНИКА</option>
+                            <option value="DOM">ДОМИНИКАНСКАЯ РЕСПУБЛИКА</option>
+                            <option value="EGY">ЕГИПЕТ</option>
+                            <option value="ZMB">ЗАМБИЯ</option>
+                            <option value="ESH">ЗАПАДНАЯ САХАРА</option>
+                            <option value="ZWE">ЗИМБАБВЕ</option>
+                            <option value="ISR">ИЗРАИЛЬ</option>
+                            <option value="IND">ИНДИЯ</option>
+                            <option value="IDN">ИНДОНЕЗИЯ</option>
+                            <option value="JOR">ИОРДАНИЯ</option>
+                            <option value="IRQ">ИРАК</option>
+                            <option value="IRN">ИРАН, ИСЛАМСКАЯ РЕСПУБЛИКА</option>
+                            <option value="IRL">ИРЛАНДИЯ</option>
+                            <option value="ISL">ИСЛАНДИЯ</option>
+                            <option value="ESP">ИСПАНИЯ</option>
+                            <option value="ITA">ИТАЛИЯ</option>
+                            <option value="YEM">ЙЕМЕН</option>
+                            <option value="CPV">КАБО-ВЕРДЕ</option>
+                            <option value="KAZ">КАЗАХСТАН</option>
+                            <option value="KHM">КАМБОДЖА</option>
+                            <option value="CMR">КАМЕРУН</option>
+                            <option value="CAN">КАНАДА</option>
+                            <option value="QAT">КАТАР</option>
+                            <option value="KEN">КЕНИЯ</option>
+                            <option value="CYP">КИПР</option>
+                            <option value="KGZ">КИРГИЗИЯ</option>
+                            <option value="KIR">КИРИБАТИ</option>
+                            <option value="CHN">КИТАЙ</option>
+                            <option value="CCK">КОКОСОВЫЕ КИЛИНГ ОСТРОВА</option>
+                            <option value="COL">КОЛУМБИЯ</option>
+                            <option value="COM">КОМОРЫ</option>
+                            <option value="COG">КОНГО</option>
+                            <option value="COD">КОНГО, ДЕМОКРАТИЧЕСКАЯ РЕСПУБЛИКА</option>
+                            <option value="PRK">КОРЕЯ, НАРОДНО-ДЕМОКРАТИЧЕСКАЯ РЕСПУБЛИКА</option>
+                            <option value="KOR">КОРЕЯ, РЕСПУБЛИКА</option>
+                            <option value="CRI">КОСТА-РИКА</option>
+                            <option value="CIV">КОТ Д'ИВУАР</option>
+                            <option value="CUB">КУБА</option>
+                            <option value="KWT">КУВЕЙТ</option>
+                            <option value="LAO">ЛАОССКАЯ НАРОДНО-ДЕМОКРАТИЧЕСКАЯ РЕСПУБЛИКА</option>
+                            <option value="LVA">ЛАТВИЯ</option>
+                            <option value="LBG">ЛБГ</option>
+                            <option value="LSO">ЛЕСОТО</option>
+                            <option value="LBR">ЛИБЕРИЯ</option>
+                            <option value="LBN">ЛИВАН</option>
+                            <option value="LBY">ЛИВИЙСКАЯ АРАБСКАЯ ДЖАМАХИРИЯ</option>
+                            <option value="LTU">ЛИТВА</option>
+                            <option value="LIE">ЛИХТЕНШТЕЙН</option>
+                            <option value="LUX">ЛЮКСЕМБУРГ</option>
+                            <option value="MUS">МАВРИКИЙ</option>
+                            <option value="MRT">МАВРИТАНИЯ</option>
+                            <option value="MDG">МАДАГАСКАР</option>
+                            <option value="MYT">МАЙОТТА</option>
+                            <option value="MAC">МАКАО</option>
+                            <option value="MWI">МАЛАВИ</option>
+                            <option value="MYS">МАЛАЙЗИЯ</option>
+                            <option value="MLI">МАЛИ</option>
+                            <option value="UMI">МАЛЫЕ ТИХООКЕАНСКИЕ ОТДАЛЕННЫЕ ОСТРОВА СОЕДИНЕННЫХ ШТАТОВ</option>
+                            <option value="MDV">МАЛЬДИВЫ</option>
+                            <option value="MLT">МАЛЬТА</option>
+                            <option value="MAR">МАРОККО</option>
+                            <option value="MTQ">МАРТИНИКА</option>
+                            <option value="MHL">МАРШАЛЛОВЫ ОСТРОВА</option>
+                            <option value="MEX">МЕКСИКА</option>
+                            <option value="FSM">МИКРОНЕЗИЯ, ФЕДЕРАТИВНЫЕ ШТАТЫ</option>
+                            <option value="MOZ">МОЗАМБИК</option>
+                            <option value="MDA">МОЛДОВА, РЕСПУБЛИКА</option>
+                            <option value="MCO">МОНАКО</option>
+                            <option value="MNG">МОНГОЛИЯ</option>
+                            <option value="MSR">МОНТСЕРРАТ</option>
+                            <option value="MMR">МЬЯНМА</option>
+                            <option value="NAM">НАМИБИЯ</option>
+                            <option value="NRU">НАУРУ</option>
+                            <option value="NPL">НЕПАЛ</option>
+                            <option value="NER">НИГЕР</option>
+                            <option value="NGA">НИГЕРИЯ</option>
+                            <option value="NLD">НИДЕРЛАНДЫ</option>
+                            <option value="NIC">НИКАРАГУА</option>
+                            <option value="NIU">НИУЭ</option>
+                            <option value="NZL">НОВАЯ ЗЕЛАНДИЯ</option>
+                            <option value="NCL">НОВАЯ КАЛЕДОНИЯ</option>
+                            <option value="NOR">НОРВЕГИЯ</option>
+                            <option value="ARE">ОБЪЕДИНЕННЫЕ АРАБСКИЕ ЭМИРАТЫ</option>
+                            <option value="OMN">ОМАН</option>
+                            <option value="BVT">ОСТРОВ БУВЕ</option>
+                            <option value="IMN">ОСТРОВ МЭН</option>
+                            <option value="NFK">ОСТРОВ НОРФОЛК</option>
+                            <option value="CXR">ОСТРОВ РОЖДЕСТВА</option>
+                            <option value="HMD">ОСТРОВ ХЕРД И ОСТРОВА МАКДОНАЛЬД</option>
+                            <option value="CYM">ОСТРОВА КАЙМАН</option>
+                            <option value="COK">ОСТРОВА КУКА</option>
+                            <option value="TCA">ОСТРОВА ТЕРКС И КАЙКОС</option>
+                            <option value="PAK">ПАКИСТАН</option>
+                            <option value="PLW">ПАЛАУ</option>
+                            <option value="PSE">ПАЛЕСТИНСКАЯ ТЕРРИТОРИЯ, ОККУПИРОВАННАЯ</option>
+                            <option value="PAN">ПАНАМА</option>
+                            <option value="VAT">ПАПСКИЙ ПРЕСТОЛ ГОСУДАРСТВО - ГОРОД ВАТИКАН</option>
+                            <option value="PNG">ПАПУА-НОВАЯ ГВИНЕЯ</option>
+                            <option value="PRY">ПАРАГВАЙ</option>
+                            <option value="PER">ПЕРУ</option>
+                            <option value="PCN">ПИТКЕРН</option>
+                            <option value="POL">ПОЛЬША</option>
+                            <option value="PRT">ПОРТУГАЛИЯ</option>
+                            <option value="PRI">ПУЭРТО-РИКО</option>
+                            <option value="MKD">РЕСПУБЛИКА МАКЕДОНИЯ</option>
+                            <option value="REU">РЕЮНЬОН</option>
+                            <option value="RWA">РУАНДА</option>
+                            <option value="ROU">РУМЫНИЯ</option>
+                            <option value="WSM">САМОА</option>
+                            <option value="SMR">САН-МАРИНО</option>
+                            <option value="STP">САН-ТОМЕ И ПРИНСИПИ</option>
+                            <option value="SAU">САУДОВСКАЯ АРАВИЯ</option>
+                            <option value="SWZ">СВАЗИЛЕНД</option>
+                            <option value="SHN">СВЯТАЯ ЕЛЕНА, ОСТРОВ ВОЗНЕСЕНИЯ, ТРИСТАН-ДА-КУНЬЯ</option>
+                            <option value="MNP">СЕВЕРНЫЕ МАРИАНСКИЕ ОСТРОВА</option>
+                            <option value="SYC">СЕЙШЕЛЫ</option>
+                            <option value="BLM">СЕН-БАРТЕЛЕМИ</option>
+                            <option value="MAF">СЕН-МАРТЕН</option>
+                            <option value="SPM">СЕН-ПЬЕР И МИКЕЛОН</option>
+                            <option value="SEN">СЕНЕГАЛ</option>
+                            <option value="VCT">СЕНТ-ВИНСЕНТ И ГРЕНАДИНЫ</option>
+                            <option value="KNA">СЕНТ-КИТС И НЕВИС</option>
+                            <option value="LCA">СЕНТ-ЛЮСИЯ</option>
+                            <option value="SRB">СЕРБИЯ</option>
+                            <option value="SGP">СИНГАПУР</option>
+                            <option value="SYR">СИРИЙСКАЯ АРАБСКАЯ РЕСПУБЛИКА</option>
+                            <option value="SVK">СЛОВАКИЯ</option>
+                            <option value="SVN">СЛОВЕНИЯ</option>
+                            <option value="GBR">СОЕДИНЕННОЕ КОРОЛЕВСТВО</option>
+                            <option value="USA">СОЕДИНЕННЫЕ ШТАТЫ</option>
+                            <option value="SLB">СОЛОМОНОВЫ ОСТРОВА</option>
+                            <option value="SOM">СОМАЛИ</option>
+                            <option value="SDN">СУДАН</option>
+                            <option value="SUR">СУРИНАМ</option>
+                            <option value="SLE">СЬЕРРА-ЛЕОНЕ</option>
+                            <option value="TJK">ТАДЖИКИСТАН</option>
+                            <option value="THA">ТАИЛАНД</option>
+                            <option value="TWN">ТАЙВАНЬ КИТАЙ</option>
+                            <option value="TZA">ТАНЗАНИЯ, ОБЪЕДИНЕННАЯ РЕСПУБЛИКА</option>
+                            <option value="TLS">ТИМОР-ЛЕСТЕ</option>
+                            <option value="TGO">ТОГО</option>
+                            <option value="TKL">ТОКЕЛАУ</option>
+                            <option value="TON">ТОНГА</option>
+                            <option value="TTO">ТРИНИДАД И ТОБАГО</option>
+                            <option value="TUV">ТУВАЛУ</option>
+                            <option value="TUN">ТУНИС</option>
+                            <option value="TKM">ТУРКМЕНИЯ</option>
+                            <option value="TUR">ТУРЦИЯ</option>
+                            <option value="UGA">УГАНДА</option>
+                            <option value="UZB">УЗБЕКИСТАН</option>
+                            <option value="UKR">УКРАИНА</option>
+                            <option value="WLF">УОЛЛИС И ФУТУНА</option>
+                            <option value="URY">УРУГВАЙ</option>
+                            <option value="FRO">ФАРЕРСКИЕ ОСТРОВА</option>
+                            <option value="FJI">ФИДЖИ</option>
+                            <option value="PHL">ФИЛИППИНЫ</option>
+                            <option value="FIN">ФИНЛЯНДИЯ</option>
+                            <option value="FLK">ФОЛКЛЕНДСКИЕ ОСТРОВА МАЛЬВИНСКИЕ</option>
+                            <option value="FRA">ФРАНЦИЯ</option>
+                            <option value="GUF">ФРАНЦУЗСКАЯ ГВИАНА</option>
+                            <option value="PYF">ФРАНЦУЗСКАЯ ПОЛИНЕЗИЯ</option>
+                            <option value="ATF">ФРАНЦУЗСКИЕ ЮЖНЫЕ ТЕРРИТОРИИ</option>
+                            <option value="HRV">ХОРВАТИЯ</option>
+                            <option value="CAF">ЦЕНТРАЛЬНО-АФРИКАНСКАЯ РЕСПУБЛИКА</option>
+                            <option value="TCD">ЧАД</option>
+                            <option value="MNE">ЧЕРНОГОРИЯ</option>
+                            <option value="CZE">ЧЕШСКАЯ РЕСПУБЛИКА</option>
+                            <option value="CHL">ЧИЛИ</option>
+                            <option value="CHE">ШВЕЙЦАРИЯ</option>
+                            <option value="SWE">ШВЕЦИЯ</option>
+                            <option value="SJM">ШПИЦБЕРГЕН И ЯН МАЙЕН</option>
+                            <option value="LKA">ШРИ-ЛАНКА</option>
+                            <option value="ECU">ЭКВАДОР</option>
+                            <option value="GNQ">ЭКВАТОРИАЛЬНАЯ ГВИНЕЯ</option>
+                            <option value="ALA">ЭЛАНДСКИЕ ОСТРОВА</option>
+                            <option value="SLV">ЭЛЬ-САЛЬВАДОР</option>
+                            <option value="ERI">ЭРИТРЕЯ</option>
+                            <option value="EST">ЭСТОНИЯ</option>
+                            <option value="ETH">ЭФИОПИЯ</option>
+                            <option value="ZAF">ЮЖНАЯ АФРИКА</option>
+                            <option value="SGS">ЮЖНАЯ ДЖОРДЖИЯ И ЮЖНЫЕ САНДВИЧЕВЫ ОСТРОВА</option>
+                            <option value="OST">ЮЖНАЯ ОСЕТИЯ</option>
+                            <option value="JAM">ЯМАЙКА</option>
+                            <option value="JPN">ЯПОНИЯ</option>
+                        </select>
+                    </div><!-- /.col -->
+                    <div class="col-12 col-lg-3">
+                        <span class="input-helper">(обязательное поле)</span>
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+
+                <div class="row align-items-center">
+                    <div class="col-12 col-lg-3">
+                        <label class="label">Тип документа:</label>
+                    </div><!-- /.col -->
+                    <div class="col-12 col-lg-6">
+                        <select class="input">
+                            <option disabled selected>Выбрать</option>
+                            <option value="T3">Заграничный биометрический</option>
+                            <option value="T2">Заграничный паспорт</option>
+                            <option value="T1">Национальный паспорт</option>
+                        </select>
+                    </div><!-- /.col -->
+                    <div class="col-12 col-lg-3">
+                        <span class="input-helper">(обязательное поле)</span>
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+
+                <div class="row align-items-center">
+                    <div class="col-12 col-lg-3">
+                        <label class="label">Номер документа:</label>
+                    </div><!-- /.col -->
+                    <div class="col-12 col-lg-6">
+                        <input class="input" type="text" placeholder="3487234497">
+                    </div><!-- /.col -->
+                    <div class="col-12 col-lg-3">
+                        <span class="input-helper">(обязательное поле)</span>
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+
+                <div class="row align-items-center">
+                    <div class="col-12 col-lg-3">
+                        <label class="label">Дата действия документа:</label>
+                    </div><!-- /.col -->
+                    <div class="col-12 col-lg-6">
+                        <input class="input" type="text" placeholder="дд.мм.гггг">
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+
+                <div class="row align-items-center">
+                    <div class="col-12 col-lg-3">
+                        <label class="label">Выдавшая страна или организация:</label>
+                    </div><!-- /.col -->
+                    <div class="col-12 col-lg-6">
+                        <select class="input">
+                            <option disabled selected>Выбрать</option>
+                            <option value="ABH">АБХАЗИЯ</option>
+                            <option value="AUS">АВСТРАЛИЯ</option>
+                            <option value="AUT">АВСТРИЯ</option>
+                            <option value="AZE">АЗЕРБАЙДЖАН</option>
+                            <option value="ALB">АЛБАНИЯ</option>
+                            <option value="DZA">АЛЖИР</option>
+                            <option value="ASM">АМЕРИКАНСКОЕ САМОА</option>
+                            <option value="AIA">АНГИЛЬЯ</option>
+                            <option value="AGO">АНГОЛА</option>
+                            <option value="AND">АНДОРРА</option>
+                            <option value="ATA">АНТАРКТИДА</option>
+                            <option value="ATG">АНТИГУА И БАРБУДА</option>
+                            <option value="ARG">АРГЕНТИНА</option>
+                            <option value="ARM">АРМЕНИЯ</option>
+                            <option value="ABW">АРУБА</option>
+                            <option value="AFG">АФГАНИСТАН</option>
+                            <option value="BHS">БАГАМЫ</option>
+                            <option value="BGD">БАНГЛАДЕШ</option>
+                            <option value="BRB">БАРБАДОС</option>
+                            <option value="BHR">БАХРЕЙН</option>
+                            <option value="BLR">БЕЛАРУСЬ</option>
+                            <option value="BLZ">БЕЛИЗ</option>
+                            <option value="BEL">БЕЛЬГИЯ</option>
+                            <option value="BEN">БЕНИН</option>
+                            <option value="BMU">БЕРМУДЫ</option>
+                            <option value="BGR">БОЛГАРИЯ</option>
+                            <option value="BOL">БОЛИВИЯ, МНОГОНАЦИОНАЛЬНОЕ ГОСУДАРСТВО</option>
+                            <option value="BIH">БОСНИЯ И ГЕРЦЕГОВИНА</option>
+                            <option value="BWA">БОТСВАНА</option>
+                            <option value="BRA">БРАЗИЛИЯ</option>
+                            <option value="IOT">БРИТАНСКАЯ ТЕРРИТОРИЯ В ИНДИЙСКОМ ОКЕАНЕ</option>
+                            <option value="BRN">БРУНЕЙ-ДАРУССАЛАМ</option>
+                            <option value="BFA">БУРКИНА-ФАСО</option>
+                            <option value="BDI">БУРУНДИ</option>
+                            <option value="BTN">БУТАН</option>
+                            <option value="VUT">ВАНУАТУ</option>
+                            <option value="HUN">ВЕНГРИЯ</option>
+                            <option value="VEN">ВЕНЕСУЭЛА БОЛИВАРИАНСКАЯ РЕСПУБЛИКА</option>
+                            <option value="VGB">ВИРГИНСКИЕ ОСТРОВА, БРИТАНСКИЕ</option>
+                            <option value="VIR">ВИРГИНСКИЕ ОСТРОВА, США</option>
+                            <option value="VNM">ВЬЕТНАМ</option>
+                            <option value="GAB">ГАБОН</option>
+                            <option value="HTI">ГАИТИ</option>
+                            <option value="GUY">ГАЙАНА</option>
+                            <option value="GMB">ГАМБИЯ</option>
+                            <option value="GHA">ГАНА</option>
+                            <option value="GLP">ГВАДЕЛУПА</option>
+                            <option value="GTM">ГВАТЕМАЛА</option>
+                            <option value="GIN">ГВИНЕЯ</option>
+                            <option value="GNB">ГВИНЕЯ-БИСАУ</option>
+                            <option value="DEU">ГЕРМАНИЯ</option>
+                            <option value="GGY">ГЕРНСИ</option>
+                            <option value="GIB">ГИБРАЛТАР</option>
+                            <option value="HND">ГОНДУРАС</option>
+                            <option value="HKG">ГОНКОНГ</option>
+                            <option value="GRD">ГРЕНАДА</option>
+                            <option value="GRL">ГРЕНЛАНДИЯ</option>
+                            <option value="GRC">ГРЕЦИЯ</option>
+                            <option value="GEO">ГРУЗИЯ</option>
+                            <option value="GUM">ГУАМ</option>
+                            <option value="DNK">ДАНИЯ</option>
+                            <option value="JEY">ДЖЕРСИ</option>
+                            <option value="DJI">ДЖИБУТИ</option>
+                            <option value="DMA">ДОМИНИКА</option>
+                            <option value="DOM">ДОМИНИКАНСКАЯ РЕСПУБЛИКА</option>
+                            <option value="EGY">ЕГИПЕТ</option>
+                            <option value="ZMB">ЗАМБИЯ</option>
+                            <option value="ESH">ЗАПАДНАЯ САХАРА</option>
+                            <option value="ZWE">ЗИМБАБВЕ</option>
+                            <option value="ISR">ИЗРАИЛЬ</option>
+                            <option value="IND">ИНДИЯ</option>
+                            <option value="IDN">ИНДОНЕЗИЯ</option>
+                            <option value="JOR">ИОРДАНИЯ</option>
+                            <option value="IRQ">ИРАК</option>
+                            <option value="IRN">ИРАН, ИСЛАМСКАЯ РЕСПУБЛИКА</option>
+                            <option value="IRL">ИРЛАНДИЯ</option>
+                            <option value="ISL">ИСЛАНДИЯ</option>
+                            <option value="ESP">ИСПАНИЯ</option>
+                            <option value="ITA">ИТАЛИЯ</option>
+                            <option value="YEM">ЙЕМЕН</option>
+                            <option value="CPV">КАБО-ВЕРДЕ</option>
+                            <option value="KAZ">КАЗАХСТАН</option>
+                            <option value="KHM">КАМБОДЖА</option>
+                            <option value="CMR">КАМЕРУН</option>
+                            <option value="CAN">КАНАДА</option>
+                            <option value="QAT">КАТАР</option>
+                            <option value="KEN">КЕНИЯ</option>
+                            <option value="CYP">КИПР</option>
+                            <option value="KGZ">КИРГИЗИЯ</option>
+                            <option value="KIR">КИРИБАТИ</option>
+                            <option value="CHN">КИТАЙ</option>
+                            <option value="CCK">КОКОСОВЫЕ КИЛИНГ ОСТРОВА</option>
+                            <option value="COL">КОЛУМБИЯ</option>
+                            <option value="COM">КОМОРЫ</option>
+                            <option value="COG">КОНГО</option>
+                            <option value="COD">КОНГО, ДЕМОКРАТИЧЕСКАЯ РЕСПУБЛИКА</option>
+                            <option value="PRK">КОРЕЯ, НАРОДНО-ДЕМОКРАТИЧЕСКАЯ РЕСПУБЛИКА</option>
+                            <option value="KOR">КОРЕЯ, РЕСПУБЛИКА</option>
+                            <option value="CRI">КОСТА-РИКА</option>
+                            <option value="CIV">КОТ Д'ИВУАР</option>
+                            <option value="CUB">КУБА</option>
+                            <option value="KWT">КУВЕЙТ</option>
+                            <option value="LAO">ЛАОССКАЯ НАРОДНО-ДЕМОКРАТИЧЕСКАЯ РЕСПУБЛИКА</option>
+                            <option value="LVA">ЛАТВИЯ</option>
+                            <option value="LBG">ЛБГ</option>
+                            <option value="LSO">ЛЕСОТО</option>
+                            <option value="LBR">ЛИБЕРИЯ</option>
+                            <option value="LBN">ЛИВАН</option>
+                            <option value="LBY">ЛИВИЙСКАЯ АРАБСКАЯ ДЖАМАХИРИЯ</option>
+                            <option value="LTU">ЛИТВА</option>
+                            <option value="LIE">ЛИХТЕНШТЕЙН</option>
+                            <option value="LUX">ЛЮКСЕМБУРГ</option>
+                            <option value="MUS">МАВРИКИЙ</option>
+                            <option value="MRT">МАВРИТАНИЯ</option>
+                            <option value="MDG">МАДАГАСКАР</option>
+                            <option value="MYT">МАЙОТТА</option>
+                            <option value="MAC">МАКАО</option>
+                            <option value="MWI">МАЛАВИ</option>
+                            <option value="MYS">МАЛАЙЗИЯ</option>
+                            <option value="MLI">МАЛИ</option>
+                            <option value="UMI">МАЛЫЕ ТИХООКЕАНСКИЕ ОТДАЛЕННЫЕ ОСТРОВА СОЕДИНЕННЫХ ШТАТОВ</option>
+                            <option value="MDV">МАЛЬДИВЫ</option>
+                            <option value="MLT">МАЛЬТА</option>
+                            <option value="MAR">МАРОККО</option>
+                            <option value="MTQ">МАРТИНИКА</option>
+                            <option value="MHL">МАРШАЛЛОВЫ ОСТРОВА</option>
+                            <option value="MEX">МЕКСИКА</option>
+                            <option value="FSM">МИКРОНЕЗИЯ, ФЕДЕРАТИВНЫЕ ШТАТЫ</option>
+                            <option value="MOZ">МОЗАМБИК</option>
+                            <option value="MDA">МОЛДОВА, РЕСПУБЛИКА</option>
+                            <option value="MCO">МОНАКО</option>
+                            <option value="MNG">МОНГОЛИЯ</option>
+                            <option value="MSR">МОНТСЕРРАТ</option>
+                            <option value="MMR">МЬЯНМА</option>
+                            <option value="NAM">НАМИБИЯ</option>
+                            <option value="NRU">НАУРУ</option>
+                            <option value="NPL">НЕПАЛ</option>
+                            <option value="NER">НИГЕР</option>
+                            <option value="NGA">НИГЕРИЯ</option>
+                            <option value="NLD">НИДЕРЛАНДЫ</option>
+                            <option value="NIC">НИКАРАГУА</option>
+                            <option value="NIU">НИУЭ</option>
+                            <option value="NZL">НОВАЯ ЗЕЛАНДИЯ</option>
+                            <option value="NCL">НОВАЯ КАЛЕДОНИЯ</option>
+                            <option value="NOR">НОРВЕГИЯ</option>
+                            <option value="ARE">ОБЪЕДИНЕННЫЕ АРАБСКИЕ ЭМИРАТЫ</option>
+                            <option value="OMN">ОМАН</option>
+                            <option value="BVT">ОСТРОВ БУВЕ</option>
+                            <option value="IMN">ОСТРОВ МЭН</option>
+                            <option value="NFK">ОСТРОВ НОРФОЛК</option>
+                            <option value="CXR">ОСТРОВ РОЖДЕСТВА</option>
+                            <option value="HMD">ОСТРОВ ХЕРД И ОСТРОВА МАКДОНАЛЬД</option>
+                            <option value="CYM">ОСТРОВА КАЙМАН</option>
+                            <option value="COK">ОСТРОВА КУКА</option>
+                            <option value="TCA">ОСТРОВА ТЕРКС И КАЙКОС</option>
+                            <option value="PAK">ПАКИСТАН</option>
+                            <option value="PLW">ПАЛАУ</option>
+                            <option value="PSE">ПАЛЕСТИНСКАЯ ТЕРРИТОРИЯ, ОККУПИРОВАННАЯ</option>
+                            <option value="PAN">ПАНАМА</option>
+                            <option value="VAT">ПАПСКИЙ ПРЕСТОЛ ГОСУДАРСТВО - ГОРОД ВАТИКАН</option>
+                            <option value="PNG">ПАПУА-НОВАЯ ГВИНЕЯ</option>
+                            <option value="PRY">ПАРАГВАЙ</option>
+                            <option value="PER">ПЕРУ</option>
+                            <option value="PCN">ПИТКЕРН</option>
+                            <option value="POL">ПОЛЬША</option>
+                            <option value="PRT">ПОРТУГАЛИЯ</option>
+                            <option value="PRI">ПУЭРТО-РИКО</option>
+                            <option value="MKD">РЕСПУБЛИКА МАКЕДОНИЯ</option>
+                            <option value="REU">РЕЮНЬОН</option>
+                            <option value="RWA">РУАНДА</option>
+                            <option value="ROU">РУМЫНИЯ</option>
+                            <option value="WSM">САМОА</option>
+                            <option value="SMR">САН-МАРИНО</option>
+                            <option value="STP">САН-ТОМЕ И ПРИНСИПИ</option>
+                            <option value="SAU">САУДОВСКАЯ АРАВИЯ</option>
+                            <option value="SWZ">СВАЗИЛЕНД</option>
+                            <option value="SHN">СВЯТАЯ ЕЛЕНА, ОСТРОВ ВОЗНЕСЕНИЯ, ТРИСТАН-ДА-КУНЬЯ</option>
+                            <option value="MNP">СЕВЕРНЫЕ МАРИАНСКИЕ ОСТРОВА</option>
+                            <option value="SYC">СЕЙШЕЛЫ</option>
+                            <option value="BLM">СЕН-БАРТЕЛЕМИ</option>
+                            <option value="MAF">СЕН-МАРТЕН</option>
+                            <option value="SPM">СЕН-ПЬЕР И МИКЕЛОН</option>
+                            <option value="SEN">СЕНЕГАЛ</option>
+                            <option value="VCT">СЕНТ-ВИНСЕНТ И ГРЕНАДИНЫ</option>
+                            <option value="KNA">СЕНТ-КИТС И НЕВИС</option>
+                            <option value="LCA">СЕНТ-ЛЮСИЯ</option>
+                            <option value="SRB">СЕРБИЯ</option>
+                            <option value="SGP">СИНГАПУР</option>
+                            <option value="SYR">СИРИЙСКАЯ АРАБСКАЯ РЕСПУБЛИКА</option>
+                            <option value="SVK">СЛОВАКИЯ</option>
+                            <option value="SVN">СЛОВЕНИЯ</option>
+                            <option value="GBR">СОЕДИНЕННОЕ КОРОЛЕВСТВО</option>
+                            <option value="USA">СОЕДИНЕННЫЕ ШТАТЫ</option>
+                            <option value="SLB">СОЛОМОНОВЫ ОСТРОВА</option>
+                            <option value="SOM">СОМАЛИ</option>
+                            <option value="SDN">СУДАН</option>
+                            <option value="SUR">СУРИНАМ</option>
+                            <option value="SLE">СЬЕРРА-ЛЕОНЕ</option>
+                            <option value="TJK">ТАДЖИКИСТАН</option>
+                            <option value="THA">ТАИЛАНД</option>
+                            <option value="TWN">ТАЙВАНЬ КИТАЙ</option>
+                            <option value="TZA">ТАНЗАНИЯ, ОБЪЕДИНЕННАЯ РЕСПУБЛИКА</option>
+                            <option value="TLS">ТИМОР-ЛЕСТЕ</option>
+                            <option value="TGO">ТОГО</option>
+                            <option value="TKL">ТОКЕЛАУ</option>
+                            <option value="TON">ТОНГА</option>
+                            <option value="TTO">ТРИНИДАД И ТОБАГО</option>
+                            <option value="TUV">ТУВАЛУ</option>
+                            <option value="TUN">ТУНИС</option>
+                            <option value="TKM">ТУРКМЕНИЯ</option>
+                            <option value="TUR">ТУРЦИЯ</option>
+                            <option value="UGA">УГАНДА</option>
+                            <option value="UZB">УЗБЕКИСТАН</option>
+                            <option value="UKR">УКРАИНА</option>
+                            <option value="WLF">УОЛЛИС И ФУТУНА</option>
+                            <option value="URY">УРУГВАЙ</option>
+                            <option value="FRO">ФАРЕРСКИЕ ОСТРОВА</option>
+                            <option value="FJI">ФИДЖИ</option>
+                            <option value="PHL">ФИЛИППИНЫ</option>
+                            <option value="FIN">ФИНЛЯНДИЯ</option>
+                            <option value="FLK">ФОЛКЛЕНДСКИЕ ОСТРОВА МАЛЬВИНСКИЕ</option>
+                            <option value="FRA">ФРАНЦИЯ</option>
+                            <option value="GUF">ФРАНЦУЗСКАЯ ГВИАНА</option>
+                            <option value="PYF">ФРАНЦУЗСКАЯ ПОЛИНЕЗИЯ</option>
+                            <option value="ATF">ФРАНЦУЗСКИЕ ЮЖНЫЕ ТЕРРИТОРИИ</option>
+                            <option value="HRV">ХОРВАТИЯ</option>
+                            <option value="CAF">ЦЕНТРАЛЬНО-АФРИКАНСКАЯ РЕСПУБЛИКА</option>
+                            <option value="TCD">ЧАД</option>
+                            <option value="MNE">ЧЕРНОГОРИЯ</option>
+                            <option value="CZE">ЧЕШСКАЯ РЕСПУБЛИКА</option>
+                            <option value="CHL">ЧИЛИ</option>
+                            <option value="CHE">ШВЕЙЦАРИЯ</option>
+                            <option value="SWE">ШВЕЦИЯ</option>
+                            <option value="SJM">ШПИЦБЕРГЕН И ЯН МАЙЕН</option>
+                            <option value="LKA">ШРИ-ЛАНКА</option>
+                            <option value="ECU">ЭКВАДОР</option>
+                            <option value="GNQ">ЭКВАТОРИАЛЬНАЯ ГВИНЕЯ</option>
+                            <option value="ALA">ЭЛАНДСКИЕ ОСТРОВА</option>
+                            <option value="SLV">ЭЛЬ-САЛЬВАДОР</option>
+                            <option value="ERI">ЭРИТРЕЯ</option>
+                            <option value="EST">ЭСТОНИЯ</option>
+                            <option value="ETH">ЭФИОПИЯ</option>
+                            <option value="ZAF">ЮЖНАЯ АФРИКА</option>
+                            <option value="SGS">ЮЖНАЯ ДЖОРДЖИЯ И ЮЖНЫЕ САНДВИЧЕВЫ ОСТРОВА</option>
+                            <option value="OST">ЮЖНАЯ ОСЕТИЯ</option>
+                            <option value="JAM">ЯМАЙКА</option>
+                            <option value="JPN">ЯПОНИЯ</option>
+                        </select>
+                    </div><!-- /.col -->
+                    <div class="col-12 col-lg-3">
+                        <span class="input-helper">(обязательное поле)</span>
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+
+                <div class="row align-items-center">
+                    <div class="col-12 col-lg-6 offset-lg-3">
+                        <p class="stext gray">Нажимая на кнопку, вы соглашаетесь с правилами пользования сайта и правилами обработки персональных данных</p>
+                    </div><!-- /.col -->
+                    <div class="col-12"></div>
+                    <div class="col-12 col-lg-6 offset-lg-3">
+                        <span class="btn btn-default">Отправить запрос</span>
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+                <div class="wall-footer">
+                    <div class="row">
+                        <div class="col-auto">
+                            <i class="icon-user post-icon"></i>
+                        </div><!-- /.col -->
+                        <div class="col">
+                            <p class="stext gray">
+                                Проверка запреты выезда за границу производится, так как судебный пристав-исполнитель в соответствии со ст. 67 ФЗ от 02.10.2007 № 229-ФЗ «Об исполнительном производстве» вправе по заявлению взыскателя или собственной инициативе вынести постановление о временном ограничении на выезд должника из Российской Федерации.
+                            </p>
+                        </div><!-- /.col -->
+                    </div><!-- /.row -->
+                </div><!-- /.wall-footer -->
+            </div><!-- /.wall -->
+        </div><!-- /.section -->
+
+
+        <div class="section">
+            <div class="row">
+                <div class="col-12 col-sm">
+                    <h3 class="title-2">Как проверить наличие запрета на въезд в Россию любому иностранцу?</h3>
+                    <p class="text gray">
+                        У Федеральной Миграционной Службы существует официальная база или реестр лиц, которым запрещен по закону въезд в РФ. Проверка запрета проводится в режиме реального времени онлайн. Проводится поиск, указанных данных, в едином реестре. В случае, если вы присутствуете в запретном списке, то во въезде в страну вам будет отказано. Для того чтобы снять ограничения вам необходимо обратиться в отделение МВД или ФМС России. Рекомендуется каждый раз проходить проверку, если у вас есть подозрения, что вам могут не пустить в страну. Актуальность базы обновляется 1 раз в месяц. Данная проверка носит исключительно информационный характер и не является юридическим ответом или заключением.
+                    </p>
+                </div><!-- /.col -->
+                <div class="col-auto mx-auto">
+                    <img class="mpd" width="250" src="img/map-rf.svg">
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.section -->
+    </div><!-- /.container -->
+</section><!-- /.section -->
+
+
+
+
+<footer class="footer">
+
+
+
+    <div class="container">
+
+
+
+        <h3 class="title-3">Сервис проверки судебных задолженностей dolginet.online 2019</h3>
+
+
+
+        <p class="text gray">
+
+
+
+            Информация по задолженности от <a href="">судебных приставов</a> формируются автоматически на основе запроса по данным пользователя в официальную базу ФССП. Проверка долгов граждан осуществляется бесплатно. Интернет-портал позволяет узнать задолженности в режиме онлайн. Копирование любой информации о долгах запрещено. Цитирование с сайта разрешается при наличии активной ссылки.
+
+
+
+        </p>
+
+
+
+        <p class="text gray">
+
+
+
+            По вопросам тех. поддержки: <a href="">info@dolginet.online</a><br>
+
+
+
+            Сотрудничество: <a href="">partner@dolginet.online</a><br>
+
+
+
+            Телефон: <a href="">7 (499) 110-65-03</a>
+
+
+
+        </p>
+
+
+
+        <div class="row align-items-end">
+
+
+
+            <div class="col-12 col-sm">
+
+
+
+                <nav class="mpd">
+
+
+
+                    <a href="">Политика конфиденциальности</a><br>
+
+
+
+                    <a href="">Пользовательское соглашение</a><br>
+
+
+
+                    <a href="">Информация об оплате</a><br>
+
+
+
+                    <a href="">Тарифы</a>
+
+
+
+                </nav>
+
+
+
+            </div><!-- /.col -->
+
+
+
+            <div class="col-auto mx-auto">
+
+
+
+                <a class="share" href=""><i class="icon-share"></i></a>
+
+
+
+            </div><!-- /.col -->
+
+
+
+        </div><!-- /.row -->
+
+
+
+    </div><!-- /.container -->
+
+
+
+</footer>
+
+
+
+
+
+
+
+</div><!-- /.wrapper -->
+
+
+
+
+
+
+
+<!--
+
+
+
+    main.js включает в себя
+
+
+
+    jQuery v3.4.1
+
+
+
+-->
+
+
+
+<script src="js/main.js"></script>
+
+
+
+</body>
+
+
+
+</html>
