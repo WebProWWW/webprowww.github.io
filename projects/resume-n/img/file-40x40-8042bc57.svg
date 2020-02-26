@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>Icons/ Complex/ Pdf</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icons/-Complex/-Pdf" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="Fill" fill="#CCE8FF" points="24 4 26 4 33 12 33 35 24 35"></polygon>
+        <path d="M8,3 L26.5462318,3 C26.8345944,3 27.1089204,3.12448043 27.2988085,3.34149539 L33.7525767,10.7172305 C33.9120818,10.899522 34,11.133512 34,11.3757351 L34,35 C34,35.5522847 33.5522847,36 33,36 L8,36 C7.44771525,36 7,35.5522847 7,35 L7,4 C7,3.44771525 7.44771525,3 8,3 Z M9,5 L9,34 L32,34 L32,11.7514702 L26.0924635,5 L9,5 Z M13,22 L28,22 L28,24 L13,24 L13,22 Z M13,26 L22,26 L22,28 L13,28 L13,26 Z M13,18 L28,18 L28,20 L13,20 L13,18 Z M26,12 L32,12 L32,14 L25,14 C24.4477153,14 24,13.5522847 24,13 L24,8 L26,8 L26,12 Z" id="Pdf" fill="#2196F3" fill-rule="nonzero"></path>
+    </g>
+</svg>
