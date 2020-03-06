@@ -13,7 +13,8 @@
         Bootstrap Grid v4.3.1 (https://getbootstrap.com/)
         https://github.com/fancyapps/fancybox/tree/v3.5.7
     -->
-    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css?v=002">
 
     <title>Банкротство физических лиц в Москве</title>
     
@@ -33,31 +34,30 @@
 
 <div class="container wrapper">
 
-    <div class="block">
-        <img class="logo" width="" height="76" src="img/logo.svg" alt="">
-    </div><!-- .block -->
+    <div class="bg-lgray">
+        <div class="block">
+            <img class="logo" width="" height="70" src="img/logo.svg" alt="">
+        </div><!-- .block -->
 
-    <div class="block center">
-        <h2 class="fw-400">
-            Списали более <span class="fw-700 blue">5&nbsp;000&nbsp;000&nbsp;000&nbsp;рублей</span>
-            <br>
-            долгов нашим клиентам с 2015 года.
-        </h2>
-    </div><!-- .block -->
+        <div class="block center">
+            <h2 class="fw-400">
+                Списали более <span class="fw-700 blue">5&nbsp;000&nbsp;000&nbsp;000&nbsp;рублей</span>
+                <br>
+                долгов нашим клиентам с 2015 года.
+            </h2>
+        </div><!-- .block -->
 
-    <div class="block center">
-        <h1 class="fw-400">Банкротство физических лиц в Москве.</h1>
-    </div><!-- .block -->
-
-    <div class="block center">
-        <h3 class="fw-400">Заполните анкету и узнайте,<br>можете ли Вы <span class="fw-700">списать долги</span>.</h3>
-    </div><!-- .block -->
+        <div class="block center">
+            <h1 class="fw-400">Банкротство физических лиц в Москве.</h1>
+            <h3 class="fw-400">Заполните анкету и узнайте,<br>можете ли Вы <span class="fw-700">списать долги</span>.</h3>
+        </div><!-- .block -->
+    </div><!-- .bg-lgray -->
 
     <form data-ajax="/send.php">
 
         <div class="divider"></div>
 
-        <h3>1. Сумма основного долга</h3>
+        <h3 class="mb-0">1. Сумма основного долга</h3>
         <p>Укажите примерную сумму долга без процентов совокупно по всем кредиторам, среди которых есть банк.</p>
         <label class="label">
             <input class="radio" type="radio" name="item-1" checked>
@@ -74,7 +74,7 @@
 
         <div class="divider"></div>
 
-        <h3>2. Наличие в собственности имущества?</h3>
+        <h3 class="mb-0">2. Наличие в собственности имущества?</h3>
         <p>имущество (квартира, дача, земельный участок, коммерческие нежилые помещения, доли и акции в организациях, гараж, автомобиль), документально оформленное на Ваше имя, КРОМЕ единственного жилья (квартиры/доли в квартире, прописка не наделяет Вас правом собственности на имущество) *</p>
         <label class="label">
             <input class="radio" type="radio" name="item-2" checked>
@@ -87,7 +87,7 @@
 
         <div class="divider"></div>
 
-        <h3>3. Есть ли у вас имущество, которое является предметом залога по Вашему кредиту/займу?</h3>
+        <h3 class="">3. Есть ли у вас имущество, которое является предметом залога по Вашему кредиту/займу?</h3>
         <label class="label">
             <input class="radio" type="radio" name="item-3" checked>
             <span class="label-txt">Да</span>
@@ -99,7 +99,7 @@
 
         <div class="divider"></div>
 
-        <h3>4. Официальный доход в месяц:</h3>
+        <h3 class="mb-0">4. Официальный доход в месяц:</h3>
         <p>Совокупный официальный доход, включая заработную плату, пенсию, другие доходы.</p>
         <label class="label">
             <input class="radio" type="radio" name="item-4" checked>
@@ -116,7 +116,7 @@
 
         <div class="divider"></div>
 
-        <h3>5. Являетесь ли Вы действующим Индивидуальным Предпринимателем?</h3>
+        <h3 class="">5. Являетесь ли Вы действующим Индивидуальным Предпринимателем?</h3>
         <label class="label">
             <input class="radio" type="radio" name="item-5" checked>
             <span class="label-txt">Да</span>
@@ -128,18 +128,18 @@
 
         <div class="divider"></div>
 
-        <h3>Укажите телефон*</h3>
+        <h3 class="">Укажите телефон*</h3>
         <div class="row">
-            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+            <div class="col-12 col-sm-6">
                 <input class="input" type="text" name="phone" data-validate="text" data-mask="+7-999-999-99-99">
             </div>
         </div>
 
         <div class="divider"></div>
 
-        <h3>Ваше имя</h3>
+        <h3 class="">Ваше имя</h3>
         <div class="row">
-            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+            <div class="col-12 col-sm-6">
                 <input class="input" type="text" name="name" data-validate="text">
             </div>
         </div>
@@ -195,7 +195,7 @@
 
 -->
 
-<script src="js/main.js?v=001"></script>
+<script src="js/main.js?v=002"></script>
 
 </body>
 
