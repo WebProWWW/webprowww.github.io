@@ -12,20 +12,20 @@
         Bootstrap Reboot v4.3.1 (https://getbootstrap.com/)
         Bootstrap Grid v4.3.1 (https://getbootstrap.com/)
     -->
-    <link rel="stylesheet" href="css/main.css?v=001">
+    <link rel="stylesheet" href="css/main.css?v=002">
     <title>2Лекс</title>
 
-    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="http://lex.loc/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://lex.loc/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://lex.loc/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://lex.loc/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="http://lex.loc/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="http://lex.loc/apple-touch-icon-152x152.png">
-    <link rel="icon" type="image/png" href="http://lex.loc/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="http://lex.loc/favicon-16x16.png" sizes="16x16">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="http://a.bankrotconsult.ru/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://a.bankrotconsult.ru/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://a.bankrotconsult.ru/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://a.bankrotconsult.ru/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="http://a.bankrotconsult.ru/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="http://a.bankrotconsult.ru/apple-touch-icon-152x152.png">
+    <link rel="icon" type="image/png" href="http://a.bankrotconsult.ru/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="http://a.bankrotconsult.ru/favicon-16x16.png" sizes="16x16">
     <meta name="application-name" content="2Лекс">
     <meta name="msapplication-TileColor" content="#FFFFFF">
-    <meta name="msapplication-TileImage" content="http://lex.loc/mstile-144x144.png">
+    <meta name="msapplication-TileImage" content="http://a.bankrotconsult.ru/mstile-144x144.png">
 
 </head>
 <body>
@@ -34,13 +34,13 @@
     <div class="header-overlay">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-12 col-sm-auto col-lg-4 order-sm-1 order-md-1">
+                <div class="col-12 col-sm-4 order-sm-1 order-lg-1">
                     <img class="logo" width="" height="73" src="img/logo.svg" alt="2Лекс">
                 </div><!-- .col -->
-                <div class="col-12 col-sm-auto order-sm-3 order-md-2">
+                <div class="col-12 col-lg-auto order-sm-3 order-lg-2">
                     <p class="header-slogan">Избавляем от долгов<br>через банкротство физ. лиц</p>
                 </div><!-- .col -->
-                <div class="col-12 col-sm-auto ml-auto order-sm-2 order-md-3">
+                <div class="col-12 col-sm-auto ml-auto order-sm-2 order-lg-3">
                     <p class="phone">
                         <a class="phone-num" href="tel:88005515971">8 800 551 59 71</a>
                         <span class="phone-txt">Звоните бесплатно и круглосуточно</span>
@@ -436,14 +436,25 @@
 
 <div class="d-none">
 
+    <div class="modal-sm center" id="ajax-success">
+        <h3>Спасибо. Ваша заявка успешно принята!</h3>
+        <p>наш юрист перезвонит Вам через 1 минуту</p>
+    </div>
+
+    <div class="modal-sm center" id="ajax-error">
+        <h3>Произошла ошибка!</h3>
+        <p class="center">пожалуйста попробуйте ещё раз</p>
+    </div>
+
     <div class="modal-sm" id="consult">
         <h3 class="center">Получить бесплатную консультацию</h3>
         <p>Оставьте свой телефон, наш юрист перезвонит Вам через 1 минуту, вникнет в вашу ситуацию и предоставит план списания долгов. <br> Это бесплатно.</p>
         <form data-ajax>
-            <input type="hidden" name="type" value="Получить бесплатную консультацию">
+            <input type="hidden" name="inbox_type_id" value="716111">
+            <input type="hidden" name="comment" value="Получить бесплатную консультацию">
             <input class="input" type="text" name="name" data-validate="text" placeholder="Ваше имя">
             <input class="input" type="text" name="phone" data-validate="text" data-mask="+7-999-999-99-99" placeholder="Укажите телефон">
-            <button class="btn-submit" type="submit">Отправить</button>
+            <button class="btn-submit" type="submit" data-loader>Отправить</button>
         </form>
         <p class="text-info">Я принимаю условия Пользовательского соглашения и даю свое согласие на обработку моих персональных данных в соответствии с <a data-fancybox data-src="#policy" href="javascript:;">Политикой конфиденциальности</a></p>
     </div><!-- .modal-sm -->
@@ -452,10 +463,11 @@
         <h3 class="center">Спишите мой долг</h3>
         <p>Оставьте свой телефон, наш юрист перезвонит Вам через 1 минуту, вникнет в вашу ситуацию и предоставит план списания долгов. <br> Это бесплатно.</p>
         <form data-ajax>
-            <input type="hidden" name="type" value="Спишите мой долг">
+            <input type="hidden" name="inbox_type_id" value="716111">
+            <input type="hidden" name="comment" value="Спишите мой долг">
             <input class="input" type="text" name="name" data-validate="text" placeholder="Ваше имя">
             <input class="input" type="text" name="phone" data-validate="text" data-mask="+7-999-999-99-99" placeholder="Укажите телефон">
-            <button class="btn-submit" type="submit">Отправить</button>
+            <button class="btn-submit" type="submit" data-loader>Отправить</button>
         </form>
         <p class="text-info">Я принимаю условия Пользовательского соглашения и даю свое согласие на обработку моих персональных данных в соответствии с <a data-fancybox data-src="#policy" href="javascript:;">Политикой конфиденциальности</a></p>
     </div><!-- .modal-sm -->
@@ -464,10 +476,11 @@
         <h3 class="center">Перезвоните мне</h3>
         <p>Оставьте свой телефон, наш юрист перезвонит Вам через 1 минуту, вникнет в вашу ситуацию и предоставит план списания долгов. <br> Это бесплатно.</p>
         <form data-ajax>
-            <input type="hidden" name="type" value="Перезвоните мне">
+            <input type="hidden" name="inbox_type_id" value="716111">
+            <input type="hidden" name="comment" value="Перезвоните мне">
             <input class="input" type="text" name="name" data-validate="text" placeholder="Ваше имя">
             <input class="input" type="text" name="phone" data-validate="text" data-mask="+7-999-999-99-99" placeholder="Укажите телефон">
-            <button class="btn-submit" type="submit">Отправить</button>
+            <button class="btn-submit" type="submit" data-loader>Отправить</button>
         </form>
         <p class="text-info">Я принимаю условия Пользовательского соглашения и даю свое согласие на обработку моих персональных данных в соответствии с <a data-fancybox data-src="#policy" href="javascript:;">Политикой конфиденциальности</a></p>
     </div><!-- .modal-sm -->
@@ -516,6 +529,6 @@
     main.js включает в себя
     jQuery v3.4.1
 -->
-<script src="js/main.js?v=001"></script>
+<script src="js/main.js?v=002"></script>
 </body>
 </html>
