@@ -13,7 +13,7 @@
         Bootstrap Grid v4.3.1 (https://getbootstrap.com/)
     -->
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css?v=005">
+    <link rel="stylesheet" href="css/main.css?v=006">
 
     <title>Банкротство физических лиц в Москве</title>
     
@@ -28,6 +28,18 @@
     <meta name="application-name" content="Банкротство физических лиц в Москве">
     <meta name="msapplication-TileColor" content="#FFFFFF">
     <meta name="msapplication-TileImage" content="http://consult-bg.loc/mstile-144x144.png">
+    <script type="text/javascript">
+        window.ajaxTestSendSuccess = function () {
+            console.log('ajaxTestSendSuccess()');
+            // "undefined"!=typeof yaCounter22313914&&null!==yaCounter22313914&&"function"==typeof yaCounter22313914.reachGoal&&yaCounter22313914.reachGoal("land_kost_success");
+            return true;
+        };
+        window.ajaxEmailSendSuccess = function () {
+            console.log('ajaxEmailSendSuccess()');
+            return true;
+        };
+        window.crmInboxTypeId = 604151
+    </script>
 </head>
 <body>
 
@@ -75,7 +87,7 @@
     </div><!-- .block -->
 
     <div class="-block">
-        <h3 class="title-bordered">Ответьте на <span class="blue">4 вопроса</span> интерактивной анкеты</h3>
+        <h3 class="title-bordered">Ответьте на <span class="blue">5 вопроса</span> интерактивной анкеты</h3>
     </div><!-- .block -->
 
     <div class="-block">
@@ -85,7 +97,7 @@
     <div class="-block">
         <div class="row">
             <div class="col-12 col-sm-9">
-                <a class="btn" href="" onclick="return false;">ЗАПОЛНИТЬ АНКЕТУ</a>
+                <a class="btn" data-fancybox data-src="#anketa" href="javascript:;">ЗАПОЛНИТЬ АНКЕТУ</a>
             </div><!-- .col -->
         </div><!-- .row -->
     </div><!-- .block -->
@@ -135,10 +147,16 @@
 
 </div><!-- .wrapper -->
 
+<div class="d-none">
+    <div class="popup" id="anketa">
+        <div class="js-vue-anketa"></div>
+    </div><!-- .modal -->
+</div><!-- .d-none -->
+
 <!--
     main.js включает в себя
     jQuery v3.4.1
 -->
-<script src="js/main.js"></script>
+<script src="js/main.js?v=006"></script>
 </body>
 </html>
