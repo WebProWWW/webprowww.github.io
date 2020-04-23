@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 587.9 587.9">
+  <defs>
+    <style>
+      .a {
+        fill: #378b00;
+      }
+
+      .b {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <title>ms</title>
+  <g>
+    <path class="a" d="M292.2,2.6l85.4,144.8L292.2,292.2,206.8,148.4Zm0,289.6H458.9l83.3,141.6H375.5Zm0,0H125.5L42.2,433.8H208.9Z"/>
+    <circle class="b" cx="294" cy="294" r="294"/>
+  </g>
+</svg>
