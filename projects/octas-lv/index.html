@@ -13,7 +13,7 @@
         Bootstrap Reboot v4.3.1 (https://getbootstrap.com/)
         Bootstrap Grid v4.3.1 (https://getbootstrap.com/)
     -->
-    <link rel="stylesheet" href="css/main.css?v=001">
+    <link rel="stylesheet" href="css/main.css?v=002">
     <title>O! octas</title>
 </head>
 <body>
@@ -23,13 +23,47 @@
 
         <!-- MOBILE -->
         
-        <div class="d-lg-none">
+        <div class="d-lg-none ovf-hidden">
             <div class="navm">
-                <div class="container">
+                <div class="container navm-container">
                     <a class="navm-logo" href="">O! octas.lv</a>
-                    <span class="navm-btn"><i class="i-nav"></i></span>
+                    <!-- <span class="navm-btn-open" data-slide-open="#navm-content-1"><i class="i-nav"></i></span> -->
+                    <span class="navm-toggle" data-mnav="#navm-content-1"></span>
                 </div><!-- /.container -->
             </div><!-- /.navm -->
+            <div class="navm-content" id="navm-content-1">
+                <div class="container navm-container">
+                    <div class="navm-divider"></div>
+                    <a class="snav-ln" href="">ПО-РУССКИ</a>
+                    <div class="navm-divider"></div>
+                    <nav class="navm-nav">
+                        <a class="navm-ln" href="">Polisu Banka</a>
+                        <a class="navm-ln active" href="">Blogs</a>
+                        <a class="navm-ln" href="">Indexo</a>
+                        <a class="navm-ln" href="">salīdzināšana</a>
+                    </nav>
+                    <div class="block">
+                        <div class="row">
+                            <div class="col-12 col-sm-7 col-md-6">
+                                <a class="btn navm-button" href="">
+                                    <img class="" src="img/csdd-white.png">
+                                    <span class="ml-2">PĒRC OCTA<br>CSDD</span>
+                                </a>
+                            </div><!-- /.col -->
+                            <div class="col-12"></div>
+                            <div class="col-12 col-sm-7 col-md-6">
+                                <a class="phone navm-phone" href="tel:+37126666886">
+                                    <span class="phone-icon"><i class="i-phone"></i></span>
+                                    <span class="phone-desc">
+                                        <span class="phone-num">+371 26-66-68-86</span>
+                                        <span class="phone-txt">Diennakts konsultācijas</span>
+                                    </span>
+                                </a>
+                            </div><!-- /.col -->
+                        </div><!-- /.row -->
+                    </div><!-- /.block -->
+                </div><!-- /.container -->
+            </div><!-- /.navm-content -->
         </div>
         
         <!-- / MOBILE -->
@@ -438,6 +472,6 @@
     main.js включает в себя
     jQuery v3.4.1
 -->
-<script src="js/main.js?v=001"></script>
+<script src="js/main.js?v=002"></script>
 </body>
 </html>
