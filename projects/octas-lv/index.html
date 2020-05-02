@@ -13,7 +13,7 @@
         Bootstrap Reboot v4.3.1 (https://getbootstrap.com/)
         Bootstrap Grid v4.3.1 (https://getbootstrap.com/)
     -->
-    <link rel="stylesheet" href="css/main.css?v=003">
+    <link rel="stylesheet" href="css/main.css?v=005">
     <title>O! octas</title>
 </head>
 <body>
@@ -37,16 +37,24 @@
                     <a class="snav-ln" href="">ПО-РУССКИ</a>
                     <div class="navm-divider"></div>
                     <nav class="navm-nav">
-                        <a class="navm-ln" href="">Polisu Banka</a>
-                        <a class="navm-ln active" href="">Blogs</a>
-                        <a class="navm-ln" href="">Indexo</a>
-                        <a class="navm-ln" href="">salīdzināšana</a>
+                        <a class="navm-ln" href="">
+                            <span class="nav-ln-td">Polisu Banka</span>
+                        </a>
+                        <a class="navm-ln active" href="">
+                            <span class="nav-ln-td">Blogs</span>
+                        </a>
+                        <a class="navm-ln" href="">
+                            <span class="nav-ln-td">Indexo</span>
+                        </a>
+                        <a class="navm-ln" href="">
+                            <span class="nav-ln-td">salīdzināšana</span>
+                        </a>
                     </nav>
                     <div class="block">
                         <div class="row">
                             <div class="col-12 col-sm-7 col-md-6">
                                 <a class="btn navm-button" href="">
-                                    <img class="" src="img/csdd-white.png">
+                                    <img class="ml-auto" height="26" src="img/csdd-white.png">
                                     <span class="ml-2">PĒRC OCTA<br>CSDD</span>
                                     <span class="header-btn-circle">
                                         <i class="i-ar-r"></i>
@@ -83,19 +91,25 @@
         
                         <div class="col-auto mx-auto">
                             <nav class="nav">
-                                <a class="nav-ln" href="">Polisu Banka</a>
-                                <a class="nav-ln active" href="">Blogs</a>
-                                <a class="nav-ln" href="">Indexo</a>
-                                <a class="nav-ln" href="">salīdzināšana</a>
+                                <a class="nav-ln" href="">
+                                    <span class="nav-ln-td">Polisu Banka</a></span>
+                                <a class="nav-ln active" href="">
+                                    <span class="nav-ln-td">Blogs</a></span>
+                                <a class="nav-ln" href="">
+                                    <span class="nav-ln-td">Indexo</a></span>
+                                <a class="nav-ln" href="">
+                                    <span class="nav-ln-td">salīdzināšana</a></span>
                             </nav>
                         </div><!-- /.col -->
         
                         <div class="col-auto">
-                            <a class="snav-ln" href="">ПО-РУССКИ</a>
+                            <a class="snav-ln" href="">
+                                <span class="nav-ln-td">ПО-РУССКИ</span>
+                            </a>
                         </div><!-- /.col -->
                         <div class="col-auto">
                             <a class="btn header-btn" href="">
-                                <img class="" src="img/csdd-white.png">
+                                <img class="" height="26" src="img/csdd-white.png">
                                 <span class="mx-3">PĒRC OCTA<br>CSDD</span>
                                 <span class="header-btn-circle">
                                     <i class="i-ar-r"></i>
@@ -123,14 +137,23 @@
                                 <i class="icons-aa i-circle-stars"></i>
                                 <i class="icons-ab i-lv"></i>
                             </span>
-                            <input class="input" type="text" name="" placeholder="Auto reģ. numurs">
+                            <div class="input-placeholder-group">
+                                <span class="input-placeholder">Auto reģ. numurs</span>
+                                <input class="input" type="text" name="">
+                            </div>
                         </div>
                         <div class="input-group">
-                            <input class="input" type="text" name="" placeholder="Auto reģ. numurs">
+                            <div class="input-placeholder-group">
+                                <span class="input-placeholder">Auto reģ. numurs</span>
+                                <input class="input" type="text" name="">
+                            </div>
                         </div>
                         <button class="btn btn-green" type="submit">
                             <span class="d-md-none">Rēķināt</span>
                             <span class="d-none d-md-block">
+                                <i class="i-ar-r"></i>
+                            </span>
+                            <span class="form-btn-circle d-md-none">
                                 <i class="i-ar-r"></i>
                             </span>
                         </button>
@@ -370,10 +393,14 @@
             <div class="col-12 col-md-6 col-lg offset-xl-2">
                 <div class="row">
                     <div class="col-12 col-lg-auto">
-                        <a class="footer-nav-ln" href="">Biezak uzdotie jautajumi</a>
+                        <a class="footer-nav-ln" href="">
+                            <span class="footer-nav-td">Biezak uzdotie jautajumi</span>
+                        </a>
                     </div><!-- /.col -->
                     <div class="col-12 col-lg-auto">
-                        <a class="footer-nav-ln" href="">Kontakti</a>
+                        <a class="footer-nav-ln" href="">
+                            <span class="footer-nav-td">Kontakti</span>
+                        </a>
                     </div><!-- /.col -->
                 </div><!-- /.row -->
             </div><!-- /.col -->
@@ -478,6 +505,6 @@
     main.js включает в себя
     jQuery v3.4.1
 -->
-<script src="js/main.js?v=003"></script>
+<script src="js/main.js?v=005"></script>
 </body>
 </html>
