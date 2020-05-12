@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 586.4 561.5">
+  <defs>
+    <style>
+      .a {
+        fill: url(#a);
+      }
+    </style>
+    <linearGradient id="a" x1="293.21" y1="561.48" x2="293.21" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8081ff"/>
+      <stop offset="1" stop-color="#69ccff"/>
+    </linearGradient>
+  </defs>
+  <title>bg-img</title>
+  <path class="a" d="M586.4,337.6c0,147.2-129.9,223.9-292.3,223.9S0,442.1,0,294.9,91.9,0,254.4,0c99.4,0,185.9,71.4,250.7,159.2C546.2,214.8,586.4,280.5,586.4,337.6Z"/>
+</svg>
