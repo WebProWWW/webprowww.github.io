@@ -7,13 +7,8 @@
     <meta name="format-detection" content="address=no">
     <meta name="format-detection" content="email=no">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
-    <!--
-        main.css включает в себя
-        Bootstrap Reboot v4.5.0 (https://getbootstrap.com/)
-        Bootstrap Grid v4.5.0 (https://getbootstrap.com/)
-    -->
-    <link rel="stylesheet" href="css/main.css?v=2">
-    <title>Банкрот Консалт - Маргарита</title>
+    <link rel="stylesheet" href="css/main.css?v=3">
+    <title>Банкрот Консалт</title>
 </head>
 <body>
 
@@ -67,55 +62,31 @@
     <div class="container">
         <h2 class="title center">Сервис подбора всех арбитражных и финансовых управляющих&nbsp;РФ</h2>
         <h3 class="title-desc">ТОП рейтинга арбитражных и финансовых управляющих на сегодня</h3>
-        <div class="uslider-wrapper js-slider">
-            <div class="uslider-controll js-slider-controll">
-                <div class="uslider-btn prev"><img height="36" src="img/ar-l.svg"></div>
-                <div class="uslider-btn next"><img height="36" src="img/ar-r.svg"></div>
+        <div class="uslider js-uslider" data-content="#js-uslider-content">
+            <div>
+                <div class="uslider-item">
+                    <h3 class="uslider-title">Маргарита <br> Холостова</h3>
+                    <img class="uslider-img" width="546" height="783" src="img/u-1.png">
+                </div>
             </div>
-            <div class="uslider js-slider-items" data-controll="#js-slider-controll-a">
-                <div class="uslider-slide">
-                    <div class="uslider-item active" data-content="#content-1">
-                        <h3 class="uslider-title">Маргарита <br> Холостова</h3>
-                        <img class="uslider-img" width="534" height="909" src="img/img-3.png">
-                    </div>
+            <div>
+                <div class="uslider-item">
+                    <h3 class="uslider-title">Константин <br> Милантьев</h3>
+                    <img class="uslider-img" width="546" height="783" src="img/u-2.png">
                 </div>
-                <div class="uslider-slide">
-                    <div class="uslider-item" data-content="#content-2">
-                        <h3 class="uslider-title">Константин <br> Милантьев</h3>
-                        <img class="uslider-img" width="534" height="909" src="img/img-3.png">
-                    </div>
+            </div>
+            <div>
+                <div class="uslider-item">
+                    <h3 class="uslider-title">Алексей <br> Жумаев</h3>
+                    <img class="uslider-img" width="546" height="783" src="img/u-3.png">
                 </div>
-                <div class="uslider-slide">
-                    <div class="uslider-item" data-content="#content-3">
-                        <h3 class="uslider-title">Дарья <br> Галактионова</h3>
-                        <img class="uslider-img" width="534" height="909" src="img/img-3.png">
-                    </div>
-                </div>
-                <div class="uslider-slide">
-                    <div class="uslider-item" data-content="#content-4">
-                        <h3 class="uslider-title">Алексей <br> Жумаев</h3>
-                        <img class="uslider-img" width="534" height="909" src="img/img-3.png">
-                    </div>
-                </div>
-                <div class="uslider-slide">
-                    <div class="uslider-item" data-content="#content-1">
-                        <h3 class="uslider-title">Маргарита <br> Холостова</h3>
-                        <img class="uslider-img" width="534" height="909" src="img/img-3.png">
-                    </div>
-                </div>
-                <div class="uslider-slide">
-                    <div class="uslider-item" data-content="#content-2">
-                        <h3 class="uslider-title">Константин <br> Милантьев</h3>
-                        <img class="uslider-img" width="534" height="909" src="img/img-3.png">
-                    </div>
-                </div>
-            </div><!-- .uslider -->
-        </div><!-- .uslider-wrapper -->
+            </div>
+        </div><!-- .uslider -->
     </div><!-- /.container -->
 </section><!-- /.section -->
 
-<div class="js-content-wrap">
-    <div class="content js-content active" id="content-1">
+<div id="js-uslider-content">
+    <div class="content active">
         <section class="section">
             <div class="container">
                 <h2 class="title center">Финансовый управляющий Маргарита&nbsp;Холостова</h2>
@@ -170,14 +141,14 @@
                                     Финансовый управляющий
                                     <br>
                                     <img class="mr-1" height="23" src="img/book.svg" alt="">
-                                    <a data-fancybox data-src="#resume" href="javascript:;">Смотреть резюме</a>
+                                    <a data-fancybox data-src="#resume-1" href="javascript:;">Смотреть резюме</a>
                                 </small>
                             </p>
                         </div><!-- /.around -->
                     </div><!-- .col-12 -->
                     <div class="col-12 col-md-5 ml-auto">
                         <div class="img-wrapper">
-                            <img class="center-bottom-img img-a" width="418" height="709" src="img/img-3.png" alt="">
+                            <img class="center-bottom-img img-a" width="418" height="709" src="img/u-1.png" alt="">
                         </div>
                     </div><!-- .col -->
                 </div><!-- .row -->
@@ -269,7 +240,7 @@
             </div><!-- .container -->
         </section><!-- .section -->
     </div><!-- .content -->
-    <div class="content js-content" id="content-2">
+    <div class="content">
         <section class="section">
             <div class="container">
                 <h2 class="title center">Финансовый управляющий Константин&nbsp;Милантьев</h2>
@@ -282,7 +253,7 @@
                                         <img class="list-icon" height="40" src="img/icon-1.svg">
                                     </div><!-- .col -->
                                     <div class="col">
-                                        <h3 class="list-text">МГУ им. О. Е. Кутафина</h3>
+                                        <h3 class="list-text">МГУ им. М. В. Ломоносова <br> Российский экономический университет им.&nbsp;Г.В.&nbsp;Плеханова</h3>
                                     </div><!-- .col -->
                                 </div><!-- .row -->
                                 <div class="row align-items-center">
@@ -290,7 +261,7 @@
                                         <img class="list-icon" height="40" src="img/icon-2.svg">
                                     </div><!-- .col -->
                                     <div class="col">
-                                        <h3 class="list-text">Более 12 лет юридической практики</h3>
+                                        <h3 class="list-text">Более 11 лет юридической практики</h3>
                                     </div><!-- .col -->
                                 </div><!-- .row -->
                                 <div class="row align-items-center">
@@ -306,7 +277,7 @@
                                         <img class="list-icon" height="40" src="img/icon-4.svg">
                                     </div><!-- .col -->
                                     <div class="col">
-                                        <h3 class="list-text">8 лет опыта ведения дел о банкротстве</h3>
+                                        <h3 class="list-text">9 лет проведения процедур банкротства</h3>
                                     </div><!-- .col -->
                                 </div><!-- .row -->
                                 <div class="row align-items-center">
@@ -314,7 +285,7 @@
                                         <img class="list-icon" height="40" src="img/icon-5.svg">
                                     </div><!-- .col -->
                                     <div class="col">
-                                        <h3 class="list-text">Помогла списать долгов на сумму более&nbsp;310&nbsp;млн.</h3>
+                                        <h3 class="list-text">Помог списать долгов на сумму более&nbsp;850&nbsp;млн.</h3>
                                     </div><!-- .col -->
                                 </div><!-- .row -->
                             </div><!-- .list -->
@@ -324,14 +295,14 @@
                                     Финансовый управляющий
                                     <br>
                                     <img class="mr-1" height="23" src="img/book.svg" alt="">
-                                    <a data-fancybox data-src="#resume" href="javascript:;">Смотреть резюме</a>
+                                    <a data-fancybox data-src="#resume-2" href="javascript:;">Смотреть резюме</a>
                                 </small>
                             </p>
                         </div><!-- /.around -->
                     </div><!-- .col-12 -->
                     <div class="col-12 col-md-5 ml-auto">
                         <div class="img-wrapper">
-                            <img class="center-bottom-img img-a" width="418" height="709" src="img/img-3.png" alt="">
+                            <img class="center-bottom-img img-a" width="546" height="783" src="img/u-2.png" alt="">
                         </div>
                     </div><!-- .col -->
                 </div><!-- .row -->
@@ -344,18 +315,18 @@
                 <div class="row">
                     <div class="col-12 col-md-5 col-lg-5 order-2 order-md-1">
                         <div class="img-wrapper">
-                            <img class="center-bottom-img img-b" width="" height="" src="img/img-2.png" alt="">
+                            <img class="center-bottom-img img-b" width="" height="" src="img/img-6.png" alt="">
                         </div>
                     </div><!-- .col -->
                     <div class="col-12 col-md-7 col-lg order-1 order-md-2 align-self-center">
-                        <h3 class="title-sm">Андрей Вячеславович</h3>
-                        <p class="text bold">Учитель</p>
-                        <p class="text"><span class="bold">Был долг:</span> <span class="gray wsno">2 409 297 рублей 68 копеек</span></p>
+                        <h3 class="title-sm">Наталья Александровна</h3>
+                        <p class="text bold">Дизайнер</p>
+                        <p class="text"><span class="bold">Был долг:</span> <span class="gray wsno">851 322 рублей 74 копейки</span></p>
                         <p class="text"><span class="bold">Текущий долг:</span> <span class="gray wsno">0 рублей</span></p>
                         <p class="text bold">Наш клиент:</p>
-                        <p class="text">Сначала не верил в то, что государство дает возможность списать долг полностью, если он более 300 000 рублей.</p>
-                        <p class="text">Но оказалось можно. С помощью закона ФЗ 127.</p>
-                        <p class="text">Правда пришлось подождать 8 месяцев, пока пройдет процедура списания задолженности.</p>
+                        <p class="text">Моими кредиторами были несколько микрофинансовых организаций, которые ежедневно оказывали давление: звонили, писали в соц. сети, периодически приходили домой.</p>
+                        <p class="text">Это было очень тяжело в эмоциональном плане, а высокие проценты довели задолженность до огромного размера, казалось ее погасить невозможно.</p>
+                        <p class="text">Банкротство позволило мне начать свою финансовую жизнь с чистого листа. Причем никто из этих организаций в суд не явился, а это и не требовалось – все долги перед ними официально списаны.</p>
                     </div><!-- .col -->
                 </div><!-- .row -->
             </div><!-- .container -->
@@ -363,41 +334,41 @@
         
         <section class="section">
             <div class="container">
-                <h2 class="title center">Дело Ионова Андрея Вячеславовича о списании потребительского кредита и микрозайма на сумму 2&nbsp;409&nbsp;297&nbsp;рублей</h2>
+                <h2 class="title center">Дело Румянцевой Натальи Александровны о списании потребительского кредита и микрозайма на сумму 851&nbsp;322&nbsp;рублей</h2>
                 <div class="wall">
                     <div class="row no-gutters">
                         <div class="col-12 col-md-6">
                             <div class="wall-left">
-                                <p class="wall-text center">А40-68748/19</p>
-                                <div class="px-3 px-lg-5"><img class="cimg" src="img/delo.jpg" alt=""></div>
-                                <a class="btn-circle" data-fancybox data-type="iframe" data-src="A40-68748-2019.pdf" href="javascript:;">Посмотреть дело</a>
-                                <p class="wall-text center red mt-auto">Сумма долга: <br> <span class="through">2 409 297 руб.</span></p>
+                                <p class="wall-text center">А40-52617/19</p>
+                                <div class="px-3 px-lg-5"><img class="cimg" src="img/delo-2.jpg" alt=""></div>
+                                <a class="btn-circle" data-fancybox data-type="iframe" data-src="A40-52617-2019.pdf" href="javascript:;">Посмотреть дело</a>
+                                <p class="wall-text center red mt-auto">Сумма долга: <br> <span class="through">851 322 руб.</span></p>
                             </div><!-- .wall-left -->
                         </div><!-- .col -->
                         <div class="col-12 col-md-6">
                             <div class="wall-right">
                                 <p class="wall-text">Москва</p>
-                                <p class="wall-text gold">Завершено: <br> 23.12.2019</p>
+                                <p class="wall-text gold">Завершено: <br> 25.11.2019</p>
                                 <p class="wall-text">Этапы:</p>
                                 <p class="wall-text">
                                     <span class="d-flex align-items-center">
                                         <span class="mr-2"><img class="" width="" height="36" src="img/time.svg" alt=""></span>
-                                        <span>06.02.2019 <br> Поступило в работу</span>
+                                        <span>01.03.2019 <br> Поступило в работу</span>
                                     </span>
                                 </p>
                                 <p class="wall-text">
                                     <span class="d-flex align-items-center">
                                         <span class="mr-2"><img class="" width="" height="36" src="img/time.svg" alt=""></span>
-                                        <span>21.03.2019 <br> Подача заявления</span>
+                                        <span>14.03.2019 <br> Подача заявления</span>
                                     </span>
                                 </p>
                                 <p class="wall-text">
                                     <span class="d-flex align-items-center">
                                         <span class="mr-2"><img class="" width="" height="36" src="img/time.svg" alt=""></span>
-                                        <span>22.05.2019 <br> Признан банкротом</span>
+                                        <span>29.05.2019 <br> Признана банкротом</span>
                                     </span>
                                 </p>
-                                <p class="wall-text green mt-auto">Списано долга: <br> 2 409 297 руб.</p>
+                                <p class="wall-text green mt-auto">Списано долга: <br> 851 322 руб.</p>
                             </div><!-- .wall-right -->
                         </div><!-- .col -->
                     </div><!-- .row -->
@@ -405,28 +376,11 @@
             </div><!-- .container -->
         </section><!-- .section -->
         
-        <section class="section bg-gray">
-            <div class="container">
-                <h2 class="title center">Другие дела Константина Милантьева</h2>
-                <div class="row">
-                    <div class="col-12 col-md-6">
-                        <div class="video-16-9">
-                            <iframe class="video-frame" src="https://www.youtube.com/embed/6NLTyB-eCiY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div><!-- .video -->
-                    </div><!-- .col -->
-                    <div class="col-12 col-md-6">
-                        <div class="video-16-9">
-                            <iframe class="video-frame" src="https://www.youtube.com/embed/8QoZxC6wU2M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div><!-- .video -->
-                    </div><!-- .col -->
-                </div><!-- .row -->
-            </div><!-- .container -->
-        </section><!-- .section -->
     </div><!-- .content -->
-    <div class="content js-content" id="content-3">
+    <div class="content">
         <section class="section">
             <div class="container">
-                <h2 class="title center">Финансовый управляющий Дарья&nbsp;Галактионова</h2>
+                <h2 class="title center">Финансовый управляющий Жумаев&nbsp;Алексей</h2>
                 <div class="row">
                     <div class="col-12 col-md-7 col-lg align-self-center align-self-lg-stretch">
                         <div class="around">
@@ -436,7 +390,7 @@
                                         <img class="list-icon" height="40" src="img/icon-1.svg">
                                     </div><!-- .col -->
                                     <div class="col">
-                                        <h3 class="list-text">МГУ им. О. Е. Кутафина</h3>
+                                        <h3 class="list-text">МГУ имени М. В. <br> Ломоносова Финансовый университет при правительстве&nbsp;РФ</h3>
                                     </div><!-- .col -->
                                 </div><!-- .row -->
                                 <div class="row align-items-center">
@@ -473,19 +427,19 @@
                                 </div><!-- .row -->
                             </div><!-- .list -->
                             <p class="urist">
-                                <span class="urist-name">Дарья Галактионова</span>
+                                <span class="urist-name">Жумаев Алексей</span>
                                 <small class="urist-desc">
                                     Финансовый управляющий
                                     <br>
                                     <img class="mr-1" height="23" src="img/book.svg" alt="">
-                                    <a data-fancybox data-src="#resume" href="javascript:;">Смотреть резюме</a>
+                                    <a data-fancybox data-src="#resume-3" href="javascript:;">Смотреть резюме</a>
                                 </small>
                             </p>
                         </div><!-- /.around -->
                     </div><!-- .col-12 -->
                     <div class="col-12 col-md-5 ml-auto">
                         <div class="img-wrapper">
-                            <img class="center-bottom-img img-a" width="418" height="709" src="img/img-3.png" alt="">
+                            <img class="center-bottom-img img-a" width="546" height="783" src="img/u-3.png" alt="">
                         </div>
                     </div><!-- .col -->
                 </div><!-- .row -->
@@ -494,22 +448,22 @@
         
         <section class="section bg-gray">
             <div class="container">
-                <h3 class="title center">Детальный кейс Дарьи Галактионовой</h3>
+                <h3 class="title center">Детальный кейс Жумаева Алексея</h3>
                 <div class="row">
                     <div class="col-12 col-md-5 col-lg-5 order-2 order-md-1">
                         <div class="img-wrapper">
-                            <img class="center-bottom-img img-b" width="" height="" src="img/img-2.png" alt="">
+                            <img class="center-bottom-img img-b" width="" height="" src="img/img-5.png" alt="">
                         </div>
                     </div><!-- .col -->
                     <div class="col-12 col-md-7 col-lg order-1 order-md-2 align-self-center">
-                        <h3 class="title-sm">Андрей Вячеславович</h3>
-                        <p class="text bold">Учитель</p>
-                        <p class="text"><span class="bold">Был долг:</span> <span class="gray wsno">2 409 297 рублей 68 копеек</span></p>
+                        <h3 class="title-sm">Владимир Валерьевич</h3>
+                        <p class="text bold">Водитель</p>
+                        <p class="text"><span class="bold">Был долг:</span> <span class="gray wsno">5 590 814 рублей 45 копеек</span></p>
                         <p class="text"><span class="bold">Текущий долг:</span> <span class="gray wsno">0 рублей</span></p>
                         <p class="text bold">Наш клиент:</p>
-                        <p class="text">Сначала не верил в то, что государство дает возможность списать долг полностью, если он более 300 000 рублей.</p>
-                        <p class="text">Но оказалось можно. С помощью закона ФЗ 127.</p>
-                        <p class="text">Правда пришлось подождать 8 месяцев, пока пройдет процедура списания задолженности.</p>
+                        <p class="text">Потерял высокооплачиваемую работу, стал получать в три раза меньше денег.</p>
+                        <p class="text">Погашение взятых ранее кредитов стало просто невозможным.</p>
+                        <p class="text">Один из друзей уже прошедших такую процедуру подсказал, такое решение проблемы. В итоге мой долг списан вплоть до копеек.</p>
                     </div><!-- .col -->
                 </div><!-- .row -->
             </div><!-- .container -->
@@ -517,221 +471,49 @@
         
         <section class="section">
             <div class="container">
-                <h2 class="title center">Дело Ионова Андрея Вячеславовича о списании потребительского кредита и микрозайма на сумму 2&nbsp;409&nbsp;297&nbsp;рублей</h2>
+                <h2 class="title center">Дело Протасевича Владимира Валерьевича о списании потребительского кредита и микрозайма на сумму 5&nbsp;590&nbsp;814&nbsp;рублей</h2>
                 <div class="wall">
                     <div class="row no-gutters">
                         <div class="col-12 col-md-6">
                             <div class="wall-left">
-                                <p class="wall-text center">А40-68748/19</p>
-                                <div class="px-3 px-lg-5"><img class="cimg" src="img/delo.jpg" alt=""></div>
-                                <a class="btn-circle" data-fancybox data-type="iframe" data-src="A40-68748-2019.pdf" href="javascript:;">Посмотреть дело</a>
-                                <p class="wall-text center red mt-auto">Сумма долга: <br> <span class="through">2 409 297 руб.</span></p>
+                                <p class="wall-text center">А41-51186/19</p>
+                                <div class="px-3 px-lg-5"><img class="cimg" src="img/delo-3.jpg" alt=""></div>
+                                <a class="btn-circle" data-fancybox data-type="iframe" data-src="A41-51186-2019.pdf" href="javascript:;">Посмотреть дело</a>
+                                <p class="wall-text center red mt-auto">Сумма долга: <br> <span class="through">5 590 841 руб.</span></p>
                             </div><!-- .wall-left -->
                         </div><!-- .col -->
                         <div class="col-12 col-md-6">
                             <div class="wall-right">
-                                <p class="wall-text">Москва</p>
-                                <p class="wall-text gold">Завершено: <br> 23.12.2019</p>
+                                <p class="wall-text">Московская область</p>
+                                <p class="wall-text gold">Завершено: <br> 05.02.2020</p>
                                 <p class="wall-text">Этапы:</p>
                                 <p class="wall-text">
                                     <span class="d-flex align-items-center">
                                         <span class="mr-2"><img class="" width="" height="36" src="img/time.svg" alt=""></span>
-                                        <span>06.02.2019 <br> Поступило в работу</span>
+                                        <span>03.06.2019 <br> Поступило в работу</span>
                                     </span>
                                 </p>
                                 <p class="wall-text">
                                     <span class="d-flex align-items-center">
                                         <span class="mr-2"><img class="" width="" height="36" src="img/time.svg" alt=""></span>
-                                        <span>21.03.2019 <br> Подача заявления</span>
+                                        <span>17.06.2019 <br> Подача заявления</span>
                                     </span>
                                 </p>
                                 <p class="wall-text">
                                     <span class="d-flex align-items-center">
                                         <span class="mr-2"><img class="" width="" height="36" src="img/time.svg" alt=""></span>
-                                        <span>22.05.2019 <br> Признан банкротом</span>
+                                        <span>22.07.2019 <br> Признан банкротом</span>
                                     </span>
                                 </p>
-                                <p class="wall-text green mt-auto">Списано долга: <br> 2 409 297 руб.</p>
+                                <p class="wall-text green mt-auto">Списано долга: <br> 5 590 841 руб.</p>
                             </div><!-- .wall-right -->
                         </div><!-- .col -->
                     </div><!-- .row -->
                 </div><!-- .wall -->
             </div><!-- .container -->
         </section><!-- .section -->
-        
-        <section class="section bg-gray">
-            <div class="container">
-                <h2 class="title center">Другие дела Дарьи Галактионовой</h2>
-                <div class="row">
-                    <div class="col-12 col-md-6">
-                        <div class="video-16-9">
-                            <iframe class="video-frame" src="https://www.youtube.com/embed/6NLTyB-eCiY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div><!-- .video -->
-                    </div><!-- .col -->
-                    <div class="col-12 col-md-6">
-                        <div class="video-16-9">
-                            <iframe class="video-frame" src="https://www.youtube.com/embed/8QoZxC6wU2M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div><!-- .video -->
-                    </div><!-- .col -->
-                </div><!-- .row -->
-            </div><!-- .container -->
-        </section><!-- .section -->
     </div><!-- .content -->
-    <div class="content js-content" id="content-4">
-        <section class="section">
-            <div class="container">
-                <h2 class="title center">Финансовый управляющий Алексей&nbsp;Жумаев</h2>
-                <div class="row">
-                    <div class="col-12 col-md-7 col-lg align-self-center align-self-lg-stretch">
-                        <div class="around">
-                            <div class="list mb-3">
-                                <div class="row align-items-center">
-                                    <div class="col-2">
-                                        <img class="list-icon" height="40" src="img/icon-1.svg">
-                                    </div><!-- .col -->
-                                    <div class="col">
-                                        <h3 class="list-text">МГУ им. О. Е. Кутафина</h3>
-                                    </div><!-- .col -->
-                                </div><!-- .row -->
-                                <div class="row align-items-center">
-                                    <div class="col-2">
-                                        <img class="list-icon" height="40" src="img/icon-2.svg">
-                                    </div><!-- .col -->
-                                    <div class="col">
-                                        <h3 class="list-text">Более 12 лет юридической практики</h3>
-                                    </div><!-- .col -->
-                                </div><!-- .row -->
-                                <div class="row align-items-center">
-                                    <div class="col-2">
-                                        <img class="list-icon" height="40" src="img/icon-3.svg">
-                                    </div><!-- .col -->
-                                    <div class="col">
-                                        <h3 class="list-text">Спикер крупнейших отраслевых конференций</h3>
-                                    </div><!-- .col -->
-                                </div><!-- .row -->
-                                <div class="row align-items-center">
-                                    <div class="col-2">
-                                        <img class="list-icon" height="40" src="img/icon-4.svg">
-                                    </div><!-- .col -->
-                                    <div class="col">
-                                        <h3 class="list-text">8 лет опыта ведения дел о банкротстве</h3>
-                                    </div><!-- .col -->
-                                </div><!-- .row -->
-                                <div class="row align-items-center">
-                                    <div class="col-2">
-                                        <img class="list-icon" height="40" src="img/icon-5.svg">
-                                    </div><!-- .col -->
-                                    <div class="col">
-                                        <h3 class="list-text">Помогла списать долгов на сумму более&nbsp;310&nbsp;млн.</h3>
-                                    </div><!-- .col -->
-                                </div><!-- .row -->
-                            </div><!-- .list -->
-                            <p class="urist">
-                                <span class="urist-name">Алексей Жумаев</span>
-                                <small class="urist-desc">
-                                    Финансовый управляющий
-                                    <br>
-                                    <img class="mr-1" height="23" src="img/book.svg" alt="">
-                                    <a data-fancybox data-src="#resume" href="javascript:;">Смотреть резюме</a>
-                                </small>
-                            </p>
-                        </div><!-- /.around -->
-                    </div><!-- .col-12 -->
-                    <div class="col-12 col-md-5 ml-auto">
-                        <div class="img-wrapper">
-                            <img class="center-bottom-img img-a" width="418" height="709" src="img/img-3.png" alt="">
-                        </div>
-                    </div><!-- .col -->
-                </div><!-- .row -->
-            </div><!-- .container -->
-        </section><!-- .section -->
-        
-        <section class="section bg-gray">
-            <div class="container">
-                <h3 class="title center">Детальный кейс Алексея Жумаева</h3>
-                <div class="row">
-                    <div class="col-12 col-md-5 col-lg-5 order-2 order-md-1">
-                        <div class="img-wrapper">
-                            <img class="center-bottom-img img-b" width="" height="" src="img/img-2.png" alt="">
-                        </div>
-                    </div><!-- .col -->
-                    <div class="col-12 col-md-7 col-lg order-1 order-md-2 align-self-center">
-                        <h3 class="title-sm">Андрей Вячеславович</h3>
-                        <p class="text bold">Учитель</p>
-                        <p class="text"><span class="bold">Был долг:</span> <span class="gray wsno">2 409 297 рублей 68 копеек</span></p>
-                        <p class="text"><span class="bold">Текущий долг:</span> <span class="gray wsno">0 рублей</span></p>
-                        <p class="text bold">Наш клиент:</p>
-                        <p class="text">Сначала не верил в то, что государство дает возможность списать долг полностью, если он более 300 000 рублей.</p>
-                        <p class="text">Но оказалось можно. С помощью закона ФЗ 127.</p>
-                        <p class="text">Правда пришлось подождать 8 месяцев, пока пройдет процедура списания задолженности.</p>
-                    </div><!-- .col -->
-                </div><!-- .row -->
-            </div><!-- .container -->
-        </section><!-- .section -->
-        
-        <section class="section">
-            <div class="container">
-                <h2 class="title center">Дело Ионова Андрея Вячеславовича о списании потребительского кредита и микрозайма на сумму 2&nbsp;409&nbsp;297&nbsp;рублей</h2>
-                <div class="wall">
-                    <div class="row no-gutters">
-                        <div class="col-12 col-md-6">
-                            <div class="wall-left">
-                                <p class="wall-text center">А40-68748/19</p>
-                                <div class="px-3 px-lg-5"><img class="cimg" src="img/delo.jpg" alt=""></div>
-                                <a class="btn-circle" data-fancybox data-type="iframe" data-src="A40-68748-2019.pdf" href="javascript:;">Посмотреть дело</a>
-                                <p class="wall-text center red mt-auto">Сумма долга: <br> <span class="through">2 409 297 руб.</span></p>
-                            </div><!-- .wall-left -->
-                        </div><!-- .col -->
-                        <div class="col-12 col-md-6">
-                            <div class="wall-right">
-                                <p class="wall-text">Москва</p>
-                                <p class="wall-text gold">Завершено: <br> 23.12.2019</p>
-                                <p class="wall-text">Этапы:</p>
-                                <p class="wall-text">
-                                    <span class="d-flex align-items-center">
-                                        <span class="mr-2"><img class="" width="" height="36" src="img/time.svg" alt=""></span>
-                                        <span>06.02.2019 <br> Поступило в работу</span>
-                                    </span>
-                                </p>
-                                <p class="wall-text">
-                                    <span class="d-flex align-items-center">
-                                        <span class="mr-2"><img class="" width="" height="36" src="img/time.svg" alt=""></span>
-                                        <span>21.03.2019 <br> Подача заявления</span>
-                                    </span>
-                                </p>
-                                <p class="wall-text">
-                                    <span class="d-flex align-items-center">
-                                        <span class="mr-2"><img class="" width="" height="36" src="img/time.svg" alt=""></span>
-                                        <span>22.05.2019 <br> Признан банкротом</span>
-                                    </span>
-                                </p>
-                                <p class="wall-text green mt-auto">Списано долга: <br> 2 409 297 руб.</p>
-                            </div><!-- .wall-right -->
-                        </div><!-- .col -->
-                    </div><!-- .row -->
-                </div><!-- .wall -->
-            </div><!-- .container -->
-        </section><!-- .section -->
-        
-        <section class="section bg-gray">
-            <div class="container">
-                <h2 class="title center">Другие дела Алексея Жумаева</h2>
-                <div class="row">
-                    <div class="col-12 col-md-6">
-                        <div class="video-16-9">
-                            <iframe class="video-frame" src="https://www.youtube.com/embed/6NLTyB-eCiY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div><!-- .video -->
-                    </div><!-- .col -->
-                    <div class="col-12 col-md-6">
-                        <div class="video-16-9">
-                            <iframe class="video-frame" src="https://www.youtube.com/embed/8QoZxC6wU2M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div><!-- .video -->
-                    </div><!-- .col -->
-                </div><!-- .row -->
-            </div><!-- .container -->
-        </section><!-- .section -->
-    </div><!-- .content -->
-</div><!-- .js-content-wrap -->
+</div><!-- #js-uslider-content -->
 
 <section class="section">
     <div class="container">
@@ -804,8 +586,8 @@
         <p class="text-info">Я принимаю условия Пользовательского соглашения и даю свое согласие на обработку моих персональных данных в соответствии с <a data-fancybox data-src="#policy" href="javascript:;">Политикой конфиденциальности</a></p>
     </div><!-- .modal-sm -->
 
-    <!-- РЕЗЮМЕ -->
-    <div class="popup" id="resume">
+    <!-- РЕЗЮМЕ Маргарита -->
+    <div class="popup" id="resume-1">
         <h3 class="center">Холостова Маргарита Владимировна</h3>
         <p>
             В 2005 году с отличием закончила Московский государственный юридический университет имени О.Е. Кутафина.
@@ -814,7 +596,8 @@
             <br><br>
             Действующий статус арбитражного управляющего с 2016 года. Списано более 310 млн. рублей долгов. Завершено более 70 дел о банкротстве.
             <br><br>
-            <span class="bold">Примеры завершенных дел в картотеке арбитражных судов:</span><br>
+            <span class="bold">Примеры завершенных дел в картотеке арбитражных судов:</span>
+            <br>
             А41-88222/2016<br>
             А40-75999/2017<br>
             А41-20625/2017<br>
@@ -826,6 +609,68 @@
             <br><br>
             Является автором статей по вопросам банкротства и налогообложения, участвовала в разработке законопроектов, направленных на совершенствование законодательства о несостоятельности (банкротстве).
             <br><br>
+        </p>
+    </div><!-- /.popup -->
+
+    <!-- РЕЗЮМЕ Константин -->
+    <div class="popup" id="resume-2">
+        <h3 class="center">Милантьев Константин Константинович</h3>
+        <p>
+            <span class="bold">Образование:</span>
+            <br>
+            МГУ им. М. В. Ломоносова («Юриспруденция») Российский экономический университет им. Г.В. Плеханова («Финансы и кредит»)
+            <br><br>
+            <span class="bold">Карьера:</span>
+            <br>
+            Общая юридическая практика с 2009 года. Действующий статус арбитражного управляющего с 2015 года. Списано более 850 млн. рублей долгов. Завершено более 530 дел о банкротстве.
+            <br><br>
+            Действующий статус арбитражного управляющего с 2016 года. Списано более 310 млн. рублей долгов. Завершено более 70 дел о банкротстве.
+            <br><br>
+            <span class="bold">Примеры завершенных дел в картотеке арбитражных судов:</span>
+            <br>
+            А41-14650/2017<br>
+            А41-3995/2016<br>
+            А41-53945/2016<br>
+            А40-128031/2016<br>
+            А40-251668/2015<br>
+            <br>
+            Константин имеет опыт работы в Налоговых органах, Агентстве по страхованию вкладов, крупнейших российских и зарубежных банках.
+            <br><br>
+            В разное время Константин представлял интересы кредиторов крупнейших застройщиков Московской области. Содействовал возврату ключевых активов, реализации мер защиты активов. Обладает успешной практикой по защите прав дольщиков.
+            <br><br>
+            В течение 7 лет принимал активное участие в федеральных отраслевых конференциях и семинарах, посвященных современным правовым тенденциям в России. Имеет ряд научно-практических публикаций в профессиональных изданиях.
+        </p>
+    </div><!-- /.popup -->
+
+    <!-- РЕЗЮМЕ Алексей -->
+    <div class="popup" id="resume-3">
+        <h3 class="center">Жумаев Алексей Сергеевич</h3>
+        <p>
+            <span class="bold">Образование:</span>
+            <br>
+            МГУ им. М. В. Ломоносова («Юриспруденция») Российский экономический университет им. Г.В. Плеханова («Финансы и кредит»)
+            <span class="bold">Карьера:</span>
+            <br>
+            Общая юридическая практика с 2009 года. Действующий статус арбитражного управляющего с 2015 года. Списано более 850 млн. рублей долгов. Завершено более 530 дел о банкротстве.
+            <br><br>
+            <span class="bold">Примеры завершенных дел в картотеке арбитражных судов:</span>
+            <br>
+            А41-14650/2017<br>
+            А41-3995/2016<br>
+            А41-53945/2016<br>
+            А40-128031/2016<br>
+            А40-251668/2015<br>
+            <br>
+            Константин имеет опыт работы в Налоговых органах, Агентстве по страхованию вкладов,
+            крупнейших российских и зарубежных банках.
+            <br><br>
+            В разное время Константин представлял интересы кредиторов крупнейших застройщиков
+            Московской области. Содействовал возврату ключевых активов, реализации мер защиты
+            активов. Обладает успешной практикой по защите прав дольщиков.
+            <br><br>
+            В течение 7 лет принимал активное участие в федеральных отраслевых конференциях и
+            семинарах, посвященных современным правовым тенденциям в России. Имеет ряд
+            научно-практических публикаций в профессиональных изданиях.
         </p>
     </div><!-- /.popup -->
 
@@ -871,10 +716,6 @@
 
 </div><!-- .d-none -->
 
-<!--
-    main.js включает в себя
-    jQuery v3.4.1
--->
-<script src="js/main.js?v=2"></script>
+<script src="js/main.js?v=3"></script>
 </body>
 </html>
