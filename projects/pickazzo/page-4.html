@@ -7,7 +7,7 @@
     <meta name="format-detection" content="address=no">
     <meta name="format-detection" content="email=no">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
-    <link rel="stylesheet" href="css/main.css?v=006">
+    <link rel="stylesheet" href="css/main.css?v=007">
     <title>Pickazzo</title>
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://webprowww.github.io/projects/pickazzo/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://webprowww.github.io/projects/pickazzo/apple-touch-icon-114x114.png">
@@ -29,6 +29,12 @@
                 <img class="logo" src="img/logo.svg">
             </div><!-- /.col -->
             <div class="col-auto ml-auto">
+                <div class="ucart">
+                    <i class="i-cart"></i>
+                    <span class="ucart-count">33</span>
+                </div>
+            </div><!-- /.col -->
+            <div class="col-auto">
                 <div class="d-flex align-items-center">
                     <div class="dropdown">
                         <div class="dropdown-btn">
@@ -57,12 +63,10 @@
 <div class="navbar" id="navbar-1">
     <div class="navbar-logo">
         <img class="navbar-logo-img" src="img/logo.svg">
-        <p class="navbar-logo-txt">
-            Первая галлерея<br>нейрохудожников
-        </p>
+        <p class="navbar-logo-txt">Первая галлерея<br>нейрохудожников</p>
     </div>
     <nav class="nav">
-        <a class="nav-ln" href="index.html">О проекте</a>
+        <a class="nav-ln active" href="index.html">О проекте</a>
         <span class="w-100"></span>
         <a class="nav-ln" href="page-5.html">Коллекции</a>
         <span class="w-100"></span>
@@ -70,7 +74,7 @@
         <span class="w-100"></span>
         <a class="nav-ln" href="page-1.html">Художники</a>
         <span class="w-100"></span>
-        <a class="nav-ln active" href="page-3.html">Продано</a>
+        <a class="btn btn-sm btn-tred nav-btn" href="page-3.html">Продано</a>
         <span class="w-100"></span>
         <a class="nav-ln" href="page-7.html">Подлинность</a>
         <span class="w-100"></span>
@@ -78,9 +82,9 @@
         <span class="w-100"></span>
         <a class="nav-ln" href="">Контакты</a>
         <span class="w-100"></span>
-        <a class="nav-btn" href="">Войти</a>
+        <a class="btn btn-sm btn-blue nav-btn" href="">Войти</a>
     </nav>
-    <p class="text center italic mt-auto">
+    <p class="center italic mt-auto">
         Все картины созданы нейросетями в единственном экземпляре и никогда не будут повторены!
     </p>
     <nav class="soc mt-auto">
@@ -112,9 +116,15 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <h1 class="page-title">Trust</h1>
+                <h1>Trust</h1>
             </div><!-- /.col -->
             <div class="col-auto ml-auto d-none d-xl-block">
+                <div class="ucart">
+                    <i class="i-cart"></i>
+                    <span class="ucart-count">33</span>
+                </div>
+            </div><!-- /.col -->
+            <div class="col-auto d-none d-xl-block">
                 <div class="d-flex align-items-center">
                     <div class="dropdown">
                         <div class="dropdown-btn">
@@ -190,7 +200,7 @@
                 </div><!-- /.gslider -->
             </div><!-- /.col -->
             <div class="col-12 col-md-5 ml-auto">
-                <p class="text">
+                <p>
                     <span class="bold">Художник:</span> Cloud Mone
                     <br>
                     <span class="bold">Картины:</span> Trust
@@ -201,23 +211,27 @@
                     <br>
                     <span class="bold">Размер:</span> 4000х4000 px
                 </p>
-                <p class="text">
+                <p class="bold mb-1">Описание:</p>
+                <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                     consequat.
-                    <br><br>
+                </p>
+                <p>
                     Duis aute irure dolor in reprehenderit in voluptate velit esse
                     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
-                <p class="text">
-
+                <p>
                     <span class="bold">Цена:</span> 495 000 рублей
                 </p>
                 <div class="row no-gutters">
                     <div class="col-auto mr-2">
-                        <span class="btn btn-blue">Добавить в корзину</span>
+                        <span class="btn btn-blue">
+                            <i class="i-cart mr-2"></i>
+                            Добавить в корзину
+                        </span>
                     </div><!-- /.col -->
                     <div class="col-auto mr-2">
                         <span class="btn btn-white"><i class="i-hrt"></i></span>
@@ -270,6 +284,7 @@
     </div><!-- /.container -->
 
 </div><!-- /.wrapper -->
-<script src="js/main.js?v=006"></script>
+<script src="js/main.min.js?v=007"></script>
+<!-- <script src="http://127.0.0.1:35729/livereload.js"></script> -->
 </body>
 </html>

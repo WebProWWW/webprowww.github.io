@@ -7,7 +7,7 @@
     <meta name="format-detection" content="address=no">
     <meta name="format-detection" content="email=no">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
-    <link rel="stylesheet" href="css/main.css?v=006">
+    <link rel="stylesheet" href="css/main.css?v=007">
     <title>Pickazzo</title>
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://webprowww.github.io/projects/pickazzo/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://webprowww.github.io/projects/pickazzo/apple-touch-icon-114x114.png">
@@ -29,6 +29,12 @@
                 <img class="logo" src="img/logo.svg">
             </div><!-- /.col -->
             <div class="col-auto ml-auto">
+                <div class="ucart">
+                    <i class="i-cart"></i>
+                    <span class="ucart-count">33</span>
+                </div>
+            </div><!-- /.col -->
+            <div class="col-auto">
                 <div class="d-flex align-items-center">
                     <div class="dropdown">
                         <div class="dropdown-btn">
@@ -57,12 +63,10 @@
 <div class="navbar" id="navbar-1">
     <div class="navbar-logo">
         <img class="navbar-logo-img" src="img/logo.svg">
-        <p class="navbar-logo-txt">
-            Первая галлерея<br>нейрохудожников
-        </p>
+        <p class="navbar-logo-txt">Первая галлерея<br>нейрохудожников</p>
     </div>
     <nav class="nav">
-        <a class="nav-ln" href="index.html">О проекте</a>
+        <a class="nav-ln active" href="index.html">О проекте</a>
         <span class="w-100"></span>
         <a class="nav-ln" href="page-5.html">Коллекции</a>
         <span class="w-100"></span>
@@ -70,7 +74,7 @@
         <span class="w-100"></span>
         <a class="nav-ln" href="page-1.html">Художники</a>
         <span class="w-100"></span>
-        <a class="nav-ln active" href="page-3.html">Продано</a>
+        <a class="btn btn-sm btn-tred nav-btn" href="page-3.html">Продано</a>
         <span class="w-100"></span>
         <a class="nav-ln" href="page-7.html">Подлинность</a>
         <span class="w-100"></span>
@@ -78,9 +82,9 @@
         <span class="w-100"></span>
         <a class="nav-ln" href="">Контакты</a>
         <span class="w-100"></span>
-        <a class="nav-btn" href="">Войти</a>
+        <a class="btn btn-sm btn-blue nav-btn" href="">Войти</a>
     </nav>
-    <p class="text center italic mt-auto">
+    <p class="center italic mt-auto">
         Все картины созданы нейросетями в единственном экземпляре и никогда не будут повторены!
     </p>
     <nav class="soc mt-auto">
@@ -110,11 +114,18 @@
 <div class="wrapper">
 
     <div class="container">
+
         <div class="row">
             <div class="col">
-                <h1 class="page-title">Подлинность</h1>
+                <h1>Подлинность</h1>
             </div><!-- /.col -->
             <div class="col-auto ml-auto d-none d-xl-block">
+                <div class="ucart">
+                    <i class="i-cart"></i>
+                    <span class="ucart-count">33</span>
+                </div>
+            </div><!-- /.col -->
+            <div class="col-auto d-none d-xl-block">
                 <div class="d-flex align-items-center">
                     <div class="dropdown">
                         <div class="dropdown-btn">
@@ -135,9 +146,10 @@
                 </div>
             </div><!-- /.col -->
         </div><!-- /.row -->
+
         <div class="block">
-            <h2 class="page-title center">Все картины защищены от подделок уникальным цифровым&nbsp;кодом.</h2>
-            <h3 class="title-desc center">Данный код присваивается одной картине и&nbsp;её&nbsp;артикулу</h3>
+            <h2 class="center">Все картины защищены от подделок уникальным цифровым&nbsp;кодом.</h2>
+            <h3 class="center">Данный код присваивается одной картине и&nbsp;её&nbsp;артикулу</h3>
             <div class="org">
                 <div class="row justify-content-center">
                     <div class="col-12 col-md-8 col-lg-4 order-lg-2">
@@ -171,29 +183,30 @@
         </div><!-- /.block -->
 
         <div class="block">
-            <h3 class="page-title center">Проверить подлинность картины можно на&nbsp;нашем&nbsp;сайте</h3>
-            <form>
+            <h2 class="center">Проверить подлинность картины можно на&nbsp;нашем&nbsp;сайте</h2>
+            <form data-form>
                 <div class="row justify-content-center">
                     <div class="col-12 col-md col-lg-4">
                         <label>Вбейте артикул картины</label>
-                        <input type="text" data-mask="***-****" name="">
+                        <input type="text" data-mask="***-****" name="" validate="text">
                     </div><!-- /.col -->
                     <div class="col-12 col-md col-lg-4">
                         <label>Вбейте код проверки</label>
-                        <input type="text" data-mask="***-***-***-***" name="">
+                        <input type="text" data-mask="***-***-***-***" name="" validate="text">
                     </div><!-- /.col -->
                     <div class="col-12 col-md-auto">
                         <label class="d-none d-md-block">&nbsp;</label>
                         <button class="btn btn-blue" type="submit">Проверить</button>
                     </div><!-- /.col -->
                 </div><!-- /.row -->
-                <p class="form-help italic center">Проверить подлинность товара на нашем сайте прямо сейчас</p>
+                <p class="gray italic center">Проверить подлинность товара на нашем сайте прямо сейчас</p>
             </form>
         </div><!-- /.block -->
 
     </div><!-- /.container -->
 
 </div><!-- /.wrapper -->
-<script src="js/main.js?v=006"></script>
+<script src="js/main.min.js?v=007"></script>
+<!-- <script src="http://127.0.0.1:35729/livereload.js"></script> -->
 </body>
 </html>
