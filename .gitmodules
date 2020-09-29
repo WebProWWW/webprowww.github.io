@@ -1,0 +1,3 @@
+[submodule "p/bez-dolgov"]
+	path = p/bez-dolgov
+	url = https://github.com/WebProWWW/pro-bez-dolgov.git
