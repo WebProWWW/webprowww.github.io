@@ -319,12 +319,31 @@
     buttons: [],
     modal: true
   }); // $.fancybox.open $('#test-form')
-  // $.ajax
-  //     type: 'GET'
-  //     url: 'https://yandex.ru/uslugi/profile/OooBankrotKonsalt-102477'
-  //     dataType: 'jsonp'
-  // .done (data) ->
-  //     console.log data
 
+  $('*[data-toggle]').on('click', function (e) {
+    var $content, $this;
+    $this = $(this);
+    $content = $($this.attr('data-toggle'));
+    $content.stop();
+    $content.slideToggle(200);
+    $this.find('.icon-add').toggleClass('active');
+    return false;
+  });
+  $.ajax({
+    type: 'GET',
+    url: 'http://api.bankrotconsult.ru/reviews.json',
+    dataType: 'json'
+  }).done(function (data) {
+    $('.js-rating-star-yell').text(data.yell.rating);
+    $('.js-rating-count-yell').text(data.yell.comments);
+    $('.js-rating-star-google').text(data.google.rating);
+    $('.js-rating-count-google').text(data.google.comments);
+    $('.js-rating-star-zoon').text(data.zoon.rating);
+    $('.js-rating-count-zoon').text(data.zoon.comments);
+    $('.js-rating-star-yandex').text(data.yandex.rating);
+    $('.js-rating-count-yandex').text(data.yandex.comments); // console.log data
+
+    return true;
+  });
   true;
 }).call(void 0);

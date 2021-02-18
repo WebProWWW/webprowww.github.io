@@ -485,7 +485,6 @@ a:hover {
   padding: 0;
   text-align: center;
   font-weight: 400;
-  font-style: italic;
   font-size: 13px;
   color: #9b9b9b;
 }
@@ -703,6 +702,29 @@ a:hover {
 }
 .wall-square.wall-white {
   background: #fff;
+}
+*[data-toggle] {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+*[data-toggle]:hover .icon-add {
+  color: #000;
+}
+*[data-toggle] .icon-add {
+  display: block;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+*[data-toggle] .icon-add.active {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 .video {
   display: block;
