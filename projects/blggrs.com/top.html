@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="date=no">
+    <meta name="format-detection" content="address=no">
+    <meta name="format-detection" content="email=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="icomoon/style.css?v=1&rnd=1627191944">
+    <link rel="stylesheet" href="css/depends.css?v=1&rnd=1627191944">
+    <link rel="stylesheet" href="css/main.css?v=1&rnd=1627191944">
+    <title>Найди своего блоггера</title>
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="http://blggrs.com.loc/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://blggrs.com.loc/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://blggrs.com.loc/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://blggrs.com.loc/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="http://blggrs.com.loc/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="http://blggrs.com.loc/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="http://blggrs.com.loc/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="http://blggrs.com.loc/apple-touch-icon-152x152.png">
+    <link rel="icon" type="image/png" href="http://blggrs.com.loc/favicon-196x196.png" sizes="196x196">
+    <link rel="icon" type="image/png" href="http://blggrs.com.loc/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="http://blggrs.com.loc/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="http://blggrs.com.loc/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="http://blggrs.com.loc/favicon-128.png" sizes="128x128">
+    <meta name="application-name" content="Найди своего блоггера">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="http://blggrs.com.loc/mstile-144x144.png">
+    <meta name="msapplication-square70x70logo" content="http://blggrs.com.loc/mstile-70x70.png">
+    <meta name="msapplication-square150x150logo" content="http://blggrs.com.loc/mstile-150x150.png">
+    <meta name="msapplication-wide310x150logo" content="http://blggrs.com.loc/mstile-310x150.png">
+    <meta name="msapplication-square310x310logo" content="http://blggrs.com.loc/mstile-310x310.png">
+
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-3 col-lg-auto">
+                    <img class="img mx-auto" width="210" src="img/logo.svg" alt="bloggers">
+                </div><!-- .col -->
+                <div class="col-12 d-md-none"></div><!-- .col -->
+                <!--
+            <div class="col-12 col-sm-auto ms-auto">
+                <div class="soc justify-content-center">
+                    <a class="soc-ln soc-ln-a" href="javascript:;">
+                        <i class="i-youtube"></i>
+                    </a>
+                    <a class="soc-ln soc-ln-b" href="javascript:;">
+                        <i class="i-twitch"></i>
+                    </a>
+                    <a class="soc-ln soc-ln-c" href="javascript:;">
+                        <i class="i-tiktok"></i>
+                    </a>
+                </div>
+            </div>
+            -->
+                <!-- .col -->
+                <div class="col-12 col-sm col-md-4 col-lg-3 col-xl-2 ms-auto">
+                    <div class="select js-select">
+                        <div class="d-flex align-items-center">
+                            <select class="select-input">
+                                <option value="США">США</option>
+                                <option value="Индия">Индия</option>
+                                <option selected value="Россия">Россия</option>
+                                <option value="Великобритания">Великобритания</option>
+                                <option value="Польша">Польша</option>
+                                <option value="Турция">Турция</option>
+                                <option value="Бразилия">Бразилия</option>
+                                <option value="Канада">Канада</option>
+                                <option value="Германия">Германия</option>
+                                <option value="Австралия">Австралия</option>
+                                <option value="Испания">Испания</option>
+                                <option value="Италия">Италия</option>
+                                <option value="Нидерланды">Нидерланды</option>
+                                <option value="Мексика">Мексика</option>
+                                <option value="Новая Зеландия">Новая Зеландия</option>
+                                <option value="Франция">Франция</option>
+                                <option value="Япония">Япония</option>
+                                <option value="Колумбия">Колумбия</option>
+                                <option value="Марокко">Марокко</option>
+                                <option value="Бельгия">Бельгия</option>
+                                <option value="Швеция">Швеция</option>
+                                <option value="Ирландия">Ирландия</option>
+                                <option value="Катар">Катар</option>
+                                <option value="Норвегия">Норвегия</option>
+                                <option value="Израиль">Израиль</option>
+                            </select>
+                            <i class="i-down me-3"></i>
+                        </div>
+                    </div>
+                </div><!-- .col -->
+                <div class="col-12 col-sm-auto">
+                    <a class="btn" href="javascript:;">Войти</a>
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </header>
+    <section class="section promo">
+        <div class="promo-overlay">
+            <div class="container py-3">
+                <div class="row">
+                    <div class="col-12 col-xxl-10 mx-auto">
+                        <h1 class="title text-center em-27">Топ&nbsp;-&nbsp;100 аккаунтов TikTok</h1>
+                        <h2 class="title text-center em-16">Самые популярные и известные пользователи по количеству
+                            поклонников, лайков и среднемесячному охвату постов</h2>
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div>
+    </section>
+
+    <section class="section bg">
+        <div class="container">
+            <h2 class="title">Топовые Блоггеры сегодня</h2>
+            <div class="card">
+                <div class="overflow-x">
+                    <table class="table">
+                        <thead>
+                            <tr class="fw-6">
+                                <td class="text-start">Блоггер</td>
+                                <td><i class="i-users"></i> Фанаты</td>
+                                <td><i class="i-heart"></i> Лайки</td>
+                                <td><i class="i-marker"></i> Страна</td>
+                                <td>Виталь-<br>ность</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="row align-items-center">
+                                        <div class="col-auto">
+                                            <img class="img-circle mb-0" width="50" src="img/ava/1.jpg">
+                                        </div>
+                                        <div class="col clip">
+                                            <h3 class="clip em-11 fw-6 m-0 text-start">
+                                                addison rae
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>82M</td>
+                                <td>5321M</td>
+                                <td>US</td>
+                                <td class="sky">8.97 </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="row align-items-center">
+                                        <div class="col-auto">
+                                            <img class="img-circle mb-0" width="50" src="img/ava/2.jpg">
+                                        </div>
+                                        <div class="col clip">
+                                            <h3 class="clip em-11 fw-6 m-0 text-start">
+                                                Amanda
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>23M</td>
+                                <td>190K</td>
+                                <td>JO</td>
+                                <td class="sky">0 </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="row align-items-center">
+                                        <div class="col-auto">
+                                            <img class="img-circle mb-0" width="50" src="img/ava/3.jpg">
+                                        </div>
+                                        <div class="col clip">
+                                            <h3 class="clip em-11 fw-6 m-0 text-start">
+                                                arianagrande
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>25M</td>
+                                <td>77M</td>
+                                <td>US</td>
+                                <td class="sky">8.51 </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="row align-items-center">
+                                        <div class="col-auto">
+                                            <img class="img-circle mb-0" width="50" src="img/ava/4.jpg">
+                                        </div>
+                                        <div class="col clip">
+                                            <h3 class="clip em-11 fw-6 m-0 text-start">
+                                                Arishfa Khan🦁
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>29M</td>
+                                <td>1145M</td>
+                                <td>IN</td>
+                                <td class="sky">2.59 </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="row align-items-center">
+                                        <div class="col-auto">
+                                            <img class="img-circle mb-0" width="50" src="img/ava/5.jpg">
+                                        </div>
+                                        <div class="col clip">
+                                            <h3 class="clip em-11 fw-6 m-0 text-start">
+                                                avani
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>35M</td>
+                                <td>2147M</td>
+                                <td>US</td>
+                                <td class="sky">12.61 </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="row align-items-center">
+                                        <div class="col-auto">
+                                            <img class="img-circle mb-0" width="50" src="img/ava/6.jpg">
+                                        </div>
+                                        <div class="col clip">
+                                            <h3 class="clip em-11 fw-6 m-0 text-start">
+                                                Avneet Kaur 👑♥️
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>23M</td>
+                                <td>555M</td>
+                                <td>IN</td>
+                                <td class="sky">2.78 </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="row align-items-center">
+                                        <div class="col-auto">
+                                            <img class="img-circle mb-0" width="50" src="img/ava/7.jpg">
+                                        </div>
+                                        <div class="col clip">
+                                            <h3 class="clip em-11 fw-6 m-0 text-start">
+                                                Awez Darbar
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>26M</td>
+                                <td>1060M</td>
+                                <td>AE</td>
+                                <td class="sky">0 </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="row align-items-center">
+                                        <div class="col-auto">
+                                            <img class="img-circle mb-0" width="50" src="img/ava/8.jpg">
+                                        </div>
+                                        <div class="col clip">
+                                            <h3 class="clip em-11 fw-6 m-0 text-start">
+                                                BabyAriel
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>35M</td>
+                                <td>1896M</td>
+                                <td>US</td>
+                                <td class="sky">7.89 </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="row align-items-center">
+                                        <div class="col-auto">
+                                            <img class="img-circle mb-0" width="50" src="img/ava/9.jpg">
+                                        </div>
+                                        <div class="col clip">
+                                            <h3 class="clip em-11 fw-6 m-0 text-start">
+                                                Beauty khan
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>21M</td>
+                                <td>642M</td>
+                                <td>IN</td>
+                                <td class="text-danger">-2.55 </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="row align-items-center">
+                                        <div class="col-auto">
+                                            <img class="img-circle mb-0" width="50" src="img/ava/10.jpg">
+                                        </div>
+                                        <div class="col clip">
+                                            <h3 class="clip em-11 fw-6 m-0 text-start">
+                                                Bella Poarch
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>77M</td>
+                                <td>1714M</td>
+                                <td>US</td>
+                                <td class="sky">17.41 </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="row align-items-center">
+                                        <div class="col-auto">
+                                            <img class="img-circle mb-0" width="50" src="img/ava/11.jpg">
+                                        </div>
+                                        <div class="col clip">
+                                            <h3 class="clip em-11 fw-6 m-0 text-start">
+                                                Benji Krol
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>24M</td>
+                                <td>1159M</td>
+                                <td>ES</td>
+                                <td class="sky">11.11 </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="row align-items-center">
+                                        <div class="col-auto">
+                                            <img class="img-circle mb-0" width="50" src="img/ava/12.jpg">
+                                        </div>
+                                        <div class="col clip">
+                                            <h3 class="clip em-11 fw-6 m-0 text-start">
+                                                BILLIE EILISH
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>33M</td>
+                                <td>167M</td>
+                                <td>US</td>
+                                <td class="sky">10.13 </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="row align-items-center">
+                                        <div class="col-auto">
+                                            <img class="img-circle mb-0" width="50" src="img/ava/13.jpg">
+                                        </div>
+                                        <div class="col clip">
+                                            <h3 class="clip em-11 fw-6 m-0 text-start">
+                                                blackpinkofficial
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>22M</td>
+                                <td>175M</td>
+                                <td>KR</td>
+                                <td class="sky">0 </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="row align-items-center">
+                                        <div class="col-auto">
+                                            <img class="img-circle mb-0" width="50" src="img/ava/14.jpg">
+                                        </div>
+                                        <div class="col clip">
+                                            <h3 class="clip em-11 fw-6 m-0 text-start">
+                                                Brent Rivera
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>40M</td>
+                                <td>1264M</td>
+                                <td>US</td>
+                                <td class="sky">11.66 </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="row align-items-center">
+                                        <div class="col-auto">
+                                            <img class="img-circle mb-0" width="50" src="img/ava/15.jpg">
+                                        </div>
+                                        <div class="col clip">
+                                            <h3 class="clip em-11 fw-6 m-0 text-start">
+                                                BRIANDA 💖
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>27M</td>
+                                <td>1968M</td>
+                                <td>MX</td>
+                                <td class="sky">15.38 </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="row align-items-center">
+                                        <div class="col-auto">
+                                            <img class="img-circle mb-0" width="50" src="img/ava/16.jpg">
+                                        </div>
+                                        <div class="col clip">
+                                            <h3 class="clip em-11 fw-6 m-0 text-start">
+                                                BTS
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>31M</td>
+                                <td>551M</td>
+                                <td>KR</td>
+                                <td class="sky">0 </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="row align-items-center">
+                                        <div class="col-auto">
+                                            <img class="img-circle mb-0" width="50" src="img/ava/17.jpg">
+                                        </div>
+                                        <div class="col clip">
+                                            <h3 class="clip em-11 fw-6 m-0 text-start">
+                                                Camilo
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>23M</td>
+                                <td>262M</td>
+                                <td>US</td>
+                                <td class="sky">12.44 </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="row align-items-center">
+                                        <div class="col-auto">
+                                            <img class="img-circle mb-0" width="50" src="img/ava/18.jpg">
+                                        </div>
+                                        <div class="col clip">
+                                            <h3 class="clip em-11 fw-6 m-0 text-start">
+                                                Carlos Feria
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>30M</td>
+                                <td>1385M</td>
+                                <td>MX</td>
+                                <td class="sky">14.05 </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="row align-items-center">
+                                        <div class="col-auto">
+                                            <img class="img-circle mb-0" width="50" src="img/ava/19.jpg">
+                                        </div>
+                                        <div class="col clip">
+                                            <h3 class="clip em-11 fw-6 m-0 text-start">
+                                                charli d’amelio
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>121M</td>
+                                <td>9654M</td>
+                                <td>US</td>
+                                <td class="sky">17.46 </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="row align-items-center">
+                                        <div class="col-auto">
+                                            <img class="img-circle mb-0" width="50" src="img/ava/20.jpg">
+                                        </div>
+                                        <div class="col clip">
+                                            <h3 class="clip em-11 fw-6 m-0 text-start">
+                                                cznburak
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>44M</td>
+                                <td>819M</td>
+                                <td>TR</td>
+                                <td class="sky">14.01 </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="row align-items-center">
+                                        <div class="col-auto">
+                                            <img class="img-circle mb-0" width="50" src="img/ava/21.jpg">
+                                        </div>
+                                        <div class="col clip">
+                                            <h3 class="clip em-11 fw-6 m-0 text-start">
+                                                D A R I A NR O J A S
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>27M</td>
+                                <td>984M</td>
+                                <td>MX</td>
+                                <td class="sky">9.86 </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="row align-items-center">
+                                        <div class="col-auto">
+                                            <img class="img-circle mb-0" width="50" src="img/ava/22.jpg">
+                                        </div>
+                                        <div class="col clip">
+                                            <h3 class="clip em-11 fw-6 m-0 text-start">
+                                                Daniel LaBelle
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>21M</td>
+                                <td>457M</td>
+                                <td>US</td>
+                                <td class="sky">12.18 </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="row align-items-center">
+                                        <div class="col-auto">
+                                            <img class="img-circle mb-0" width="50" src="img/ava/23.jpg">
+                                        </div>
+                                        <div class="col clip">
+                                            <h3 class="clip em-11 fw-6 m-0 text-start">
+                                                DAVID DOBRIK
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>26M</td>
+                                <td>1166M</td>
+                                <td>US</td>
+                                <td class="sky">8.9 </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div><!-- .card -->
+        </div><!-- .container -->
+    </section>
+
+    <footer class="section bg">
+        <div class="container">
+            <div class="row justify-content-around">
+                <div class="col-12 col-lg-auto">
+                    <a class="footer-ln" href="javascript:;">О нас</a>
+                </div><!-- .col -->
+                <div class="col-12 col-lg-auto">
+                    <a class="footer-ln" href="javascript:;">Пользовательское соглашение</a>
+                </div><!-- .col -->
+                <div class="col-12 col-lg-auto">
+                    <a class="footer-ln" href="javascript:;">Конфиденциальность</a>
+                </div><!-- .col -->
+                <div class="col-12 col-lg-auto">
+                    <a class="footer-ln" href="javascript:;">Правовая информация</a>
+                </div><!-- .col -->
+                <div class="col-12 col-lg-auto">
+                    <a class="footer-ln" href="javascript:;">© 2021, bloggers</a>
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </footer>
+
+    <script src="js/depends.js?v=1&rnd=1627191944"></script>
+    <script src="js/main.js?v=1&rnd=1627191944"></script>
+    <script src="vue/app.js?v=1&rnd=1627191944"></script>
+
+</body>
+
+</html>
