@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="date=no">
+    <meta name="format-detection" content="address=no">
+    <meta name="format-detection" content="email=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,600;1,300&display=swap">
+    <link rel="stylesheet" href="css/depends.css?v=2">
+    <link rel="stylesheet" href="css/main.css?v=1<?= time() ?>">
+    <title>Банкрот Баланс</title>
+</head>
+<body>
+
+
+<div class="wrapper">
+
+
+<header class="section sticker sticker-bg-a">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-5 col-xl-4">
+                <div class="sticker-content">
+                    <a class="logo">
+                        <img class="logo-img" height="53" src="img/logo.svg" alt="Банкрот Баланс">
+                        <span class="logo-txt">Банкрот<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Баланс</span>
+                    </a>
+                    <h1 class="title my-4">Нечем отдавать кредиты?</h1>
+                    <h2 class="title-desc my-4">Помогу избавиться от долгов через процедуру банкротства или верну деньги в 100% обьеме</h2>
+                    <ul class="my-4">
+                        <li><p>Рассрочка на 12 месяцев под&nbsp;0% от&nbsp;4500&nbsp;руб.</p></li>
+                        <li><p>Письменные гарантии освобождения от всех долгов</p></li>
+                        <li><p>Опыт в сфере банкротства физических лиц - 6&nbsp;лет</p></li>
+                        <li><p>Возьмем на себя общение с коплекторами</p></li>
+                        <li><p>Сохраню имущество и доход</p></li>
+                        <li><p>Списали 5438 долгов с&nbsp;2015&nbsp;года</p></li>
+                    </ul>
+                    <p class="text-center my-4">
+                        Персональный юрист по банкротству Алексей&nbsp;Рагульский
+                    </p>
+                    <img class="img-center" width="226" src="img/sign.png" alt="Подпись">
+                </div><!-- .sticker -->
+            </div><!-- .col -->
+            <div class="col-12 col-md-6 col-lg-auto ms-auto align-self-end align-self-lg-start">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-auto">
+                        <div class="phone">
+                            <a class="phone-num" href="tel:89778355805">+7 (977) 835-58-05</a>
+                            <p class="phone-desc">Ежедневно с 9:00 до 20:00</p>
+                        </div>
+                    </div><!-- .col -->
+                    <div class="d-lg-none" style="width: 100%;"></div>
+                    <div class="col-auto">
+                        <a class="btn" data-fancybox href="#callback">
+                            ЗВОНОК ЗА МОЙ СЧЕТ
+                        </a>
+                    </div>
+                </div>
+            </div><!-- .col -->
+        </div><!-- .row -->
+    </div><!-- .container -->
+</header>
+
+
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-5 col-lg-4 col-xl-5 col-xxl-6">
+                <img class="img-center" width="350" height="482" src="img/book.jpg" alt="А вы знали, что можно списать долги законным способом ?">
+            </div><!-- .col -->
+            <div class="col-12 col-md-7 col-lg">
+                <h2 class="title">
+                    А вы знали, что можно списать долги
+                    законным способом ?
+                </h2>
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <div class="d-flex align-items-center">
+                            <img class="me-3 mb-3" width="60" height="60" src="img/i-120-1.jpg" alt="Долги от 300 000 рублей">
+                            <h3 class="fw-300 em-15">Долги от 300&nbsp;000 рублей</h3>
+                        </div>
+                    </div><!-- .col -->
+                    <div class="col-12 col-lg-6">
+                        <div class="d-flex align-items-center">
+                            <img class="me-3 mb-3" width="60" height="60" src="img/i-120-2.jpg" alt="Просрочка от 3-х месяцев">
+                            <h3 class="fw-300 em-15">Просрочка от 3&nbsp;-&nbsp;х месяцев</h3>
+                        </div>
+                    </div><!-- .col -->
+                </div><!-- .row -->
+                <p>Процесс банкротства помогает человеку <span class="fw-600">выбраться из долговой ямы</span> и решить все проблемы с кредиторами.</p>
+                <p>В 2015 году вышел закон № 127-ФЗ и обычные граждане России получили возможность объявлять себя банкротами аналогично предпринимателям и организациям.</p>
+                <p>Целью процедуры является признание неспособности человека выполнять финансовые обязательства перед кредиторами.</p>
+                <p>
+                    <a class="ln-black d-flex align-items-center" data-fancybox href="#fz-127">
+                        <img width="60" height="60" src="img/i-120-3.jpg" alt="">
+                        <span>
+                            ФЗ № 127
+                            <br>
+                            читать
+                        </span>
+                    </a>
+                </p>
+            </div><!-- .col -->
+        </div><!-- .row -->
+    </div><!-- .container -->
+</section>
+
+
+<section class="section">
+    <div class="container">
+        <h2 class="title text-center">Помогу списать долги и кредиты законным пособом, через банкротство физлиц, согласно 127 ФЗ*, <span class="fw-300">с сохранением имущества</span></h2>
+        <h3 class="title-desc text-center">Какие долги можно списать в процессе процедуры банкротства:</h3>
+        <div class="row">
+            <div class="col-12 col-xxl-8">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4 col-xxl-4 mb-4">
+                        <div class="wall">
+                            <div class="wall-border">
+                                <div class="wall-body">
+                                    <img class="img-center" width="130" height="130" src="img/i-260-1.jpg" alt="Кредитам">
+                                    <div class="text-center">
+                                        <h3 class="em-11 fw-600">Кредитам</h3>
+                                        <p class="em-9">
+                                            Кредитным долгам / займам
+                                            <br>
+                                            Микрозаймам и МФО
+                                            <br>
+                                            Кредитным картам
+                                            <br>
+                                            Поручительству и распискам
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- .col -->
+                    <div class="col-12 col-md-6 col-lg-4 col-xxl-4 mb-4">
+                        <div class="wall">
+                            <div class="wall-border">
+                                <div class="wall-body">
+                                    <img class="img-center" width="130" height="130" src="img/i-260-2.jpg" alt="Налогам">
+                                    <div class="text-center">
+                                        <h3 class="em-11 fw-600">Налогам</h3>
+                                        <p class="em-9">
+                                            Скопившимся налогам и сборам в ФНС, ФПС
+                                        </p>
+                                    </div>
+                                </div><!-- .wall-body -->
+                            </div><!-- .wall-border -->
+                        </div><!-- .wall -->
+                    </div><!-- .col -->
+                    <div class="col-12 col-md-6 col-lg-4 col-xxl-4 mb-4">
+                        <div class="wall">
+                            <div class="wall-border">
+                                <div class="wall-body">
+                                    <img class="img-center" width="130" height="130" src="img/i-260-3.jpg" alt="ЖКХ">
+                                    <div class="text-center">
+                                        <h3 class="em-11 fw-600">ЖКХ</h3>
+                                        <p class="em-9">
+                                            Скопившимся долгам за коммунальные услуги
+                                        </p>
+                                    </div>
+                                </div><!-- .wall-body -->
+                            </div><!-- .wall-border -->
+                        </div><!-- .wall -->
+                    </div><!-- .col -->
+                    <div class="col-12 col-md-6 col-lg-4 col-xxl-4 mb-4">
+                        <div class="wall">
+                            <div class="wall-border">
+                                <div class="wall-body">
+                                    <img class="img-center" width="130" height="130" src="img/i-260-4.jpg" alt="Ипотеке">
+                                    <div class="text-center">
+                                        <h3 class="em-11 fw-600">Ипотеке</h3>
+                                        <p class="em-9">
+                                            Скопившимся долгам по ипотеке, либо одновременно с другими кредитами
+                                        </p>
+                                    </div>
+                                </div><!-- .wall-body -->
+                            </div><!-- .wall-border -->
+                        </div><!-- .wall -->
+                    </div><!-- .col -->
+                    <div class="col-12 col-md-6 col-lg-4 col-xxl-4 mb-4">
+                        <div class="wall">
+                            <div class="wall-border">
+                                <div class="wall-body">
+                                    <img class="img-center" width="130" height="130" src="img/i-260-5.jpg" alt="Ипотеке">
+                                    <div class="text-center">
+                                        <h3 class="em-11 fw-600">ИП</h3>
+                                        <p class="em-9">
+                                            Долгам, связанным с предпринимательской деятельностью
+                                        </p>
+                                    </div>
+                                </div><!-- .wall-body -->
+                            </div><!-- .wall-border -->
+                        </div><!-- .wall -->
+                    </div><!-- .col -->
+                    <div class="col-12 col-md-6 col-lg-4 col-xxl-4 mb-4">
+                        <div class="wall">
+                            <div class="wall-border">
+                                <div class="wall-body">
+                                    <img class="img-center" width="130" height="130" src="img/i-260-6.jpg" alt="Ипотеке">
+                                    <div class="text-center">
+                                        <h3 class="em-11 fw-600">Штрафам</h3>
+                                        <p class="em-9">
+                                            Штрафам ГИБДД
+                                            <br>
+                                            Судебным штрафам
+                                            <br>
+                                            Административным штрафам
+                                            <br>
+                                            По кредитам / займам
+                                        </p>
+                                    </div>
+                                </div><!-- .wall-body -->
+                            </div><!-- .wall-border -->
+                        </div><!-- .wall -->
+                    </div><!-- .col -->
+                </div><!-- .row -->
+                <div class="row">
+                    <div class="col order-2 order-sm-1">
+                        <div class="msg">
+                            <p class="blue italic em-13">«Даю 100% гарантию на списание ваших долгов, либо выплачу их полностью сам»</p>
+                        </div>
+                        <p>*Списание долгов на основании федерального закона от&nbsp;26.10.2002&nbsp;г. N&nbsp;127&nbsp;-&nbsp;ФЗ «О&nbsp;несостоятельности&nbsp;(банкротстве)»</p>
+                    </div><!-- .col -->
+                    <div class="col-12 col-sm-auto align-self-end order-1 order-sm-2">
+                        <img class="img-ava" width="90" height="90" src="img/ava-180.jpg" alt="Алексей Рагульский">
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .col -->
+            <div class="col-12 col-lg-8 col-xl-6 col-xxl-4 align-self-start align-self-xxl-stretch mx-auto">
+                <div class="wall">
+                    <img class="wall-img" src="img/i-1.jpg" alt="Алексей Рагульский">
+                    <div class="wall-body em-11">
+                        <h3 class="title my-xxl-auto">Алексей Рагульский</h3>
+                        <p class="my-xxl-auto"><span class="fw-600">С 2015 года</span> я занимаюсь исключительно банкротством физических лиц.</p>
+                        <p class="my-xxl-auto">Бывает жизнь складывается таким образом, что от нас самих мало, что зависит. Я помогаю людям начать жизнь с чистого листа. Ведь банкротство - это не просто не хотение платить по кредитам, это финансовое оздоровление и единственный законный выход из долговой ямы.</p>
+                        <p class="my-xxl-auto">
+                            <a data-fancybox href="#resume">
+                                <img width="60" height="60" src="img/i-120-4.jpg" alt="">
+                                <span>Смотреть резюме</span>
+                            </a>
+                        </p>
+                    </div><!-- .wall-body -->
+                </div><!-- .wall -->
+            </div><!-- .col -->
+        </div><!-- .row -->
+    </div><!-- .container -->
+</section>
+
+
+<section class="section">
+    <div class="container">
+        <h2 class="title text-center">Процедура банкротства физического лица</h2>
+        <h3 class="title-desc text-center">Проходит в несколько простых этапов</h3>
+        <div class="row">
+            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                <div class="wall">
+                    <div class="wall-border">
+                        <div class="wall-body">
+                            <img class="img-center" width="250" height="250" src="img/i-500-1.jpg" alt="Сбор документов">
+                            <h3 class="em-11 fw-300 text-center">1. Сбор документов</h3>
+                        </div><!-- .wall-body -->
+                    </div><!-- .wall-border -->
+                </div><!-- .wall -->
+            </div><!-- .col -->
+            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                <div class="wall">
+                    <div class="wall-border">
+                        <div class="wall-body">
+                            <img class="img-center" width="250" height="250" src="img/i-500-2.jpg" alt="Заявление о банкротстве в суд">
+                            <h3 class="em-11 fw-300 text-center">2. Заявление о банкротстве в суд</h3>
+                        </div><!-- .wall-body -->
+                    </div><!-- .wall-border -->
+                </div><!-- .wall -->
+            </div><!-- .col -->
+            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                <div class="wall">
+                    <div class="wall-border">
+                        <div class="wall-body">
+                            <img class="img-center" width="250" height="250" src="img/i-500-3.jpg" alt="Признание судом гражданина Банкротом">
+                            <h3 class="em-11 fw-300 text-center">3. Признание судом гражданина Банкротом</h3>
+                        </div><!-- .wall-body -->
+                    </div><!-- .wall-border -->
+                </div><!-- .wall -->
+            </div><!-- .col -->
+            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                <div class="wall">
+                    <div class="wall-border">
+                        <div class="wall-body">
+                            <img class="img-center" width="250" height="250" src="img/i-500-4.jpg" alt="Формирование реестра требований кредиторов">
+                            <h3 class="em-11 fw-300 text-center">4. Формирование реестра требований кредиторов</h3>
+                        </div><!-- .wall-body -->
+                    </div><!-- .wall-border -->
+                </div><!-- .wall -->
+            </div><!-- .col -->
+            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                <div class="wall">
+                    <div class="wall-border">
+                        <div class="wall-body">
+                            <img class="img-center" width="250" height="250" src="img/i-500-5.jpg" alt="Анализ финансового состояния должника">
+                            <h3 class="em-11 fw-300 text-center">5. Анализ финансового состояния должника</h3>
+                        </div><!-- .wall-body -->
+                    </div><!-- .wall-border -->
+                </div><!-- .wall -->
+            </div><!-- .col -->
+            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                <div class="wall">
+                    <div class="wall-border">
+                        <div class="wall-body">
+                            <img class="img-center" width="250" height="250" src="img/i-500-6.jpg" alt="Вынесение судом решения о списании долгов">
+                            <h3 class="em-11 fw-300 text-center">6. Вынесение судом решения о списании долгов</h3>
+                        </div><!-- .wall-body -->
+                    </div><!-- .wall-border -->
+                </div><!-- .wall -->
+            </div><!-- .col -->
+        </div><!-- .row -->
+    </div><!-- .container -->
+</section>
+
+
+<section class="section sticker sticker-bg-b">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-5 col-xl-4">
+                <div class="sticker-content">
+                    <a class="logo">
+                        <img class="logo-img" height="53" src="img/logo.svg" alt="Банкрот Баланс">
+                        <span class="logo-txt">Банкрот<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Баланс</span>
+                    </a>
+                    <h2 class="title my-4">Преимущества работы со мной</h2>
+                    <ul class="my-4 em-13">
+                        <li>
+                            <p>Первая консультация бесплатно</p>
+                        </li>
+                        <li>
+                            <p>Бесплатный финансовый анализ</p>
+                        </li>
+                        <li>
+                            <p>1-й месяц моей работы бесплатно</p>
+                        </li>
+                        <li>
+                            <p>Берусь даже за сложные дела</p>
+                        </li>
+                        <li>
+                            <p>Помощь в сборе документов</p>
+                        </li>
+                        <li>
+                            <p>Общение с коллекторами беру на себя</p>
+                        </li>
+                    </ul>
+                    <p class="text-center my-4">
+                        Персональный юрист по банкротству Алексей&nbsp;Рагульский
+                    </p>
+                    <img class="img-center" width="226" src="img/sign.png" alt="Подпись">
+                </div><!-- .sticker -->
+            </div><!-- .col -->
+        </div><!-- .row -->
+    </div><!-- .container -->
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2 class="title text-center">Списано более 130 млн рублей долгов</h2>
+        <h3 class="title-desc text-center">Мои успешные дела:</h3>
+        <div class="slider slider-cases">
+            <div class="slider-item">
+                <div class="wall">
+                    <div class="wall-body">
+                        <div class="row justify-content-around">
+                            <div class="col-12 col-md-6">
+                                <p>№ А27-19930/2020</p>
+                                <img class="img-center" width="290" height="415" src="img/delo.jpg" alt="">
+                                <p>
+                                    <a class="d-flex align-items-center" href="javascript:;">
+                                        <img class="me-2" width="30" height="30" src="img/i-120-4.jpg" alt="Скачать решение суда">
+                                        <span>Скачать решение суда</span>
+                                    </a>
+                                </p>
+                            </div><!-- .col -->
+                            <div class="col-12 col-md-6">
+                                <p class="gray mb-0">
+                                    Списан долг
+                                </p>
+                                <p class="em-18 fw-600">
+                                    803 919 ₽
+                                </p>
+                                <p class="gray mb-0">
+                                    Начало работы
+                                </p>
+                                <p class="em-13">
+                                    07.09.2020
+                                </p>
+                                <p class="gray mb-0">
+                                    Дата завершения
+                                </p>
+                                <p class="em-13">
+                                    06.08.2021
+                                </p>
+                                <p class="gray mb-0">
+                                    Ситуация
+                                </p>
+                                <p>
+                                    Из-за потерей работы, перестала соблюдаться график платежей и таким образом накопила неподъемный долг.
+                                </p>
+                                <p class="gray mb-0">
+                                    Результат
+                                </p>
+                                <p>
+                                    Все задолженности и все просрочки по кредитам были успешно списаны.
+                                </p>
+                            </div><!-- .col -->
+                        </div><!-- .row -->
+                        <div class="row">
+                            <div class="col-auto mx-auto">
+                                <a class="btn" data-fancybox href="#callback">
+                                    СПИШИТЕ МОЙ ДОЛГ
+                                </a>
+                            </div><!-- .col -->
+                        </div><!-- .row -->
+                    </div><!-- .wall-body -->
+                </div><!-- .wall -->
+            </div><!-- .slider-item -->
+            <div class="slider-item">
+                <div class="wall">
+                    <div class="wall-body">
+                        <div class="row justify-content-around">
+                            <div class="col-12 col-md-6">
+                                <p>№ А73-64630/2020</p>
+                                <img class="img-center" width="290" height="415" src="img/delo.jpg" alt="">
+                                <p>
+                                    <a class="d-flex align-items-center" href="javascript:;">
+                                        <img class="me-2" width="30" height="30" src="img/i-120-4.jpg" alt="Скачать решение суда">
+                                        <span>Скачать решение суда</span>
+                                    </a>
+                                </p>
+                            </div><!-- .col -->
+                            <div class="col-12 col-md-6">
+                                <p class="gray mb-0">
+                                    Списан долг
+                                </p>
+                                <p class="em-18 fw-600">
+                                    2 011 046 ₽
+                                </p>
+                                <p class="gray mb-0">
+                                    Начало работы
+                                </p>
+                                <p class="em-13">
+                                    04.04.2020
+                                </p>
+                                <p class="gray mb-0">
+                                    Дата завершения
+                                </p>
+                                <p class="em-13">
+                                    19.06.2021
+                                </p>
+                                <p class="gray mb-0">
+                                    Ситуация
+                                </p>
+                                <p>
+                                    Долги быстро увеличивались, а возможность погашения утратилась.
+                                </p>
+                                <p class="gray mb-0">
+                                    Результат
+                                </p>
+                                <p>
+                                    Задолженность перед всеми кредиторами успешно списана.
+                                </p>
+                            </div><!-- .col -->
+                        </div><!-- .row -->
+                        <div class="row">
+                            <div class="col-auto mx-auto">
+                                <a class="btn" data-fancybox href="#callback">
+                                    СПИШИТЕ МОЙ ДОЛГ
+                                </a>
+                            </div><!-- .col -->
+                        </div><!-- .row -->
+                    </div><!-- .wall-body -->
+                </div><!-- .wall -->
+            </div><!-- .slider-item -->
+            <div class="slider-item">
+                <div class="wall">
+                    <div class="wall-body">
+                        <div class="row justify-content-around">
+                            <div class="col-12 col-md-6">
+                                <p>№ А27-19930/2020</p>
+                                <img class="img-center" width="290" height="415" src="img/delo.jpg" alt="">
+                                <p>
+                                    <a class="d-flex align-items-center" href="javascript:;">
+                                        <img class="me-2" width="30" height="30" src="img/i-120-4.jpg" alt="Скачать решение суда">
+                                        <span>Скачать решение суда</span>
+                                    </a>
+                                </p>
+                            </div><!-- .col -->
+                            <div class="col-12 col-md-6">
+                                <p class="gray mb-0">
+                                    Списан долг
+                                </p>
+                                <p class="em-18 fw-600">
+                                    803 919 ₽
+                                </p>
+                                <p class="gray mb-0">
+                                    Начало работы
+                                </p>
+                                <p class="em-13">
+                                    07.09.2020
+                                </p>
+                                <p class="gray mb-0">
+                                    Дата завершения
+                                </p>
+                                <p class="em-13">
+                                    06.08.2021
+                                </p>
+                                <p class="gray mb-0">
+                                    Ситуация
+                                </p>
+                                <p>
+                                    Из-за потерей работы, перестала соблюдаться график платежей и таким образом накопила неподъемный долг.
+                                </p>
+                                <p class="gray mb-0">
+                                    Результат
+                                </p>
+                                <p>
+                                    Все задолженности и все просрочки по кредитам были успешно списаны.
+                                </p>
+                            </div><!-- .col -->
+                        </div><!-- .row -->
+                        <div class="row">
+                            <div class="col-auto mx-auto">
+                                <a class="btn" data-fancybox href="#callback">
+                                    СПИШИТЕ МОЙ ДОЛГ
+                                </a>
+                            </div><!-- .col -->
+                        </div><!-- .row -->
+                    </div><!-- .wall-body -->
+                </div><!-- .wall -->
+            </div><!-- .slider-item -->
+            <div class="slider-item">
+                <div class="wall">
+                    <div class="wall-body">
+                        <div class="row justify-content-around">
+                            <div class="col-12 col-md-6">
+                                <p>№ А73-64630/2020</p>
+                                <img class="img-center" width="290" height="415" src="img/delo.jpg" alt="">
+                                <p>
+                                    <a class="d-flex align-items-center" href="javascript:;">
+                                        <img class="me-2" width="30" height="30" src="img/i-120-4.jpg" alt="Скачать решение суда">
+                                        <span>Скачать решение суда</span>
+                                    </a>
+                                </p>
+                            </div><!-- .col -->
+                            <div class="col-12 col-md-6">
+                                <p class="gray mb-0">
+                                    Списан долг
+                                </p>
+                                <p class="em-18 fw-600">
+                                    2 011 046 ₽
+                                </p>
+                                <p class="gray mb-0">
+                                    Начало работы
+                                </p>
+                                <p class="em-13">
+                                    04.04.2020
+                                </p>
+                                <p class="gray mb-0">
+                                    Дата завершения
+                                </p>
+                                <p class="em-13">
+                                    19.06.2021
+                                </p>
+                                <p class="gray mb-0">
+                                    Ситуация
+                                </p>
+                                <p>
+                                    Долги быстро увеличивались, а возможность погашения утратилась.
+                                </p>
+                                <p class="gray mb-0">
+                                    Результат
+                                </p>
+                                <p>
+                                    Задолженность перед всеми кредиторами успешно списана.
+                                </p>
+                            </div><!-- .col -->
+                        </div><!-- .row -->
+                        <div class="row">
+                            <div class="col-auto mx-auto">
+                                <a class="btn" data-fancybox href="#callback">
+                                    СПИШИТЕ МОЙ ДОЛГ
+                                </a>
+                            </div><!-- .col -->
+                        </div><!-- .row -->
+                    </div><!-- .wall-body -->
+                </div><!-- .wall -->
+            </div><!-- .slider-item -->
+        </div><!-- .slider -->
+    </div><!-- .container -->
+</section>
+
+
+<section class="section">
+    <div class="container">
+        <h2 class="title text-center">Отзывы довольных клиентов</h2>
+        <div class="slider slider-reviews">
+            <div class="slider-item">
+                <div class="video">
+                    <iframe class="video-frame" src="https://www.youtube.com/embed/NRp0RmJdyPk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div><!-- .slider-item -->
+            <div class="slider-item">
+                <div class="video">
+                    <iframe class="video-frame" src="https://www.youtube.com/embed/NRp0RmJdyPk" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div><!-- .slider-item -->
+            <div class="slider-item">
+                <div class="video">
+                    <iframe class="video-frame" src="https://www.youtube.com/embed/NRp0RmJdyPk" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div><!-- .slider-item -->
+            <div class="slider-item">
+                <div class="video">
+                    <iframe class="video-frame" src="https://www.youtube.com/embed/NRp0RmJdyPk" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div><!-- .slider-item -->
+            <div class="slider-item">
+                <div class="video">
+                    <iframe class="video-frame" src="https://www.youtube.com/embed/NRp0RmJdyPk" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div><!-- .slider-item -->
+        </div><!-- .slider -->
+    </div><!-- .container -->
+</section>
+
+
+<section class="section sticker sticker-bg-c">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-5 col-xl-4">
+                <div class="sticker-content">
+                    <a class="logo">
+                        <img class="logo-img" height="53" src="img/logo.svg" alt="Банкрот Баланс">
+                        <span class="logo-txt">Банкрот<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Баланс</span>
+                    </a>
+                    <h2 class="title my-4">Профессионал своего дела</h2>
+                    <ul class="my-4 em-13">
+                        <li>
+                            <p>Юридическая практика с 2015 г.</p>
+                        </li>
+                        <li>
+                            <p>Списано более 130 млн рублей долгов</p>
+                        </li>
+                        <li>
+                            <p>Гарантии по договору</p>
+                        </li>
+                        <li>
+                            <p>Наличие своих фин. управляющих</p>
+                        </li>
+                        <li>
+                            <p>Адвокатская тайна о делах</p>
+                        </li>
+                        <li>
+                            <p>Более 4000 заседаний</p>
+                        </li>
+                    </ul>
+                    <p class="text-center my-4">
+                        Персональный юрист по банкротству Алексей&nbsp;Рагульский
+                    </p>
+                    <img class="img-center" width="226" src="img/sign.png" alt="Подпись">
+                </div><!-- .sticker -->
+            </div><!-- .col -->
+        </div><!-- .row -->
+    </div><!-- .container -->
+</section>
+
+
+<section class="section">
+    <div class="container">
+        <h2 class="title text-center">Даю лучшие условия для списания долгов в России</h2>
+        <h3 class="title-desc text-center">Самое главное начать - всё остальное сделаю сам</h3>
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-6 col-xl-4 mb-4">
+                <div class="wall wall-line">
+                    <div class="wall-body">
+                        <div class="row align-items-center g-0 my-auto">
+                            <div class="col-auto">
+                                <div class="num-shield num-1 me-2"></div>
+                            </div>
+                            <div class="col">
+                                <p>
+                                    Спишем ваши долги по закону без последствий, либо выплатим их сами до последней копейки
+                                </p>
+                            </div>
+                        </div>
+                    </div><!-- .wall -->
+                </div><!-- .wall -->
+            </div><!-- .col -->
+            <div class="col-12 col-lg-6 col-xl-4 mb-4">
+                <div class="wall wall-line">
+                    <div class="wall-body">
+                        <div class="row align-items-center g-0 my-auto">
+                            <div class="col-auto">
+                                <div class="num-shield num-2 me-2"></div>
+                            </div>
+                            <div class="col">
+                                <p>
+                                    Полная защита от последствий вас, ваших родственников и мущества, предусмотренная законом Р.Ф.
+                                </p>
+                            </div>
+                        </div>
+                    </div><!-- .wall -->
+                </div><!-- .wall -->
+            </div><!-- .col -->
+            <div class="col-12 col-lg-6 col-xl-4 mb-4">
+                <div class="wall wall-line">
+                    <div class="wall-body">
+                        <div class="row align-items-center g-0 my-auto">
+                            <div class="col-auto">
+                                <div class="num-shield num-3 me-2"></div>
+                            </div>
+                            <div class="col">
+                                <p>
+                                    Положим конец росту долга, пеней и штрафа, а также атакам коллекторов в первые дней после обращения
+                                </p>
+                            </div>
+                        </div>
+                    </div><!-- .wall -->
+                </div><!-- .wall -->
+            </div><!-- .col -->
+            <div class="col-12 col-lg-6 col-xl-4 mb-4">
+                <div class="wall wall-line">
+                    <div class="wall-body">
+                        <div class="row align-items-center g-0 my-auto">
+                            <div class="col-auto">
+                                <div class="num-shield num-4 me-2"></div>
+                            </div>
+                            <div class="col">
+                                <p>
+                                    Сами соберем все необходимые документы и представим ваши интересы в суде без вашей явки
+                                </p>
+                            </div>
+                        </div>
+                    </div><!-- .wall -->
+                </div><!-- .wall -->
+            </div><!-- .col -->
+            <div class="col-12 col-lg-6 col-xl-4 mb-4">
+                <div class="wall wall-line">
+                    <div class="wall-body">
+                        <div class="row align-items-center g-0 my-auto">
+                            <div class="col-auto">
+                                <div class="num-shield num-5 me-2"></div>
+                            </div>
+                            <div class="col">
+                                <p>
+                                    Даем самую доступную цену для списания долгов, с рассрочкой без процентов на 12 месяцев
+                                </p>
+                            </div>
+                        </div>
+                    </div><!-- .wall -->
+                </div><!-- .wall -->
+            </div><!-- .col -->
+            <div class="col-12 col-lg-6 col-xl-4 mb-4">
+                <div class="wall wall-line">
+                    <div class="wall-body">
+                        <div class="row align-items-center g-0 my-auto">
+                            <div class="col-auto">
+                                <div class="num-shield num-6 me-2"></div>
+                            </div>
+                            <div class="col">
+                                <p>
+                                    Сможете снова брать кредит и получать официальный доход без опасений на списание
+                                </p>
+                            </div>
+                        </div>
+                    </div><!-- .wall -->
+                </div><!-- .wall -->
+            </div><!-- .col -->
+            <div class="col-12 col-lg-6 col-xl-4 mb-4">
+                <div class="wall wall-line">
+                    <div class="wall-body">
+                        <div class="row align-items-center g-0 my-auto">
+                            <div class="col-auto">
+                                <div class="num-shield num-7 me-2"></div>
+                            </div>
+                            <div class="col">
+                                <p>
+                                    Процедура банкротства полностью анонимная и не потребует вовлечения родственников и работодателя
+                                </p>
+                            </div>
+                        </div>
+                    </div><!-- .wall -->
+                </div><!-- .wall -->
+            </div><!-- .col -->
+            <div class="col-12 col-lg-6 col-xl-4 mb-4">
+                <div class="wall wall-line">
+                    <div class="wall-body">
+                        <div class="row align-items-center g-0 my-auto">
+                            <div class="col-auto">
+                                <div class="num-shield num-8 me-2"></div>
+                            </div>
+                            <div class="col">
+                                <p>
+                                    Снимем все наложенные аресты с банковских счетов, карт и имущества
+                                </p>
+                            </div>
+                        </div>
+                    </div><!-- .wall -->
+                </div><!-- .wall -->
+            </div><!-- .col -->
+            <div class="col-12 col-lg-6 col-xl-4 mb-4">
+                <div class="wall wall-line">
+                    <div class="wall-body">
+                        <div class="row align-items-center g-0 my-auto">
+                            <div class="col-auto">
+                                <div class="num-shield num-9 me-2"></div>
+                            </div>
+                            <div class="col">
+                                <p>
+                                    Берем на себя общение с банками, коллекторами и кредиторами. Вас будет защищать юрист с опытом от 14&nbsp;лет
+                                </p>
+                            </div>
+                        </div>
+                    </div><!-- .wall -->
+                </div><!-- .wall -->
+            </div><!-- .col -->
+        </div><!-- .row -->
+    </div><!-- .container -->
+</section>
+
+
+<section class="section">
+    <div class="container">
+        <div class="bordered-content">
+            <div class="row">
+                <div class="col-12 col-lg-8">
+                    <h2 class="title text-center">Ответьте на 4 вопроса и узнайте точную стоимость и реальные шансы списания ваших долгов</h2>
+                    <h3 class="title-desc text-center">Пройдите тест за 1 минуту и получите чек-лист «Как списать долги без последствий»</h3>
+                    <h3 class="title-desc fw-600 text-center">Вопрос №1: Какая сумма вашего долга?</h3>
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <label class="checkbox">
+                                <input class="checkbox-input" type="radio" value="300 - 500 тыс. рублей" name="question-answer" checked>
+                                <span class="checkbox-content">
+                                    <span class="checkbox-icon"></span>
+                                    <span class="checkbox-label">
+                                        300 - 500 тыс. рублей
+                                    </span>
+                                </span>
+                            </label>
+                        </div><!-- .col -->
+                        <div class="col-12 col-md-6">
+                            <label class="checkbox">
+                                <input class="checkbox-input" type="radio" value="500 - 1млн. рублей" name="question-answer">
+                                <span class="checkbox-content">
+                                    <span class="checkbox-icon"></span>
+                                    <span class="checkbox-label">
+                                        500 - 1млн. рублей
+                                    </span>
+                                </span>
+                            </label>
+                        </div><!-- .col -->
+                        <div class="col-12 col-md-6">
+                            <label class="checkbox">
+                                <input class="checkbox-input" type="radio" value="1 - 2 млн. рублей" name="question-answer">
+                                <span class="checkbox-content">
+                                    <span class="checkbox-icon"></span>
+                                    <span class="checkbox-label">
+                                        1 - 2 млн. рублей
+                                    </span>
+                                </span>
+                            </label>
+                        </div><!-- .col -->
+                        <div class="col-12 col-md-6">
+                            <label class="checkbox">
+                                <input class="checkbox-input" type="radio" value="более 2 млн. рублей" name="question-answer">
+                                <span class="checkbox-content">
+                                    <span class="checkbox-icon"></span>
+                                    <span class="checkbox-label">
+                                        более 2 млн. рублей
+                                    </span>
+                                </span>
+                            </label>
+                        </div><!-- .col -->
+                    </div><!-- .row -->
+                    <div class="row">
+                        <div class="col-auto mx-auto">
+                            <a class="btn" href="javascript:;">СЛЕДУЩИЙ ШАГ →</a>
+                        </div><!-- .col -->
+                    </div><!-- .row -->
+                </div><!-- .col -->
+                <div class="col-12 col-lg-4 align-self-end">
+                    <img class="img-center" width="350" height="350" src="img/i-500-4.jpg" alt="Пройдите тест за 1 минуту и получите чек-лист «Как списать долги без последствий»">
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .bordered-content -->
+    </div><!-- .container -->
+</section>
+
+
+<section class="section pb-0">
+    <div class="container">
+        <h2 class="title text-center">Остались вопросы?</h2>
+        <h3 class="title-desc text-center">Запишитесь на бесплатную консультацию на ней вы узнаете</h3>
+        <div class="row">
+            <div class="col-12 col-md-5 col-lg-3 order-1 order-lg-2">
+                <ul class="list-circle em-11">
+                    <li><p>Как законно списать именно ваши долги</p></li>
+                    <li><p>Как законно списать именно ваши долги</p></li>
+                    <li><p>Как прямо сейчас прекратить рост долга и запретить коллекто- рам вам звонить</p></li>
+                    <li><p>Как будет проходить процедура списания долгов</p></li>
+                </ul>
+                <p class="text-center">Юрист по банкротству Алексей&nbsp;Рагульский</p>
+                <img class="img-center" width="150" src="img/sign-black.png" alt="Алексей Рагульский">
+            </div><!-- .col -->
+            <div class="col-12 col-md-7 col-lg-4 order-2 order-lg-3">
+                <div class="bordered-content px-3 pt-3 pb-1 mb-4">
+                    <h3 class="text-center fw-300 em-15">Заполните форму, чтобы записаться на бесплатную консультацию с юристом</h3>
+                    <input class="input" type="text" placeholder="Введите ваше имя">
+                    <input class="input" type="text" placeholder="Ваш номер телефона">
+                    <button class="btn">ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ</button>
+                    <p class="gray em-8 text-center">Нажимая на кнопку, вы даёте согласие на обработку персональных данных и соглашаетесь <a data-fancybox href="#policy">с политикой конфиденциальности</a></p>
+                </div>
+            </div><!-- .col -->
+            <div class="col-12 col-md-6 col-lg-5 mx-auto align-self-end order-3 order-lg-1">
+                <img class="img-center mb-0" width="400" src="img/i-4.jpg" alt="Записаться на консультацию">
+            </div><!-- .col -->
+        </div><!-- .row -->
+    </div><!-- .container -->
+</section>
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-auto text-center text-md-start">
+                <p>
+                    <a class="ln-white" href="tel:89778355805">
+                        <i class="i-phone me-1"></i>
+                        +7 (977) 835-58-05
+                    </a>
+                </p>
+                <p>
+                    <a class="ln-white" href="mailto:alexeyragulskiy@mail.ru">
+                        <i class="i-email me-1"></i>
+                        alexeyragulskiy@mail.ru
+                    </a>
+                </p>
+                <p>
+                    <a class="ln-white" target="_blank" href="https://vk.com/bankrotbalance">
+                        <i class="i-vk me-1"></i>
+                        vk.com/bankrotbalance
+                    </a>
+                </p>
+            </div><!-- .col -->
+            <div class="col-12 col-md-auto ms-auto text-center text-md-end">
+                <p>
+                    <a class="ln-white" data-fancybox href="#policy">Политика персональных данных</a>
+                </p>
+                <p>
+                    АДВОКАТ
+                    <br>
+                    ПО БАНКРОТСТВУ
+                    <br>
+                    Алексей Рагульский
+                </p>
+            </div><!-- .col -->
+        </div><!-- .row -->
+    </div><!-- .container -->
+</footer>
+
+
+</div><!-- .wrapper -->
+
+
+<!-- MODALS -->
+<div class="d-none">
+
+<div id="fz-127">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem tempore, veniam atque provident, doloribus architecto deserunt unde aperiam voluptatem, consequuntur cupiditate recusandae praesentium eaque. Nisi rerum a dolorem maiores amet!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni sed quidem at quibusdam provident placeat maiores amet labore tenetur mollitia ea, error magnam nulla, ad natus, reprehenderit adipisci voluptatibus voluptas.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe illum obcaecati ab mollitia rem labore at ullam modi, eligendi ut eum ratione corporis nulla commodi, eveniet porro pariatur. Eligendi, doloribus.</p>
+</div>
+
+<div class="modal" id="callback">
+    <h3 class="text-center fw-300 em-15">Заполните форму, чтобы записаться на бесплатную консультацию с юристом</h3>
+    <input class="input" type="text" placeholder="Введите ваше имя">
+    <input class="input" type="text" placeholder="Ваш номер телефона">
+    <button class="btn">ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ</button>
+    <p class="gray em-8 text-center">Нажимая на кнопку, вы даёте согласие на обработку персональных данных и соглашаетесь <a data-fancybox href="#policy">с политикой конфиденциальности</a></p>
+</div>
+
+<div id="policy">
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi voluptate deleniti reiciendis nulla quo! Perspiciatis exercitationem voluptates ipsam accusamus saepe. Consequuntur nam saepe eligendi maiores magnam. Odio eius dolorum obcaecati.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere eaque quam iusto cupiditate ex maxime quasi in blanditiis consequuntur corrupti nesciunt, tempore dolor doloremque odio quo veritatis sint distinctio est.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla odio, sint, earum rem eveniet perspiciatis commodi exercitationem amet impedit placeat nostrum dignissimos sunt omnis sapiente eligendi assumenda ullam quos maiores?</p>
+</div>
+
+<div id="resume">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita rerum amet porro, enim, fugiat, consectetur nemo molestias nobis fuga odio quasi tenetur iste esse explicabo quas eveniet atque nesciunt? Natus!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fugiat libero minima, quibusdam eveniet cumque qui recusandae obcaecati, nobis ut corrupti architecto quo molestiae autem eaque minus culpa aperiam unde.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde quisquam libero alias. Consequuntur fugiat alias in exercitationem nihil, tempora ad unde ipsam, quas minus rem magni animi sunt, harum nam.</p>
+</div>
+
+
+</div><!-- .d-none -->
+
+
+<script src="js/depends.js?v=2"></script>
+<script src="js/main.js?v=1<?= time() ?>"></script>
+
+</body>
+</html>
