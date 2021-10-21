@@ -24,9 +24,9 @@
 @font-face {
   font-family: 'icomoon';
   src:
-    url('fonts/icomoon.ttf?312zma') format('truetype'),
-    url('fonts/icomoon.woff?312zma') format('woff'),
-    url('fonts/icomoon.svg?312zma#icomoon') format('svg');
+    url('fonts/icomoon.ttf?gcl9fd') format('truetype'),
+    url('fonts/icomoon.woff?gcl9fd') format('woff'),
+    url('fonts/icomoon.svg?gcl9fd#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -47,6 +47,15 @@ i {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.i-card:before {
+  content: "\e904";
+}
+.i-check-circle:before {
+  content: "\e905";
+}
+.i-file-pdf:before {
+  content: "\e906";
+}
 .i-arr-circle-up:before {
   content: "\e900";
 }
