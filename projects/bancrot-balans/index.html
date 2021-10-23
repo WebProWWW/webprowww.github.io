@@ -10,8 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,600;1,300&display=swap">
-    <link rel="stylesheet" href="css/depends.css?v=9">
-    <link rel="stylesheet" href="css/main.css?v=9">
+    <link rel="stylesheet" href="css/depends.css?v=10">
+    <link rel="stylesheet" href="css/main.css?v=10">
     <title>Банкрот Баланс</title>
 </head>
 <body>
@@ -115,7 +115,7 @@
 <section class="section">
     <div class="container">
         <h2 class="title text-center">Помогу списать долги и кредиты законным пособом, через банкротство физлиц, согласно 127 ФЗ*, <span class="fw-300">с сохранением имущества</span></h2>
-        <h3 class="title-desc text-center">Какие долги можно списать в процессе процедуры банкротства:</h3>
+        <h3 class="title text-center">Какие долги можно списать в процессе процедуры банкротства:</h3>
         <div class="row">
             <div class="col-12 col-xxl-8">
                 <div class="row">
@@ -238,7 +238,8 @@
                 <div class="wall">
                     <img class="wall-img" src="img/i-1.jpg" alt="Алексей Рагульский">
                     <div class="wall-body em-11">
-                        <h3 class="title my-xxl-auto">Алексей Рагульский</h3>
+                        <h3 class="title my-xxl-auto mb-0">Алексей Рагульский</h3>
+                        <p>Персональный юрист по банкротству</p>
                         <p class="my-xxl-auto"><span class="fw-600">С 2015 года</span> я занимаюсь исключительно банкротством физических лиц.</p>
                         <p class="my-xxl-auto">Бывает жизнь складывается таким образом, что от нас самих мало, что зависит. Я помогаю людям начать жизнь с чистого листа. Ведь банкротство - это не просто не хотение платить по кредитам, это финансовое оздоровление и единственный законный выход из долговой ямы.</p>
                         <p class="my-xxl-auto">
@@ -846,12 +847,17 @@
 
 <section class="section">
     <div class="container">
+        <h2 class="title text-center">
+            Ответьте на 5 вопросов и узнайте точную стоимость и реальные
+            <span class="d-none d-xl-block"></span>
+            шансы списания ваших долгов
+        </h2>
         <div class="bordered-content">
-            <div class="row">
-                <div class="col-12 col-lg-8">
+            <div class="row justify-content-around">
+                <div class="col-12 col-lg-8 col-xl-7 col-xxl-6">
                     <div id="app-vue-quiz"></div>
                 </div><!-- .col -->
-                <div class="col-12 col-lg-4 align-self-end">
+                <div class="col-12 col-lg-4 col-xxl-auto align-self-end">
                     <img class="img-center" width="350" height="350" src="img/i-500-4.jpg" alt="Пройдите тест за 1 минуту и получите чек-лист «Как списать долги без последствий»">
                 </div><!-- .col -->
             </div><!-- .row -->
@@ -982,9 +988,9 @@
 </div><!-- .d-none -->
 
 
-<script src="js/depends.js?v=9"></script>
-<script src="js/main.js?v=9"></script>
-<script src="vue/app.js?v=9"></script>
+<script src="js/depends.js?v=10"></script>
+<script src="js/main.js?v=10"></script>
+<script src="vue/app.js?v=10"></script>
 
 <script>
     window.quizInit({
@@ -995,8 +1001,7 @@
             return true;
         },
         questionsComplete: function () {},
-        title: 'Ответьте на 5 вопросов и узнайте точную стоимость и реальные шансы списания ваших долгов',
-        desc: 'Пройдите тест за 1 минуту и получите чек-лист «Как списать долги без последствий»',
+        title: 'Пройдите тест за 1 минуту и получите чек-лист «Как списать долги без последствий»',
         questions: [
             {
                 title: 'Какая общая сумма Вашего долга?',
