@@ -1,0 +1,68 @@
+@font-face {
+  font-family: 'icomoon';
+  src:
+    url('fonts/icomoon.ttf?we5tur') format('truetype'),
+    url('fonts/icomoon.woff?we5tur') format('woff'),
+    url('fonts/icomoon.svg?we5tur#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.i-female:before {
+  content: "\e90b";
+}
+.i-male:before {
+  content: "\e90c";
+}
+.i-trans:before {
+  content: "\e90d";
+}
+.i-eye-a:before {
+  content: "\e90a";
+}
+.i-account:before {
+  content: "\e905";
+}
+.i-eye:before {
+  content: "\e906";
+}
+.i-favorite:before {
+  content: "\e907";
+}
+.i-iphone:before {
+  content: "\e908";
+}
+.i-person:before {
+  content: "\e909";
+}
+.i-dot:before {
+  content: "\e904";
+}
+.i-close:before {
+  content: "\e900";
+}
+.i-menu:before {
+  content: "\e901";
+}
+.i-more:before {
+  content: "\e902";
+}
+.i-search:before {
+  content: "\e903";
+}
