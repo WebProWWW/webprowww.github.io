@@ -1,0 +1,31 @@
+/*! #__NO_SIDE_EFFECTS__ */
+
+/**
+* @vue/compiler-core v3.4.24
+* (c) 2018-present Yuxi (Evan) You and Vue contributors
+* @license MIT
+**/
+
+/**
+* @vue/reactivity v3.4.24
+* (c) 2018-present Yuxi (Evan) You and Vue contributors
+* @license MIT
+**/
+
+/**
+* @vue/runtime-dom v3.4.24
+* (c) 2018-present Yuxi (Evan) You and Vue contributors
+* @license MIT
+**/
+
+/**
+* @vue/shared v3.4.24
+* (c) 2018-present Yuxi (Evan) You and Vue contributors
+* @license MIT
+**/
+
+/**
+* vue v3.4.24
+* (c) 2018-present Yuxi (Evan) You and Vue contributors
+* @license MIT
+**/
