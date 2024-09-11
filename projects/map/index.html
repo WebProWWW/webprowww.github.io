@@ -7,7 +7,45 @@
     <meta name="format-detection" content="date=no">
     <meta name="format-detection" content="address=no">
     <meta name="format-detection" content="email=no">
-    <title>Document</title>
+    <title>ДОЛИНА СИМД</title>
+
+<style>
+.loader {
+    z-index: 10;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+.loader::before {
+    content: '';
+    display: block;
+    margin: -20px 0 0 -65px;
+    width: 130px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-image: url('loader.svg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.loader.hide {
+    opacity: 0;
+}
+.loader.hide::before {
+    display: none;
+}
+</style>
+
 <script>
 
 // 610 x 660
@@ -498,8 +536,53 @@ window.appMapMarker = [
 ];
 </script>
 
-<script defer src="js/depends-6ab9189d.js"></script><script defer src="js/main-5cd5eb85.js"></script><link href="css/depends-d929904e.css" rel="stylesheet"><link href="css/main-3d075383.css" rel="stylesheet"></head>
+<script defer src="js/depends-f34780ad.js"></script><script defer src="js/main-56d97916.js"></script></head>
 <body>
-    <div class="wrapper" id="app"></div>
+
+<div class="wrapper">
+    <div id="app"></div>
+    <div class="bg-video" id="start-background">
+        <video autoplay muted loop poster="poster.png" id="bg-video-el">
+            <source src="bg.mp4" type="video/mp4"></video>
+        </video>
+        <div class="bg-video-overlay"></div>
+        <div class="bg-video-btn">
+            <div class="btn-primary" id="start-button">
+                Старт
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- LOADER -->
+<div class="loader" id="main-loader"></div>
+<script>
+(function() {
+
+    var elLoaader = document.getElementById('main-loader');
+    var elBg = document.getElementById('start-background');
+    var elBtn = document.getElementById('start-button');
+    var elVideo = document.getElementById('bg-video-el');
+
+    window.addEventListener('load', function() {
+        elLoaader.addEventListener('transitionend', function() {
+            elLoaader.remove();
+        }, { once: true });
+        elLoaader.classList.add('hide');
+    }, { once: true });
+
+    elBtn.addEventListener('click', function() {
+        elBg.addEventListener('transitionend', function() {
+            elBg.remove();
+            elVideo.pause();
+            elVideo.currentTime = 0;
+        }, { once: true });
+        elBg.classList.add('hide');
+    }, { once: true });
+
+})()
+</script>
+<!-- /LOADER -->
+
 </body>
 </html>
