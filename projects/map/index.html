@@ -660,9 +660,51 @@ window.appAboutSlider = [
 },
 
 ];
+
+window.appMapImage = {
+
+    groung: 'images/map/map.jpg',
+
+    mask1: 'images/map/map-mask-1.jpg',
+
+    mask2: 'images/map/map-mask-2.jpg',
+
+    mask3: 'images/map/map-mask-3.jpg',
+
+    mask4: 'images/map/map-mask-4.jpg',
+
+    mask5: 'images/map/map-mask-5.jpg',
+
+    mask6: 'images/map/map-mask-6.jpg',
+
+    mask7: 'images/map/map-mask-7.jpg',
+
+    mask8: 'images/map/map-mask-8.jpg',
+
+    mask9: 'images/map/map-mask-9.jpg',
+
+    mask10: 'images/map/map-mask-10.jpg',
+
+    mask11: 'images/map/map-mask-11.jpg',
+
+    mask12: 'images/map/map-mask-12.jpg',
+
+    mask13: 'images/map/map-mask-13.jpg',
+
+    mask14: 'images/map/map-mask-14.jpg',
+};
+
+
+for (const imageName in window.appMapImage) {
+    if (Object.prototype.hasOwnProperty.call(window.appMapImage, imageName)) {
+        const img = window.appMapImage[imageName];
+        (new Image).src = img;
+    }
+}
+
 </script>
 
-<script defer src="js/depends-2b06d025.js"></script><script defer src="js/main-c34f0211.js"></script></head>
+<script defer src="js/depends-2fc77129.js"></script><script defer src="js/main-ee67c2c0.js"></script></head>
 <body>
 
 <!--
