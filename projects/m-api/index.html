@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- У ВАС УЖЕ ПОДКЛЮЧЕН -->
+    <link href="tmp/bootstrap.min.css" rel="stylesheet">
+    <link href="tmp/activeform.min.css" rel="stylesheet">
+    <link href="tmp/daterangepicker.min.css" rel="stylesheet">
+    <link href="tmp/daterangepicker-kv.min.css" rel="stylesheet">
+    <link href="tmp/kv-widgets.min.css" rel="stylesheet">
+    <link href="tmp/kv-grid.min.css" rel="stylesheet">
+    <link href="tmp/bootstrap-dialog-bs4.min.css" rel="stylesheet">
+    <link href="tmp/jquery.resizableColumns.min.css" rel="stylesheet">
+    <link href="tmp/site.css" rel="stylesheet">
+    <link href="tmp/fa.css" rel="stylesheet">
+    <link href="tmp/spinner.css" rel="stylesheet">
+    <link href="tmp/kv-bootstrap-notify.min.css" rel="stylesheet">
+    <link href="tmp/growl.min.css" rel="stylesheet">
+    <link href="tmp/animate.min.css" rel="stylesheet">
+    <!-- / У ВАС УЖЕ ПОДКЛЮЧЕН -->
+
+</head>
+<body>
+
+
+<div class="container-fluid">
+    <div class="sched-message-index">
+
+
+
+<!-- VUE ПРИЛОЖЕНИЕ -->
+<div class="d-none" id="message-app">
+
+    <div v-if="isLoading">
+        <div class="row">
+            <div class="col-auto mx-auto">
+                <svg width="70" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 70 10"><circle fill="#1C6EFC" stroke="none" cx="5" cy="5" r="5"><animate attributeName="opacity" dur="700ms" values="1;0" repeatCount="indefinite" begin="0.1"/><animate attributeName="r" dur="700ms" values="5;3" repeatCount="indefinite" begin="0.1"/></circle><circle fill="#1C6EFC" stroke="none" cx="20" cy="5" r="5"><animate attributeName="opacity" dur="700ms" values="1;0" repeatCount="indefinite"  begin="0.2"/><animate attributeName="r" dur="700ms" values="5;3" repeatCount="indefinite" begin="0.2"/></circle><circle fill="#1C6EFC" stroke="none" cx="35" cy="5" r="5"><animate attributeName="opacity" dur="700ms" values="1;0" repeatCount="indefinite"  begin="0.3"/><animate attributeName="r" dur="700ms" values="5;3" repeatCount="indefinite" begin="0.3"/></circle><circle fill="#1C6EFC" stroke="none" cx="50" cy="5" r="5"><animate attributeName="opacity" dur="700ms" values="1;0" repeatCount="indefinite"  begin="0.4"/><animate attributeName="r" dur="700ms" values="5;3" repeatCount="indefinite" begin="0.4"/></circle><circle fill="#1C6EFC" stroke="none" cx="65" cy="5" r="5"><animate attributeName="opacity" dur="700ms" values="1;0" repeatCount="indefinite"  begin="0.5"/><animate attributeName="r" dur="700ms" values="5;3" repeatCount="indefinite" begin="0.5"/></circle></svg>
+            </div><!-- .col -->
+        </div><!-- .row -->
+    </div><!-- v-if -->
+
+    <div v-else>
+        <div class="grid-view is-bs4 kv-grid-bs4 hide-resize">
+            <div class="kv-grid-container">
+                <table class="kv-grid-table table table-hover table-bordered table-striped table-sm kv-table-wrap">
+                    <thead class="kv-table-header w1">
+                        <tr>
+                            <th><a href>ID <span class="kv-sort-icon"><i class="fas fa-sort-amount-up"></i></span></a></th>
+                            <th><a href>Клиент</a></th>
+                            <th><a href>Почта</a></th>
+                            <th><a href>Куда</a></th>
+                            <th><a href>Создано</a></th>
+                            <th><a href>Обновлено</a></th>
+                            <th><a href>Время отправки</a></th>
+                            <th><a href>Время доставки</a></th>
+                            <th><a href>Время открытия</a></th>
+                            <th><a href>Канал</a></th>
+                            <th><a href>Провайдер</a></th>
+                            <th><a href>Заголовок</a></th>
+                            <th><a href>Статус</a></th>
+                            <th><a href>Доставлено</a></th>
+                            <th><a href>Открыто</a></th>
+                            <th><a href>Клик</a></th>
+                            <th><a href>Заблокировано</a></th>
+                            <th><a href>Не доставлено</a></th>
+                            <th><a href>Отписка</a></th>
+                            <th><a href>Действие цепочки</a></th>
+                            <th><a href>Отправить после</a></th>
+                            <th><a href>Отправить до</a></th>
+                        </tr>
+                        <tr class="filters skip-export">
+                            <td><input type="text" class="form-control"></td>
+                            <td><input type="text" class="form-control"></td>
+                            <td>
+                                <select class="form-control">
+                                    <option value=""></option>
+                                    <option value="1">потверждена</option>
+                                    <option value="-1">не потверждена</option>
+                                </select>
+                            </td>
+                            <td><input type="text" class="form-control"></td>
+                            <td><input type="text" class="form-control" autocomplete="off"></td>
+                            <td><input type="text" class="form-control"></td>
+                            <td><input type="text" class="form-control"></td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td><input type="text" class="form-control"></td>
+                            <td><input type="text" class="form-control"></td>
+                            <td><input type="text" class="form-control"></td>
+                            <td>
+                                <select class="form-control">
+                                    <option value=""></option>
+                                    <option value="0">Создано</option>
+                                    <option value="5">Отправлено</option>
+                                    <option value="10">Ошибка</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="form-control">
+                                    <option value=""></option>
+                                    <option value="1">Да</option>
+                                    <option value="0">Нет</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="form-control">
+                                    <option value=""></option>
+                                    <option value="1">Да</option>
+                                    <option value="0">Нет</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="form-control">
+                                    <option value=""></option>
+                                    <option value="1">Да</option>
+                                    <option value="0">Нет</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="form-control">
+                                    <option value=""></option>
+                                    <option value="1">Да</option>
+                                    <option value="0">Нет</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="form-control">
+                                    <option value=""></option>
+                                    <option value="1">Да</option>
+                                    <option value="0">Нет</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="form-control">
+                                    <option value=""></option>
+                                    <option value="1">Да</option>
+                                    <option value="0">Нет</option>
+                                </select>
+                            </td>
+                            <td><input type="text" class="form-control"></td>
+                            <td><input type="text" class="form-control"></td>
+                            <td><input type="text" class="form-control"></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="w1" v-for="message in messages">
+                            <td class="w1">
+                                <div v-html="message.id"></div>
+                            </td>
+                            <td class="w1">
+                                <div v-html="message.account_id"></div>
+                            </td>
+                            <td class="w1">
+                                <div class="text-center" v-html="message.mail_verified"></div>
+                            </td>
+                            <td class="w1">
+                                <div class="text-nowrap" v-html="message.destination"></div>
+                            </td>
+                            <td class="w1">
+                                <div class="text-nowrap" v-html="message.created_at"></div>
+                            </td>
+                            <td class="w1">
+                                <div class="text-nowrap" v-html="message.updated_at"></div>
+                            </td>
+                            <td class="w1">
+                                <div class="text-nowrap" v-html="message.sent_at"></div>
+                            </td>
+                            <td class="w1">
+                                <div class="text-nowrap" v-html="message.delivered_at"></div>
+                            </td>
+                            <td class="w1">
+                                <div class="text-nowrap" v-html="message.opened_at"></div>
+                            </td>
+                            <td class="w1">
+                                <div class="text-nowrap" v-html="message.channel"></div>
+                            </td>
+                            <td class="w1">
+                                <div class="text-nowrap" v-html="message.provider"></div>
+                            </td>
+                            <td class="w1">
+                                <div v-html="message.title"></div>
+                            </td>
+                            <td class="w1">
+                                <div class="text-nowrap" v-html="message.status"></div>
+                            </td>
+
+                            <!-- Эти параметры API не выдает почему-то -->
+                            <td class="w1">
+                                <div v-html="message.is_delivered"></div>
+                            </td>
+                            <td class="w1">
+                                <div v-html="message.is_opened"></div>
+                            </td>
+                            <td class="w1">
+                                <div v-html="message.is_clicked"></div>
+                            </td>
+                            <td class="w1">
+                                <div v-html="message.is_blocked"></div>
+                            </td>
+                            <td class="w1">
+                                <div v-html="message.is_undelivered"></div>
+                            </td>
+                            <td class="w1">
+                                <div v-html="message.is_unsubscribed"></div>
+                            </td>
+                            <td class="w1">
+                                <div v-html="message.action_id"></div>
+                            </td>
+                            <td class="w1">
+                                <div v-html="message.send_after"></div>
+                            </td>
+                            <td class="w1">
+                                <div v-html="message.send_before"></div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div v-if="hasMore">
+                    <button class="btn btn-primary" @click="loadMessages">
+                        <span v-if="isLoadingMore">
+                            &nbsp;&nbsp;&nbsp;
+                                <svg height="6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 70 10"><circle fill="#ffffff" stroke="none" cx="5" cy="5" r="5"><animate attributeName="opacity" dur="700ms" values="1;0" repeatCount="indefinite" begin="0.1"/><animate attributeName="r" dur="700ms" values="5;3" repeatCount="indefinite" begin="0.1"/></circle><circle fill="#ffffff" stroke="none" cx="20" cy="5" r="5"><animate attributeName="opacity" dur="700ms" values="1;0" repeatCount="indefinite"  begin="0.2"/><animate attributeName="r" dur="700ms" values="5;3" repeatCount="indefinite" begin="0.2"/></circle><circle fill="#ffffff" stroke="none" cx="35" cy="5" r="5"><animate attributeName="opacity" dur="700ms" values="1;0" repeatCount="indefinite"  begin="0.3"/><animate attributeName="r" dur="700ms" values="5;3" repeatCount="indefinite" begin="0.3"/></circle><circle fill="#ffffff" stroke="none" cx="50" cy="5" r="5"><animate attributeName="opacity" dur="700ms" values="1;0" repeatCount="indefinite"  begin="0.4"/><animate attributeName="r" dur="700ms" values="5;3" repeatCount="indefinite" begin="0.4"/></circle><circle fill="#ffffff" stroke="none" cx="65" cy="5" r="5"><animate attributeName="opacity" dur="700ms" values="1;0" repeatCount="indefinite"  begin="0.5"/><animate attributeName="r" dur="700ms" values="5;3" repeatCount="indefinite" begin="0.5"/></circle></svg>
+                            &nbsp;&nbsp;&nbsp;
+                        </span>
+                        <span v-else>Загрузить еще</span>
+                    </button>
+                </div>
+
+            </div><!-- .kv-grid-container -->
+        </div><!-- .grid-view is-bs4 kv-grid-bs4 hide-resize -->
+    </div><!-- v-else -->
+
+</div><!-- #message-app -->
+<!-- /VUE ПРИЛОЖЕНИЕ -->
+
+
+
+    </div><!-- .sched-message-index -->
+</div><!-- .container-fluid -->
+
+
+<!-- Аксиос и Vue 3 -->
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+<!-- / Аксиос и Vue 3 -->
+
+<script>
+
+
+
+
+
+const { createApp, ref } = Vue;
+
+createApp({
+    setup() {
+        const messages = ref([])
+        const isLoading = ref(true)
+        const isLoadingMore = ref(false)
+        const hasMore = ref(false)
+        const url = 'https://crm.holycam.net/api/message/index'
+        // const url = 'tmp/message.json'
+        let params = { page: 1 }
+        let pagesCount = 1
+        let currentPage = 1
+
+        function onLoad(data) {
+            currentPage = Number(data.currentPage || 1)
+            pagesCount = Number(data.pagesCount || 1)
+            hasMore.value = currentPage < pagesCount
+            const responseMessages = data.data || []
+            messages.value = [...messages.value, ...responseMessages]
+        }
+
+        function loadMessages () {
+            isLoadingMore.value = true
+            params.page = currentPage + 1
+            axios.get(url, { params })
+            .then((response) => {
+                isLoadingMore.value = false
+                onLoad(response.data || {})
+            })
+        }
+
+        axios.get(url, { params })
+        .then((response) => {
+            isLoading.value = false
+            onLoad(response.data || {})
+        })
+
+        return {
+            isLoading,
+            isLoadingMore,
+            messages,
+            hasMore,
+            loadMessages,
+        }
+    }
+}).mount('#message-app')
+
+
+
+
+window.addEventListener('load', () => {
+    const appElement = document.getElementById('message-app')
+    appElement.classList.remove('d-none')
+}, { once: true });
+
+</script>
+
+</body>
+</html>
