@@ -71,6 +71,16 @@ function _classCallCheck(a, n) { if (!(a instanceof n)) throw new TypeError("Can
   //     new AjaxForm elForm
   //     yes
   var $dataOnScroll, $dataSlideToggle, TarifCarousel, dataOnScroll, dataSlideToggle, showModal;
+  $('*[data-mask]').each(function (i, el) {
+    var $el, mask;
+    $el = $(el);
+    mask = $el.data('mask');
+    // $(el).inputmask mask, {placeholder: ' '}
+    $(el).inputmask(mask, {
+      clearIncomplete: true
+    });
+    return true;
+  });
   showModal = function showModal(src) {
     // opt: dragToClose: false
     new Fancybox([{
