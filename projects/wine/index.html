@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="date=no">
+    <meta name="format-detection" content="address=no">
+    <meta name="format-detection" content="email=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/depends.css">
+    <link rel="stylesheet" href="css/main.css?v=1">
+    <title>Wine</title>
+</head>
+<body>
+
+<div class="header bg">
+    <div class="container">
+
+        <div class="row align-items-center">
+            <div class="col-12 col-md-auto">
+                <img class="header-logo" src="img/logo.png" alt="Мир Вина">
+            </div><!-- .col -->
+            <div class="col-12 col-md-auto ms-auto">
+                <div class="row">
+                    <div class="col-12 col-md-auto">
+                        <a class="nav-ln" href="">
+                            Главная
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-auto">
+                        <a class="nav-ln" href="">
+                            Новости
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-auto">
+                        <a class="nav-ln" href="">
+                            Блог
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-auto">
+                        <a class="nav-ln" href="">
+                            Контакты
+                        </a>
+                    </div>
+                </div>
+            </div><!-- .col -->
+        </div><!-- .row -->
+
+        <h1 class="header-title great-vibes">
+            Мир Вина: Искусство, Вкус, Вдохновение
+        </h1>
+
+        <h2 class="header-desc">
+            &laquo;Мир Вина&raquo; — онлайн-платформа для ценителей вин, где собраны гиды, советы, статьи и пространство для общения. Откройте богатство вкусов и вдохновение винной культуры!
+        </h2>
+    </div><!-- .container -->
+</div><!-- .header -->
+
+<div class="block">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <img class="block-img" src="img/img-1.jpg">
+            </div><!-- .col -->
+            <div class="col-12 col-lg align-self-center">
+                <h2 class="title text-center text-lg-start">
+                    Добро пожаловать в мир изысканного вкуса и винной культуры!
+                </h2>
+                <p>
+                    Добро пожаловать в "Мир Вина" — онлайн-пространство для ценителей винной культуры. Здесь вы найдете гид по лучшим винам мира, советы по выбору и сочетанию, увлекательные статьи о виноделии и традициях, а также площадку для общения с единомышленниками. Откройте для себя искусство дегустации, погрузитесь в гастрономические пары и создайте свою винную коллекцию. "Мир Вина" — это место, где каждая деталь наполняется вкусом и смыслом.
+                </p>
+            </div><!-- .col -->
+        </div><!-- .row -->
+    </div><!-- .container -->
+</div><!-- .block -->
+
+<div class="block bg-a">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6 order-lg-2">
+                <img class="block-img" src="img/img-2.jpg">
+            </div><!-- .col -->
+            <div class="col-12 col-lg align-self-center order-lg-1">
+                <h2 class="title text-center text-lg-start">
+                    Раскройте вкус каждого вина
+                </h2>
+                <p>
+                    Дегустация вина — это не просто процесс оценки вкуса, но и целое искусство, которое позволяет раскрыть все богатство аромата и вкуса напитка. На нашем сайте вы найдете подробные руководства по дегустации, от того, как правильно оценить цвет и аромат вина до способов определения его структуры и послевкусия. Мы поможем вам развить навыки, чтобы вы могли наслаждаться каждым бокалом, понимая и ценя каждую деталь. Также у нас есть рекомендации по идеальному сочетанию вина с блюдами, что сделает дегустацию еще более увлекательной и многогранной.
+                </p>
+            </div><!-- .col -->
+        </div><!-- .row -->
+    </div><!-- .container -->
+</div><!-- .block -->
+
+<div class="block">
+    <div class="container">
+        <div id="app-test">
+            <div v-if="isCompleted">
+                <div class="text-center">
+                    <p class="title-3">Поздравляем, Вы прошли тест!</p>
+                    <p class="title-4 ">
+                        Всего вопросов: {{ length }}
+                        <br>
+                        Правильных ответов: {{ trueCount }}
+                        <br>
+                        Ваша оценка: {{ score }}
+                    </p>
+                    <div class="row">
+                        <div class="col-auto mx-auto">
+                            <div class="btn text" @click="reset">
+                                Пройти заново
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div v-else>
+                <h2 class="title text-center">Пройдите тест и узнайте какой Вы ценитель вина?</h2>
+                <p class="text mb-2">Вопрос {{index + 1}} из {{length}}</p>
+                <div class="progress">
+                    <div class="progress-percent" :style="{width: progress + '%'}"></div>
+                </div>
+                <div class="title-4">
+                    {{question.label}}
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4" v-for="answer in question.answers">
+                        <div class="btn text" @click="answerChanged(answer)">
+                            {{ answer.label }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- .container -->
+</div><!-- .block -->
+
+<div class="footer bg">
+    <div class="container">
+        &copy; &laquo;Мир Вина&raquo; 2024
+    </div><!-- .container -->
+</div><!-- .footer -->
+
+<script src="js/vue.global.prod.js"></script>
+
+
+
+<script>
+
+const { createApp, ref } = Vue
+createApp({
+    setup() {
+        const index = ref(0)
+        const progress = ref(0)
+        const score = ref(0)
+        const trueCount = ref(0)
+        const isCompleted = ref(false)
+        const question = ref({})
+        const questions = ref([
+            {
+                label: 'Сыр с голубой плесенью',
+                answers: [
+                    {
+                        label: 'Белое игристое вино брют',
+                        score: 1,
+                    },
+                    {
+                        label: 'Белое розовое полусухое вино',
+                        score: -1,
+                    },
+                    {
+                        label: 'Текила',
+                        score: -1,
+                    },
+                    {
+                        label: 'Ром',
+                        score: -1,
+                    },
+                    {
+                        label: 'Красное сухое вино',
+                        score: -1,
+                    },
+                    {
+                        label: 'Ликёр',
+                        score: -1,
+                    }
+                ]
+            },
+            {
+                label: 'Мягкий сыр с белой плесенью',
+                answers: [
+                    {
+                        label: 'Белое сухое вино',
+                        score: -1,
+                    },
+                    {
+                        label: 'Белое игристое полусладкое',
+                        score: 1,
+                    },
+                    {
+                        label: 'Пиво фруктовое',
+                        score: -1,
+                    },
+                    {
+                        label: 'Водка',
+                        score: -1,
+                    },
+                    {
+                        label: 'Красное сухое',
+                        score: -1,
+                    },
+                    {
+                        label: 'Портвейн',
+                        score: -1,
+                    }
+                ]
+            },
+            {
+                label: 'Сыр чеддер',
+                answers: [
+                    {
+                        label: 'Белое сладкое вино',
+                        score: -1,
+                    },
+                    {
+                        label: 'Белое выдержанное вино',
+                        score: -1,
+                    },
+                    {
+                        label: 'Бренди',
+                        score: 1,
+                    },
+                    {
+                        label: 'Красное сухое вино',
+                        score: -1,
+                    },
+                    {
+                        label: 'Джин',
+                        score: -1,
+                    },
+                    {
+                        label: 'Пиво ламбик',
+                        score: -1,
+                    }
+                ]
+            },
+            {
+                label: 'Сыр сулугуни',
+                answers: [
+                    {
+                        label: 'Белое полусухое вино',
+                        score: -1,
+                    },
+                    {
+                        label: 'Пиво',
+                        score: -1,
+                    },
+                    {
+                        label: 'Красное полусладкое',
+                        score: -1,
+                    },
+                    {
+                        label: 'Портвейн',
+                        score: 1,
+                    },
+                    {
+                        label: 'Водка',
+                        score: -1,
+                    },
+                    {
+                        label: 'Бренди',
+                        score: -1,
+                    }
+                ]
+            }
+        ])
+        const length = questions.value.length
+
+        function showQuestion() {
+            question.value = questions.value[index.value]
+            progress.value = (index.value + 1) / length * 100
+        }
+
+        function answerChanged(answer) {
+            score.value += answer.score
+            if (answer.score > 0) {
+                trueCount.value++
+            }
+            if (index.value < length - 1) {
+                index.value++
+                showQuestion()
+                return
+            }
+            progress.value = 100
+            isCompleted.value = true
+        }
+
+        function reset() {
+            index.value = 0
+            progress.value = 0
+            score.value = 0
+            trueCount.value = 0
+            showQuestion()
+            isCompleted.value = false
+        }
+        
+        showQuestion()
+
+        return {
+            length,
+            index,
+            question,
+            progress,
+            answerChanged,
+            score,
+            trueCount,
+            isCompleted,
+            reset,
+        }
+    }
+}).mount('#app-test')
+
+</script>
+
+
+</body>
+</html>
