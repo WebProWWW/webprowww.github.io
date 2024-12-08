@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/depends.css">
-    <link rel="stylesheet" href="css/main.css?v=1">
+    <link rel="stylesheet" href="css/main.css?v=2">
     <title>Wine</title>
 </head>
 <body>
@@ -104,9 +104,15 @@
                     <p class="title-4 ">
                         Всего вопросов: {{ length }}
                         <br>
-                        Правильных ответов: {{ trueCount }}
+                        Всего ответов: {{ result.answersCount }}
                         <br>
-                        Ваша оценка: {{ score }}
+                        Правильных ответов: {{ result.trueCount }} из {{ result.trueAnswersCount }}
+                        <br>
+                        Неверных ответов: {{ result.falseCount }} из {{ result.falseAnswersCount }}
+                        <br>
+                        Ваша оценка
+                        <br>
+                        <span class="title">{{ result.score }}</span>
                     </p>
                     <div class="row">
                         <div class="col-auto mx-auto">
@@ -119,17 +125,31 @@
             </div>
             <div v-else>
                 <h2 class="title text-center">Пройдите тест и узнайте какой Вы ценитель вина?</h2>
-                <p class="text mb-2">Вопрос {{index + 1}} из {{length}}</p>
+                <p class="text mb-2">Вопрос {{ index + 1 }} из {{ length }}</p>
                 <div class="progress">
                     <div class="progress-percent" :style="{width: progress + '%'}"></div>
                 </div>
                 <div class="title-4">
-                    {{question.label}}
+                    {{ question.label }}
                 </div>
                 <div class="row">
                     <div class="col-12 col-md-6 col-lg-4" v-for="answer in question.answers">
-                        <div class="btn text" @click="answerChanged(answer)">
-                            {{ answer.label }}
+                        <div
+                            class="btn-check text"
+                            :class="{ checked: answer.checked }"
+                            @click="answer.checked = !answer.checked"
+                        ><div>{{ answer.label }}</div></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-auto mx-auto">
+                        <div
+                            class="btn-red text"
+                            :class="{ disabled: !isNext }"
+                            @click="onNext"
+                        >
+                            <span v-if="isLast">Результат</span>
+                            <span v-else>Следующий вопрос</span>
                         </div>
                     </div>
                 </div>
@@ -150,15 +170,9 @@
 
 <script>
 
-const { createApp, ref } = Vue
+const { createApp, ref, computed } = Vue
 createApp({
     setup() {
-        const index = ref(0)
-        const progress = ref(0)
-        const score = ref(0)
-        const trueCount = ref(0)
-        const isCompleted = ref(false)
-        const question = ref({})
         const questions = ref([
             {
                 label: 'Сыр с голубой плесенью',
@@ -166,26 +180,32 @@ createApp({
                     {
                         label: 'Белое игристое вино брют',
                         score: 1,
+                        checked: false,
                     },
                     {
                         label: 'Белое розовое полусухое вино',
                         score: -1,
+                        checked: false,
                     },
                     {
                         label: 'Текила',
-                        score: -1,
+                        score: 1,
+                        checked: false,
                     },
                     {
                         label: 'Ром',
                         score: -1,
+                        checked: false,
                     },
                     {
                         label: 'Красное сухое вино',
                         score: -1,
+                        checked: false,
                     },
                     {
                         label: 'Ликёр',
-                        score: -1,
+                        score: 1,
+                        checked: false,
                     }
                 ]
             },
@@ -195,26 +215,32 @@ createApp({
                     {
                         label: 'Белое сухое вино',
                         score: -1,
+                        checked: false,
                     },
                     {
                         label: 'Белое игристое полусладкое',
                         score: 1,
+                        checked: false,
                     },
                     {
                         label: 'Пиво фруктовое',
                         score: -1,
+                        checked: false,
                     },
                     {
                         label: 'Водка',
                         score: -1,
+                        checked: false,
                     },
                     {
                         label: 'Красное сухое',
-                        score: -1,
+                        score: 1,
+                        checked: false,
                     },
                     {
                         label: 'Портвейн',
                         score: -1,
+                        checked: false,
                     }
                 ]
             },
@@ -224,26 +250,32 @@ createApp({
                     {
                         label: 'Белое сладкое вино',
                         score: -1,
+                        checked: false,
                     },
                     {
                         label: 'Белое выдержанное вино',
                         score: -1,
+                        checked: false,
                     },
                     {
                         label: 'Бренди',
                         score: 1,
+                        checked: false,
                     },
                     {
                         label: 'Красное сухое вино',
                         score: -1,
+                        checked: false,
                     },
                     {
                         label: 'Джин',
-                        score: -1,
+                        score: 1,
+                        checked: false,
                     },
                     {
                         label: 'Пиво ламбик',
                         score: -1,
+                        checked: false,
                     }
                 ]
             },
@@ -253,45 +285,100 @@ createApp({
                     {
                         label: 'Белое полусухое вино',
                         score: -1,
+                        checked: false,
                     },
                     {
                         label: 'Пиво',
                         score: -1,
+                        checked: false,
                     },
                     {
                         label: 'Красное полусладкое',
                         score: -1,
+                        checked: false,
                     },
                     {
                         label: 'Портвейн',
                         score: 1,
+                        checked: false,
                     },
                     {
                         label: 'Водка',
-                        score: -1,
+                        score: 1,
+                        checked: false,
                     },
                     {
                         label: 'Бренди',
                         score: -1,
+                        checked: false,
                     }
                 ]
             }
         ])
+
+        const index = ref(0)
+        const progress = ref(0)
+        const isCompleted = ref(false)
+        const question = ref({})
+
+        const isNext = computed(() => {
+            let hasChecked = false
+            question.value.answers.forEach(answer => {
+                if (answer.checked) {
+                    hasChecked = true
+                }
+            })
+            return hasChecked
+        })
+
+        const result = computed(() => {
+            let calculated = {
+                answersCount: 0,
+                trueAnswersCount: 0,
+                falseAnswersCount: 0,
+                trueCount: 0,
+                falseCount: 0,
+                score: 0,
+            }
+            questions.value.forEach(questionItem => {
+                calculated.answersCount += questionItem.answers.length
+                questionItem.answers.forEach(answer => {
+                    if (answer.score > 0) {
+                        calculated.trueAnswersCount++
+                        if (answer.checked) {
+                            calculated.trueCount++
+                        }
+                    }
+                    if (answer.score < 0) {
+                        calculated.falseAnswersCount++
+                        if (answer.checked) {
+                            calculated.falseCount++
+                        }
+                    }
+                    if (answer.checked) {
+                        calculated.score += answer.score
+                    }
+                })
+            })
+            return calculated
+        })
+
         const length = questions.value.length
 
-        function showQuestion() {
-            question.value = questions.value[index.value]
-            progress.value = (index.value + 1) / length * 100
+        const isLast = computed(() => index.value >= length - 1)
+
+        function showQuestion(index) {
+            question.value = questions.value[index]
+            progress.value = (index + 1) / length * 100
         }
 
-        function answerChanged(answer) {
-            score.value += answer.score
-            if (answer.score > 0) {
-                trueCount.value++
+        function onNext() {
+            if (!isNext.value) {
+                return
             }
             if (index.value < length - 1) {
                 index.value++
-                showQuestion()
+                showQuestion(index.value)
                 return
             }
             progress.value = 100
@@ -299,26 +386,30 @@ createApp({
         }
 
         function reset() {
+            questions.value.forEach(questionItem => {
+                questionItem.answers.forEach(answer => {
+                    answer.checked = false
+                })
+            })
             index.value = 0
             progress.value = 0
-            score.value = 0
-            trueCount.value = 0
-            showQuestion()
+            showQuestion(0)
             isCompleted.value = false
         }
         
-        showQuestion()
+        showQuestion(0)
 
         return {
             length,
             index,
             question,
             progress,
-            answerChanged,
-            score,
-            trueCount,
+            result,
             isCompleted,
+            isNext,
+            isLast,
             reset,
+            onNext,
         }
     }
 }).mount('#app-test')

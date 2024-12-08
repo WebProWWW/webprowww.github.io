@@ -119,7 +119,9 @@ body {
   text-align: center;
   padding: 15px 0;
 }
-.btn {
+.btn,
+.btn-red,
+.btn-check {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -128,18 +130,64 @@ body {
       -ms-user-select: none;
           user-select: none;
   cursor: pointer;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0 0 20px;
-  padding: 10px 20px;
+  padding: 11px 15px;
   border-radius: 8px;
-  background-color: #533d63;
+  background-color: #6a597e;
   color: #fff;
   font-weight: 200;
+  line-height: 1.1;
   -webkit-transition: 0.16s all ease-in-out;
   transition: 0.16s all ease-in-out;
 }
+.btn.disabled,
+.btn-red.disabled,
+.btn-check.disabled,
+.btn.disabled:hover,
+.btn-red.disabled:hover,
+.btn-check.disabled:hover {
+  cursor: not-allowed;
+  background-color: #9395a1;
+}
 .btn:hover {
-  background-color: #3f2950;
+  background-color: #58476b;
+}
+.btn-check:before {
+  content: '';
+  display: block;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 0.6em;
+  height: 0.6em;
+  margin: 0 0.5em 0 0;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-transition: 0.16s all ease-in-out;
+  transition: 0.16s all ease-in-out;
+}
+.btn-check:hover {
+  background-color: #58476b;
+}
+.btn-check.checked {
+  background-color: #58476b;
+}
+.btn-check.checked:before {
+  background-color: #3a254c;
+  -webkit-box-shadow: 0 0 10px 0 rgba(255,255,255,0.6);
+          box-shadow: 0 0 10px 0 rgba(255,255,255,0.6);
+}
+.btn-red {
+  background-color: #b6303b;
+}
+.btn-red:hover {
+  background-color: #8b142a;
 }
 .progress {
   margin: 0 0 15px;
