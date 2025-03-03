@@ -1,0 +1,545 @@
+.minw-100 {
+  min-width: 100px;
+}
+.minw-200 {
+  min-width: 200px;
+}
+.minw-300 {
+  min-width: 300px;
+}
+.minw-400 {
+  min-width: 400px;
+}
+.minw-500 {
+  min-width: 500px;
+}
+.minw-600 {
+  min-width: 600px;
+}
+.minw-700 {
+  min-width: 700px;
+}
+.minw-800 {
+  min-width: 800px;
+}
+.minw-900 {
+  min-width: 900px;
+}
+.lh-10 {
+  line-height: 1;
+}
+.lh-11 {
+  line-height: 1.1;
+}
+.lh-12 {
+  line-height: 1.2;
+}
+.lh-13 {
+  line-height: 1.3;
+}
+.lh-14 {
+  line-height: 1.4;
+}
+.lh-15 {
+  line-height: 1.5;
+}
+.lh-16 {
+  line-height: 1.6;
+}
+.lh-17 {
+  line-height: 1.7;
+}
+.lh-18 {
+  line-height: 1.8;
+}
+.lh-19 {
+  line-height: 1.9;
+}
+.lh-20 {
+  line-height: 2;
+}
+.lh-21 {
+  line-height: 2.1;
+}
+.lh-22 {
+  line-height: 2.2;
+}
+.lh-23 {
+  line-height: 2.3;
+}
+.lh-24 {
+  line-height: 2.4;
+}
+.lh-25 {
+  line-height: 2.5;
+}
+.lh-26 {
+  line-height: 2.6;
+}
+.lh-27 {
+  line-height: 2.7;
+}
+.lh-28 {
+  line-height: 2.8;
+}
+.lh-29 {
+  line-height: 2.9;
+}
+.lh-30 {
+  line-height: 3;
+}
+.fs-10px {
+  font-size: 10px;
+}
+.fs-11px {
+  font-size: 11px;
+}
+.fs-12px {
+  font-size: 12px;
+}
+.fs-13px {
+  font-size: 13px;
+}
+.fs-14px {
+  font-size: 14px;
+}
+.fs-15px {
+  font-size: 15px;
+}
+.fs-16px {
+  font-size: 16px;
+}
+.fs-17px {
+  font-size: 17px;
+}
+.fs-18px {
+  font-size: 18px;
+}
+.fs-19px {
+  font-size: 19px;
+}
+.fs-20px {
+  font-size: 20px;
+}
+.fs-21px {
+  font-size: 21px;
+}
+.fs-22px {
+  font-size: 22px;
+}
+.fs-23px {
+  font-size: 23px;
+}
+.fs-24px {
+  font-size: 24px;
+}
+.fs-25px {
+  font-size: 25px;
+}
+.fs-26px {
+  font-size: 26px;
+}
+.fs-27px {
+  font-size: 27px;
+}
+.fs-28px {
+  font-size: 28px;
+}
+.fs-29px {
+  font-size: 29px;
+}
+.fs-30px {
+  font-size: 30px;
+}
+.fs-31px {
+  font-size: 31px;
+}
+.fs-32px {
+  font-size: 32px;
+}
+.fs-33px {
+  font-size: 33px;
+}
+.fs-34px {
+  font-size: 34px;
+}
+.fs-35px {
+  font-size: 35px;
+}
+.fs-36px {
+  font-size: 36px;
+}
+.fs-37px {
+  font-size: 37px;
+}
+.fs-38px {
+  font-size: 38px;
+}
+.fs-39px {
+  font-size: 39px;
+}
+.fs-40px {
+  font-size: 40px;
+}
+.fs-41px {
+  font-size: 41px;
+}
+.fs-42px {
+  font-size: 42px;
+}
+.fs-43px {
+  font-size: 43px;
+}
+.fs-44px {
+  font-size: 44px;
+}
+.fs-45px {
+  font-size: 45px;
+}
+.fs-46px {
+  font-size: 46px;
+}
+.fs-47px {
+  font-size: 47px;
+}
+.fs-48px {
+  font-size: 48px;
+}
+.fs-49px {
+  font-size: 49px;
+}
+.fs-50px {
+  font-size: 50px;
+}
+.fw-300 {
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url("./fonts/Montserrat-Light.woff2"), url("./fonts/Montserrat-Light.woff");
+  font-weight: 300;
+  font-style: normal;
+  font-optical-sizing: auto;
+}
+.fw-400 {
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url("./fonts/Montserrat-Regular.woff2"), url("./fonts/Montserrat-Regular.woff");
+  font-weight: 400;
+  font-style: normal;
+  font-optical-sizing: auto;
+}
+.fw-500 {
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url("./fonts/Montserrat-Medium.woff2"), url("./fonts/Montserrat-Medium.woff");
+  font-weight: 500;
+  font-style: normal;
+  font-optical-sizing: auto;
+}
+.fw-600 {
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url("./fonts/Montserrat-SemiBold.woff2"), url("./fonts/Montserrat-SemiBold.woff");
+  font-weight: 600;
+  font-style: normal;
+  font-optical-sizing: auto;
+}
+.fw-700 {
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url("./fonts/Montserrat-Bold.woff2"), url("./fonts/Montserrat-Bold.woff");
+  font-weight: 700;
+  font-style: normal;
+  font-optical-sizing: auto;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 16pxz;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #e6ebf3;
+}
+.init-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100%;
+  background-color: #613eea;
+  color: #fff;
+}
+.init-logo {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 30px auto;
+}
+.init-text {
+  display: block;
+  margin: 30px auto;
+  text-align: center;
+  font-size: 20px;
+}
+.color-white {
+  color: #fff;
+}
+.color-purple {
+  color: #613eea;
+}
+.color-gray {
+  color: #707580;
+}
+.color-green {
+  color: #36a059;
+}
+.color-red {
+  color: #ee3b3b;
+}
+.color-blue {
+  color: #007aff;
+}
+.header {
+  padding: 16px 0 1px;
+  margin: 0 0 60px;
+  background-color: #613eea;
+  -webkit-box-shadow: 0 11px 0 0 #87f0ff;
+          box-shadow: 0 11px 0 0 #87f0ff;
+  border-radius: 0 0 40px 40px;
+}
+.header-body {
+  margin-bottom: -60px;
+}
+.label {
+  display: block;
+  margin: 0 0 15px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.card {
+  display: block;
+  margin: 0 0 15px;
+}
+.card-body {
+  padding: 15px 15px 1px;
+  border-radius: 12px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 15px 0 rgba(0,0,0,0.1);
+          box-shadow: 0 0 15px 0 rgba(0,0,0,0.1);
+}
+.card-gradient {
+  display: block;
+  margin: 0 0 15px;
+}
+.card-gradient-body {
+  padding: 30px 25px 15px;
+  border-radius: 25px;
+  background-color: #8e73fd;
+  background-image: radial-gradient(70% 60% at 20% 30%, #2b47fc 0%, transparent 100%), radial-gradient(100% 60% at 100% 100%, #40d3f2 0%, transparent 100%), radial-gradient(100% 60% at 20% 0%, #e100ff 0%, transparent 100%);
+  color: #fff;
+}
+.widget-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin: 0 0 10px;
+  background-color: #613eea;
+}
+.widget-icon > i {
+  display: block;
+  font-size: 20px;
+  color: #fff;
+}
+.widget-label {
+  display: block;
+  margin: 0 0 10px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1;
+}
+.widget-value {
+  display: block;
+  margin: 0 0 15px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1;
+}
+.widget-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -12px;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+.widget-slider::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+  background: transparent;
+}
+.widget-slider-item {
+  padding: 0 12px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: auto;
+}
+.badge-gray {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 -3px;
+  padding: 6px 7px;
+  border-radius: 8px;
+  background-color: #eff1f4;
+  line-height: 1.1;
+}
+.badge-gray > * {
+  display: block;
+  margin: 0 3px;
+}
+.img-circle {
+  display: block;
+  border-radius: 50%;
+}
+.body {
+  padding-bottom: 100px;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  background-color: rgba(255,255,255,0.8);
+  -webkit-box-shadow: 0 0 18px 0 rgba(0,0,0,0.13);
+          box-shadow: 0 0 18px 0 rgba(0,0,0,0.13);
+}
+.footer-btn-home {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: -28px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #613eea;
+  -webkit-box-shadow: 0px 4px 15px 0px rgba(97,62,234,0.8);
+          box-shadow: 0px 4px 15px 0px rgba(97,62,234,0.8);
+  color: #fff;
+  font-size: 24px;
+}
+.footer-btn-home > i {
+  display: block;
+}
+.footer-btn-home.active {
+  background-color: #7184fd;
+  background-image: radial-gradient(80% 60% at 20% 40%, #2b47fc 0%, transparent 100%), radial-gradient(70% 70% at 70% 100%, #40d3f2 0%, transparent 100%), radial-gradient(100% 50% at 30% 10%, #e100ff 0%, transparent 100%);
+}
+.footer-btn {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  display: block;
+  margin: 8px 0 0;
+  width: 75px;
+  color: #613eea;
+  text-align: center;
+  line-height: 1.1;
+}
+.footer-btn-label {
+  font-size: 10px;
+}
+.footer-btn-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  margin: 0 auto 2px;
+  background-color: transparent;
+}
+.footer-btn-icon > i {
+  display: block;
+  font-size: 24px;
+}
+.footer-btn.active > .footer-btn-icon {
+  color: #fff;
+  background-color: #7184fd;
+  background-image: radial-gradient(80% 60% at 20% 40%, #2b47fc 0%, transparent 100%), radial-gradient(70% 70% at 70% 100%, #40d3f2 0%, transparent 100%), radial-gradient(100% 50% at 30% 10%, #e100ff 0%, transparent 100%);
+}
+.btn {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  padding: 15px 25px;
+  margin: 0 0 15px;
+  border-radius: 20px;
+  background-color: #613eea;
+  color: #fff;
+  line-height: 1.1;
+  text-align: center;
+}
