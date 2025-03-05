@@ -319,7 +319,7 @@ body {
   color: #007aff;
 }
 .header {
-  padding: 16px 0 1px;
+  padding: 15px 0 1px;
   margin: 0 0 60px;
   background-color: #613eea;
   -webkit-box-shadow: 0 11px 0 0 #87f0ff;
@@ -615,6 +615,29 @@ body {
   color: #fff;
   background-color: #7184fd;
   background-image: radial-gradient(80% 60% at 20% 40%, #2b47fc 0%, transparent 100%), radial-gradient(70% 70% at 70% 100%, #40d3f2 0%, transparent 100%), radial-gradient(100% 50% at 30% 10%, #e100ff 0%, transparent 100%);
+}
+.header-btn {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 -2px 15px;
+  color: #fff;
+  line-height: 1.1;
+}
+.header-btn > * {
+  display: block;
+  padding: 0 2px;
 }
 .btn {
   -webkit-user-select: none;
