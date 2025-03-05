@@ -18,3 +18,17 @@ var Tab = /** @class */ (function () {
 jQuery('[data-tab]').each(function (i, el) {
     new Tab(jQuery(el));
 });
+if (typeof window.isWebApp === "boolean" && window.isWebApp) {
+    var view = window.Telegram.WebApp.initDataUnsafe.start_param;
+    var currentView = window.appView;
+    if (typeof view === "string" && view !== '' && view !== currentView) {
+        $('body').load("".concat(view, "-app.html"));
+    }
+    // if (typeof view === "string" && view !== '') {
+    //     jQuery.loa
+    // }
+    // const view: string =  window.Telegram.WebApp.initDataUnsafe.start_param
+    // if (typeof view === "string" && view !== '') {
+    //     jQuery.loa
+    // }
+}
