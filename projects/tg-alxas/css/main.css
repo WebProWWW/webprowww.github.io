@@ -335,16 +335,37 @@ body {
   font-size: 18px;
   font-weight: 700;
 }
+.title {
+  display: block;
+  margin: 0 0 15px;
+  font-size: 24px;
+  font-weight: 600;
+}
 .card {
   display: block;
   margin: 0 0 15px;
 }
 .card-body {
   padding: 15px 15px 1px;
-  border-radius: 12px;
+  border-radius: 15px;
   background-color: #fff;
   -webkit-box-shadow: 0 0 15px 0 rgba(0,0,0,0.1);
           box-shadow: 0 0 15px 0 rgba(0,0,0,0.1);
+}
+.card-blue {
+  display: block;
+  margin: 0 0 15px;
+}
+.card-blue-body {
+  padding: 15px 15px 1px;
+  border-radius: 15px;
+  background-color: #613eea;
+  -webkit-box-shadow: 0 0 15px 0 rgba(0,0,0,0.1);
+          box-shadow: 0 0 15px 0 rgba(0,0,0,0.1);
+  color: #fff;
+}
+.card-blue.active > .card-blue-body {
+  background-image: radial-gradient(70% 60% at 20% 30%, #2b47fc 0%, transparent 100%), radial-gradient(100% 60% at 100% 100%, #40d3f2 0%, transparent 100%), radial-gradient(100% 60% at 20% 0%, #e100ff 0%, transparent 100%);
 }
 .card-gradient {
   display: block;
@@ -356,6 +377,48 @@ body {
   background-color: #8e73fd;
   background-image: radial-gradient(70% 60% at 20% 30%, #2b47fc 0%, transparent 100%), radial-gradient(100% 60% at 100% 100%, #40d3f2 0%, transparent 100%), radial-gradient(100% 60% at 20% 0%, #e100ff 0%, transparent 100%);
   color: #fff;
+}
+.tab {
+  margin: 0 0 15px;
+}
+.tab-content {
+  padding: 15px 15px 1px;
+  border-radius: 0 0 12px 12px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 15px 0 rgba(0,0,0,0.1);
+          box-shadow: 0 0 15px 0 rgba(0,0,0,0.1);
+  display: none;
+}
+.tab-content.active {
+  display: block;
+}
+.tab-tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin: 0 -5px;
+}
+.tab-btn {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 0%;
+          flex: 1 0 0%;
+  margin: 0 5px;
+  padding: 15px 8px;
+  border-radius: 12px 12px 0 0;
+  background-color: #dadfe7;
+  text-align: center;
+  font-weight: 600;
+}
+.tab-btn.active {
+  background-color: #fff;
 }
 .widget-icon {
   display: -webkit-box;
@@ -383,7 +446,7 @@ body {
   margin: 0 0 10px;
   font-size: 12px;
   font-weight: 500;
-  line-height: 1;
+  line-height: 1.2;
 }
 .widget-value {
   display: block;
@@ -413,6 +476,7 @@ body {
           flex: 0 0 auto;
   width: auto;
 }
+.badge-purple,
 .badge-gray {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -425,27 +489,54 @@ body {
           justify-content: center;
   margin: 0 -3px;
   padding: 6px 7px;
-  border-radius: 8px;
-  background-color: #eff1f4;
+  border-radius: 11px;
   line-height: 1.1;
 }
+.badge-purple > *,
 .badge-gray > * {
   display: block;
   margin: 0 3px;
+}
+.badge-gray {
+  background-color: #eff1f4;
+}
+.badge-purple {
+  background-color: #613eea;
+  color: #fff;
 }
 .img-circle {
   display: block;
   border-radius: 50%;
 }
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100%;
+}
 .body {
-  padding-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding-bottom: 95px;
 }
 .footer {
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 70px;
+  height: 65px;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   background-color: rgba(255,255,255,0.8);
@@ -542,4 +633,229 @@ body {
   color: #fff;
   line-height: 1.1;
   text-align: center;
+}
+.btn-i {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  line-height: 1;
+  text-align: center;
+}
+.btn-i > i {
+  display: block;
+}
+.btn-circle-1 {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #613eea;
+  line-height: 1;
+  text-align: center;
+  font-size: 15px;
+  color: #fff;
+}
+.btn-circle-1 > i {
+  display: block;
+}
+.input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 15px;
+  border: 1px solid #613eea;
+  border-radius: 8px;
+}
+.input-value {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+  border: none;
+  background: transparent;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 0%;
+          flex: 1 0 0%;
+  width: 100%;
+  padding: 3px 15px;
+  font-size: 34px;
+  font-weight: 600;
+}
+.input-badge {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: auto;
+  padding: 13px 10px;
+  border-radius: 8px;
+  background-color: #007aff;
+  color: #fff;
+  line-height: 1;
+}
+.input-badge > i {
+  font-size: 1.2em;
+  vertical-align: bottom;
+}
+.input-dark {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 15px;
+  border: 1px solid #1d1d1d;
+  background-color: #1d1d1d;
+  border-radius: 8px;
+  color: #fff;
+}
+.input-logo {
+  padding-left: 15px;
+}
+.input-logo > img {
+  display: block;
+}
+.input-i {
+  padding-right: 15px;
+}
+.input-dark-value {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+  border: none;
+  background: transparent;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 0%;
+          flex: 1 0 0%;
+  width: 100%;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+}
+.schart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  height: 120px;
+  margin: 0 0 15px;
+}
+.schart-item {
+  position: relative;
+  width: 26px;
+}
+.schart-item:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 10px;
+  background-color: #613eea;
+}
+.schart-item:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  width: 10px;
+  background-color: #007aff;
+}
+.schart-item:nth-child(1):before {
+  height: 70%;
+  bottom: 30%;
+  border-radius: 5px 5px 0 0;
+}
+.schart-item:nth-child(1):after {
+  height: 30%;
+  bottom: 0;
+  border-radius: 0 0 5px 5px;
+}
+.schart-item:nth-child(2):before {
+  height: 50%;
+  bottom: 30%;
+  border-radius: 5px 5px 0 0;
+}
+.schart-item:nth-child(2):after {
+  height: 20%;
+  bottom: 10%;
+  border-radius: 0 0 5px 5px;
+}
+.schart-item:nth-child(3):before {
+  height: 40%;
+  bottom: 30%;
+  border-radius: 5px 5px 0 0;
+}
+.schart-item:nth-child(3):after {
+  height: 15%;
+  bottom: 15%;
+  border-radius: 0 0 5px 5px;
+}
+.schart-item:nth-child(4):before {
+  height: 25%;
+  bottom: 30%;
+  border-radius: 5px 5px 0 0;
+}
+.schart-item:nth-child(4):after {
+  height: 10%;
+  bottom: 20%;
+  border-radius: 0 0 5px 5px;
+}
+.schart-item:nth-child(5):before {
+  height: 30%;
+  bottom: 0;
+  border-radius: 0 0 5px 5px;
+}
+.schart-item:nth-child(5):after {
+  height: 20%;
+  bottom: 30%;
+  border-radius: 5px 5px 0 0;
+}
+.schart-item:nth-child(6):before {
+  height: 15%;
+  bottom: 15%;
+  border-radius: 0 0 5px 5px;
+}
+.schart-item:nth-child(6):after {
+  height: 50%;
+  bottom: 30%;
+  border-radius: 5px 5px 0 0;
+}
+.schart-item:nth-child(7):before {
+  height: 10%;
+  bottom: 20%;
+  border-radius: 0 0 5px 5px;
+}
+.schart-item:nth-child(7):after {
+  height: 70%;
+  bottom: 30%;
+  border-radius: 5px 5px 0 0;
 }
