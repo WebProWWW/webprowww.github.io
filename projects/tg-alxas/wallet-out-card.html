@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="date=no">
+    <meta name="format-detection" content="address=no">
+    <meta name="format-detection" content="email=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+    <title>Альхас</title>
+    <!--
+        depends.css - Собраны следующие файлы:
+        bootstrap-reboot.min.css (bootstrap 5.3.3)
+        bootstrap-grid.min.css (bootstrap 5.3.3)
+        bootstrap-utilities.min.css (bootstrap 5.3.3)
+        icomoon/style.css (шрифтовые иконки, https://icomoon.io)
+    -->
+    <link rel="stylesheet" href="css/depends.css?v=3">
+    <link rel="stylesheet" href="css/main.css?v=3">
+</head>
+<body>
+
+<div class="wrapper">
+
+    <div class="header">
+        <div class="header-body">
+            <div class="container">
+
+                <div class="title color-white text-center">
+                    Вывод средств
+                </div>
+                
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <div class="me-2">
+                                <div class="widget-icon">
+                                    <i class="icon-people"></i>
+                                </div>
+                            </div>
+                            <div class="text-uppercase fs-14px mb-2">
+                                Ваш баланс
+                            </div>
+                            <div class="ms-auto mb-2">
+                                <div class="btn-i">
+                                    <i class="icon-more"></i>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="mb-3 fw-600 fs-34px text-center">
+                            ₽4500.00
+                        </div>
+                    </div><!-- .card-body -->
+                </div><!-- .card -->
+
+            </div><!-- .container -->
+        </div><!-- .header-body -->
+    </div><!-- .header -->
+
+    <div class="body">
+        <div class="container">
+
+            <div class="row g-3">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body pb-3">
+                            <div class="fs-24px fw-600 color-gray">
+                                ₽1000
+                            </div>
+                            <div class="color-gray fs-14px">
+                                В работе
+                                <i class="icon-info color-blue fs-16px"></i>
+                            </div>
+                        </div><!-- .card-body -->
+                    </div><!-- .card -->
+                </div><!-- .col -->
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body pb-3">
+                            <div class="fs-24px fw-600 color-purple">
+                                ₽3500
+                            </div>
+                            <div class="fs-14px">
+                                Доступно
+                                <i class="icon-info color-blue fs-16px"></i>
+                            </div>
+                        </div><!-- .card-body -->
+                    </div><!-- .card -->
+                </div><!-- .col -->
+            </div><!-- .row -->
+
+            <div class="row g-3">
+                <div class="col">
+                    <div class="card-blue cursor-pointer active"><!-- css класс "active" -->
+                        <div class="card-blue-body">
+                            <div class="widget">
+                                <div class="widget-icon">
+                                    <i class="icon-card"></i>
+                                </div>
+                                <div class="widget-label text-uppercase">
+                                    Вывести на
+                                    <br>
+                                    карту банка
+                                </div>
+                            </div><!-- .widget -->
+                        </div><!-- .card-blue-body -->
+                    </div><!-- .card-blue -->
+                </div><!-- .col -->
+                <div class="col">
+                    <div class="card-blue cursor-pointer"><!-- css класс "active" -->
+                        <div class="card-blue-body">
+                            <div class="widget">
+                                <div class="widget-icon">
+                                    <i class="icon-card-bit"></i>
+                                </div>
+                                <div class="widget-label text-uppercase">
+                                    Вывести на
+                                    <br>
+                                    кошелек Usdt
+                                </div>
+                            </div><!-- .widget -->
+                        </div><!-- .card-blue-body -->
+                    </div><!-- .card-blue -->
+                </div><!-- .col -->
+            </div><!-- .row -->
+
+            <div class="card">
+                <div class="card-body">
+                    <div class="fs-12px mb-2">
+                        Введите сумму
+                    </div>
+    
+                    <div class="input">
+                        <input type="text" class="input-value" value="500.00">
+                    </div>
+                </div><!-- .card-body -->
+            </div><!-- .card -->
+
+            <div class="label">
+                <div class="row g-3">
+                    <div class="col">
+                        Введите номер карты
+                    </div><!-- .col -->
+                    <!-- <div class="col-auto">
+                        <div class="btn-i color-red">
+                            <i class="icon-cancel"></i>
+                        </div>
+                    </div> --><!-- .col -->
+                </div><!-- .row -->
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <div class="input">
+                        <input type="text" class="input-value-20" placeholder="0000 0000 0000 0000">
+                        <div class="input-btn fs-20px color-purple">
+                            <i class="icon-save"></i>
+                        </div>
+                    </div>
+                </div><!-- .card-body -->
+            </div><!-- .card -->
+
+
+            <div class="label">
+                <div class="row g-3">
+                    <div class="col">
+                        Выберите карту
+                    </div><!-- .col -->
+                    <div class="col-auto">
+                        <div class="btn-i color-purple">
+                            <i class="icon-add"></i>
+                        </div>
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div>
+
+            <div class="card-black">
+                <div class="card-black-body pb-3">
+                    <div class="row align-items-center">
+                        <div class="col-auto">
+                            <img height="40" src="img/logo-t.png">
+                        </div><!-- .col -->
+                        <div class="col">
+                            <div class="fs-20px cursor-pointer">
+                                1232 4321 3333 6666
+                            </div>
+                        </div><!-- .col -->
+                        <div class="col-auto">
+                            <div class="cursor-pointer">
+                                <i class="icon-copy"></i>
+                            </div>
+                        </div><!-- .col -->
+                    </div><!-- .row -->
+                </div><!-- .card-black-body -->
+            </div><!-- .card-black -->
+
+            <div class="row">
+                <div class="col-auto mx-auto">
+                    <div class="btn">
+                        ВЫВЕСТИ
+                    </div>
+                </div><!-- .col -->
+            </div><!-- .row -->
+
+        </div><!-- .container -->
+    </div><!-- .body -->
+
+</div><!-- .wrapper -->
+
+<div class="footer">
+    <div class="footer-btn-home active"><!-- css класс "active" -->
+        <i class="icon-home"></i>
+    </div>
+    <div class="row justify-content-around g-1">
+        <div class="col-auto">
+            <div class="footer-btn active"><!-- css класс "active" -->
+                <div class="footer-btn-icon">
+                    <i class="icon-people"></i>
+                </div>
+                <div class="footer-btn-label">
+                    Рефералы
+                </div>
+            </div>
+        </div><!-- .col -->
+
+        <div class="col-auto">
+            <div class="footer-btn">
+                <div class="footer-btn-icon">
+                    <i class="icon-wallet-b"></i>
+                </div>
+                <div class="footer-btn-label">
+                    Пополнение
+                </div>
+            </div>
+        </div><!-- .col -->
+
+        <div class="col-auto"></div>
+
+        <div class="col-auto">
+            <div class="footer-btn">
+                <div class="footer-btn-icon">
+                    <i class="icon-wallet-a"></i>
+                </div>
+                <div class="footer-btn-label">
+                    Вывод
+                </div>
+            </div>
+        </div><!-- .col -->
+
+        <div class="col-auto">
+            <div class="footer-btn">
+                <div class="footer-btn-icon">
+                    <i class="icon-setting"></i>
+                </div>
+                <div class="footer-btn-label">
+                    Помощь
+                </div>
+            </div>
+        </div><!-- .col -->
+    </div><!-- .row -->
+</div><!-- .footer -->
+<!--
+    depends.js - Собраны следующие файлы:
+    jquery-3.7.1.min.js
+-->
+<script src="js/depends.js?v=3"></script>
+<script src="js/main.js?v=3"></script>
+</body>
+</html>
