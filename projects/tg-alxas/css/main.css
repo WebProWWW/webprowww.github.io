@@ -350,6 +350,66 @@ body {
   font-size: 24px;
   font-weight: 600;
 }
+.info-pop {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  line-height: 1.1;
+}
+.info-pop-body {
+  z-index: 100;
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: -68px;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: #fff;
+  color: #06146e;
+  font-size: 12px;
+  -webkit-box-shadow: 0 0 15px 0 rgba(0,0,0,0.2);
+          box-shadow: 0 0 15px 0 rgba(0,0,0,0.2);
+  width: 150px;
+  margin-top: 8px;
+  line-height: 1.3;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
+}
+.info-pop-body:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  margin: 0 0 0 -10px;
+  height: 0;
+  width: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #fff;
+}
+.info-pop.info-pop-left > .info-pop-body {
+  top: 50%;
+  margin-top: -26px;
+  left: -163px;
+}
+.info-pop.info-pop-left > .info-pop-body:before {
+  left: auto;
+  right: -20px;
+  top: 15px;
+  margin: 0;
+  height: 0;
+  width: 0;
+  border-top: 10px solid transparent;
+  border-left: 10px solid #fff;
+  border-bottom: 10px solid transparent;
+}
+.info-pop:hover > .info-pop-body {
+  visibility: visible;
+  opacity: 1;
+}
 .card {
   display: block;
   margin: 0 0 15px;

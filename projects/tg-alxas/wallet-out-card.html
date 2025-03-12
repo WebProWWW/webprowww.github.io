@@ -15,8 +15,8 @@
         bootstrap-utilities.min.css (bootstrap 5.3.3)
         icomoon/style.css (шрифтовые иконки, https://icomoon.io)
     -->
-    <link rel="stylesheet" href="css/depends.css?v=3">
-    <link rel="stylesheet" href="css/main.css?v=3">
+    <link rel="stylesheet" href="css/depends.css?v=5">
+    <link rel="stylesheet" href="css/main.css?v=5">
 </head>
 <body>
 
@@ -70,7 +70,12 @@
                             </div>
                             <div class="color-gray fs-14px">
                                 В работе
-                                <i class="icon-info color-blue fs-16px"></i>
+                                <span class="info-pop">
+                                    <i class="icon-info color-blue fs-16px"></i>
+                                    <span class="info-pop-body text-center">
+                                        Сумма инвестированная доступна к выводу через 40 дней
+                                    </span>
+                                </span>
                             </div>
                         </div><!-- .card-body -->
                     </div><!-- .card -->
@@ -83,7 +88,12 @@
                             </div>
                             <div class="fs-14px">
                                 Доступно
-                                <i class="icon-info color-blue fs-16px"></i>
+                                <span class="info-pop info-pop-left">
+                                    <i class="icon-info color-blue fs-16px"></i>
+                                    <span class="info-pop-body text-center">
+                                        Сумма доступна к выводу
+                                    </span>
+                                </span>
                             </div>
                         </div><!-- .card-body -->
                     </div><!-- .card -->
@@ -181,14 +191,9 @@
                         <div class="col-auto">
                             <img height="40" src="img/logo-t.png">
                         </div><!-- .col -->
-                        <div class="col">
-                            <div class="fs-20px cursor-pointer">
+                        <div class="col text-truncate">
+                            <div class="fs-20px text-truncate cursor-pointer">
                                 1232 4321 3333 6666
-                            </div>
-                        </div><!-- .col -->
-                        <div class="col-auto">
-                            <div class="cursor-pointer">
-                                <i class="icon-copy"></i>
                             </div>
                         </div><!-- .col -->
                     </div><!-- .row -->
@@ -264,7 +269,7 @@
     depends.js - Собраны следующие файлы:
     jquery-3.7.1.min.js
 -->
-<script src="js/depends.js?v=3"></script>
-<script src="js/main.js?v=3"></script>
+<script src="js/depends.js?v=5"></script>
+<script src="js/main.js?v=5"></script>
 </body>
 </html>
